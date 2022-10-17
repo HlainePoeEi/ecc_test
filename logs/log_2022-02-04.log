@@ -1,0 +1,1135 @@
+2022-02-04 17:21:00,805 DEBUG [47699] [] Request URI : /eccadmin_dev/Login
+2022-02-04 17:21:00,806 DEBUG [47699] [] LoginController start
+2022-02-04 17:21:00,806 DEBUG [47699] [] controllers/LoginController.php: is exist
+2022-02-04 17:21:00,806 DEBUG [47699] [] LoginForm: is exist
+2022-02-04 17:21:00,806 DEBUG [47699] [] LoginForm: form value set 
+2022-02-04 17:21:00,807 DEBUG [47699] [] ------------------------------/eccadmin_dev/Login
+2022-02-04 17:21:00,807 DEBUG [47699] [] ------------------------------login_start_check
+2022-02-04 17:21:00,807 DEBUG [47699] [] indexAction start
+2022-02-04 17:21:00,822 DEBUG [47699] [] indexAction end
+2022-02-04 17:21:00,822 DEBUG [47699] [] LoginController end
+2022-02-04 17:21:00,822 DEBUG [47699] [] finally
+2022-02-04 17:21:03,147 DEBUG [47699] [] Request URI : /eccadmin_dev/Login/login
+2022-02-04 17:21:03,148 DEBUG [47699] [] LoginController start
+2022-02-04 17:21:03,148 DEBUG [47699] [] controllers/LoginController.php: is exist
+2022-02-04 17:21:03,148 DEBUG [47699] [] LoginForm: is exist
+2022-02-04 17:21:03,149 DEBUG [47699] [] LoginForm: form value set 
+2022-02-04 17:21:03,149 DEBUG [47699] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-04 17:21:03,149 DEBUG [47699] [] ------------------------------login_start_check
+2022-02-04 17:21:03,149 DEBUG [47699] [] loginAction start
+2022-02-04 17:21:03,449 DEBUG [47699] [] loginAction end
+2022-02-04 17:21:03,449 DEBUG [47699] [] LoginController end
+2022-02-04 17:21:03,449 DEBUG [47699] [] finally
+2022-02-04 17:21:03,472 DEBUG [47699] [] Request URI : /eccadmin_dev/Menu
+2022-02-04 17:21:03,472 DEBUG [47699] [] MenuController start
+2022-02-04 17:21:03,472 DEBUG [47699] [] controllers/MenuController.php: is exist
+2022-02-04 17:21:03,473 DEBUG [47699] [] MenuForm: is exist
+2022-02-04 17:21:03,473 DEBUG [47699] [] MenuForm: form value set 
+2022-02-04 17:21:03,473 DEBUG [47699] [] ------------------------------/eccadmin_dev/Menu
+2022-02-04 17:21:03,473 DEBUG [47699] [] ------------------------------login_start_check
+2022-02-04 17:21:03,473 DEBUG [47699] [] indexAction start
+2022-02-04 17:21:03,474 DEBUG [47699] [] admin_no is 1
+2022-02-04 17:21:03,526 DEBUG [47699] [] indexAction end
+2022-02-04 17:21:03,526 DEBUG [47699] [] MenuController end
+2022-02-04 17:21:03,526 DEBUG [47699] [] finally
+2022-02-04 17:21:06,067 DEBUG [47699] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:21:06,068 DEBUG [47699] [] AtReportListController start
+2022-02-04 17:21:06,068 DEBUG [47699] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:21:06,070 DEBUG [47699] [] hiii
+2022-02-04 17:21:06,071 DEBUG [47699] [] AtReportListForm: is exist
+2022-02-04 17:21:06,071 DEBUG [47699] [] AtReportListForm: form value set 
+2022-02-04 17:21:06,071 DEBUG [47699] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:21:06,071 DEBUG [47699] [] indexAction start
+2022-02-04 17:21:06,072 DEBUG [47699] [] admin_no is 1
+2022-02-04 17:21:06,132 DEBUG [47699] [] indexAction end
+2022-02-04 17:21:06,132 DEBUG [47699] [] AtReportListController end
+2022-02-04 17:21:06,132 DEBUG [47699] [] finally
+2022-02-04 17:21:07,989 DEBUG [47699] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:21:07,989 DEBUG [47699] [] AtReportCourseRegistController start
+2022-02-04 17:21:07,989 DEBUG [47699] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:21:07,992 DEBUG [47699] [] hiii
+2022-02-04 17:21:07,993 DEBUG [47699] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:21:07,993 DEBUG [47699] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:21:07,993 DEBUG [47699] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:21:07,994 DEBUG [47699] [] ------------------------------session_check_true
+2022-02-04 17:21:07,994 DEBUG [47699] [] indexAction start
+2022-02-04 17:21:07,994 DEBUG [47699] [] admin_no is 1
+2022-02-04 17:21:07,995 DEBUG [47699] [] rollback
+2022-02-04 17:21:07,995 ERROR [47699] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'co.org_no' in 'where clause'' in /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php:511
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php(511): PDO->prepare(' SELECT  distin...')
+#1 /var/www/html/eccadmin_dev/service/AtReportService.php(142): T_At_ReportDao->getCourseListData(Object(AtReportCourseRegistForm))
+#2 /var/www/html/eccadmin_dev/controllers/AtReportCourseRegistController.php(78): AtReportService->getCourseListData(Object(AtReportCourseRegistForm))
+#3 /var/www/html/eccadmin_dev/controllers/AtReportCourseRegistController.php(44): AtReportCourseRegistController->search()
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): AtReportCourseRegistController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-02-04 17:21:07,995 DEBUG [47699] [] finally
+2022-02-04 17:21:08,020 DEBUG [47699] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-04 17:21:08,020 DEBUG [47699] [] ErrorController start
+2022-02-04 17:21:08,020 DEBUG [47699] [] controllers/ErrorController.php: is exist
+2022-02-04 17:21:08,021 DEBUG [47699] [] ErrorForm: is exist
+2022-02-04 17:21:08,021 DEBUG [47699] [] ErrorForm: form value set 
+2022-02-04 17:21:08,021 DEBUG [47699] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-04 17:21:08,021 DEBUG [47699] [] ------------------------------login_start_check
+2022-02-04 17:21:08,021 DEBUG [47699] [] dispAction start
+2022-02-04 17:21:08,031 DEBUG [47699] [] dispAction end
+2022-02-04 17:21:08,031 DEBUG [47699] [] ErrorController end
+2022-02-04 17:21:08,032 DEBUG [47699] [] finally
+2022-02-04 17:22:01,578 DEBUG [47742] [] Request URI : /eccadmin_dev/Login
+2022-02-04 17:22:01,578 DEBUG [47742] [] LoginController start
+2022-02-04 17:22:01,578 DEBUG [47742] [] controllers/LoginController.php: is exist
+2022-02-04 17:22:01,579 DEBUG [47742] [] LoginForm: is exist
+2022-02-04 17:22:01,579 DEBUG [47742] [] LoginForm: form value set 
+2022-02-04 17:22:01,579 DEBUG [47742] [] ------------------------------/eccadmin_dev/Login
+2022-02-04 17:22:01,579 DEBUG [47742] [] ------------------------------login_start_check
+2022-02-04 17:22:01,579 DEBUG [47742] [] indexAction start
+2022-02-04 17:22:01,594 DEBUG [47742] [] indexAction end
+2022-02-04 17:22:01,594 DEBUG [47742] [] LoginController end
+2022-02-04 17:22:01,594 DEBUG [47742] [] finally
+2022-02-04 17:22:04,259 DEBUG [47742] [] Request URI : /eccadmin_dev/Login/login
+2022-02-04 17:22:04,260 DEBUG [47742] [] LoginController start
+2022-02-04 17:22:04,260 DEBUG [47742] [] controllers/LoginController.php: is exist
+2022-02-04 17:22:04,260 DEBUG [47742] [] LoginForm: is exist
+2022-02-04 17:22:04,260 DEBUG [47742] [] LoginForm: form value set 
+2022-02-04 17:22:04,261 DEBUG [47742] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-04 17:22:04,261 DEBUG [47742] [] ------------------------------login_start_check
+2022-02-04 17:22:04,261 DEBUG [47742] [] loginAction start
+2022-02-04 17:22:04,565 DEBUG [47742] [] loginAction end
+2022-02-04 17:22:04,565 DEBUG [47742] [] LoginController end
+2022-02-04 17:22:04,565 DEBUG [47742] [] finally
+2022-02-04 17:22:04,582 DEBUG [47742] [] Request URI : /eccadmin_dev/Menu
+2022-02-04 17:22:04,582 DEBUG [47742] [] MenuController start
+2022-02-04 17:22:04,582 DEBUG [47742] [] controllers/MenuController.php: is exist
+2022-02-04 17:22:04,582 DEBUG [47742] [] MenuForm: is exist
+2022-02-04 17:22:04,583 DEBUG [47742] [] MenuForm: form value set 
+2022-02-04 17:22:04,583 DEBUG [47742] [] ------------------------------/eccadmin_dev/Menu
+2022-02-04 17:22:04,583 DEBUG [47742] [] ------------------------------login_start_check
+2022-02-04 17:22:04,583 DEBUG [47742] [] indexAction start
+2022-02-04 17:22:04,583 DEBUG [47742] [] admin_no is 1
+2022-02-04 17:22:04,617 DEBUG [47742] [] indexAction end
+2022-02-04 17:22:04,617 DEBUG [47742] [] MenuController end
+2022-02-04 17:22:04,617 DEBUG [47742] [] finally
+2022-02-04 17:22:06,524 DEBUG [47742] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:22:06,525 DEBUG [47742] [] AtReportListController start
+2022-02-04 17:22:06,525 DEBUG [47742] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:22:06,527 DEBUG [47742] [] hiii
+2022-02-04 17:22:06,528 DEBUG [47742] [] AtReportListForm: is exist
+2022-02-04 17:22:06,528 DEBUG [47742] [] AtReportListForm: form value set 
+2022-02-04 17:22:06,528 DEBUG [47742] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:22:06,529 DEBUG [47742] [] indexAction start
+2022-02-04 17:22:06,529 DEBUG [47742] [] admin_no is 1
+2022-02-04 17:22:06,591 DEBUG [47742] [] indexAction end
+2022-02-04 17:22:06,591 DEBUG [47742] [] AtReportListController end
+2022-02-04 17:22:06,591 DEBUG [47742] [] finally
+2022-02-04 17:22:08,124 DEBUG [47742] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:22:08,125 DEBUG [47742] [] AtReportCourseRegistController start
+2022-02-04 17:22:08,125 DEBUG [47742] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:22:08,128 DEBUG [47742] [] hiii
+2022-02-04 17:22:08,128 DEBUG [47742] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:22:08,129 DEBUG [47742] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:22:08,129 DEBUG [47742] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:22:08,129 DEBUG [47742] [] ------------------------------session_check_true
+2022-02-04 17:22:08,130 DEBUG [47742] [] indexAction start
+2022-02-04 17:22:08,130 DEBUG [47742] [] admin_no is 1
+2022-02-04 17:22:08,131 DEBUG [47742] [] getCourseListData
+2022-02-04 17:22:08,131 DEBUG [47742] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE course.start_period <= :end_period  AND course.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:22:08,134 DEBUG [47742] [] getRegisteredCourseList
+2022-02-04 17:22:08,134 DEBUG [47742] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:22:08,207 DEBUG [47742] [] indexAction end
+2022-02-04 17:22:08,207 DEBUG [47742] [] AtReportCourseRegistController end
+2022-02-04 17:22:08,207 DEBUG [47742] [] finally
+2022-02-04 17:22:25,887 DEBUG [47762] [] Request URI : /eccadmin_dev/CourseList
+2022-02-04 17:22:25,891 DEBUG [47762] [] CourseListController start
+2022-02-04 17:22:25,891 DEBUG [47762] [] controllers/CourseListController.php: is exist
+2022-02-04 17:22:25,895 DEBUG [47762] [] CourseListForm: is exist
+2022-02-04 17:22:25,896 DEBUG [47762] [] CourseListForm: form value set 
+2022-02-04 17:22:25,896 DEBUG [47762] [] ------------------------------/eccadmin_dev/CourseList
+2022-02-04 17:22:25,896 DEBUG [47762] [] indexAction start
+2022-02-04 17:22:25,897 DEBUG [47762] [] admin_no is 1
+2022-02-04 17:22:26,016 DEBUG [47762] [] indexAction end
+2022-02-04 17:22:26,016 DEBUG [47762] [] CourseListController end
+2022-02-04 17:22:26,016 DEBUG [47762] [] finally
+2022-02-04 17:22:32,665 DEBUG [47686] [] Request URI : /eccadmin_dev/CourseContractList
+2022-02-04 17:22:32,666 DEBUG [47686] [] CourseContractListController start
+2022-02-04 17:22:32,666 DEBUG [47686] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:22:32,669 DEBUG [47686] [] CourseContractListForm: is exist
+2022-02-04 17:22:32,669 DEBUG [47686] [] CourseContractListForm: form value set 
+2022-02-04 17:22:32,670 DEBUG [47686] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-02-04 17:22:32,670 DEBUG [47686] [] indexAction start
+2022-02-04 17:22:32,670 DEBUG [47686] [] admin_no is 1
+2022-02-04 17:22:32,775 DEBUG [47686] [] indexAction end
+2022-02-04 17:22:32,775 DEBUG [47686] [] CourseContractListController end
+2022-02-04 17:22:32,775 DEBUG [47686] [] finally
+2022-02-04 17:22:36,156 DEBUG [47686] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-02-04 17:22:36,157 DEBUG [47686] [] CourseContractListController start
+2022-02-04 17:22:36,157 DEBUG [47686] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:22:36,160 DEBUG [47686] [] CourseContractListForm: is exist
+2022-02-04 17:22:36,160 DEBUG [47686] [] CourseContractListForm: form value set 
+2022-02-04 17:22:36,161 DEBUG [47686] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-02-04 17:22:36,161 DEBUG [47686] [] SearchAction start
+2022-02-04 17:22:36,161 DEBUG [47686] [] admin_no is 1
+2022-02-04 17:22:36,269 DEBUG [47686] [] SearchAction end
+2022-02-04 17:22:36,269 DEBUG [47686] [] CourseContractListController end
+2022-02-04 17:22:36,269 DEBUG [47686] [] finally
+2022-02-04 17:22:51,320 DEBUG [47772] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-02-04 17:22:51,324 DEBUG [47772] [] CourseContractListController start
+2022-02-04 17:22:51,324 DEBUG [47772] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:22:51,328 DEBUG [47772] [] CourseContractListForm: is exist
+2022-02-04 17:22:51,328 DEBUG [47772] [] CourseContractListForm: form value set 
+2022-02-04 17:22:51,329 DEBUG [47772] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-02-04 17:22:51,329 DEBUG [47772] [] SearchAction start
+2022-02-04 17:22:51,329 DEBUG [47772] [] admin_no is 1
+2022-02-04 17:22:51,439 DEBUG [47772] [] SearchAction end
+2022-02-04 17:22:51,439 DEBUG [47772] [] CourseContractListController end
+2022-02-04 17:22:51,439 DEBUG [47772] [] finally
+2022-02-04 17:23:10,647 DEBUG [47767] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-02-04 17:23:10,648 DEBUG [47767] [] CourseContractListController start
+2022-02-04 17:23:10,648 DEBUG [47767] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:23:10,651 DEBUG [47767] [] CourseContractListForm: is exist
+2022-02-04 17:23:10,651 DEBUG [47767] [] CourseContractListForm: form value set 
+2022-02-04 17:23:10,651 DEBUG [47767] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-02-04 17:23:10,651 DEBUG [47767] [] SearchAction start
+2022-02-04 17:23:10,652 DEBUG [47767] [] admin_no is 1
+2022-02-04 17:23:10,756 DEBUG [47767] [] SearchAction end
+2022-02-04 17:23:10,756 DEBUG [47767] [] CourseContractListController end
+2022-02-04 17:23:10,756 DEBUG [47767] [] finally
+2022-02-04 17:23:20,554 DEBUG [47777] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:23:20,555 DEBUG [47777] [] AtReportListController start
+2022-02-04 17:23:20,555 DEBUG [47777] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:23:20,558 DEBUG [47777] [] hiii
+2022-02-04 17:23:20,558 DEBUG [47777] [] AtReportListForm: is exist
+2022-02-04 17:23:20,558 DEBUG [47777] [] AtReportListForm: form value set 
+2022-02-04 17:23:20,559 DEBUG [47777] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:23:20,559 DEBUG [47777] [] indexAction start
+2022-02-04 17:23:20,559 DEBUG [47777] [] admin_no is 1
+2022-02-04 17:23:20,619 DEBUG [47777] [] indexAction end
+2022-02-04 17:23:20,619 DEBUG [47777] [] AtReportListController end
+2022-02-04 17:23:20,619 DEBUG [47777] [] finally
+2022-02-04 17:23:22,064 DEBUG [47777] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:23:22,064 DEBUG [47777] [] AtReportCourseRegistController start
+2022-02-04 17:23:22,064 DEBUG [47777] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:23:22,067 DEBUG [47777] [] hiii
+2022-02-04 17:23:22,068 DEBUG [47777] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:23:22,068 DEBUG [47777] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:23:22,069 DEBUG [47777] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:23:22,069 DEBUG [47777] [] ------------------------------session_check_true
+2022-02-04 17:23:22,069 DEBUG [47777] [] indexAction start
+2022-02-04 17:23:22,069 DEBUG [47777] [] admin_no is 1
+2022-02-04 17:23:22,070 DEBUG [47777] [] getCourseListData
+2022-02-04 17:23:22,070 DEBUG [47777] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE course.start_period <= :end_period  AND course.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:23:22,073 DEBUG [47777] [] getRegisteredCourseList
+2022-02-04 17:23:22,073 DEBUG [47777] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:23:22,146 DEBUG [47777] [] indexAction end
+2022-02-04 17:23:22,146 DEBUG [47777] [] AtReportCourseRegistController end
+2022-02-04 17:23:22,146 DEBUG [47777] [] finally
+2022-02-04 17:24:11,341 DEBUG [47785] [] Request URI : /eccadmin_dev/CourseContractList
+2022-02-04 17:24:11,344 DEBUG [47785] [] CourseContractListController start
+2022-02-04 17:24:11,344 DEBUG [47785] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:24:11,348 DEBUG [47785] [] CourseContractListForm: is exist
+2022-02-04 17:24:11,348 DEBUG [47785] [] CourseContractListForm: form value set 
+2022-02-04 17:24:11,349 DEBUG [47785] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-02-04 17:24:11,349 DEBUG [47785] [] indexAction start
+2022-02-04 17:24:11,349 DEBUG [47785] [] admin_no is 1
+2022-02-04 17:24:11,449 DEBUG [47785] [] indexAction end
+2022-02-04 17:24:11,449 DEBUG [47785] [] CourseContractListController end
+2022-02-04 17:24:11,449 DEBUG [47785] [] finally
+2022-02-04 17:26:36,211 DEBUG [47726] [] Request URI : /eccadmin_dev/CourseList
+2022-02-04 17:26:36,212 DEBUG [47726] [] CourseListController start
+2022-02-04 17:26:36,212 DEBUG [47726] [] controllers/CourseListController.php: is exist
+2022-02-04 17:26:36,215 DEBUG [47726] [] CourseListForm: is exist
+2022-02-04 17:26:36,215 DEBUG [47726] [] CourseListForm: form value set 
+2022-02-04 17:26:36,216 DEBUG [47726] [] ------------------------------/eccadmin_dev/CourseList
+2022-02-04 17:26:36,216 DEBUG [47726] [] indexAction start
+2022-02-04 17:26:36,216 DEBUG [47726] [] admin_no is 1
+2022-02-04 17:26:36,315 DEBUG [47726] [] indexAction end
+2022-02-04 17:26:36,315 DEBUG [47726] [] CourseListController end
+2022-02-04 17:26:36,315 DEBUG [47726] [] finally
+2022-02-04 17:26:40,803 DEBUG [47726] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-02-04 17:26:40,804 DEBUG [47726] [] CourseListController start
+2022-02-04 17:26:40,804 DEBUG [47726] [] controllers/CourseListController.php: is exist
+2022-02-04 17:26:40,807 DEBUG [47726] [] CourseListForm: is exist
+2022-02-04 17:26:40,807 DEBUG [47726] [] CourseListForm: form value set 
+2022-02-04 17:26:40,808 DEBUG [47726] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-02-04 17:26:40,808 DEBUG [47726] [] SearchAction start
+2022-02-04 17:26:40,808 DEBUG [47726] [] admin_no is 1
+2022-02-04 17:26:40,909 DEBUG [47726] [] SearchAction end
+2022-02-04 17:26:40,909 DEBUG [47726] [] CourseListController end
+2022-02-04 17:26:40,909 DEBUG [47726] [] finally
+2022-02-04 17:26:44,205 DEBUG [47726] [] Request URI : /eccadmin_dev/CourseRegist/index
+2022-02-04 17:26:44,206 DEBUG [47726] [] CourseRegistController start
+2022-02-04 17:26:44,206 DEBUG [47726] [] controllers/CourseRegistController.php: is exist
+2022-02-04 17:26:44,209 DEBUG [47726] [] CourseRegistForm: is exist
+2022-02-04 17:26:44,209 DEBUG [47726] [] CourseRegistForm: form value set 
+2022-02-04 17:26:44,210 DEBUG [47726] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2022-02-04 17:26:44,210 DEBUG [47726] [] ------------------------------session_check_true
+2022-02-04 17:26:44,210 DEBUG [47726] [] indexAction start
+2022-02-04 17:26:44,211 DEBUG [47726] [] admin_no is 1
+2022-02-04 17:26:44,300 DEBUG [47726] [] indexAction end
+2022-02-04 17:26:44,300 DEBUG [47726] [] CourseRegistController end
+2022-02-04 17:26:44,301 DEBUG [47726] [] finally
+2022-02-04 17:26:51,519 DEBUG [47809] [] Request URI : /eccadmin_dev/CourseList/search
+2022-02-04 17:26:51,523 DEBUG [47809] [] CourseListController start
+2022-02-04 17:26:51,523 DEBUG [47809] [] controllers/CourseListController.php: is exist
+2022-02-04 17:26:51,527 DEBUG [47809] [] CourseListForm: is exist
+2022-02-04 17:26:51,527 DEBUG [47809] [] CourseListForm: form value set 
+2022-02-04 17:26:51,528 DEBUG [47809] [] ------------------------------/eccadmin_dev/CourseList/search
+2022-02-04 17:26:51,528 DEBUG [47809] [] searchAction start
+2022-02-04 17:26:51,528 DEBUG [47809] [] admin_no is 1
+2022-02-04 17:26:51,624 DEBUG [47809] [] searchAction end
+2022-02-04 17:26:51,624 DEBUG [47809] [] CourseListController end
+2022-02-04 17:26:51,624 DEBUG [47809] [] finally
+2022-02-04 17:26:55,623 DEBUG [47809] [] Request URI : /eccadmin_dev/CourseContractList
+2022-02-04 17:26:55,624 DEBUG [47809] [] CourseContractListController start
+2022-02-04 17:26:55,624 DEBUG [47809] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:26:55,627 DEBUG [47809] [] CourseContractListForm: is exist
+2022-02-04 17:26:55,627 DEBUG [47809] [] CourseContractListForm: form value set 
+2022-02-04 17:26:55,628 DEBUG [47809] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-02-04 17:26:55,628 DEBUG [47809] [] indexAction start
+2022-02-04 17:26:55,628 DEBUG [47809] [] admin_no is 1
+2022-02-04 17:26:55,737 DEBUG [47809] [] indexAction end
+2022-02-04 17:26:55,737 DEBUG [47809] [] CourseContractListController end
+2022-02-04 17:26:55,737 DEBUG [47809] [] finally
+2022-02-04 17:27:01,268 DEBUG [47777] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-02-04 17:27:01,269 DEBUG [47777] [] CourseContractListController start
+2022-02-04 17:27:01,269 DEBUG [47777] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:27:01,272 DEBUG [47777] [] CourseContractListForm: is exist
+2022-02-04 17:27:01,272 DEBUG [47777] [] CourseContractListForm: form value set 
+2022-02-04 17:27:01,273 DEBUG [47777] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-02-04 17:27:01,273 DEBUG [47777] [] SearchAction start
+2022-02-04 17:27:01,273 DEBUG [47777] [] admin_no is 1
+2022-02-04 17:27:01,378 DEBUG [47777] [] SearchAction end
+2022-02-04 17:27:01,378 DEBUG [47777] [] CourseContractListController end
+2022-02-04 17:27:01,378 DEBUG [47777] [] finally
+2022-02-04 17:27:08,589 DEBUG [47743] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-02-04 17:27:08,589 DEBUG [47743] [] CourseContractListController start
+2022-02-04 17:27:08,589 DEBUG [47743] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:27:08,592 DEBUG [47743] [] CourseContractListForm: is exist
+2022-02-04 17:27:08,593 DEBUG [47743] [] CourseContractListForm: form value set 
+2022-02-04 17:27:08,593 DEBUG [47743] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-02-04 17:27:08,593 DEBUG [47743] [] SearchAction start
+2022-02-04 17:27:08,594 DEBUG [47743] [] admin_no is 1
+2022-02-04 17:27:08,698 DEBUG [47743] [] SearchAction end
+2022-02-04 17:27:08,698 DEBUG [47743] [] CourseContractListController end
+2022-02-04 17:27:08,698 DEBUG [47743] [] finally
+2022-02-04 17:27:20,792 DEBUG [47740] [] Request URI : /eccadmin_dev/CourseList
+2022-02-04 17:27:20,793 DEBUG [47740] [] CourseListController start
+2022-02-04 17:27:20,793 DEBUG [47740] [] controllers/CourseListController.php: is exist
+2022-02-04 17:27:20,796 DEBUG [47740] [] CourseListForm: is exist
+2022-02-04 17:27:20,796 DEBUG [47740] [] CourseListForm: form value set 
+2022-02-04 17:27:20,797 DEBUG [47740] [] ------------------------------/eccadmin_dev/CourseList
+2022-02-04 17:27:20,797 DEBUG [47740] [] indexAction start
+2022-02-04 17:27:20,797 DEBUG [47740] [] admin_no is 1
+2022-02-04 17:27:20,899 DEBUG [47740] [] indexAction end
+2022-02-04 17:27:20,899 DEBUG [47740] [] CourseListController end
+2022-02-04 17:27:20,899 DEBUG [47740] [] finally
+2022-02-04 17:27:23,733 DEBUG [47740] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-02-04 17:27:23,734 DEBUG [47740] [] CourseListController start
+2022-02-04 17:27:23,734 DEBUG [47740] [] controllers/CourseListController.php: is exist
+2022-02-04 17:27:23,737 DEBUG [47740] [] CourseListForm: is exist
+2022-02-04 17:27:23,738 DEBUG [47740] [] CourseListForm: form value set 
+2022-02-04 17:27:23,738 DEBUG [47740] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-02-04 17:27:23,738 DEBUG [47740] [] SearchAction start
+2022-02-04 17:27:23,738 DEBUG [47740] [] admin_no is 1
+2022-02-04 17:27:23,839 DEBUG [47740] [] SearchAction end
+2022-02-04 17:27:23,840 DEBUG [47740] [] CourseListController end
+2022-02-04 17:27:23,840 DEBUG [47740] [] finally
+2022-02-04 17:27:29,877 DEBUG [47726] [] Request URI : /eccadmin_dev/CourseRegist/index
+2022-02-04 17:27:29,877 DEBUG [47726] [] CourseRegistController start
+2022-02-04 17:27:29,877 DEBUG [47726] [] controllers/CourseRegistController.php: is exist
+2022-02-04 17:27:29,880 DEBUG [47726] [] CourseRegistForm: is exist
+2022-02-04 17:27:29,881 DEBUG [47726] [] CourseRegistForm: form value set 
+2022-02-04 17:27:29,881 DEBUG [47726] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2022-02-04 17:27:29,881 DEBUG [47726] [] ------------------------------session_check_true
+2022-02-04 17:27:29,881 DEBUG [47726] [] indexAction start
+2022-02-04 17:27:29,882 DEBUG [47726] [] admin_no is 1
+2022-02-04 17:27:29,949 DEBUG [47726] [] indexAction end
+2022-02-04 17:27:29,949 DEBUG [47726] [] CourseRegistController end
+2022-02-04 17:27:29,949 DEBUG [47726] [] finally
+2022-02-04 17:27:33,436 DEBUG [47726] [] Request URI : /eccadmin_dev/CourseList/search
+2022-02-04 17:27:33,437 DEBUG [47726] [] CourseListController start
+2022-02-04 17:27:33,437 DEBUG [47726] [] controllers/CourseListController.php: is exist
+2022-02-04 17:27:33,440 DEBUG [47726] [] CourseListForm: is exist
+2022-02-04 17:27:33,440 DEBUG [47726] [] CourseListForm: form value set 
+2022-02-04 17:27:33,441 DEBUG [47726] [] ------------------------------/eccadmin_dev/CourseList/search
+2022-02-04 17:27:33,441 DEBUG [47726] [] searchAction start
+2022-02-04 17:27:33,441 DEBUG [47726] [] admin_no is 1
+2022-02-04 17:27:33,546 DEBUG [47726] [] searchAction end
+2022-02-04 17:27:33,546 DEBUG [47726] [] CourseListController end
+2022-02-04 17:27:33,546 DEBUG [47726] [] finally
+2022-02-04 17:31:21,126 DEBUG [47838] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:31:21,127 DEBUG [47838] [] AtReportListController start
+2022-02-04 17:31:21,127 DEBUG [47838] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:31:21,130 DEBUG [47838] [] hiii
+2022-02-04 17:31:21,130 DEBUG [47838] [] AtReportListForm: is exist
+2022-02-04 17:31:21,130 DEBUG [47838] [] AtReportListForm: form value set 
+2022-02-04 17:31:21,131 DEBUG [47838] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:31:21,131 DEBUG [47838] [] indexAction start
+2022-02-04 17:31:21,131 DEBUG [47838] [] admin_no is 1
+2022-02-04 17:31:21,192 DEBUG [47838] [] indexAction end
+2022-02-04 17:31:21,192 DEBUG [47838] [] AtReportListController end
+2022-02-04 17:31:21,192 DEBUG [47838] [] finally
+2022-02-04 17:31:22,788 DEBUG [47838] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:31:22,788 DEBUG [47838] [] AtReportCourseRegistController start
+2022-02-04 17:31:22,789 DEBUG [47838] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:32:33,655 DEBUG [47867] [] Request URI : /eccadmin_dev/Menu
+2022-02-04 17:32:33,659 DEBUG [47867] [] MenuController start
+2022-02-04 17:32:33,660 DEBUG [47867] [] controllers/MenuController.php: is exist
+2022-02-04 17:32:33,660 DEBUG [47867] [] MenuForm: is exist
+2022-02-04 17:32:33,661 DEBUG [47867] [] MenuForm: form value set 
+2022-02-04 17:32:33,661 DEBUG [47867] [] ------------------------------/eccadmin_dev/Menu
+2022-02-04 17:32:33,661 DEBUG [47867] [] ------------------------------login_start_check
+2022-02-04 17:32:33,661 DEBUG [47867] [] indexAction start
+2022-02-04 17:32:33,662 DEBUG [47867] [] admin_no is 1
+2022-02-04 17:32:33,712 DEBUG [47867] [] indexAction end
+2022-02-04 17:32:33,712 DEBUG [47867] [] MenuController end
+2022-02-04 17:32:33,713 DEBUG [47867] [] finally
+2022-02-04 17:32:36,455 DEBUG [47867] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:32:36,456 DEBUG [47867] [] AtReportListController start
+2022-02-04 17:32:36,456 DEBUG [47867] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:32:36,459 DEBUG [47867] [] hiii
+2022-02-04 17:32:36,459 DEBUG [47867] [] AtReportListForm: is exist
+2022-02-04 17:32:36,459 DEBUG [47867] [] AtReportListForm: form value set 
+2022-02-04 17:32:36,460 DEBUG [47867] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:32:36,460 DEBUG [47867] [] indexAction start
+2022-02-04 17:32:36,460 DEBUG [47867] [] admin_no is 1
+2022-02-04 17:32:36,525 DEBUG [47867] [] indexAction end
+2022-02-04 17:32:36,526 DEBUG [47867] [] AtReportListController end
+2022-02-04 17:32:36,526 DEBUG [47867] [] finally
+2022-02-04 17:32:38,278 DEBUG [47867] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:32:38,279 DEBUG [47867] [] AtReportCourseRegistController start
+2022-02-04 17:32:38,279 DEBUG [47867] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:33:14,035 DEBUG [47787] [] Request URI : /eccadmin_dev/Menu
+2022-02-04 17:33:14,035 DEBUG [47787] [] MenuController start
+2022-02-04 17:33:14,035 DEBUG [47787] [] controllers/MenuController.php: is exist
+2022-02-04 17:33:14,036 DEBUG [47787] [] MenuForm: is exist
+2022-02-04 17:33:14,036 DEBUG [47787] [] MenuForm: form value set 
+2022-02-04 17:33:14,036 DEBUG [47787] [] ------------------------------/eccadmin_dev/Menu
+2022-02-04 17:33:14,036 DEBUG [47787] [] ------------------------------login_start_check
+2022-02-04 17:33:14,037 DEBUG [47787] [] indexAction start
+2022-02-04 17:33:14,037 DEBUG [47787] [] admin_no is 1
+2022-02-04 17:33:14,086 DEBUG [47787] [] indexAction end
+2022-02-04 17:33:14,086 DEBUG [47787] [] MenuController end
+2022-02-04 17:33:14,086 DEBUG [47787] [] finally
+2022-02-04 17:33:17,547 DEBUG [47787] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:33:17,547 DEBUG [47787] [] AtReportListController start
+2022-02-04 17:33:17,547 DEBUG [47787] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:33:17,550 DEBUG [47787] [] hiii
+2022-02-04 17:33:17,550 DEBUG [47787] [] AtReportListForm: is exist
+2022-02-04 17:33:17,550 DEBUG [47787] [] AtReportListForm: form value set 
+2022-02-04 17:33:17,551 DEBUG [47787] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:33:17,551 DEBUG [47787] [] indexAction start
+2022-02-04 17:33:17,551 DEBUG [47787] [] admin_no is 1
+2022-02-04 17:33:17,611 DEBUG [47787] [] indexAction end
+2022-02-04 17:33:17,612 DEBUG [47787] [] AtReportListController end
+2022-02-04 17:33:17,612 DEBUG [47787] [] finally
+2022-02-04 17:33:19,438 DEBUG [47787] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:33:19,438 DEBUG [47787] [] AtReportCourseRegistController start
+2022-02-04 17:33:19,438 DEBUG [47787] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:33:19,441 DEBUG [47787] [] hiii
+2022-02-04 17:33:19,441 DEBUG [47787] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:33:19,442 DEBUG [47787] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:33:19,442 DEBUG [47787] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:33:19,442 DEBUG [47787] [] ------------------------------session_check_true
+2022-02-04 17:33:19,442 DEBUG [47787] [] indexAction start
+2022-02-04 17:33:19,443 DEBUG [47787] [] admin_no is 1
+2022-02-04 17:33:19,443 DEBUG [47787] [] getCourseListData
+2022-02-04 17:33:19,444 DEBUG [47787] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE course.start_period <= :end_period  AND course.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:33:19,447 DEBUG [47787] [] getRegisteredCourseList
+2022-02-04 17:33:19,447 DEBUG [47787] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:33:19,517 DEBUG [47787] [] indexAction end
+2022-02-04 17:33:19,517 DEBUG [47787] [] AtReportCourseRegistController end
+2022-02-04 17:33:19,517 DEBUG [47787] [] finally
+2022-02-04 17:33:41,603 DEBUG [47894] [] Request URI : /eccadmin_dev/CourseList
+2022-02-04 17:33:41,604 DEBUG [47894] [] CourseListController start
+2022-02-04 17:33:41,604 DEBUG [47894] [] controllers/CourseListController.php: is exist
+2022-02-04 17:33:41,607 DEBUG [47894] [] CourseListForm: is exist
+2022-02-04 17:33:41,607 DEBUG [47894] [] CourseListForm: form value set 
+2022-02-04 17:33:41,608 DEBUG [47894] [] ------------------------------/eccadmin_dev/CourseList
+2022-02-04 17:33:41,608 DEBUG [47894] [] indexAction start
+2022-02-04 17:33:41,608 DEBUG [47894] [] admin_no is 1
+2022-02-04 17:33:41,720 DEBUG [47894] [] indexAction end
+2022-02-04 17:33:41,720 DEBUG [47894] [] CourseListController end
+2022-02-04 17:33:41,720 DEBUG [47894] [] finally
+2022-02-04 17:33:46,771 DEBUG [47902] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-02-04 17:33:46,775 DEBUG [47902] [] CourseListController start
+2022-02-04 17:33:46,775 DEBUG [47902] [] controllers/CourseListController.php: is exist
+2022-02-04 17:33:46,779 DEBUG [47902] [] CourseListForm: is exist
+2022-02-04 17:33:46,779 DEBUG [47902] [] CourseListForm: form value set 
+2022-02-04 17:33:46,780 DEBUG [47902] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-02-04 17:33:46,780 DEBUG [47902] [] SearchAction start
+2022-02-04 17:33:46,780 DEBUG [47902] [] admin_no is 1
+2022-02-04 17:33:46,879 DEBUG [47902] [] SearchAction end
+2022-02-04 17:33:46,879 DEBUG [47902] [] CourseListController end
+2022-02-04 17:33:46,879 DEBUG [47902] [] finally
+2022-02-04 17:34:01,050 DEBUG [47866] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-02-04 17:34:01,050 DEBUG [47866] [] CourseListController start
+2022-02-04 17:34:01,051 DEBUG [47866] [] controllers/CourseListController.php: is exist
+2022-02-04 17:34:01,054 DEBUG [47866] [] CourseListForm: is exist
+2022-02-04 17:34:01,054 DEBUG [47866] [] CourseListForm: form value set 
+2022-02-04 17:34:01,055 DEBUG [47866] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-02-04 17:34:01,055 DEBUG [47866] [] SearchAction start
+2022-02-04 17:34:01,055 DEBUG [47866] [] admin_no is 1
+2022-02-04 17:34:01,142 DEBUG [47866] [] SearchAction end
+2022-02-04 17:34:01,142 DEBUG [47866] [] CourseListController end
+2022-02-04 17:34:01,142 DEBUG [47866] [] finally
+2022-02-04 17:35:36,500 DEBUG [47902] [] Request URI : /eccadmin_dev/CourseList
+2022-02-04 17:35:36,501 DEBUG [47902] [] CourseListController start
+2022-02-04 17:35:36,501 DEBUG [47902] [] controllers/CourseListController.php: is exist
+2022-02-04 17:35:36,504 DEBUG [47902] [] CourseListForm: is exist
+2022-02-04 17:35:36,505 DEBUG [47902] [] CourseListForm: form value set 
+2022-02-04 17:35:36,505 DEBUG [47902] [] ------------------------------/eccadmin_dev/CourseList
+2022-02-04 17:35:36,505 DEBUG [47902] [] indexAction start
+2022-02-04 17:35:36,506 DEBUG [47902] [] admin_no is 1
+2022-02-04 17:35:36,604 DEBUG [47902] [] indexAction end
+2022-02-04 17:35:36,604 DEBUG [47902] [] CourseListController end
+2022-02-04 17:35:36,604 DEBUG [47902] [] finally
+2022-02-04 17:35:44,360 DEBUG [47915] [] Request URI : /eccadmin_dev/CourseContractList
+2022-02-04 17:35:44,364 DEBUG [47915] [] CourseContractListController start
+2022-02-04 17:35:44,364 DEBUG [47915] [] controllers/CourseContractListController.php: is exist
+2022-02-04 17:35:44,367 DEBUG [47915] [] CourseContractListForm: is exist
+2022-02-04 17:35:44,367 DEBUG [47915] [] CourseContractListForm: form value set 
+2022-02-04 17:35:44,368 DEBUG [47915] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-02-04 17:35:44,368 DEBUG [47915] [] indexAction start
+2022-02-04 17:35:44,368 DEBUG [47915] [] admin_no is 1
+2022-02-04 17:35:44,481 DEBUG [47915] [] indexAction end
+2022-02-04 17:35:44,481 DEBUG [47915] [] CourseContractListController end
+2022-02-04 17:35:44,481 DEBUG [47915] [] finally
+2022-02-04 17:37:58,883 DEBUG [47915] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:37:58,884 DEBUG [47915] [] AtReportListController start
+2022-02-04 17:37:58,884 DEBUG [47915] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:37:58,886 DEBUG [47915] [] hiii
+2022-02-04 17:37:58,887 DEBUG [47915] [] AtReportListForm: is exist
+2022-02-04 17:37:58,887 DEBUG [47915] [] AtReportListForm: form value set 
+2022-02-04 17:37:58,887 DEBUG [47915] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:37:58,888 DEBUG [47915] [] indexAction start
+2022-02-04 17:37:58,888 DEBUG [47915] [] admin_no is 1
+2022-02-04 17:37:58,950 DEBUG [47915] [] indexAction end
+2022-02-04 17:37:58,950 DEBUG [47915] [] AtReportListController end
+2022-02-04 17:37:58,950 DEBUG [47915] [] finally
+2022-02-04 17:38:00,331 DEBUG [47915] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:38:00,332 DEBUG [47915] [] AtReportCourseRegistController start
+2022-02-04 17:38:00,332 DEBUG [47915] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:38:00,335 DEBUG [47915] [] hiii
+2022-02-04 17:38:00,335 DEBUG [47915] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:38:00,336 DEBUG [47915] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:38:00,336 DEBUG [47915] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:38:00,336 DEBUG [47915] [] ------------------------------session_check_true
+2022-02-04 17:38:00,336 DEBUG [47915] [] indexAction start
+2022-02-04 17:38:00,336 DEBUG [47915] [] admin_no is 1
+2022-02-04 17:38:00,337 DEBUG [47915] [] getCourseListData
+2022-02-04 17:38:00,337 DEBUG [47915] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:38:00,341 DEBUG [47915] [] getRegisteredCourseList
+2022-02-04 17:38:00,341 DEBUG [47915] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:38:00,416 DEBUG [47915] [] indexAction end
+2022-02-04 17:38:00,416 DEBUG [47915] [] AtReportCourseRegistController end
+2022-02-04 17:38:00,416 DEBUG [47915] [] finally
+2022-02-04 17:41:20,372 DEBUG [47896] [] Request URI : /eccadmin_dev/Login
+2022-02-04 17:41:20,373 DEBUG [47896] [] LoginController start
+2022-02-04 17:41:20,373 DEBUG [47896] [] controllers/LoginController.php: is exist
+2022-02-04 17:41:20,373 DEBUG [47896] [] LoginForm: is exist
+2022-02-04 17:41:20,373 DEBUG [47896] [] LoginForm: form value set 
+2022-02-04 17:41:20,374 DEBUG [47896] [] ------------------------------/eccadmin_dev/Login
+2022-02-04 17:41:20,374 DEBUG [47896] [] ------------------------------login_start_check
+2022-02-04 17:41:20,374 DEBUG [47896] [] indexAction start
+2022-02-04 17:41:20,389 DEBUG [47896] [] indexAction end
+2022-02-04 17:41:20,389 DEBUG [47896] [] LoginController end
+2022-02-04 17:41:20,389 DEBUG [47896] [] finally
+2022-02-04 17:41:26,890 DEBUG [47955] [] Request URI : /eccadmin_dev/Login/login
+2022-02-04 17:41:26,894 DEBUG [47955] [] LoginController start
+2022-02-04 17:41:26,894 DEBUG [47955] [] controllers/LoginController.php: is exist
+2022-02-04 17:41:26,894 DEBUG [47955] [] LoginForm: is exist
+2022-02-04 17:41:26,895 DEBUG [47955] [] LoginForm: form value set 
+2022-02-04 17:41:26,895 DEBUG [47955] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-04 17:41:26,895 DEBUG [47955] [] ------------------------------login_start_check
+2022-02-04 17:41:26,895 DEBUG [47955] [] loginAction start
+2022-02-04 17:41:27,178 DEBUG [47955] [] loginAction end
+2022-02-04 17:41:27,178 DEBUG [47955] [] LoginController end
+2022-02-04 17:41:27,178 DEBUG [47955] [] finally
+2022-02-04 17:41:27,213 DEBUG [47955] [] Request URI : /eccadmin_dev/Menu
+2022-02-04 17:41:27,213 DEBUG [47955] [] MenuController start
+2022-02-04 17:41:27,213 DEBUG [47955] [] controllers/MenuController.php: is exist
+2022-02-04 17:41:27,214 DEBUG [47955] [] MenuForm: is exist
+2022-02-04 17:41:27,214 DEBUG [47955] [] MenuForm: form value set 
+2022-02-04 17:41:27,214 DEBUG [47955] [] ------------------------------/eccadmin_dev/Menu
+2022-02-04 17:41:27,214 DEBUG [47955] [] ------------------------------login_start_check
+2022-02-04 17:41:27,215 DEBUG [47955] [] indexAction start
+2022-02-04 17:41:27,215 DEBUG [47955] [] admin_no is 1
+2022-02-04 17:41:27,258 DEBUG [47955] [] indexAction end
+2022-02-04 17:41:27,258 DEBUG [47955] [] MenuController end
+2022-02-04 17:41:27,258 DEBUG [47955] [] finally
+2022-02-04 17:41:30,636 DEBUG [47955] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:41:30,637 DEBUG [47955] [] AtReportListController start
+2022-02-04 17:41:30,637 DEBUG [47955] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:41:30,640 DEBUG [47955] [] hiii
+2022-02-04 17:41:30,640 DEBUG [47955] [] AtReportListForm: is exist
+2022-02-04 17:41:30,640 DEBUG [47955] [] AtReportListForm: form value set 
+2022-02-04 17:41:30,641 DEBUG [47955] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:41:30,641 DEBUG [47955] [] indexAction start
+2022-02-04 17:41:30,641 DEBUG [47955] [] admin_no is 1
+2022-02-04 17:41:30,707 DEBUG [47955] [] indexAction end
+2022-02-04 17:41:30,707 DEBUG [47955] [] AtReportListController end
+2022-02-04 17:41:30,708 DEBUG [47955] [] finally
+2022-02-04 17:41:34,151 DEBUG [47865] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:41:34,151 DEBUG [47865] [] AtReportCourseRegistController start
+2022-02-04 17:41:34,152 DEBUG [47865] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:41:34,155 DEBUG [47865] [] hiii
+2022-02-04 17:41:34,155 DEBUG [47865] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:41:34,155 DEBUG [47865] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:41:34,156 DEBUG [47865] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:41:34,156 DEBUG [47865] [] ------------------------------session_check_true
+2022-02-04 17:41:34,156 DEBUG [47865] [] indexAction start
+2022-02-04 17:41:34,156 DEBUG [47865] [] admin_no is 1
+2022-02-04 17:41:34,157 DEBUG [47865] [] getCourseListData
+2022-02-04 17:41:34,157 DEBUG [47865] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:41:34,161 DEBUG [47865] [] getRegisteredCourseList
+2022-02-04 17:41:34,161 DEBUG [47865] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:41:34,234 DEBUG [47865] [] indexAction end
+2022-02-04 17:41:34,234 DEBUG [47865] [] AtReportCourseRegistController end
+2022-02-04 17:41:34,234 DEBUG [47865] [] finally
+2022-02-04 17:45:53,294 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 17:45:53,295 DEBUG [47965] [] AtReportListController start
+2022-02-04 17:45:53,295 DEBUG [47965] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:45:53,298 DEBUG [47965] [] hiii
+2022-02-04 17:45:53,298 DEBUG [47965] [] AtReportListForm: is exist
+2022-02-04 17:45:53,298 DEBUG [47965] [] AtReportListForm: form value set 
+2022-02-04 17:45:53,299 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 17:45:53,299 DEBUG [47965] [] indexAction start
+2022-02-04 17:45:53,299 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:45:53,361 DEBUG [47965] [] indexAction end
+2022-02-04 17:45:53,362 DEBUG [47965] [] AtReportListController end
+2022-02-04 17:45:53,362 DEBUG [47965] [] finally
+2022-02-04 17:45:55,292 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportTestRegist/index
+2022-02-04 17:45:55,293 DEBUG [47965] [] AtReportTestRegistController start
+2022-02-04 17:45:55,293 DEBUG [47965] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 17:45:55,296 DEBUG [47965] [] hiii
+2022-02-04 17:45:55,296 DEBUG [47965] [] AtReportTestRegistForm: is exist
+2022-02-04 17:45:55,297 DEBUG [47965] [] AtReportTestRegistForm: form value set 
+2022-02-04 17:45:55,297 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportTestRegist/index
+2022-02-04 17:45:55,297 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:45:55,297 DEBUG [47965] [] indexAction start
+2022-02-04 17:45:55,297 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:45:55,298 DEBUG [47965] [] getTestInfoListData
+2022-02-04 17:45:55,298 DEBUG [47965] []  SELECT  distinct test_info.test_info_no test_info_no  ,report_detail.disp_no ,test_info.test_info_name test_info_name  ,test_info.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(test_info.start_period,'%Y/%m/%d') as start_period  ,date_format(test_info.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test_info.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST_INFO test_info  LEFT JOIN T_AT_REPORT as report  ON  report.org_no = test_info.org_no   LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON test_info.org_no = report_detail.org_no  AND test_info.test_info_no = report_detail.at_no  AND report_detail.at_type =  '001'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON test_info.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test_info.start_period <= :end_period  AND test_info.end_period >= :start_period  AND test_info.status = '1' AND (test_info.org_no=:org_no )  AND test_info.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no,report_detail.disp_no, test_info.test_info_name, test_info.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,test_info.test_info_no ASC
+2022-02-04 17:45:55,306 DEBUG [47965] [] getRegisteredTestList
+2022-02-04 17:45:55,306 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,test_info.test_info_no, test_info.test_info_name, test_info.remarks, test_info.start_period, test_info.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_TEST_INFO AS test_info ON report_detail.at_no = test_info.test_info_no AND report_detail.at_type = '001' AND test_info.status = '1'WHERE report.org_no = report_detail.org_no  AND report_detail.org_no = test_info.org_no  AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no, test_info.test_info_name, test_info.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:45:55,380 DEBUG [47965] [] indexAction end
+2022-02-04 17:45:55,380 DEBUG [47965] [] AtReportTestRegistController end
+2022-02-04 17:45:55,380 DEBUG [47965] [] finally
+2022-02-04 17:45:57,772 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportTestRegist/back
+2022-02-04 17:45:57,773 DEBUG [47965] [] AtReportTestRegistController start
+2022-02-04 17:45:57,773 DEBUG [47965] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 17:45:57,776 DEBUG [47965] [] hiii
+2022-02-04 17:45:57,776 DEBUG [47965] [] AtReportTestRegistForm: is exist
+2022-02-04 17:45:57,776 DEBUG [47965] [] AtReportTestRegistForm: form value set 
+2022-02-04 17:45:57,777 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportTestRegist/back
+2022-02-04 17:45:57,777 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:45:57,777 DEBUG [47965] [] backAction start
+2022-02-04 17:45:57,777 DEBUG [47965] [] backAction end
+2022-02-04 17:45:57,777 DEBUG [47965] [] AtReportTestRegistController end
+2022-02-04 17:45:57,778 DEBUG [47965] [] finally
+2022-02-04 17:45:57,807 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 17:45:57,807 DEBUG [47965] [] AtReportListController start
+2022-02-04 17:45:57,807 DEBUG [47965] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:45:57,810 DEBUG [47965] [] hiii
+2022-02-04 17:45:57,810 DEBUG [47965] [] AtReportListForm: is exist
+2022-02-04 17:45:57,810 DEBUG [47965] [] AtReportListForm: form value set 
+2022-02-04 17:45:57,811 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 17:45:57,811 DEBUG [47965] [] SearchAction start
+2022-02-04 17:45:57,811 DEBUG [47965] [] --------back--------
+2022-02-04 17:45:57,811 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:45:57,871 DEBUG [47965] [] SearchAction end
+2022-02-04 17:45:57,871 DEBUG [47965] [] AtReportListController end
+2022-02-04 17:45:57,871 DEBUG [47965] [] finally
+2022-02-04 17:45:59,198 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:45:59,198 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:45:59,198 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:45:59,201 DEBUG [47965] [] hiii
+2022-02-04 17:45:59,201 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:45:59,202 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:45:59,202 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:45:59,202 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:45:59,202 DEBUG [47965] [] indexAction start
+2022-02-04 17:45:59,202 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:45:59,203 DEBUG [47965] [] getCourseListData
+2022-02-04 17:45:59,203 DEBUG [47965] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:45:59,207 DEBUG [47965] [] getRegisteredCourseList
+2022-02-04 17:45:59,207 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:45:59,282 DEBUG [47965] [] indexAction end
+2022-02-04 17:45:59,282 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:45:59,282 DEBUG [47965] [] finally
+2022-02-04 17:46:02,539 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 17:46:02,540 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:46:02,540 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:46:02,543 DEBUG [47965] [] hiii
+2022-02-04 17:46:02,543 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:46:02,544 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:46:02,544 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 17:46:02,544 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:46:02,544 DEBUG [47965] [] saveAction start
+2022-02-04 17:46:02,544 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:46:02,546 DEBUG [47965] [] INSERT INTO  T_AT_REPORT_DETAIL (org_no,at_report_no,at_type,at_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:at_report_no,:at_type,:at_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-04 17:46:02,547 DEBUG [47965] [] getCourseListData
+2022-02-04 17:46:02,547 DEBUG [47965] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:46:02,550 DEBUG [47965] [] getRegisteredCourseList
+2022-02-04 17:46:02,550 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:46:02,622 DEBUG [47965] [] saveAction end
+2022-02-04 17:46:02,622 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:46:02,623 DEBUG [47965] [] finally
+2022-02-04 17:46:59,363 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:46:59,363 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:46:59,363 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:46:59,367 DEBUG [47965] [] hiii
+2022-02-04 17:46:59,367 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:46:59,367 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:46:59,368 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:46:59,368 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:46:59,368 DEBUG [47965] [] backAction start
+2022-02-04 17:46:59,368 DEBUG [47965] [] backAction end
+2022-02-04 17:46:59,368 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:46:59,368 DEBUG [47965] [] finally
+2022-02-04 17:46:59,393 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 17:46:59,393 DEBUG [47965] [] AtReportListController start
+2022-02-04 17:46:59,393 DEBUG [47965] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:46:59,396 DEBUG [47965] [] hiii
+2022-02-04 17:46:59,396 DEBUG [47965] [] AtReportListForm: is exist
+2022-02-04 17:46:59,396 DEBUG [47965] [] AtReportListForm: form value set 
+2022-02-04 17:46:59,397 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 17:46:59,397 DEBUG [47965] [] SearchAction start
+2022-02-04 17:46:59,397 DEBUG [47965] [] --------back--------
+2022-02-04 17:46:59,397 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:46:59,460 DEBUG [47965] [] SearchAction end
+2022-02-04 17:46:59,460 DEBUG [47965] [] AtReportListController end
+2022-02-04 17:46:59,460 DEBUG [47965] [] finally
+2022-02-04 17:47:02,198 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportTestRegist/index
+2022-02-04 17:47:02,198 DEBUG [47965] [] AtReportTestRegistController start
+2022-02-04 17:47:02,198 DEBUG [47965] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 17:47:02,202 DEBUG [47965] [] hiii
+2022-02-04 17:47:02,202 DEBUG [47965] [] AtReportTestRegistForm: is exist
+2022-02-04 17:47:02,202 DEBUG [47965] [] AtReportTestRegistForm: form value set 
+2022-02-04 17:47:02,203 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportTestRegist/index
+2022-02-04 17:47:02,203 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:47:02,203 DEBUG [47965] [] indexAction start
+2022-02-04 17:47:02,203 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:47:02,204 DEBUG [47965] [] getTestInfoListData
+2022-02-04 17:47:02,204 DEBUG [47965] []  SELECT  distinct test_info.test_info_no test_info_no  ,report_detail.disp_no ,test_info.test_info_name test_info_name  ,test_info.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(test_info.start_period,'%Y/%m/%d') as start_period  ,date_format(test_info.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test_info.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST_INFO test_info  LEFT JOIN T_AT_REPORT as report  ON  report.org_no = test_info.org_no   LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON test_info.org_no = report_detail.org_no  AND test_info.test_info_no = report_detail.at_no  AND report_detail.at_type =  '001'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON test_info.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test_info.start_period <= :end_period  AND test_info.end_period >= :start_period  AND test_info.status = '1' AND (test_info.org_no=:org_no )  AND test_info.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no,report_detail.disp_no, test_info.test_info_name, test_info.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,test_info.test_info_no ASC
+2022-02-04 17:47:02,212 DEBUG [47965] [] getRegisteredTestList
+2022-02-04 17:47:02,212 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,test_info.test_info_no, test_info.test_info_name, test_info.remarks, test_info.start_period, test_info.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_TEST_INFO AS test_info ON report_detail.at_no = test_info.test_info_no AND report_detail.at_type = '001' AND test_info.status = '1'WHERE report.org_no = report_detail.org_no  AND report_detail.org_no = test_info.org_no  AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no, test_info.test_info_name, test_info.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:47:02,283 DEBUG [47965] [] indexAction end
+2022-02-04 17:47:02,283 DEBUG [47965] [] AtReportTestRegistController end
+2022-02-04 17:47:02,283 DEBUG [47965] [] finally
+2022-02-04 17:47:03,928 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportTestRegist/back
+2022-02-04 17:47:03,929 DEBUG [47965] [] AtReportTestRegistController start
+2022-02-04 17:47:03,929 DEBUG [47965] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 17:47:03,932 DEBUG [47965] [] hiii
+2022-02-04 17:47:03,932 DEBUG [47965] [] AtReportTestRegistForm: is exist
+2022-02-04 17:47:03,932 DEBUG [47965] [] AtReportTestRegistForm: form value set 
+2022-02-04 17:47:03,933 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportTestRegist/back
+2022-02-04 17:47:03,933 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:47:03,933 DEBUG [47965] [] backAction start
+2022-02-04 17:47:03,933 DEBUG [47965] [] backAction end
+2022-02-04 17:47:03,933 DEBUG [47965] [] AtReportTestRegistController end
+2022-02-04 17:47:03,934 DEBUG [47965] [] finally
+2022-02-04 17:47:03,958 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:03,958 DEBUG [47965] [] AtReportListController start
+2022-02-04 17:47:03,959 DEBUG [47965] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:47:03,961 DEBUG [47965] [] hiii
+2022-02-04 17:47:03,961 DEBUG [47965] [] AtReportListForm: is exist
+2022-02-04 17:47:03,962 DEBUG [47965] [] AtReportListForm: form value set 
+2022-02-04 17:47:03,962 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:03,962 DEBUG [47965] [] SearchAction start
+2022-02-04 17:47:03,962 DEBUG [47965] [] --------back--------
+2022-02-04 17:47:03,963 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:47:04,024 DEBUG [47965] [] SearchAction end
+2022-02-04 17:47:04,024 DEBUG [47965] [] AtReportListController end
+2022-02-04 17:47:04,024 DEBUG [47965] [] finally
+2022-02-04 17:47:05,356 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:47:05,357 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:47:05,357 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:47:05,360 DEBUG [47965] [] hiii
+2022-02-04 17:47:05,360 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:47:05,361 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:47:05,361 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:47:05,361 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:47:05,361 DEBUG [47965] [] indexAction start
+2022-02-04 17:47:05,362 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:47:05,362 DEBUG [47965] [] getCourseListData
+2022-02-04 17:47:05,363 DEBUG [47965] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:47:05,366 DEBUG [47965] [] getRegisteredCourseList
+2022-02-04 17:47:05,366 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:47:05,438 DEBUG [47965] [] indexAction end
+2022-02-04 17:47:05,438 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:47:05,438 DEBUG [47965] [] finally
+2022-02-04 17:47:07,151 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:47:07,151 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:47:07,151 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:47:07,155 DEBUG [47965] [] hiii
+2022-02-04 17:47:07,155 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:47:07,155 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:47:07,156 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:47:07,156 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:47:07,156 DEBUG [47965] [] backAction start
+2022-02-04 17:47:07,156 DEBUG [47965] [] backAction end
+2022-02-04 17:47:07,156 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:47:07,156 DEBUG [47965] [] finally
+2022-02-04 17:47:07,180 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:07,180 DEBUG [47965] [] AtReportListController start
+2022-02-04 17:47:07,181 DEBUG [47965] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:47:07,182 DEBUG [47965] [] hiii
+2022-02-04 17:47:07,182 DEBUG [47965] [] AtReportListForm: is exist
+2022-02-04 17:47:07,182 DEBUG [47965] [] AtReportListForm: form value set 
+2022-02-04 17:47:07,182 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:07,182 DEBUG [47965] [] SearchAction start
+2022-02-04 17:47:07,182 DEBUG [47965] [] --------back--------
+2022-02-04 17:47:07,182 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:47:07,217 DEBUG [47965] [] SearchAction end
+2022-02-04 17:47:07,217 DEBUG [47965] [] AtReportListController end
+2022-02-04 17:47:07,217 DEBUG [47965] [] finally
+2022-02-04 17:47:09,209 DEBUG [47965] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:47:09,210 DEBUG [47965] [] AtReportCourseRegistController start
+2022-02-04 17:47:09,210 DEBUG [47965] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:47:09,213 DEBUG [47965] [] hiii
+2022-02-04 17:47:09,213 DEBUG [47965] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:47:09,214 DEBUG [47965] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:47:09,214 DEBUG [47965] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 17:47:09,214 DEBUG [47965] [] ------------------------------session_check_true
+2022-02-04 17:47:09,214 DEBUG [47965] [] indexAction start
+2022-02-04 17:47:09,214 DEBUG [47965] [] admin_no is 1
+2022-02-04 17:47:09,216 DEBUG [47965] [] getCourseListData
+2022-02-04 17:47:09,216 DEBUG [47965] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 17:47:09,219 DEBUG [47965] [] getRegisteredCourseList
+2022-02-04 17:47:09,219 DEBUG [47965] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 17:47:09,299 DEBUG [47965] [] indexAction end
+2022-02-04 17:47:09,299 DEBUG [47965] [] AtReportCourseRegistController end
+2022-02-04 17:47:09,299 DEBUG [47965] [] finally
+2022-02-04 17:47:15,746 DEBUG [48009] [] Request URI : /eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:47:15,747 DEBUG [48009] [] AtReportCourseRegistController start
+2022-02-04 17:47:15,747 DEBUG [48009] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 17:47:15,750 DEBUG [48009] [] hiii
+2022-02-04 17:47:15,750 DEBUG [48009] [] AtReportCourseRegistForm: is exist
+2022-02-04 17:47:15,751 DEBUG [48009] [] AtReportCourseRegistForm: form value set 
+2022-02-04 17:47:15,751 DEBUG [48009] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 17:47:15,751 DEBUG [48009] [] ------------------------------session_check_true
+2022-02-04 17:47:15,751 DEBUG [48009] [] backAction start
+2022-02-04 17:47:15,752 DEBUG [48009] [] backAction end
+2022-02-04 17:47:15,752 DEBUG [48009] [] AtReportCourseRegistController end
+2022-02-04 17:47:15,752 DEBUG [48009] [] finally
+2022-02-04 17:47:15,776 DEBUG [48009] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:15,776 DEBUG [48009] [] AtReportListController start
+2022-02-04 17:47:15,776 DEBUG [48009] [] controllers/AtReportListController.php: is exist
+2022-02-04 17:47:15,779 DEBUG [48009] [] hiii
+2022-02-04 17:47:15,779 DEBUG [48009] [] AtReportListForm: is exist
+2022-02-04 17:47:15,779 DEBUG [48009] [] AtReportListForm: form value set 
+2022-02-04 17:47:15,780 DEBUG [48009] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 17:47:15,780 DEBUG [48009] [] SearchAction start
+2022-02-04 17:47:15,780 DEBUG [48009] [] --------back--------
+2022-02-04 17:47:15,780 DEBUG [48009] [] admin_no is 1
+2022-02-04 17:47:15,841 DEBUG [48009] [] SearchAction end
+2022-02-04 17:47:15,841 DEBUG [48009] [] AtReportListController end
+2022-02-04 17:47:15,841 DEBUG [48009] [] finally
+2022-02-04 18:02:44,916 DEBUG [48235] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 18:02:44,917 DEBUG [48235] [] AtReportListController start
+2022-02-04 18:02:44,917 DEBUG [48235] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:02:44,920 DEBUG [48235] [] hiii
+2022-02-04 18:02:44,920 DEBUG [48235] [] AtReportListForm: is exist
+2022-02-04 18:02:44,920 DEBUG [48235] [] AtReportListForm: form value set 
+2022-02-04 18:02:44,921 DEBUG [48235] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 18:02:44,921 DEBUG [48235] [] indexAction start
+2022-02-04 18:02:44,921 DEBUG [48235] [] admin_no is 1
+2022-02-04 18:02:44,981 DEBUG [48235] [] indexAction end
+2022-02-04 18:02:44,981 DEBUG [48235] [] AtReportListController end
+2022-02-04 18:02:44,981 DEBUG [48235] [] finally
+2022-02-04 18:02:56,206 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 18:02:56,207 DEBUG [48143] [] AtReportListController start
+2022-02-04 18:02:56,207 DEBUG [48143] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:02:56,210 DEBUG [48143] [] hiii
+2022-02-04 18:02:56,210 DEBUG [48143] [] AtReportListForm: is exist
+2022-02-04 18:02:56,210 DEBUG [48143] [] AtReportListForm: form value set 
+2022-02-04 18:02:56,210 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 18:02:56,210 DEBUG [48143] [] indexAction start
+2022-02-04 18:02:56,211 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:02:56,333 DEBUG [48143] [] indexAction end
+2022-02-04 18:02:56,333 DEBUG [48143] [] AtReportListController end
+2022-02-04 18:02:56,334 DEBUG [48143] [] finally
+2022-02-04 18:03:34,132 DEBUG [48276] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:03:34,132 DEBUG [48276] [] AtReportCourseRegistController start
+2022-02-04 18:03:34,132 DEBUG [48276] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:03:34,136 DEBUG [48276] [] hiii
+2022-02-04 18:03:34,136 DEBUG [48276] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:03:34,136 DEBUG [48276] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:03:34,137 DEBUG [48276] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:03:34,137 DEBUG [48276] [] ------------------------------session_check_true
+2022-02-04 18:03:34,137 DEBUG [48276] [] indexAction start
+2022-02-04 18:03:34,137 DEBUG [48276] [] admin_no is 1
+2022-02-04 18:03:34,138 DEBUG [48276] [] getCourseListData
+2022-02-04 18:03:34,138 DEBUG [48276] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:03:34,142 DEBUG [48276] [] getRegisteredCourseList
+2022-02-04 18:03:34,142 DEBUG [48276] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:03:34,216 DEBUG [48276] [] indexAction end
+2022-02-04 18:03:34,216 DEBUG [48276] [] AtReportCourseRegistController end
+2022-02-04 18:03:34,216 DEBUG [48276] [] finally
+2022-02-04 18:06:10,261 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 18:06:10,261 DEBUG [48143] [] AtReportListController start
+2022-02-04 18:06:10,261 DEBUG [48143] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:06:10,264 DEBUG [48143] [] hiii
+2022-02-04 18:06:10,264 DEBUG [48143] [] AtReportListForm: is exist
+2022-02-04 18:06:10,264 DEBUG [48143] [] AtReportListForm: form value set 
+2022-02-04 18:06:10,265 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 18:06:10,265 DEBUG [48143] [] indexAction start
+2022-02-04 18:06:10,265 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:10,328 DEBUG [48143] [] indexAction end
+2022-02-04 18:06:10,328 DEBUG [48143] [] AtReportListController end
+2022-02-04 18:06:10,328 DEBUG [48143] [] finally
+2022-02-04 18:06:11,920 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportTestRegist/index
+2022-02-04 18:06:11,921 DEBUG [48143] [] AtReportTestRegistController start
+2022-02-04 18:06:11,921 DEBUG [48143] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 18:06:11,924 DEBUG [48143] [] hiii
+2022-02-04 18:06:11,924 DEBUG [48143] [] AtReportTestRegistForm: is exist
+2022-02-04 18:06:11,924 DEBUG [48143] [] AtReportTestRegistForm: form value set 
+2022-02-04 18:06:11,924 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportTestRegist/index
+2022-02-04 18:06:11,924 DEBUG [48143] [] ------------------------------session_check_true
+2022-02-04 18:06:11,925 DEBUG [48143] [] indexAction start
+2022-02-04 18:06:11,925 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:11,925 DEBUG [48143] [] getTestInfoListData
+2022-02-04 18:06:11,925 DEBUG [48143] []  SELECT  distinct test_info.test_info_no test_info_no  ,report_detail.disp_no ,test_info.test_info_name test_info_name  ,test_info.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(test_info.start_period,'%Y/%m/%d') as start_period  ,date_format(test_info.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test_info.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST_INFO test_info  LEFT JOIN T_AT_REPORT as report  ON  report.org_no = test_info.org_no   LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON test_info.org_no = report_detail.org_no  AND test_info.test_info_no = report_detail.at_no  AND report_detail.at_type =  '001'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON test_info.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test_info.start_period <= :end_period  AND test_info.end_period >= :start_period  AND test_info.status = '1' AND (test_info.org_no=:org_no )  AND test_info.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no,report_detail.disp_no, test_info.test_info_name, test_info.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,test_info.test_info_no ASC
+2022-02-04 18:06:11,932 DEBUG [48143] [] getRegisteredTestList
+2022-02-04 18:06:11,932 DEBUG [48143] [] SELECT org.org_no, report.at_report_no, report.at_report_name,test_info.test_info_no, test_info.test_info_name, test_info.remarks, test_info.start_period, test_info.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_TEST_INFO AS test_info ON report_detail.at_no = test_info.test_info_no AND report_detail.at_type = '001' AND test_info.status = '1'WHERE report.org_no = report_detail.org_no  AND report_detail.org_no = test_info.org_no  AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no, test_info.test_info_name, test_info.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:06:12,001 DEBUG [48143] [] indexAction end
+2022-02-04 18:06:12,001 DEBUG [48143] [] AtReportTestRegistController end
+2022-02-04 18:06:12,001 DEBUG [48143] [] finally
+2022-02-04 18:06:13,636 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportTestRegist/back
+2022-02-04 18:06:13,637 DEBUG [48143] [] AtReportTestRegistController start
+2022-02-04 18:06:13,637 DEBUG [48143] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 18:06:13,640 DEBUG [48143] [] hiii
+2022-02-04 18:06:13,640 DEBUG [48143] [] AtReportTestRegistForm: is exist
+2022-02-04 18:06:13,641 DEBUG [48143] [] AtReportTestRegistForm: form value set 
+2022-02-04 18:06:13,641 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportTestRegist/back
+2022-02-04 18:06:13,641 DEBUG [48143] [] ------------------------------session_check_true
+2022-02-04 18:06:13,641 DEBUG [48143] [] backAction start
+2022-02-04 18:06:13,642 DEBUG [48143] [] backAction end
+2022-02-04 18:06:13,642 DEBUG [48143] [] AtReportTestRegistController end
+2022-02-04 18:06:13,642 DEBUG [48143] [] finally
+2022-02-04 18:06:13,668 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 18:06:13,669 DEBUG [48143] [] AtReportListController start
+2022-02-04 18:06:13,669 DEBUG [48143] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:06:13,672 DEBUG [48143] [] hiii
+2022-02-04 18:06:13,672 DEBUG [48143] [] AtReportListForm: is exist
+2022-02-04 18:06:13,672 DEBUG [48143] [] AtReportListForm: form value set 
+2022-02-04 18:06:13,673 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 18:06:13,673 DEBUG [48143] [] SearchAction start
+2022-02-04 18:06:13,673 DEBUG [48143] [] --------back--------
+2022-02-04 18:06:13,673 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:13,735 DEBUG [48143] [] SearchAction end
+2022-02-04 18:06:13,735 DEBUG [48143] [] AtReportListController end
+2022-02-04 18:06:13,735 DEBUG [48143] [] finally
+2022-02-04 18:06:14,986 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:06:14,987 DEBUG [48143] [] AtReportCourseRegistController start
+2022-02-04 18:06:14,987 DEBUG [48143] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:06:14,990 DEBUG [48143] [] hiii
+2022-02-04 18:06:14,990 DEBUG [48143] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:06:14,990 DEBUG [48143] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:06:14,991 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:06:14,991 DEBUG [48143] [] ------------------------------session_check_true
+2022-02-04 18:06:14,991 DEBUG [48143] [] indexAction start
+2022-02-04 18:06:14,991 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:14,992 DEBUG [48143] [] getCourseListData
+2022-02-04 18:06:14,992 DEBUG [48143] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:06:14,995 DEBUG [48143] [] getRegisteredCourseList
+2022-02-04 18:06:14,996 DEBUG [48143] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:06:15,068 DEBUG [48143] [] indexAction end
+2022-02-04 18:06:15,068 DEBUG [48143] [] AtReportCourseRegistController end
+2022-02-04 18:06:15,068 DEBUG [48143] [] finally
+2022-02-04 18:06:16,929 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 18:06:16,930 DEBUG [48143] [] AtReportCourseRegistController start
+2022-02-04 18:06:16,930 DEBUG [48143] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:06:16,933 DEBUG [48143] [] hiii
+2022-02-04 18:06:16,933 DEBUG [48143] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:06:16,933 DEBUG [48143] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:06:16,934 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 18:06:16,934 DEBUG [48143] [] ------------------------------session_check_true
+2022-02-04 18:06:16,934 DEBUG [48143] [] saveAction start
+2022-02-04 18:06:16,934 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:16,935 DEBUG [48143] [] INSERT INTO  T_AT_REPORT_DETAIL (org_no,at_report_no,at_type,at_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:at_report_no,:at_type,:at_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-04 18:06:16,937 DEBUG [48143] [] getCourseListData
+2022-02-04 18:06:16,937 DEBUG [48143] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:06:16,940 DEBUG [48143] [] getRegisteredCourseList
+2022-02-04 18:06:16,940 DEBUG [48143] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:06:17,013 DEBUG [48143] [] saveAction end
+2022-02-04 18:06:17,013 DEBUG [48143] [] AtReportCourseRegistController end
+2022-02-04 18:06:17,014 DEBUG [48143] [] finally
+2022-02-04 18:06:18,834 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 18:06:18,835 DEBUG [48143] [] AtReportCourseRegistController start
+2022-02-04 18:06:18,835 DEBUG [48143] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:06:18,838 DEBUG [48143] [] hiii
+2022-02-04 18:06:18,838 DEBUG [48143] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:06:18,838 DEBUG [48143] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:06:18,839 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 18:06:18,839 DEBUG [48143] [] ------------------------------session_check_true
+2022-02-04 18:06:18,839 DEBUG [48143] [] backAction start
+2022-02-04 18:06:18,839 DEBUG [48143] [] backAction end
+2022-02-04 18:06:18,839 DEBUG [48143] [] AtReportCourseRegistController end
+2022-02-04 18:06:18,840 DEBUG [48143] [] finally
+2022-02-04 18:06:18,871 DEBUG [48143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 18:06:18,871 DEBUG [48143] [] AtReportListController start
+2022-02-04 18:06:18,871 DEBUG [48143] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:06:18,874 DEBUG [48143] [] hiii
+2022-02-04 18:06:18,874 DEBUG [48143] [] AtReportListForm: is exist
+2022-02-04 18:06:18,874 DEBUG [48143] [] AtReportListForm: form value set 
+2022-02-04 18:06:18,875 DEBUG [48143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 18:06:18,875 DEBUG [48143] [] SearchAction start
+2022-02-04 18:06:18,875 DEBUG [48143] [] --------back--------
+2022-02-04 18:06:18,875 DEBUG [48143] [] admin_no is 1
+2022-02-04 18:06:18,936 DEBUG [48143] [] SearchAction end
+2022-02-04 18:06:18,937 DEBUG [48143] [] AtReportListController end
+2022-02-04 18:06:18,937 DEBUG [48143] [] finally
+2022-02-04 18:08:29,272 DEBUG [48276] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:08:29,273 DEBUG [48276] [] AtReportCourseRegistController start
+2022-02-04 18:08:29,273 DEBUG [48276] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:08:29,276 DEBUG [48276] [] hiii
+2022-02-04 18:08:29,276 DEBUG [48276] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:08:29,277 DEBUG [48276] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:08:29,277 DEBUG [48276] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:08:29,277 DEBUG [48276] [] ------------------------------session_check_true
+2022-02-04 18:08:29,278 DEBUG [48276] [] indexAction start
+2022-02-04 18:08:29,278 DEBUG [48276] [] admin_no is 1
+2022-02-04 18:08:29,279 DEBUG [48276] [] getCourseListData
+2022-02-04 18:08:29,279 DEBUG [48276] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:08:29,282 DEBUG [48276] [] getRegisteredCourseList
+2022-02-04 18:08:29,282 DEBUG [48276] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:08:29,355 DEBUG [48276] [] indexAction end
+2022-02-04 18:08:29,355 DEBUG [48276] [] AtReportCourseRegistController end
+2022-02-04 18:08:29,355 DEBUG [48276] [] finally
+2022-02-04 18:09:46,379 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-04 18:09:46,380 DEBUG [48202] [] AtReportListController start
+2022-02-04 18:09:46,380 DEBUG [48202] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:09:46,382 DEBUG [48202] [] hiii
+2022-02-04 18:09:46,383 DEBUG [48202] [] AtReportListForm: is exist
+2022-02-04 18:09:46,383 DEBUG [48202] [] AtReportListForm: form value set 
+2022-02-04 18:09:46,383 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-04 18:09:46,383 DEBUG [48202] [] indexAction start
+2022-02-04 18:09:46,384 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:46,444 DEBUG [48202] [] indexAction end
+2022-02-04 18:09:46,444 DEBUG [48202] [] AtReportListController end
+2022-02-04 18:09:46,444 DEBUG [48202] [] finally
+2022-02-04 18:09:48,085 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:09:48,085 DEBUG [48202] [] AtReportCourseRegistController start
+2022-02-04 18:09:48,086 DEBUG [48202] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:09:48,089 DEBUG [48202] [] hiii
+2022-02-04 18:09:48,089 DEBUG [48202] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:09:48,089 DEBUG [48202] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:09:48,090 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-02-04 18:09:48,090 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:48,090 DEBUG [48202] [] indexAction start
+2022-02-04 18:09:48,090 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:48,091 DEBUG [48202] [] getCourseListData
+2022-02-04 18:09:48,091 DEBUG [48202] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:09:48,094 DEBUG [48202] [] getRegisteredCourseList
+2022-02-04 18:09:48,094 DEBUG [48202] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:09:48,167 DEBUG [48202] [] indexAction end
+2022-02-04 18:09:48,167 DEBUG [48202] [] AtReportCourseRegistController end
+2022-02-04 18:09:48,167 DEBUG [48202] [] finally
+2022-02-04 18:09:49,691 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 18:09:49,691 DEBUG [48202] [] AtReportCourseRegistController start
+2022-02-04 18:09:49,691 DEBUG [48202] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:09:49,694 DEBUG [48202] [] hiii
+2022-02-04 18:09:49,694 DEBUG [48202] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:09:49,695 DEBUG [48202] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:09:49,695 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/save
+2022-02-04 18:09:49,695 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:49,696 DEBUG [48202] [] saveAction start
+2022-02-04 18:09:49,696 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:49,697 DEBUG [48202] [] INSERT INTO  T_AT_REPORT_DETAIL (org_no,at_report_no,at_type,at_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:at_report_no,:at_type,:at_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-04 18:09:49,698 DEBUG [48202] [] getCourseListData
+2022-02-04 18:09:49,698 DEBUG [48202] []  SELECT  distinct course.course_id test_info_no  ,report_detail.disp_no ,course.course_name test_info_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, course.course_id,report_detail.disp_no, course.course_name , course.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,course.course_id ASC
+2022-02-04 18:09:49,702 DEBUG [48202] [] getRegisteredCourseList
+2022-02-04 18:09:49,702 DEBUG [48202] [] SELECT org.org_no, report.at_report_no, report.at_report_name,course.course_id test_info_no, course.course_name test_info_name, course.remarks, course.start_period, course.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:09:49,776 DEBUG [48202] [] saveAction end
+2022-02-04 18:09:49,776 DEBUG [48202] [] AtReportCourseRegistController end
+2022-02-04 18:09:49,777 DEBUG [48202] [] finally
+2022-02-04 18:09:51,140 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 18:09:51,141 DEBUG [48202] [] AtReportCourseRegistController start
+2022-02-04 18:09:51,141 DEBUG [48202] [] controllers/AtReportCourseRegistController.php: is exist
+2022-02-04 18:09:51,144 DEBUG [48202] [] hiii
+2022-02-04 18:09:51,144 DEBUG [48202] [] AtReportCourseRegistForm: is exist
+2022-02-04 18:09:51,144 DEBUG [48202] [] AtReportCourseRegistForm: form value set 
+2022-02-04 18:09:51,145 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/back
+2022-02-04 18:09:51,145 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:51,145 DEBUG [48202] [] backAction start
+2022-02-04 18:09:51,145 DEBUG [48202] [] backAction end
+2022-02-04 18:09:51,145 DEBUG [48202] [] AtReportCourseRegistController end
+2022-02-04 18:09:51,145 DEBUG [48202] [] finally
+2022-02-04 18:09:51,166 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 18:09:51,166 DEBUG [48202] [] AtReportListController start
+2022-02-04 18:09:51,166 DEBUG [48202] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:09:51,168 DEBUG [48202] [] hiii
+2022-02-04 18:09:51,169 DEBUG [48202] [] AtReportListForm: is exist
+2022-02-04 18:09:51,169 DEBUG [48202] [] AtReportListForm: form value set 
+2022-02-04 18:09:51,169 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 18:09:51,169 DEBUG [48202] [] SearchAction start
+2022-02-04 18:09:51,169 DEBUG [48202] [] --------back--------
+2022-02-04 18:09:51,170 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:51,226 DEBUG [48202] [] SearchAction end
+2022-02-04 18:09:51,226 DEBUG [48202] [] AtReportListController end
+2022-02-04 18:09:51,226 DEBUG [48202] [] finally
+2022-02-04 18:09:52,479 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportTestRegist/index
+2022-02-04 18:09:52,480 DEBUG [48202] [] AtReportTestRegistController start
+2022-02-04 18:09:52,480 DEBUG [48202] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 18:09:52,483 DEBUG [48202] [] hiii
+2022-02-04 18:09:52,483 DEBUG [48202] [] AtReportTestRegistForm: is exist
+2022-02-04 18:09:52,483 DEBUG [48202] [] AtReportTestRegistForm: form value set 
+2022-02-04 18:09:52,484 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportTestRegist/index
+2022-02-04 18:09:52,484 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:52,484 DEBUG [48202] [] indexAction start
+2022-02-04 18:09:52,484 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:52,485 DEBUG [48202] [] getTestInfoListData
+2022-02-04 18:09:52,485 DEBUG [48202] []  SELECT  distinct test_info.test_info_no test_info_no  ,report_detail.disp_no ,test_info.test_info_name test_info_name  ,test_info.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(test_info.start_period,'%Y/%m/%d') as start_period  ,date_format(test_info.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test_info.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST_INFO test_info  LEFT JOIN T_AT_REPORT as report  ON  report.org_no = test_info.org_no   LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON test_info.org_no = report_detail.org_no  AND test_info.test_info_no = report_detail.at_no  AND report_detail.at_type =  '001'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON test_info.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test_info.start_period <= :end_period  AND test_info.end_period >= :start_period  AND test_info.status = '1' AND (test_info.org_no=:org_no )  AND test_info.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no,report_detail.disp_no, test_info.test_info_name, test_info.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,test_info.test_info_no ASC
+2022-02-04 18:09:52,493 DEBUG [48202] [] getRegisteredTestList
+2022-02-04 18:09:52,493 DEBUG [48202] [] SELECT org.org_no, report.at_report_no, report.at_report_name,test_info.test_info_no, test_info.test_info_name, test_info.remarks, test_info.start_period, test_info.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_TEST_INFO AS test_info ON report_detail.at_no = test_info.test_info_no AND report_detail.at_type = '001' AND test_info.status = '1'WHERE report.org_no = report_detail.org_no  AND report_detail.org_no = test_info.org_no  AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no, test_info.test_info_name, test_info.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:09:52,564 DEBUG [48202] [] indexAction end
+2022-02-04 18:09:52,564 DEBUG [48202] [] AtReportTestRegistController end
+2022-02-04 18:09:52,564 DEBUG [48202] [] finally
+2022-02-04 18:09:53,990 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportTestRegist/save
+2022-02-04 18:09:53,991 DEBUG [48202] [] AtReportTestRegistController start
+2022-02-04 18:09:53,991 DEBUG [48202] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 18:09:53,994 DEBUG [48202] [] hiii
+2022-02-04 18:09:53,994 DEBUG [48202] [] AtReportTestRegistForm: is exist
+2022-02-04 18:09:53,994 DEBUG [48202] [] AtReportTestRegistForm: form value set 
+2022-02-04 18:09:53,995 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportTestRegist/save
+2022-02-04 18:09:53,995 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:53,995 DEBUG [48202] [] saveAction start
+2022-02-04 18:09:53,995 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:53,997 DEBUG [48202] [] INSERT INTO  T_AT_REPORT_DETAIL (org_no,at_report_no,at_type,at_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:at_report_no,:at_type,:at_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-04 18:09:53,998 DEBUG [48202] [] INSERT INTO  T_AT_REPORT_DETAIL (org_no,at_report_no,at_type,at_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:at_report_no,:at_type,:at_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-04 18:09:53,999 DEBUG [48202] [] getTestInfoListData
+2022-02-04 18:09:53,999 DEBUG [48202] []  SELECT  distinct test_info.test_info_no test_info_no  ,report_detail.disp_no ,test_info.test_info_name test_info_name  ,test_info.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(test_info.start_period,'%Y/%m/%d') as start_period  ,date_format(test_info.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test_info.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST_INFO test_info  LEFT JOIN T_AT_REPORT as report  ON  report.org_no = test_info.org_no   LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON test_info.org_no = report_detail.org_no  AND test_info.test_info_no = report_detail.at_no  AND report_detail.at_type =  '001'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON test_info.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test_info.start_period <= :end_period  AND test_info.end_period >= :start_period  AND test_info.status = '1' AND (test_info.org_no=:org_no )  AND test_info.del_flg = '0'  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no,report_detail.disp_no, test_info.test_info_name, test_info.remarks, start_period,end_period  ORDER BY  report_detail.disp_no,test_info.test_info_no ASC
+2022-02-04 18:09:54,007 DEBUG [48202] [] getRegisteredTestList
+2022-02-04 18:09:54,007 DEBUG [48202] [] SELECT org.org_no, report.at_report_no, report.at_report_name,test_info.test_info_no, test_info.test_info_name, test_info.remarks, test_info.start_period, test_info.end_period, report_detail.disp_no FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_TEST_INFO AS test_info ON report_detail.at_no = test_info.test_info_no AND report_detail.at_type = '001' AND test_info.status = '1'WHERE report.org_no = report_detail.org_no  AND report_detail.org_no = test_info.org_no  AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_detail.del_flg = '0' AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, test_info.test_info_no, test_info.test_info_name, test_info.remarks, report_detail.disp_no, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-02-04 18:09:54,079 DEBUG [48202] [] saveAction end
+2022-02-04 18:09:54,079 DEBUG [48202] [] AtReportTestRegistController end
+2022-02-04 18:09:54,082 DEBUG [48202] [] finally
+2022-02-04 18:09:55,490 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportTestRegist/back
+2022-02-04 18:09:55,490 DEBUG [48202] [] AtReportTestRegistController start
+2022-02-04 18:09:55,490 DEBUG [48202] [] controllers/AtReportTestRegistController.php: is exist
+2022-02-04 18:09:55,493 DEBUG [48202] [] hiii
+2022-02-04 18:09:55,494 DEBUG [48202] [] AtReportTestRegistForm: is exist
+2022-02-04 18:09:55,494 DEBUG [48202] [] AtReportTestRegistForm: form value set 
+2022-02-04 18:09:55,494 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportTestRegist/back
+2022-02-04 18:09:55,495 DEBUG [48202] [] ------------------------------session_check_true
+2022-02-04 18:09:55,495 DEBUG [48202] [] backAction start
+2022-02-04 18:09:55,495 DEBUG [48202] [] backAction end
+2022-02-04 18:09:55,495 DEBUG [48202] [] AtReportTestRegistController end
+2022-02-04 18:09:55,495 DEBUG [48202] [] finally
+2022-02-04 18:09:55,515 DEBUG [48202] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-02-04 18:09:55,516 DEBUG [48202] [] AtReportListController start
+2022-02-04 18:09:55,516 DEBUG [48202] [] controllers/AtReportListController.php: is exist
+2022-02-04 18:09:55,519 DEBUG [48202] [] hiii
+2022-02-04 18:09:55,519 DEBUG [48202] [] AtReportListForm: is exist
+2022-02-04 18:09:55,519 DEBUG [48202] [] AtReportListForm: form value set 
+2022-02-04 18:09:55,520 DEBUG [48202] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-02-04 18:09:55,520 DEBUG [48202] [] SearchAction start
+2022-02-04 18:09:55,520 DEBUG [48202] [] --------back--------
+2022-02-04 18:09:55,520 DEBUG [48202] [] admin_no is 1
+2022-02-04 18:09:55,582 DEBUG [48202] [] SearchAction end
+2022-02-04 18:09:55,582 DEBUG [48202] [] AtReportListController end
+2022-02-04 18:09:55,583 DEBUG [48202] [] finally

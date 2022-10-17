@@ -1,0 +1,548 @@
+<html>
+<head>
+<title>受講結果確認</title>
+<meta charset="UTF-8">
+	{literal}
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/loader.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+	<script type="text/javascript">
+	</script>
+</head>
+
+<body class="pushmenu-push">
+	<form id="main_form" action="" method="post">
+
+		<div class="divLeftMenu">
+			{include file='leftMenu.html'}
+		</div>
+		<div class="divHeader" style="display: none;">
+			{include file='header.html'}
+		</div>
+		<div class="divBody" style="top:0px;">
+			<div class="main">
+				<div id="err_dis">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" class="err_img" class="close_icon">
+							{if !empty($err_msg)}
+								<div class="error_msg">{$err_msg}</div>
+							{else}
+								<div class="error_msg"></div>
+							{/if}
+					</section>
+				</div>
+				<section class="content" style="display: none;">
+					<p>
+						<span class="title" style="margin-top:30px;">受講結果確認（FB）</span>
+					<p>
+					<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+					<input type="hidden" id="course_detail_no" name="course_detail_no" />
+					<input type="hidden" id="course_id" name="course_id"  />
+					<input type="hidden" id="offer_no" name="offer_no" />
+					<input type="hidden" id="org_no" name="org_no" />
+					<input type="hidden" id="student_no" name="student_no" />
+					<input type="hidden" id="cdno" name="cdno" value="{$course_detail_no}" />
+					<input type="hidden" id="cid" name="cid"  value="{$course_id}" />
+					<input type="hidden" id="ofno" name="ofno" value="{$offer_no}" />
+					<input type="hidden" id="stuno" name="stuno" value="{$student_no}" />
+					<input type="hidden" id="cnt" value="{$cnt}" />
+					<input type="hidden" id="back_flg" name="back_flg" value="false" />
+					<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+					<input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}"/>
+					<input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}"/>
+					<input type="hidden" id="search_detail_name" name="search_detail_name" value="{$form->search_detail_name|escape}"/>
+					<input type="hidden" id="search_student_name" name="search_student_name" value="{$form->search_student_name|escape}"/>
+					<input type="hidden" id="search_login_id" name="search_login_id" value="{$form->search_login_id}" />
+					<input type="hidden" id="search_chk_status" name="search_chk_status" value="{$form->search_chk_status}" />
+					<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}" />
+					<div align="right" style="width:auto; float: right;">
+						<input type="button" id="back" title="戻る" value="" class="btn_back" style="display: none;" onclick="javascript:doBack('{$smarty.const.HOME_DIR}SpeakingFeedbackList/back')">
+					</div>
+
+					<div style=" width: 100%; display: block; overflow-y: auto; margin:auto;">
+						{if !empty($courseData)}
+
+						<div class="comment_pattern_1" style="margin: auto;">
+							<div align="left" style="margin: 10px;border-style: none; margin-bottom: 20px;">
+								<label id="login_id" style="width: 100%;">組織名　　　: {$form->org_name}</label>
+								<br> <label style="width: 100%;">ログインID　: {$form->stu_login_in}</label>
+								<br> <label style="width: 100%;">氏名　　　　: {$form->student_name}</label>
+							</div>
+							<div class="title" style=" background-color: #6f99db; margin: 10px;border-style: none; border-radius: 5px; margin-bottom: 20px; padding: 12px;">
+								<label class="title" style="font-size: 18px; margin-top: 6px; color: #fff">総評</label>
+							</div>
+
+							<div id="linechart" style="width:450px; height: 270px; margin:auto;margin-bottom: 20px;"></div>
+							<div class="course_btns" id="course_btns" style="display: flex; align-items: center; padding: auto;  justify-content: center;">
+								{$color = ['red','orange','blue','black','green']}
+
+								{if ($cfinish > 1) }
+
+									{$turns = 1}<!-- ボタン番号 -->
+
+									<!-- 回答されたコースのボタン番号 -->
+
+									{$flag = 0} <!-- コースは採点されるかどうか -->
+									{foreach from=$cfinish key=fid item=j}
+
+											{if $turns == 1 }
+												{$t="`$turns`st"}
+											{else if $turns == 2}
+												{$t="`$turns`nd"}
+											{else if $turns == 3}
+												{$t="`$turns`rd"}
+											{else if $turns == 4}
+												{$t="`$turns`th"}
+											{else}
+												{$t="`$turns`th"}
+											{/if}
+
+											{if $turns%5 == 1 }
+												{if $org_no == $j->org_no && $offer_no == $j->offer_no &&  $course_id == $j->course_id &&  $course_detail_no == $j->course_detail_no &&  $student_no == $j->student_no}
+												<!-- ボタンを無効にする -->
+												<input type="button" class="course_buttons btn_one" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" disabled="disabled" style="opacity: .5;">
+
+												{else}
+													<input type="button" class="course_buttons btn_one" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')">
+												{/if}
+											{else if $turns%5 == 2 }
+												{if $org_no == $j->org_no && $offer_no == $j->offer_no &&  $course_id == $j->course_id &&  $course_detail_no == $j->course_detail_no &&  $student_no == $j->student_no}
+												<!-- ボタンを無効にする -->
+													<input type="button" class="course_buttons btn_two" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" disabled="disabled" style="opacity: .5;">
+												{else}
+													<input type="button" class="course_buttons btn_two" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" >
+												{/if}
+											{else if $turns%5 == 3 }
+												{if $org_no == $j->org_no && $offer_no == $j->offer_no &&  $course_id == $j->course_id &&  $course_detail_no == $j->course_detail_no &&  $student_no == $j->student_no}
+												<!-- ボタンを無効にする -->
+													<input type="button" class="course_buttons btn_three" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" disabled="disabled" style="opacity: .5;">
+												{else}
+													<input type="button" class="course_buttons btn_three" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" >
+												{/if}
+											{else if $turns%5 == 4 }
+												{if $org_no == $j->org_no && $offer_no == $j->offer_no &&  $course_id == $j->course_id &&  $course_detail_no == $j->course_detail_no &&  $student_no == $j->student_no}
+												<!-- ボタンを無効にする -->
+													<input type="button" class="course_buttons btn_four" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" disabled="disabled" style="opacity: .5;">
+												{else}
+													<input type="button" class="course_buttons btn_four" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')">
+												{/if}
+											{else}
+												{if $org_no == $j->org_no && $offer_no == $j->offer_no &&  $course_id == $j->course_id &&  $course_detail_no == $j->course_detail_no &&  $student_no == $j->student_no}
+												<!-- ボタンを無効にする -->
+													<input type="button" class="course_buttons btn_five" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')"disabled="disabled" style="opacity: .5;">
+												{else}
+													<input type="button" class="course_buttons btn_five" name="course_btn" value='{$t}' onclick="changeCourse('{$j->org_no}','{$j->offer_no}','{$j->course_id}','{$j->course_detail_no}','{$j->student_no}','{$smarty.const.HOME_DIR}WritingFeedbackList/index')" >
+												{/if}
+											{/if}
+
+											{$turns = $turns + 1}
+											{$flag = 1}
+
+									{/foreach}
+								{/if}
+							</div>
+
+
+							<!-- コースが1つしかない場合 -->
+							<div style="margin:auto; height:270px; width: auto; margin-bottom: 10px;max-width: 850px; ">
+								<div id="columnchart" style="height: 250px; width: 40%; float: left; margin:auto; "></div>
+
+							<!-- コースのマーク -->
+								<div class="div_cmtForm1" id="div_cmtForm1" style="display: inline-block;height: auto;overflow: auto;padding: 15px;margin-top: 10px;width: 40%;float: right;">
+									<label id="course_title" style="font-size: 16px; font-weight: 3em; font-style: bold;">
+									{$form->course_name|escape} - {$form->course_detail_name|escape}
+									</label>
+
+									<table>
+										<tr>
+											<td><label class="fb_label">テスト受講日</label></td>
+											<td>: <label id="answer_date"></label></td>
+										</tr>
+										<tr>
+											<td><label class="fb_label">総合評価</label></td>
+											<td>: <label id = "total_marks"></label>
+												<span> / </span>
+												<label id="max_marks" class="fb_label"></label>
+											</td>
+										</tr>
+										<tr>
+											<td><label class="fb_label">内容</label></td>
+											<td>: <label id = "content" class="fb_label"></label></td>
+										</tr>
+										<tr>
+											<td><label class="fb_label">構成</label></td>
+											<td>: <label id = "compos" class="fb_label"></label></td>
+										</tr>
+										<tr>
+											<td><label class="fb_label">語彙</label></td>
+											<td>: <label id = "vocub" class="fb_label"></label></td>
+										</tr>
+										<tr>
+											<td><label class="fb_label">文法</label></td>
+											<td>: <label id = "grammar" class="fb_label"></label></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							{if !empty($quiz_data)}
+							<!-- 質問番号 1, 2, 3 -->
+							{$qNo = 1}
+							{foreach $quiz_data as $key=>$result}
+							{if $key == 0}
+								{$qa_no = $result->question_no}
+							{/if}
+							{if $qa_no != $result->question_no}
+								{$qa_no = $result->question_no}
+								{$qNo = $qNo + 1}
+							{/if}
+							<div class="div_one_rewiew" id="div_quiz" >
+								<div class="title" style=" margin-top: 20px;background-color: #6f99db;margin: 10px; border-style: none; border-radius: 5px; margin-bottom: 15px; color: #fff; padding: 12px;">
+									<label id="description" style="font-size: 18px; margin-top: 6px;">{$qNo}.{$result->description[0]} </label>
+								</div>
+								<div style="width: 100%; margin:auto; overflow: auto;">
+									<div class="div_cmtForm2" style="height: auto; padding: 15px; background-color: none; margin: 20px; margin-top: 0px; ">
+										<label id="lbl_mark" style="font-size: 40px; font-style: bold; margin: auto;">
+											{$result->rule_result_marks}/{$result->rule_total_marks}点
+										</label>
+
+										<label id="lbl_cause" style="float: right; width: 75%;">
+										{$count=$result->reply_comment|count}
+											{for $sub_loop = 0 to $count-1 }
+													<span style="font-style: bold;font-size:20px;">{if !empty($result->sub_description[$sub_loop])}	{$result->sub_description[$sub_loop]} {/if}<br/></span>
+												<ul class="spk_mark_ul">
+												<li class="spk_description_li">{if !empty($result->reply_comment[$sub_loop])}{$result->reply_comment[$sub_loop]} {/if}<br/></li>
+												</ul>
+											{/for}
+										</label>
+									</div>
+								</div>
+								{if $qa_no != $quiz_data[$key+1]->question_no}
+								<div class="title" style=" margin-top: 20px;background-color: #6f99db;margin: 10px; border-style: none; border-radius: 5px; margin-bottom: 15px; color: #fff; padding: 12px;">
+									<label id="sample_answer" style="font-size: 18px; margin-top: 6px;">あなたの解答</label>
+								</div>
+								<div style="width: 92%; margin:auto;padding-left:20px;margin-bottom:20px;">
+										<label>{$result->answer_contents}</label>
+								</div>
+								<div class="title" style=" margin-top: 20px;background-color: #6f99db;margin: 10px; border-style: none; border-radius: 5px; margin-bottom: 15px; color: #fff; padding: 12px;">
+									<label id="sample_answer" style="font-size: 18px; margin-top: 6px;">模範解答</label>
+								</div>
+								<div style="width: 92%; margin:auto;padding-left:20px;margin-bottom:20px;">
+										<label style="align-left:50px; align-right:20px;">{$result->sample_answer}</label>
+								</div>
+								<div class="title" style=" margin-top: 20px;background-color: #6f99db;margin: 10px; border-style: none; border-radius: 5px; margin-bottom: 15px; color: #fff; padding: 12px;">
+									<label id="sample_answer" style="font-size: 18px; margin-top: 6px;">描写ポイント</label>
+								</div>
+								<div style="width: 92%; margin:auto;padding-left:20px;margin-bottom:20px;">
+										{$result->byosha_point}
+								</div>
+								{/if}
+							</div>
+							{/foreach}
+
+							{/if}
+						</div>
+						{/if}
+					</div>
+				</section>
+			</div>
+		</div>
+		{include file='footer.html'}
+	</form>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var cdno = document.getElementById('cdno').value;
+			var ofno = document.getElementById('ofno').value;
+			var cid = document.getElementById('cid').value;
+			var cnt = document.getElementById('cnt').value;
+
+			col_charts(ofno, cid, cdno);
+			line_chart();
+			if ( cnt <= 1 ){
+				document.getElementById('linechart').style.display = 'none';
+				document.getElementById('columnchart').style.cssFloat = "left";
+				//document.getElementById('div_cmtForm1').style.paddingLeft='100px';
+			}
+		});
+	</script>
+
+	<script>
+	 	{literal}
+	 	var datas = [];
+	 	var mark_total;
+	 	{/literal}
+		{foreach $courseData as $data}
+			{literal}
+				datas.push(JSON.parse('{/literal}{json_encode($data ,JSON_HEX_APOS)}{literal}'));
+			{/literal}
+		{/foreach}
+		{literal}
+
+		function line_chart() {
+
+			google.charts.load("current", {packages:['corechart']});
+			google.charts.load('current', {'packages':['line']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			// 折れ線グラフデータ入力
+			var line_data=[];
+
+		 	var Header=  ['Content', '内容', '構成' , '語彙', '文法'];
+		 	line_data.push(Header);
+
+		 	var dt = datas[0].answer_dt;
+			// テスト受講日表示不正ので修正　2019/09/13 Cherry
+		 	// document.getElementById("answer_date").innerHTML =  dt;
+
+		 	var f = 0;
+		 	var ofno = datas[0].offer_no;
+		 	var cid = datas[0].course_id;
+		 	var cdno = datas[0].course_detail_no;
+		 	var temp = [];
+			var one = 0, two = 0, three = 0, four = 0;
+
+			temp.push("1st");
+
+			for (var j = 0; j < datas.length; j++){
+
+				if ((datas[j].offer_no == ofno) && (datas[j].course_id == cid) && (datas[j].course_detail_no == cdno) && (datas[j].test_kbn == '002')){
+
+					if (datas[j].result_kbn == '001'){
+
+						a = Number(datas[j].detail_result_marks);
+						one += a;
+					}else if (datas[j].result_kbn == '002'){
+
+						b = Number( datas[j].detail_result_marks);
+						two += b;
+					}else if (datas[j].result_kbn == '003'){
+
+						c = Number(datas[j].detail_result_marks);
+						three += c;
+					}else if (datas[j].result_kbn == '004'){
+
+						d = Number(datas[j].detail_result_marks);
+						four += d;
+					}
+				}
+			}
+			temp.push(one);
+			temp.push(two);
+			temp.push(three);
+			temp.push(four);
+			line_data.push(temp);
+			temp = [];
+			f = 1;
+
+		 	for (var i = 1; i < datas.length; i++) {
+		 		temp = [];
+
+		 		//次のコース
+				if (datas[i].course_detail_no != cdno){
+
+					one = 0;
+					two = 0;
+					three = 0;
+					four = 0;
+					f++;
+
+					// コース 1st, 2nd ,。。 を作成する
+					if (f == 1){
+						temp.push( f + "st");
+					}else if (f == 2){
+						temp.push( f+ "nd");
+					}else if (f == 3){
+						temp.push( f + "rd");
+					}else {
+						temp.push( f + "th");
+					}
+
+					for (var j = i; j < datas.length; j++){
+
+						if ((datas[i].offer_no == datas[j].offer_no) && (datas[i].course_id == datas[j].course_id) && (datas[i].course_detail_no == datas[j].course_detail_no)){
+
+							if (datas[j].result_kbn == '001'){
+								a = Number(datas[j].detail_result_marks);
+								one += a;
+
+							}else if (datas[j].result_kbn == '002'){
+								b = Number( datas[j].detail_result_marks);
+								two += b;
+
+							}else if (datas[j].result_kbn == '003'){
+								c = Number(datas[j].detail_result_marks);
+								three += c;
+							}else if (datas[j].result_kbn == '004'){
+								d = Number(datas[j].detail_result_marks);
+								four += d;
+							}
+						}
+					}
+					temp.push(one);
+					temp.push(two);
+					temp.push(three);
+					temp.push(four);
+					line_data.push(temp);
+					temp = [];
+				}
+				ofno = datas[i].offer_no;
+				cid = datas[i].course_id;
+				cdno = datas[i].course_detail_no;
+			}
+
+			<!-- 20190626-全部の点数が【0】になる場合、Y-axisに【-】が出ないように修正 -->
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable(line_data);
+				var options = {
+					title: '',
+					selectionMode: 'multiple',
+					tooltip: {"trigger": 'both'},
+					legend: { position: 'bottom' },
+					vAxis: { 
+						viewWindow: {
+							min: 0
+						}
+					}
+				};
+
+				var chart = new google.visualization.LineChart(document.getElementById('linechart'));
+				chart.draw(data, options);
+			}
+		}
+		//縦棒グラフ
+		var col_data=[];
+
+		function col_charts(val1, val2, val3) {
+			var a, b, c, d;
+			var m1 = 0, m2 = 0, m3 = 0, m4 = 0;
+			var x1, x2, x3;
+			var one = 0, two = 0, three = 0, four = 0;
+			var dt;
+			var course_name;
+			var course_detail_name;
+			var course_detail_no = val3;
+
+			for (var i = 0; i < datas.length; i++) {
+				//縦棒グラフのため値でデータを取得する
+				if ((datas[i].offer_no == val1) && (datas[i].course_id == val2) && (datas[i].course_detail_no == val3)){
+
+					if ((datas[i].answer_dt != "") && (datas[i].answer_dt != null ) && (dt == null)){
+						dt = datas[i].answer_dt;
+					}
+					course_name=datas[0].course_name;
+					course_detail_name=datas[0].course_detail_name;
+					if (datas[i].result_kbn == '001'){
+						a = Number(datas[i].detail_result_marks);
+						m1 += Number(datas[i].detail_total_marks);
+						one += a;
+					}else if (datas[i].result_kbn == '002'){
+						b = Number(datas[i].detail_result_marks);
+						m2 += Number(datas[i].detail_total_marks);
+						two += b;
+					}else if (datas[i].result_kbn == '003'){
+						c = Number(datas[i].detail_result_marks);
+						m3 +=Number(datas[i].detail_total_marks);
+						three += c;
+					}else if (datas[i].result_kbn == '004'){
+						d = Number(datas[i].detail_result_marks);
+						m4 +=Number(datas[i].detail_total_marks);
+						four += d;
+					}
+				}
+			}
+
+			per1=(one / m1) * 100;
+			per2=(two / m2) * 100;
+			per3=(three / m3) * 100;
+			per4=(four / m4) * 100;
+
+			//合計得点
+			mark_total = +one + +two + +three + +four;
+			//各マークを担当する
+			document.getElementById("total_marks").innerHTML = mark_total ;
+			document.getElementById("content").innerHTML = one + ' / ' + m1 + ' 点';
+			document.getElementById("compos").innerHTML = two + ' / ' + m2 + ' 点';
+			document.getElementById("vocub").innerHTML = three + ' / ' + m3 + ' 点';
+			document.getElementById("grammar").innerHTML = four + ' / ' + m4 + ' 点';
+
+			var e = +m1 + +m2 + +m3+ +m4;
+	 		document.getElementById("max_marks").innerHTML = e + ' 点' ;
+		 	document.getElementById("answer_date").innerHTML =  dt;
+
+			google.charts.load("current", {packages:['corechart']});
+			google.charts.setOnLoadCallback(drawChart1);
+
+			function drawChart1() {
+				var dataTable = new google.visualization.DataTable();
+				dataTable.addColumn('string', 'Part');
+				dataTable.addColumn('number', 'Marks');
+				// A column for custom tooltip content
+				dataTable.addColumn({type: 'string', role: 'tooltip'});
+				dataTable.addColumn({type: 'string', role: 'style'});
+				dataTable.addRows([
+					['内容', per1 ,one+ '点',"color:#5e5899"],
+					['構成', per2 ,two + '点',"color:#d83c3c"],
+					['語彙', per3,three+ '点',"color:#f2cb1f" ],
+					['文法', per4,four + '点',"color:#9ACD32" ]
+				]);
+
+				var options = { legend: { position: "none" },
+								bar: {groupWidth: "50%"},
+								vAxis: {
+								tooltip: {isHtml: true},
+								minValue: 0,
+								maxValue: 100,
+								format: '#\'%\''
+								} };
+				var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+				chart.draw(dataTable, options);
+			}
+		}
+	{/literal}
+	</script>
+	<script type="text/javascript">
+		{literal}
+
+		function changeCourse( org_no, offer_no, course_id, course_detail_no, student_no, action){
+
+			var menuOpen = document.getElementById('menuOpen').value;
+			var menuStatus = document.getElementById('menuStatus').value;
+			var home_dir = document.getElementById('home_dir').value;
+
+			$("#main_form").attr("action", action);
+			$("#offer_no").val(offer_no);
+			$("#org_no").val(org_no);
+			$("#course_id").val(course_id);
+			$("#course_detail_no").val(course_detail_no);
+			$("#student_no").val(student_no);
+			$("#menuOpen").val(menuOpen);
+			$("#menuStatus").val(menuStatus);
+			$("#main_form").submit();
+		}
+
+		{/literal}
+	</script>
+	<script>
+			$(document).ready(function(){
+
+				var title=document.getElementsByClassName("content");
+				title[0].style.display="";
+
+				//バックボタンを消す
+				document.getElementById("back").style.display="";
+				var divBody=document.getElementsByClassName("divBody");
+				divBody[0].style.top="70px";
+
+				//画面上のマインタイトルを消す
+				var divHeader=document.getElementsByClassName("divHeader");
+				divHeader[0].style.display="";
+
+			});
+	</script>
+</body>
+</html>

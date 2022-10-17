@@ -1,0 +1,2466 @@
+2021-08-26 12:21:44,593 DEBUG [151630] [] Request URI : /eccadmin_dev/QuizList
+2021-08-26 12:21:44,594 DEBUG [151630] [] QuizListController start
+2021-08-26 12:21:44,594 DEBUG [151630] [] controllers/QuizListController.php: is exist
+2021-08-26 12:21:44,595 DEBUG [151630] [] QuizListForm: is exist
+2021-08-26 12:21:44,595 DEBUG [151630] [] QuizListForm: form value set 
+2021-08-26 12:21:44,596 DEBUG [151630] [] ------------------------------/eccadmin_dev/QuizList
+2021-08-26 12:21:44,596 DEBUG [151630] [] indexAction start
+2021-08-26 12:21:44,596 DEBUG [151630] [] admin_no is 1
+2021-08-26 12:21:44,727 DEBUG [151630] [] indexAction end
+2021-08-26 12:21:44,727 DEBUG [151630] [] QuizListController end
+2021-08-26 12:21:44,728 DEBUG [151630] [] finally
+2021-08-26 12:21:50,975 DEBUG [151623] [] Request URI : /eccadmin_dev/QuizList/Search
+2021-08-26 12:21:50,976 DEBUG [151623] [] QuizListController start
+2021-08-26 12:21:50,976 DEBUG [151623] [] controllers/QuizListController.php: is exist
+2021-08-26 12:21:50,977 DEBUG [151623] [] QuizListForm: is exist
+2021-08-26 12:21:50,977 DEBUG [151623] [] QuizListForm: form value set 
+2021-08-26 12:21:50,978 DEBUG [151623] [] ------------------------------/eccadmin_dev/QuizList/Search
+2021-08-26 12:21:50,978 DEBUG [151623] [] SearchAction start
+2021-08-26 12:21:50,978 DEBUG [151623] [] admin_no is 1
+2021-08-26 12:21:50,978 DEBUG [151623] [] QuizListForm Object
+(
+    [org_no] => 99999
+    [quiz_no] => 
+    [quiz_name] => 
+    [remark] => 
+    [rd_status1] => 0
+    [quiz_content] => 
+    [name] => 
+    [del_flg] => 
+    [updater_id] => 
+    [search_quiz_name] => 
+    [search_quiz_content] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_org_id] => ecc
+    [search_page] => 0
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 6ea807b6271f68884b849e195119594c
+    [admin_kbn] => 001
+    [page] => 1
+)
+
+2021-08-26 12:21:50,979 DEBUG [151623] [] Array
+(
+    [0] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10191
+            [quiz_name] => Grammer
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 1
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+    [1] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10193
+            [quiz_name] => quiz 1
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 1
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+    [2] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10192
+            [quiz_name] => quiz 2
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 2
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+)
+
+2021-08-26 12:21:51,055 DEBUG [151623] [] SearchAction end
+2021-08-26 12:21:51,055 DEBUG [151623] [] QuizListController end
+2021-08-26 12:21:51,055 DEBUG [151623] [] finally
+2021-08-26 12:21:57,823 DEBUG [151633] [] Request URI : /eccadmin_dev/QuizList/Search
+2021-08-26 12:21:57,824 DEBUG [151633] [] QuizListController start
+2021-08-26 12:21:57,824 DEBUG [151633] [] controllers/QuizListController.php: is exist
+2021-08-26 12:21:57,824 DEBUG [151633] [] QuizListForm: is exist
+2021-08-26 12:21:57,824 DEBUG [151633] [] QuizListForm: form value set 
+2021-08-26 12:21:57,825 DEBUG [151633] [] ------------------------------/eccadmin_dev/QuizList/Search
+2021-08-26 12:21:57,825 DEBUG [151633] [] SearchAction start
+2021-08-26 12:21:57,825 DEBUG [151633] [] admin_no is 1
+2021-08-26 12:21:57,826 DEBUG [151633] [] QuizListForm Object
+(
+    [org_no] => 99999
+    [quiz_no] => 
+    [quiz_name] => 
+    [remark] => 
+    [rd_status1] => 0
+    [quiz_content] => 
+    [name] => 
+    [del_flg] => 
+    [updater_id] => 
+    [search_quiz_name] => 
+    [search_quiz_content] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_org_id] => ecc
+    [search_page] => 0
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 9b33592c0048c80bd5787a0ef49f93c8
+    [admin_kbn] => 001
+    [page] => 1
+)
+
+2021-08-26 12:21:57,827 DEBUG [151633] [] Array
+(
+    [0] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10191
+            [quiz_name] => Grammer
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 1
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+    [1] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10193
+            [quiz_name] => quiz 1
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 1
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+    [2] => T_QuizDto Object
+        (
+            [org_no] => 
+            [quiz_no] => 10192
+            [quiz_name] => quiz 2
+            [quiz_type] => 
+            [answer_time] => 
+            [quiz_content] => quiz 2
+            [image_name] => 
+            [audio_name] => 
+            [correct1] => 
+            [correct2] => 
+            [incorrect1] => 
+            [incorrect2] => 
+            [incorrect3] => 
+            [hint] => 
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [name] => 4択
+        )
+
+)
+
+2021-08-26 12:21:57,887 DEBUG [151633] [] SearchAction end
+2021-08-26 12:21:57,887 DEBUG [151633] [] QuizListController end
+2021-08-26 12:21:57,887 DEBUG [151633] [] finally
+2021-08-26 12:21:59,809 DEBUG [151633] [] Request URI : /eccadmin_dev/TestList
+2021-08-26 12:21:59,810 DEBUG [151633] [] TestListController start
+2021-08-26 12:21:59,810 DEBUG [151633] [] controllers/TestListController.php: is exist
+2021-08-26 12:21:59,810 DEBUG [151633] [] TestListForm: is exist
+2021-08-26 12:21:59,810 DEBUG [151633] [] TestListForm: form value set 
+2021-08-26 12:21:59,811 DEBUG [151633] [] ------------------------------/eccadmin_dev/TestList
+2021-08-26 12:21:59,811 DEBUG [151633] [] indexAction start
+2021-08-26 12:21:59,811 DEBUG [151633] [] admin_no is 1
+2021-08-26 12:21:59,811 DEBUG [151633] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 7cda48a9cc3d2ce741ed4ac73c6a5949
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2021-08-26 12:21:59,812 DEBUG [151633] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:21:59,813 DEBUG [151633] [] count of list :4
+2021-08-26 12:21:59,920 DEBUG [151633] [] indexAction end
+2021-08-26 12:21:59,920 DEBUG [151633] [] TestListController end
+2021-08-26 12:21:59,920 DEBUG [151633] [] finally
+2021-08-26 12:22:06,840 DEBUG [151626] [] Request URI : /eccadmin_dev/QuizAssignmentCheckbox/index
+2021-08-26 12:22:06,841 DEBUG [151626] [] QuizAssignmentCheckboxController start
+2021-08-26 12:22:06,841 DEBUG [151626] [] controllers/QuizAssignmentCheckboxController.php: is exist
+2021-08-26 12:22:06,841 DEBUG [151626] [] QuizAssignmentCheckboxForm: is exist
+2021-08-26 12:22:06,842 DEBUG [151626] [] QuizAssignmentCheckboxForm: form value set 
+2021-08-26 12:22:06,842 DEBUG [151626] [] ------------------------------/eccadmin_dev/QuizAssignmentCheckbox/index
+2021-08-26 12:22:06,842 DEBUG [151626] [] ------------------------------session_check_true
+2021-08-26 12:22:06,842 DEBUG [151626] [] indexAction start
+2021-08-26 12:22:06,843 DEBUG [151626] [] admin_no is 1
+2021-08-26 12:22:06,946 DEBUG [151626] [] indexAction end
+2021-08-26 12:22:06,947 DEBUG [151626] [] QuizAssignmentCheckboxController end
+2021-08-26 12:22:06,947 DEBUG [151626] [] finally
+2021-08-26 12:22:08,325 DEBUG [151626] [] Request URI : /eccadmin_dev/QuizAssignmentCheckbox/search
+2021-08-26 12:22:08,326 DEBUG [151626] [] QuizAssignmentCheckboxController start
+2021-08-26 12:22:08,326 DEBUG [151626] [] controllers/QuizAssignmentCheckboxController.php: is exist
+2021-08-26 12:22:08,326 DEBUG [151626] [] QuizAssignmentCheckboxForm: is exist
+2021-08-26 12:22:08,326 DEBUG [151626] [] QuizAssignmentCheckboxForm: form value set 
+2021-08-26 12:22:08,327 DEBUG [151626] [] ------------------------------/eccadmin_dev/QuizAssignmentCheckbox/search
+2021-08-26 12:22:08,327 DEBUG [151626] [] ------------------------------session_check_true
+2021-08-26 12:22:08,327 DEBUG [151626] [] searchAction start
+2021-08-26 12:22:08,327 DEBUG [151626] [] admin_no is 1
+2021-08-26 12:22:08,408 DEBUG [151626] [] searchAction end
+2021-08-26 12:22:08,408 DEBUG [151626] [] QuizAssignmentCheckboxController end
+2021-08-26 12:22:08,408 DEBUG [151626] [] finally
+2021-08-26 12:22:11,039 DEBUG [151626] [] Request URI : /eccadmin_dev/TestRegist/back
+2021-08-26 12:22:11,039 DEBUG [151626] [] TestRegistController start
+2021-08-26 12:22:11,039 DEBUG [151626] [] controllers/TestRegistController.php: is exist
+2021-08-26 12:22:11,040 DEBUG [151626] [] TestRegistForm: is exist
+2021-08-26 12:22:11,040 DEBUG [151626] [] TestRegistForm: form value set 
+2021-08-26 12:22:11,040 DEBUG [151626] [] ------------------------------/eccadmin_dev/TestRegist/back
+2021-08-26 12:22:11,041 DEBUG [151626] [] ------------------------------session_check_true
+2021-08-26 12:22:11,041 DEBUG [151626] [] backAction start
+2021-08-26 12:22:11,041 DEBUG [151626] [] backAction end
+2021-08-26 12:22:11,041 DEBUG [151626] [] TestRegistController end
+2021-08-26 12:22:11,041 DEBUG [151626] [] finally
+2021-08-26 12:22:11,067 DEBUG [151626] [] Request URI : /eccadmin_dev/TestList/Search
+2021-08-26 12:22:11,067 DEBUG [151626] [] TestListController start
+2021-08-26 12:22:11,067 DEBUG [151626] [] controllers/TestListController.php: is exist
+2021-08-26 12:22:11,068 DEBUG [151626] [] TestListForm: is exist
+2021-08-26 12:22:11,068 DEBUG [151626] [] TestListForm: form value set 
+2021-08-26 12:22:11,068 DEBUG [151626] [] ------------------------------/eccadmin_dev/TestList/Search
+2021-08-26 12:22:11,068 DEBUG [151626] [] SearchAction start
+2021-08-26 12:22:11,068 DEBUG [151626] [] admin_no is 1
+2021-08-26 12:22:11,069 DEBUG [151626] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => a0447f1e4d2d7a629dba90d07127747f
+    [admin_kbn] => 001
+)
+
+2021-08-26 12:22:11,069 DEBUG [151626] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:22:11,070 DEBUG [151626] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+)
+
+2021-08-26 12:22:11,147 DEBUG [151626] [] SearchAction end
+2021-08-26 12:22:11,147 DEBUG [151626] [] TestListController end
+2021-08-26 12:22:11,148 DEBUG [151626] [] finally
+2021-08-26 12:22:13,140 DEBUG [151626] [] Request URI : /eccadmin_dev/TestCopy/index
+2021-08-26 12:22:13,141 DEBUG [151626] [] TestCopyController start
+2021-08-26 12:22:13,141 DEBUG [151626] [] controllers/TestCopyController.php: is exist
+2021-08-26 12:22:13,144 DEBUG [151626] [] TestCopyForm: is exist
+2021-08-26 12:22:13,145 DEBUG [151626] [] TestCopyForm: form value set 
+2021-08-26 12:22:13,145 DEBUG [151626] [] ------------------------------/eccadmin_dev/TestCopy/index
+2021-08-26 12:22:13,145 DEBUG [151626] [] ------------------------------session_check_true
+2021-08-26 12:22:13,145 DEBUG [151626] [] indexAction start
+2021-08-26 12:22:13,146 DEBUG [151626] [] admin_no is 1
+2021-08-26 12:22:13,146 DEBUG [151626] [] org_no : 99999
+2021-08-26 12:22:13,147 DEBUG [151626] [] test_no
+2021-08-26 12:22:13,235 DEBUG [151626] [] indexAction end
+2021-08-26 12:22:13,235 DEBUG [151626] [] TestCopyController end
+2021-08-26 12:22:13,235 DEBUG [151626] [] finally
+2021-08-26 12:22:19,158 DEBUG [151631] [] Request URI : /eccadmin_dev/TestCopy/orgShow
+2021-08-26 12:22:19,159 DEBUG [151631] [] TestCopyController start
+2021-08-26 12:22:19,159 DEBUG [151631] [] controllers/TestCopyController.php: is exist
+2021-08-26 12:22:19,160 DEBUG [151631] [] TestCopyForm: is exist
+2021-08-26 12:22:19,160 DEBUG [151631] [] TestCopyForm: form value set 
+2021-08-26 12:22:19,160 DEBUG [151631] [] ------------------------------/eccadmin_dev/TestCopy/orgShow
+2021-08-26 12:22:19,160 DEBUG [151631] [] ------------------------------session_check_true
+2021-08-26 12:22:19,161 DEBUG [151631] [] orgShowAction start
+2021-08-26 12:22:19,161 DEBUG [151631] [] admin_no is 1
+2021-08-26 12:22:19,250 DEBUG [151631] [] orgShowAction end
+2021-08-26 12:22:19,250 DEBUG [151631] [] TestCopyController end
+2021-08-26 12:22:19,250 DEBUG [151631] [] finally
+2021-08-26 12:22:22,245 DEBUG [151631] [] Request URI : /eccadmin_dev/TestRegist/save
+2021-08-26 12:22:22,245 DEBUG [151631] [] TestRegistController start
+2021-08-26 12:22:22,246 DEBUG [151631] [] controllers/TestRegistController.php: is exist
+2021-08-26 12:22:22,246 DEBUG [151631] [] TestRegistForm: is exist
+2021-08-26 12:22:22,246 DEBUG [151631] [] TestRegistForm: form value set 
+2021-08-26 12:22:22,247 DEBUG [151631] [] ------------------------------/eccadmin_dev/TestRegist/save
+2021-08-26 12:22:22,247 DEBUG [151631] [] ------------------------------session_check_true
+2021-08-26 12:22:22,247 DEBUG [151631] [] saveAction start
+2021-08-26 12:22:22,341 DEBUG [151631] [] saveAction end
+2021-08-26 12:22:22,341 DEBUG [151631] [] TestRegistController end
+2021-08-26 12:22:22,341 DEBUG [151631] [] finally
+2021-08-26 12:23:15,110 DEBUG [151624] [] Request URI : /eccadmin_dev/TestList
+2021-08-26 12:23:15,111 DEBUG [151624] [] TestListController start
+2021-08-26 12:23:15,111 DEBUG [151624] [] controllers/TestListController.php: is exist
+2021-08-26 12:23:15,111 DEBUG [151624] [] TestListForm: is exist
+2021-08-26 12:23:15,111 DEBUG [151624] [] TestListForm: form value set 
+2021-08-26 12:23:15,112 DEBUG [151624] [] ------------------------------/eccadmin_dev/TestList
+2021-08-26 12:23:15,112 DEBUG [151624] [] indexAction start
+2021-08-26 12:23:15,112 DEBUG [151624] [] admin_no is 1
+2021-08-26 12:23:15,112 DEBUG [151624] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 91e551610f3580103905d2f5eebef84b
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2021-08-26 12:23:15,113 DEBUG [151624] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:23:15,114 DEBUG [151624] [] count of list :4
+2021-08-26 12:23:15,198 DEBUG [151624] [] indexAction end
+2021-08-26 12:23:15,198 DEBUG [151624] [] TestListController end
+2021-08-26 12:23:15,198 DEBUG [151624] [] finally
+2021-08-26 12:23:21,397 DEBUG [150231] [] Request URI : /eccadmin_dev/TestCopy/index
+2021-08-26 12:23:21,397 DEBUG [150231] [] TestCopyController start
+2021-08-26 12:23:21,397 DEBUG [150231] [] controllers/TestCopyController.php: is exist
+2021-08-26 12:23:21,398 DEBUG [150231] [] TestCopyForm: is exist
+2021-08-26 12:23:21,398 DEBUG [150231] [] TestCopyForm: form value set 
+2021-08-26 12:23:21,399 DEBUG [150231] [] ------------------------------/eccadmin_dev/TestCopy/index
+2021-08-26 12:23:21,399 DEBUG [150231] [] ------------------------------session_check_true
+2021-08-26 12:23:21,399 DEBUG [150231] [] indexAction start
+2021-08-26 12:23:21,399 DEBUG [150231] [] admin_no is 1
+2021-08-26 12:23:21,399 DEBUG [150231] [] org_no : 99999
+2021-08-26 12:23:21,401 DEBUG [150231] [] test_no
+2021-08-26 12:23:21,487 DEBUG [150231] [] indexAction end
+2021-08-26 12:23:21,488 DEBUG [150231] [] TestCopyController end
+2021-08-26 12:23:21,488 DEBUG [150231] [] finally
+2021-08-26 12:23:24,758 DEBUG [150231] [] Request URI : /eccadmin_dev/TestCopy/orgShow
+2021-08-26 12:23:24,758 DEBUG [150231] [] TestCopyController start
+2021-08-26 12:23:24,759 DEBUG [150231] [] controllers/TestCopyController.php: is exist
+2021-08-26 12:23:24,759 DEBUG [150231] [] TestCopyForm: is exist
+2021-08-26 12:23:24,759 DEBUG [150231] [] TestCopyForm: form value set 
+2021-08-26 12:23:24,760 DEBUG [150231] [] ------------------------------/eccadmin_dev/TestCopy/orgShow
+2021-08-26 12:23:24,760 DEBUG [150231] [] ------------------------------session_check_true
+2021-08-26 12:23:24,760 DEBUG [150231] [] orgShowAction start
+2021-08-26 12:23:24,760 DEBUG [150231] [] admin_no is 1
+2021-08-26 12:23:24,844 DEBUG [150231] [] orgShowAction end
+2021-08-26 12:23:24,844 DEBUG [150231] [] TestCopyController end
+2021-08-26 12:23:24,844 DEBUG [150231] [] finally
+2021-08-26 12:23:26,891 DEBUG [150231] [] Request URI : /eccadmin_dev/TestCopy/save
+2021-08-26 12:23:26,892 DEBUG [150231] [] TestCopyController start
+2021-08-26 12:23:26,892 DEBUG [150231] [] controllers/TestCopyController.php: is exist
+2021-08-26 12:23:26,892 DEBUG [150231] [] TestCopyForm: is exist
+2021-08-26 12:23:26,892 DEBUG [150231] [] TestCopyForm: form value set 
+2021-08-26 12:23:26,893 DEBUG [150231] [] ------------------------------/eccadmin_dev/TestCopy/save
+2021-08-26 12:23:26,893 DEBUG [150231] [] ------------------------------session_check_true
+2021-08-26 12:23:26,893 DEBUG [150231] [] saveAction start
+2021-08-26 12:23:26,894 DEBUG [150231] [] Error : 1
+2021-08-26 12:23:26,894 DEBUG [150231] [] T_TestDto Object
+(
+    [org_no] => 2
+    [test_no] => 1698
+    [test_name] => Copy Test 1
+    [test_type] => 
+    [test_type_name] => 
+    [test_quiz_count] => 5
+    [description] => test copy from 99999
+    [status] => 1
+    [start_period] => 2021/08/26
+    [end_period] => 2999/12/31 23:59:59
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 2021/08/26 12:23:26
+    [updater_id] => 1
+)
+
+2021-08-26 12:23:26,980 DEBUG [150231] [] saveAction end
+2021-08-26 12:23:26,980 DEBUG [150231] [] TestCopyController end
+2021-08-26 12:23:26,980 DEBUG [150231] [] finally
+2021-08-26 12:23:59,472 DEBUG [151633] [] Request URI : /eccadmin_dev/QuizList
+2021-08-26 12:23:59,473 DEBUG [151633] [] QuizListController start
+2021-08-26 12:23:59,473 DEBUG [151633] [] controllers/QuizListController.php: is exist
+2021-08-26 12:23:59,473 DEBUG [151633] [] QuizListForm: is exist
+2021-08-26 12:23:59,473 DEBUG [151633] [] QuizListForm: form value set 
+2021-08-26 12:23:59,474 DEBUG [151633] [] ------------------------------/eccadmin_dev/QuizList
+2021-08-26 12:23:59,474 DEBUG [151633] [] indexAction start
+2021-08-26 12:23:59,474 DEBUG [151633] [] admin_no is 1
+2021-08-26 12:23:59,535 DEBUG [151633] [] indexAction end
+2021-08-26 12:23:59,535 DEBUG [151633] [] QuizListController end
+2021-08-26 12:23:59,535 DEBUG [151633] [] finally
+2021-08-26 12:24:00,885 DEBUG [151633] [] Request URI : /eccadmin_dev/TestList
+2021-08-26 12:24:00,886 DEBUG [151633] [] TestListController start
+2021-08-26 12:24:00,886 DEBUG [151633] [] controllers/TestListController.php: is exist
+2021-08-26 12:24:00,886 DEBUG [151633] [] TestListForm: is exist
+2021-08-26 12:24:00,886 DEBUG [151633] [] TestListForm: form value set 
+2021-08-26 12:24:00,887 DEBUG [151633] [] ------------------------------/eccadmin_dev/TestList
+2021-08-26 12:24:00,887 DEBUG [151633] [] indexAction start
+2021-08-26 12:24:00,887 DEBUG [151633] [] admin_no is 1
+2021-08-26 12:24:00,887 DEBUG [151633] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 3aa7e9b2dc1bfcc7462c62c717c1971e
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2021-08-26 12:24:00,888 DEBUG [151633] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:24:00,889 DEBUG [151633] [] count of list :4
+2021-08-26 12:24:00,972 DEBUG [151633] [] indexAction end
+2021-08-26 12:24:00,973 DEBUG [151633] [] TestListController end
+2021-08-26 12:24:00,973 DEBUG [151633] [] finally
+2021-08-26 12:24:23,667 DEBUG [151621] [] Request URI : /eccadmin_dev/TestList/Search
+2021-08-26 12:24:23,667 DEBUG [151621] [] TestListController start
+2021-08-26 12:24:23,668 DEBUG [151621] [] controllers/TestListController.php: is exist
+2021-08-26 12:24:23,668 DEBUG [151621] [] TestListForm: is exist
+2021-08-26 12:24:23,668 DEBUG [151621] [] TestListForm: form value set 
+2021-08-26 12:24:23,669 DEBUG [151621] [] ------------------------------/eccadmin_dev/TestList/Search
+2021-08-26 12:24:23,669 DEBUG [151621] [] SearchAction start
+2021-08-26 12:24:23,669 DEBUG [151621] [] admin_no is 1
+2021-08-26 12:24:23,669 DEBUG [151621] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => gic
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => e96e80a879fe7bca2873483d349a09e7
+    [admin_kbn] => 001
+)
+
+2021-08-26 12:24:23,670 DEBUG [151621] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:24:23,673 DEBUG [151621] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 985
+            [test_name] => AMK EIGHT
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 55
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 885
+            [test_name] => bpwint
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 77
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 502
+            [test_name] => Group 1 Testing
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 510
+            [test_name] => Group 1 Testing
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 437
+            [test_name] => Group 1 Testing 2 times
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 408
+            [test_name] => Group 1 Testing 3 Times
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 512
+            [test_name] => Group 1 Testing222222222222222
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 410
+            [test_name] => Group1 Testing 3 Times
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 412
+            [test_name] => Group1 Testing 4 Times
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 228
+            [test_name] => IELTS
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2018/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading test
+            [quiz_count] => 0
+        )
+
+    [10] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 78
+            [test_name] => IELTS Part1
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2018/02/16
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading test
+            [quiz_count] => 0
+        )
+
+    [11] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 240
+            [test_name] => IELTS Part3 Listening
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2018/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading test
+            [quiz_count] => 0
+        )
+
+    [12] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 343
+            [test_name] => Japanese
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [13] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 89
+            [test_name] => Japanese
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 2
+            [quiz_count] => 0
+        )
+
+    [14] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 87
+            [test_name] => Japanese11
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 1
+            [quiz_count] => 10
+        )
+
+    [15] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 194
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammar Test 10
+            [quiz_count] => 0
+        )
+
+    [16] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 196
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammar Test 11
+            [quiz_count] => 0
+        )
+
+    [17] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 176
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 1
+            [quiz_count] => 0
+        )
+
+    [18] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 178
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 2
+            [quiz_count] => 0
+        )
+
+    [19] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 180
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 3
+            [quiz_count] => 0
+        )
+
+    [20] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 182
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 4
+            [quiz_count] => 0
+        )
+
+    [21] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 184
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 5
+            [quiz_count] => 0
+        )
+
+    [22] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 187
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 7
+            [quiz_count] => 0
+        )
+
+    [23] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 189
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Grammer Test 8
+            [quiz_count] => 0
+        )
+
+    [24] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 135
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 1
+            [quiz_count] => 0
+        )
+
+    [25] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 133
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 10
+            [quiz_count] => 0
+        )
+
+    [26] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 137
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 2
+            [quiz_count] => 0
+        )
+
+    [27] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 119
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 3
+            [quiz_count] => 0
+        )
+
+    [28] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 121
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 4
+            [quiz_count] => 0
+        )
+
+    [29] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 131
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Listening Lesson 9
+            [quiz_count] => 0
+        )
+
+    [30] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 94
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 1
+            [quiz_count] => 0
+        )
+
+    [31] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 96
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 2
+            [quiz_count] => 0
+        )
+
+    [32] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 99
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 2
+            [quiz_count] => 0
+        )
+
+    [33] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 101
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 4
+            [quiz_count] => 0
+        )
+
+    [34] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 103
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 5
+            [quiz_count] => 0
+        )
+
+    [35] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 105
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Lesson 6
+            [quiz_count] => 0
+        )
+
+    [36] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 165
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 1
+            [quiz_count] => 0
+        )
+
+    [37] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 167
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 2
+            [quiz_count] => 0
+        )
+
+    [38] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 169
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 3
+            [quiz_count] => 0
+        )
+
+    [39] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 171
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 4
+            [quiz_count] => 0
+        )
+
+    [40] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 174
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 6
+            [quiz_count] => 0
+        )
+
+    [41] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 191
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading Test 8
+            [quiz_count] => 0
+        )
+
+    [42] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 146
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 2
+            [quiz_count] => 0
+        )
+
+    [43] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 140
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 2
+            [quiz_count] => 0
+        )
+
+    [44] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 142
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 3
+            [quiz_count] => 0
+        )
+
+    [45] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 148
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 3
+            [quiz_count] => 0
+        )
+
+    [46] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 150
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 4
+            [quiz_count] => 0
+        )
+
+    [47] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 144
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 4
+            [quiz_count] => 0
+        )
+
+    [48] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 152
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 5
+            [quiz_count] => 0
+        )
+
+    [49] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 154
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 6
+            [quiz_count] => 0
+        )
+
+    [50] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 156
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 7
+            [quiz_count] => 0
+        )
+
+    [51] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 158
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 8
+            [quiz_count] => 0
+        )
+
+    [52] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 160
+            [test_name] => JLPT
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Vocatbulary Lesson 9
+            [quiz_count] => 0
+        )
+
+    [53] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 878
+            [test_name] => MPP
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 44
+        )
+
+    [54] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 982
+            [test_name] => MPP FIFTH
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => fff
+            [quiz_count] => 44
+        )
+
+    [55] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 981
+            [test_name] => MPP FORTH
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [56] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 999
+            [test_name] => MPP HHHH
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => fff
+            [quiz_count] => 66
+        )
+
+    [57] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 1000
+            [test_name] => MPP JJJJMMMMM
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => fff
+            [quiz_count] => 0
+        )
+
+    [58] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 1002
+            [test_name] => MPP PPM
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 77
+        )
+
+    [59] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 984
+            [test_name] => MPP SEVEN
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [60] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 983
+            [test_name] => MPP SIX
+            [test_type] => 
+            [test_type_name] => 一回のみ
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 44
+        )
+
+    [61] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 1001
+            [test_name] => MPP TEST
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 44
+        )
+
+    [62] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 58
+            [test_name] => Test
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [63] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 406
+            [test_name] => Test 1 ( Group 1)
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Group 1 Testing
+            [quiz_count] => 0
+        )
+
+    [64] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 881
+            [test_name] => TODAY
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 44
+        )
+
+    [65] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 55
+            [test_name] => Toeic
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [66] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 60
+            [test_name] => Toeic1
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 非公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+    [67] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 941
+            [test_name] => vv
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 66
+        )
+
+    [68] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 882
+            [test_name] => vvMay THet
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2017/10/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => 
+            [quiz_count] => 44
+        )
+
+    [69] => T_TestDto Object
+        (
+            [org_no] => 2
+            [test_no] => 83
+            [test_name] => 日本語　level 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2018/03/17
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => gic
+            [remark] => Reading test
+            [quiz_count] => 10
+        )
+
+)
+
+2021-08-26 12:24:23,828 DEBUG [151621] [] SearchAction end
+2021-08-26 12:24:23,828 DEBUG [151621] [] TestListController end
+2021-08-26 12:24:23,828 DEBUG [151621] [] finally
+2021-08-26 12:24:30,560 DEBUG [151634] [] Request URI : /eccadmin_dev/TestList/Search
+2021-08-26 12:24:30,560 DEBUG [151634] [] TestListController start
+2021-08-26 12:24:30,560 DEBUG [151634] [] controllers/TestListController.php: is exist
+2021-08-26 12:24:30,561 DEBUG [151634] [] TestListForm: is exist
+2021-08-26 12:24:30,561 DEBUG [151634] [] TestListForm: form value set 
+2021-08-26 12:24:30,562 DEBUG [151634] [] ------------------------------/eccadmin_dev/TestList/Search
+2021-08-26 12:24:30,562 DEBUG [151634] [] SearchAction start
+2021-08-26 12:24:30,562 DEBUG [151634] [] admin_no is 1
+2021-08-26 12:24:30,562 DEBUG [151634] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => Copy Test 1
+    [start_period] => 2021/07/26
+    [end_period] => 2021/09/26
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => gic
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => e4aee996f4a2bd2c79a39f512e7962b3
+    [admin_kbn] => 001
+)
+
+2021-08-26 12:24:30,563 DEBUG [151634] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-08-26 12:24:30,648 DEBUG [151634] [] SearchAction end
+2021-08-26 12:24:30,648 DEBUG [151634] [] TestListController end
+2021-08-26 12:24:30,648 DEBUG [151634] [] finally
+2021-08-26 18:50:06,622 DEBUG [158905] [] Request URI : /eccadmin_dev/Login/logout
+2021-08-26 18:50:06,622 DEBUG [158905] [] LoginController start
+2021-08-26 18:50:06,623 DEBUG [158905] [] controllers/LoginController.php: is exist
+2021-08-26 18:50:06,623 DEBUG [158905] [] LoginForm: is exist
+2021-08-26 18:50:06,623 DEBUG [158905] [] LoginForm: form value set 
+2021-08-26 18:50:06,623 DEBUG [158905] [] ------------------------------/eccadmin_dev/Login/logout
+2021-08-26 18:50:06,624 DEBUG [158905] [] ------------------------------login_start_check
+2021-08-26 18:50:06,624 DEBUG [158905] [] logoutAction start
+2021-08-26 18:50:06,624 DEBUG [158905] [] logoutAction end
+2021-08-26 18:50:06,624 DEBUG [158905] [] LoginController end
+2021-08-26 18:50:06,624 DEBUG [158905] [] finally
+2021-08-26 18:50:06,650 DEBUG [158905] [] Request URI : /eccadmin_dev/Login
+2021-08-26 18:50:06,651 DEBUG [158905] [] LoginController start
+2021-08-26 18:50:06,651 DEBUG [158905] [] controllers/LoginController.php: is exist
+2021-08-26 18:50:06,651 DEBUG [158905] [] LoginForm: is exist
+2021-08-26 18:50:06,651 DEBUG [158905] [] LoginForm: form value set 
+2021-08-26 18:50:06,652 DEBUG [158905] [] ------------------------------/eccadmin_dev/Login
+2021-08-26 18:50:06,652 DEBUG [158905] [] ------------------------------login_start_check
+2021-08-26 18:50:06,652 DEBUG [158905] [] indexAction start
+2021-08-26 18:50:06,747 DEBUG [158905] [] indexAction end
+2021-08-26 18:50:06,747 DEBUG [158905] [] LoginController end
+2021-08-26 18:50:06,748 DEBUG [158905] [] finally

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link href="css/default.css" rel="stylesheet">
+	<title>Push Left Menu Simple with jQuery</title>
+
+</head>
+
+<body class="pushmenu-push">
+	
+	<nav class="pushmenu pushmenu-left">
+		<ul id="menu" >
+			<li class="drawer-menu">
+				<h3>〇〇高校:〇〇先生</h3>
+			</li>
+		</ul>
+
+		<ul>
+			<li class="drawer-menu" id="menu_li_01">
+				<div>
+					<a href="index.html">index</a>
+				</div>
+			</li>
+		</ul>  
+		
+		<ul>
+			<li class="drawer-dropdown" id="menu_li_02">
+				<a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+				課題 <span class="drawer-caret"></span>
+				</a>
+				<ul class="drawer-dropdown-menu" style="display:none;">
+					<li><a class="drawer-dropdown-menu-item" href="./index.html" >課題一覧</a></li>
+					<li><a class="drawer-dropdown-menu-item" href="./indext.html" >課題登録</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li class="drawer-dropdown" id="menu_li_03">
+				<a class="drawer-menu-item" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+				通知 <span class="drawer-caret"></span>
+				</a>
+				<ul class="drawer-dropdown-menu" style="display:none;">
+					<li><a class="drawer-dropdown-menu-item" href="./index.html">通知一覧</a></li>
+					<li><a class="drawer-dropdown-menu-item" href="./index.html">通知登録</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul>
+			<li class="drawer-menu" id="menu_li_04">
+				<div>
+					<a href="index.html">index</a>
+				</div>
+			</li>
+		</ul>  
+	</nav>
+  
+	<div class="container">
+		<div class="main">
+			<section class="buttonset">
+				<div id="nav_list">Menuaaa</div>
+			</section>
+
+			<section class="content">
+				<h1>Slideout Navigation2</h1>
+				<p>
+
+				</p>
+
+			</section><!-- End Content -->
+		</div><!-- End Main -->
+	</div><!-- End Container --> 
+</body>
+
+  
+<script type='text/javascript'>
+
+	$(window).load(function(){
+		$(document).ready(function() {
+			$menuLeft = $('.pushmenu-left');
+			$nav_list = $('#nav_list');
+			
+			$nav_list.click(function() {
+				$(this).toggleClass('active');
+				$('.pushmenu-push').toggleClass('pushmenu-push-toright');
+				$menuLeft.toggleClass('pushmenu-open');
+			});
+		});
+	});
+
+	//menu 表示切替
+	$(".drawer-menu-item").on('click',function(){
+
+		//開いている場合
+		if($(this).next("ul").is(":visible")){
+		
+			$(this).next("ul").hide("normal");
+			$(this).children('span').removeClass("open");
+			$(this).parent().removeClass("open");
+			
+
+		} else {
+			
+			//全てを閉じる
+			$(".drawer-dropdown-menu").hide("normal");
+			$(".drawer-menu-item").children('span').removeClass("open");
+			$(".drawer-menu-item").parent().removeClass("open");
+		
+			$(this).next("ul").show("normal");
+			$(this).children('span').addClass("open");
+			$(this).parent().addClass("open");
+		}
+
+	});
+	
+	//表示再現
+	
+  
+  
+</script>
+
+</body>
+
+</html>
+

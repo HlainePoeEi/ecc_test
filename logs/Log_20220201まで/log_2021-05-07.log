@@ -1,0 +1,317 @@
+2021-05-07 18:28:02,761 DEBUG [91616] [] Request URI : /eccadmin_dev/Login/login
+2021-05-07 18:28:02,762 DEBUG [91616] [] LoginController start
+2021-05-07 18:28:02,762 DEBUG [91616] [] controllers/LoginController.php: is exist
+2021-05-07 18:28:02,762 DEBUG [91616] [] LoginForm: is exist
+2021-05-07 18:28:02,763 DEBUG [91616] [] LoginForm: form value set 
+2021-05-07 18:28:02,763 DEBUG [91616] [] ------------------------------/eccadmin_dev/Login/login
+2021-05-07 18:28:02,763 DEBUG [91616] [] ------------------------------login_start_check
+2021-05-07 18:28:02,763 DEBUG [91616] [] loginAction start
+2021-05-07 18:28:03,064 DEBUG [91616] [] loginAction end
+2021-05-07 18:28:03,064 DEBUG [91616] [] LoginController end
+2021-05-07 18:28:03,064 DEBUG [91616] [] finally
+2021-05-07 18:28:03,083 DEBUG [91616] [] Request URI : /eccadmin_dev/Menu
+2021-05-07 18:28:03,083 DEBUG [91616] [] MenuController start
+2021-05-07 18:28:03,083 DEBUG [91616] [] controllers/MenuController.php: is exist
+2021-05-07 18:28:03,083 DEBUG [91616] [] MenuForm: is exist
+2021-05-07 18:28:03,083 DEBUG [91616] [] MenuForm: form value set 
+2021-05-07 18:28:03,084 DEBUG [91616] [] ------------------------------/eccadmin_dev/Menu
+2021-05-07 18:28:03,084 DEBUG [91616] [] ------------------------------login_start_check
+2021-05-07 18:28:03,084 DEBUG [91616] [] indexAction start
+2021-05-07 18:28:03,084 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:28:03,108 DEBUG [91616] [] indexAction end
+2021-05-07 18:28:03,108 DEBUG [91616] [] MenuController end
+2021-05-07 18:28:03,108 DEBUG [91616] [] finally
+2021-05-07 18:28:10,417 DEBUG [91644] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:28:10,418 DEBUG [91644] [] ExcelLessonListController start
+2021-05-07 18:28:10,418 DEBUG [91644] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:28:10,420 DEBUG [91644] [] ExcelLessonListForm: is exist
+2021-05-07 18:28:10,420 DEBUG [91644] [] ExcelLessonListForm: form value set 
+2021-05-07 18:28:10,420 DEBUG [91644] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:28:10,421 DEBUG [91644] [] indexAction start
+2021-05-07 18:28:10,421 DEBUG [91644] [] admin_no is 1
+2021-05-07 18:28:10,504 DEBUG [91644] [] indexAction end
+2021-05-07 18:28:10,505 DEBUG [91644] [] ExcelLessonListController end
+2021-05-07 18:28:10,505 DEBUG [91644] [] finally
+2021-05-07 18:28:19,520 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:28:19,521 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:28:19,521 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:28:19,521 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:28:19,522 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:28:19,522 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:28:19,522 DEBUG [91966] [] showAction start
+2021-05-07 18:28:19,522 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:28:19,523 DEBUG [91966] [] showAction end
+2021-05-07 18:28:19,523 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:28:19,523 DEBUG [91966] [] finally
+2021-05-07 18:28:19,553 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:28:19,553 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:28:19,553 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:28:19,554 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:28:19,554 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:28:19,554 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:28:19,554 DEBUG [91966] [] viewExcelListAction start
+2021-05-07 18:28:19,554 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:28:19,713 DEBUG [91966] [] viewExcelListAction end
+2021-05-07 18:28:19,713 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:28:19,713 DEBUG [91966] [] finally
+2021-05-07 18:28:22,471 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:28:22,472 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:28:22,472 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:28:22,472 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:28:22,472 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:28:22,473 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:28:22,473 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:28:22,473 DEBUG [91966] [] duplicateCheckWocAction start
+2021-05-07 18:28:22,473 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:28:22,481 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:28:22,482 DEBUG [91966] [] lesson_no
+2021-05-07 18:28:22,488 DEBUG [91966] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:28:22,490 DEBUG [91966] [] lesson_no
+2021-05-07 18:28:22,491 DEBUG [91966] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:28:22,492 DEBUG [91966] [] duplicateCheckWocAction end
+2021-05-07 18:28:22,492 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:28:22,493 DEBUG [91966] [] finally
+2021-05-07 18:28:22,511 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:28:22,512 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:28:22,512 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:28:22,512 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:28:22,512 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:28:22,513 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:28:22,513 DEBUG [91966] [] indexAction start
+2021-05-07 18:28:22,513 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:28:22,592 DEBUG [91966] [] indexAction end
+2021-05-07 18:28:22,592 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:28:22,592 DEBUG [91966] [] finally
+2021-05-07 18:29:26,322 DEBUG [80863] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:29:26,322 DEBUG [80863] [] ExcelLessonListController start
+2021-05-07 18:29:26,322 DEBUG [80863] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:29:26,325 DEBUG [80863] [] ExcelLessonListForm: is exist
+2021-05-07 18:29:26,325 DEBUG [80863] [] ExcelLessonListForm: form value set 
+2021-05-07 18:29:26,325 DEBUG [80863] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:29:26,326 DEBUG [80863] [] indexAction start
+2021-05-07 18:29:26,326 DEBUG [80863] [] admin_no is 1
+2021-05-07 18:29:26,413 DEBUG [80863] [] indexAction end
+2021-05-07 18:29:26,414 DEBUG [80863] [] ExcelLessonListController end
+2021-05-07 18:29:26,414 DEBUG [80863] [] finally
+2021-05-07 18:29:35,418 DEBUG [91616] [] Request URI : /eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:29:35,418 DEBUG [91616] [] ExcelLessonListController start
+2021-05-07 18:29:35,418 DEBUG [91616] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:29:35,419 DEBUG [91616] [] ExcelLessonListForm: is exist
+2021-05-07 18:29:35,419 DEBUG [91616] [] ExcelLessonListForm: form value set 
+2021-05-07 18:29:35,420 DEBUG [91616] [] ------------------------------/eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:29:35,420 DEBUG [91616] [] showAction start
+2021-05-07 18:29:35,420 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:29:35,421 DEBUG [91616] [] showAction end
+2021-05-07 18:29:35,421 DEBUG [91616] [] ExcelLessonListController end
+2021-05-07 18:29:35,421 DEBUG [91616] [] finally
+2021-05-07 18:29:35,445 DEBUG [91616] [] Request URI : /eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:29:35,446 DEBUG [91616] [] ExcelLessonListController start
+2021-05-07 18:29:35,446 DEBUG [91616] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:29:35,446 DEBUG [91616] [] ExcelLessonListForm: is exist
+2021-05-07 18:29:35,446 DEBUG [91616] [] ExcelLessonListForm: form value set 
+2021-05-07 18:29:35,447 DEBUG [91616] [] ------------------------------/eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:29:35,447 DEBUG [91616] [] viewExcelListAction start
+2021-05-07 18:29:35,447 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:29:35,610 DEBUG [91616] [] viewExcelListAction end
+2021-05-07 18:29:35,610 DEBUG [91616] [] ExcelLessonListController end
+2021-05-07 18:29:35,610 DEBUG [91616] [] finally
+2021-05-07 18:29:37,463 DEBUG [91616] [] Request URI : /eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:29:37,464 DEBUG [91616] [] ExcelLessonListController start
+2021-05-07 18:29:37,464 DEBUG [91616] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:29:37,464 DEBUG [91616] [] ExcelLessonListForm: is exist
+2021-05-07 18:29:37,464 DEBUG [91616] [] ExcelLessonListForm: form value set 
+2021-05-07 18:29:37,465 DEBUG [91616] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:29:37,465 DEBUG [91616] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:29:37,465 DEBUG [91616] [] duplicateCheckWocAction start
+2021-05-07 18:29:37,465 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:29:37,473 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:29:37,474 DEBUG [91616] [] lesson_no
+2021-05-07 18:29:37,479 DEBUG [91616] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:29:37,482 DEBUG [91616] [] lesson_no
+2021-05-07 18:29:37,483 DEBUG [91616] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:29:37,484 DEBUG [91616] [] duplicateCheckWocAction end
+2021-05-07 18:29:37,485 DEBUG [91616] [] ExcelLessonListController end
+2021-05-07 18:29:37,485 DEBUG [91616] [] finally
+2021-05-07 18:29:37,509 DEBUG [91616] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:29:37,510 DEBUG [91616] [] ExcelLessonListController start
+2021-05-07 18:29:37,510 DEBUG [91616] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:29:37,510 DEBUG [91616] [] ExcelLessonListForm: is exist
+2021-05-07 18:29:37,510 DEBUG [91616] [] ExcelLessonListForm: form value set 
+2021-05-07 18:29:37,511 DEBUG [91616] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:29:37,511 DEBUG [91616] [] indexAction start
+2021-05-07 18:29:37,511 DEBUG [91616] [] admin_no is 1
+2021-05-07 18:29:37,594 DEBUG [91616] [] indexAction end
+2021-05-07 18:29:37,594 DEBUG [91616] [] ExcelLessonListController end
+2021-05-07 18:29:37,594 DEBUG [91616] [] finally
+2021-05-07 18:31:00,783 DEBUG [87763] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:31:00,784 DEBUG [87763] [] ExcelLessonListController start
+2021-05-07 18:31:00,784 DEBUG [87763] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:31:00,786 DEBUG [87763] [] ExcelLessonListForm: is exist
+2021-05-07 18:31:00,786 DEBUG [87763] [] ExcelLessonListForm: form value set 
+2021-05-07 18:31:00,787 DEBUG [87763] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:31:00,787 DEBUG [87763] [] indexAction start
+2021-05-07 18:31:00,787 DEBUG [87763] [] admin_no is 1
+2021-05-07 18:31:00,865 DEBUG [87763] [] indexAction end
+2021-05-07 18:31:00,865 DEBUG [87763] [] ExcelLessonListController end
+2021-05-07 18:31:00,865 DEBUG [87763] [] finally
+2021-05-07 18:31:10,077 DEBUG [92344] [] Request URI : /eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:31:10,077 DEBUG [92344] [] ExcelLessonListController start
+2021-05-07 18:31:10,077 DEBUG [92344] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:31:10,078 DEBUG [92344] [] ExcelLessonListForm: is exist
+2021-05-07 18:31:10,078 DEBUG [92344] [] ExcelLessonListForm: form value set 
+2021-05-07 18:31:10,079 DEBUG [92344] [] ------------------------------/eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:31:10,079 DEBUG [92344] [] showAction start
+2021-05-07 18:31:10,079 DEBUG [92344] [] admin_no is 1
+2021-05-07 18:31:10,080 DEBUG [92344] [] showAction end
+2021-05-07 18:31:10,080 DEBUG [92344] [] ExcelLessonListController end
+2021-05-07 18:31:10,080 DEBUG [92344] [] finally
+2021-05-07 18:31:10,103 DEBUG [92344] [] Request URI : /eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:31:10,104 DEBUG [92344] [] ExcelLessonListController start
+2021-05-07 18:31:10,104 DEBUG [92344] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:31:10,104 DEBUG [92344] [] ExcelLessonListForm: is exist
+2021-05-07 18:31:10,104 DEBUG [92344] [] ExcelLessonListForm: form value set 
+2021-05-07 18:31:10,104 DEBUG [92344] [] ------------------------------/eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:31:10,105 DEBUG [92344] [] viewExcelListAction start
+2021-05-07 18:31:10,105 DEBUG [92344] [] admin_no is 1
+2021-05-07 18:31:10,260 DEBUG [92344] [] viewExcelListAction end
+2021-05-07 18:31:10,261 DEBUG [92344] [] ExcelLessonListController end
+2021-05-07 18:31:10,261 DEBUG [92344] [] finally
+2021-05-07 18:31:12,266 DEBUG [92344] [] Request URI : /eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:31:12,267 DEBUG [92344] [] ExcelLessonListController start
+2021-05-07 18:31:12,267 DEBUG [92344] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:31:12,267 DEBUG [92344] [] ExcelLessonListForm: is exist
+2021-05-07 18:31:12,267 DEBUG [92344] [] ExcelLessonListForm: form value set 
+2021-05-07 18:31:12,268 DEBUG [92344] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:31:12,268 DEBUG [92344] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:31:12,268 DEBUG [92344] [] duplicateCheckWocAction start
+2021-05-07 18:31:12,268 DEBUG [92344] [] admin_no is 1
+2021-05-07 18:31:12,276 DEBUG [92344] [] admin_no is 1
+2021-05-07 18:31:12,277 DEBUG [92344] [] lesson_no
+2021-05-07 18:31:12,298 DEBUG [92344] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:31:12,300 DEBUG [92344] [] lesson_no
+2021-05-07 18:31:12,302 DEBUG [92344] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:31:12,303 DEBUG [92344] [] duplicateCheckWocAction end
+2021-05-07 18:31:12,303 DEBUG [92344] [] ExcelLessonListController end
+2021-05-07 18:31:12,304 DEBUG [92344] [] finally
+2021-05-07 18:31:12,341 DEBUG [92344] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:31:12,341 DEBUG [92344] [] ExcelLessonListController start
+2021-05-07 18:31:12,341 DEBUG [92344] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:31:12,342 DEBUG [92344] [] ExcelLessonListForm: is exist
+2021-05-07 18:31:12,342 DEBUG [92344] [] ExcelLessonListForm: form value set 
+2021-05-07 18:31:12,342 DEBUG [92344] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:31:12,342 DEBUG [92344] [] indexAction start
+2021-05-07 18:31:12,342 DEBUG [92344] [] admin_no is 1
+2021-05-07 18:31:12,425 DEBUG [92344] [] indexAction end
+2021-05-07 18:31:12,425 DEBUG [92344] [] ExcelLessonListController end
+2021-05-07 18:31:12,425 DEBUG [92344] [] finally
+2021-05-07 18:35:28,102 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:35:28,102 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:35:28,102 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:35:28,104 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:35:28,104 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:35:28,105 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:35:28,105 DEBUG [91966] [] showAction start
+2021-05-07 18:35:28,105 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:35:28,106 DEBUG [91966] [] showAction end
+2021-05-07 18:35:28,106 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:35:28,106 DEBUG [91966] [] finally
+2021-05-07 18:35:28,129 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:35:28,129 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:35:28,129 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:35:28,129 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:35:28,130 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:35:28,130 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:35:28,130 DEBUG [91966] [] viewExcelListAction start
+2021-05-07 18:35:28,130 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:35:28,286 DEBUG [91966] [] viewExcelListAction end
+2021-05-07 18:35:28,286 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:35:28,286 DEBUG [91966] [] finally
+2021-05-07 18:35:33,731 DEBUG [91642] [] Request URI : /eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:35:33,732 DEBUG [91642] [] ExcelLessonListController start
+2021-05-07 18:35:33,732 DEBUG [91642] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:35:33,733 DEBUG [91642] [] ExcelLessonListForm: is exist
+2021-05-07 18:35:33,733 DEBUG [91642] [] ExcelLessonListForm: form value set 
+2021-05-07 18:35:33,733 DEBUG [91642] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:35:33,733 DEBUG [91642] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:35:33,734 DEBUG [91642] [] duplicateCheckWocAction start
+2021-05-07 18:35:33,734 DEBUG [91642] [] admin_no is 1
+2021-05-07 18:35:33,742 DEBUG [91642] [] admin_no is 1
+2021-05-07 18:35:33,743 DEBUG [91642] [] lesson_no
+2021-05-07 18:35:33,745 DEBUG [91642] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:35:33,748 DEBUG [91642] [] lesson_no
+2021-05-07 18:35:33,749 DEBUG [91642] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:35:33,755 DEBUG [91642] [] duplicateCheckWocAction end
+2021-05-07 18:35:33,755 DEBUG [91642] [] ExcelLessonListController end
+2021-05-07 18:35:33,756 DEBUG [91642] [] finally
+2021-05-07 18:35:33,794 DEBUG [91642] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:35:33,794 DEBUG [91642] [] ExcelLessonListController start
+2021-05-07 18:35:33,794 DEBUG [91642] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:35:33,794 DEBUG [91642] [] ExcelLessonListForm: is exist
+2021-05-07 18:35:33,794 DEBUG [91642] [] ExcelLessonListForm: form value set 
+2021-05-07 18:35:33,795 DEBUG [91642] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:35:33,795 DEBUG [91642] [] indexAction start
+2021-05-07 18:35:33,795 DEBUG [91642] [] admin_no is 1
+2021-05-07 18:35:33,875 DEBUG [91642] [] indexAction end
+2021-05-07 18:35:33,875 DEBUG [91642] [] ExcelLessonListController end
+2021-05-07 18:35:33,875 DEBUG [91642] [] finally
+2021-05-07 18:36:04,245 DEBUG [91644] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:36:04,246 DEBUG [91644] [] ExcelLessonListController start
+2021-05-07 18:36:04,246 DEBUG [91644] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:36:04,248 DEBUG [91644] [] ExcelLessonListForm: is exist
+2021-05-07 18:36:04,248 DEBUG [91644] [] ExcelLessonListForm: form value set 
+2021-05-07 18:36:04,249 DEBUG [91644] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:36:04,249 DEBUG [91644] [] indexAction start
+2021-05-07 18:36:04,249 DEBUG [91644] [] admin_no is 1
+2021-05-07 18:36:04,337 DEBUG [91644] [] indexAction end
+2021-05-07 18:36:04,337 DEBUG [91644] [] ExcelLessonListController end
+2021-05-07 18:36:04,337 DEBUG [91644] [] finally
+2021-05-07 18:36:33,722 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:36:33,722 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:36:33,722 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:36:33,723 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:36:33,723 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:36:33,724 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/show
+2021-05-07 18:36:33,724 DEBUG [91966] [] showAction start
+2021-05-07 18:36:33,724 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:36:33,724 DEBUG [91966] [] showAction end
+2021-05-07 18:36:33,725 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:36:33,725 DEBUG [91966] [] finally
+2021-05-07 18:36:33,752 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:36:33,752 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:36:33,753 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:36:33,753 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:36:33,753 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:36:33,753 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/viewExcelList
+2021-05-07 18:36:33,754 DEBUG [91966] [] viewExcelListAction start
+2021-05-07 18:36:33,754 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:36:33,905 DEBUG [91966] [] viewExcelListAction end
+2021-05-07 18:36:33,905 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:36:33,905 DEBUG [91966] [] finally
+2021-05-07 18:36:35,591 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:36:35,592 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:36:35,592 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:36:35,592 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:36:35,593 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:36:35,593 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:36:35,593 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList/duplicateCheckWoc
+2021-05-07 18:36:35,593 DEBUG [91966] [] duplicateCheckWocAction start
+2021-05-07 18:36:35,593 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:36:35,601 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:36:35,602 DEBUG [91966] [] lesson_no
+2021-05-07 18:36:35,604 DEBUG [91966] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:36:35,607 DEBUG [91966] [] lesson_no
+2021-05-07 18:36:35,608 DEBUG [91966] [] INSERT INTO  M_LESSON (org_no,lesson_no,lesson_name,lesson_name_kana,subject_no,attendance_flg,lesson_count,status,start_period,end_period,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:lesson_no,:lesson_name,:lesson_name_kana,:subject_no,:attendance_flg,:lesson_count,:status,:start_period,:end_period,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-05-07 18:36:35,614 DEBUG [91966] [] duplicateCheckWocAction end
+2021-05-07 18:36:35,614 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:36:35,615 DEBUG [91966] [] finally
+2021-05-07 18:36:35,639 DEBUG [91966] [] Request URI : /eccadmin_dev/ExcelLessonList
+2021-05-07 18:36:35,640 DEBUG [91966] [] ExcelLessonListController start
+2021-05-07 18:36:35,640 DEBUG [91966] [] controllers/ExcelLessonListController.php: is exist
+2021-05-07 18:36:35,640 DEBUG [91966] [] ExcelLessonListForm: is exist
+2021-05-07 18:36:35,640 DEBUG [91966] [] ExcelLessonListForm: form value set 
+2021-05-07 18:36:35,641 DEBUG [91966] [] ------------------------------/eccadmin_dev/ExcelLessonList
+2021-05-07 18:36:35,641 DEBUG [91966] [] indexAction start
+2021-05-07 18:36:35,641 DEBUG [91966] [] admin_no is 1
+2021-05-07 18:36:35,729 DEBUG [91966] [] indexAction end
+2021-05-07 18:36:35,729 DEBUG [91966] [] ExcelLessonListController end
+2021-05-07 18:36:35,730 DEBUG [91966] [] finally

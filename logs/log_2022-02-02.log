@@ -1,0 +1,1010 @@
+2022-02-02 18:27:47,015 DEBUG [25015] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:27:47,016 DEBUG [25015] [] AtReportListController start
+2022-02-02 18:27:47,016 DEBUG [25015] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:27:47,016 DEBUG [25015] [] 1111
+2022-02-02 18:27:47,018 DEBUG [25015] [] 333
+2022-02-02 18:27:47,018 DEBUG [25015] [] hee444rp
+2022-02-02 18:27:47,019 DEBUG [25015] [] 2222
+2022-02-02 18:27:47,019 DEBUG [25015] [] AtReportListForm: is exist
+2022-02-02 18:27:47,020 DEBUG [25015] [] AtReportListForm: form value set 
+2022-02-02 18:27:47,020 DEBUG [25015] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:27:47,021 DEBUG [25015] [] indexAction start
+2022-02-02 18:27:47,021 DEBUG [25015] [] admin_no is 1
+2022-02-02 18:29:10,966 DEBUG [25032] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:29:10,966 DEBUG [25032] [] AtReportListController start
+2022-02-02 18:29:10,967 DEBUG [25032] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:29:10,967 DEBUG [25032] [] 1111
+2022-02-02 18:29:10,969 DEBUG [25032] [] 2222
+2022-02-02 18:29:10,969 DEBUG [25032] [] AtReportListForm: is exist
+2022-02-02 18:29:10,969 DEBUG [25032] [] AtReportListForm: form value set 
+2022-02-02 18:29:10,970 DEBUG [25032] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:29:10,970 DEBUG [25032] [] indexAction start
+2022-02-02 18:29:10,970 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:31:42,158 DEBUG [25121] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:31:42,159 DEBUG [25121] [] AtReportListController start
+2022-02-02 18:31:42,159 DEBUG [25121] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:31:42,161 DEBUG [25121] [] AtReportListForm: is exist
+2022-02-02 18:31:42,161 DEBUG [25121] [] AtReportListForm: form value set 
+2022-02-02 18:31:42,162 DEBUG [25121] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:31:42,162 DEBUG [25121] [] indexAction start
+2022-02-02 18:31:42,162 DEBUG [25121] [] admin_no is 1
+2022-02-02 18:33:26,261 DEBUG [25130] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:33:26,262 DEBUG [25130] [] AtReportListController start
+2022-02-02 18:33:26,262 DEBUG [25130] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:33:26,264 DEBUG [25130] [] hiii
+2022-02-02 18:33:26,264 DEBUG [25130] [] AtReportListForm: is exist
+2022-02-02 18:33:26,264 DEBUG [25130] [] AtReportListForm: form value set 
+2022-02-02 18:33:26,265 DEBUG [25130] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:33:26,265 DEBUG [25130] [] indexAction start
+2022-02-02 18:33:26,265 DEBUG [25130] [] 55555
+2022-02-02 18:33:26,265 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:33:26,265 DEBUG [25130] [] 46666
+2022-02-02 18:33:26,265 DEBUG [25130] [] 12333
+2022-02-02 18:34:49,729 DEBUG [25032] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:34:49,730 DEBUG [25032] [] AtReportListController start
+2022-02-02 18:34:49,730 DEBUG [25032] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:34:49,732 DEBUG [25032] [] hiii
+2022-02-02 18:34:49,732 DEBUG [25032] [] AtReportListForm: is exist
+2022-02-02 18:34:49,733 DEBUG [25032] [] AtReportListForm: form value set 
+2022-02-02 18:34:49,733 DEBUG [25032] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:34:49,733 DEBUG [25032] [] indexAction start
+2022-02-02 18:34:49,733 DEBUG [25032] [] 55555
+2022-02-02 18:34:49,733 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:34:49,734 DEBUG [25032] [] 46666
+2022-02-02 18:34:49,734 DEBUG [25032] [] 12333
+2022-02-02 18:34:49,735 DEBUG [25032] [] rollback
+2022-02-02 18:34:49,735 ERROR [25032] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'test_info.test_info_name' in 'field list'' in /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php:25
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php(25): PDO->prepare(' SELECT  report...')
+#1 /var/www/html/eccadmin_dev/service/AtReportService.php(20): T_At_ReportDao->getReportList(Object(AtReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(54): AtReportService->getReportList(Object(AtReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(37): AtReportListController->search(Object(AtReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): AtReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-02-02 18:34:49,735 DEBUG [25032] [] finally
+2022-02-02 18:34:49,771 DEBUG [25032] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-02 18:34:49,772 DEBUG [25032] [] ErrorController start
+2022-02-02 18:34:49,772 DEBUG [25032] [] controllers/ErrorController.php: is exist
+2022-02-02 18:34:49,772 DEBUG [25032] [] ErrorForm: is exist
+2022-02-02 18:34:49,772 DEBUG [25032] [] ErrorForm: form value set 
+2022-02-02 18:34:49,773 DEBUG [25032] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-02 18:34:49,773 DEBUG [25032] [] ------------------------------login_start_check
+2022-02-02 18:34:49,773 DEBUG [25032] [] dispAction start
+2022-02-02 18:34:49,785 DEBUG [25032] [] dispAction end
+2022-02-02 18:34:49,785 DEBUG [25032] [] ErrorController end
+2022-02-02 18:34:49,785 DEBUG [25032] [] finally
+2022-02-02 18:34:51,688 DEBUG [25032] [] Request URI : /eccadmin_dev/Login
+2022-02-02 18:34:51,689 DEBUG [25032] [] LoginController start
+2022-02-02 18:34:51,689 DEBUG [25032] [] controllers/LoginController.php: is exist
+2022-02-02 18:34:51,689 DEBUG [25032] [] LoginForm: is exist
+2022-02-02 18:34:51,689 DEBUG [25032] [] LoginForm: form value set 
+2022-02-02 18:34:51,690 DEBUG [25032] [] ------------------------------/eccadmin_dev/Login
+2022-02-02 18:34:51,690 DEBUG [25032] [] ------------------------------login_start_check
+2022-02-02 18:34:51,690 DEBUG [25032] [] indexAction start
+2022-02-02 18:34:51,705 DEBUG [25032] [] indexAction end
+2022-02-02 18:34:51,705 DEBUG [25032] [] LoginController end
+2022-02-02 18:34:51,705 DEBUG [25032] [] finally
+2022-02-02 18:34:54,126 DEBUG [25032] [] Request URI : /eccadmin_dev/Login/login
+2022-02-02 18:34:54,127 DEBUG [25032] [] LoginController start
+2022-02-02 18:34:54,127 DEBUG [25032] [] controllers/LoginController.php: is exist
+2022-02-02 18:34:54,127 DEBUG [25032] [] LoginForm: is exist
+2022-02-02 18:34:54,127 DEBUG [25032] [] LoginForm: form value set 
+2022-02-02 18:34:54,128 DEBUG [25032] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-02 18:34:54,128 DEBUG [25032] [] ------------------------------login_start_check
+2022-02-02 18:34:54,128 DEBUG [25032] [] loginAction start
+2022-02-02 18:34:54,424 DEBUG [25032] [] loginAction end
+2022-02-02 18:34:54,424 DEBUG [25032] [] LoginController end
+2022-02-02 18:34:54,424 DEBUG [25032] [] finally
+2022-02-02 18:34:54,441 DEBUG [25032] [] Request URI : /eccadmin_dev/Menu
+2022-02-02 18:34:54,441 DEBUG [25032] [] MenuController start
+2022-02-02 18:34:54,441 DEBUG [25032] [] controllers/MenuController.php: is exist
+2022-02-02 18:34:54,441 DEBUG [25032] [] MenuForm: is exist
+2022-02-02 18:34:54,441 DEBUG [25032] [] MenuForm: form value set 
+2022-02-02 18:34:54,441 DEBUG [25032] [] ------------------------------/eccadmin_dev/Menu
+2022-02-02 18:34:54,442 DEBUG [25032] [] ------------------------------login_start_check
+2022-02-02 18:34:54,442 DEBUG [25032] [] indexAction start
+2022-02-02 18:34:54,442 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:34:54,468 DEBUG [25032] [] indexAction end
+2022-02-02 18:34:54,468 DEBUG [25032] [] MenuController end
+2022-02-02 18:34:54,468 DEBUG [25032] [] finally
+2022-02-02 18:34:57,173 DEBUG [25032] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:34:57,173 DEBUG [25032] [] AtReportListController start
+2022-02-02 18:34:57,173 DEBUG [25032] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:34:57,176 DEBUG [25032] [] hiii
+2022-02-02 18:34:57,176 DEBUG [25032] [] AtReportListForm: is exist
+2022-02-02 18:34:57,176 DEBUG [25032] [] AtReportListForm: form value set 
+2022-02-02 18:34:57,177 DEBUG [25032] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:34:57,177 DEBUG [25032] [] indexAction start
+2022-02-02 18:34:57,177 DEBUG [25032] [] 55555
+2022-02-02 18:34:57,177 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:34:57,177 DEBUG [25032] [] 46666
+2022-02-02 18:34:57,177 DEBUG [25032] [] 12333
+2022-02-02 18:34:57,178 DEBUG [25032] [] rollback
+2022-02-02 18:34:57,178 ERROR [25032] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'test_info.test_info_name' in 'field list'' in /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php:25
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php(25): PDO->prepare(' SELECT  report...')
+#1 /var/www/html/eccadmin_dev/service/AtReportService.php(20): T_At_ReportDao->getReportList(Object(AtReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(54): AtReportService->getReportList(Object(AtReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(37): AtReportListController->search(Object(AtReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): AtReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-02-02 18:34:57,178 DEBUG [25032] [] finally
+2022-02-02 18:34:57,197 DEBUG [25032] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-02 18:34:57,197 DEBUG [25032] [] ErrorController start
+2022-02-02 18:34:57,197 DEBUG [25032] [] controllers/ErrorController.php: is exist
+2022-02-02 18:34:57,197 DEBUG [25032] [] ErrorForm: is exist
+2022-02-02 18:34:57,198 DEBUG [25032] [] ErrorForm: form value set 
+2022-02-02 18:34:57,198 DEBUG [25032] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-02 18:34:57,198 DEBUG [25032] [] ------------------------------login_start_check
+2022-02-02 18:34:57,198 DEBUG [25032] [] dispAction start
+2022-02-02 18:34:57,209 DEBUG [25032] [] dispAction end
+2022-02-02 18:34:57,209 DEBUG [25032] [] ErrorController end
+2022-02-02 18:34:57,209 DEBUG [25032] [] finally
+2022-02-02 18:36:04,260 DEBUG [25130] [] Request URI : /eccadmin_dev/Login
+2022-02-02 18:36:04,261 DEBUG [25130] [] LoginController start
+2022-02-02 18:36:04,261 DEBUG [25130] [] controllers/LoginController.php: is exist
+2022-02-02 18:36:04,261 DEBUG [25130] [] LoginForm: is exist
+2022-02-02 18:36:04,261 DEBUG [25130] [] LoginForm: form value set 
+2022-02-02 18:36:04,262 DEBUG [25130] [] ------------------------------/eccadmin_dev/Login
+2022-02-02 18:36:04,262 DEBUG [25130] [] ------------------------------login_start_check
+2022-02-02 18:36:04,262 DEBUG [25130] [] indexAction start
+2022-02-02 18:36:04,278 DEBUG [25130] [] indexAction end
+2022-02-02 18:36:04,278 DEBUG [25130] [] LoginController end
+2022-02-02 18:36:04,278 DEBUG [25130] [] finally
+2022-02-02 18:36:06,629 DEBUG [25130] [] Request URI : /eccadmin_dev/Login/login
+2022-02-02 18:36:06,629 DEBUG [25130] [] LoginController start
+2022-02-02 18:36:06,629 DEBUG [25130] [] controllers/LoginController.php: is exist
+2022-02-02 18:36:06,629 DEBUG [25130] [] LoginForm: is exist
+2022-02-02 18:36:06,630 DEBUG [25130] [] LoginForm: form value set 
+2022-02-02 18:36:06,630 DEBUG [25130] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-02 18:36:06,630 DEBUG [25130] [] ------------------------------login_start_check
+2022-02-02 18:36:06,630 DEBUG [25130] [] loginAction start
+2022-02-02 18:36:06,928 DEBUG [25130] [] loginAction end
+2022-02-02 18:36:06,928 DEBUG [25130] [] LoginController end
+2022-02-02 18:36:06,928 DEBUG [25130] [] finally
+2022-02-02 18:36:06,950 DEBUG [25130] [] Request URI : /eccadmin_dev/Menu
+2022-02-02 18:36:06,950 DEBUG [25130] [] MenuController start
+2022-02-02 18:36:06,950 DEBUG [25130] [] controllers/MenuController.php: is exist
+2022-02-02 18:36:06,950 DEBUG [25130] [] MenuForm: is exist
+2022-02-02 18:36:06,950 DEBUG [25130] [] MenuForm: form value set 
+2022-02-02 18:36:06,951 DEBUG [25130] [] ------------------------------/eccadmin_dev/Menu
+2022-02-02 18:36:06,951 DEBUG [25130] [] ------------------------------login_start_check
+2022-02-02 18:36:06,951 DEBUG [25130] [] indexAction start
+2022-02-02 18:36:06,951 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:36:06,977 DEBUG [25130] [] indexAction end
+2022-02-02 18:36:06,977 DEBUG [25130] [] MenuController end
+2022-02-02 18:36:06,977 DEBUG [25130] [] finally
+2022-02-02 18:36:09,410 DEBUG [25130] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:36:09,411 DEBUG [25130] [] AtReportListController start
+2022-02-02 18:36:09,411 DEBUG [25130] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:36:09,413 DEBUG [25130] [] hiii
+2022-02-02 18:36:09,413 DEBUG [25130] [] AtReportListForm: is exist
+2022-02-02 18:36:09,413 DEBUG [25130] [] AtReportListForm: form value set 
+2022-02-02 18:36:09,414 DEBUG [25130] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:36:09,414 DEBUG [25130] [] indexAction start
+2022-02-02 18:36:09,414 DEBUG [25130] [] 55555
+2022-02-02 18:36:09,414 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:36:09,414 DEBUG [25130] [] 46666
+2022-02-02 18:36:09,414 DEBUG [25130] [] 12333
+2022-02-02 18:36:09,415 DEBUG [25130] [] 44555
+2022-02-02 18:36:09,471 DEBUG [25130] [] indexAction end
+2022-02-02 18:36:09,471 DEBUG [25130] [] AtReportListController end
+2022-02-02 18:36:09,472 DEBUG [25130] [] finally
+2022-02-02 18:36:27,044 DEBUG [25128] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-02-02 18:36:27,044 DEBUG [25128] [] ReportRegistController start
+2022-02-02 18:36:27,044 DEBUG [25128] [] controllers/ReportRegistController.php: is exist
+2022-02-02 18:36:27,050 DEBUG [25128] [] ReportRegistForm: is exist
+2022-02-02 18:36:27,050 DEBUG [25128] [] ReportRegistForm: form value set 
+2022-02-02 18:36:27,051 DEBUG [25128] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-02-02 18:36:27,051 DEBUG [25128] [] ------------------------------session_check_true
+2022-02-02 18:36:27,051 DEBUG [25128] [] indexAction start
+2022-02-02 18:36:27,051 DEBUG [25128] [] admin_no is 1
+2022-02-02 18:36:27,052 DEBUG [25128] [] report_no
+2022-02-02 18:36:27,124 DEBUG [25128] [] indexAction end
+2022-02-02 18:36:27,124 DEBUG [25128] [] ReportRegistController end
+2022-02-02 18:36:27,124 DEBUG [25128] [] finally
+2022-02-02 18:36:53,184 DEBUG [25032] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:36:53,185 DEBUG [25032] [] AtReportListController start
+2022-02-02 18:36:53,185 DEBUG [25032] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:36:53,187 DEBUG [25032] [] hiii
+2022-02-02 18:36:53,187 DEBUG [25032] [] AtReportListForm: is exist
+2022-02-02 18:36:53,187 DEBUG [25032] [] AtReportListForm: form value set 
+2022-02-02 18:36:53,188 DEBUG [25032] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:36:53,188 DEBUG [25032] [] indexAction start
+2022-02-02 18:36:53,188 DEBUG [25032] [] 55555
+2022-02-02 18:36:53,188 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:36:53,188 DEBUG [25032] [] 46666
+2022-02-02 18:36:53,188 DEBUG [25032] [] 12333
+2022-02-02 18:36:53,189 DEBUG [25032] [] 44555
+2022-02-02 18:36:53,249 DEBUG [25032] [] indexAction end
+2022-02-02 18:36:53,249 DEBUG [25032] [] AtReportListController end
+2022-02-02 18:36:53,249 DEBUG [25032] [] finally
+2022-02-02 18:36:54,776 DEBUG [25032] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-02-02 18:36:54,777 DEBUG [25032] [] AtReportRegistController start
+2022-02-02 18:36:54,777 DEBUG [25032] [] controllers/AtReportRegistController.php: is exist
+2022-02-02 18:36:54,780 DEBUG [25032] [] hiii
+2022-02-02 18:36:54,781 DEBUG [25032] [] AtReportRegistForm: is exist
+2022-02-02 18:36:54,782 DEBUG [25032] [] AtReportRegistForm: form value set 
+2022-02-02 18:36:54,782 DEBUG [25032] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-02-02 18:36:54,782 DEBUG [25032] [] ------------------------------session_check_true
+2022-02-02 18:36:54,782 DEBUG [25032] [] indexAction start
+2022-02-02 18:36:54,783 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:36:54,783 DEBUG [25032] [] at_at_report_no
+2022-02-02 18:36:54,860 DEBUG [25032] [] indexAction end
+2022-02-02 18:36:54,860 DEBUG [25032] [] AtReportRegistController end
+2022-02-02 18:36:54,860 DEBUG [25032] [] finally
+2022-02-02 18:42:25,346 DEBUG [25133] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:42:25,347 DEBUG [25133] [] AtReportListController start
+2022-02-02 18:42:25,347 DEBUG [25133] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:42:25,348 DEBUG [25133] [] hiii
+2022-02-02 18:42:25,348 DEBUG [25133] [] AtReportListForm: is exist
+2022-02-02 18:42:25,348 DEBUG [25133] [] AtReportListForm: form value set 
+2022-02-02 18:42:25,349 DEBUG [25133] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:42:25,349 DEBUG [25133] [] indexAction start
+2022-02-02 18:42:25,349 DEBUG [25133] [] 55555
+2022-02-02 18:42:25,349 DEBUG [25133] [] admin_no is 1
+2022-02-02 18:42:25,349 DEBUG [25133] [] 46666
+2022-02-02 18:42:25,349 DEBUG [25133] [] 12333
+2022-02-02 18:42:25,350 DEBUG [25133] [] rollback
+2022-02-02 18:42:25,350 ERROR [25133] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'course.org_no' in 'on clause'' in /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php:25
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php(25): PDO->prepare(' SELECT  report...')
+#1 /var/www/html/eccadmin_dev/service/AtReportService.php(20): T_At_ReportDao->getReportList(Object(AtReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(54): AtReportService->getReportList(Object(AtReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(37): AtReportListController->search(Object(AtReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): AtReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-02-02 18:42:25,350 DEBUG [25133] [] finally
+2022-02-02 18:42:25,373 DEBUG [25133] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-02 18:42:25,373 DEBUG [25133] [] ErrorController start
+2022-02-02 18:42:25,373 DEBUG [25133] [] controllers/ErrorController.php: is exist
+2022-02-02 18:42:25,374 DEBUG [25133] [] ErrorForm: is exist
+2022-02-02 18:42:25,374 DEBUG [25133] [] ErrorForm: form value set 
+2022-02-02 18:42:25,374 DEBUG [25133] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-02 18:42:25,374 DEBUG [25133] [] ------------------------------login_start_check
+2022-02-02 18:42:25,374 DEBUG [25133] [] dispAction start
+2022-02-02 18:42:25,381 DEBUG [25133] [] dispAction end
+2022-02-02 18:42:25,381 DEBUG [25133] [] ErrorController end
+2022-02-02 18:42:25,381 DEBUG [25133] [] finally
+2022-02-02 18:43:49,541 DEBUG [25287] [] Request URI : /eccadmin_dev/Login
+2022-02-02 18:43:49,542 DEBUG [25287] [] LoginController start
+2022-02-02 18:43:49,542 DEBUG [25287] [] controllers/LoginController.php: is exist
+2022-02-02 18:43:49,542 DEBUG [25287] [] LoginForm: is exist
+2022-02-02 18:43:49,542 DEBUG [25287] [] LoginForm: form value set 
+2022-02-02 18:43:49,543 DEBUG [25287] [] ------------------------------/eccadmin_dev/Login
+2022-02-02 18:43:49,543 DEBUG [25287] [] ------------------------------login_start_check
+2022-02-02 18:43:49,543 DEBUG [25287] [] indexAction start
+2022-02-02 18:43:49,560 DEBUG [25287] [] indexAction end
+2022-02-02 18:43:49,561 DEBUG [25287] [] LoginController end
+2022-02-02 18:43:49,561 DEBUG [25287] [] finally
+2022-02-02 18:43:51,824 DEBUG [25287] [] Request URI : /eccadmin_dev/Login/login
+2022-02-02 18:43:51,825 DEBUG [25287] [] LoginController start
+2022-02-02 18:43:51,825 DEBUG [25287] [] controllers/LoginController.php: is exist
+2022-02-02 18:43:51,825 DEBUG [25287] [] LoginForm: is exist
+2022-02-02 18:43:51,825 DEBUG [25287] [] LoginForm: form value set 
+2022-02-02 18:43:51,826 DEBUG [25287] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-02 18:43:51,826 DEBUG [25287] [] ------------------------------login_start_check
+2022-02-02 18:43:51,826 DEBUG [25287] [] loginAction start
+2022-02-02 18:43:52,120 DEBUG [25287] [] loginAction end
+2022-02-02 18:43:52,120 DEBUG [25287] [] LoginController end
+2022-02-02 18:43:52,120 DEBUG [25287] [] finally
+2022-02-02 18:43:52,141 DEBUG [25287] [] Request URI : /eccadmin_dev/Menu
+2022-02-02 18:43:52,142 DEBUG [25287] [] MenuController start
+2022-02-02 18:43:52,142 DEBUG [25287] [] controllers/MenuController.php: is exist
+2022-02-02 18:43:52,142 DEBUG [25287] [] MenuForm: is exist
+2022-02-02 18:43:52,142 DEBUG [25287] [] MenuForm: form value set 
+2022-02-02 18:43:52,142 DEBUG [25287] [] ------------------------------/eccadmin_dev/Menu
+2022-02-02 18:43:52,142 DEBUG [25287] [] ------------------------------login_start_check
+2022-02-02 18:43:52,142 DEBUG [25287] [] indexAction start
+2022-02-02 18:43:52,143 DEBUG [25287] [] admin_no is 1
+2022-02-02 18:43:52,169 DEBUG [25287] [] indexAction end
+2022-02-02 18:43:52,169 DEBUG [25287] [] MenuController end
+2022-02-02 18:43:52,170 DEBUG [25287] [] finally
+2022-02-02 18:43:54,727 DEBUG [25287] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:43:54,728 DEBUG [25287] [] AtReportListController start
+2022-02-02 18:43:54,728 DEBUG [25287] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:43:54,730 DEBUG [25287] [] hiii
+2022-02-02 18:43:54,730 DEBUG [25287] [] AtReportListForm: is exist
+2022-02-02 18:43:54,731 DEBUG [25287] [] AtReportListForm: form value set 
+2022-02-02 18:43:54,731 DEBUG [25287] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:43:54,731 DEBUG [25287] [] indexAction start
+2022-02-02 18:43:54,732 DEBUG [25287] [] admin_no is 1
+2022-02-02 18:43:54,732 DEBUG [25287] [] rollback
+2022-02-02 18:43:54,733 ERROR [25287] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'report.at_no' in 'on clause'' in /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php:25
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_At_ReportDao.php(25): PDO->prepare(' SELECT  report...')
+#1 /var/www/html/eccadmin_dev/service/AtReportService.php(20): T_At_ReportDao->getReportList(Object(AtReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(54): AtReportService->getReportList(Object(AtReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/AtReportListController.php(37): AtReportListController->search(Object(AtReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): AtReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-02-02 18:43:54,733 DEBUG [25287] [] finally
+2022-02-02 18:43:54,759 DEBUG [25287] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-02 18:43:54,759 DEBUG [25287] [] ErrorController start
+2022-02-02 18:43:54,759 DEBUG [25287] [] controllers/ErrorController.php: is exist
+2022-02-02 18:43:54,760 DEBUG [25287] [] ErrorForm: is exist
+2022-02-02 18:43:54,760 DEBUG [25287] [] ErrorForm: form value set 
+2022-02-02 18:43:54,760 DEBUG [25287] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-02 18:43:54,761 DEBUG [25287] [] ------------------------------login_start_check
+2022-02-02 18:43:54,761 DEBUG [25287] [] dispAction start
+2022-02-02 18:43:54,772 DEBUG [25287] [] dispAction end
+2022-02-02 18:43:54,772 DEBUG [25287] [] ErrorController end
+2022-02-02 18:43:54,773 DEBUG [25287] [] finally
+2022-02-02 18:44:26,540 DEBUG [25015] [] Request URI : /eccadmin_dev/CourseRegist/index
+2022-02-02 18:44:26,541 DEBUG [25015] [] CourseRegistController start
+2022-02-02 18:44:26,541 DEBUG [25015] [] controllers/CourseRegistController.php: is exist
+2022-02-02 18:44:26,544 DEBUG [25015] [] CourseRegistForm: is exist
+2022-02-02 18:44:26,544 DEBUG [25015] [] CourseRegistForm: form value set 
+2022-02-02 18:44:26,545 DEBUG [25015] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2022-02-02 18:44:26,545 DEBUG [25015] [] ------------------------------session_check_false:uid=a2c160a2b9ab4643ce4fc6ca60f9e778-----&-----
+2022-02-02 18:44:26,545 DEBUG [25015] [] indexAction start
+2022-02-02 18:44:26,545 DEBUG [25015] [] admin_no is 
+2022-02-02 18:44:26,545 DEBUG [25015] [] indexAction end
+2022-02-02 18:44:26,546 DEBUG [25015] [] CourseRegistController end
+2022-02-02 18:44:26,546 DEBUG [25015] [] finally
+2022-02-02 18:44:26,557 DEBUG [25015] [] Request URI : /eccadmin_dev/Error/disp
+2022-02-02 18:44:26,558 DEBUG [25015] [] ErrorController start
+2022-02-02 18:44:26,558 DEBUG [25015] [] controllers/ErrorController.php: is exist
+2022-02-02 18:44:26,558 DEBUG [25015] [] ErrorForm: is exist
+2022-02-02 18:44:26,558 DEBUG [25015] [] ErrorForm: form value set 
+2022-02-02 18:44:26,559 DEBUG [25015] [] ------------------------------/eccadmin_dev/Error/disp
+2022-02-02 18:44:26,559 DEBUG [25015] [] ------------------------------login_start_check
+2022-02-02 18:44:26,559 DEBUG [25015] [] dispAction start
+2022-02-02 18:44:26,570 DEBUG [25015] [] dispAction end
+2022-02-02 18:44:26,570 DEBUG [25015] [] ErrorController end
+2022-02-02 18:44:26,570 DEBUG [25015] [] finally
+2022-02-02 18:44:27,627 DEBUG [25295] [] Request URI : /eccadmin_dev/Login
+2022-02-02 18:44:27,631 DEBUG [25295] [] LoginController start
+2022-02-02 18:44:27,631 DEBUG [25295] [] controllers/LoginController.php: is exist
+2022-02-02 18:44:27,632 DEBUG [25295] [] LoginForm: is exist
+2022-02-02 18:44:27,632 DEBUG [25295] [] LoginForm: form value set 
+2022-02-02 18:44:27,633 DEBUG [25295] [] ------------------------------/eccadmin_dev/Login
+2022-02-02 18:44:27,633 DEBUG [25295] [] ------------------------------login_start_check
+2022-02-02 18:44:27,633 DEBUG [25295] [] indexAction start
+2022-02-02 18:44:27,650 DEBUG [25295] [] indexAction end
+2022-02-02 18:44:27,650 DEBUG [25295] [] LoginController end
+2022-02-02 18:44:27,650 DEBUG [25295] [] finally
+2022-02-02 18:44:27,921 DEBUG [25015] [] Request URI : /eccadmin_dev/Login
+2022-02-02 18:44:27,922 DEBUG [25015] [] LoginController start
+2022-02-02 18:44:27,922 DEBUG [25015] [] controllers/LoginController.php: is exist
+2022-02-02 18:44:27,922 DEBUG [25015] [] LoginForm: is exist
+2022-02-02 18:44:27,922 DEBUG [25015] [] LoginForm: form value set 
+2022-02-02 18:44:27,923 DEBUG [25015] [] ------------------------------/eccadmin_dev/Login
+2022-02-02 18:44:27,923 DEBUG [25015] [] ------------------------------login_start_check
+2022-02-02 18:44:27,923 DEBUG [25015] [] indexAction start
+2022-02-02 18:44:27,937 DEBUG [25015] [] indexAction end
+2022-02-02 18:44:27,938 DEBUG [25015] [] LoginController end
+2022-02-02 18:44:27,938 DEBUG [25015] [] finally
+2022-02-02 18:44:30,254 DEBUG [25295] [] Request URI : /eccadmin_dev/Login/login
+2022-02-02 18:44:30,254 DEBUG [25295] [] LoginController start
+2022-02-02 18:44:30,254 DEBUG [25295] [] controllers/LoginController.php: is exist
+2022-02-02 18:44:30,254 DEBUG [25295] [] LoginForm: is exist
+2022-02-02 18:44:30,255 DEBUG [25295] [] LoginForm: form value set 
+2022-02-02 18:44:30,255 DEBUG [25295] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-02 18:44:30,255 DEBUG [25295] [] ------------------------------login_start_check
+2022-02-02 18:44:30,255 DEBUG [25295] [] loginAction start
+2022-02-02 18:44:30,562 DEBUG [25295] [] loginAction end
+2022-02-02 18:44:30,562 DEBUG [25295] [] LoginController end
+2022-02-02 18:44:30,562 DEBUG [25295] [] finally
+2022-02-02 18:44:30,587 DEBUG [25295] [] Request URI : /eccadmin_dev/Menu
+2022-02-02 18:44:30,587 DEBUG [25295] [] MenuController start
+2022-02-02 18:44:30,587 DEBUG [25295] [] controllers/MenuController.php: is exist
+2022-02-02 18:44:30,588 DEBUG [25295] [] MenuForm: is exist
+2022-02-02 18:44:30,588 DEBUG [25295] [] MenuForm: form value set 
+2022-02-02 18:44:30,588 DEBUG [25295] [] ------------------------------/eccadmin_dev/Menu
+2022-02-02 18:44:30,588 DEBUG [25295] [] ------------------------------login_start_check
+2022-02-02 18:44:30,588 DEBUG [25295] [] indexAction start
+2022-02-02 18:44:30,588 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:44:30,614 DEBUG [25295] [] indexAction end
+2022-02-02 18:44:30,614 DEBUG [25295] [] MenuController end
+2022-02-02 18:44:30,614 DEBUG [25295] [] finally
+2022-02-02 18:44:32,760 DEBUG [25295] [] Request URI : /eccadmin_dev/AtReportList
+2022-02-02 18:44:32,760 DEBUG [25295] [] AtReportListController start
+2022-02-02 18:44:32,760 DEBUG [25295] [] controllers/AtReportListController.php: is exist
+2022-02-02 18:44:32,762 DEBUG [25295] [] hiii
+2022-02-02 18:44:32,763 DEBUG [25295] [] AtReportListForm: is exist
+2022-02-02 18:44:32,763 DEBUG [25295] [] AtReportListForm: form value set 
+2022-02-02 18:44:32,763 DEBUG [25295] [] ------------------------------/eccadmin_dev/AtReportList
+2022-02-02 18:44:32,764 DEBUG [25295] [] indexAction start
+2022-02-02 18:44:32,764 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:44:32,825 DEBUG [25295] [] indexAction end
+2022-02-02 18:44:32,825 DEBUG [25295] [] AtReportListController end
+2022-02-02 18:44:32,825 DEBUG [25295] [] finally
+2022-02-02 18:44:34,967 DEBUG [25295] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-02-02 18:44:34,968 DEBUG [25295] [] AtReportRegistController start
+2022-02-02 18:44:34,968 DEBUG [25295] [] controllers/AtReportRegistController.php: is exist
+2022-02-02 18:44:34,971 DEBUG [25295] [] hiii
+2022-02-02 18:44:34,972 DEBUG [25295] [] AtReportRegistForm: is exist
+2022-02-02 18:44:34,972 DEBUG [25295] [] AtReportRegistForm: form value set 
+2022-02-02 18:44:34,973 DEBUG [25295] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-02-02 18:44:34,973 DEBUG [25295] [] ------------------------------session_check_true
+2022-02-02 18:44:34,973 DEBUG [25295] [] indexAction start
+2022-02-02 18:44:34,973 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:44:34,974 DEBUG [25295] [] at_at_report_no
+2022-02-02 18:44:35,052 DEBUG [25295] [] indexAction end
+2022-02-02 18:44:35,052 DEBUG [25295] [] AtReportRegistController end
+2022-02-02 18:44:35,052 DEBUG [25295] [] finally
+2022-02-02 18:44:39,137 DEBUG [25296] [] Request URI : /eccadmin_dev/Login/login
+2022-02-02 18:44:39,141 DEBUG [25296] [] LoginController start
+2022-02-02 18:44:39,141 DEBUG [25296] [] controllers/LoginController.php: is exist
+2022-02-02 18:44:39,142 DEBUG [25296] [] LoginForm: is exist
+2022-02-02 18:44:39,142 DEBUG [25296] [] LoginForm: form value set 
+2022-02-02 18:44:39,143 DEBUG [25296] [] ------------------------------/eccadmin_dev/Login/login
+2022-02-02 18:44:39,143 DEBUG [25296] [] ------------------------------login_start_check
+2022-02-02 18:44:39,143 DEBUG [25296] [] loginAction start
+2022-02-02 18:44:39,436 DEBUG [25296] [] loginAction end
+2022-02-02 18:44:39,436 DEBUG [25296] [] LoginController end
+2022-02-02 18:44:39,436 DEBUG [25296] [] finally
+2022-02-02 18:44:39,457 DEBUG [25296] [] Request URI : /eccadmin_dev/Menu
+2022-02-02 18:44:39,457 DEBUG [25296] [] MenuController start
+2022-02-02 18:44:39,457 DEBUG [25296] [] controllers/MenuController.php: is exist
+2022-02-02 18:44:39,457 DEBUG [25296] [] MenuForm: is exist
+2022-02-02 18:44:39,457 DEBUG [25296] [] MenuForm: form value set 
+2022-02-02 18:44:39,457 DEBUG [25296] [] ------------------------------/eccadmin_dev/Menu
+2022-02-02 18:44:39,457 DEBUG [25296] [] ------------------------------login_start_check
+2022-02-02 18:44:39,458 DEBUG [25296] [] indexAction start
+2022-02-02 18:44:39,458 DEBUG [25296] [] admin_no is 1
+2022-02-02 18:44:39,483 DEBUG [25296] [] indexAction end
+2022-02-02 18:44:39,483 DEBUG [25296] [] MenuController end
+2022-02-02 18:44:39,483 DEBUG [25296] [] finally
+2022-02-02 18:44:42,826 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractList
+2022-02-02 18:44:42,827 DEBUG [25291] [] CourseContractListController start
+2022-02-02 18:44:42,827 DEBUG [25291] [] controllers/CourseContractListController.php: is exist
+2022-02-02 18:44:42,830 DEBUG [25291] [] CourseContractListForm: is exist
+2022-02-02 18:44:42,830 DEBUG [25291] [] CourseContractListForm: form value set 
+2022-02-02 18:44:42,831 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-02-02 18:44:42,831 DEBUG [25291] [] indexAction start
+2022-02-02 18:44:42,831 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:44:42,936 DEBUG [25291] [] indexAction end
+2022-02-02 18:44:42,936 DEBUG [25291] [] CourseContractListController end
+2022-02-02 18:44:42,936 DEBUG [25291] [] finally
+2022-02-02 18:44:45,982 DEBUG [25121] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:44:45,982 DEBUG [25121] [] CourseContractRegistController start
+2022-02-02 18:44:45,982 DEBUG [25121] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:44:45,985 DEBUG [25121] [] CourseContractRegistForm: is exist
+2022-02-02 18:44:45,985 DEBUG [25121] [] CourseContractRegistForm: form value set 
+2022-02-02 18:44:45,986 DEBUG [25121] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:44:45,986 DEBUG [25121] [] ------------------------------session_check_true
+2022-02-02 18:44:45,986 DEBUG [25121] [] indexAction start
+2022-02-02 18:44:45,986 DEBUG [25121] [] admin_no is 1
+2022-02-02 18:44:46,056 DEBUG [25121] [] indexAction end
+2022-02-02 18:44:46,056 DEBUG [25121] [] CourseContractRegistController end
+2022-02-02 18:44:46,056 DEBUG [25121] [] finally
+2022-02-02 18:44:56,125 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:44:56,129 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:44:56,129 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:44:56,133 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:44:56,133 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:44:56,134 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:44:56,134 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:44:56,134 DEBUG [25300] [] courseShowAction start
+2022-02-02 18:44:56,134 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:44:56,202 DEBUG [25300] [] courseShowAction end
+2022-02-02 18:44:56,202 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:44:56,202 DEBUG [25300] [] finally
+2022-02-02 18:44:57,538 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:44:57,538 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:44:57,539 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:44:57,541 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:44:57,542 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:44:57,542 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:44:57,542 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:44:57,542 DEBUG [25300] [] orgShowAction start
+2022-02-02 18:44:57,542 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:44:57,611 DEBUG [25300] [] orgShowAction end
+2022-02-02 18:44:57,611 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:44:57,611 DEBUG [25300] [] finally
+2022-02-02 18:45:05,043 DEBUG [25134] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:45:05,044 DEBUG [25134] [] CourseContractRegistController start
+2022-02-02 18:45:05,044 DEBUG [25134] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:45:05,046 DEBUG [25134] [] CourseContractRegistForm: is exist
+2022-02-02 18:45:05,047 DEBUG [25134] [] CourseContractRegistForm: form value set 
+2022-02-02 18:45:05,047 DEBUG [25134] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:45:05,047 DEBUG [25134] [] ------------------------------session_check_true
+2022-02-02 18:45:05,047 DEBUG [25134] [] saveAction start
+2022-02-02 18:45:05,048 DEBUG [25134] [] admin_no is 1
+2022-02-02 18:45:05,051 DEBUG [25134] [] offer_no
+2022-02-02 18:45:05,053 DEBUG [25134] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-02 18:45:05,116 DEBUG [25134] [] saveAction end
+2022-02-02 18:45:05,116 DEBUG [25134] [] CourseContractRegistController end
+2022-02-02 18:45:05,116 DEBUG [25134] [] finally
+2022-02-02 18:45:06,667 DEBUG [25134] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:45:06,668 DEBUG [25134] [] CourseStudentRegistController start
+2022-02-02 18:45:06,668 DEBUG [25134] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:45:06,671 DEBUG [25134] [] CourseStudentRegistForm: is exist
+2022-02-02 18:45:06,671 DEBUG [25134] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:45:06,672 DEBUG [25134] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:45:06,672 DEBUG [25134] [] ------------------------------session_check_true
+2022-02-02 18:45:06,672 DEBUG [25134] [] indexAction start
+2022-02-02 18:45:06,672 DEBUG [25134] [] admin_no is 1
+2022-02-02 18:45:06,754 DEBUG [25134] [] indexAction end
+2022-02-02 18:45:06,754 DEBUG [25134] [] CourseStudentRegistController end
+2022-02-02 18:45:06,754 DEBUG [25134] [] finally
+2022-02-02 18:45:14,235 DEBUG [25133] [] Request URI : /eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:45:14,235 DEBUG [25133] [] CourseStudentRegistController start
+2022-02-02 18:45:14,235 DEBUG [25133] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:45:14,238 DEBUG [25133] [] CourseStudentRegistForm: is exist
+2022-02-02 18:45:14,238 DEBUG [25133] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:45:14,239 DEBUG [25133] [] ------------------------------/eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:45:14,239 DEBUG [25133] [] ------------------------------session_check_true
+2022-02-02 18:45:14,239 DEBUG [25133] [] searchAction start
+2022-02-02 18:45:14,239 DEBUG [25133] [] admin_no is 1
+2022-02-02 18:45:14,317 DEBUG [25133] [] searchAction end
+2022-02-02 18:45:14,317 DEBUG [25133] [] CourseStudentRegistController end
+2022-02-02 18:45:14,317 DEBUG [25133] [] finally
+2022-02-02 18:45:43,272 DEBUG [25032] [] Request URI : /eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:45:43,273 DEBUG [25032] [] CourseStudentRegistController start
+2022-02-02 18:45:43,273 DEBUG [25032] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:45:43,275 DEBUG [25032] [] CourseStudentRegistForm: is exist
+2022-02-02 18:45:43,276 DEBUG [25032] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:45:43,276 DEBUG [25032] [] ------------------------------/eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:45:43,276 DEBUG [25032] [] ------------------------------session_check_true
+2022-02-02 18:45:43,277 DEBUG [25032] [] SaveAction start
+2022-02-02 18:45:43,277 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:45:43,277 DEBUG [25032] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,278 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,279 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,280 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,281 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,281 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,282 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,283 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,283 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,284 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,285 DEBUG [25032] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:45:43,356 DEBUG [25032] [] SaveAction end
+2022-02-02 18:45:43,357 DEBUG [25032] [] CourseStudentRegistController end
+2022-02-02 18:45:43,362 DEBUG [25032] [] finally
+2022-02-02 18:45:50,804 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:45:50,805 DEBUG [25291] [] CourseContractRegistController start
+2022-02-02 18:45:50,805 DEBUG [25291] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:45:50,807 DEBUG [25291] [] CourseContractRegistForm: is exist
+2022-02-02 18:45:50,808 DEBUG [25291] [] CourseContractRegistForm: form value set 
+2022-02-02 18:45:50,808 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:45:50,808 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:45:50,808 DEBUG [25291] [] indexAction start
+2022-02-02 18:45:50,808 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:45:50,874 DEBUG [25291] [] indexAction end
+2022-02-02 18:45:50,874 DEBUG [25291] [] CourseContractRegistController end
+2022-02-02 18:45:50,874 DEBUG [25291] [] finally
+2022-02-02 18:45:52,505 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractList/search
+2022-02-02 18:45:52,505 DEBUG [25291] [] CourseContractListController start
+2022-02-02 18:45:52,505 DEBUG [25291] [] controllers/CourseContractListController.php: is exist
+2022-02-02 18:45:52,508 DEBUG [25291] [] CourseContractListForm: is exist
+2022-02-02 18:45:52,509 DEBUG [25291] [] CourseContractListForm: form value set 
+2022-02-02 18:45:52,509 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractList/search
+2022-02-02 18:45:52,509 DEBUG [25291] [] searchAction start
+2022-02-02 18:45:52,510 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:45:52,620 DEBUG [25291] [] searchAction end
+2022-02-02 18:45:52,620 DEBUG [25291] [] CourseContractListController end
+2022-02-02 18:45:52,621 DEBUG [25291] [] finally
+2022-02-02 18:45:54,407 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:45:54,407 DEBUG [25291] [] CourseContractRegistController start
+2022-02-02 18:45:54,407 DEBUG [25291] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:45:54,410 DEBUG [25291] [] CourseContractRegistForm: is exist
+2022-02-02 18:45:54,410 DEBUG [25291] [] CourseContractRegistForm: form value set 
+2022-02-02 18:45:54,411 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:45:54,411 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:45:54,411 DEBUG [25291] [] indexAction start
+2022-02-02 18:45:54,411 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:45:54,482 DEBUG [25291] [] indexAction end
+2022-02-02 18:45:54,483 DEBUG [25291] [] CourseContractRegistController end
+2022-02-02 18:45:54,483 DEBUG [25291] [] finally
+2022-02-02 18:46:02,230 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:46:02,230 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:46:02,230 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:02,233 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:02,233 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:02,234 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:46:02,234 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:46:02,234 DEBUG [25300] [] courseShowAction start
+2022-02-02 18:46:02,234 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:46:02,299 DEBUG [25300] [] courseShowAction end
+2022-02-02 18:46:02,299 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:46:02,299 DEBUG [25300] [] finally
+2022-02-02 18:46:04,970 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:46:04,971 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:46:04,971 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:04,974 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:04,974 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:04,974 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:46:04,975 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:46:04,975 DEBUG [25300] [] orgShowAction start
+2022-02-02 18:46:04,975 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:46:05,043 DEBUG [25300] [] orgShowAction end
+2022-02-02 18:46:05,043 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:46:05,043 DEBUG [25300] [] finally
+2022-02-02 18:46:10,640 DEBUG [25134] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:46:10,640 DEBUG [25134] [] CourseContractRegistController start
+2022-02-02 18:46:10,641 DEBUG [25134] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:10,643 DEBUG [25134] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:10,643 DEBUG [25134] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:10,644 DEBUG [25134] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:46:10,644 DEBUG [25134] [] ------------------------------session_check_true
+2022-02-02 18:46:10,644 DEBUG [25134] [] saveAction start
+2022-02-02 18:46:10,644 DEBUG [25134] [] admin_no is 1
+2022-02-02 18:46:10,647 DEBUG [25134] [] offer_no
+2022-02-02 18:46:10,653 DEBUG [25134] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-02 18:46:10,719 DEBUG [25134] [] saveAction end
+2022-02-02 18:46:10,719 DEBUG [25134] [] CourseContractRegistController end
+2022-02-02 18:46:10,719 DEBUG [25134] [] finally
+2022-02-02 18:46:12,244 DEBUG [25134] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:46:12,244 DEBUG [25134] [] CourseStudentRegistController start
+2022-02-02 18:46:12,244 DEBUG [25134] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:46:12,247 DEBUG [25134] [] CourseStudentRegistForm: is exist
+2022-02-02 18:46:12,247 DEBUG [25134] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:46:12,248 DEBUG [25134] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:46:12,248 DEBUG [25134] [] ------------------------------session_check_true
+2022-02-02 18:46:12,248 DEBUG [25134] [] indexAction start
+2022-02-02 18:46:12,248 DEBUG [25134] [] admin_no is 1
+2022-02-02 18:46:12,320 DEBUG [25134] [] indexAction end
+2022-02-02 18:46:12,320 DEBUG [25134] [] CourseStudentRegistController end
+2022-02-02 18:46:12,320 DEBUG [25134] [] finally
+2022-02-02 18:46:25,202 DEBUG [25295] [] Request URI : /eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:46:25,203 DEBUG [25295] [] CourseStudentRegistController start
+2022-02-02 18:46:25,203 DEBUG [25295] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:46:25,205 DEBUG [25295] [] CourseStudentRegistForm: is exist
+2022-02-02 18:46:25,206 DEBUG [25295] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:46:25,206 DEBUG [25295] [] ------------------------------/eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:46:25,206 DEBUG [25295] [] ------------------------------session_check_true
+2022-02-02 18:46:25,206 DEBUG [25295] [] searchAction start
+2022-02-02 18:46:25,206 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:46:25,282 DEBUG [25295] [] searchAction end
+2022-02-02 18:46:25,282 DEBUG [25295] [] CourseStudentRegistController end
+2022-02-02 18:46:25,282 DEBUG [25295] [] finally
+2022-02-02 18:46:28,373 DEBUG [25295] [] Request URI : /eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:46:28,374 DEBUG [25295] [] CourseStudentRegistController start
+2022-02-02 18:46:28,374 DEBUG [25295] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:46:28,377 DEBUG [25295] [] CourseStudentRegistForm: is exist
+2022-02-02 18:46:28,377 DEBUG [25295] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:46:28,378 DEBUG [25295] [] ------------------------------/eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:46:28,378 DEBUG [25295] [] ------------------------------session_check_true
+2022-02-02 18:46:28,378 DEBUG [25295] [] SaveAction start
+2022-02-02 18:46:28,378 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:46:28,379 DEBUG [25295] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:46:28,380 DEBUG [25295] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:46:28,380 DEBUG [25295] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:46:28,453 DEBUG [25295] [] SaveAction end
+2022-02-02 18:46:28,453 DEBUG [25295] [] CourseStudentRegistController end
+2022-02-02 18:46:28,455 DEBUG [25295] [] finally
+2022-02-02 18:46:37,513 DEBUG [25133] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:46:37,514 DEBUG [25133] [] CourseContractRegistController start
+2022-02-02 18:46:37,514 DEBUG [25133] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:37,516 DEBUG [25133] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:37,516 DEBUG [25133] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:37,517 DEBUG [25133] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:46:37,517 DEBUG [25133] [] ------------------------------session_check_true
+2022-02-02 18:46:37,517 DEBUG [25133] [] indexAction start
+2022-02-02 18:46:37,517 DEBUG [25133] [] admin_no is 1
+2022-02-02 18:46:37,586 DEBUG [25133] [] indexAction end
+2022-02-02 18:46:37,586 DEBUG [25133] [] CourseContractRegistController end
+2022-02-02 18:46:37,586 DEBUG [25133] [] finally
+2022-02-02 18:46:38,576 DEBUG [25133] [] Request URI : /eccadmin_dev/CourseContractList/search
+2022-02-02 18:46:38,576 DEBUG [25133] [] CourseContractListController start
+2022-02-02 18:46:38,577 DEBUG [25133] [] controllers/CourseContractListController.php: is exist
+2022-02-02 18:46:38,580 DEBUG [25133] [] CourseContractListForm: is exist
+2022-02-02 18:46:38,580 DEBUG [25133] [] CourseContractListForm: form value set 
+2022-02-02 18:46:38,581 DEBUG [25133] [] ------------------------------/eccadmin_dev/CourseContractList/search
+2022-02-02 18:46:38,581 DEBUG [25133] [] searchAction start
+2022-02-02 18:46:38,581 DEBUG [25133] [] admin_no is 1
+2022-02-02 18:46:38,687 DEBUG [25133] [] searchAction end
+2022-02-02 18:46:38,687 DEBUG [25133] [] CourseContractListController end
+2022-02-02 18:46:38,687 DEBUG [25133] [] finally
+2022-02-02 18:46:43,953 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:46:43,954 DEBUG [25130] [] CourseContractRegistController start
+2022-02-02 18:46:43,954 DEBUG [25130] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:43,958 DEBUG [25130] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:43,958 DEBUG [25130] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:43,958 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:46:43,959 DEBUG [25130] [] ------------------------------session_check_true
+2022-02-02 18:46:43,959 DEBUG [25130] [] indexAction start
+2022-02-02 18:46:43,959 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:46:44,023 DEBUG [25130] [] indexAction end
+2022-02-02 18:46:44,023 DEBUG [25130] [] CourseContractRegistController end
+2022-02-02 18:46:44,023 DEBUG [25130] [] finally
+2022-02-02 18:46:49,891 DEBUG [25032] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:46:49,891 DEBUG [25032] [] CourseContractRegistController start
+2022-02-02 18:46:49,892 DEBUG [25032] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:49,894 DEBUG [25032] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:49,894 DEBUG [25032] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:49,895 DEBUG [25032] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:46:49,895 DEBUG [25032] [] ------------------------------session_check_true
+2022-02-02 18:46:49,895 DEBUG [25032] [] courseShowAction start
+2022-02-02 18:46:49,895 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:46:49,961 DEBUG [25032] [] courseShowAction end
+2022-02-02 18:46:49,961 DEBUG [25032] [] CourseContractRegistController end
+2022-02-02 18:46:49,961 DEBUG [25032] [] finally
+2022-02-02 18:46:50,916 DEBUG [25032] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:46:50,916 DEBUG [25032] [] CourseContractRegistController start
+2022-02-02 18:46:50,916 DEBUG [25032] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:50,919 DEBUG [25032] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:50,919 DEBUG [25032] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:50,920 DEBUG [25032] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:46:50,920 DEBUG [25032] [] ------------------------------session_check_true
+2022-02-02 18:46:50,920 DEBUG [25032] [] orgShowAction start
+2022-02-02 18:46:50,920 DEBUG [25032] [] admin_no is 1
+2022-02-02 18:46:50,988 DEBUG [25032] [] orgShowAction end
+2022-02-02 18:46:50,988 DEBUG [25032] [] CourseContractRegistController end
+2022-02-02 18:46:50,988 DEBUG [25032] [] finally
+2022-02-02 18:46:58,070 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:46:58,070 DEBUG [25291] [] CourseContractRegistController start
+2022-02-02 18:46:58,070 DEBUG [25291] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:46:58,073 DEBUG [25291] [] CourseContractRegistForm: is exist
+2022-02-02 18:46:58,073 DEBUG [25291] [] CourseContractRegistForm: form value set 
+2022-02-02 18:46:58,074 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:46:58,074 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:46:58,074 DEBUG [25291] [] saveAction start
+2022-02-02 18:46:58,074 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:46:58,077 DEBUG [25291] [] offer_no
+2022-02-02 18:46:58,080 DEBUG [25291] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-02 18:46:58,147 DEBUG [25291] [] saveAction end
+2022-02-02 18:46:58,147 DEBUG [25291] [] CourseContractRegistController end
+2022-02-02 18:46:58,147 DEBUG [25291] [] finally
+2022-02-02 18:46:59,631 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:46:59,631 DEBUG [25291] [] CourseStudentRegistController start
+2022-02-02 18:46:59,631 DEBUG [25291] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:46:59,634 DEBUG [25291] [] CourseStudentRegistForm: is exist
+2022-02-02 18:46:59,634 DEBUG [25291] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:46:59,635 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:46:59,635 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:46:59,635 DEBUG [25291] [] indexAction start
+2022-02-02 18:46:59,635 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:46:59,713 DEBUG [25291] [] indexAction end
+2022-02-02 18:46:59,713 DEBUG [25291] [] CourseStudentRegistController end
+2022-02-02 18:46:59,713 DEBUG [25291] [] finally
+2022-02-02 18:47:12,385 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:47:12,386 DEBUG [25300] [] CourseStudentRegistController start
+2022-02-02 18:47:12,386 DEBUG [25300] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:47:12,388 DEBUG [25300] [] CourseStudentRegistForm: is exist
+2022-02-02 18:47:12,389 DEBUG [25300] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:47:12,389 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:47:12,389 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:47:12,389 DEBUG [25300] [] searchAction start
+2022-02-02 18:47:12,389 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:47:12,463 DEBUG [25300] [] searchAction end
+2022-02-02 18:47:12,464 DEBUG [25300] [] CourseStudentRegistController end
+2022-02-02 18:47:12,464 DEBUG [25300] [] finally
+2022-02-02 18:47:14,822 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:47:14,822 DEBUG [25300] [] CourseStudentRegistController start
+2022-02-02 18:47:14,822 DEBUG [25300] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:47:14,825 DEBUG [25300] [] CourseStudentRegistForm: is exist
+2022-02-02 18:47:14,825 DEBUG [25300] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:47:14,826 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:47:14,826 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:47:14,826 DEBUG [25300] [] SaveAction start
+2022-02-02 18:47:14,826 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:47:14,826 DEBUG [25300] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:47:14,827 DEBUG [25300] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:47:14,898 DEBUG [25300] [] SaveAction end
+2022-02-02 18:47:14,898 DEBUG [25300] [] CourseStudentRegistController end
+2022-02-02 18:47:14,902 DEBUG [25300] [] finally
+2022-02-02 18:47:16,705 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:47:16,705 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:47:16,705 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:47:16,708 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:47:16,708 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:47:16,709 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:47:16,709 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:47:16,709 DEBUG [25300] [] indexAction start
+2022-02-02 18:47:16,709 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:47:16,780 DEBUG [25300] [] indexAction end
+2022-02-02 18:47:16,780 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:47:16,781 DEBUG [25300] [] finally
+2022-02-02 18:47:18,220 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractList/search
+2022-02-02 18:47:18,221 DEBUG [25300] [] CourseContractListController start
+2022-02-02 18:47:18,221 DEBUG [25300] [] controllers/CourseContractListController.php: is exist
+2022-02-02 18:47:18,224 DEBUG [25300] [] CourseContractListForm: is exist
+2022-02-02 18:47:18,225 DEBUG [25300] [] CourseContractListForm: form value set 
+2022-02-02 18:47:18,225 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractList/search
+2022-02-02 18:47:18,225 DEBUG [25300] [] searchAction start
+2022-02-02 18:47:18,225 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:47:18,335 DEBUG [25300] [] searchAction end
+2022-02-02 18:47:18,336 DEBUG [25300] [] CourseContractListController end
+2022-02-02 18:47:18,336 DEBUG [25300] [] finally
+2022-02-02 18:47:20,964 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:47:20,965 DEBUG [25300] [] CourseContractRegistController start
+2022-02-02 18:47:20,965 DEBUG [25300] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:47:20,968 DEBUG [25300] [] CourseContractRegistForm: is exist
+2022-02-02 18:47:20,968 DEBUG [25300] [] CourseContractRegistForm: form value set 
+2022-02-02 18:47:20,969 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:47:20,969 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:47:20,969 DEBUG [25300] [] indexAction start
+2022-02-02 18:47:20,969 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:47:21,040 DEBUG [25300] [] indexAction end
+2022-02-02 18:47:21,040 DEBUG [25300] [] CourseContractRegistController end
+2022-02-02 18:47:21,040 DEBUG [25300] [] finally
+2022-02-02 18:47:32,961 DEBUG [25287] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:47:32,962 DEBUG [25287] [] CourseContractRegistController start
+2022-02-02 18:47:32,962 DEBUG [25287] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:47:32,964 DEBUG [25287] [] CourseContractRegistForm: is exist
+2022-02-02 18:47:32,965 DEBUG [25287] [] CourseContractRegistForm: form value set 
+2022-02-02 18:47:32,965 DEBUG [25287] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:47:32,965 DEBUG [25287] [] ------------------------------session_check_true
+2022-02-02 18:47:32,965 DEBUG [25287] [] courseShowAction start
+2022-02-02 18:47:32,965 DEBUG [25287] [] admin_no is 1
+2022-02-02 18:47:33,031 DEBUG [25287] [] courseShowAction end
+2022-02-02 18:47:33,031 DEBUG [25287] [] CourseContractRegistController end
+2022-02-02 18:47:33,031 DEBUG [25287] [] finally
+2022-02-02 18:47:33,750 DEBUG [25287] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:47:33,751 DEBUG [25287] [] CourseContractRegistController start
+2022-02-02 18:47:33,751 DEBUG [25287] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:47:33,753 DEBUG [25287] [] CourseContractRegistForm: is exist
+2022-02-02 18:47:33,754 DEBUG [25287] [] CourseContractRegistForm: form value set 
+2022-02-02 18:47:33,754 DEBUG [25287] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:47:33,754 DEBUG [25287] [] ------------------------------session_check_true
+2022-02-02 18:47:33,754 DEBUG [25287] [] orgShowAction start
+2022-02-02 18:47:33,755 DEBUG [25287] [] admin_no is 1
+2022-02-02 18:47:33,821 DEBUG [25287] [] orgShowAction end
+2022-02-02 18:47:33,821 DEBUG [25287] [] CourseContractRegistController end
+2022-02-02 18:47:33,821 DEBUG [25287] [] finally
+2022-02-02 18:47:44,076 DEBUG [25296] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:47:44,077 DEBUG [25296] [] CourseContractRegistController start
+2022-02-02 18:47:44,077 DEBUG [25296] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:47:44,080 DEBUG [25296] [] CourseContractRegistForm: is exist
+2022-02-02 18:47:44,080 DEBUG [25296] [] CourseContractRegistForm: form value set 
+2022-02-02 18:47:44,080 DEBUG [25296] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:47:44,081 DEBUG [25296] [] ------------------------------session_check_true
+2022-02-02 18:47:44,081 DEBUG [25296] [] saveAction start
+2022-02-02 18:47:44,081 DEBUG [25296] [] admin_no is 1
+2022-02-02 18:47:44,084 DEBUG [25296] [] offer_no
+2022-02-02 18:47:44,086 DEBUG [25296] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-02 18:47:44,151 DEBUG [25296] [] saveAction end
+2022-02-02 18:47:44,151 DEBUG [25296] [] CourseContractRegistController end
+2022-02-02 18:47:44,151 DEBUG [25296] [] finally
+2022-02-02 18:47:45,233 DEBUG [25296] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:47:45,234 DEBUG [25296] [] CourseStudentRegistController start
+2022-02-02 18:47:45,234 DEBUG [25296] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:47:45,236 DEBUG [25296] [] CourseStudentRegistForm: is exist
+2022-02-02 18:47:45,237 DEBUG [25296] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:47:45,237 DEBUG [25296] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:47:45,237 DEBUG [25296] [] ------------------------------session_check_true
+2022-02-02 18:47:45,238 DEBUG [25296] [] indexAction start
+2022-02-02 18:47:45,238 DEBUG [25296] [] admin_no is 1
+2022-02-02 18:47:45,311 DEBUG [25296] [] indexAction end
+2022-02-02 18:47:45,311 DEBUG [25296] [] CourseStudentRegistController end
+2022-02-02 18:47:45,312 DEBUG [25296] [] finally
+2022-02-02 18:48:00,387 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:48:00,387 DEBUG [25130] [] CourseStudentRegistController start
+2022-02-02 18:48:00,387 DEBUG [25130] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:48:00,390 DEBUG [25130] [] CourseStudentRegistForm: is exist
+2022-02-02 18:48:00,390 DEBUG [25130] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:48:00,391 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:48:00,391 DEBUG [25130] [] ------------------------------session_check_true
+2022-02-02 18:48:00,391 DEBUG [25130] [] searchAction start
+2022-02-02 18:48:00,391 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:48:00,466 DEBUG [25130] [] searchAction end
+2022-02-02 18:48:00,466 DEBUG [25130] [] CourseStudentRegistController end
+2022-02-02 18:48:00,466 DEBUG [25130] [] finally
+2022-02-02 18:48:02,841 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:48:02,842 DEBUG [25130] [] CourseStudentRegistController start
+2022-02-02 18:48:02,842 DEBUG [25130] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:48:02,844 DEBUG [25130] [] CourseStudentRegistForm: is exist
+2022-02-02 18:48:02,845 DEBUG [25130] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:48:02,845 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:48:02,845 DEBUG [25130] [] ------------------------------session_check_true
+2022-02-02 18:48:02,845 DEBUG [25130] [] SaveAction start
+2022-02-02 18:48:02,846 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:48:02,846 DEBUG [25130] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:48:02,847 DEBUG [25130] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:48:02,920 DEBUG [25130] [] SaveAction end
+2022-02-02 18:48:02,920 DEBUG [25130] [] CourseStudentRegistController end
+2022-02-02 18:48:02,921 DEBUG [25130] [] finally
+2022-02-02 18:48:04,167 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:48:04,167 DEBUG [25130] [] CourseContractRegistController start
+2022-02-02 18:48:04,168 DEBUG [25130] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:48:04,170 DEBUG [25130] [] CourseContractRegistForm: is exist
+2022-02-02 18:48:04,171 DEBUG [25130] [] CourseContractRegistForm: form value set 
+2022-02-02 18:48:04,171 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:48:04,171 DEBUG [25130] [] ------------------------------session_check_true
+2022-02-02 18:48:04,171 DEBUG [25130] [] indexAction start
+2022-02-02 18:48:04,171 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:48:04,239 DEBUG [25130] [] indexAction end
+2022-02-02 18:48:04,239 DEBUG [25130] [] CourseContractRegistController end
+2022-02-02 18:48:04,240 DEBUG [25130] [] finally
+2022-02-02 18:48:06,421 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseContractList/search
+2022-02-02 18:48:06,422 DEBUG [25130] [] CourseContractListController start
+2022-02-02 18:48:06,422 DEBUG [25130] [] controllers/CourseContractListController.php: is exist
+2022-02-02 18:48:06,425 DEBUG [25130] [] CourseContractListForm: is exist
+2022-02-02 18:48:06,425 DEBUG [25130] [] CourseContractListForm: form value set 
+2022-02-02 18:48:06,426 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseContractList/search
+2022-02-02 18:48:06,426 DEBUG [25130] [] searchAction start
+2022-02-02 18:48:06,426 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:48:06,536 DEBUG [25130] [] searchAction end
+2022-02-02 18:48:06,537 DEBUG [25130] [] CourseContractListController end
+2022-02-02 18:48:06,537 DEBUG [25130] [] finally
+2022-02-02 18:48:09,984 DEBUG [25130] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:48:09,984 DEBUG [25130] [] CourseContractRegistController start
+2022-02-02 18:48:09,984 DEBUG [25130] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:48:09,987 DEBUG [25130] [] CourseContractRegistForm: is exist
+2022-02-02 18:48:09,987 DEBUG [25130] [] CourseContractRegistForm: form value set 
+2022-02-02 18:48:09,988 DEBUG [25130] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-02-02 18:48:09,988 DEBUG [25130] [] ------------------------------session_check_true
+2022-02-02 18:48:09,988 DEBUG [25130] [] indexAction start
+2022-02-02 18:48:09,988 DEBUG [25130] [] admin_no is 1
+2022-02-02 18:48:10,059 DEBUG [25130] [] indexAction end
+2022-02-02 18:48:10,059 DEBUG [25130] [] CourseContractRegistController end
+2022-02-02 18:48:10,059 DEBUG [25130] [] finally
+2022-02-02 18:48:20,380 DEBUG [25095] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:48:20,381 DEBUG [25095] [] CourseContractRegistController start
+2022-02-02 18:48:20,381 DEBUG [25095] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:48:20,384 DEBUG [25095] [] CourseContractRegistForm: is exist
+2022-02-02 18:48:20,384 DEBUG [25095] [] CourseContractRegistForm: form value set 
+2022-02-02 18:48:20,384 DEBUG [25095] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-02-02 18:48:20,385 DEBUG [25095] [] ------------------------------session_check_true
+2022-02-02 18:48:20,385 DEBUG [25095] [] orgShowAction start
+2022-02-02 18:48:20,385 DEBUG [25095] [] admin_no is 1
+2022-02-02 18:48:20,455 DEBUG [25095] [] orgShowAction end
+2022-02-02 18:48:20,455 DEBUG [25095] [] CourseContractRegistController end
+2022-02-02 18:48:20,455 DEBUG [25095] [] finally
+2022-02-02 18:48:20,983 DEBUG [25095] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:48:20,984 DEBUG [25095] [] CourseContractRegistController start
+2022-02-02 18:48:20,984 DEBUG [25095] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:48:20,987 DEBUG [25095] [] CourseContractRegistForm: is exist
+2022-02-02 18:48:20,987 DEBUG [25095] [] CourseContractRegistForm: form value set 
+2022-02-02 18:48:20,987 DEBUG [25095] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-02-02 18:48:20,988 DEBUG [25095] [] ------------------------------session_check_true
+2022-02-02 18:48:20,988 DEBUG [25095] [] courseShowAction start
+2022-02-02 18:48:20,988 DEBUG [25095] [] admin_no is 1
+2022-02-02 18:48:21,057 DEBUG [25095] [] courseShowAction end
+2022-02-02 18:48:21,057 DEBUG [25095] [] CourseContractRegistController end
+2022-02-02 18:48:21,057 DEBUG [25095] [] finally
+2022-02-02 18:48:28,117 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:48:28,117 DEBUG [25291] [] CourseContractRegistController start
+2022-02-02 18:48:28,117 DEBUG [25291] [] controllers/CourseContractRegistController.php: is exist
+2022-02-02 18:48:28,119 DEBUG [25291] [] CourseContractRegistForm: is exist
+2022-02-02 18:48:28,120 DEBUG [25291] [] CourseContractRegistForm: form value set 
+2022-02-02 18:48:28,120 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-02-02 18:48:28,120 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:48:28,120 DEBUG [25291] [] saveAction start
+2022-02-02 18:48:28,120 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:48:28,123 DEBUG [25291] [] offer_no
+2022-02-02 18:48:28,130 DEBUG [25291] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-02-02 18:48:28,197 DEBUG [25291] [] saveAction end
+2022-02-02 18:48:28,197 DEBUG [25291] [] CourseContractRegistController end
+2022-02-02 18:48:28,197 DEBUG [25291] [] finally
+2022-02-02 18:48:31,094 DEBUG [25291] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:48:31,095 DEBUG [25291] [] CourseStudentRegistController start
+2022-02-02 18:48:31,095 DEBUG [25291] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:48:31,097 DEBUG [25291] [] CourseStudentRegistForm: is exist
+2022-02-02 18:48:31,098 DEBUG [25291] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:48:31,098 DEBUG [25291] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-02-02 18:48:31,098 DEBUG [25291] [] ------------------------------session_check_true
+2022-02-02 18:48:31,098 DEBUG [25291] [] indexAction start
+2022-02-02 18:48:31,099 DEBUG [25291] [] admin_no is 1
+2022-02-02 18:48:31,173 DEBUG [25291] [] indexAction end
+2022-02-02 18:48:31,173 DEBUG [25291] [] CourseStudentRegistController end
+2022-02-02 18:48:31,173 DEBUG [25291] [] finally
+2022-02-02 18:48:36,636 DEBUG [25300] [] Request URI : /eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:48:36,636 DEBUG [25300] [] CourseStudentRegistController start
+2022-02-02 18:48:36,636 DEBUG [25300] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:48:36,639 DEBUG [25300] [] CourseStudentRegistForm: is exist
+2022-02-02 18:48:36,639 DEBUG [25300] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:48:36,640 DEBUG [25300] [] ------------------------------/eccadmin_dev/CourseStudentRegist/search
+2022-02-02 18:48:36,640 DEBUG [25300] [] ------------------------------session_check_true
+2022-02-02 18:48:36,640 DEBUG [25300] [] searchAction start
+2022-02-02 18:48:36,640 DEBUG [25300] [] admin_no is 1
+2022-02-02 18:48:36,717 DEBUG [25300] [] searchAction end
+2022-02-02 18:48:36,717 DEBUG [25300] [] CourseStudentRegistController end
+2022-02-02 18:48:36,717 DEBUG [25300] [] finally
+2022-02-02 18:48:45,981 DEBUG [25295] [] Request URI : /eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:48:45,982 DEBUG [25295] [] CourseStudentRegistController start
+2022-02-02 18:48:45,982 DEBUG [25295] [] controllers/CourseStudentRegistController.php: is exist
+2022-02-02 18:48:45,985 DEBUG [25295] [] CourseStudentRegistForm: is exist
+2022-02-02 18:48:45,985 DEBUG [25295] [] CourseStudentRegistForm: form value set 
+2022-02-02 18:48:45,985 DEBUG [25295] [] ------------------------------/eccadmin_dev/CourseStudentRegist/Save
+2022-02-02 18:48:45,986 DEBUG [25295] [] ------------------------------session_check_true
+2022-02-02 18:48:45,986 DEBUG [25295] [] SaveAction start
+2022-02-02 18:48:45,986 DEBUG [25295] [] admin_no is 1
+2022-02-02 18:48:45,986 DEBUG [25295] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:48:45,987 DEBUG [25295] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-02-02 18:48:46,058 DEBUG [25295] [] SaveAction end
+2022-02-02 18:48:46,058 DEBUG [25295] [] CourseStudentRegistController end
+2022-02-02 18:48:46,059 DEBUG [25295] [] finally

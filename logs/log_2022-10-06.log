@@ -1,0 +1,209 @@
+2022-10-06 11:09:44,133 DEBUG [63794] [] Request URI : /eccadmin_dev/Login
+2022-10-06 11:09:44,235 DEBUG [63794] [] LoginController start
+2022-10-06 11:09:44,235 DEBUG [63794] [] controllers/LoginController.php: is exist
+2022-10-06 11:09:44,337 DEBUG [63794] [] LoginForm: is exist
+2022-10-06 11:09:44,379 DEBUG [63794] [] LoginForm: form value set 
+2022-10-06 11:09:44,380 DEBUG [63794] [] ------------------------------/eccadmin_dev/Login
+2022-10-06 11:09:44,380 DEBUG [63794] [] ------------------------------login_start_check
+2022-10-06 11:09:44,380 DEBUG [63794] [] indexAction start
+2022-10-06 11:09:44,491 DEBUG [63794] [] indexAction end
+2022-10-06 11:09:44,491 DEBUG [63794] [] LoginController end
+2022-10-06 11:09:44,491 DEBUG [63794] [] finally
+2022-10-06 11:10:55,300 DEBUG [63938] [] Request URI : /eccadmin_dev/Login/login
+2022-10-06 11:10:55,306 DEBUG [63938] [] LoginController start
+2022-10-06 11:10:55,306 DEBUG [63938] [] controllers/LoginController.php: is exist
+2022-10-06 11:10:55,308 DEBUG [63938] [] LoginForm: is exist
+2022-10-06 11:10:55,309 DEBUG [63938] [] LoginForm: form value set 
+2022-10-06 11:10:55,309 DEBUG [63938] [] ------------------------------/eccadmin_dev/Login/login
+2022-10-06 11:10:55,309 DEBUG [63938] [] ------------------------------login_start_check
+2022-10-06 11:10:55,309 DEBUG [63938] [] loginAction start
+2022-10-06 11:10:55,608 DEBUG [63938] [] loginAction end
+2022-10-06 11:10:55,608 DEBUG [63938] [] LoginController end
+2022-10-06 11:10:55,608 DEBUG [63938] [] finally
+2022-10-06 11:11:02,230 DEBUG [63968] [] Request URI : /eccadmin_dev/Login/login
+2022-10-06 11:11:02,235 DEBUG [63968] [] LoginController start
+2022-10-06 11:11:02,235 DEBUG [63968] [] controllers/LoginController.php: is exist
+2022-10-06 11:11:02,238 DEBUG [63968] [] LoginForm: is exist
+2022-10-06 11:11:02,238 DEBUG [63968] [] LoginForm: form value set 
+2022-10-06 11:11:02,239 DEBUG [63968] [] ------------------------------/eccadmin_dev/Login/login
+2022-10-06 11:11:02,239 DEBUG [63968] [] ------------------------------login_start_check
+2022-10-06 11:11:02,239 DEBUG [63968] [] loginAction start
+2022-10-06 11:11:02,552 DEBUG [63968] [] loginAction end
+2022-10-06 11:11:02,552 DEBUG [63968] [] LoginController end
+2022-10-06 11:11:02,552 DEBUG [63968] [] finally
+2022-10-06 11:11:02,578 DEBUG [63968] [] Request URI : /eccadmin_dev/Menu
+2022-10-06 11:11:02,582 DEBUG [63968] [] MenuController start
+2022-10-06 11:11:02,582 DEBUG [63968] [] controllers/MenuController.php: is exist
+2022-10-06 11:11:02,691 DEBUG [63968] [] MenuForm: is exist
+2022-10-06 11:11:02,697 DEBUG [63968] [] MenuForm: form value set 
+2022-10-06 11:11:02,697 DEBUG [63968] [] ------------------------------/eccadmin_dev/Menu
+2022-10-06 11:11:02,697 DEBUG [63968] [] ------------------------------login_start_check
+2022-10-06 11:11:02,697 DEBUG [63968] [] indexAction start
+2022-10-06 11:11:02,698 DEBUG [63968] [] admin_no is 1
+2022-10-06 11:11:02,853 DEBUG [63968] [] indexAction end
+2022-10-06 11:11:02,853 DEBUG [63968] [] MenuController end
+2022-10-06 11:11:02,853 DEBUG [63968] [] finally
+2022-10-06 11:11:05,931 DEBUG [63938] [] Request URI : /eccadmin_dev/AtReportList
+2022-10-06 11:11:05,937 DEBUG [63938] [] AtReportListController start
+2022-10-06 11:11:05,937 DEBUG [63938] [] controllers/AtReportListController.php: is exist
+2022-10-06 11:11:06,021 DEBUG [63938] [] AtReportListForm: is exist
+2022-10-06 11:11:06,025 DEBUG [63938] [] AtReportListForm: form value set 
+2022-10-06 11:11:06,026 DEBUG [63938] [] ------------------------------/eccadmin_dev/AtReportList
+2022-10-06 11:11:06,026 DEBUG [63938] [] indexAction start
+2022-10-06 11:11:06,026 DEBUG [63938] [] admin_no is 1
+2022-10-06 11:11:06,160 DEBUG [63938] [] indexAction end
+2022-10-06 11:11:06,160 DEBUG [63938] [] AtReportListController end
+2022-10-06 11:11:06,160 DEBUG [63938] [] finally
+2022-10-06 11:11:10,140 DEBUG [63969] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-10-06 11:11:10,145 DEBUG [63969] [] AtReportRegistController start
+2022-10-06 11:11:10,145 DEBUG [63969] [] controllers/AtReportRegistController.php: is exist
+2022-10-06 11:11:10,196 DEBUG [63969] [] AtReportRegistForm: is exist
+2022-10-06 11:11:10,206 DEBUG [63969] [] AtReportRegistForm: form value set 
+2022-10-06 11:11:10,206 DEBUG [63969] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-10-06 11:11:10,206 DEBUG [63969] [] ------------------------------session_check_true
+2022-10-06 11:11:10,207 DEBUG [63969] [] indexAction start
+2022-10-06 11:11:10,207 DEBUG [63969] [] admin_no is 1
+2022-10-06 11:11:10,210 DEBUG [63969] [] Array
+(
+    [0] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 15
+            [at_type] => 002
+            [at_no] => 5
+            [offer_no] => 272
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => 2022 Jun 6 Check
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => SW Speaking Course  (修正不可)
+            [at_type_name] => コース
+        )
+
+    [1] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 15
+            [at_type] => 001
+            [at_no] => 278
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => 2022 Jun 6 Check
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => ELCT_v1.0 Listening
+            [at_type_name] => 試験
+        )
+
+    [2] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 15
+            [at_type] => 001
+            [at_no] => 281
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => 2022 Jun 6 Check
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => ELCT_v1.0 Reading
+            [at_type_name] => 試験
+        )
+
+    [3] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 15
+            [at_type] => 002
+            [at_no] => 2
+            [offer_no] => 271
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => 2022 Jun 6 Check
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => SW Writing Course (修正不可)
+            [at_type_name] => コース
+        )
+
+)
+
+2022-10-06 11:11:10,355 DEBUG [63969] [] indexAction end
+2022-10-06 11:11:10,355 DEBUG [63969] [] AtReportRegistController end
+2022-10-06 11:11:10,355 DEBUG [63969] [] finally
+2022-10-06 11:11:21,628 DEBUG [63983] [] Request URI : /eccadmin_dev/AtReportRegist/save
+2022-10-06 11:11:21,636 DEBUG [63983] [] AtReportRegistController start
+2022-10-06 11:11:21,637 DEBUG [63983] [] controllers/AtReportRegistController.php: is exist
+2022-10-06 11:11:21,643 DEBUG [63983] [] AtReportRegistForm: is exist
+2022-10-06 11:11:21,643 DEBUG [63983] [] AtReportRegistForm: form value set 
+2022-10-06 11:11:21,644 DEBUG [63983] [] ------------------------------/eccadmin_dev/AtReportRegist/save
+2022-10-06 11:11:21,644 DEBUG [63983] [] ------------------------------session_check_true
+2022-10-06 11:11:21,644 DEBUG [63983] [] saveAction start
+2022-10-06 11:11:21,648 DEBUG [63983] [] admin_no is 1
+2022-10-06 11:11:21,648 DEBUG [63983] [] saveAction end
+2022-10-06 11:11:21,648 DEBUG [63983] [] AtReportRegistController end
+2022-10-06 11:11:21,648 DEBUG [63983] [] finally
+2022-10-06 11:11:21,679 DEBUG [63983] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-10-06 11:11:21,684 DEBUG [63983] [] AtReportListController start
+2022-10-06 11:11:21,684 DEBUG [63983] [] controllers/AtReportListController.php: is exist
+2022-10-06 11:11:21,688 DEBUG [63983] [] AtReportListForm: is exist
+2022-10-06 11:11:21,689 DEBUG [63983] [] AtReportListForm: form value set 
+2022-10-06 11:11:21,689 DEBUG [63983] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-10-06 11:11:21,689 DEBUG [63983] [] SearchAction start
+2022-10-06 11:11:21,689 DEBUG [63983] [] --------back--------
+2022-10-06 11:11:21,690 DEBUG [63983] [] admin_no is 1
+2022-10-06 11:11:21,772 DEBUG [63983] [] SearchAction end
+2022-10-06 11:11:21,772 DEBUG [63983] [] AtReportListController end
+2022-10-06 11:11:21,773 DEBUG [63983] [] finally
+2022-10-06 11:49:56,398 DEBUG [64656] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-10-06 11:49:56,403 DEBUG [64656] [] AtReportListController start
+2022-10-06 11:49:56,403 DEBUG [64656] [] controllers/AtReportListController.php: is exist
+2022-10-06 11:49:56,407 DEBUG [64656] [] AtReportListForm: is exist
+2022-10-06 11:49:56,407 DEBUG [64656] [] AtReportListForm: form value set 
+2022-10-06 11:49:56,408 DEBUG [64656] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-10-06 11:49:56,408 DEBUG [64656] [] SearchAction start
+2022-10-06 11:49:56,408 DEBUG [64656] [] admin_no is 
+2022-10-06 11:49:56,408 DEBUG [64656] [] SearchAction end
+2022-10-06 11:49:56,408 DEBUG [64656] [] AtReportListController end
+2022-10-06 11:49:56,408 DEBUG [64656] [] finally
+2022-10-06 11:49:56,433 DEBUG [64656] [] Request URI : /eccadmin_dev/Error/disp
+2022-10-06 11:49:56,437 DEBUG [64656] [] ErrorController start
+2022-10-06 11:49:56,437 DEBUG [64656] [] controllers/ErrorController.php: is exist
+2022-10-06 11:49:56,456 DEBUG [64656] [] ErrorForm: is exist
+2022-10-06 11:49:56,470 DEBUG [64656] [] ErrorForm: form value set 
+2022-10-06 11:49:56,470 DEBUG [64656] [] ------------------------------/eccadmin_dev/Error/disp
+2022-10-06 11:49:56,470 DEBUG [64656] [] ------------------------------login_start_check
+2022-10-06 11:49:56,470 DEBUG [64656] [] dispAction start
+2022-10-06 11:49:56,523 DEBUG [64656] [] dispAction end
+2022-10-06 11:49:56,523 DEBUG [64656] [] ErrorController end
+2022-10-06 11:49:56,523 DEBUG [64656] [] finally
+2022-10-06 11:49:57,905 DEBUG [64690] [] Request URI : /eccadmin_dev/Login
+2022-10-06 11:49:57,911 DEBUG [64690] [] LoginController start
+2022-10-06 11:49:57,911 DEBUG [64690] [] controllers/LoginController.php: is exist
+2022-10-06 11:49:57,914 DEBUG [64690] [] LoginForm: is exist
+2022-10-06 11:49:57,914 DEBUG [64690] [] LoginForm: form value set 
+2022-10-06 11:49:57,915 DEBUG [64690] [] ------------------------------/eccadmin_dev/Login
+2022-10-06 11:49:57,915 DEBUG [64690] [] ------------------------------login_start_check
+2022-10-06 11:49:57,915 DEBUG [64690] [] indexAction start
+2022-10-06 11:49:57,945 DEBUG [64690] [] indexAction end
+2022-10-06 11:49:57,945 DEBUG [64690] [] LoginController end
+2022-10-06 11:49:57,945 DEBUG [64690] [] finally

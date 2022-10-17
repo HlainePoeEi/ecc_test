@@ -1,0 +1,1502 @@
+2022-05-20 03:54:03,330 DEBUG [46023] [] Request URI : /eccadmin_dev/Login
+2022-05-20 03:54:03,357 DEBUG [46023] [] LoginController start
+2022-05-20 03:54:03,357 DEBUG [46023] [] controllers/LoginController.php: is exist
+2022-05-20 03:54:03,357 DEBUG [46023] [] LoginForm: is exist
+2022-05-20 03:54:03,358 DEBUG [46023] [] LoginForm: form value set 
+2022-05-20 03:54:03,358 DEBUG [46023] [] ------------------------------/eccadmin_dev/Login
+2022-05-20 03:54:03,358 DEBUG [46023] [] ------------------------------login_start_check
+2022-05-20 03:54:03,358 DEBUG [46023] [] indexAction start
+2022-05-20 03:54:03,406 DEBUG [46023] [] indexAction end
+2022-05-20 03:54:03,406 DEBUG [46023] [] LoginController end
+2022-05-20 03:54:03,406 DEBUG [46023] [] finally
+2022-05-20 10:12:29,463 DEBUG [54479] [] Request URI : /eccadmin_dev/Login
+2022-05-20 10:12:29,464 DEBUG [54479] [] LoginController start
+2022-05-20 10:12:29,464 DEBUG [54479] [] controllers/LoginController.php: is exist
+2022-05-20 10:12:29,464 DEBUG [54479] [] LoginForm: is exist
+2022-05-20 10:12:29,465 DEBUG [54479] [] LoginForm: form value set 
+2022-05-20 10:12:29,465 DEBUG [54479] [] ------------------------------/eccadmin_dev/Login
+2022-05-20 10:12:29,465 DEBUG [54479] [] ------------------------------login_start_check
+2022-05-20 10:12:29,465 DEBUG [54479] [] indexAction start
+2022-05-20 10:12:29,483 DEBUG [54479] [] indexAction end
+2022-05-20 10:12:29,483 DEBUG [54479] [] LoginController end
+2022-05-20 10:12:29,483 DEBUG [54479] [] finally
+2022-05-20 10:13:41,990 DEBUG [54482] [] Request URI : /eccadmin_dev/Login/login
+2022-05-20 10:13:41,991 DEBUG [54482] [] LoginController start
+2022-05-20 10:13:41,991 DEBUG [54482] [] controllers/LoginController.php: is exist
+2022-05-20 10:13:41,991 DEBUG [54482] [] LoginForm: is exist
+2022-05-20 10:13:41,991 DEBUG [54482] [] LoginForm: form value set 
+2022-05-20 10:13:41,992 DEBUG [54482] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-20 10:13:41,992 DEBUG [54482] [] ------------------------------login_start_check
+2022-05-20 10:13:41,992 DEBUG [54482] [] loginAction start
+2022-05-20 10:13:42,288 DEBUG [54482] [] loginAction end
+2022-05-20 10:13:42,288 DEBUG [54482] [] LoginController end
+2022-05-20 10:13:42,288 DEBUG [54482] [] finally
+2022-05-20 10:13:42,310 DEBUG [54482] [] Request URI : /eccadmin_dev/Menu
+2022-05-20 10:13:42,310 DEBUG [54482] [] MenuController start
+2022-05-20 10:13:42,310 DEBUG [54482] [] controllers/MenuController.php: is exist
+2022-05-20 10:13:42,311 DEBUG [54482] [] MenuForm: is exist
+2022-05-20 10:13:42,311 DEBUG [54482] [] MenuForm: form value set 
+2022-05-20 10:13:42,312 DEBUG [54482] [] ------------------------------/eccadmin_dev/Menu
+2022-05-20 10:13:42,312 DEBUG [54482] [] ------------------------------login_start_check
+2022-05-20 10:13:42,312 DEBUG [54482] [] indexAction start
+2022-05-20 10:13:42,312 DEBUG [54482] [] admin_no is 1
+2022-05-20 10:13:42,378 DEBUG [54482] [] indexAction end
+2022-05-20 10:13:42,378 DEBUG [54482] [] MenuController end
+2022-05-20 10:13:42,378 DEBUG [54482] [] finally
+2022-05-20 10:13:46,061 DEBUG [54461] [] Request URI : /eccadmin_dev/ReportList
+2022-05-20 10:13:46,062 DEBUG [54461] [] ReportListController start
+2022-05-20 10:13:46,062 DEBUG [54461] [] controllers/ReportListController.php: is exist
+2022-05-20 10:13:46,067 DEBUG [54461] [] ReportListForm: is exist
+2022-05-20 10:13:46,067 DEBUG [54461] [] ReportListForm: form value set 
+2022-05-20 10:13:46,068 DEBUG [54461] [] ------------------------------/eccadmin_dev/ReportList
+2022-05-20 10:13:46,068 DEBUG [54461] [] indexAction start
+2022-05-20 10:13:46,068 DEBUG [54461] [] admin_no is 1
+2022-05-20 10:13:46,157 DEBUG [54461] [] indexAction end
+2022-05-20 10:13:46,157 DEBUG [54461] [] ReportListController end
+2022-05-20 10:13:46,157 DEBUG [54461] [] finally
+2022-05-20 10:13:49,356 DEBUG [54461] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-05-20 10:13:49,356 DEBUG [54461] [] ReportRegistController start
+2022-05-20 10:13:49,356 DEBUG [54461] [] controllers/ReportRegistController.php: is exist
+2022-05-20 10:13:49,362 DEBUG [54461] [] ReportRegistForm: is exist
+2022-05-20 10:13:49,363 DEBUG [54461] [] ReportRegistForm: form value set 
+2022-05-20 10:13:49,363 DEBUG [54461] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-05-20 10:13:49,363 DEBUG [54461] [] ------------------------------session_check_true
+2022-05-20 10:13:49,364 DEBUG [54461] [] indexAction start
+2022-05-20 10:13:49,364 DEBUG [54461] [] admin_no is 1
+2022-05-20 10:13:49,454 DEBUG [54461] [] indexAction end
+2022-05-20 10:13:49,454 DEBUG [54461] [] ReportRegistController end
+2022-05-20 10:13:49,454 DEBUG [54461] [] finally
+2022-05-20 10:13:56,146 DEBUG [54479] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 10:13:56,146 DEBUG [54479] [] ReportRegistController start
+2022-05-20 10:13:56,146 DEBUG [54479] [] controllers/ReportRegistController.php: is exist
+2022-05-20 10:13:56,152 DEBUG [54479] [] ReportRegistForm: is exist
+2022-05-20 10:13:56,153 DEBUG [54479] [] ReportRegistForm: form value set 
+2022-05-20 10:13:56,153 DEBUG [54479] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 10:13:56,153 DEBUG [54479] [] ------------------------------session_check_true
+2022-05-20 10:13:56,153 DEBUG [54479] [] saveAction start
+2022-05-20 10:13:56,255 DEBUG [54479] [] saveAction end
+2022-05-20 10:13:56,255 DEBUG [54479] [] ReportRegistController end
+2022-05-20 10:13:56,255 DEBUG [54479] [] finally
+2022-05-20 10:16:59,024 DEBUG [54387] [] Request URI : /eccadmin_dev/ReportRegist/back
+2022-05-20 10:16:59,025 DEBUG [54387] [] ReportRegistController start
+2022-05-20 10:16:59,025 DEBUG [54387] [] controllers/ReportRegistController.php: is exist
+2022-05-20 10:16:59,031 DEBUG [54387] [] ReportRegistForm: is exist
+2022-05-20 10:16:59,031 DEBUG [54387] [] ReportRegistForm: form value set 
+2022-05-20 10:16:59,032 DEBUG [54387] [] ------------------------------/eccadmin_dev/ReportRegist/back
+2022-05-20 10:16:59,032 DEBUG [54387] [] ------------------------------session_check_true
+2022-05-20 10:16:59,032 DEBUG [54387] [] backAction start
+2022-05-20 10:16:59,032 DEBUG [54387] [] admin_no is 1
+2022-05-20 10:16:59,032 DEBUG [54387] [] backAction end
+2022-05-20 10:16:59,032 DEBUG [54387] [] ReportRegistController end
+2022-05-20 10:16:59,032 DEBUG [54387] [] finally
+2022-05-20 10:16:59,050 DEBUG [54387] [] Request URI : /eccadmin_dev/ReportList/Search
+2022-05-20 10:16:59,050 DEBUG [54387] [] ReportListController start
+2022-05-20 10:16:59,050 DEBUG [54387] [] controllers/ReportListController.php: is exist
+2022-05-20 10:16:59,054 DEBUG [54387] [] ReportListForm: is exist
+2022-05-20 10:16:59,054 DEBUG [54387] [] ReportListForm: form value set 
+2022-05-20 10:16:59,055 DEBUG [54387] [] ------------------------------/eccadmin_dev/ReportList/Search
+2022-05-20 10:16:59,055 DEBUG [54387] [] SearchAction start
+2022-05-20 10:16:59,055 DEBUG [54387] [] --------back--------
+2022-05-20 10:16:59,055 DEBUG [54387] [] admin_no is 1
+2022-05-20 10:16:59,117 DEBUG [54387] [] SearchAction end
+2022-05-20 10:16:59,117 DEBUG [54387] [] ReportListController end
+2022-05-20 10:16:59,117 DEBUG [54387] [] finally
+2022-05-20 10:17:01,046 DEBUG [54387] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-05-20 10:17:01,046 DEBUG [54387] [] ReportRegistController start
+2022-05-20 10:17:01,046 DEBUG [54387] [] controllers/ReportRegistController.php: is exist
+2022-05-20 10:17:01,052 DEBUG [54387] [] ReportRegistForm: is exist
+2022-05-20 10:17:01,052 DEBUG [54387] [] ReportRegistForm: form value set 
+2022-05-20 10:17:01,053 DEBUG [54387] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-05-20 10:17:01,053 DEBUG [54387] [] ------------------------------session_check_true
+2022-05-20 10:17:01,053 DEBUG [54387] [] indexAction start
+2022-05-20 10:17:01,053 DEBUG [54387] [] admin_no is 1
+2022-05-20 10:17:01,126 DEBUG [54387] [] indexAction end
+2022-05-20 10:17:01,126 DEBUG [54387] [] ReportRegistController end
+2022-05-20 10:17:01,126 DEBUG [54387] [] finally
+2022-05-20 10:17:06,847 DEBUG [54528] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 10:17:06,848 DEBUG [54528] [] ReportRegistController start
+2022-05-20 10:17:06,848 DEBUG [54528] [] controllers/ReportRegistController.php: is exist
+2022-05-20 10:17:06,854 DEBUG [54528] [] ReportRegistForm: is exist
+2022-05-20 10:17:06,854 DEBUG [54528] [] ReportRegistForm: form value set 
+2022-05-20 10:17:06,855 DEBUG [54528] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 10:17:06,855 DEBUG [54528] [] ------------------------------session_check_true
+2022-05-20 10:17:06,855 DEBUG [54528] [] saveAction start
+2022-05-20 10:17:06,937 DEBUG [54528] [] saveAction end
+2022-05-20 10:17:06,938 DEBUG [54528] [] ReportRegistController end
+2022-05-20 10:17:06,938 DEBUG [54528] [] finally
+2022-05-20 10:25:46,856 DEBUG [54465] [] Request URI : /eccadmin_dev/QuizAssignmentCheckbox/save
+2022-05-20 10:25:46,857 DEBUG [54465] [] QuizAssignmentCheckboxController start
+2022-05-20 10:25:46,857 DEBUG [54465] [] controllers/QuizAssignmentCheckboxController.php: is exist
+2022-05-20 10:25:46,861 DEBUG [54465] [] QuizAssignmentCheckboxForm: is exist
+2022-05-20 10:25:46,861 DEBUG [54465] [] QuizAssignmentCheckboxForm: form value set 
+2022-05-20 10:25:46,862 DEBUG [54465] [] ------------------------------/eccadmin_dev/QuizAssignmentCheckbox/save
+2022-05-20 10:25:46,862 DEBUG [54465] [] ------------------------------session_check_false:uid=372860f96b848ee4a83486b732e95815-----&-----19b2ccf7431b7cc8b6abc99720b49f95
+2022-05-20 10:25:46,862 DEBUG [54465] [] saveAction start
+2022-05-20 10:25:46,862 DEBUG [54465] [] admin_no is 1
+2022-05-20 10:25:46,864 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:46,865 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:46,866 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:46,866 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:46,867 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:46,868 DEBUG [54465] [] INSERT INTO  T_TEST_QUIZ (org_no,test_no,quiz_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_no,:quiz_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-05-20 10:25:47,172 DEBUG [54509] [] Request URI : /eccadmin_dev/Error/disp
+2022-05-20 10:25:47,173 DEBUG [54509] [] ErrorController start
+2022-05-20 10:25:47,173 DEBUG [54509] [] controllers/ErrorController.php: is exist
+2022-05-20 10:25:47,173 DEBUG [54509] [] ErrorForm: is exist
+2022-05-20 10:25:47,173 DEBUG [54509] [] ErrorForm: form value set 
+2022-05-20 10:25:47,174 DEBUG [54509] [] ------------------------------/eccadmin_dev/Error/disp
+2022-05-20 10:25:47,174 DEBUG [54509] [] ------------------------------login_start_check
+2022-05-20 10:25:47,174 DEBUG [54509] [] dispAction start
+2022-05-20 10:25:47,182 DEBUG [54509] [] dispAction end
+2022-05-20 10:25:47,182 DEBUG [54509] [] ErrorController end
+2022-05-20 10:25:47,182 DEBUG [54509] [] finally
+2022-05-20 10:25:48,840 DEBUG [54509] [] Request URI : /eccadmin_dev/Login
+2022-05-20 10:25:48,840 DEBUG [54509] [] LoginController start
+2022-05-20 10:25:48,841 DEBUG [54509] [] controllers/LoginController.php: is exist
+2022-05-20 10:25:48,841 DEBUG [54509] [] LoginForm: is exist
+2022-05-20 10:25:48,841 DEBUG [54509] [] LoginForm: form value set 
+2022-05-20 10:25:48,841 DEBUG [54509] [] ------------------------------/eccadmin_dev/Login
+2022-05-20 10:25:48,842 DEBUG [54509] [] ------------------------------login_start_check
+2022-05-20 10:25:48,842 DEBUG [54509] [] indexAction start
+2022-05-20 10:25:48,856 DEBUG [54509] [] indexAction end
+2022-05-20 10:25:48,857 DEBUG [54509] [] LoginController end
+2022-05-20 10:25:48,857 DEBUG [54509] [] finally
+2022-05-20 10:55:20,377 DEBUG [54774] [] Request URI : /eccadmin_dev/TestList
+2022-05-20 10:55:20,378 DEBUG [54774] [] TestListController start
+2022-05-20 10:55:20,378 DEBUG [54774] [] controllers/TestListController.php: is exist
+2022-05-20 10:55:20,382 DEBUG [54774] [] TestListForm: is exist
+2022-05-20 10:55:20,382 DEBUG [54774] [] TestListForm: form value set 
+2022-05-20 10:55:20,383 DEBUG [54774] [] ------------------------------/eccadmin_dev/TestList
+2022-05-20 10:55:20,383 DEBUG [54774] [] indexAction start
+2022-05-20 10:55:20,383 DEBUG [54774] [] admin_no is 
+2022-05-20 10:55:20,383 DEBUG [54774] [] indexAction end
+2022-05-20 10:55:20,383 DEBUG [54774] [] TestListController end
+2022-05-20 10:55:20,384 DEBUG [54774] [] finally
+2022-05-20 10:55:20,400 DEBUG [54774] [] Request URI : /eccadmin_dev/Error/disp
+2022-05-20 10:55:20,401 DEBUG [54774] [] ErrorController start
+2022-05-20 10:55:20,401 DEBUG [54774] [] controllers/ErrorController.php: is exist
+2022-05-20 10:55:20,401 DEBUG [54774] [] ErrorForm: is exist
+2022-05-20 10:55:20,401 DEBUG [54774] [] ErrorForm: form value set 
+2022-05-20 10:55:20,402 DEBUG [54774] [] ------------------------------/eccadmin_dev/Error/disp
+2022-05-20 10:55:20,402 DEBUG [54774] [] ------------------------------login_start_check
+2022-05-20 10:55:20,402 DEBUG [54774] [] dispAction start
+2022-05-20 10:55:20,414 DEBUG [54774] [] dispAction end
+2022-05-20 10:55:20,414 DEBUG [54774] [] ErrorController end
+2022-05-20 10:55:20,414 DEBUG [54774] [] finally
+2022-05-20 10:55:22,499 DEBUG [54774] [] Request URI : /eccadmin_dev/Login
+2022-05-20 10:55:22,500 DEBUG [54774] [] LoginController start
+2022-05-20 10:55:22,500 DEBUG [54774] [] controllers/LoginController.php: is exist
+2022-05-20 10:55:22,500 DEBUG [54774] [] LoginForm: is exist
+2022-05-20 10:55:22,500 DEBUG [54774] [] LoginForm: form value set 
+2022-05-20 10:55:22,501 DEBUG [54774] [] ------------------------------/eccadmin_dev/Login
+2022-05-20 10:55:22,501 DEBUG [54774] [] ------------------------------login_start_check
+2022-05-20 10:55:22,501 DEBUG [54774] [] indexAction start
+2022-05-20 10:55:22,516 DEBUG [54774] [] indexAction end
+2022-05-20 10:55:22,516 DEBUG [54774] [] LoginController end
+2022-05-20 10:55:22,516 DEBUG [54774] [] finally
+2022-05-20 10:55:24,863 DEBUG [54774] [] Request URI : /eccadmin_dev/Login/login
+2022-05-20 10:55:24,863 DEBUG [54774] [] LoginController start
+2022-05-20 10:55:24,863 DEBUG [54774] [] controllers/LoginController.php: is exist
+2022-05-20 10:55:24,864 DEBUG [54774] [] LoginForm: is exist
+2022-05-20 10:55:24,864 DEBUG [54774] [] LoginForm: form value set 
+2022-05-20 10:55:24,864 DEBUG [54774] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-20 10:55:24,864 DEBUG [54774] [] ------------------------------login_start_check
+2022-05-20 10:55:24,865 DEBUG [54774] [] loginAction start
+2022-05-20 10:55:25,171 DEBUG [54774] [] loginAction end
+2022-05-20 10:55:25,171 DEBUG [54774] [] LoginController end
+2022-05-20 10:55:25,171 DEBUG [54774] [] finally
+2022-05-20 10:55:25,189 DEBUG [54774] [] Request URI : /eccadmin_dev/Menu
+2022-05-20 10:55:25,189 DEBUG [54774] [] MenuController start
+2022-05-20 10:55:25,189 DEBUG [54774] [] controllers/MenuController.php: is exist
+2022-05-20 10:55:25,190 DEBUG [54774] [] MenuForm: is exist
+2022-05-20 10:55:25,190 DEBUG [54774] [] MenuForm: form value set 
+2022-05-20 10:55:25,190 DEBUG [54774] [] ------------------------------/eccadmin_dev/Menu
+2022-05-20 10:55:25,190 DEBUG [54774] [] ------------------------------login_start_check
+2022-05-20 10:55:25,191 DEBUG [54774] [] indexAction start
+2022-05-20 10:55:25,191 DEBUG [54774] [] admin_no is 1
+2022-05-20 10:55:25,219 DEBUG [54774] [] indexAction end
+2022-05-20 10:55:25,219 DEBUG [54774] [] MenuController end
+2022-05-20 10:55:25,219 DEBUG [54774] [] finally
+2022-05-20 10:55:27,730 DEBUG [54842] [] Request URI : /eccadmin_dev/TestList
+2022-05-20 10:55:27,734 DEBUG [54842] [] TestListController start
+2022-05-20 10:55:27,734 DEBUG [54842] [] controllers/TestListController.php: is exist
+2022-05-20 10:55:27,738 DEBUG [54842] [] TestListForm: is exist
+2022-05-20 10:55:27,739 DEBUG [54842] [] TestListForm: form value set 
+2022-05-20 10:55:27,739 DEBUG [54842] [] ------------------------------/eccadmin_dev/TestList
+2022-05-20 10:55:27,739 DEBUG [54842] [] indexAction start
+2022-05-20 10:55:27,739 DEBUG [54842] [] admin_no is 1
+2022-05-20 10:55:27,740 DEBUG [54842] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 86a5fdd06a8cb9714497e1b033cb3de8
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-05-20 10:55:27,740 DEBUG [54842] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 10:55:27,742 DEBUG [54842] [] count of list :9
+2022-05-20 10:55:27,832 DEBUG [54842] [] indexAction end
+2022-05-20 10:55:27,832 DEBUG [54842] [] TestListController end
+2022-05-20 10:55:27,832 DEBUG [54842] [] finally
+2022-05-20 10:55:33,478 DEBUG [54774] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 10:55:33,478 DEBUG [54774] [] TestListController start
+2022-05-20 10:55:33,478 DEBUG [54774] [] controllers/TestListController.php: is exist
+2022-05-20 10:55:33,482 DEBUG [54774] [] TestListForm: is exist
+2022-05-20 10:55:33,482 DEBUG [54774] [] TestListForm: form value set 
+2022-05-20 10:55:33,483 DEBUG [54774] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 10:55:33,483 DEBUG [54774] [] SearchAction start
+2022-05-20 10:55:33,483 DEBUG [54774] [] admin_no is 1
+2022-05-20 10:55:33,483 DEBUG [54774] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 5471fd689ee9f99856f252c57ea28eae
+    [admin_kbn] => 001
+)
+
+2022-05-20 10:55:33,484 DEBUG [54774] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 10:55:33,485 DEBUG [54774] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 10:55:33,569 DEBUG [54774] [] SearchAction end
+2022-05-20 10:55:33,569 DEBUG [54774] [] TestListController end
+2022-05-20 10:55:33,569 DEBUG [54774] [] finally
+2022-05-20 10:55:34,896 DEBUG [54824] [] Request URI : /eccadmin_dev/TestPreview/index
+2022-05-20 10:55:34,897 DEBUG [54824] [] TestPreviewController start
+2022-05-20 10:55:34,897 DEBUG [54824] [] controllers/TestPreviewController.php: is exist
+2022-05-20 10:55:34,901 DEBUG [54824] [] TestPreviewForm: is exist
+2022-05-20 10:55:34,901 DEBUG [54824] [] TestPreviewForm: form value set 
+2022-05-20 10:55:34,902 DEBUG [54824] [] ------------------------------/eccadmin_dev/TestPreview/index
+2022-05-20 10:55:34,902 DEBUG [54824] [] ------------------------------session_check_true
+2022-05-20 10:55:34,902 DEBUG [54824] [] indexAction start
+2022-05-20 10:55:34,902 DEBUG [54824] [] admin_no is 1
+2022-05-20 10:55:34,904 DEBUG [54824] [] quiz list is Array
+2022-05-20 10:55:34,904 DEBUG [54824] [] /var/www/html/admin_dev/
+2022-05-20 10:55:35,065 DEBUG [54824] [] indexAction end
+2022-05-20 10:55:35,065 DEBUG [54824] [] TestPreviewController end
+2022-05-20 10:55:35,065 DEBUG [54824] [] finally
+2022-05-20 11:08:11,097 DEBUG [54938] [] Request URI : /eccadmin_dev/TestList
+2022-05-20 11:08:11,098 DEBUG [54938] [] TestListController start
+2022-05-20 11:08:11,098 DEBUG [54938] [] controllers/TestListController.php: is exist
+2022-05-20 11:08:11,102 DEBUG [54938] [] TestListForm: is exist
+2022-05-20 11:08:11,102 DEBUG [54938] [] TestListForm: form value set 
+2022-05-20 11:08:11,103 DEBUG [54938] [] ------------------------------/eccadmin_dev/TestList
+2022-05-20 11:08:11,103 DEBUG [54938] [] indexAction start
+2022-05-20 11:08:11,103 DEBUG [54938] [] admin_no is 1
+2022-05-20 11:08:11,103 DEBUG [54938] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 78cf9f2f366f7cb1b2f966b931faeb88
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-05-20 11:08:11,104 DEBUG [54938] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 11:08:11,105 DEBUG [54938] [] count of list :9
+2022-05-20 11:08:11,189 DEBUG [54938] [] indexAction end
+2022-05-20 11:08:11,189 DEBUG [54938] [] TestListController end
+2022-05-20 11:08:11,189 DEBUG [54938] [] finally
+2022-05-20 12:11:29,942 DEBUG [55385] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 12:11:29,943 DEBUG [55385] [] TestListController start
+2022-05-20 12:11:29,943 DEBUG [55385] [] controllers/TestListController.php: is exist
+2022-05-20 12:11:29,947 DEBUG [55385] [] TestListForm: is exist
+2022-05-20 12:11:29,947 DEBUG [55385] [] TestListForm: form value set 
+2022-05-20 12:11:29,947 DEBUG [55385] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 12:11:29,948 DEBUG [55385] [] SearchAction start
+2022-05-20 12:11:29,948 DEBUG [55385] [] admin_no is 1
+2022-05-20 12:11:29,948 DEBUG [55385] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 48ee7e6393cc35691fdf52d4b96b9b19
+    [admin_kbn] => 001
+)
+
+2022-05-20 12:11:29,949 DEBUG [55385] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 12:11:29,950 DEBUG [55385] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 12:11:30,033 DEBUG [55385] [] SearchAction end
+2022-05-20 12:11:30,033 DEBUG [55385] [] TestListController end
+2022-05-20 12:11:30,034 DEBUG [55385] [] finally
+2022-05-20 12:11:36,338 DEBUG [55739] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-05-20 12:11:36,339 DEBUG [55739] [] TestRegistController start
+2022-05-20 12:11:36,339 DEBUG [55739] [] controllers/TestRegistController.php: is exist
+2022-05-20 12:11:36,343 DEBUG [55739] [] TestRegistForm: is exist
+2022-05-20 12:11:36,344 DEBUG [55739] [] TestRegistForm: form value set 
+2022-05-20 12:11:36,344 DEBUG [55739] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-05-20 12:11:36,344 DEBUG [55739] [] ------------------------------session_check_true
+2022-05-20 12:11:36,344 DEBUG [55739] [] indexAction start
+2022-05-20 12:11:36,345 DEBUG [55739] [] admin_no is 1
+2022-05-20 12:11:36,345 DEBUG [55739] [] org_no : 1
+2022-05-20 12:11:36,459 DEBUG [55739] [] indexAction end
+2022-05-20 12:11:36,459 DEBUG [55739] [] TestRegistController end
+2022-05-20 12:11:36,459 DEBUG [55739] [] finally
+2022-05-20 12:11:40,732 DEBUG [55740] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 12:11:40,733 DEBUG [55740] [] TestRegistController start
+2022-05-20 12:11:40,733 DEBUG [55740] [] controllers/TestRegistController.php: is exist
+2022-05-20 12:11:40,737 DEBUG [55740] [] TestRegistForm: is exist
+2022-05-20 12:11:40,738 DEBUG [55740] [] TestRegistForm: form value set 
+2022-05-20 12:11:40,738 DEBUG [55740] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 12:11:40,738 DEBUG [55740] [] ------------------------------session_check_true
+2022-05-20 12:11:40,739 DEBUG [55740] [] saveAction start
+2022-05-20 12:11:40,829 DEBUG [55740] [] saveAction end
+2022-05-20 12:11:40,830 DEBUG [55740] [] TestRegistController end
+2022-05-20 12:11:40,830 DEBUG [55740] [] finally
+2022-05-20 12:12:01,996 DEBUG [55443] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 12:12:01,997 DEBUG [55443] [] TestRegistController start
+2022-05-20 12:12:01,997 DEBUG [55443] [] controllers/TestRegistController.php: is exist
+2022-05-20 12:12:02,001 DEBUG [55443] [] TestRegistForm: is exist
+2022-05-20 12:12:02,002 DEBUG [55443] [] TestRegistForm: form value set 
+2022-05-20 12:12:02,002 DEBUG [55443] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 12:12:02,002 DEBUG [55443] [] ------------------------------session_check_true
+2022-05-20 12:12:02,002 DEBUG [55443] [] saveAction start
+2022-05-20 12:12:02,091 DEBUG [55443] [] saveAction end
+2022-05-20 12:12:02,091 DEBUG [55443] [] TestRegistController end
+2022-05-20 12:12:02,091 DEBUG [55443] [] finally
+2022-05-20 15:36:30,501 DEBUG [57693] [] Request URI : /eccadmin_dev/Login
+2022-05-20 15:36:30,501 DEBUG [57693] [] LoginController start
+2022-05-20 15:36:30,502 DEBUG [57693] [] controllers/LoginController.php: is exist
+2022-05-20 15:36:30,502 DEBUG [57693] [] LoginForm: is exist
+2022-05-20 15:36:30,502 DEBUG [57693] [] LoginForm: form value set 
+2022-05-20 15:36:30,503 DEBUG [57693] [] ------------------------------/eccadmin_dev/Login
+2022-05-20 15:36:30,503 DEBUG [57693] [] ------------------------------login_start_check
+2022-05-20 15:36:30,503 DEBUG [57693] [] indexAction start
+2022-05-20 15:36:30,517 DEBUG [57693] [] indexAction end
+2022-05-20 15:36:30,517 DEBUG [57693] [] LoginController end
+2022-05-20 15:36:30,518 DEBUG [57693] [] finally
+2022-05-20 15:36:33,835 DEBUG [57693] [] Request URI : /eccadmin_dev/Login/login
+2022-05-20 15:36:33,835 DEBUG [57693] [] LoginController start
+2022-05-20 15:36:33,836 DEBUG [57693] [] controllers/LoginController.php: is exist
+2022-05-20 15:36:33,836 DEBUG [57693] [] LoginForm: is exist
+2022-05-20 15:36:33,836 DEBUG [57693] [] LoginForm: form value set 
+2022-05-20 15:36:33,836 DEBUG [57693] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-20 15:36:33,837 DEBUG [57693] [] ------------------------------login_start_check
+2022-05-20 15:36:33,837 DEBUG [57693] [] loginAction start
+2022-05-20 15:36:34,137 DEBUG [57693] [] loginAction end
+2022-05-20 15:36:34,137 DEBUG [57693] [] LoginController end
+2022-05-20 15:36:34,137 DEBUG [57693] [] finally
+2022-05-20 15:36:34,160 DEBUG [57693] [] Request URI : /eccadmin_dev/Menu
+2022-05-20 15:36:34,160 DEBUG [57693] [] MenuController start
+2022-05-20 15:36:34,160 DEBUG [57693] [] controllers/MenuController.php: is exist
+2022-05-20 15:36:34,161 DEBUG [57693] [] MenuForm: is exist
+2022-05-20 15:36:34,161 DEBUG [57693] [] MenuForm: form value set 
+2022-05-20 15:36:34,161 DEBUG [57693] [] ------------------------------/eccadmin_dev/Menu
+2022-05-20 15:36:34,161 DEBUG [57693] [] ------------------------------login_start_check
+2022-05-20 15:36:34,161 DEBUG [57693] [] indexAction start
+2022-05-20 15:36:34,161 DEBUG [57693] [] admin_no is 1
+2022-05-20 15:36:34,190 DEBUG [57693] [] indexAction end
+2022-05-20 15:36:34,190 DEBUG [57693] [] MenuController end
+2022-05-20 15:36:34,190 DEBUG [57693] [] finally
+2022-05-20 15:36:37,600 DEBUG [57693] [] Request URI : /eccadmin_dev/TestList
+2022-05-20 15:36:37,601 DEBUG [57693] [] TestListController start
+2022-05-20 15:36:37,601 DEBUG [57693] [] controllers/TestListController.php: is exist
+2022-05-20 15:36:37,605 DEBUG [57693] [] TestListForm: is exist
+2022-05-20 15:36:37,605 DEBUG [57693] [] TestListForm: form value set 
+2022-05-20 15:36:37,606 DEBUG [57693] [] ------------------------------/eccadmin_dev/TestList
+2022-05-20 15:36:37,606 DEBUG [57693] [] indexAction start
+2022-05-20 15:36:37,606 DEBUG [57693] [] admin_no is 1
+2022-05-20 15:36:37,606 DEBUG [57693] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => db7cb8292c60ad195dfb42dba2dff278
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-05-20 15:36:37,607 DEBUG [57693] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 15:36:37,609 DEBUG [57693] [] count of list :9
+2022-05-20 15:36:37,698 DEBUG [57693] [] indexAction end
+2022-05-20 15:36:37,698 DEBUG [57693] [] TestListController end
+2022-05-20 15:36:37,698 DEBUG [57693] [] finally
+2022-05-20 15:36:42,797 DEBUG [57691] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 15:36:42,798 DEBUG [57691] [] TestListController start
+2022-05-20 15:36:42,798 DEBUG [57691] [] controllers/TestListController.php: is exist
+2022-05-20 15:36:42,802 DEBUG [57691] [] TestListForm: is exist
+2022-05-20 15:36:42,802 DEBUG [57691] [] TestListForm: form value set 
+2022-05-20 15:36:42,803 DEBUG [57691] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 15:36:42,803 DEBUG [57691] [] SearchAction start
+2022-05-20 15:36:42,803 DEBUG [57691] [] admin_no is 1
+2022-05-20 15:36:42,803 DEBUG [57691] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 7208d944040924597f3aeb73368fc719
+    [admin_kbn] => 001
+)
+
+2022-05-20 15:36:42,804 DEBUG [57691] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 15:36:42,806 DEBUG [57691] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 15:36:42,895 DEBUG [57691] [] SearchAction end
+2022-05-20 15:36:42,895 DEBUG [57691] [] TestListController end
+2022-05-20 15:36:42,895 DEBUG [57691] [] finally
+2022-05-20 15:36:46,560 DEBUG [57731] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-05-20 15:36:46,561 DEBUG [57731] [] TestRegistController start
+2022-05-20 15:36:46,561 DEBUG [57731] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:36:46,566 DEBUG [57731] [] TestRegistForm: is exist
+2022-05-20 15:36:46,566 DEBUG [57731] [] TestRegistForm: form value set 
+2022-05-20 15:36:46,566 DEBUG [57731] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-05-20 15:36:46,567 DEBUG [57731] [] ------------------------------session_check_true
+2022-05-20 15:36:46,567 DEBUG [57731] [] indexAction start
+2022-05-20 15:36:46,567 DEBUG [57731] [] admin_no is 1
+2022-05-20 15:36:46,567 DEBUG [57731] [] org_no : 1
+2022-05-20 15:36:46,654 DEBUG [57731] [] indexAction end
+2022-05-20 15:36:46,654 DEBUG [57731] [] TestRegistController end
+2022-05-20 15:36:46,654 DEBUG [57731] [] finally
+2022-05-20 15:36:51,289 DEBUG [57702] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 15:36:51,289 DEBUG [57702] [] TestRegistController start
+2022-05-20 15:36:51,289 DEBUG [57702] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:36:51,293 DEBUG [57702] [] TestRegistForm: is exist
+2022-05-20 15:36:51,294 DEBUG [57702] [] TestRegistForm: form value set 
+2022-05-20 15:36:51,294 DEBUG [57702] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 15:36:51,294 DEBUG [57702] [] ------------------------------session_check_true
+2022-05-20 15:36:51,295 DEBUG [57702] [] saveAction start
+2022-05-20 15:36:51,381 DEBUG [57702] [] saveAction end
+2022-05-20 15:36:51,381 DEBUG [57702] [] TestRegistController end
+2022-05-20 15:36:51,381 DEBUG [57702] [] finally
+2022-05-20 15:37:18,126 DEBUG [57731] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-05-20 15:37:18,126 DEBUG [57731] [] TestRegistController start
+2022-05-20 15:37:18,126 DEBUG [57731] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:37:18,131 DEBUG [57731] [] TestRegistForm: is exist
+2022-05-20 15:37:18,131 DEBUG [57731] [] TestRegistForm: form value set 
+2022-05-20 15:37:18,131 DEBUG [57731] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-05-20 15:37:18,132 DEBUG [57731] [] ------------------------------session_check_true
+2022-05-20 15:37:18,132 DEBUG [57731] [] backAction start
+2022-05-20 15:37:18,132 DEBUG [57731] [] backAction end
+2022-05-20 15:37:18,132 DEBUG [57731] [] TestRegistController end
+2022-05-20 15:37:18,132 DEBUG [57731] [] finally
+2022-05-20 15:37:18,149 DEBUG [57731] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 15:37:18,149 DEBUG [57731] [] TestListController start
+2022-05-20 15:37:18,149 DEBUG [57731] [] controllers/TestListController.php: is exist
+2022-05-20 15:37:18,153 DEBUG [57731] [] TestListForm: is exist
+2022-05-20 15:37:18,153 DEBUG [57731] [] TestListForm: form value set 
+2022-05-20 15:37:18,153 DEBUG [57731] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 15:37:18,154 DEBUG [57731] [] SearchAction start
+2022-05-20 15:37:18,154 DEBUG [57731] [] admin_no is 1
+2022-05-20 15:37:18,154 DEBUG [57731] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 932474839d0495fefe8b1c7682c67031
+    [admin_kbn] => 001
+)
+
+2022-05-20 15:37:18,155 DEBUG [57731] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 15:37:18,156 DEBUG [57731] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 10
+        )
+
+)
+
+2022-05-20 15:37:18,242 DEBUG [57731] [] SearchAction end
+2022-05-20 15:37:18,242 DEBUG [57731] [] TestListController end
+2022-05-20 15:37:18,242 DEBUG [57731] [] finally
+2022-05-20 15:37:19,685 DEBUG [57837] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-05-20 15:37:19,688 DEBUG [57837] [] TestRegistController start
+2022-05-20 15:37:19,688 DEBUG [57837] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:37:19,693 DEBUG [57837] [] TestRegistForm: is exist
+2022-05-20 15:37:19,693 DEBUG [57837] [] TestRegistForm: form value set 
+2022-05-20 15:37:19,694 DEBUG [57837] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-05-20 15:37:19,694 DEBUG [57837] [] ------------------------------session_check_true
+2022-05-20 15:37:19,694 DEBUG [57837] [] indexAction start
+2022-05-20 15:37:19,694 DEBUG [57837] [] admin_no is 1
+2022-05-20 15:37:19,695 DEBUG [57837] [] org_no : 1
+2022-05-20 15:37:19,778 DEBUG [57837] [] indexAction end
+2022-05-20 15:37:19,778 DEBUG [57837] [] TestRegistController end
+2022-05-20 15:37:19,778 DEBUG [57837] [] finally
+2022-05-20 15:37:23,647 DEBUG [57837] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 15:37:23,647 DEBUG [57837] [] TestRegistController start
+2022-05-20 15:37:23,648 DEBUG [57837] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:37:23,652 DEBUG [57837] [] TestRegistForm: is exist
+2022-05-20 15:37:23,652 DEBUG [57837] [] TestRegistForm: form value set 
+2022-05-20 15:37:23,653 DEBUG [57837] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 15:37:23,653 DEBUG [57837] [] ------------------------------session_check_true
+2022-05-20 15:37:23,653 DEBUG [57837] [] saveAction start
+2022-05-20 15:37:23,742 DEBUG [57837] [] saveAction end
+2022-05-20 15:37:23,742 DEBUG [57837] [] TestRegistController end
+2022-05-20 15:37:23,742 DEBUG [57837] [] finally
+2022-05-20 15:56:40,097 DEBUG [57923] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-05-20 15:56:40,098 DEBUG [57923] [] TestRegistController start
+2022-05-20 15:56:40,098 DEBUG [57923] [] controllers/TestRegistController.php: is exist
+2022-05-20 15:56:40,102 DEBUG [57923] [] TestRegistForm: is exist
+2022-05-20 15:56:40,103 DEBUG [57923] [] TestRegistForm: form value set 
+2022-05-20 15:56:40,103 DEBUG [57923] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-05-20 15:56:40,103 DEBUG [57923] [] ------------------------------session_check_true
+2022-05-20 15:56:40,103 DEBUG [57923] [] backAction start
+2022-05-20 15:56:40,103 DEBUG [57923] [] backAction end
+2022-05-20 15:56:40,104 DEBUG [57923] [] TestRegistController end
+2022-05-20 15:56:40,104 DEBUG [57923] [] finally
+2022-05-20 15:56:40,166 DEBUG [57923] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 15:56:40,167 DEBUG [57923] [] TestListController start
+2022-05-20 15:56:40,167 DEBUG [57923] [] controllers/TestListController.php: is exist
+2022-05-20 15:56:40,171 DEBUG [57923] [] TestListForm: is exist
+2022-05-20 15:56:40,171 DEBUG [57923] [] TestListForm: form value set 
+2022-05-20 15:56:40,172 DEBUG [57923] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 15:56:40,172 DEBUG [57923] [] SearchAction start
+2022-05-20 15:56:40,172 DEBUG [57923] [] admin_no is 1
+2022-05-20 15:56:40,172 DEBUG [57923] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 7fe36b6b3cedf425e09379797c007ce5
+    [admin_kbn] => 001
+)
+
+2022-05-20 15:56:40,173 DEBUG [57923] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 15:56:40,175 DEBUG [57923] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 3
+        )
+
+)
+
+2022-05-20 15:56:40,266 DEBUG [57923] [] SearchAction end
+2022-05-20 15:56:40,266 DEBUG [57923] [] TestListController end
+2022-05-20 15:56:40,266 DEBUG [57923] [] finally
+2022-05-20 16:32:23,206 DEBUG [58243] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-05-20 16:32:23,207 DEBUG [58243] [] TestRegistController start
+2022-05-20 16:32:23,207 DEBUG [58243] [] controllers/TestRegistController.php: is exist
+2022-05-20 16:32:23,211 DEBUG [58243] [] TestRegistForm: is exist
+2022-05-20 16:32:23,211 DEBUG [58243] [] TestRegistForm: form value set 
+2022-05-20 16:32:23,212 DEBUG [58243] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-05-20 16:32:23,212 DEBUG [58243] [] ------------------------------session_check_true
+2022-05-20 16:32:23,212 DEBUG [58243] [] indexAction start
+2022-05-20 16:32:23,212 DEBUG [58243] [] admin_no is 1
+2022-05-20 16:32:23,212 DEBUG [58243] [] org_no : 1
+2022-05-20 16:32:23,300 DEBUG [58243] [] indexAction end
+2022-05-20 16:32:23,300 DEBUG [58243] [] TestRegistController end
+2022-05-20 16:32:23,300 DEBUG [58243] [] finally
+2022-05-20 16:32:29,782 DEBUG [58279] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 16:32:29,783 DEBUG [58279] [] TestRegistController start
+2022-05-20 16:32:29,783 DEBUG [58279] [] controllers/TestRegistController.php: is exist
+2022-05-20 16:32:29,788 DEBUG [58279] [] TestRegistForm: is exist
+2022-05-20 16:32:29,788 DEBUG [58279] [] TestRegistForm: form value set 
+2022-05-20 16:32:29,788 DEBUG [58279] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 16:32:29,789 DEBUG [58279] [] ------------------------------session_check_true
+2022-05-20 16:32:29,789 DEBUG [58279] [] saveAction start
+2022-05-20 16:32:29,881 DEBUG [58279] [] saveAction end
+2022-05-20 16:32:29,881 DEBUG [58279] [] TestRegistController end
+2022-05-20 16:32:29,881 DEBUG [58279] [] finally
+2022-05-20 16:42:59,648 DEBUG [58318] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-05-20 16:42:59,649 DEBUG [58318] [] TestRegistController start
+2022-05-20 16:42:59,649 DEBUG [58318] [] controllers/TestRegistController.php: is exist
+2022-05-20 16:42:59,653 DEBUG [58318] [] TestRegistForm: is exist
+2022-05-20 16:42:59,654 DEBUG [58318] [] TestRegistForm: form value set 
+2022-05-20 16:42:59,654 DEBUG [58318] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-05-20 16:42:59,654 DEBUG [58318] [] ------------------------------session_check_true
+2022-05-20 16:42:59,654 DEBUG [58318] [] backAction start
+2022-05-20 16:42:59,655 DEBUG [58318] [] backAction end
+2022-05-20 16:42:59,655 DEBUG [58318] [] TestRegistController end
+2022-05-20 16:42:59,655 DEBUG [58318] [] finally
+2022-05-20 16:42:59,677 DEBUG [58318] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 16:42:59,677 DEBUG [58318] [] TestListController start
+2022-05-20 16:42:59,677 DEBUG [58318] [] controllers/TestListController.php: is exist
+2022-05-20 16:42:59,681 DEBUG [58318] [] TestListForm: is exist
+2022-05-20 16:42:59,681 DEBUG [58318] [] TestListForm: form value set 
+2022-05-20 16:42:59,682 DEBUG [58318] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 16:42:59,682 DEBUG [58318] [] SearchAction start
+2022-05-20 16:42:59,682 DEBUG [58318] [] admin_no is 1
+2022-05-20 16:42:59,682 DEBUG [58318] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => e65c4ff4c372ba2bbe7f046c46c4a508
+    [admin_kbn] => 001
+)
+
+2022-05-20 16:42:59,683 DEBUG [58318] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 16:42:59,684 DEBUG [58318] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 16:42:59,768 DEBUG [58318] [] SearchAction end
+2022-05-20 16:42:59,768 DEBUG [58318] [] TestListController end
+2022-05-20 16:42:59,768 DEBUG [58318] [] finally
+2022-05-20 16:43:01,350 DEBUG [58471] [] Request URI : /eccadmin_dev/TestPreview/index
+2022-05-20 16:43:01,351 DEBUG [58471] [] TestPreviewController start
+2022-05-20 16:43:01,351 DEBUG [58471] [] controllers/TestPreviewController.php: is exist
+2022-05-20 16:43:01,354 DEBUG [58471] [] TestPreviewForm: is exist
+2022-05-20 16:43:01,355 DEBUG [58471] [] TestPreviewForm: form value set 
+2022-05-20 16:43:01,355 DEBUG [58471] [] ------------------------------/eccadmin_dev/TestPreview/index
+2022-05-20 16:43:01,355 DEBUG [58471] [] ------------------------------session_check_true
+2022-05-20 16:43:01,355 DEBUG [58471] [] indexAction start
+2022-05-20 16:43:01,356 DEBUG [58471] [] admin_no is 1
+2022-05-20 16:43:01,357 DEBUG [58471] [] quiz list is Array
+2022-05-20 16:43:01,357 DEBUG [58471] [] /var/www/html/admin_dev/
+2022-05-20 16:43:01,457 DEBUG [58471] [] indexAction end
+2022-05-20 16:43:01,457 DEBUG [58471] [] TestPreviewController end
+2022-05-20 16:43:01,457 DEBUG [58471] [] finally
+2022-05-20 16:45:07,660 DEBUG [58504] [] Request URI : /eccadmin_dev/TestList
+2022-05-20 16:45:07,664 DEBUG [58504] [] TestListController start
+2022-05-20 16:45:07,664 DEBUG [58504] [] controllers/TestListController.php: is exist
+2022-05-20 16:45:07,668 DEBUG [58504] [] TestListForm: is exist
+2022-05-20 16:45:07,669 DEBUG [58504] [] TestListForm: form value set 
+2022-05-20 16:45:07,669 DEBUG [58504] [] ------------------------------/eccadmin_dev/TestList
+2022-05-20 16:45:07,669 DEBUG [58504] [] indexAction start
+2022-05-20 16:45:07,670 DEBUG [58504] [] admin_no is 1
+2022-05-20 16:45:07,670 DEBUG [58504] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 0d5985002e7758dc15b134034749efa0
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-05-20 16:45:07,671 DEBUG [58504] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 16:45:07,672 DEBUG [58504] [] count of list :9
+2022-05-20 16:45:07,753 DEBUG [58504] [] indexAction end
+2022-05-20 16:45:07,753 DEBUG [58504] [] TestListController end
+2022-05-20 16:45:07,754 DEBUG [58504] [] finally
+2022-05-20 16:45:15,857 DEBUG [58245] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 16:45:15,858 DEBUG [58245] [] TestListController start
+2022-05-20 16:45:15,858 DEBUG [58245] [] controllers/TestListController.php: is exist
+2022-05-20 16:45:15,862 DEBUG [58245] [] TestListForm: is exist
+2022-05-20 16:45:15,862 DEBUG [58245] [] TestListForm: form value set 
+2022-05-20 16:45:15,863 DEBUG [58245] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 16:45:15,863 DEBUG [58245] [] SearchAction start
+2022-05-20 16:45:15,863 DEBUG [58245] [] admin_no is 1
+2022-05-20 16:45:15,863 DEBUG [58245] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 1
+    [rd_status1] => 0
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => f05d81e1e2f18206ed9f6afede7b7fa5
+    [admin_kbn] => 001
+)
+
+2022-05-20 16:45:15,864 DEBUG [58245] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 16:45:15,865 DEBUG [58245] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 16:45:15,942 DEBUG [58245] [] SearchAction end
+2022-05-20 16:45:15,942 DEBUG [58245] [] TestListController end
+2022-05-20 16:45:15,942 DEBUG [58245] [] finally
+2022-05-20 16:45:17,443 DEBUG [58318] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-05-20 16:45:17,444 DEBUG [58318] [] TestRegistController start
+2022-05-20 16:45:17,444 DEBUG [58318] [] controllers/TestRegistController.php: is exist
+2022-05-20 16:45:17,448 DEBUG [58318] [] TestRegistForm: is exist
+2022-05-20 16:45:17,448 DEBUG [58318] [] TestRegistForm: form value set 
+2022-05-20 16:45:17,449 DEBUG [58318] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-05-20 16:45:17,449 DEBUG [58318] [] ------------------------------session_check_true
+2022-05-20 16:45:17,449 DEBUG [58318] [] indexAction start
+2022-05-20 16:45:17,449 DEBUG [58318] [] admin_no is 1
+2022-05-20 16:45:17,449 DEBUG [58318] [] org_no : 1
+2022-05-20 16:45:17,533 DEBUG [58318] [] indexAction end
+2022-05-20 16:45:17,533 DEBUG [58318] [] TestRegistController end
+2022-05-20 16:45:17,533 DEBUG [58318] [] finally
+2022-05-20 16:45:24,421 DEBUG [58469] [] Request URI : /eccadmin_dev/TestRegist/save
+2022-05-20 16:45:24,422 DEBUG [58469] [] TestRegistController start
+2022-05-20 16:45:24,422 DEBUG [58469] [] controllers/TestRegistController.php: is exist
+2022-05-20 16:45:24,426 DEBUG [58469] [] TestRegistForm: is exist
+2022-05-20 16:45:24,427 DEBUG [58469] [] TestRegistForm: form value set 
+2022-05-20 16:45:24,427 DEBUG [58469] [] ------------------------------/eccadmin_dev/TestRegist/save
+2022-05-20 16:45:24,427 DEBUG [58469] [] ------------------------------session_check_true
+2022-05-20 16:45:24,427 DEBUG [58469] [] saveAction start
+2022-05-20 16:45:24,512 DEBUG [58469] [] saveAction end
+2022-05-20 16:45:24,512 DEBUG [58469] [] TestRegistController end
+2022-05-20 16:45:24,512 DEBUG [58469] [] finally
+2022-05-20 17:51:18,545 DEBUG [59087] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-05-20 17:51:18,546 DEBUG [59087] [] TestRegistController start
+2022-05-20 17:51:18,546 DEBUG [59087] [] controllers/TestRegistController.php: is exist
+2022-05-20 17:51:18,550 DEBUG [59087] [] TestRegistForm: is exist
+2022-05-20 17:51:18,551 DEBUG [59087] [] TestRegistForm: form value set 
+2022-05-20 17:51:18,551 DEBUG [59087] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-05-20 17:51:18,551 DEBUG [59087] [] ------------------------------session_check_true
+2022-05-20 17:51:18,551 DEBUG [59087] [] backAction start
+2022-05-20 17:51:18,552 DEBUG [59087] [] backAction end
+2022-05-20 17:51:18,552 DEBUG [59087] [] TestRegistController end
+2022-05-20 17:51:18,552 DEBUG [59087] [] finally
+2022-05-20 17:51:18,577 DEBUG [59087] [] Request URI : /eccadmin_dev/TestList/Search
+2022-05-20 17:51:18,577 DEBUG [59087] [] TestListController start
+2022-05-20 17:51:18,577 DEBUG [59087] [] controllers/TestListController.php: is exist
+2022-05-20 17:51:18,580 DEBUG [59087] [] TestListForm: is exist
+2022-05-20 17:51:18,581 DEBUG [59087] [] TestListForm: form value set 
+2022-05-20 17:51:18,581 DEBUG [59087] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-05-20 17:51:18,581 DEBUG [59087] [] SearchAction start
+2022-05-20 17:51:18,582 DEBUG [59087] [] admin_no is 1
+2022-05-20 17:51:18,582 DEBUG [59087] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => NNH Test 1 (HO)
+    [start_period] => 2022/04/20
+    [end_period] => 2022/06/20
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => ecc
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => de2380398967ac017d3023af1efc9c34
+    [admin_kbn] => 001
+)
+
+2022-05-20 17:51:18,583 DEBUG [59087] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND (test.test_name LIKE :test_name)  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-05-20 17:51:18,584 DEBUG [59087] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 1
+            [test_no] => 1784
+            [test_name] => NNH Test 1 (HO)
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/08
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => ecc
+            [remark] => null
+            [quiz_count] => 2
+        )
+
+)
+
+2022-05-20 17:51:18,666 DEBUG [59087] [] SearchAction end
+2022-05-20 17:51:18,666 DEBUG [59087] [] TestListController end
+2022-05-20 17:51:18,666 DEBUG [59087] [] finally
+2022-05-20 17:51:28,186 DEBUG [58987] [] Request URI : /eccadmin_dev/ReportList
+2022-05-20 17:51:28,187 DEBUG [58987] [] ReportListController start
+2022-05-20 17:51:28,187 DEBUG [58987] [] controllers/ReportListController.php: is exist
+2022-05-20 17:51:28,191 DEBUG [58987] [] ReportListForm: is exist
+2022-05-20 17:51:28,192 DEBUG [58987] [] ReportListForm: form value set 
+2022-05-20 17:51:28,192 DEBUG [58987] [] ------------------------------/eccadmin_dev/ReportList
+2022-05-20 17:51:28,192 DEBUG [58987] [] indexAction start
+2022-05-20 17:51:28,192 DEBUG [58987] [] admin_no is 1
+2022-05-20 17:51:28,260 DEBUG [58987] [] indexAction end
+2022-05-20 17:51:28,260 DEBUG [58987] [] ReportListController end
+2022-05-20 17:51:28,260 DEBUG [58987] [] finally
+2022-05-20 17:51:30,886 DEBUG [58875] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-05-20 17:51:30,887 DEBUG [58875] [] ReportRegistController start
+2022-05-20 17:51:30,887 DEBUG [58875] [] controllers/ReportRegistController.php: is exist
+2022-05-20 17:51:30,893 DEBUG [58875] [] ReportRegistForm: is exist
+2022-05-20 17:51:30,893 DEBUG [58875] [] ReportRegistForm: form value set 
+2022-05-20 17:51:30,893 DEBUG [58875] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-05-20 17:51:30,893 DEBUG [58875] [] ------------------------------session_check_true
+2022-05-20 17:51:30,894 DEBUG [58875] [] indexAction start
+2022-05-20 17:51:30,894 DEBUG [58875] [] admin_no is 1
+2022-05-20 17:51:30,963 DEBUG [58875] [] indexAction end
+2022-05-20 17:51:30,963 DEBUG [58875] [] ReportRegistController end
+2022-05-20 17:51:30,963 DEBUG [58875] [] finally
+2022-05-20 17:51:37,774 DEBUG [59003] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 17:51:37,775 DEBUG [59003] [] ReportRegistController start
+2022-05-20 17:51:37,775 DEBUG [59003] [] controllers/ReportRegistController.php: is exist
+2022-05-20 17:51:37,780 DEBUG [59003] [] ReportRegistForm: is exist
+2022-05-20 17:51:37,781 DEBUG [59003] [] ReportRegistForm: form value set 
+2022-05-20 17:51:37,781 DEBUG [59003] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 17:51:37,781 DEBUG [59003] [] ------------------------------session_check_true
+2022-05-20 17:51:37,781 DEBUG [59003] [] saveAction start
+2022-05-20 17:51:37,856 DEBUG [59003] [] saveAction end
+2022-05-20 17:51:37,856 DEBUG [59003] [] ReportRegistController end
+2022-05-20 17:51:37,856 DEBUG [59003] [] finally
+2022-05-20 18:14:24,001 DEBUG [59020] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 18:14:24,002 DEBUG [59020] [] ReportRegistController start
+2022-05-20 18:14:24,002 DEBUG [59020] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:14:24,008 DEBUG [59020] [] ReportRegistForm: is exist
+2022-05-20 18:14:24,008 DEBUG [59020] [] ReportRegistForm: form value set 
+2022-05-20 18:14:24,009 DEBUG [59020] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 18:14:24,009 DEBUG [59020] [] ------------------------------session_check_true
+2022-05-20 18:14:24,009 DEBUG [59020] [] saveAction start
+2022-05-20 18:14:24,086 DEBUG [59020] [] saveAction end
+2022-05-20 18:14:24,086 DEBUG [59020] [] ReportRegistController end
+2022-05-20 18:14:24,086 DEBUG [59020] [] finally
+2022-05-20 18:34:50,597 DEBUG [59104] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 18:34:50,597 DEBUG [59104] [] ReportRegistController start
+2022-05-20 18:34:50,597 DEBUG [59104] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:34:50,603 DEBUG [59104] [] ReportRegistForm: is exist
+2022-05-20 18:34:50,603 DEBUG [59104] [] ReportRegistForm: form value set 
+2022-05-20 18:34:50,604 DEBUG [59104] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 18:34:50,604 DEBUG [59104] [] ------------------------------session_check_true
+2022-05-20 18:34:50,604 DEBUG [59104] [] saveAction start
+2022-05-20 18:34:50,678 DEBUG [59104] [] saveAction end
+2022-05-20 18:34:50,678 DEBUG [59104] [] ReportRegistController end
+2022-05-20 18:34:50,678 DEBUG [59104] [] finally
+2022-05-20 18:38:09,368 DEBUG [59394] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 18:38:09,369 DEBUG [59394] [] ReportRegistController start
+2022-05-20 18:38:09,369 DEBUG [59394] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:38:09,375 DEBUG [59394] [] ReportRegistForm: is exist
+2022-05-20 18:38:09,375 DEBUG [59394] [] ReportRegistForm: form value set 
+2022-05-20 18:38:09,376 DEBUG [59394] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 18:38:09,376 DEBUG [59394] [] ------------------------------session_check_true
+2022-05-20 18:38:09,376 DEBUG [59394] [] saveAction start
+2022-05-20 18:38:09,447 DEBUG [59394] [] saveAction end
+2022-05-20 18:38:09,447 DEBUG [59394] [] ReportRegistController end
+2022-05-20 18:38:09,447 DEBUG [59394] [] finally
+2022-05-20 18:38:10,808 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportRegist/back
+2022-05-20 18:38:10,809 DEBUG [58939] [] ReportRegistController start
+2022-05-20 18:38:10,809 DEBUG [58939] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:38:10,815 DEBUG [58939] [] ReportRegistForm: is exist
+2022-05-20 18:38:10,816 DEBUG [58939] [] ReportRegistForm: form value set 
+2022-05-20 18:38:10,816 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportRegist/back
+2022-05-20 18:38:10,816 DEBUG [58939] [] ------------------------------session_check_true
+2022-05-20 18:38:10,816 DEBUG [58939] [] backAction start
+2022-05-20 18:38:10,816 DEBUG [58939] [] admin_no is 1
+2022-05-20 18:38:10,817 DEBUG [58939] [] backAction end
+2022-05-20 18:38:10,817 DEBUG [58939] [] ReportRegistController end
+2022-05-20 18:38:10,817 DEBUG [58939] [] finally
+2022-05-20 18:38:10,839 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportList/Search
+2022-05-20 18:38:10,840 DEBUG [58939] [] ReportListController start
+2022-05-20 18:38:10,840 DEBUG [58939] [] controllers/ReportListController.php: is exist
+2022-05-20 18:38:10,843 DEBUG [58939] [] ReportListForm: is exist
+2022-05-20 18:38:10,844 DEBUG [58939] [] ReportListForm: form value set 
+2022-05-20 18:38:10,844 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportList/Search
+2022-05-20 18:38:10,844 DEBUG [58939] [] SearchAction start
+2022-05-20 18:38:10,844 DEBUG [58939] [] --------back--------
+2022-05-20 18:38:10,844 DEBUG [58939] [] admin_no is 1
+2022-05-20 18:38:10,909 DEBUG [58939] [] SearchAction end
+2022-05-20 18:38:10,909 DEBUG [58939] [] ReportListController end
+2022-05-20 18:38:10,910 DEBUG [58939] [] finally
+2022-05-20 18:38:24,328 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-05-20 18:38:24,329 DEBUG [58939] [] ReportRegistController start
+2022-05-20 18:38:24,329 DEBUG [58939] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:38:24,334 DEBUG [58939] [] ReportRegistForm: is exist
+2022-05-20 18:38:24,335 DEBUG [58939] [] ReportRegistForm: form value set 
+2022-05-20 18:38:24,335 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-05-20 18:38:24,335 DEBUG [58939] [] ------------------------------session_check_true
+2022-05-20 18:38:24,335 DEBUG [58939] [] indexAction start
+2022-05-20 18:38:24,335 DEBUG [58939] [] admin_no is 1
+2022-05-20 18:38:24,404 DEBUG [58939] [] indexAction end
+2022-05-20 18:38:24,404 DEBUG [58939] [] ReportRegistController end
+2022-05-20 18:38:24,404 DEBUG [58939] [] finally
+2022-05-20 18:38:28,883 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-05-20 18:38:28,884 DEBUG [58939] [] ReportRegistController start
+2022-05-20 18:38:28,884 DEBUG [58939] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:38:28,889 DEBUG [58939] [] ReportRegistForm: is exist
+2022-05-20 18:38:28,890 DEBUG [58939] [] ReportRegistForm: form value set 
+2022-05-20 18:38:28,890 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-05-20 18:38:28,890 DEBUG [58939] [] ------------------------------session_check_true
+2022-05-20 18:38:28,890 DEBUG [58939] [] saveAction start
+2022-05-20 18:38:28,964 DEBUG [58939] [] saveAction end
+2022-05-20 18:38:28,964 DEBUG [58939] [] ReportRegistController end
+2022-05-20 18:38:28,965 DEBUG [58939] [] finally
+2022-05-20 18:41:59,449 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportRegist/back
+2022-05-20 18:41:59,450 DEBUG [58939] [] ReportRegistController start
+2022-05-20 18:41:59,450 DEBUG [58939] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:41:59,456 DEBUG [58939] [] ReportRegistForm: is exist
+2022-05-20 18:41:59,456 DEBUG [58939] [] ReportRegistForm: form value set 
+2022-05-20 18:41:59,456 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportRegist/back
+2022-05-20 18:41:59,457 DEBUG [58939] [] ------------------------------session_check_true
+2022-05-20 18:41:59,457 DEBUG [58939] [] backAction start
+2022-05-20 18:41:59,457 DEBUG [58939] [] admin_no is 1
+2022-05-20 18:41:59,457 DEBUG [58939] [] backAction end
+2022-05-20 18:41:59,457 DEBUG [58939] [] ReportRegistController end
+2022-05-20 18:41:59,457 DEBUG [58939] [] finally
+2022-05-20 18:41:59,473 DEBUG [58939] [] Request URI : /eccadmin_dev/ReportList/Search
+2022-05-20 18:41:59,473 DEBUG [58939] [] ReportListController start
+2022-05-20 18:41:59,474 DEBUG [58939] [] controllers/ReportListController.php: is exist
+2022-05-20 18:41:59,477 DEBUG [58939] [] ReportListForm: is exist
+2022-05-20 18:41:59,477 DEBUG [58939] [] ReportListForm: form value set 
+2022-05-20 18:41:59,478 DEBUG [58939] [] ------------------------------/eccadmin_dev/ReportList/Search
+2022-05-20 18:41:59,478 DEBUG [58939] [] SearchAction start
+2022-05-20 18:41:59,478 DEBUG [58939] [] --------back--------
+2022-05-20 18:41:59,478 DEBUG [58939] [] admin_no is 1
+2022-05-20 18:41:59,540 DEBUG [58939] [] SearchAction end
+2022-05-20 18:41:59,540 DEBUG [58939] [] ReportListController end
+2022-05-20 18:41:59,540 DEBUG [58939] [] finally
+2022-05-20 18:42:04,259 DEBUG [59867] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-05-20 18:42:04,260 DEBUG [59867] [] ReportRegistController start
+2022-05-20 18:42:04,260 DEBUG [59867] [] controllers/ReportRegistController.php: is exist
+2022-05-20 18:42:04,265 DEBUG [59867] [] ReportRegistForm: is exist
+2022-05-20 18:42:04,266 DEBUG [59867] [] ReportRegistForm: form value set 
+2022-05-20 18:42:04,266 DEBUG [59867] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-05-20 18:42:04,266 DEBUG [59867] [] ------------------------------session_check_true
+2022-05-20 18:42:04,266 DEBUG [59867] [] indexAction start
+2022-05-20 18:42:04,267 DEBUG [59867] [] admin_no is 1
+2022-05-20 18:42:04,335 DEBUG [59867] [] indexAction end
+2022-05-20 18:42:04,335 DEBUG [59867] [] ReportRegistController end
+2022-05-20 18:42:04,335 DEBUG [59867] [] finally

@@ -1,0 +1,57 @@
+2021-05-13 10:39:38,883 DEBUG [23503] [] Request URI : /eccadmin_dev/Login
+2021-05-13 10:39:38,914 DEBUG [23503] [] LoginController start
+2021-05-13 10:39:38,914 DEBUG [23503] [] controllers/LoginController.php: is exist
+2021-05-13 10:39:38,914 DEBUG [23503] [] LoginForm: is exist
+2021-05-13 10:39:38,915 DEBUG [23503] [] LoginForm: form value set 
+2021-05-13 10:39:38,915 DEBUG [23503] [] ------------------------------/eccadmin_dev/Login
+2021-05-13 10:39:38,915 DEBUG [23503] [] ------------------------------login_start_check
+2021-05-13 10:39:38,915 DEBUG [23503] [] indexAction start
+2021-05-13 10:39:38,965 DEBUG [23503] [] indexAction end
+2021-05-13 10:39:38,965 DEBUG [23503] [] LoginController end
+2021-05-13 10:39:38,965 DEBUG [23503] [] finally
+2021-05-13 10:39:41,544 DEBUG [22849] [] Request URI : /eccadmin_dev/Login/login
+2021-05-13 10:39:41,544 DEBUG [22849] [] LoginController start
+2021-05-13 10:39:41,545 DEBUG [22849] [] controllers/LoginController.php: is exist
+2021-05-13 10:39:41,545 DEBUG [22849] [] LoginForm: is exist
+2021-05-13 10:39:41,545 DEBUG [22849] [] LoginForm: form value set 
+2021-05-13 10:39:41,546 DEBUG [22849] [] ------------------------------/eccadmin_dev/Login/login
+2021-05-13 10:39:41,546 DEBUG [22849] [] ------------------------------login_start_check
+2021-05-13 10:39:41,546 DEBUG [22849] [] loginAction start
+2021-05-13 10:39:41,846 DEBUG [22849] [] loginAction end
+2021-05-13 10:39:41,846 DEBUG [22849] [] LoginController end
+2021-05-13 10:39:41,846 DEBUG [22849] [] finally
+2021-05-13 10:39:41,863 DEBUG [22849] [] Request URI : /eccadmin_dev/Menu
+2021-05-13 10:39:41,863 DEBUG [22849] [] MenuController start
+2021-05-13 10:39:41,863 DEBUG [22849] [] controllers/MenuController.php: is exist
+2021-05-13 10:39:41,864 DEBUG [22849] [] MenuForm: is exist
+2021-05-13 10:39:41,864 DEBUG [22849] [] MenuForm: form value set 
+2021-05-13 10:39:41,864 DEBUG [22849] [] ------------------------------/eccadmin_dev/Menu
+2021-05-13 10:39:41,864 DEBUG [22849] [] ------------------------------login_start_check
+2021-05-13 10:39:41,864 DEBUG [22849] [] indexAction start
+2021-05-13 10:39:41,864 DEBUG [22849] [] admin_no is 1
+2021-05-13 10:39:41,917 DEBUG [22849] [] indexAction end
+2021-05-13 10:39:41,917 DEBUG [22849] [] MenuController end
+2021-05-13 10:39:41,917 DEBUG [22849] [] finally
+2021-05-13 10:41:47,228 DEBUG [22847] [] Request URI : /eccadmin_dev/TeacherList
+2021-05-13 10:41:47,228 DEBUG [22847] [] TeacherListController start
+2021-05-13 10:41:47,229 DEBUG [22847] [] controllers/TeacherListController.php: is exist
+2021-05-13 10:41:47,229 DEBUG [22847] [] TeacherListForm: is exist
+2021-05-13 10:41:47,229 DEBUG [22847] [] TeacherListForm: form value set 
+2021-05-13 10:41:47,230 DEBUG [22847] [] ------------------------------/eccadmin_dev/TeacherList
+2021-05-13 10:41:47,230 DEBUG [22847] [] indexAction start
+2021-05-13 10:41:47,230 DEBUG [22847] [] admin_no is 1
+2021-05-13 10:41:47,352 DEBUG [22847] [] indexAction end
+2021-05-13 10:41:47,352 DEBUG [22847] [] TeacherListController end
+2021-05-13 10:41:47,352 DEBUG [22847] [] finally
+2021-05-13 10:41:49,395 DEBUG [23503] [] Request URI : /eccadmin_dev/TeacherCourseDetailAssignment/index
+2021-05-13 10:41:49,396 DEBUG [23503] [] TeacherCourseDetailAssignmentController start
+2021-05-13 10:41:49,396 DEBUG [23503] [] controllers/TeacherCourseDetailAssignmentController.php: is exist
+2021-05-13 10:41:49,396 DEBUG [23503] [] TeacherCourseDetailAssignmentForm: is exist
+2021-05-13 10:41:49,396 DEBUG [23503] [] TeacherCourseDetailAssignmentForm: form value set 
+2021-05-13 10:41:49,397 DEBUG [23503] [] ------------------------------/eccadmin_dev/TeacherCourseDetailAssignment/index
+2021-05-13 10:41:49,397 DEBUG [23503] [] ------------------------------session_check_true
+2021-05-13 10:41:49,397 DEBUG [23503] [] indexAction start
+2021-05-13 10:41:49,397 DEBUG [23503] [] admin_no is 1
+2021-05-13 10:41:49,477 DEBUG [23503] [] indexAction end
+2021-05-13 10:41:49,477 DEBUG [23503] [] TeacherCourseDetailAssignmentController end
+2021-05-13 10:41:49,477 DEBUG [23503] [] finally

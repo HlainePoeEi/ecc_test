@@ -1,0 +1,635 @@
+.login_fp{
+    float: left;
+    padding-left: 50px;
+    text-decoration: underline;
+}
+
+.login_btn{
+    float: right;
+    padding-right: 50px;
+}
+
+.next_quiz {
+    background: url(../image/next_quiz.png);
+    background-color: none;
+    background-size:35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.end_question {
+    background: url(../image/true.png);
+    background-color: none;
+    background-size:35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.rt_button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.header{
+    margin-top:-20px;
+}
+
+.current_quiz_no{
+    float:right;
+    font-size:18px;
+    font-family:Meiryo UI;
+     margin:0px 30px;
+}
+
+.question_audio_dev{
+    height: 200px; position: relative;
+}
+
+.start_recod{float: right; display: flex; align-items: center;}
+
+.start_recod_btn{
+    background: url(../image/next_quiz.png);
+    background-color: none;
+    background-size:35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+    padding-right:50px;
+}
+
+.divDescription{
+    text-align: center;
+    display: none;
+}
+
+.qa_description{
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+
+#aud_err{
+    font-size:18px;
+    font-family:Meiryo UI;
+    text-align: center;
+    color: red;
+}
+
+.div_audio1{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.div_audio2{
+    height:30%;
+    display: flex;
+    align-items: center;
+    margin:50px auto;
+}
+
+.answer_audio_dev{
+    height: 200px;
+    position: relative;
+    padding: auto;
+}
+
+.div_mic{
+    display:block;
+    width:650px;
+    margin: auto;
+}
+
+.div_mic_btn{
+    display:flex;
+    align-items:center;
+    width: 100px;
+    float: left;
+    padding: auto;
+}
+
+.div_svg{
+    width: 450px;
+    margin:auto;
+}
+
+.div_answer_btns{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.div_loading{
+    color: orange;
+    clear:right;
+    padding-top:50px;
+}
+
+.question_area{
+    width:80%;
+    height: 200px;
+    margin:auto;
+    border-color: darkred;
+    border-style: solid;
+    border-width: 2px;
+    padding: 15px;
+}
+
+#quiz_no_label{
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+#quiz_text{
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+#yes_no_area{
+    width:80%;
+    height: 200px;
+    margin:auto;
+    border-color: darkred;
+    padding: 15px;
+    text-align: center;
+}
+
+.yn_img{
+    margin: 30px;
+}
+
+#divProgress{
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+}
+
+.timer{
+    width:26px;
+}
+
+.lbl_timer{
+    color:red;
+    padding:auto;
+}
+
+.lbl_error{
+    padding-left:20px;
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+.err_img{
+    width:15px;
+    float:right;
+}
+
+/*record test*/
+.record_test_div{
+    margin-top:10px;
+    width:100%;
+    height:400px;
+    margin:20px;
+}
+
+.course_title{
+    text-align: left;
+}
+
+.title1{
+    padding-left:10px;
+    padding-top:0px;
+    padding-bottom:20px;
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+#div_rt_area{
+
+	border-radius: 25px;
+    height: 150px;
+    position: relative;
+    border-style: solid;
+    border-color: darkred;
+    border-width: 2px;
+    margin: 20px;
+}
+
+#lblAnswerTime{
+    color:red;
+}
+
+.audio_test_div{
+    display:block;
+    width:650px;
+    margin: 15px;
+}
+
+.div_micbtn_rt{
+    display:flex;
+    align-items:center;
+    width: 100px;
+    float: left;
+    padding: auto;
+}
+
+#divPart2{
+    padding-top:30px;
+}
+
+.lbl_voice_confirm{
+    padding-left:10px;
+    padding-top:0px;
+    padding-bottom:20px;
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+.lbl_all_time{
+    padding-left:10px;
+    padding-top:0px;
+    padding-bottom:20px;
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+#writing_test_div{
+    margin-top:10px;
+    width:100%;
+    height:330px;
+    margin-bottom:20px;
+}
+
+.p_title{
+    text-align: left;
+}
+
+.lbl_write{
+    padding-left:10px;
+    padding-top:0px;
+    padding-bottom:20px;
+    font-size:18px;
+    font-family:Meiryo UI;
+}
+
+.div_btns{
+    margin-top:10px;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.div_cancel_btn{
+    float:left;
+    margin-left:10px;
+     margin-right:10px;
+}
+
+.div_start_btn{
+    float:right;
+    margin-right:10px;
+}
+
+/*for record test*/
+
+#recordingslist{
+    list-style-type: none;
+}
+
+/*for speaking feedback list*/
+
+.fb_label{
+    margin-right: 20px;
+}
+
+.course_buttons{
+    margin: 15px;
+    background-color: #84aecc; /* Green */
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn_one{
+    background-color: #8089ed !important;
+}
+
+.btn_two{
+    background-color: #47c663 !important;
+}
+
+.btn_three{
+    background-color: #ef8c2f !important;
+}
+
+.btn_four{
+    background-color: #8772a0 !important;
+}
+
+.btn_five{
+    background-color: #872d2d !important;
+}
+
+
+/*for audio without download button*/
+.audio_preview audio::-internal-media-controls-download-button {
+    display:none;
+}
+
+.audio_preview audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+.audio_preview audio::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+/*label for audio*/
+.lbl_audio{
+    width: auto;
+    margin: auto;
+    /*margin-right: 50px;*/
+   float: left;
+    margin-bottom: 10px;
+
+}
+
+.audio_preview{
+    margin:auto;
+    align-items: center;
+    padding: 20px;
+    /*padding-left: 25%;*/
+    margin-bottom: 0px;
+    width: 400px;
+}
+
+
+.div_noAudio{
+    width: 90%;
+    margin:auto;
+    display: inline-block;
+    align-items: center;
+    padding:20px;
+    margin-bottom: 0px;
+
+}
+/*for list style*/
+
+.spk_mark_ul li {
+ list-style-image: url('../image/radio_btn3.png');
+}
+
+.spk_mark_li{
+    margin: 10px;
+}
+
+#feedback_no{
+    color: black;
+    font-size: 18px;
+    margin: 6px 20px;
+}
+
+.canvasjs-chart-credit{
+    display: none;
+}
+
+.no_audio{
+    color: red;
+    font-weight: bold;
+    margin:auto;
+    text-align: center;
+}
+
+*for loader*/
+.loading {
+    color: #008CBA;
+}
+span.loading {
+    display: inline-block;
+    white-space: nowrap;
+    font-size:14px;
+    font-weight: bold;
+}
+    span.loading span {
+        font-color: #008CBA;
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        vertical-align: middle;
+
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        background-size: 4px 100%;
+
+        background-image:-webkit-gradient(linear, left top, right top, from(transparent), color-stop(0.5, transparent), color-stop(0.5, #008CBA), to(#008CBA) );
+        background-image:-webkit-linear-gradient(left,transparent 2px,#008CBA 4px);
+        background-image: linear-gradient(to right,transparent 2px,#008CBA 4px);
+
+        -webkit-animation: animation 1.5s linear infinite;
+        animation: animation 1.5s linear infinite;
+    }
+
+@-webkit-keyframes animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+/*for timer to center*/
+
+#divAnswer{
+    align-items: center;
+    margin:auto;
+    display: flex;
+    width: 70px;
+}
+
+.anstimer{
+    margin:auto;
+}
+
+.no_audio{
+    color: red;
+    font-weight: bold;
+    margin:auto;
+    text-align: center;
+
+}
+
+audio{
+    width: 300px;
+}
+
+#tbl_question{
+    width: 2000px;
+}
+
+input[type="file"]:focus {
+    outline-width: 0;
+}
+
+input[type="file"]{
+    color: transparent;
+}
+
+/*for ajdust design datetimepicker*/
+
+.course_detail_start_period,
+.course_detail_end_period{
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 7px;
+}
+
+.course_dt_question{
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.course_dt_qrow {
+    background: #f3f4f5;
+    padding: 20px 30px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 1px #dedddd;
+}
+.course_dt_q_title div {
+    display: inline-block;
+}
+.course_dt_q_audio{
+	text-align: center;
+    margin: 50px 0;
+}
+.course_dt_q_desc{
+	word-wrap: break-word;
+}
+
+#score_pattern option[disabled] {
+    display: none;
+}
+
+input#input_file{position:fixed;display: none;}
+
+/**Excel**/
+#less_tbl tr td:nth-child(1){
+	width: 2% !important;
+	text-align: left !important;
+	word-break: break-all !important;
+	overflow-wrap: break-word !important;
+}
+
+#less_tbl tr td:nth-child(2),
+#less_tbl tr td:nth-child(3),
+#less_tbl tr td:nth-child(4),
+#less_tbl tr td:nth-child(5),
+#less_tbl tr td:nth-child(6),
+#less_tbl tr td:nth-child(7),
+#less_tbl tr td:nth-child(8),
+#less_tbl tr td:nth-child(9),
+#less_tbl tr td:nth-child(10),
+#less_tbl tr td:nth-child(11),
+#less_tbl tr td:nth-child(12),
+#less_tbl tr td:nth-child(13),
+#less_tbl tr td:nth-child(14),
+#less_tbl tr td:nth-child(15),
+#less_tbl tr td:nth-child(16),
+#less_tbl tr td:nth-child(17),
+#less_tbl tr td:nth-child(18),
+#less_tbl tr td:nth-child(19),
+#less_tbl tr td:nth-child(20),
+#less_tbl tr td:nth-child(21){
+	word-break: break-all !important;
+	width: 10% !important;
+	text-align: left !important;
+}
+#lessGp_tbl_wrapper .dataTables_scrollHeadInner{
+	width:100% !important;
+}
+#lessGp_tbl_wrapper .dataTables_scrollHeadInner table thead tr th{
+	text-align:left !important;
+}
+#lessGp_tbl tr td:nth-child(1){
+	width: 2% !important;
+	text-align: left !important;
+	word-break: break-all !important;
+	overflow-wrap: break-word !important;
+}
+
+#lessGp_tbl tr td:nth-child(2),
+#lessGp_tbl tr td:nth-child(3),
+#lessGp_tbl tr td:nth-child(4){
+	word-break: break-all !important;
+	width: 30% !important;
+	text-align: left !important;
+}
+#subj_tbl tr td:nth-child(1){
+	width: 2% !important;
+	text-align: left !important;
+	word-break: break-all !important;
+	overflow-wrap: break-word !important;
+}
+#subj_tbl tr td:nth-child(2),
+#subj_tbl tr td:nth-child(3),
+#subj_tbl tr td:nth-child(4),
+#subj_tbl tr td:nth-child(5),
+#subj_tbl tr td:nth-child(6),
+#subj_tbl tr td:nth-child(7),
+#subj_tbl tr td:nth-child(8),
+#subj_tbl tr td:nth-child(9){
+	word-break: break-all !important;
+	width: 30% !important;
+	text-align: left !important;
+}
+
+ .dataTables_scrollHeadInner{
+  width:100% !important;
+}
+.dataTables_scrollHeadInner table{
+  width:100% !important;
+}
+
+.start_period,
+.end_period{
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 7px;
+}

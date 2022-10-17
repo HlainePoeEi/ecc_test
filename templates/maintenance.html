@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>システムメンテナンス</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	{literal}
+	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	{/literal}
+
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<script type="text/javascript">
+		function check(){
+			var status = document.getElementById('status').value;
+
+			if(status == "0"){
+				$("#msg").css("display", "block");
+				$("#cmt").html("緊急停止を行います。");
+				$(".main_tbl").css("display", "block");
+			}else if(status == "1") {
+				$("#msg").css("display", "block");
+				$("#cmt").html("ただいま停止中です。解除しますか？");
+				$(".main_tbl").css("display", "none");
+			}else {
+				$("#msg").css("display", "none");
+				$(".main_tbl").css("display", "none");
+			}
+		}
+		$(document).ready(function() {
+
+			check();
+			// MSGのあるなし
+			if ( $(".error_msg").html() != "" ) {
+
+				$(".error_section").slideToggle('slow')
+			}
+
+			$(".close_icon").on('click',function() {
+
+				$(".error_section").slideToggle('slow')
+				$("#err_dis").slideToggle('slow')
+
+			});
+
+			$("#select_kbn").on('change',function(e){
+
+				var system_kbn = $(this).val();
+				var homeDir = $('#home_dir').val();
+				var fd = new FormData();
+				fd.append('system_kbn', system_kbn);
+
+				$.ajax({
+					type : 'POST',
+					url : homeDir + 'Maintenance/searchWoc',
+					data : fd,
+					datatype : 'JSON',
+					processData : false,
+					contentType : false
+				}).done(
+					function(data) {
+						arrList = $.parseJSON(data);
+						if (arrList.length > 0){
+							var status = arrList[0].system_status;
+							$('#status').val(status);
+						}else {
+							$('#status').val("");
+						}
+						check();
+					}).fail(function(data) {
+				    console.log("error");
+				});
+		        return false;
+			});
+		});
+	</script>
+</head>
+<body class="pushmenu-push">
+	<form id="main_form" action="{$smarty.const.HOME_DIR}Maintenance/Search" method="post">
+		{include file='leftMenu.html'}
+		<div class="divHeader">
+			<!--header-->
+				{include file='header.html'}
+			<!--header-->
+		</div>
+		<div class="divBody">
+			<div class="main">
+				<div id="err_dis">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+							{if !empty($err_msg)}
+							<div class="error_msg">{$err_msg}</div>
+							{else}
+							<div class="error_msg"></div>
+							{/if}
+					</section>
+				</div>
+				<section class="content">
+					<input type="hidden" id="page" name="page" value="{$form->page}" />
+					<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+					<input type="hidden" id="admin_no" name="admin_no"/>
+					<input type="hidden" id="status" name= "status" value="{$form->status}" />
+					<p>
+						><span class="title">設定 / システムメンテナンス</span>
+					</p>
+					<div id="kbn">
+						<label>対象<span class="required">※</span></label>
+						<select id="select_kbn" name="select_kbn" style="width:220px;margin-left:120px;">
+							<option value="0">選択してください。</option>
+								{if !empty($kbn)}
+									{foreach $kbn as $value}
+									{if $value->type == $form->select_kbn}
+											<option value="{$value->type}" selected>{$value->name} </option>
+										  {else}
+										<option value="{$value->type}">{$value->name} </option>
+										{/if}
+									{/foreach}
+								{/if}
+						</select>
+					</div>
+					 <div id="msg" style="margin-top:50px;font-size: 32px;color:red;display:none;">
+						<label id="cmt"></label>
+					</div>
+					<table class="main_tbl" style="display:none">
+						<tr>
+							<td class="st_col">停止用コメント<span class="required">※</span></td>
+							<td class="input">
+							<!-- <input id="description" name="description" type="text" class="text" style = "width:380px;" value="{$form->description}" maxlength="1024" /> -->
+							<textarea name="description" id="description" cols="40" maxlength = "1024" style="width : 100%; height : 60px; margin-top : 10px;margin-left : 30px; overflow-y : scroll; resize : none;">{$form->description}</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><label id="cmt_eg" style="margin-left:30px;">(例：ただいまご使用出来ません。しばらくお待ち下さい。)</label></td>
+						</tr>
+					</table>
+
+				<div align="right" style="width:100%">
+						<input type="button" id="btn_insert" name="btn_insert" class="btn_insert" title="登録" onclick="javascript:doRegist('{$smarty.const.HOME_DIR}Maintenance/save')">
+				</div>
+					{if !empty($list)}
+						<div class="pagging" style="width:100%">
+							{if $form->max_page gte 4}
+								{if $form->page gt 1}
+									<a href="javascript:doPage(1);">&lt;&lt;</a>
+									<a href="javascript:doPage({$form->page-1});">&lt;</a>
+								{/if}
+								{if (($form->page + 3) eq $form->max_page) || (($form->page + 3) gte $form->max_page)}
+							  		{section name=i start=$form->max_page-3 loop=$form->max_page+1}
+										{if $form->page eq $smarty.section.i.index}
+												<label>{$smarty.section.i.index}</label>
+										{else}
+												<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{else}
+									{section name=i start=$form->page loop=$form->page+4}
+										{if $form->page eq $smarty.section.i.index}
+											<label>{$smarty.section.i.index}</label>
+										{else}
+											<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{/if}
+								{if $form->page lte $form->max_page-1}
+									<a href="javascript:doPage({$form->page+1});">&gt;</a>
+									<a href="javascript:doPage({$form->max_page});">&gt;&gt;</a>
+								{/if}
+							{else}
+								{if $form->page gt 1}
+									<a href="javascript:doPage(1);">&lt;&lt;</a>
+									<a href="javascript:doPage({$form->page-1});">&lt;</a>
+								{else}
+									<a class="disable_link">&lt;</a>
+								{/if}
+									{section name=i start=1 loop=$form->max_page+1}
+										{if $form->page eq $smarty.section.i.index}
+											<label>{$smarty.section.i.index}</label>
+										{else}
+											<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{if $form->page lte $form->max_page-1}
+									 <a href="javascript:doPage({$form->page+1});">&gt;</a>
+									 <a href="javascript:doPage({$form->max_page});">&gt;&gt;</a>
+								{else}
+									<a class="disable_link">&gt;</a>
+								{/if}
+							{/if}
+						</div>
+						{/if }
+						<table class="tbl_search">
+							<tr>
+								<th width="400px">【履歴】日付</th>
+								<th width="200px">対象</th>
+								<th width="200px">状態</th>
+								<th width="400px">コメント</th>
+								<th width="200px">運用者ID</th>
+								<th width="200px">運用者名</th>
+
+							</tr>
+							{if !empty($list)}
+								{foreach $list as $result}
+									<tr>
+										<td width="400px">{$result->update_dt}</td>
+										<td width="400px">{$result->name}</td>
+										<td width="400px">{$result->system_status|escape}</td>
+										<td width="400px">{$result->description|escape}</td>
+										<td width="300px">{$result->login_id}</td>
+										<td width="300px">{$result->admin_name}</td>
+									</tr>
+								{/foreach}
+							{/if }
+						</table>
+				</section>
+			</div>
+		</div>
+		<div class="divFooter">
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</div>
+	</form>
+	<script>
+		{literal}
+
+			//ページング
+			function doPage(pageNo){
+				$("#page").val(pageNo);
+				$("#main_form").submit();
+			}
+
+			//登録ボタン処理
+			function doRegist(action){
+
+				var valid = checkValidation();
+				if (valid){
+					var result = confirm("登録します。よろしいでしょうか。");
+					if(result){
+						$("#main_form").attr("action", action);
+						$("#main_form").submit();
+					}
+				}
+			}
+
+			function checkValidation(){
+
+				var description = document.getElementById('description').value;
+				var select_kbn = document.getElementById('select_kbn').value;
+				var status = document.getElementById('status').value;
+
+				if(select_kbn == "0"){
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("対象を一つ選択してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				 }
+
+				if(status == "0"){
+
+					if(description == ""){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("停止用コメントを入力してください。");
+						$(".divBody").scrollTop(0);
+						return false;
+					 }
+
+					if(description.length > 1024){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("停止用コメントを1024字で入力してください。");
+						$(".divBody").scrollTop(0);
+						return false;
+					 }
+				}
+				return true;
+			}
+		{/literal}
+	</script>
+		<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+
+	</body>
+</html>

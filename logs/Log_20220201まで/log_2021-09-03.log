@@ -1,0 +1,340 @@
+2021-09-03 16:37:07,874 DEBUG [168659] [] Request URI : /eccadmin_dev/Login
+2021-09-03 16:37:07,891 DEBUG [168659] [] LoginController start
+2021-09-03 16:37:07,891 DEBUG [168659] [] controllers/LoginController.php: is exist
+2021-09-03 16:37:07,891 DEBUG [168659] [] LoginForm: is exist
+2021-09-03 16:37:07,891 DEBUG [168659] [] LoginForm: form value set 
+2021-09-03 16:37:07,892 DEBUG [168659] [] ------------------------------/eccadmin_dev/Login
+2021-09-03 16:37:07,892 DEBUG [168659] [] ------------------------------login_start_check
+2021-09-03 16:37:07,892 DEBUG [168659] [] indexAction start
+2021-09-03 16:37:07,936 DEBUG [168659] [] indexAction end
+2021-09-03 16:37:07,936 DEBUG [168659] [] LoginController end
+2021-09-03 16:37:07,936 DEBUG [168659] [] finally
+2021-09-03 16:37:51,592 DEBUG [168669] [] Request URI : /eccadmin_dev/Login/login
+2021-09-03 16:37:51,593 DEBUG [168669] [] LoginController start
+2021-09-03 16:37:51,593 DEBUG [168669] [] controllers/LoginController.php: is exist
+2021-09-03 16:37:51,593 DEBUG [168669] [] LoginForm: is exist
+2021-09-03 16:37:51,593 DEBUG [168669] [] LoginForm: form value set 
+2021-09-03 16:37:51,594 DEBUG [168669] [] ------------------------------/eccadmin_dev/Login/login
+2021-09-03 16:37:51,594 DEBUG [168669] [] ------------------------------login_start_check
+2021-09-03 16:37:51,594 DEBUG [168669] [] loginAction start
+2021-09-03 16:37:51,893 DEBUG [168669] [] loginAction end
+2021-09-03 16:37:51,893 DEBUG [168669] [] LoginController end
+2021-09-03 16:37:51,894 DEBUG [168669] [] finally
+2021-09-03 16:37:55,684 DEBUG [168669] [] Request URI : /eccadmin_dev/Login/login
+2021-09-03 16:37:55,685 DEBUG [168669] [] LoginController start
+2021-09-03 16:37:55,685 DEBUG [168669] [] controllers/LoginController.php: is exist
+2021-09-03 16:37:55,685 DEBUG [168669] [] LoginForm: is exist
+2021-09-03 16:37:55,686 DEBUG [168669] [] LoginForm: form value set 
+2021-09-03 16:37:55,686 DEBUG [168669] [] ------------------------------/eccadmin_dev/Login/login
+2021-09-03 16:37:55,686 DEBUG [168669] [] ------------------------------login_start_check
+2021-09-03 16:37:55,686 DEBUG [168669] [] loginAction start
+2021-09-03 16:37:55,989 DEBUG [168669] [] loginAction end
+2021-09-03 16:37:55,989 DEBUG [168669] [] LoginController end
+2021-09-03 16:37:55,989 DEBUG [168669] [] finally
+2021-09-03 16:37:56,035 DEBUG [168669] [] Request URI : /eccadmin_dev/Menu
+2021-09-03 16:37:56,035 DEBUG [168669] [] MenuController start
+2021-09-03 16:37:56,036 DEBUG [168669] [] controllers/MenuController.php: is exist
+2021-09-03 16:37:56,036 DEBUG [168669] [] MenuForm: is exist
+2021-09-03 16:37:56,036 DEBUG [168669] [] MenuForm: form value set 
+2021-09-03 16:37:56,036 DEBUG [168669] [] ------------------------------/eccadmin_dev/Menu
+2021-09-03 16:37:56,036 DEBUG [168669] [] ------------------------------login_start_check
+2021-09-03 16:37:56,036 DEBUG [168669] [] indexAction start
+2021-09-03 16:37:56,037 DEBUG [168669] [] admin_no is 1
+2021-09-03 16:37:56,078 DEBUG [168669] [] indexAction end
+2021-09-03 16:37:56,078 DEBUG [168669] [] MenuController end
+2021-09-03 16:37:56,078 DEBUG [168669] [] finally
+2021-09-03 16:38:55,137 DEBUG [168986] [] Request URI : /eccadmin_dev/TestList
+2021-09-03 16:38:55,137 DEBUG [168986] [] TestListController start
+2021-09-03 16:38:55,138 DEBUG [168986] [] controllers/TestListController.php: is exist
+2021-09-03 16:38:55,138 DEBUG [168986] [] TestListForm: is exist
+2021-09-03 16:38:55,138 DEBUG [168986] [] TestListForm: form value set 
+2021-09-03 16:38:55,139 DEBUG [168986] [] ------------------------------/eccadmin_dev/TestList
+2021-09-03 16:38:55,139 DEBUG [168986] [] indexAction start
+2021-09-03 16:38:55,139 DEBUG [168986] [] admin_no is 1
+2021-09-03 16:38:55,139 DEBUG [168986] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/08/03
+    [end_period] => 2021/10/03
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 1c83f9c127c4ba36e60edd9ab4ab1683
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2021-09-03 16:38:55,141 DEBUG [168986] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-09-03 16:38:55,142 DEBUG [168986] [] count of list :6
+2021-09-03 16:38:55,225 DEBUG [168986] [] indexAction end
+2021-09-03 16:38:55,225 DEBUG [168986] [] TestListController end
+2021-09-03 16:38:55,225 DEBUG [168986] [] finally
+2021-09-03 16:38:57,446 DEBUG [168453] [] Request URI : /eccadmin_dev/TestCopy/index
+2021-09-03 16:38:57,447 DEBUG [168453] [] TestCopyController start
+2021-09-03 16:38:57,447 DEBUG [168453] [] controllers/TestCopyController.php: is exist
+2021-09-03 16:38:57,447 DEBUG [168453] [] TestCopyForm: is exist
+2021-09-03 16:38:57,448 DEBUG [168453] [] TestCopyForm: form value set 
+2021-09-03 16:38:57,448 DEBUG [168453] [] ------------------------------/eccadmin_dev/TestCopy/index
+2021-09-03 16:38:57,448 DEBUG [168453] [] ------------------------------session_check_true
+2021-09-03 16:38:57,448 DEBUG [168453] [] indexAction start
+2021-09-03 16:38:57,448 DEBUG [168453] [] admin_no is 1
+2021-09-03 16:38:57,449 DEBUG [168453] [] org_no : 99999
+2021-09-03 16:38:57,451 DEBUG [168453] [] test_no
+2021-09-03 16:38:57,540 DEBUG [168453] [] indexAction end
+2021-09-03 16:38:57,540 DEBUG [168453] [] TestCopyController end
+2021-09-03 16:38:57,540 DEBUG [168453] [] finally
+2021-09-03 16:38:59,178 DEBUG [168866] [] Request URI : /eccadmin_dev/TestCopy/back
+2021-09-03 16:38:59,179 DEBUG [168866] [] TestCopyController start
+2021-09-03 16:38:59,179 DEBUG [168866] [] controllers/TestCopyController.php: is exist
+2021-09-03 16:38:59,180 DEBUG [168866] [] TestCopyForm: is exist
+2021-09-03 16:38:59,180 DEBUG [168866] [] TestCopyForm: form value set 
+2021-09-03 16:38:59,180 DEBUG [168866] [] ------------------------------/eccadmin_dev/TestCopy/back
+2021-09-03 16:38:59,180 DEBUG [168866] [] ------------------------------session_check_true
+2021-09-03 16:38:59,181 DEBUG [168866] [] backAction start
+2021-09-03 16:38:59,181 DEBUG [168866] [] backAction end
+2021-09-03 16:38:59,181 DEBUG [168866] [] TestCopyController end
+2021-09-03 16:38:59,181 DEBUG [168866] [] finally
+2021-09-03 16:38:59,234 DEBUG [168866] [] Request URI : /eccadmin_dev/TestList/Search
+2021-09-03 16:38:59,235 DEBUG [168866] [] TestListController start
+2021-09-03 16:38:59,235 DEBUG [168866] [] controllers/TestListController.php: is exist
+2021-09-03 16:38:59,235 DEBUG [168866] [] TestListForm: is exist
+2021-09-03 16:38:59,235 DEBUG [168866] [] TestListForm: form value set 
+2021-09-03 16:38:59,236 DEBUG [168866] [] ------------------------------/eccadmin_dev/TestList/Search
+2021-09-03 16:38:59,236 DEBUG [168866] [] SearchAction start
+2021-09-03 16:38:59,236 DEBUG [168866] [] admin_no is 1
+2021-09-03 16:38:59,236 DEBUG [168866] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2021/08/03
+    [end_period] => 2021/10/03
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 74c227ca79a14e1d401be7815c26ac15
+    [admin_kbn] => 001
+)
+
+2021-09-03 16:38:59,237 DEBUG [168866] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2021-09-03 16:38:59,238 DEBUG [168866] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+)
+
+2021-09-03 16:38:59,320 DEBUG [168866] [] SearchAction end
+2021-09-03 16:38:59,320 DEBUG [168866] [] TestListController end
+2021-09-03 16:38:59,320 DEBUG [168866] [] finally
+2021-09-03 16:39:01,428 DEBUG [168866] [] Request URI : /eccadmin_dev/TestCopy/index
+2021-09-03 16:39:01,428 DEBUG [168866] [] TestCopyController start
+2021-09-03 16:39:01,428 DEBUG [168866] [] controllers/TestCopyController.php: is exist
+2021-09-03 16:39:01,429 DEBUG [168866] [] TestCopyForm: is exist
+2021-09-03 16:39:01,429 DEBUG [168866] [] TestCopyForm: form value set 
+2021-09-03 16:39:01,429 DEBUG [168866] [] ------------------------------/eccadmin_dev/TestCopy/index
+2021-09-03 16:39:01,429 DEBUG [168866] [] ------------------------------session_check_true
+2021-09-03 16:39:01,429 DEBUG [168866] [] indexAction start
+2021-09-03 16:39:01,430 DEBUG [168866] [] admin_no is 1
+2021-09-03 16:39:01,430 DEBUG [168866] [] org_no : 99999
+2021-09-03 16:39:01,432 DEBUG [168866] [] test_no
+2021-09-03 16:39:01,518 DEBUG [168866] [] indexAction end
+2021-09-03 16:39:01,518 DEBUG [168866] [] TestCopyController end
+2021-09-03 16:39:01,518 DEBUG [168866] [] finally

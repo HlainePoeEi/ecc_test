@@ -1,0 +1,2389 @@
+2022-09-15 15:29:46,845 DEBUG [28928] [] Request URI : /eccadmin_dev/Login
+2022-09-15 15:29:46,891 DEBUG [28928] [] LoginController start
+2022-09-15 15:29:46,891 DEBUG [28928] [] controllers/LoginController.php: is exist
+2022-09-15 15:29:46,894 DEBUG [28928] [] LoginForm: is exist
+2022-09-15 15:29:46,895 DEBUG [28928] [] LoginForm: form value set 
+2022-09-15 15:29:46,895 DEBUG [28928] [] ------------------------------/eccadmin_dev/Login
+2022-09-15 15:29:46,895 DEBUG [28928] [] ------------------------------login_start_check
+2022-09-15 15:29:46,896 DEBUG [28928] [] indexAction start
+2022-09-15 15:29:46,955 DEBUG [28928] [] indexAction end
+2022-09-15 15:29:46,955 DEBUG [28928] [] LoginController end
+2022-09-15 15:29:46,955 DEBUG [28928] [] finally
+2022-09-15 15:38:34,043 DEBUG [29022] [] Request URI : /eccadmin_dev/Login/login
+2022-09-15 15:38:34,048 DEBUG [29022] [] LoginController start
+2022-09-15 15:38:34,048 DEBUG [29022] [] controllers/LoginController.php: is exist
+2022-09-15 15:38:34,051 DEBUG [29022] [] LoginForm: is exist
+2022-09-15 15:38:34,051 DEBUG [29022] [] LoginForm: form value set 
+2022-09-15 15:38:34,052 DEBUG [29022] [] ------------------------------/eccadmin_dev/Login/login
+2022-09-15 15:38:34,052 DEBUG [29022] [] ------------------------------login_start_check
+2022-09-15 15:38:34,052 DEBUG [29022] [] loginAction start
+2022-09-15 15:38:34,385 DEBUG [29022] [] loginAction end
+2022-09-15 15:38:34,385 DEBUG [29022] [] LoginController end
+2022-09-15 15:38:34,385 DEBUG [29022] [] finally
+2022-09-15 15:38:34,410 DEBUG [29022] [] Request URI : /eccadmin_dev/Menu
+2022-09-15 15:38:34,413 DEBUG [29022] [] MenuController start
+2022-09-15 15:38:34,434 DEBUG [29022] [] controllers/MenuController.php: is exist
+2022-09-15 15:38:34,539 DEBUG [29022] [] MenuForm: is exist
+2022-09-15 15:38:34,553 DEBUG [29022] [] MenuForm: form value set 
+2022-09-15 15:38:34,554 DEBUG [29022] [] ------------------------------/eccadmin_dev/Menu
+2022-09-15 15:38:34,554 DEBUG [29022] [] ------------------------------login_start_check
+2022-09-15 15:38:34,554 DEBUG [29022] [] indexAction start
+2022-09-15 15:38:34,554 DEBUG [29022] [] admin_no is 1
+2022-09-15 15:38:34,683 DEBUG [29022] [] indexAction end
+2022-09-15 15:38:34,683 DEBUG [29022] [] MenuController end
+2022-09-15 15:38:34,683 DEBUG [29022] [] finally
+2022-09-15 15:38:50,369 DEBUG [29007] [] Request URI : /eccadmin_dev/TestList
+2022-09-15 15:38:50,374 DEBUG [29007] [] TestListController start
+2022-09-15 15:38:50,374 DEBUG [29007] [] controllers/TestListController.php: is exist
+2022-09-15 15:38:50,468 DEBUG [29007] [] TestListForm: is exist
+2022-09-15 15:38:50,471 DEBUG [29007] [] TestListForm: form value set 
+2022-09-15 15:38:50,472 DEBUG [29007] [] ------------------------------/eccadmin_dev/TestList
+2022-09-15 15:38:50,472 DEBUG [29007] [] indexAction start
+2022-09-15 15:38:50,472 DEBUG [29007] [] admin_no is 1
+2022-09-15 15:38:50,472 DEBUG [29007] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 95e27031710b302bba27a537a344a766
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-09-15 15:38:50,474 DEBUG [29007] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:38:50,475 DEBUG [29007] [] count of list :10
+2022-09-15 15:38:50,682 DEBUG [29007] [] indexAction end
+2022-09-15 15:38:50,682 DEBUG [29007] [] TestListController end
+2022-09-15 15:38:50,682 DEBUG [29007] [] finally
+2022-09-15 15:39:04,834 DEBUG [29066] [] Request URI : /eccadmin_dev/TestCopy/index
+2022-09-15 15:39:04,842 DEBUG [29066] [] TestCopyController start
+2022-09-15 15:39:04,842 DEBUG [29066] [] controllers/TestCopyController.php: is exist
+2022-09-15 15:39:05,055 DEBUG [29066] [] TestCopyForm: is exist
+2022-09-15 15:39:05,064 DEBUG [29066] [] TestCopyForm: form value set 
+2022-09-15 15:39:05,065 DEBUG [29066] [] ------------------------------/eccadmin_dev/TestCopy/index
+2022-09-15 15:39:05,065 DEBUG [29066] [] ------------------------------session_check_true
+2022-09-15 15:39:05,065 DEBUG [29066] [] indexAction start
+2022-09-15 15:39:05,065 DEBUG [29066] [] admin_no is 1
+2022-09-15 15:39:05,065 DEBUG [29066] [] org_no : 99999
+2022-09-15 15:39:05,067 DEBUG [29066] [] test_no
+2022-09-15 15:39:05,210 DEBUG [29066] [] indexAction end
+2022-09-15 15:39:05,210 DEBUG [29066] [] TestCopyController end
+2022-09-15 15:39:05,210 DEBUG [29066] [] finally
+2022-09-15 15:39:07,866 DEBUG [28998] [] Request URI : /eccadmin_dev/TestCopy/back
+2022-09-15 15:39:07,871 DEBUG [28998] [] TestCopyController start
+2022-09-15 15:39:07,871 DEBUG [28998] [] controllers/TestCopyController.php: is exist
+2022-09-15 15:39:07,879 DEBUG [28998] [] TestCopyForm: is exist
+2022-09-15 15:39:07,880 DEBUG [28998] [] TestCopyForm: form value set 
+2022-09-15 15:39:07,880 DEBUG [28998] [] ------------------------------/eccadmin_dev/TestCopy/back
+2022-09-15 15:39:07,880 DEBUG [28998] [] ------------------------------session_check_true
+2022-09-15 15:39:07,880 DEBUG [28998] [] backAction start
+2022-09-15 15:39:07,880 DEBUG [28998] [] backAction end
+2022-09-15 15:39:07,881 DEBUG [28998] [] TestCopyController end
+2022-09-15 15:39:07,881 DEBUG [28998] [] finally
+2022-09-15 15:39:07,904 DEBUG [28998] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:39:07,909 DEBUG [28998] [] TestListController start
+2022-09-15 15:39:07,909 DEBUG [28998] [] controllers/TestListController.php: is exist
+2022-09-15 15:39:07,913 DEBUG [28998] [] TestListForm: is exist
+2022-09-15 15:39:07,913 DEBUG [28998] [] TestListForm: form value set 
+2022-09-15 15:39:07,914 DEBUG [28998] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:39:07,914 DEBUG [28998] [] SearchAction start
+2022-09-15 15:39:07,914 DEBUG [28998] [] admin_no is 1
+2022-09-15 15:39:07,914 DEBUG [28998] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 426e4a7ca071fe1250cc76da0bd8c7fe
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:39:07,915 DEBUG [28998] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:39:07,916 DEBUG [28998] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:39:08,002 DEBUG [28998] [] SearchAction end
+2022-09-15 15:39:08,002 DEBUG [28998] [] TestListController end
+2022-09-15 15:39:08,002 DEBUG [28998] [] finally
+2022-09-15 15:39:09,035 DEBUG [28998] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-09-15 15:39:09,041 DEBUG [28998] [] TestRegistController start
+2022-09-15 15:39:09,041 DEBUG [28998] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:39:09,060 DEBUG [28998] [] TestRegistForm: is exist
+2022-09-15 15:39:09,069 DEBUG [28998] [] TestRegistForm: form value set 
+2022-09-15 15:39:09,069 DEBUG [28998] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-09-15 15:39:09,069 DEBUG [28998] [] ------------------------------session_check_true
+2022-09-15 15:39:09,069 DEBUG [28998] [] indexAction start
+2022-09-15 15:39:09,070 DEBUG [28998] [] admin_no is 1
+2022-09-15 15:39:09,070 DEBUG [28998] [] org_no : 99999
+2022-09-15 15:39:09,072 DEBUG [28998] [] test_no
+2022-09-15 15:39:09,223 DEBUG [28998] [] indexAction end
+2022-09-15 15:39:09,223 DEBUG [28998] [] TestRegistController end
+2022-09-15 15:39:09,224 DEBUG [28998] [] finally
+2022-09-15 15:39:10,713 DEBUG [28998] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-09-15 15:39:10,719 DEBUG [28998] [] TestRegistController start
+2022-09-15 15:39:10,719 DEBUG [28998] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:39:10,725 DEBUG [28998] [] TestRegistForm: is exist
+2022-09-15 15:39:10,725 DEBUG [28998] [] TestRegistForm: form value set 
+2022-09-15 15:39:10,725 DEBUG [28998] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-09-15 15:39:10,726 DEBUG [28998] [] ------------------------------session_check_true
+2022-09-15 15:39:10,726 DEBUG [28998] [] backAction start
+2022-09-15 15:39:10,726 DEBUG [28998] [] backAction end
+2022-09-15 15:39:10,726 DEBUG [28998] [] TestRegistController end
+2022-09-15 15:39:10,726 DEBUG [28998] [] finally
+2022-09-15 15:39:10,751 DEBUG [28998] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:39:10,755 DEBUG [28998] [] TestListController start
+2022-09-15 15:39:10,755 DEBUG [28998] [] controllers/TestListController.php: is exist
+2022-09-15 15:39:10,760 DEBUG [28998] [] TestListForm: is exist
+2022-09-15 15:39:10,760 DEBUG [28998] [] TestListForm: form value set 
+2022-09-15 15:39:10,761 DEBUG [28998] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:39:10,761 DEBUG [28998] [] SearchAction start
+2022-09-15 15:39:10,761 DEBUG [28998] [] admin_no is 1
+2022-09-15 15:39:10,761 DEBUG [28998] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 9bc2049685f9b529c3486b94e8ead2a8
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:39:10,762 DEBUG [28998] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:39:10,763 DEBUG [28998] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:39:10,852 DEBUG [28998] [] SearchAction end
+2022-09-15 15:39:10,852 DEBUG [28998] [] TestListController end
+2022-09-15 15:39:10,852 DEBUG [28998] [] finally
+2022-09-15 15:39:14,132 DEBUG [29066] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-09-15 15:39:14,138 DEBUG [29066] [] TestRegistController start
+2022-09-15 15:39:14,138 DEBUG [29066] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:39:14,143 DEBUG [29066] [] TestRegistForm: is exist
+2022-09-15 15:39:14,144 DEBUG [29066] [] TestRegistForm: form value set 
+2022-09-15 15:39:14,144 DEBUG [29066] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-09-15 15:39:14,144 DEBUG [29066] [] ------------------------------session_check_true
+2022-09-15 15:39:14,145 DEBUG [29066] [] indexAction start
+2022-09-15 15:39:14,145 DEBUG [29066] [] admin_no is 1
+2022-09-15 15:39:14,145 DEBUG [29066] [] org_no : 99999
+2022-09-15 15:39:14,147 DEBUG [29066] [] test_no
+2022-09-15 15:39:14,243 DEBUG [29066] [] indexAction end
+2022-09-15 15:39:14,243 DEBUG [29066] [] TestRegistController end
+2022-09-15 15:39:14,243 DEBUG [29066] [] finally
+2022-09-15 15:39:15,993 DEBUG [29066] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-09-15 15:39:15,998 DEBUG [29066] [] TestRegistController start
+2022-09-15 15:39:15,998 DEBUG [29066] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:39:16,004 DEBUG [29066] [] TestRegistForm: is exist
+2022-09-15 15:39:16,004 DEBUG [29066] [] TestRegistForm: form value set 
+2022-09-15 15:39:16,005 DEBUG [29066] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-09-15 15:39:16,005 DEBUG [29066] [] ------------------------------session_check_true
+2022-09-15 15:39:16,005 DEBUG [29066] [] backAction start
+2022-09-15 15:39:16,005 DEBUG [29066] [] backAction end
+2022-09-15 15:39:16,005 DEBUG [29066] [] TestRegistController end
+2022-09-15 15:39:16,005 DEBUG [29066] [] finally
+2022-09-15 15:39:16,030 DEBUG [29066] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:39:16,034 DEBUG [29066] [] TestListController start
+2022-09-15 15:39:16,034 DEBUG [29066] [] controllers/TestListController.php: is exist
+2022-09-15 15:39:16,038 DEBUG [29066] [] TestListForm: is exist
+2022-09-15 15:39:16,039 DEBUG [29066] [] TestListForm: form value set 
+2022-09-15 15:39:16,039 DEBUG [29066] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:39:16,039 DEBUG [29066] [] SearchAction start
+2022-09-15 15:39:16,039 DEBUG [29066] [] admin_no is 1
+2022-09-15 15:39:16,039 DEBUG [29066] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => f10e5ff2dca98d71cf135947b9a0ac6a
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:39:16,040 DEBUG [29066] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:39:16,041 DEBUG [29066] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:39:16,120 DEBUG [29066] [] SearchAction end
+2022-09-15 15:39:16,120 DEBUG [29066] [] TestListController end
+2022-09-15 15:39:16,120 DEBUG [29066] [] finally
+2022-09-15 15:42:47,317 DEBUG [28858] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-09-15 15:42:47,322 DEBUG [28858] [] TestRegistController start
+2022-09-15 15:42:47,322 DEBUG [28858] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:42:47,327 DEBUG [28858] [] TestRegistForm: is exist
+2022-09-15 15:42:47,327 DEBUG [28858] [] TestRegistForm: form value set 
+2022-09-15 15:42:47,328 DEBUG [28858] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-09-15 15:42:47,328 DEBUG [28858] [] ------------------------------session_check_true
+2022-09-15 15:42:47,328 DEBUG [28858] [] indexAction start
+2022-09-15 15:42:47,328 DEBUG [28858] [] admin_no is 1
+2022-09-15 15:42:47,328 DEBUG [28858] [] org_no : 99999
+2022-09-15 15:42:47,330 DEBUG [28858] [] test_no
+2022-09-15 15:42:47,420 DEBUG [28858] [] indexAction end
+2022-09-15 15:42:47,420 DEBUG [28858] [] TestRegistController end
+2022-09-15 15:42:47,420 DEBUG [28858] [] finally
+2022-09-15 15:42:48,957 DEBUG [28858] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-09-15 15:42:48,962 DEBUG [28858] [] TestRegistController start
+2022-09-15 15:42:48,962 DEBUG [28858] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:42:48,968 DEBUG [28858] [] TestRegistForm: is exist
+2022-09-15 15:42:48,968 DEBUG [28858] [] TestRegistForm: form value set 
+2022-09-15 15:42:48,969 DEBUG [28858] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-09-15 15:42:48,969 DEBUG [28858] [] ------------------------------session_check_true
+2022-09-15 15:42:48,969 DEBUG [28858] [] backAction start
+2022-09-15 15:42:48,969 DEBUG [28858] [] backAction end
+2022-09-15 15:42:48,969 DEBUG [28858] [] TestRegistController end
+2022-09-15 15:42:48,969 DEBUG [28858] [] finally
+2022-09-15 15:42:48,997 DEBUG [28858] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:42:49,002 DEBUG [28858] [] TestListController start
+2022-09-15 15:42:49,002 DEBUG [28858] [] controllers/TestListController.php: is exist
+2022-09-15 15:42:49,006 DEBUG [28858] [] TestListForm: is exist
+2022-09-15 15:42:49,006 DEBUG [28858] [] TestListForm: form value set 
+2022-09-15 15:42:49,007 DEBUG [28858] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:42:49,007 DEBUG [28858] [] SearchAction start
+2022-09-15 15:42:49,007 DEBUG [28858] [] admin_no is 1
+2022-09-15 15:42:49,007 DEBUG [28858] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => fcd9b076635e7fb769baddbdac4a7daf
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:42:49,008 DEBUG [28858] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:42:49,009 DEBUG [28858] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:42:49,089 DEBUG [28858] [] SearchAction end
+2022-09-15 15:42:49,090 DEBUG [28858] [] TestListController end
+2022-09-15 15:42:49,090 DEBUG [28858] [] finally
+2022-09-15 15:42:54,622 DEBUG [29022] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-09-15 15:42:54,628 DEBUG [29022] [] TestRegistController start
+2022-09-15 15:42:54,628 DEBUG [29022] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:42:54,633 DEBUG [29022] [] TestRegistForm: is exist
+2022-09-15 15:42:54,633 DEBUG [29022] [] TestRegistForm: form value set 
+2022-09-15 15:42:54,634 DEBUG [29022] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-09-15 15:42:54,634 DEBUG [29022] [] ------------------------------session_check_true
+2022-09-15 15:42:54,634 DEBUG [29022] [] indexAction start
+2022-09-15 15:42:54,634 DEBUG [29022] [] admin_no is 1
+2022-09-15 15:42:54,634 DEBUG [29022] [] org_no : 99999
+2022-09-15 15:42:54,636 DEBUG [29022] [] test_no
+2022-09-15 15:42:54,725 DEBUG [29022] [] indexAction end
+2022-09-15 15:42:54,725 DEBUG [29022] [] TestRegistController end
+2022-09-15 15:42:54,725 DEBUG [29022] [] finally
+2022-09-15 15:47:24,148 DEBUG [28997] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-09-15 15:47:24,153 DEBUG [28997] [] TestRegistController start
+2022-09-15 15:47:24,153 DEBUG [28997] [] controllers/TestRegistController.php: is exist
+2022-09-15 15:47:24,158 DEBUG [28997] [] TestRegistForm: is exist
+2022-09-15 15:47:24,158 DEBUG [28997] [] TestRegistForm: form value set 
+2022-09-15 15:47:24,159 DEBUG [28997] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-09-15 15:47:24,159 DEBUG [28997] [] ------------------------------session_check_true
+2022-09-15 15:47:24,159 DEBUG [28997] [] backAction start
+2022-09-15 15:47:24,159 DEBUG [28997] [] backAction end
+2022-09-15 15:47:24,159 DEBUG [28997] [] TestRegistController end
+2022-09-15 15:47:24,160 DEBUG [28997] [] finally
+2022-09-15 15:47:24,183 DEBUG [28997] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:47:24,187 DEBUG [28997] [] TestListController start
+2022-09-15 15:47:24,188 DEBUG [28997] [] controllers/TestListController.php: is exist
+2022-09-15 15:47:24,192 DEBUG [28997] [] TestListForm: is exist
+2022-09-15 15:47:24,192 DEBUG [28997] [] TestListForm: form value set 
+2022-09-15 15:47:24,192 DEBUG [28997] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:47:24,193 DEBUG [28997] [] SearchAction start
+2022-09-15 15:47:24,193 DEBUG [28997] [] admin_no is 1
+2022-09-15 15:47:24,193 DEBUG [28997] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => 
+    [menuStatus] => testMenu
+    [uid] => 11ab11c75e6443e410814e301113e0a0
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:47:24,194 DEBUG [28997] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:47:24,195 DEBUG [28997] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:47:24,277 DEBUG [28997] [] SearchAction end
+2022-09-15 15:47:24,277 DEBUG [28997] [] TestListController end
+2022-09-15 15:47:24,277 DEBUG [28997] [] finally
+2022-09-15 15:47:25,521 DEBUG [28997] [] Request URI : /eccadmin_dev/TestCopy/index
+2022-09-15 15:47:25,526 DEBUG [28997] [] TestCopyController start
+2022-09-15 15:47:25,526 DEBUG [28997] [] controllers/TestCopyController.php: is exist
+2022-09-15 15:47:25,534 DEBUG [28997] [] TestCopyForm: is exist
+2022-09-15 15:47:25,534 DEBUG [28997] [] TestCopyForm: form value set 
+2022-09-15 15:47:25,535 DEBUG [28997] [] ------------------------------/eccadmin_dev/TestCopy/index
+2022-09-15 15:47:25,535 DEBUG [28997] [] ------------------------------session_check_true
+2022-09-15 15:47:25,535 DEBUG [28997] [] indexAction start
+2022-09-15 15:47:25,535 DEBUG [28997] [] admin_no is 1
+2022-09-15 15:47:25,535 DEBUG [28997] [] org_no : 99999
+2022-09-15 15:47:25,537 DEBUG [28997] [] test_no
+2022-09-15 15:47:25,625 DEBUG [28997] [] indexAction end
+2022-09-15 15:47:25,625 DEBUG [28997] [] TestCopyController end
+2022-09-15 15:47:25,625 DEBUG [28997] [] finally
+2022-09-15 15:47:27,479 DEBUG [28997] [] Request URI : /eccadmin_dev/TestCopy/back
+2022-09-15 15:47:27,484 DEBUG [28997] [] TestCopyController start
+2022-09-15 15:47:27,485 DEBUG [28997] [] controllers/TestCopyController.php: is exist
+2022-09-15 15:47:27,493 DEBUG [28997] [] TestCopyForm: is exist
+2022-09-15 15:47:27,493 DEBUG [28997] [] TestCopyForm: form value set 
+2022-09-15 15:47:27,494 DEBUG [28997] [] ------------------------------/eccadmin_dev/TestCopy/back
+2022-09-15 15:47:27,494 DEBUG [28997] [] ------------------------------session_check_true
+2022-09-15 15:47:27,494 DEBUG [28997] [] backAction start
+2022-09-15 15:47:27,494 DEBUG [28997] [] backAction end
+2022-09-15 15:47:27,494 DEBUG [28997] [] TestCopyController end
+2022-09-15 15:47:27,494 DEBUG [28997] [] finally
+2022-09-15 15:47:27,518 DEBUG [28997] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 15:47:27,523 DEBUG [28997] [] TestListController start
+2022-09-15 15:47:27,523 DEBUG [28997] [] controllers/TestListController.php: is exist
+2022-09-15 15:47:27,528 DEBUG [28997] [] TestListForm: is exist
+2022-09-15 15:47:27,528 DEBUG [28997] [] TestListForm: form value set 
+2022-09-15 15:47:27,529 DEBUG [28997] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 15:47:27,529 DEBUG [28997] [] SearchAction start
+2022-09-15 15:47:27,529 DEBUG [28997] [] admin_no is 1
+2022-09-15 15:47:27,529 DEBUG [28997] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => 
+    [menuStatus] => testMenu
+    [uid] => e6e0a7191313842773e16899263f24a2
+    [admin_kbn] => 001
+)
+
+2022-09-15 15:47:27,530 DEBUG [28997] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 15:47:27,531 DEBUG [28997] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 15:47:27,616 DEBUG [28997] [] SearchAction end
+2022-09-15 15:47:27,616 DEBUG [28997] [] TestListController end
+2022-09-15 15:47:27,616 DEBUG [28997] [] finally
+2022-09-15 16:17:29,425 DEBUG [29347] [] Request URI : /eccadmin_dev/TestRegist/index
+2022-09-15 16:17:29,430 DEBUG [29347] [] TestRegistController start
+2022-09-15 16:17:29,431 DEBUG [29347] [] controllers/TestRegistController.php: is exist
+2022-09-15 16:17:29,436 DEBUG [29347] [] TestRegistForm: is exist
+2022-09-15 16:17:29,436 DEBUG [29347] [] TestRegistForm: form value set 
+2022-09-15 16:17:29,437 DEBUG [29347] [] ------------------------------/eccadmin_dev/TestRegist/index
+2022-09-15 16:17:29,437 DEBUG [29347] [] ------------------------------session_check_true
+2022-09-15 16:17:29,437 DEBUG [29347] [] indexAction start
+2022-09-15 16:17:29,437 DEBUG [29347] [] admin_no is 1
+2022-09-15 16:17:29,437 DEBUG [29347] [] org_no : 99999
+2022-09-15 16:17:29,439 DEBUG [29347] [] test_no
+2022-09-15 16:17:29,529 DEBUG [29347] [] indexAction end
+2022-09-15 16:17:29,529 DEBUG [29347] [] TestRegistController end
+2022-09-15 16:17:29,529 DEBUG [29347] [] finally
+2022-09-15 16:17:30,643 DEBUG [29347] [] Request URI : /eccadmin_dev/TestRegist/back
+2022-09-15 16:17:30,648 DEBUG [29347] [] TestRegistController start
+2022-09-15 16:17:30,648 DEBUG [29347] [] controllers/TestRegistController.php: is exist
+2022-09-15 16:17:30,653 DEBUG [29347] [] TestRegistForm: is exist
+2022-09-15 16:17:30,654 DEBUG [29347] [] TestRegistForm: form value set 
+2022-09-15 16:17:30,654 DEBUG [29347] [] ------------------------------/eccadmin_dev/TestRegist/back
+2022-09-15 16:17:30,654 DEBUG [29347] [] ------------------------------session_check_true
+2022-09-15 16:17:30,654 DEBUG [29347] [] backAction start
+2022-09-15 16:17:30,654 DEBUG [29347] [] backAction end
+2022-09-15 16:17:30,654 DEBUG [29347] [] TestRegistController end
+2022-09-15 16:17:30,655 DEBUG [29347] [] finally
+2022-09-15 16:17:30,678 DEBUG [29347] [] Request URI : /eccadmin_dev/TestList/Search
+2022-09-15 16:17:30,683 DEBUG [29347] [] TestListController start
+2022-09-15 16:17:30,683 DEBUG [29347] [] controllers/TestListController.php: is exist
+2022-09-15 16:17:30,687 DEBUG [29347] [] TestListForm: is exist
+2022-09-15 16:17:30,687 DEBUG [29347] [] TestListForm: form value set 
+2022-09-15 16:17:30,688 DEBUG [29347] [] ------------------------------/eccadmin_dev/TestList/Search
+2022-09-15 16:17:30,688 DEBUG [29347] [] SearchAction start
+2022-09-15 16:17:30,688 DEBUG [29347] [] admin_no is 1
+2022-09-15 16:17:30,688 DEBUG [29347] [] TestListForm Object
+(
+    [org_no] => 99999
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/08/15
+    [end_period] => 2022/10/15
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 0
+    [rd_status1] => 0
+    [rd_status2] => 1
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => 
+    [menuStatus] => testMenu
+    [uid] => ca3cd3354643003a4c36b740bf0ea855
+    [admin_kbn] => 001
+)
+
+2022-09-15 16:17:30,689 DEBUG [29347] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-09-15 16:17:30,690 DEBUG [29347] [] Array
+(
+    [0] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1777
+            [test_name] => 2021 dec 27 test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/12/27
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [1] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1654
+            [test_name] => 20210823 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/23
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [2] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1725
+            [test_name] => 20210901 Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [3] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1736
+            [test_name] => 20210901 Test 3
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/09/01
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [4] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1695
+            [test_name] => Copy Test 1
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/26
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 5
+        )
+
+    [5] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1661
+            [test_name] => Copy Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [6] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1795
+            [test_name] => Sample test
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/28
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [7] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1802
+            [test_name] => Sample test 2
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/03/30
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [8] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1650
+            [test_name] => Test 2021821
+            [test_type] => 
+            [test_type_name] => 反復(SRS)
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2021/08/21
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 10
+        )
+
+    [9] => T_TestDto Object
+        (
+            [org_no] => 99999
+            [test_no] => 1815
+            [test_name] => TOEIC Listening_20220715
+            [test_type] => 
+            [test_type_name] => 通常
+            [test_quiz_count] => 
+            [description] => 
+            [status] => 公開
+            [start_period] => 2022/07/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 99999
+            [remark] => 
+            [quiz_count] => 0
+        )
+
+)
+
+2022-09-15 16:17:30,773 DEBUG [29347] [] SearchAction end
+2022-09-15 16:17:30,773 DEBUG [29347] [] TestListController end
+2022-09-15 16:17:30,773 DEBUG [29347] [] finally
+2022-09-15 16:17:31,805 DEBUG [29347] [] Request URI : /eccadmin_dev/TestCopy/index
+2022-09-15 16:17:31,810 DEBUG [29347] [] TestCopyController start
+2022-09-15 16:17:31,811 DEBUG [29347] [] controllers/TestCopyController.php: is exist
+2022-09-15 16:17:31,819 DEBUG [29347] [] TestCopyForm: is exist
+2022-09-15 16:17:31,819 DEBUG [29347] [] TestCopyForm: form value set 
+2022-09-15 16:17:31,820 DEBUG [29347] [] ------------------------------/eccadmin_dev/TestCopy/index
+2022-09-15 16:17:31,820 DEBUG [29347] [] ------------------------------session_check_true
+2022-09-15 16:17:31,820 DEBUG [29347] [] indexAction start
+2022-09-15 16:17:31,820 DEBUG [29347] [] admin_no is 1
+2022-09-15 16:17:31,820 DEBUG [29347] [] org_no : 99999
+2022-09-15 16:17:31,822 DEBUG [29347] [] test_no
+2022-09-15 16:17:31,933 DEBUG [29347] [] indexAction end
+2022-09-15 16:17:31,933 DEBUG [29347] [] TestCopyController end
+2022-09-15 16:17:31,933 DEBUG [29347] [] finally
+2022-09-15 16:19:30,720 DEBUG [29358] [] Request URI : /eccadmin_dev/Login/logout
+2022-09-15 16:19:30,726 DEBUG [29358] [] LoginController start
+2022-09-15 16:19:30,726 DEBUG [29358] [] controllers/LoginController.php: is exist
+2022-09-15 16:19:30,729 DEBUG [29358] [] LoginForm: is exist
+2022-09-15 16:19:30,729 DEBUG [29358] [] LoginForm: form value set 
+2022-09-15 16:19:30,730 DEBUG [29358] [] ------------------------------/eccadmin_dev/Login/logout
+2022-09-15 16:19:30,730 DEBUG [29358] [] ------------------------------login_start_check
+2022-09-15 16:19:30,730 DEBUG [29358] [] logoutAction start
+2022-09-15 16:19:30,730 DEBUG [29358] [] logoutAction end
+2022-09-15 16:19:30,730 DEBUG [29358] [] LoginController end
+2022-09-15 16:19:30,730 DEBUG [29358] [] finally
+2022-09-15 16:19:30,761 DEBUG [29358] [] Request URI : /eccadmin_dev/Login
+2022-09-15 16:19:30,766 DEBUG [29358] [] LoginController start
+2022-09-15 16:19:30,766 DEBUG [29358] [] controllers/LoginController.php: is exist
+2022-09-15 16:19:30,768 DEBUG [29358] [] LoginForm: is exist
+2022-09-15 16:19:30,769 DEBUG [29358] [] LoginForm: form value set 
+2022-09-15 16:19:30,769 DEBUG [29358] [] ------------------------------/eccadmin_dev/Login
+2022-09-15 16:19:30,769 DEBUG [29358] [] ------------------------------login_start_check
+2022-09-15 16:19:30,769 DEBUG [29358] [] indexAction start
+2022-09-15 16:19:30,796 DEBUG [29358] [] indexAction end
+2022-09-15 16:19:30,797 DEBUG [29358] [] LoginController end
+2022-09-15 16:19:30,797 DEBUG [29358] [] finally
+2022-09-15 18:55:09,429 DEBUG [31562] [] Request URI : /eccadmin_dev/Login
+2022-09-15 18:55:09,438 DEBUG [31562] [] LoginController start
+2022-09-15 18:55:09,438 DEBUG [31562] [] controllers/LoginController.php: is exist
+2022-09-15 18:55:09,441 DEBUG [31562] [] LoginForm: is exist
+2022-09-15 18:55:09,441 DEBUG [31562] [] LoginForm: form value set 
+2022-09-15 18:55:09,442 DEBUG [31562] [] ------------------------------/eccadmin_dev/Login
+2022-09-15 18:55:09,442 DEBUG [31562] [] ------------------------------login_start_check
+2022-09-15 18:55:09,442 DEBUG [31562] [] indexAction start
+2022-09-15 18:55:09,474 DEBUG [31562] [] indexAction end
+2022-09-15 18:55:09,474 DEBUG [31562] [] LoginController end
+2022-09-15 18:55:09,474 DEBUG [31562] [] finally
+2022-09-15 18:55:14,671 DEBUG [31566] [] Request URI : /eccadmin_dev/Login/login
+2022-09-15 18:55:14,680 DEBUG [31566] [] LoginController start
+2022-09-15 18:55:14,680 DEBUG [31566] [] controllers/LoginController.php: is exist
+2022-09-15 18:55:14,683 DEBUG [31566] [] LoginForm: is exist
+2022-09-15 18:55:14,683 DEBUG [31566] [] LoginForm: form value set 
+2022-09-15 18:55:14,684 DEBUG [31566] [] ------------------------------/eccadmin_dev/Login/login
+2022-09-15 18:55:14,684 DEBUG [31566] [] ------------------------------login_start_check
+2022-09-15 18:55:14,684 DEBUG [31566] [] loginAction start
+2022-09-15 18:55:14,998 DEBUG [31566] [] loginAction end
+2022-09-15 18:55:14,998 DEBUG [31566] [] LoginController end
+2022-09-15 18:55:14,998 DEBUG [31566] [] finally
+2022-09-15 18:55:15,029 DEBUG [31566] [] Request URI : /eccadmin_dev/Menu
+2022-09-15 18:55:15,034 DEBUG [31566] [] MenuController start
+2022-09-15 18:55:15,034 DEBUG [31566] [] controllers/MenuController.php: is exist
+2022-09-15 18:55:15,038 DEBUG [31566] [] MenuForm: is exist
+2022-09-15 18:55:15,038 DEBUG [31566] [] MenuForm: form value set 
+2022-09-15 18:55:15,038 DEBUG [31566] [] ------------------------------/eccadmin_dev/Menu
+2022-09-15 18:55:15,038 DEBUG [31566] [] ------------------------------login_start_check
+2022-09-15 18:55:15,039 DEBUG [31566] [] indexAction start
+2022-09-15 18:55:15,039 DEBUG [31566] [] admin_no is 1
+2022-09-15 18:55:15,099 DEBUG [31566] [] indexAction end
+2022-09-15 18:55:15,099 DEBUG [31566] [] MenuController end
+2022-09-15 18:55:15,099 DEBUG [31566] [] finally
+2022-09-15 18:58:20,859 DEBUG [31581] [] Request URI : /eccadmin_dev/Login/logout
+2022-09-15 18:58:20,864 DEBUG [31581] [] LoginController start
+2022-09-15 18:58:20,864 DEBUG [31581] [] controllers/LoginController.php: is exist
+2022-09-15 18:58:20,867 DEBUG [31581] [] LoginForm: is exist
+2022-09-15 18:58:20,867 DEBUG [31581] [] LoginForm: form value set 
+2022-09-15 18:58:20,868 DEBUG [31581] [] ------------------------------/eccadmin_dev/Login/logout
+2022-09-15 18:58:20,868 DEBUG [31581] [] ------------------------------login_start_check
+2022-09-15 18:58:20,868 DEBUG [31581] [] logoutAction start
+2022-09-15 18:58:20,868 DEBUG [31581] [] logoutAction end
+2022-09-15 18:58:20,869 DEBUG [31581] [] LoginController end
+2022-09-15 18:58:20,869 DEBUG [31581] [] finally
+2022-09-15 18:58:20,897 DEBUG [31581] [] Request URI : /eccadmin_dev/Login
+2022-09-15 18:58:20,902 DEBUG [31581] [] LoginController start
+2022-09-15 18:58:20,902 DEBUG [31581] [] controllers/LoginController.php: is exist
+2022-09-15 18:58:20,905 DEBUG [31581] [] LoginForm: is exist
+2022-09-15 18:58:20,905 DEBUG [31581] [] LoginForm: form value set 
+2022-09-15 18:58:20,905 DEBUG [31581] [] ------------------------------/eccadmin_dev/Login
+2022-09-15 18:58:20,905 DEBUG [31581] [] ------------------------------login_start_check
+2022-09-15 18:58:20,905 DEBUG [31581] [] indexAction start
+2022-09-15 18:58:20,930 DEBUG [31581] [] indexAction end
+2022-09-15 18:58:20,930 DEBUG [31581] [] LoginController end
+2022-09-15 18:58:20,930 DEBUG [31581] [] finally

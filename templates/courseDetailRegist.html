@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>コース詳細登録</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "input:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "select:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			//表示再現
+			$(document).ready(function() {
+
+				$(function() {
+					$('#start_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+							    var leftWidth=($('.pushmenu-open').length>0)?$('#start_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+                                        :$('#start_period').offset().left;
+							   inst.dpDiv.css({
+								  /*  top: 53,
+								   left: 320 */
+								   left: leftWidth
+							   });
+							}, 0);
+						}
+					});
+				});
+
+				$(function() {
+					$('#end_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#end_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+										:$('#end_period').offset().left;
+							   inst.dpDiv.css({
+								  /*  top: 80,
+								   left: 320 */
+								   left: leftWidth
+							   });
+							}, 0);
+						}
+					 });
+				 });
+
+				var mode = document.getElementById('screen_mode').value;
+				if( mode == 'update'){
+					document.getElementById("course_level").disabled = true;
+					document.getElementById("test_kbn").disabled = true;
+				}else{
+					document.getElementById("course_level").disabled = false;
+					document.getElementById("test_kbn").disabled = false;
+				}
+
+				$(".btn_insert").on('click', function() {
+
+					$(".error_section").hide();
+					$('#err_dis').hide();
+					document.getElementById("course_level").disabled = false;
+					document.getElementById("test_kbn").disabled = false;
+					var course_detail_name = document.getElementById('course_detail_name').value;
+					var course_detail_romaji = document.getElementById('course_detail_romaji').value;
+					var start_period = document.getElementById('start_period').value;
+					var end_period = document.getElementById('end_period').value;
+					var courseLevel = document.getElementById('course_level').value;
+					var testKbn = document.getElementById('test_kbn').value;
+
+					// コース詳細名の必須チェック
+					if ( course_detail_name == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース詳細名を入力してください。");
+						return false;
+					}
+
+					// コース詳細名の文字数チェック
+					if ( course_detail_name.length > 64 ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース詳細名は64字で入力してください。");
+						return false;
+					}
+
+					// 読みの必須チェック
+					if ( course_detail_romaji == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース詳細名（英語）字を入力してください。");
+						return false;
+					}
+
+					// 読みの文字数チェック
+					if ( course_detail_romaji.length > 64 ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース詳細名（英語）は64字で入力してください。");
+						return false;
+					}
+
+					// 科目の必須チェック
+					if ( courseLevel == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コースレベルを一つ選択してください。");
+						return false;
+					}
+
+					// テスト区分の必須チェック
+					if ( testKbn == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("テスト区分を一つ選択してください。");
+						return false;
+					}
+
+					// 利用開始日の必須チェック
+					if ( start_period == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("利用開始日を入力してください。");
+						return false;
+					}
+
+					// 利用終了日の必須チェック
+					if ( end_period == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("利用終了日を入力してください。");
+						return false;
+					}
+
+					// 利用開始日 < 利用終了日 をチェック
+					if ( start_period > end_period ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("{$smarty.const.W004}");
+						return false;
+					}
+
+
+					return true;
+				});
+
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ){
+
+					$(".error_section").slideToggle('slow')
+				}
+
+				$(".close_icon").on('click', function(){
+
+					$(".error_section").slideToggle('slow')
+
+					$('#err_dis').slideToggle('slow')
+
+				});
+
+			});
+		</script>
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}CourseDetailRegist/save" method="post">
+			<input type="hidden" id="back_flg" name="back_flg" value="false" />
+			<input type="hidden" id="course_detail_no" value="{$form->course_detail_no}" name="course_detail_no"/>
+			<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+			<input type="hidden" id="search_end_period" name="search_end_period" value="{$search_end_period}"/>
+			<input type="hidden" id="search_start_period" name="search_start_period" value="{$search_start_period}"/>
+			<input type="hidden" id="reset_end_period" name="reset_end_period" value="{$reset_end_period}"/>
+			<input type="hidden" id="reset_start_period" name="reset_start_period" value="{$reset_start_period}"/>
+			<input type="hidden" id="search_course_detail_name" name="search_course_detail_name" value="{$search_course_detail_name|escape}"/>
+			<input type="hidden" id="search_status" name="search_status" value="{$form->search_status}" />
+			<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}"/>
+			<input type="hidden" id="info_msg" name="info_msg" value="{$info_msg}"/>
+			<input type="hidden" id="type" name="type" value="{$type}"/>
+			<input type="hidden" id="ctype" name="ctype" value="{$ctype}"/>
+			<input type="hidden" id="screen_mode" name="screen_mode" value="{$screen_mode}"/>
+			<input type="hidden" id="search_test_kbn" name="search_test_kbn" value="{$form->search_test_kbn}" />
+			<input type="hidden" id="search_course_level" name="search_course_level" value="{$form->search_course_level}" />
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div id="err_dis">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+					{if !empty($error_msg)}
+						<div class="error_msg">{$error_msg}</div>
+					{else if !empty($info_msg)}
+						<div class="error_msg">{$info_msg}</div>
+					{else}
+						<div class="error_msg"></div>
+					{/if}
+				</section>
+				</div>
+				<section class="content">
+					<p>><span class="title">コース /コース詳細登録</span></p>
+					<p style="text-align:right"><input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}CourseDetailList/search')"></p>
+				<table class="lessonRegist">
+					<tr>
+						<td style="width:240px;">
+							<label class="lbl_name" >コース詳細名<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="course_detail_name" name="course_detail_name" type="text" class="text_box" maxlength="64" value="{$form->course_detail_name|escape}" >
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="lbl_name">コース詳細名（英語）<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="course_detail_romaji" name="course_detail_romaji" type="text" class="text_box" maxlength="64" value="{$form->course_detail_romaji|escape}">
+						</td>
+					</tr>
+					<tr>
+					<td>
+						<label class="lbl_name">レベル<span class="required">※</span></label>
+						</td>
+						<td>
+							<select name="course_level" id="course_level">
+							  <option value="">選択してください。</option>
+							  {if !empty($courseLevel)}
+								{foreach $courseLevel as $value}
+								  {if $value->type == $ctype}
+									<option value="{$value->type}" selected>{$value->name} </option>
+								  {else}
+									<option value="{$value->type}">{$value->name} </option>
+								  {/if}
+								{/foreach}
+							  {/if}
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="lbl_name">SW<span class="required">※</span></label>
+						</td>
+						<td>
+							<select name="test_kbn" id="test_kbn">
+								<option value="">選択してください。</option>
+								{if !empty($testKbn)}
+									{foreach $testKbn as $value}
+										<label>{$value->type }</label>
+										<label>{$form->type}</label>
+										{if $value->type == $type}
+											<option value="{$value->type}" selected>{$value->name} </option>
+										{else}
+											<option value="{$value->type}">{$value->name} </option>
+										{/if}
+									{/foreach}
+								{/if}
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="lbl_name">利用開始日<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="start_period" name="start_period" type="text" maxlength="10" value="{$form->start_period}" onchange="changeDateFormat(this)">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="lbl_name">利用終了日<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="end_period" name="end_period" type="text" maxlength="10" value="{$form->end_period}" onchange="changeDateFormat(this)">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="lbl_name">公開</label>
+						</td>
+						<td>
+							{if $status == '0'}
+								<label><input type="radio" name="status" value="0" id="status1" checked/>しない</label>
+								<label><input type="radio" name="status" value="1" id="status2" />する</label>
+							{/if}
+							{if $status == '1'}
+								<label><input type="radio" name="status" value="0" id="status1" />しない</label>
+								<label><input type="radio" name="status" value="1" id="status2" checked/>する</label>
+							{/if}
+						</td>
+					</tr>
+				</table>
+				<p style="text-align:right; padding-top: 70px;">
+					<input type="submit" name="insert" title="登録" value="" class="btn_insert" style="padding-right: 50px;">
+				</p>
+				<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+			</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+
+		<script>
+			{literal}
+
+			//戻るボタン
+			function doBack(action) {
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#search_course_detail_name").val(document.getElementById('search_course_detail_name').value);
+				$("#search_page").val(document.getElementById('search_page').value);
+				$("#back_flg").val("true");
+
+				$("#main_form").submit();
+			}
+
+			{/literal}
+		</script>
+	</body>
+</html>

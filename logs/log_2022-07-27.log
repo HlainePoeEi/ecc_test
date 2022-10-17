@@ -1,0 +1,231 @@
+2022-07-27 18:03:54,805 DEBUG [181902] [] Request URI : /eccadmin_dev/Login
+2022-07-27 18:03:54,832 DEBUG [181902] [] LoginController start
+2022-07-27 18:03:54,832 DEBUG [181902] [] controllers/LoginController.php: is exist
+2022-07-27 18:03:54,835 DEBUG [181902] [] LoginForm: is exist
+2022-07-27 18:03:54,836 DEBUG [181902] [] LoginForm: form value set 
+2022-07-27 18:03:54,836 DEBUG [181902] [] ------------------------------/eccadmin_dev/Login
+2022-07-27 18:03:54,836 DEBUG [181902] [] ------------------------------login_start_check
+2022-07-27 18:03:54,836 DEBUG [181902] [] indexAction start
+2022-07-27 18:03:54,886 DEBUG [181902] [] indexAction end
+2022-07-27 18:03:54,886 DEBUG [181902] [] LoginController end
+2022-07-27 18:03:54,886 DEBUG [181902] [] finally
+2022-07-27 18:03:58,325 DEBUG [181589] [] Request URI : /eccadmin_dev/Login/login
+2022-07-27 18:03:58,330 DEBUG [181589] [] LoginController start
+2022-07-27 18:03:58,330 DEBUG [181589] [] controllers/LoginController.php: is exist
+2022-07-27 18:03:58,333 DEBUG [181589] [] LoginForm: is exist
+2022-07-27 18:03:58,333 DEBUG [181589] [] LoginForm: form value set 
+2022-07-27 18:03:58,333 DEBUG [181589] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-27 18:03:58,334 DEBUG [181589] [] ------------------------------login_start_check
+2022-07-27 18:03:58,334 DEBUG [181589] [] loginAction start
+2022-07-27 18:03:58,637 DEBUG [181589] [] loginAction end
+2022-07-27 18:03:58,637 DEBUG [181589] [] LoginController end
+2022-07-27 18:03:58,637 DEBUG [181589] [] finally
+2022-07-27 18:03:58,657 DEBUG [181589] [] Request URI : /eccadmin_dev/Menu
+2022-07-27 18:03:58,659 DEBUG [181589] [] MenuController start
+2022-07-27 18:03:58,659 DEBUG [181589] [] controllers/MenuController.php: is exist
+2022-07-27 18:03:58,742 DEBUG [181589] [] MenuForm: is exist
+2022-07-27 18:03:58,748 DEBUG [181589] [] MenuForm: form value set 
+2022-07-27 18:03:58,748 DEBUG [181589] [] ------------------------------/eccadmin_dev/Menu
+2022-07-27 18:03:58,748 DEBUG [181589] [] ------------------------------login_start_check
+2022-07-27 18:03:58,749 DEBUG [181589] [] indexAction start
+2022-07-27 18:03:58,749 DEBUG [181589] [] admin_no is 1
+2022-07-27 18:03:58,855 DEBUG [181589] [] indexAction end
+2022-07-27 18:03:58,855 DEBUG [181589] [] MenuController end
+2022-07-27 18:03:58,855 DEBUG [181589] [] finally
+2022-07-27 18:04:03,329 DEBUG [181910] [] Request URI : /eccadmin_dev/TestList
+2022-07-27 18:04:03,337 DEBUG [181910] [] TestListController start
+2022-07-27 18:04:03,361 DEBUG [181910] [] controllers/TestListController.php: is exist
+2022-07-27 18:04:03,404 DEBUG [181910] [] TestListForm: is exist
+2022-07-27 18:04:03,413 DEBUG [181910] [] TestListForm: form value set 
+2022-07-27 18:04:03,414 DEBUG [181910] [] ------------------------------/eccadmin_dev/TestList
+2022-07-27 18:04:03,414 DEBUG [181910] [] indexAction start
+2022-07-27 18:04:03,414 DEBUG [181910] [] admin_no is 1
+2022-07-27 18:04:03,414 DEBUG [181910] [] TestListForm Object
+(
+    [org_no] => 
+    [test_no] => 
+    [test_name] => 
+    [start_period] => 2022/06/27
+    [end_period] => 2022/08/27
+    [remark] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [count] => 
+    [page] => 
+    [rd_status1] => 
+    [rd_status2] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [quiz_count] => 
+    [status] => 
+    [rdstatus] => 
+    [back_flg] => 
+    [search_page] => 0
+    [search_start_period] => 
+    [search_end_period] => 
+    [search_test_name] => 
+    [search_remark] => 
+    [search_rd_status1] => 
+    [search_rd_status2] => 
+    [search_rdstatus] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [search_org_id] => 99999
+    [search_page_row] => 10
+    [search_page_order_column] => 1
+    [search_page_order_dir] => 1
+    [menuOpen] => open
+    [menuStatus] => testMenu
+    [uid] => 6fbfdd7abc204d97582daca31d2685b8
+    [admin_kbn] => 001
+    [remarks] => 
+)
+
+2022-07-27 18:04:03,415 DEBUG [181910] []  SELECT  distinct test.test_no test_no  ,test.org_no org_no  ,org.org_id org_id  ,test.test_name test_name  ,mtype.name test_type_name  ,test.remarks remark ,test.test_quiz_count quiz_count ,date_format(test.start_period,'%Y/%m/%d') as start_period  ,date_format(test.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN test.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_TEST test  LEFT JOIN T_TEST_QUIZ as test_quiz  ON test.org_no = test_quiz.org_no  AND test.test_no = test_quiz.test_no  INNER JOIN M_TYPE mtype ON test.test_type = mtype.type  AND mtype.category = :mcategory  INNER JOIN M_ORGANIZATION as org  ON test.org_no = org.org_no  AND org.del_flg =  '0'  WHERE test.start_period <= :end_period  AND test.end_period >= :start_period  AND org.org_id LIKE :org_id  AND test.del_flg = '0'  ORDER BY  test_name ASC ,remark ASC
+2022-07-27 18:04:03,417 DEBUG [181910] [] count of list :10
+2022-07-27 18:04:03,574 DEBUG [181910] [] indexAction end
+2022-07-27 18:04:03,574 DEBUG [181910] [] TestListController end
+2022-07-27 18:04:03,574 DEBUG [181910] [] finally
+2022-07-27 18:04:08,513 DEBUG [181201] [] Request URI : /eccadmin_dev/ReportList
+2022-07-27 18:04:08,518 DEBUG [181201] [] ReportListController start
+2022-07-27 18:04:08,518 DEBUG [181201] [] controllers/ReportListController.php: is exist
+2022-07-27 18:04:08,623 DEBUG [181201] [] ReportListForm: is exist
+2022-07-27 18:04:08,623 DEBUG [181201] [] ReportListForm: form value set 
+2022-07-27 18:04:08,624 DEBUG [181201] [] ------------------------------/eccadmin_dev/ReportList
+2022-07-27 18:04:08,624 DEBUG [181201] [] indexAction start
+2022-07-27 18:04:08,624 DEBUG [181201] [] admin_no is 1
+2022-07-27 18:04:08,759 DEBUG [181201] [] indexAction end
+2022-07-27 18:04:08,759 DEBUG [181201] [] ReportListController end
+2022-07-27 18:04:08,759 DEBUG [181201] [] finally
+2022-07-27 18:07:19,886 DEBUG [181954] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-07-27 18:07:19,894 DEBUG [181954] [] ReportRegistController start
+2022-07-27 18:07:19,894 DEBUG [181954] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:07:19,960 DEBUG [181954] [] ReportRegistForm: is exist
+2022-07-27 18:07:19,963 DEBUG [181954] [] ReportRegistForm: form value set 
+2022-07-27 18:07:19,963 DEBUG [181954] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-07-27 18:07:19,964 DEBUG [181954] [] ------------------------------session_check_true
+2022-07-27 18:07:19,964 DEBUG [181954] [] indexAction start
+2022-07-27 18:07:19,964 DEBUG [181954] [] admin_no is 1
+2022-07-27 18:07:20,080 DEBUG [181954] [] indexAction end
+2022-07-27 18:07:20,080 DEBUG [181954] [] ReportRegistController end
+2022-07-27 18:07:20,080 DEBUG [181954] [] finally
+2022-07-27 18:10:49,872 DEBUG [181942] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-07-27 18:10:49,877 DEBUG [181942] [] ReportRegistController start
+2022-07-27 18:10:49,877 DEBUG [181942] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:10:49,885 DEBUG [181942] [] ReportRegistForm: is exist
+2022-07-27 18:10:49,885 DEBUG [181942] [] ReportRegistForm: form value set 
+2022-07-27 18:10:49,885 DEBUG [181942] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-07-27 18:10:49,886 DEBUG [181942] [] ------------------------------session_check_true
+2022-07-27 18:10:49,886 DEBUG [181942] [] saveAction start
+2022-07-27 18:10:49,967 DEBUG [181942] [] saveAction end
+2022-07-27 18:10:49,967 DEBUG [181942] [] ReportRegistController end
+2022-07-27 18:10:49,967 DEBUG [181942] [] finally
+2022-07-27 18:16:46,810 DEBUG [182047] [] Request URI : /eccadmin_dev/ReportRegist/back
+2022-07-27 18:16:46,817 DEBUG [182047] [] ReportRegistController start
+2022-07-27 18:16:46,817 DEBUG [182047] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:16:46,824 DEBUG [182047] [] ReportRegistForm: is exist
+2022-07-27 18:16:46,824 DEBUG [182047] [] ReportRegistForm: form value set 
+2022-07-27 18:16:46,825 DEBUG [182047] [] ------------------------------/eccadmin_dev/ReportRegist/back
+2022-07-27 18:16:46,825 DEBUG [182047] [] ------------------------------session_check_true
+2022-07-27 18:16:46,825 DEBUG [182047] [] backAction start
+2022-07-27 18:16:46,825 DEBUG [182047] [] admin_no is 1
+2022-07-27 18:16:46,825 DEBUG [182047] [] backAction end
+2022-07-27 18:16:46,825 DEBUG [182047] [] ReportRegistController end
+2022-07-27 18:16:46,825 DEBUG [182047] [] finally
+2022-07-27 18:16:46,857 DEBUG [182047] [] Request URI : /eccadmin_dev/ReportList/Search
+2022-07-27 18:16:46,862 DEBUG [182047] [] ReportListController start
+2022-07-27 18:16:46,862 DEBUG [182047] [] controllers/ReportListController.php: is exist
+2022-07-27 18:16:46,867 DEBUG [182047] [] ReportListForm: is exist
+2022-07-27 18:16:46,867 DEBUG [182047] [] ReportListForm: form value set 
+2022-07-27 18:16:46,868 DEBUG [182047] [] ------------------------------/eccadmin_dev/ReportList/Search
+2022-07-27 18:16:46,868 DEBUG [182047] [] SearchAction start
+2022-07-27 18:16:46,868 DEBUG [182047] [] --------back--------
+2022-07-27 18:16:46,868 DEBUG [182047] [] admin_no is 1
+2022-07-27 18:16:46,944 DEBUG [182047] [] SearchAction end
+2022-07-27 18:16:46,944 DEBUG [182047] [] ReportListController end
+2022-07-27 18:16:46,944 DEBUG [182047] [] finally
+2022-07-27 18:16:50,436 DEBUG [181763] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-07-27 18:16:50,441 DEBUG [181763] [] ReportRegistController start
+2022-07-27 18:16:50,442 DEBUG [181763] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:16:50,448 DEBUG [181763] [] ReportRegistForm: is exist
+2022-07-27 18:16:50,448 DEBUG [181763] [] ReportRegistForm: form value set 
+2022-07-27 18:16:50,449 DEBUG [181763] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-07-27 18:16:50,449 DEBUG [181763] [] ------------------------------session_check_true
+2022-07-27 18:16:50,449 DEBUG [181763] [] indexAction start
+2022-07-27 18:16:50,449 DEBUG [181763] [] admin_no is 1
+2022-07-27 18:16:50,529 DEBUG [181763] [] indexAction end
+2022-07-27 18:16:50,529 DEBUG [181763] [] ReportRegistController end
+2022-07-27 18:16:50,529 DEBUG [181763] [] finally
+2022-07-27 18:17:02,867 DEBUG [181956] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-07-27 18:17:02,873 DEBUG [181956] [] ReportRegistController start
+2022-07-27 18:17:02,873 DEBUG [181956] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:17:02,880 DEBUG [181956] [] ReportRegistForm: is exist
+2022-07-27 18:17:02,881 DEBUG [181956] [] ReportRegistForm: form value set 
+2022-07-27 18:17:02,881 DEBUG [181956] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-07-27 18:17:02,882 DEBUG [181956] [] ------------------------------session_check_true
+2022-07-27 18:17:02,882 DEBUG [181956] [] saveAction start
+2022-07-27 18:17:02,963 DEBUG [181956] [] saveAction end
+2022-07-27 18:17:02,963 DEBUG [181956] [] ReportRegistController end
+2022-07-27 18:17:02,963 DEBUG [181956] [] finally
+2022-07-27 18:19:24,643 DEBUG [181685] [] Request URI : /eccadmin_dev/ReportRegist/back
+2022-07-27 18:19:24,648 DEBUG [181685] [] ReportRegistController start
+2022-07-27 18:19:24,648 DEBUG [181685] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:19:24,655 DEBUG [181685] [] ReportRegistForm: is exist
+2022-07-27 18:19:24,655 DEBUG [181685] [] ReportRegistForm: form value set 
+2022-07-27 18:19:24,655 DEBUG [181685] [] ------------------------------/eccadmin_dev/ReportRegist/back
+2022-07-27 18:19:24,655 DEBUG [181685] [] ------------------------------session_check_true
+2022-07-27 18:19:24,656 DEBUG [181685] [] backAction start
+2022-07-27 18:19:24,656 DEBUG [181685] [] admin_no is 1
+2022-07-27 18:19:24,656 DEBUG [181685] [] backAction end
+2022-07-27 18:19:24,656 DEBUG [181685] [] ReportRegistController end
+2022-07-27 18:19:24,656 DEBUG [181685] [] finally
+2022-07-27 18:19:24,686 DEBUG [181685] [] Request URI : /eccadmin_dev/ReportList/Search
+2022-07-27 18:19:24,691 DEBUG [181685] [] ReportListController start
+2022-07-27 18:19:24,691 DEBUG [181685] [] controllers/ReportListController.php: is exist
+2022-07-27 18:19:24,696 DEBUG [181685] [] ReportListForm: is exist
+2022-07-27 18:19:24,696 DEBUG [181685] [] ReportListForm: form value set 
+2022-07-27 18:19:24,696 DEBUG [181685] [] ------------------------------/eccadmin_dev/ReportList/Search
+2022-07-27 18:19:24,696 DEBUG [181685] [] SearchAction start
+2022-07-27 18:19:24,697 DEBUG [181685] [] --------back--------
+2022-07-27 18:19:24,697 DEBUG [181685] [] admin_no is 1
+2022-07-27 18:19:24,775 DEBUG [181685] [] SearchAction end
+2022-07-27 18:19:24,775 DEBUG [181685] [] ReportListController end
+2022-07-27 18:19:24,775 DEBUG [181685] [] finally
+2022-07-27 18:19:26,395 DEBUG [181685] [] Request URI : /eccadmin_dev/ReportRegist/index
+2022-07-27 18:19:26,400 DEBUG [181685] [] ReportRegistController start
+2022-07-27 18:19:26,400 DEBUG [181685] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:19:26,407 DEBUG [181685] [] ReportRegistForm: is exist
+2022-07-27 18:19:26,408 DEBUG [181685] [] ReportRegistForm: form value set 
+2022-07-27 18:19:26,408 DEBUG [181685] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2022-07-27 18:19:26,408 DEBUG [181685] [] ------------------------------session_check_true
+2022-07-27 18:19:26,408 DEBUG [181685] [] indexAction start
+2022-07-27 18:19:26,408 DEBUG [181685] [] admin_no is 1
+2022-07-27 18:19:26,491 DEBUG [181685] [] indexAction end
+2022-07-27 18:19:26,491 DEBUG [181685] [] ReportRegistController end
+2022-07-27 18:19:26,492 DEBUG [181685] [] finally
+2022-07-27 18:19:31,896 DEBUG [181954] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-07-27 18:19:31,901 DEBUG [181954] [] ReportRegistController start
+2022-07-27 18:19:31,901 DEBUG [181954] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:19:31,908 DEBUG [181954] [] ReportRegistForm: is exist
+2022-07-27 18:19:31,908 DEBUG [181954] [] ReportRegistForm: form value set 
+2022-07-27 18:19:31,909 DEBUG [181954] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-07-27 18:19:31,909 DEBUG [181954] [] ------------------------------session_check_true
+2022-07-27 18:19:31,909 DEBUG [181954] [] saveAction start
+2022-07-27 18:19:31,989 DEBUG [181954] [] saveAction end
+2022-07-27 18:19:31,989 DEBUG [181954] [] ReportRegistController end
+2022-07-27 18:19:31,989 DEBUG [181954] [] finally
+2022-07-27 18:36:49,827 DEBUG [181956] [] Request URI : /eccadmin_dev/ReportRegist/save
+2022-07-27 18:36:49,832 DEBUG [181956] [] ReportRegistController start
+2022-07-27 18:36:49,832 DEBUG [181956] [] controllers/ReportRegistController.php: is exist
+2022-07-27 18:36:49,839 DEBUG [181956] [] ReportRegistForm: is exist
+2022-07-27 18:36:49,840 DEBUG [181956] [] ReportRegistForm: form value set 
+2022-07-27 18:36:49,840 DEBUG [181956] [] ------------------------------/eccadmin_dev/ReportRegist/save
+2022-07-27 18:36:49,840 DEBUG [181956] [] ------------------------------session_check_true
+2022-07-27 18:36:49,840 DEBUG [181956] [] saveAction start
+2022-07-27 18:36:49,925 DEBUG [181956] [] saveAction end
+2022-07-27 18:36:49,925 DEBUG [181956] [] ReportRegistController end
+2022-07-27 18:36:49,925 DEBUG [181956] [] finally

@@ -1,0 +1,79 @@
+.qz_name {
+    width : 90%;
+    text-align: center;
+}
+
+.lbl_qz_name {
+    padding-right: 80px;
+}
+
+table.qz_details_border {
+    border-collapse:collapse;
+    display: inline-block;
+    overflow-y: hidden;
+}
+
+.qz_details_border tbody{
+    border-bottom:solid 3px #40a5c6;
+    border-top:solid 3px #40a5c6;
+    margin:10px;
+}
+
+.txtarea {
+    width:300px;
+    height:100px;
+    border: 1px solid #757575;
+    outline:0;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.qz _details_border td,tr {
+    padding: 7px;
+}
+.btn_sngle_row_add {
+    background: url(../image/add.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.btn_row_add {
+    background: url(../image/add.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+
+.btn_row_delete {
+    background: url(../image/remove.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+.text_box_rd {
+    width:200px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline:0;
+    padding:7px;
+}
+.text_box_blank {
+    width:200px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    outline:0;
+    padding:7px;
+}

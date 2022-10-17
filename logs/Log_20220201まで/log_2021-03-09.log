@@ -1,0 +1,53 @@
+2021-03-09 10:12:31,924 DEBUG [82525] [] Request URI : /eccadmin_dev/Login
+2021-03-09 10:12:31,961 DEBUG [82525] [] LoginController start
+2021-03-09 10:12:31,961 DEBUG [82525] [] controllers/LoginController.php: is exist
+2021-03-09 10:12:31,967 DEBUG [82525] [] LoginForm: is exist
+2021-03-09 10:12:31,967 DEBUG [82525] [] LoginForm: form value set 
+2021-03-09 10:12:31,967 DEBUG [82525] [] ------------------------------/eccadmin_dev/Login
+2021-03-09 10:12:31,968 DEBUG [82525] [] ------------------------------login_start_check
+2021-03-09 10:12:31,968 DEBUG [82525] [] indexAction start
+2021-03-09 10:12:32,040 DEBUG [82525] [] indexAction end
+2021-03-09 10:12:32,040 DEBUG [82525] [] LoginController end
+2021-03-09 10:12:32,040 DEBUG [82525] [] finally
+2021-03-09 10:12:34,919 DEBUG [89512] [] Request URI : /eccadmin_dev/Login/login
+2021-03-09 10:12:34,920 DEBUG [89512] [] LoginController start
+2021-03-09 10:12:34,920 DEBUG [89512] [] controllers/LoginController.php: is exist
+2021-03-09 10:12:34,920 DEBUG [89512] [] LoginForm: is exist
+2021-03-09 10:12:34,920 DEBUG [89512] [] LoginForm: form value set 
+2021-03-09 10:12:34,921 DEBUG [89512] [] ------------------------------/eccadmin_dev/Login/login
+2021-03-09 10:12:34,921 DEBUG [89512] [] ------------------------------login_start_check
+2021-03-09 10:12:34,921 DEBUG [89512] [] loginAction start
+2021-03-09 10:12:35,220 DEBUG [89512] [] loginAction end
+2021-03-09 10:12:35,220 DEBUG [89512] [] LoginController end
+2021-03-09 10:12:35,220 DEBUG [89512] [] finally
+2021-03-09 10:12:35,263 DEBUG [89512] [] Request URI : /eccadmin_dev/Menu
+2021-03-09 10:12:35,264 DEBUG [89512] [] MenuController start
+2021-03-09 10:12:35,264 DEBUG [89512] [] controllers/MenuController.php: is exist
+2021-03-09 10:12:35,268 DEBUG [89512] [] MenuForm: is exist
+2021-03-09 10:12:35,268 DEBUG [89512] [] MenuForm: form value set 
+2021-03-09 10:12:35,269 DEBUG [89512] [] ------------------------------/eccadmin_dev/Menu
+2021-03-09 10:12:35,269 DEBUG [89512] [] ------------------------------login_start_check
+2021-03-09 10:12:35,269 DEBUG [89512] [] indexAction start
+2021-03-09 10:12:35,269 DEBUG [89512] [] admin_no is 1
+2021-03-09 10:12:35,346 DEBUG [89512] [] indexAction end
+2021-03-09 10:12:35,347 DEBUG [89512] [] MenuController end
+2021-03-09 10:12:35,347 DEBUG [89512] [] finally
+2021-03-09 10:12:46,814 DEBUG [90169] [] Request URI : /eccadmin_dev/ExcelStudentList
+2021-03-09 10:12:46,818 DEBUG [90169] [] ExcelStudentListController start
+2021-03-09 10:12:46,844 DEBUG [90169] [] controllers/ExcelStudentListController.php: is exist
+2021-03-09 10:12:47,002 DEBUG [90169] [] ExcelStudentListForm: is exist
+2021-03-09 10:12:47,013 DEBUG [90169] [] ExcelStudentListForm: form value set 
+2021-03-09 10:12:47,014 DEBUG [90169] [] ------------------------------/eccadmin_dev/ExcelStudentList
+2021-03-09 10:12:47,014 DEBUG [90169] [] indexAction start
+2021-03-09 10:12:47,014 DEBUG [90169] [] admin_no is 1
+2021-03-09 10:12:47,132 DEBUG [90169] [] indexAction end
+2021-03-09 10:12:47,132 DEBUG [90169] [] ExcelStudentListController end
+2021-03-09 10:12:47,132 DEBUG [90169] [] finally
+2021-03-09 10:12:51,063 DEBUG [87100] [] Request URI : /eccadmin_dev/ExcelStudentList/newExcel
+2021-03-09 10:12:51,064 DEBUG [87100] [] ExcelStudentListController start
+2021-03-09 10:12:51,064 DEBUG [87100] [] controllers/ExcelStudentListController.php: is exist
+2021-03-09 10:12:51,064 DEBUG [87100] [] ExcelStudentListForm: is exist
+2021-03-09 10:12:51,065 DEBUG [87100] [] ExcelStudentListForm: form value set 
+2021-03-09 10:12:51,065 DEBUG [87100] [] ------------------------------/eccadmin_dev/ExcelStudentList/newExcel
+2021-03-09 10:12:51,065 DEBUG [87100] [] newExcelAction start
+2021-03-09 10:12:51,065 DEBUG [87100] [] admin_no is 1

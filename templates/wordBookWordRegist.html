@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>単語追加</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+{literal}
+<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/groupregist.js"></script>
+<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
+<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datables_select_box.js"></script>
+{/literal}
+<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+<link href="{$smarty.const.HOME_DIR}css/datatables.css" rel="stylesheet">
+<link href="{$smarty.const.HOME_DIR}css/datatables_select.min.css" rel="stylesheet">
+<link href="{$smarty.const.HOME_DIR}css/groupstudentregist.css"	rel="stylesheet">
+<script type="text/javascript">
+
+			//表示再現
+			$(document).ready(function() {
+
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ) {
+
+					$(".error_section").slideToggle('slow')
+				}
+
+				$(".close_icon").on('click',function(){
+
+					$(".error_section").slideToggle('slow')
+
+				});
+
+				//データテーブルを表示する
+			var dataArray = $("#list").val();
+			if (dataArray != "") {
+				$('#word_assign_tbl_cb').DataTable( {
+					"scrollY": 300,
+					"scrollX": true,
+					"bFilter": false,
+					"ordering": false,
+					 columnDefs: [ {
+						"searchable": false,
+						orderable: false,
+						className: 'select-checkbox', targets:   0,
+					} ],
+					select: {
+						style:    'multi',
+						selector: 'td:first-child',
+						info: false
+					},
+					"language": {
+						"info":" _TOTAL_ 件中 _START_ から _END_ まで表示",
+						 "paginate": {
+							"first":	"First",
+							"last": 	"Last",
+							"next": 	"次",
+							"previous": 	"前"
+						},
+						"lengthMenu":" _MENU_ 件表示"
+					},
+					"initComplete": function () {
+						getTotalRowCount();
+					},
+					order: [[ 1, 'asc' ]]
+				});
+			}
+
+			//データテーブルを表示する
+			var dataArray = $("#list").val();
+			var current_page = parseInt($("#search_page").val());
+			var current_page_row = parseInt($("#search_page_row").val());
+			var current_order_column = $("#search_page_order_column").val();
+			var current_order_dir = $("#search_page_order_dir").val();
+
+			if(dataArray != ""){
+				$('#tbl_search').DataTable( {
+					"scrollY": 300,
+					"scrollX": true,
+					"bFilter": false,
+					"ordering": true,
+					"pageLength": current_page_row,
+					"aaSorting": [[current_order_column, current_order_dir]],
+					columnDefs: [{
+						orderable: false,
+						targets: "td_img"}
+					],
+					"language": {
+						"info":" _TOTAL_ 件中 _START_ から _END_ まで表示",
+						 "paginate": {
+							"first":      "First",
+							"last":       "Last",
+							"next":       "次",
+							"previous":   "前"
+						},
+						"lengthMenu":" _MENU_ 件表示"
+					}
+				});
+			}
+			
+			var table = $('#tbl_search').dataTable();
+			table.fnPageChange(current_page);
+			});
+		</script>
+</head>
+<body class="pushmenu-push">
+	<form id="main_form"
+		action="{$smarty.const.HOME_DIR}WordBookWord/Search" method="post">
+		<input type="hidden" id="org_no" name="org_no" value ="{$form->org_no}"/>
+		<input type="hidden" id="wordbook_id" name="wordbook_id" value="{$form->wordbook_id}"/>
+		<input type="hidden" id="copy_org_no" name="copy_org_no" value="{$form->copy_org_no}"/>
+		<input type="hidden" id="copy_wordbook_id" name="copy_wordbook_id" value="{$form->copy_wordbook_id}"/>
+		<input type="hidden" id="word_book_name" name="word_book_name" value="{$form->word_book_name}" />
+		<input type="hidden" id="tag" name="tag" value="{$form->tag}"/>
+		<input type="hidden" id="word_lang_type" name="word_lang_type" value="{$form->word_lang_type}" />
+		<input type="hidden" id="trans_lang_type" name="trans_lang_type" value="{$form->trans_lang_type}" />
+		<input type="hidden" id="status" name="status" value="{$form->status}" />
+		<input type="hidden" id="entryList" name="entryList" value="{$form->entryList}" />
+		<input type="hidden" id="initialList" name="initialList" value="{$form->initialList}" />
+		<input type="hidden" id="screen_name" name="screen_name" value="{$form->screen_name}"/>
+		<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}"/>
+		<input type="hidden" id="back_flg" name="back_flg" value="false" />
+		<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+		<input type="hidden" id="search_name" name="search_name" value="{$form->search_name}" />
+		<input type="hidden" id="search_org_id " name="search_org_id " value="{$form->search_org_id }" />
+		<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
+		<input type="hidden" id="search_page_order_column" name="search_page_order_column" value="{$form->search_page_order_column}" />
+		<input type="hidden" id="search_page_order_dir" name="search_page_order_dir" value="{$form->search_page_order_dir}" />
+		{include file='leftMenu.html'}
+		<div class="divHeader">
+			<!--header-->
+			{include file='header.html'}
+			<!--header-->
+		</div>
+		<div class="divBody">
+			<div class="container">
+				<div class="main">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width: 15px; float: right" class="close_icon"> 
+						{if !empty($err_msg)}
+						<div class="error_msg">{$err_msg}</div>
+						{else}
+						<div class="error_msg"></div>
+						{/if}
+					</section>
+					<section class="content">
+						<p>
+							>> <span class="title">単語 / 単語追加</span>
+						</p>
+						<p style="text-align:right;width:100%;">
+							<input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}WordBookWord/back')">
+						</p>
+						<div id="pswChange" style="padding-top:30px;">
+							<table class="main_tbl" style="width:100%">
+								<tr>
+									<td style="width:120px;">単語</td>
+									<td class="input"><input class="text" type="text" name="word" id="word" value="{$form->word|escape}" ></td>
+								</tr>
+							</table>
+						</div>
+	
+						<div align="right" style="width:100%">
+							<input type="submit" id="btn_search" name="search" title="検索" class="btn_search" alt="search" value="" style="padding-right:0px;">
+						</div>
+
+						<input type="hidden" id="page" name="page" value="{$form->page}" />
+						<input type="hidden" id="home_dir"
+							value="{$smarty.const.HOME_DIR}" />
+
+						<table id="word_assign_tbl_cb" class="tbl_search" style="border-collapse: collapse; font-size: 1.0em;width:100%" style="display:none;">
+							<thead>
+								<tr>
+									<th width="100px;"></th>
+									<th width="300px">単語</th>
+									<th width="100px">意味</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								{if !empty($list)}
+								{foreach $list as $result}
+									{if (in_array($result->word_id, $data_list))}
+	        							{assign var="selected" value="selected"}
+	        						{else}
+	 									{assign var="selected" value=""}
+	        						{/if}
+								<tr id="word_id_{$result->word_id}" class="{$selected}">
+									<td></td>
+									<td width="100px">{$result->word}</td>
+									<td style="width:300px;!important">{$result->translation|escape|truncate:40:'...'}</td>
+								
+									<td width="100px">
+										
+									</td>
+								</tr>
+								{/foreach}
+								{/if}
+							</tbody>
+						</table>
+						<div style="width:100%; ">
+							<table style="float:right;">
+								<tr>
+									<td style="width:70px;height:60px;">
+										<input id="btn_insert" type="button" class="btn_insert" name="btn_insert" title="登録"  value="" onclick="javascript:doRegist('{$form->wordbook_id}','{$smarty.const.HOME_DIR}WordBookWord/vocubRegist')">
+									</td>
+								</tr>
+							</table>
+						</div>
+
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- End divBody -->
+		<div class="divFooter">
+			<!--footer-->
+			{include file='footer.html'}
+			<!--footer-->
+		</div>
+	</form>
+	<script>
+		{literal}
+
+			function doRegist(wordbook_id,action) {
+			
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+				var array = [];
+				var word_id = document.querySelectorAll('input[type=checkbox]:checked')
+
+				for (var i = 0; i < word_id.length; i++) {
+					array.push(word_id[i].value);
+				}
+				$("#checked_word").val(array);
+				$("#wordbook_id").val(wordbook_id);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#back_flg").val(true);
+				$("#main_form").attr("action", action);
+				$("#main_form").submit();
+			}
+
+			//戻るボタン
+			function doBack(action){
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#back_flg").val(true);
+				$("#main_form").submit();
+			}
+
+			// データテーブルの情報を設定
+			function setDataTableData(){
+				var page = 0;
+				var page_row = 10;
+				var order;
+				var page_order_column = 1;
+				var page_order_dir = false;
+
+				//初期で登録する場合、データテーブルをチェックする
+				if ( $.fn.DataTable.isDataTable( '#tbl_search' ) ){
+					//データテーブルがある場合、確認ボタン、複写ボタンと編集ボタンの処理
+					var table = $('#tbl_search').DataTable();
+					var info = table.page.info();
+					page = info.page;// データテーブルのページ
+					page_row = table.page.info().length;// データテーブルのドロップダウンリストの行
+					order = table.order();
+					page_order_column = order[0][0];
+					page_order_dir = order[0][1];
+				}
+
+				$("#search_page").val(page);
+				$("#search_page_row").val(page_row);
+				$("#search_page_order_column").val(page_order_column);
+				$("#search_page_order_dir").val(page_order_dir);
+			}
+
+			$(function(){
+				var entryList = [];
+				$('#word_assign_tbl_cb tbody tr').each(function() {
+	
+					var word_id = $(this).attr('id');
+					word_id = word_id.split("word_id_")[1];
+	
+					entryList = $("#entryList").val();
+					entryList = entryList.split(",");
+	
+					var flag = $.inArray( word_id, entryList);
+	
+					if(flag != -1){
+						$(this).addClass('selected');
+					}
+				});
+				$("#word_assign_tbl_cb").show();
+			});
+
+			function getTotalRowCount(){
+				var rowsCount = $("#entryList").val();
+				rowsCount = rowsCount.split(",");
+				if(rowsCount.length > 0){
+					$(".dataTables_info").append("<span class=select-info>"+
+							"<span class=select-item>"+ (rowsCount.length - 1) +" 行 選ばれた。</span>"+
+							"<span class=select-item></span>"+
+							"<span class=select-item></span>"+
+							"</span>");
+				}
+			}
+
+			$('#word_assign_tbl_cb tbody tr').on('click', function(){
+
+	        	var word_selected_list = $("#entryList").val();
+	 			var word_id = $(this).attr('id');
+	 			word_id = word_id.split("word_id_")[1];
+	 			var selected_class = $(this).attr('class');
+	 			selected_class = selected_class.split(" ");
+	 			var table = $('#word_assign_tbl_cb').DataTable();
+
+	 			if(selected_class.length > 1){
+
+	 				var word_list = word_selected_list.split(",");
+	 				var temp = $.inArray( word_id, word_list );
+	 				if(temp != -1){
+	 					word_selected_list = word_selected_list.replace(word_id+",", "");
+	 				}
+	 				$("#entryList").val(word_selected_list);
+	 				$(this).toggleClass('selected');
+	 			}else{
+
+	 				if(word_selected_list == ""){
+	 					word_selected_list += word_id + ",";
+	 				}else{
+	 					var word_list = word_selected_list.split(",");
+	 					var temp = $.inArray( word_id, word_list );
+	 					if(temp == -1){
+	 						word_selected_list += word_id + ",";
+	 					}
+	 				}
+	 				$(this).toggleClass('selected');
+	 				$("#entryList").val(word_selected_list);
+	 			}
+	 			$(".select-info").remove();
+	 			getTotalRowCount();
+			});
+
+		{/literal}
+	</script>
+
+	<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+2022-06-24 15:33:15,229 DEBUG [77849] [] Request URI : /eccadmin_dev/Login
+2022-06-24 15:33:15,253 DEBUG [77849] [] LoginController start
+2022-06-24 15:33:15,253 DEBUG [77849] [] controllers/LoginController.php: is exist
+2022-06-24 15:33:15,254 DEBUG [77849] [] LoginForm: is exist
+2022-06-24 15:33:15,254 DEBUG [77849] [] LoginForm: form value set 
+2022-06-24 15:33:15,254 DEBUG [77849] [] ------------------------------/eccadmin_dev/Login
+2022-06-24 15:33:15,254 DEBUG [77849] [] ------------------------------login_start_check
+2022-06-24 15:33:15,255 DEBUG [77849] [] indexAction start
+2022-06-24 15:33:15,297 DEBUG [77849] [] indexAction end
+2022-06-24 15:33:15,297 DEBUG [77849] [] LoginController end
+2022-06-24 15:33:15,297 DEBUG [77849] [] finally
+2022-06-24 15:33:18,314 DEBUG [78115] [] Request URI : /eccadmin_dev/Login/login
+2022-06-24 15:33:18,315 DEBUG [78115] [] LoginController start
+2022-06-24 15:33:18,315 DEBUG [78115] [] controllers/LoginController.php: is exist
+2022-06-24 15:33:18,316 DEBUG [78115] [] LoginForm: is exist
+2022-06-24 15:33:18,316 DEBUG [78115] [] LoginForm: form value set 
+2022-06-24 15:33:18,317 DEBUG [78115] [] ------------------------------/eccadmin_dev/Login/login
+2022-06-24 15:33:18,317 DEBUG [78115] [] ------------------------------login_start_check
+2022-06-24 15:33:18,317 DEBUG [78115] [] loginAction start
+2022-06-24 15:33:18,617 DEBUG [78115] [] loginAction end
+2022-06-24 15:33:18,617 DEBUG [78115] [] LoginController end
+2022-06-24 15:33:18,617 DEBUG [78115] [] finally
+2022-06-24 15:33:18,631 DEBUG [78115] [] Request URI : /eccadmin_dev/Menu
+2022-06-24 15:33:18,631 DEBUG [78115] [] MenuController start
+2022-06-24 15:33:18,631 DEBUG [78115] [] controllers/MenuController.php: is exist
+2022-06-24 15:33:18,631 DEBUG [78115] [] MenuForm: is exist
+2022-06-24 15:33:18,631 DEBUG [78115] [] MenuForm: form value set 
+2022-06-24 15:33:18,632 DEBUG [78115] [] ------------------------------/eccadmin_dev/Menu
+2022-06-24 15:33:18,632 DEBUG [78115] [] ------------------------------login_start_check
+2022-06-24 15:33:18,632 DEBUG [78115] [] indexAction start
+2022-06-24 15:33:18,632 DEBUG [78115] [] admin_no is 1
+2022-06-24 15:33:18,700 DEBUG [78115] [] indexAction end
+2022-06-24 15:33:18,700 DEBUG [78115] [] MenuController end
+2022-06-24 15:33:18,700 DEBUG [78115] [] finally
+2022-06-24 15:39:23,219 DEBUG [77944] [] Request URI : /eccadmin_dev/CourseList
+2022-06-24 15:39:23,220 DEBUG [77944] [] CourseListController start
+2022-06-24 15:39:23,260 DEBUG [77944] [] controllers/CourseListController.php: is exist
+2022-06-24 15:39:23,287 DEBUG [77944] [] CourseListForm: is exist
+2022-06-24 15:39:23,307 DEBUG [77944] [] CourseListForm: form value set 
+2022-06-24 15:39:23,308 DEBUG [77944] [] ------------------------------/eccadmin_dev/CourseList
+2022-06-24 15:39:23,308 DEBUG [77944] [] indexAction start
+2022-06-24 15:39:23,308 DEBUG [77944] [] admin_no is 1
+2022-06-24 15:39:23,409 DEBUG [77944] [] indexAction end
+2022-06-24 15:39:23,409 DEBUG [77944] [] CourseListController end
+2022-06-24 15:39:23,409 DEBUG [77944] [] finally
+2022-06-24 15:39:25,056 DEBUG [78100] [] Request URI : /eccadmin_dev/CourseDetailAssignment/index
+2022-06-24 15:39:25,057 DEBUG [78100] [] CourseDetailAssignmentController start
+2022-06-24 15:39:25,057 DEBUG [78100] [] controllers/CourseDetailAssignmentController.php: is exist
+2022-06-24 15:39:25,093 DEBUG [78100] [] CourseDetailAssignmentForm: is exist
+2022-06-24 15:39:25,093 DEBUG [78100] [] CourseDetailAssignmentForm: form value set 
+2022-06-24 15:39:25,094 DEBUG [78100] [] ------------------------------/eccadmin_dev/CourseDetailAssignment/index
+2022-06-24 15:39:25,094 DEBUG [78100] [] ------------------------------session_check_true
+2022-06-24 15:39:25,094 DEBUG [78100] [] indexAction start
+2022-06-24 15:39:25,094 DEBUG [78100] [] admin_no is 1
+2022-06-24 15:39:25,177 DEBUG [78100] [] indexAction end
+2022-06-24 15:39:25,177 DEBUG [78100] [] CourseDetailAssignmentController end
+2022-06-24 15:39:25,177 DEBUG [78100] [] finally

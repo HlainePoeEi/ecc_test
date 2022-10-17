@@ -1,0 +1,556 @@
+2021-09-15 14:54:43,030 DEBUG [60878] [] Request URI : /eccadmin_dev/Login
+2021-09-15 14:54:43,094 DEBUG [60878] [] LoginController start
+2021-09-15 14:54:43,099 DEBUG [60878] [] controllers/LoginController.php: is exist
+2021-09-15 14:54:43,189 DEBUG [60878] [] LoginForm: is exist
+2021-09-15 14:54:43,190 DEBUG [60878] [] LoginForm: form value set 
+2021-09-15 14:54:43,191 DEBUG [60878] [] ------------------------------/eccadmin_dev/Login
+2021-09-15 14:54:43,191 DEBUG [60878] [] ------------------------------login_start_check
+2021-09-15 14:54:43,191 DEBUG [60878] [] indexAction start
+2021-09-15 14:54:43,322 DEBUG [60878] [] indexAction end
+2021-09-15 14:54:43,322 DEBUG [60878] [] LoginController end
+2021-09-15 14:54:43,322 DEBUG [60878] [] finally
+2021-09-15 14:54:48,416 DEBUG [60723] [] Request URI : /eccadmin_dev/Login/login
+2021-09-15 14:54:48,421 DEBUG [60723] [] LoginController start
+2021-09-15 14:54:48,421 DEBUG [60723] [] controllers/LoginController.php: is exist
+2021-09-15 14:54:48,424 DEBUG [60723] [] LoginForm: is exist
+2021-09-15 14:54:48,425 DEBUG [60723] [] LoginForm: form value set 
+2021-09-15 14:54:48,425 DEBUG [60723] [] ------------------------------/eccadmin_dev/Login/login
+2021-09-15 14:54:48,425 DEBUG [60723] [] ------------------------------login_start_check
+2021-09-15 14:54:48,425 DEBUG [60723] [] loginAction start
+2021-09-15 14:54:48,775 DEBUG [60723] [] loginAction end
+2021-09-15 14:54:48,775 DEBUG [60723] [] LoginController end
+2021-09-15 14:54:48,775 DEBUG [60723] [] finally
+2021-09-15 14:54:48,808 DEBUG [60723] [] Request URI : /eccadmin_dev/Menu
+2021-09-15 14:54:48,812 DEBUG [60723] [] MenuController start
+2021-09-15 14:54:48,812 DEBUG [60723] [] controllers/MenuController.php: is exist
+2021-09-15 14:54:48,867 DEBUG [60723] [] MenuForm: is exist
+2021-09-15 14:54:48,867 DEBUG [60723] [] MenuForm: form value set 
+2021-09-15 14:54:48,868 DEBUG [60723] [] ------------------------------/eccadmin_dev/Menu
+2021-09-15 14:54:48,868 DEBUG [60723] [] ------------------------------login_start_check
+2021-09-15 14:54:48,868 DEBUG [60723] [] indexAction start
+2021-09-15 14:54:48,868 DEBUG [60723] [] admin_no is 1
+2021-09-15 14:54:49,055 DEBUG [60723] [] indexAction end
+2021-09-15 14:54:49,055 DEBUG [60723] [] MenuController end
+2021-09-15 14:54:49,055 DEBUG [60723] [] finally
+2021-09-15 14:54:54,715 DEBUG [60627] [] Request URI : /eccadmin_dev/TestInfoList
+2021-09-15 14:54:54,721 DEBUG [60627] [] TestInfoListController start
+2021-09-15 14:54:54,721 DEBUG [60627] [] controllers/TestInfoListController.php: is exist
+2021-09-15 14:54:54,793 DEBUG [60627] [] TestInfoListForm: is exist
+2021-09-15 14:54:54,796 DEBUG [60627] [] TestInfoListForm: form value set 
+2021-09-15 14:54:54,797 DEBUG [60627] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-09-15 14:54:54,797 DEBUG [60627] [] indexAction start
+2021-09-15 14:54:54,797 DEBUG [60627] [] admin_no is 1
+2021-09-15 14:54:54,826 DEBUG [60627] [] test List count:2
+2021-09-15 14:54:54,999 DEBUG [60627] [] indexAction end
+2021-09-15 14:54:54,999 DEBUG [60627] [] TestInfoListController end
+2021-09-15 14:54:54,999 DEBUG [60627] [] finally
+2021-09-15 14:54:56,844 DEBUG [60637] [] Request URI : /eccadmin_dev/TestInfoRegist
+2021-09-15 14:54:56,850 DEBUG [60637] [] TestInfoRegistController start
+2021-09-15 14:54:56,850 DEBUG [60637] [] controllers/TestInfoRegistController.php: is exist
+2021-09-15 14:54:56,868 DEBUG [60637] [] TestInfoRegistForm: is exist
+2021-09-15 14:54:56,880 DEBUG [60637] [] TestInfoRegistForm: form value set 
+2021-09-15 14:54:56,881 DEBUG [60637] [] ------------------------------/eccadmin_dev/TestInfoRegist
+2021-09-15 14:54:56,881 DEBUG [60637] [] ------------------------------session_check_true
+2021-09-15 14:54:56,881 DEBUG [60637] [] indexAction start
+2021-09-15 14:54:56,881 DEBUG [60637] [] admin_no is 1
+2021-09-15 14:54:56,882 DEBUG [60637] [] test_info_no
+2021-09-15 14:54:56,981 DEBUG [60637] [] indexAction end
+2021-09-15 14:54:56,981 DEBUG [60637] [] TestInfoRegistController end
+2021-09-15 14:54:56,981 DEBUG [60637] [] finally
+2021-09-15 14:57:54,190 DEBUG [61205] [] Request URI : /eccadmin_dev/TestInfoList
+2021-09-15 14:57:54,195 DEBUG [61205] [] TestInfoListController start
+2021-09-15 14:57:54,195 DEBUG [61205] [] controllers/TestInfoListController.php: is exist
+2021-09-15 14:57:54,197 DEBUG [61205] [] TestInfoListForm: is exist
+2021-09-15 14:57:54,198 DEBUG [61205] [] TestInfoListForm: form value set 
+2021-09-15 14:57:54,198 DEBUG [61205] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-09-15 14:57:54,198 DEBUG [61205] [] indexAction start
+2021-09-15 14:57:54,198 DEBUG [61205] [] admin_no is 1
+2021-09-15 14:57:54,200 DEBUG [61205] [] test List count:2
+2021-09-15 14:57:54,270 DEBUG [61205] [] indexAction end
+2021-09-15 14:57:54,270 DEBUG [61205] [] TestInfoListController end
+2021-09-15 14:57:54,270 DEBUG [61205] [] finally
+2021-09-15 14:57:55,887 DEBUG [61205] [] Request URI : /eccadmin_dev/TestInfoList
+2021-09-15 14:57:55,893 DEBUG [61205] [] TestInfoListController start
+2021-09-15 14:57:55,893 DEBUG [61205] [] controllers/TestInfoListController.php: is exist
+2021-09-15 14:57:55,897 DEBUG [61205] [] TestInfoListForm: is exist
+2021-09-15 14:57:55,897 DEBUG [61205] [] TestInfoListForm: form value set 
+2021-09-15 14:57:55,898 DEBUG [61205] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-09-15 14:57:55,898 DEBUG [61205] [] indexAction start
+2021-09-15 14:57:55,898 DEBUG [61205] [] admin_no is 1
+2021-09-15 14:57:55,900 DEBUG [61205] [] test List count:2
+2021-09-15 14:57:55,986 DEBUG [61205] [] indexAction end
+2021-09-15 14:57:55,986 DEBUG [61205] [] TestInfoListController end
+2021-09-15 14:57:55,987 DEBUG [61205] [] finally
+2021-09-15 14:58:36,733 DEBUG [61291] [] Request URI : /eccadmin_dev/TestInfoRegist/index
+2021-09-15 14:58:36,741 DEBUG [61291] [] TestInfoRegistController start
+2021-09-15 14:58:36,741 DEBUG [61291] [] controllers/TestInfoRegistController.php: is exist
+2021-09-15 14:58:36,745 DEBUG [61291] [] TestInfoRegistForm: is exist
+2021-09-15 14:58:36,745 DEBUG [61291] [] TestInfoRegistForm: form value set 
+2021-09-15 14:58:36,746 DEBUG [61291] [] ------------------------------/eccadmin_dev/TestInfoRegist/index
+2021-09-15 14:58:36,746 DEBUG [61291] [] ------------------------------session_check_true
+2021-09-15 14:58:36,746 DEBUG [61291] [] indexAction start
+2021-09-15 14:58:36,746 DEBUG [61291] [] admin_no is 1
+2021-09-15 14:58:36,747 DEBUG [61291] [] test_info_no
+2021-09-15 14:58:38,346 DEBUG [61291] [] indexAction end
+2021-09-15 14:58:38,346 DEBUG [61291] [] TestInfoRegistController end
+2021-09-15 14:58:38,346 DEBUG [61291] [] finally
+2021-09-15 14:58:48,842 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoRegist/save
+2021-09-15 14:58:48,846 DEBUG [61178] [] TestInfoRegistController start
+2021-09-15 14:58:48,846 DEBUG [61178] [] controllers/TestInfoRegistController.php: is exist
+2021-09-15 14:58:48,850 DEBUG [61178] [] TestInfoRegistForm: is exist
+2021-09-15 14:58:48,850 DEBUG [61178] [] TestInfoRegistForm: form value set 
+2021-09-15 14:58:48,850 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoRegist/save
+2021-09-15 14:58:48,851 DEBUG [61178] [] ------------------------------session_check_true
+2021-09-15 14:58:48,851 DEBUG [61178] [] saveAction start
+2021-09-15 14:58:48,851 DEBUG [61178] [] INSERT INTO  T_TEST_INFO (org_no,test_info_no,test_info_name,long_description,show_flg,test_time,status,start_period,end_period,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:test_info_name,:long_description,:show_flg,:test_time,:status,:start_period,:end_period,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-09-15 14:58:48,947 DEBUG [61178] [] saveAction end
+2021-09-15 14:58:48,947 DEBUG [61178] [] TestInfoRegistController end
+2021-09-15 14:58:49,204 DEBUG [61178] [] finally
+2021-09-15 14:58:51,792 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoList
+2021-09-15 14:58:51,795 DEBUG [61178] [] TestInfoListController start
+2021-09-15 14:58:51,795 DEBUG [61178] [] controllers/TestInfoListController.php: is exist
+2021-09-15 14:58:51,797 DEBUG [61178] [] TestInfoListForm: is exist
+2021-09-15 14:58:51,797 DEBUG [61178] [] TestInfoListForm: form value set 
+2021-09-15 14:58:51,797 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-09-15 14:58:51,797 DEBUG [61178] [] indexAction start
+2021-09-15 14:58:51,798 DEBUG [61178] [] admin_no is 1
+2021-09-15 14:58:51,799 DEBUG [61178] [] test List count:3
+2021-09-15 14:58:51,876 DEBUG [61178] [] indexAction end
+2021-09-15 14:58:51,877 DEBUG [61178] [] TestInfoListController end
+2021-09-15 14:58:51,877 DEBUG [61178] [] finally
+2021-09-15 14:58:56,448 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoPreview/index
+2021-09-15 14:58:56,451 DEBUG [61178] [] TestInfoPreviewController start
+2021-09-15 14:58:56,466 DEBUG [61178] [] controllers/TestInfoPreviewController.php: is exist
+2021-09-15 14:58:56,473 DEBUG [61178] [] TestInfoPreviewForm: is exist
+2021-09-15 14:58:56,487 DEBUG [61178] [] TestInfoPreviewForm: form value set 
+2021-09-15 14:58:56,487 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoPreview/index
+2021-09-15 14:58:56,487 DEBUG [61178] [] ------------------------------session_check_true
+2021-09-15 14:58:56,488 DEBUG [61178] [] indexAction start
+2021-09-15 14:58:56,488 DEBUG [61178] [] admin_no is 1
+2021-09-15 14:58:56,544 DEBUG [61178] [] audio File : files/99999/QuizInfo/audio
+2021-09-15 14:58:56,704 DEBUG [61178] [] indexAction end
+2021-09-15 14:58:56,704 DEBUG [61178] [] TestInfoPreviewController end
+2021-09-15 14:58:56,705 DEBUG [61178] [] finally
+2021-09-15 14:58:59,849 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoPreview/back
+2021-09-15 14:58:59,857 DEBUG [61178] [] TestInfoPreviewController start
+2021-09-15 14:58:59,858 DEBUG [61178] [] controllers/TestInfoPreviewController.php: is exist
+2021-09-15 14:58:59,863 DEBUG [61178] [] TestInfoPreviewForm: is exist
+2021-09-15 14:58:59,863 DEBUG [61178] [] TestInfoPreviewForm: form value set 
+2021-09-15 14:58:59,864 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoPreview/back
+2021-09-15 14:58:59,864 DEBUG [61178] [] ------------------------------session_check_true
+2021-09-15 14:58:59,864 DEBUG [61178] [] backAction start
+2021-09-15 14:58:59,864 DEBUG [61178] [] backAction end
+2021-09-15 14:58:59,865 DEBUG [61178] [] TestInfoPreviewController end
+2021-09-15 14:58:59,865 DEBUG [61178] [] finally
+2021-09-15 14:58:59,897 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-09-15 14:58:59,902 DEBUG [61178] [] TestInfoListController start
+2021-09-15 14:58:59,902 DEBUG [61178] [] controllers/TestInfoListController.php: is exist
+2021-09-15 14:58:59,907 DEBUG [61178] [] TestInfoListForm: is exist
+2021-09-15 14:58:59,907 DEBUG [61178] [] TestInfoListForm: form value set 
+2021-09-15 14:58:59,907 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-09-15 14:58:59,907 DEBUG [61178] [] SearchAction start
+2021-09-15 14:58:59,908 DEBUG [61178] [] admin_no is 1
+2021-09-15 14:58:59,908 DEBUG [61178] [] org_id99999
+2021-09-15 14:58:59,909 DEBUG [61178] [] test List count:3
+2021-09-15 14:58:59,985 DEBUG [61178] [] SearchAction end
+2021-09-15 14:58:59,985 DEBUG [61178] [] TestInfoListController end
+2021-09-15 14:58:59,985 DEBUG [61178] [] finally
+2021-09-15 14:59:01,947 DEBUG [61178] [] Request URI : /eccadmin_dev/TestInfoRegist/index
+2021-09-15 14:59:01,952 DEBUG [61178] [] TestInfoRegistController start
+2021-09-15 14:59:01,952 DEBUG [61178] [] controllers/TestInfoRegistController.php: is exist
+2021-09-15 14:59:01,956 DEBUG [61178] [] TestInfoRegistForm: is exist
+2021-09-15 14:59:01,957 DEBUG [61178] [] TestInfoRegistForm: form value set 
+2021-09-15 14:59:01,957 DEBUG [61178] [] ------------------------------/eccadmin_dev/TestInfoRegist/index
+2021-09-15 14:59:01,957 DEBUG [61178] [] ------------------------------session_check_true
+2021-09-15 14:59:01,957 DEBUG [61178] [] indexAction start
+2021-09-15 14:59:01,957 DEBUG [61178] [] admin_no is 1
+2021-09-15 14:59:01,958 DEBUG [61178] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-09-15 14:59:01,959 DEBUG [61178] [] Array
+(
+    [0] => T_Test_InfoDto Object
+        (
+            [org_no] => 99999
+            [test_info_no] => 272
+            [test_info_name] => testname01234567890123456789012345678901234567890123456789
+            [long_description] => testname01234567890123456789012345678901234567890123456789<br>
+            [show_flg] => 0
+            [test_time] => 345
+            [status] => 1
+            [start_period] => 2021/09/15
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-09-15 14:59:01,959 DEBUG [61178] [] T_Test_InfoDto Object
+(
+    [org_no] => 99999
+    [test_info_no] => 272
+    [test_info_name] => testname01234567890123456789012345678901234567890123456789
+    [long_description] => testname01234567890123456789012345678901234567890123456789<br>
+    [show_flg] => 0
+    [test_time] => 345
+    [status] => 1
+    [start_period] => 2021/09/15
+    [end_period] => 2999/12/31
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+)
+
+2021-09-15 14:59:02,040 DEBUG [61178] [] indexAction end
+2021-09-15 14:59:02,040 DEBUG [61178] [] TestInfoRegistController end
+2021-09-15 14:59:02,040 DEBUG [61178] [] finally
+2021-09-15 15:12:33,005 DEBUG [61623] [] Request URI : /eccadmin_dev/Login/logout
+2021-09-15 15:12:33,010 DEBUG [61623] [] LoginController start
+2021-09-15 15:12:33,010 DEBUG [61623] [] controllers/LoginController.php: is exist
+2021-09-15 15:12:33,013 DEBUG [61623] [] LoginForm: is exist
+2021-09-15 15:12:33,014 DEBUG [61623] [] LoginForm: form value set 
+2021-09-15 15:12:33,014 DEBUG [61623] [] ------------------------------/eccadmin_dev/Login/logout
+2021-09-15 15:12:33,014 DEBUG [61623] [] ------------------------------login_start_check
+2021-09-15 15:12:33,014 DEBUG [61623] [] logoutAction start
+2021-09-15 15:12:33,015 DEBUG [61623] [] logoutAction end
+2021-09-15 15:12:33,015 DEBUG [61623] [] LoginController end
+2021-09-15 15:12:33,015 DEBUG [61623] [] finally
+2021-09-15 15:12:33,054 DEBUG [61623] [] Request URI : /eccadmin_dev/Login
+2021-09-15 15:12:33,059 DEBUG [61623] [] LoginController start
+2021-09-15 15:12:33,059 DEBUG [61623] [] controllers/LoginController.php: is exist
+2021-09-15 15:12:33,061 DEBUG [61623] [] LoginForm: is exist
+2021-09-15 15:12:33,062 DEBUG [61623] [] LoginForm: form value set 
+2021-09-15 15:12:33,062 DEBUG [61623] [] ------------------------------/eccadmin_dev/Login
+2021-09-15 15:12:33,062 DEBUG [61623] [] ------------------------------login_start_check
+2021-09-15 15:12:33,062 DEBUG [61623] [] indexAction start
+2021-09-15 15:12:33,091 DEBUG [61623] [] indexAction end
+2021-09-15 15:12:33,091 DEBUG [61623] [] LoginController end
+2021-09-15 15:12:33,092 DEBUG [61623] [] finally
+2021-09-15 16:16:44,054 DEBUG [62876] [] Request URI : /eccadmin_dev/Login
+2021-09-15 16:16:44,196 DEBUG [62876] [] LoginController start
+2021-09-15 16:16:44,196 DEBUG [62876] [] controllers/LoginController.php: is exist
+2021-09-15 16:16:44,578 DEBUG [62876] [] LoginForm: is exist
+2021-09-15 16:16:44,598 DEBUG [62876] [] LoginForm: form value set 
+2021-09-15 16:16:44,599 DEBUG [62876] [] ------------------------------/eccadmin_dev/Login
+2021-09-15 16:16:44,599 DEBUG [62876] [] ------------------------------login_start_check
+2021-09-15 16:16:44,599 DEBUG [62876] [] indexAction start
+2021-09-15 16:16:44,966 DEBUG [62876] [] indexAction end
+2021-09-15 16:16:44,966 DEBUG [62876] [] LoginController end
+2021-09-15 16:16:44,966 DEBUG [62876] [] finally
+2021-09-15 16:16:48,936 DEBUG [62876] [] Request URI : /eccadmin_dev/Login/login
+2021-09-15 16:16:48,941 DEBUG [62876] [] LoginController start
+2021-09-15 16:16:48,941 DEBUG [62876] [] controllers/LoginController.php: is exist
+2021-09-15 16:16:48,944 DEBUG [62876] [] LoginForm: is exist
+2021-09-15 16:16:48,944 DEBUG [62876] [] LoginForm: form value set 
+2021-09-15 16:16:48,945 DEBUG [62876] [] ------------------------------/eccadmin_dev/Login/login
+2021-09-15 16:16:48,945 DEBUG [62876] [] ------------------------------login_start_check
+2021-09-15 16:16:48,945 DEBUG [62876] [] loginAction start
+2021-09-15 16:16:49,316 DEBUG [62876] [] loginAction end
+2021-09-15 16:16:49,317 DEBUG [62876] [] LoginController end
+2021-09-15 16:16:49,317 DEBUG [62876] [] finally
+2021-09-15 16:16:49,348 DEBUG [62876] [] Request URI : /eccadmin_dev/Menu
+2021-09-15 16:16:49,353 DEBUG [62876] [] MenuController start
+2021-09-15 16:16:49,353 DEBUG [62876] [] controllers/MenuController.php: is exist
+2021-09-15 16:16:49,834 DEBUG [62876] [] MenuForm: is exist
+2021-09-15 16:16:49,835 DEBUG [62876] [] MenuForm: form value set 
+2021-09-15 16:16:49,835 DEBUG [62876] [] ------------------------------/eccadmin_dev/Menu
+2021-09-15 16:16:49,836 DEBUG [62876] [] ------------------------------login_start_check
+2021-09-15 16:16:49,836 DEBUG [62876] [] indexAction start
+2021-09-15 16:16:49,836 DEBUG [62876] [] admin_no is 1
+2021-09-15 16:16:50,794 DEBUG [62876] [] indexAction end
+2021-09-15 16:16:50,794 DEBUG [62876] [] MenuController end
+2021-09-15 16:16:50,794 DEBUG [62876] [] finally
+2021-09-15 16:17:52,823 DEBUG [62403] [] Request URI : /eccadmin_dev/QuizInfoList
+2021-09-15 16:17:52,829 DEBUG [62403] [] QuizInfoListController start
+2021-09-15 16:17:52,829 DEBUG [62403] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:17:52,988 DEBUG [62403] [] QuizInfoListForm: is exist
+2021-09-15 16:17:53,043 DEBUG [62403] [] QuizInfoListForm: form value set 
+2021-09-15 16:17:53,044 DEBUG [62403] [] ------------------------------/eccadmin_dev/QuizInfoList
+2021-09-15 16:17:53,044 DEBUG [62403] [] indexAction start
+2021-09-15 16:17:53,044 DEBUG [62403] [] admin_no is 1
+2021-09-15 16:17:53,044 DEBUG [62403] [] 
+2021-09-15 16:17:53,232 DEBUG [62403] [] indexAction end
+2021-09-15 16:17:53,232 DEBUG [62403] [] QuizInfoListController end
+2021-09-15 16:17:53,232 DEBUG [62403] [] finally
+2021-09-15 16:18:02,082 DEBUG [62638] [] Request URI : /eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:18:02,087 DEBUG [62638] [] QuizInfoListController start
+2021-09-15 16:18:02,087 DEBUG [62638] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:18:02,091 DEBUG [62638] [] QuizInfoListForm: is exist
+2021-09-15 16:18:02,091 DEBUG [62638] [] QuizInfoListForm: form value set 
+2021-09-15 16:18:02,092 DEBUG [62638] [] ------------------------------/eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:18:02,092 DEBUG [62638] [] SearchAction start
+2021-09-15 16:18:02,092 DEBUG [62638] [] admin_no is 1
+2021-09-15 16:18:02,575 DEBUG [62638] [] SearchAction end
+2021-09-15 16:18:02,575 DEBUG [62638] [] QuizInfoListController end
+2021-09-15 16:18:02,575 DEBUG [62638] [] finally
+2021-09-15 16:18:09,002 DEBUG [62878] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:18:09,011 DEBUG [62878] [] QuizInfoRegistController start
+2021-09-15 16:18:09,011 DEBUG [62878] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:18:09,527 DEBUG [62878] [] QuizInfoRegistForm: is exist
+2021-09-15 16:18:09,667 DEBUG [62878] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:18:09,668 DEBUG [62878] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:18:09,668 DEBUG [62878] [] ------------------------------session_check_true
+2021-09-15 16:18:09,669 DEBUG [62878] [] indexAction start
+2021-09-15 16:18:09,669 DEBUG [62878] [] admin_no is 1
+2021-09-15 16:18:09,669 DEBUG [62878] [] org_no : 1
+2021-09-15 16:18:10,047 DEBUG [62878] [] indexAction end
+2021-09-15 16:18:10,047 DEBUG [62878] [] QuizInfoRegistController end
+2021-09-15 16:18:10,047 DEBUG [62878] [] finally
+2021-09-15 16:19:32,493 DEBUG [62658] [] Request URI : /eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:19:32,498 DEBUG [62658] [] QuizInfoRegistController start
+2021-09-15 16:19:32,498 DEBUG [62658] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:19:32,503 DEBUG [62658] [] QuizInfoRegistForm: is exist
+2021-09-15 16:19:32,504 DEBUG [62658] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:19:32,505 DEBUG [62658] [] ------------------------------/eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:19:32,505 DEBUG [62658] [] ------------------------------session_check_true
+2021-09-15 16:19:32,505 DEBUG [62658] [] SaveAction start
+2021-09-15 16:19:32,505 DEBUG [62658] [] admin_no is 1
+2021-09-15 16:19:32,506 DEBUG [62658] [] org_no : 1
+2021-09-15 16:19:32,540 DEBUG [62658] [] audio dir is /var/www/html/admin_dev/files/1/QuizInfo/audio/
+2021-09-15 16:19:32,545 DEBUG [62658] [] audio name is QuizInfoNo_55.mp3
+2021-09-15 16:19:32,546 DEBUG [62658] []  UPDATE  T_QUIZ_INFO  SET quiz_name   = :quiz_name  ,long_description   = :long_description  ,remarks  = :remarks  ,audio_name  =  :audio_name  ,update_dt = :update_dt ,updater_id = :updater_id  WHERE  org_no = :org_no  AND quiz_info_no = :quiz_info_no  AND del_flg = '0' 
+2021-09-15 16:19:35,647 DEBUG [62658] [] SaveAction end
+2021-09-15 16:19:35,647 DEBUG [62658] [] QuizInfoRegistController end
+2021-09-15 16:19:35,647 DEBUG [62658] [] finally
+2021-09-15 16:19:35,688 DEBUG [62658] [] Request URI : /eccadmin_dev/QuizInfoList/search
+2021-09-15 16:19:35,693 DEBUG [62658] [] QuizInfoListController start
+2021-09-15 16:19:35,693 DEBUG [62658] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:19:35,697 DEBUG [62658] [] QuizInfoListForm: is exist
+2021-09-15 16:19:35,698 DEBUG [62658] [] QuizInfoListForm: form value set 
+2021-09-15 16:19:35,698 DEBUG [62658] [] ------------------------------/eccadmin_dev/QuizInfoList/search
+2021-09-15 16:19:35,698 DEBUG [62658] [] searchAction start
+2021-09-15 16:19:35,699 DEBUG [62658] [] admin_no is 1
+2021-09-15 16:19:35,777 DEBUG [62658] [] searchAction end
+2021-09-15 16:19:35,777 DEBUG [62658] [] QuizInfoListController end
+2021-09-15 16:19:35,777 DEBUG [62658] [] finally
+2021-09-15 16:19:38,933 DEBUG [62658] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:19:38,938 DEBUG [62658] [] QuizInfoRegistController start
+2021-09-15 16:19:38,938 DEBUG [62658] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:19:38,943 DEBUG [62658] [] QuizInfoRegistForm: is exist
+2021-09-15 16:19:38,943 DEBUG [62658] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:19:38,944 DEBUG [62658] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:19:38,944 DEBUG [62658] [] ------------------------------session_check_true
+2021-09-15 16:19:38,944 DEBUG [62658] [] indexAction start
+2021-09-15 16:19:38,944 DEBUG [62658] [] admin_no is 1
+2021-09-15 16:19:38,944 DEBUG [62658] [] org_no : 1
+2021-09-15 16:19:39,021 DEBUG [62658] [] indexAction end
+2021-09-15 16:19:39,021 DEBUG [62658] [] QuizInfoRegistController end
+2021-09-15 16:19:39,021 DEBUG [62658] [] finally
+2021-09-15 16:20:18,895 DEBUG [62945] [] Request URI : /eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:20:18,904 DEBUG [62945] [] QuizInfoRegistController start
+2021-09-15 16:20:18,904 DEBUG [62945] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:20:18,909 DEBUG [62945] [] QuizInfoRegistForm: is exist
+2021-09-15 16:20:18,909 DEBUG [62945] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:20:18,910 DEBUG [62945] [] ------------------------------/eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:20:18,910 DEBUG [62945] [] ------------------------------session_check_true
+2021-09-15 16:20:18,910 DEBUG [62945] [] SaveAction start
+2021-09-15 16:20:18,910 DEBUG [62945] [] admin_no is 1
+2021-09-15 16:20:18,910 DEBUG [62945] [] org_no : 1
+2021-09-15 16:20:18,912 DEBUG [62945] []  UPDATE  T_QUIZ_INFO  SET quiz_name   = :quiz_name  ,long_description   = :long_description  ,remarks  = :remarks  ,audio_name  =  :audio_name  ,update_dt = :update_dt ,updater_id = :updater_id  WHERE  org_no = :org_no  AND quiz_info_no = :quiz_info_no  AND del_flg = '0' 
+2021-09-15 16:20:22,659 DEBUG [62945] [] SaveAction end
+2021-09-15 16:20:22,659 DEBUG [62945] [] QuizInfoRegistController end
+2021-09-15 16:20:22,659 DEBUG [62945] [] finally
+2021-09-15 16:20:22,702 DEBUG [62945] [] Request URI : /eccadmin_dev/QuizInfoList/search
+2021-09-15 16:20:22,710 DEBUG [62945] [] QuizInfoListController start
+2021-09-15 16:20:22,710 DEBUG [62945] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:20:22,716 DEBUG [62945] [] QuizInfoListForm: is exist
+2021-09-15 16:20:22,716 DEBUG [62945] [] QuizInfoListForm: form value set 
+2021-09-15 16:20:22,717 DEBUG [62945] [] ------------------------------/eccadmin_dev/QuizInfoList/search
+2021-09-15 16:20:22,717 DEBUG [62945] [] searchAction start
+2021-09-15 16:20:22,717 DEBUG [62945] [] admin_no is 1
+2021-09-15 16:20:22,824 DEBUG [62945] [] searchAction end
+2021-09-15 16:20:22,825 DEBUG [62945] [] QuizInfoListController end
+2021-09-15 16:20:22,825 DEBUG [62945] [] finally
+2021-09-15 16:20:25,948 DEBUG [62945] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:20:25,954 DEBUG [62945] [] QuizInfoRegistController start
+2021-09-15 16:20:25,954 DEBUG [62945] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:20:25,959 DEBUG [62945] [] QuizInfoRegistForm: is exist
+2021-09-15 16:20:25,960 DEBUG [62945] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:20:25,960 DEBUG [62945] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:20:25,960 DEBUG [62945] [] ------------------------------session_check_true
+2021-09-15 16:20:25,960 DEBUG [62945] [] indexAction start
+2021-09-15 16:20:25,960 DEBUG [62945] [] admin_no is 1
+2021-09-15 16:20:25,961 DEBUG [62945] [] org_no : 1
+2021-09-15 16:20:26,041 DEBUG [62945] [] indexAction end
+2021-09-15 16:20:26,041 DEBUG [62945] [] QuizInfoRegistController end
+2021-09-15 16:20:26,041 DEBUG [62945] [] finally
+2021-09-15 16:22:22,840 DEBUG [62506] [] Request URI : /eccadmin_dev/QuizInfoList
+2021-09-15 16:22:22,846 DEBUG [62506] [] QuizInfoListController start
+2021-09-15 16:22:22,846 DEBUG [62506] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:22:22,852 DEBUG [62506] [] QuizInfoListForm: is exist
+2021-09-15 16:22:22,852 DEBUG [62506] [] QuizInfoListForm: form value set 
+2021-09-15 16:22:22,853 DEBUG [62506] [] ------------------------------/eccadmin_dev/QuizInfoList
+2021-09-15 16:22:22,853 DEBUG [62506] [] indexAction start
+2021-09-15 16:22:22,853 DEBUG [62506] [] admin_no is 1
+2021-09-15 16:22:22,853 DEBUG [62506] [] 
+2021-09-15 16:22:22,964 DEBUG [62506] [] indexAction end
+2021-09-15 16:22:22,964 DEBUG [62506] [] QuizInfoListController end
+2021-09-15 16:22:22,964 DEBUG [62506] [] finally
+2021-09-15 16:22:28,045 DEBUG [62506] [] Request URI : /eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:22:28,048 DEBUG [62506] [] QuizInfoListController start
+2021-09-15 16:22:28,048 DEBUG [62506] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:22:28,050 DEBUG [62506] [] QuizInfoListForm: is exist
+2021-09-15 16:22:28,051 DEBUG [62506] [] QuizInfoListForm: form value set 
+2021-09-15 16:22:28,051 DEBUG [62506] [] ------------------------------/eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:22:28,051 DEBUG [62506] [] SearchAction start
+2021-09-15 16:22:28,051 DEBUG [62506] [] admin_no is 1
+2021-09-15 16:22:28,105 DEBUG [62506] [] SearchAction end
+2021-09-15 16:22:28,106 DEBUG [62506] [] QuizInfoListController end
+2021-09-15 16:22:28,106 DEBUG [62506] [] finally
+2021-09-15 16:22:30,915 DEBUG [62506] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:22:30,920 DEBUG [62506] [] QuizInfoRegistController start
+2021-09-15 16:22:30,921 DEBUG [62506] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:22:30,926 DEBUG [62506] [] QuizInfoRegistForm: is exist
+2021-09-15 16:22:30,926 DEBUG [62506] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:22:30,927 DEBUG [62506] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:22:30,927 DEBUG [62506] [] ------------------------------session_check_true
+2021-09-15 16:22:30,927 DEBUG [62506] [] indexAction start
+2021-09-15 16:22:30,927 DEBUG [62506] [] admin_no is 1
+2021-09-15 16:22:30,927 DEBUG [62506] [] org_no : 2
+2021-09-15 16:22:31,011 DEBUG [62506] [] indexAction end
+2021-09-15 16:22:31,011 DEBUG [62506] [] QuizInfoRegistController end
+2021-09-15 16:22:31,011 DEBUG [62506] [] finally
+2021-09-15 16:22:39,826 DEBUG [62797] [] Request URI : /eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:22:39,831 DEBUG [62797] [] QuizInfoRegistController start
+2021-09-15 16:22:39,831 DEBUG [62797] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:22:39,836 DEBUG [62797] [] QuizInfoRegistForm: is exist
+2021-09-15 16:22:39,836 DEBUG [62797] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:22:39,837 DEBUG [62797] [] ------------------------------/eccadmin_dev/QuizInfoRegist/Save
+2021-09-15 16:22:39,837 DEBUG [62797] [] ------------------------------session_check_true
+2021-09-15 16:22:39,837 DEBUG [62797] [] SaveAction start
+2021-09-15 16:22:39,837 DEBUG [62797] [] admin_no is 1
+2021-09-15 16:22:39,837 DEBUG [62797] [] org_no : 2
+2021-09-15 16:22:39,933 DEBUG [62797] [] audio dir is /var/www/html/admin_dev/files/2/QuizInfo/audio/
+2021-09-15 16:22:39,939 DEBUG [62797] [] audio name is QuizInfoNo_376.mp3
+2021-09-15 16:22:39,940 DEBUG [62797] []  UPDATE  T_QUIZ_INFO  SET quiz_name   = :quiz_name  ,long_description   = :long_description  ,remarks  = :remarks  ,audio_name  =  :audio_name  ,update_dt = :update_dt ,updater_id = :updater_id  WHERE  org_no = :org_no  AND quiz_info_no = :quiz_info_no  AND del_flg = '0' 
+2021-09-15 16:22:41,201 DEBUG [62797] [] SaveAction end
+2021-09-15 16:22:41,201 DEBUG [62797] [] QuizInfoRegistController end
+2021-09-15 16:22:41,201 DEBUG [62797] [] finally
+2021-09-15 16:22:41,244 DEBUG [62797] [] Request URI : /eccadmin_dev/QuizInfoList/search
+2021-09-15 16:22:41,250 DEBUG [62797] [] QuizInfoListController start
+2021-09-15 16:22:41,250 DEBUG [62797] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:22:41,254 DEBUG [62797] [] QuizInfoListForm: is exist
+2021-09-15 16:22:41,254 DEBUG [62797] [] QuizInfoListForm: form value set 
+2021-09-15 16:22:41,255 DEBUG [62797] [] ------------------------------/eccadmin_dev/QuizInfoList/search
+2021-09-15 16:22:41,255 DEBUG [62797] [] searchAction start
+2021-09-15 16:22:41,255 DEBUG [62797] [] admin_no is 1
+2021-09-15 16:22:41,502 DEBUG [62797] [] searchAction end
+2021-09-15 16:22:41,502 DEBUG [62797] [] QuizInfoListController end
+2021-09-15 16:22:41,502 DEBUG [62797] [] finally
+2021-09-15 16:23:04,622 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:04,627 DEBUG [62690] [] QuizInfoRegistController start
+2021-09-15 16:23:04,627 DEBUG [62690] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:23:04,631 DEBUG [62690] [] QuizInfoRegistForm: is exist
+2021-09-15 16:23:04,631 DEBUG [62690] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:23:04,632 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:04,632 DEBUG [62690] [] ------------------------------session_check_true
+2021-09-15 16:23:04,632 DEBUG [62690] [] indexAction start
+2021-09-15 16:23:04,632 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:04,632 DEBUG [62690] [] org_no : 2
+2021-09-15 16:23:04,701 DEBUG [62690] [] indexAction end
+2021-09-15 16:23:04,701 DEBUG [62690] [] QuizInfoRegistController end
+2021-09-15 16:23:04,701 DEBUG [62690] [] finally
+2021-09-15 16:23:06,669 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoRegist/back
+2021-09-15 16:23:06,674 DEBUG [62690] [] QuizInfoRegistController start
+2021-09-15 16:23:06,675 DEBUG [62690] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:23:06,682 DEBUG [62690] [] QuizInfoRegistForm: is exist
+2021-09-15 16:23:06,682 DEBUG [62690] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:23:06,683 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoRegist/back
+2021-09-15 16:23:06,683 DEBUG [62690] [] ------------------------------session_check_true
+2021-09-15 16:23:06,683 DEBUG [62690] [] backAction start
+2021-09-15 16:23:06,683 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:06,683 DEBUG [62690] [] backAction end
+2021-09-15 16:23:06,684 DEBUG [62690] [] QuizInfoRegistController end
+2021-09-15 16:23:06,684 DEBUG [62690] [] finally
+2021-09-15 16:23:06,720 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:23:06,725 DEBUG [62690] [] QuizInfoListController start
+2021-09-15 16:23:06,725 DEBUG [62690] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:23:06,728 DEBUG [62690] [] QuizInfoListForm: is exist
+2021-09-15 16:23:06,728 DEBUG [62690] [] QuizInfoListForm: form value set 
+2021-09-15 16:23:06,729 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:23:06,729 DEBUG [62690] [] SearchAction start
+2021-09-15 16:23:06,729 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:06,790 DEBUG [62690] [] SearchAction end
+2021-09-15 16:23:06,790 DEBUG [62690] [] QuizInfoListController end
+2021-09-15 16:23:06,790 DEBUG [62690] [] finally
+2021-09-15 16:23:08,557 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:08,562 DEBUG [62690] [] QuizInfoRegistController start
+2021-09-15 16:23:08,562 DEBUG [62690] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:23:08,567 DEBUG [62690] [] QuizInfoRegistForm: is exist
+2021-09-15 16:23:08,567 DEBUG [62690] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:23:08,568 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:08,568 DEBUG [62690] [] ------------------------------session_check_true
+2021-09-15 16:23:08,568 DEBUG [62690] [] indexAction start
+2021-09-15 16:23:08,568 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:08,568 DEBUG [62690] [] org_no : 2
+2021-09-15 16:23:08,647 DEBUG [62690] [] indexAction end
+2021-09-15 16:23:08,647 DEBUG [62690] [] QuizInfoRegistController end
+2021-09-15 16:23:08,647 DEBUG [62690] [] finally
+2021-09-15 16:23:10,289 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoRegist/back
+2021-09-15 16:23:10,295 DEBUG [62690] [] QuizInfoRegistController start
+2021-09-15 16:23:10,295 DEBUG [62690] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:23:10,300 DEBUG [62690] [] QuizInfoRegistForm: is exist
+2021-09-15 16:23:10,300 DEBUG [62690] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:23:10,301 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoRegist/back
+2021-09-15 16:23:10,301 DEBUG [62690] [] ------------------------------session_check_true
+2021-09-15 16:23:10,302 DEBUG [62690] [] backAction start
+2021-09-15 16:23:10,302 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:10,302 DEBUG [62690] [] backAction end
+2021-09-15 16:23:10,302 DEBUG [62690] [] QuizInfoRegistController end
+2021-09-15 16:23:10,302 DEBUG [62690] [] finally
+2021-09-15 16:23:10,334 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:23:10,339 DEBUG [62690] [] QuizInfoListController start
+2021-09-15 16:23:10,339 DEBUG [62690] [] controllers/QuizInfoListController.php: is exist
+2021-09-15 16:23:10,343 DEBUG [62690] [] QuizInfoListForm: is exist
+2021-09-15 16:23:10,343 DEBUG [62690] [] QuizInfoListForm: form value set 
+2021-09-15 16:23:10,343 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoList/Search
+2021-09-15 16:23:10,343 DEBUG [62690] [] SearchAction start
+2021-09-15 16:23:10,344 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:10,410 DEBUG [62690] [] SearchAction end
+2021-09-15 16:23:10,411 DEBUG [62690] [] QuizInfoListController end
+2021-09-15 16:23:10,411 DEBUG [62690] [] finally
+2021-09-15 16:23:11,702 DEBUG [62690] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:11,705 DEBUG [62690] [] QuizInfoRegistController start
+2021-09-15 16:23:11,705 DEBUG [62690] [] controllers/QuizInfoRegistController.php: is exist
+2021-09-15 16:23:11,708 DEBUG [62690] [] QuizInfoRegistForm: is exist
+2021-09-15 16:23:11,708 DEBUG [62690] [] QuizInfoRegistForm: form value set 
+2021-09-15 16:23:11,709 DEBUG [62690] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-09-15 16:23:11,709 DEBUG [62690] [] ------------------------------session_check_true
+2021-09-15 16:23:11,709 DEBUG [62690] [] indexAction start
+2021-09-15 16:23:11,709 DEBUG [62690] [] admin_no is 1
+2021-09-15 16:23:11,710 DEBUG [62690] [] org_no : 2
+2021-09-15 16:23:11,807 DEBUG [62690] [] indexAction end
+2021-09-15 16:23:11,807 DEBUG [62690] [] QuizInfoRegistController end
+2021-09-15 16:23:11,807 DEBUG [62690] [] finally
+2021-09-15 17:03:35,418 DEBUG [63135] [] Request URI : /eccadmin_dev/Login/logout
+2021-09-15 17:03:35,423 DEBUG [63135] [] LoginController start
+2021-09-15 17:03:35,423 DEBUG [63135] [] controllers/LoginController.php: is exist
+2021-09-15 17:03:35,426 DEBUG [63135] [] LoginForm: is exist
+2021-09-15 17:03:35,427 DEBUG [63135] [] LoginForm: form value set 
+2021-09-15 17:03:35,427 DEBUG [63135] [] ------------------------------/eccadmin_dev/Login/logout
+2021-09-15 17:03:35,427 DEBUG [63135] [] ------------------------------login_start_check
+2021-09-15 17:03:35,427 DEBUG [63135] [] logoutAction start
+2021-09-15 17:03:35,427 DEBUG [63135] [] logoutAction end
+2021-09-15 17:03:35,428 DEBUG [63135] [] LoginController end
+2021-09-15 17:03:35,428 DEBUG [63135] [] finally
+2021-09-15 17:03:35,460 DEBUG [63135] [] Request URI : /eccadmin_dev/Login
+2021-09-15 17:03:35,465 DEBUG [63135] [] LoginController start
+2021-09-15 17:03:35,465 DEBUG [63135] [] controllers/LoginController.php: is exist
+2021-09-15 17:03:35,468 DEBUG [63135] [] LoginForm: is exist
+2021-09-15 17:03:35,468 DEBUG [63135] [] LoginForm: form value set 
+2021-09-15 17:03:35,468 DEBUG [63135] [] ------------------------------/eccadmin_dev/Login
+2021-09-15 17:03:35,468 DEBUG [63135] [] ------------------------------login_start_check
+2021-09-15 17:03:35,469 DEBUG [63135] [] indexAction start
+2021-09-15 17:03:35,496 DEBUG [63135] [] indexAction end
+2021-09-15 17:03:35,496 DEBUG [63135] [] LoginController end
+2021-09-15 17:03:35,496 DEBUG [63135] [] finally

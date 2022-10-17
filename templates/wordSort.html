@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>単語並び替え</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	{literal}
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/wordSort.js"></script>
+    {/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+    <link href="{$smarty.const.HOME_DIR}css/wordSort.css"	rel="stylesheet">
+	</head>
+<body class="pushmenu-push">
+	<form id="main_form" action="{$smarty.const.HOME_DIR}WordSort/save" method="post">
+	     <input type="hidden" id ="manager_no" name="manager_no"/>
+		{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+					    {if !empty($err_msg)}
+						<div class="error_msg">{$err_msg}</div>
+						{else}
+						<div class="error_msg"></div>
+						{/if}
+				</section>
+				<section class="content">
+						<p>
+							>><span class="title">単語 / 単語並び替え</span>
+						</p>
+						<p style="text-align:right;width:100%;">
+							<input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}WordSort/back')">
+						</p>
+						<input type="hidden" id="page" name="page" value="{$form->page}" />
+						<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+						<input type="hidden" id="entryList" name="entryList" value="" />
+						<input type="hidden" name="wordbook_id" id="wordbook_id" value="{$form->wordbook_id}" />
+						<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+						<input type="hidden" id="back_flg" name="back_flg" value="false" />
+      					<input type="hidden" id="search_name" name="search_name" value="{$form->search_name}" />
+      					<input type="hidden" id="search_page"  name="search_page" value="{$form->search_page}" />
+      					<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
+      					<input type="hidden" id="search_page_order_column" name="search_page_order_column" value="{$form->search_page_order_column}" />
+      					<input type="hidden" id="search_page_order_dir" name="search_page_order_dir" value="{$form->search_page_order_dir}" />
+						<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}"/>
+						<table class="testAss_tbl">
+							<tr>
+								<td class="td_two">単語帳名</td>
+								<td class="td_input">{$form->name|escape}</td>
+							</tr>
+						</table>
+						<br>
+						<table id="testAss_lowertbl1" class="myTable join_header_border_quiz">
+								<thead>
+									<tr>
+										<th style="width:150px; ">番号</th>
+										<th style="width:300px; ">単語名</th>
+										<th style="width:700px; ">意味</th>
+										<th style="width:100px; "></th>
+									</tr>
+								</thead>
+								 {if count($wordList) == 1}
+								 <tbody>
+									{foreach $wordList as $result}
+									<tr style="width:100%;">
+										<td style="width:150px;">{$result->disp_no}</td>
+										<td style="width:300px;">{$result->word|escape}</td>
+										<td style="width:700px;">{$result->translation}</td>
+										<td style="width:100px; text-align:center;">
+											 <button style="background-color:#fff;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+											<button style="background-color:#fff;border:0px;"  disabled="disabled" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+										</td>
+										<td>{$result->word_id}</td>
+									</tr>
+									{/foreach}
+								</tbody>
+								{else}
+								<tbody>
+									{foreach $wordList as $key =>$result}
+									{if $key == 0}
+										<tr style="width:100%;">
+										<td style="width:150px;">{$result->disp_no}</td>
+										<td style="width:300px;">{$result->word|escape}</td>
+										<td style="width:700px;">{$result->translation}</td>
+										<td style="width:100px; text-align:center;">
+											 <button style="background-color:#fff;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+		                                     <button style="background-color:#fff;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+										</td>
+										<td>{$result->word_id}</td>
+										</tr>
+									{else if $key == count($wordList)-1}
+										<tr style="width:100%;">
+										<td style="width:150px;">{$result->disp_no}</td>
+										<td style="width:300px;">{$result->word|escape}</td>
+										<td style="width:700px;">{$result->translation}</td>
+										<td style="width:100px; text-align:center;">
+											 <button style="background-color:#fff;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+		                                     <button style="background-color:#fff;border:0px;" disabled="disabled"  onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+										</td>
+										<td>{$result->word_id}</td>
+										</tr>
+									{else}
+									<tr style="width:100%;">
+										<td style="width:150px;">{$result->disp_no}</td>
+										<td style="width:300px;">{$result->word|escape}</td>
+										<td style="width:700px;">{$result->translation}</td>
+										<td style="width:100px; text-align:center;">
+											 <button style="background-color:#fff;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+		                                     <button style="background-color:#fff;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+										</td>
+										<td>{$result->word_id}</td>
+									</tr>
+									{/if}
+									{/foreach}
+								</tbody>
+								{/if}
+							</table>
+			<table class="btn_div">
+				<tr>
+					<td>
+					<input type="button" value="" class="btn_resetbtn" title="リセット"
+					onclick="javascript:cancel('{$form->wordbook_id}','{$smarty.const.HOME_DIR}WordSort/index');">
+					<input type="button" name="insert" value="" class="btn_insert" title="登録"
+					onclick="javascript:insertQuizInfoAssignmentData();" />
+					</td>
+				</tr>
+			</table>
+				</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+	</form>
+	<script>
+		{literal}
+			// 戻るボタン処理
+			function doBack(action){
+				var menuOpen = document.getElementById('menuOpen').value;
+		        var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+			    $("#menuOpen").val(menuOpen);
+			    $("#menuStatus").val(menuStatus);
+			    $("#main_form").submit();
+			}
+			// リセット
+			function cancel(wordbook_id, action){
+				var menuOpen = document.getElementById('menuOpen').value;
+			    var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+				$("#wordbook_id").val(wordbook_id);
+			    $("#menuOpen").val(menuOpen);
+			    $("#menuStatus").val(menuStatus);
+			    $("#main_form").submit();
+			}
+		{/literal}
+	</script>
+	<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+	</body>
+</html>

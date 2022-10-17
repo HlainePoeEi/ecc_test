@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>コース契約登録</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/moment.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "input:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "select:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			//表示再現
+			$(document).ready(function() {
+			
+				$(function() {
+					$('#start_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							var leftWidth=($('.pushmenu-open').length>0)?$('#start_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+									:$('#start_period').offset().left;
+							setTimeout(function () {
+								inst.dpDiv.css({
+									top: $('#start_period').offset().top + 35,
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+
+				});
+
+				$(function() {
+					$('#end_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							var leftWidth=($('.pushmenu-open').length>0)?$('#end_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+									:$('#end_period').offset().left;
+							setTimeout(function () {
+								inst.dpDiv.css({
+									top: $('#end_period').offset().top + 35,
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+
+				$(".btn_insert").on('click', function() {
+
+					var today = moment().format('Y/MM/DD');
+					$(".error_section").hide();
+					$('#err_dis').hide();
+
+					var org_id = document.getElementById('org_id').value;
+					var se_course_id = document.getElementById('se_course_id').value;
+					var course_id = document.getElementById('course_id').value;
+					var start_period = document.getElementById('start_period').value;
+					var dt_st = new Date(start_period);
+					dt_st.setFullYear(dt_st.getFullYear()+1);
+					var oneyear = moment(dt_st).format('Y/MM/DD');
+					var end_period = document.getElementById('end_period').value;
+					var remarks = document.getElementById('remarks').value;
+					var show_flg = $('input[name=show_flg]:checked').val();
+					
+					$('#fb_show_flg').val(show_flg);
+
+					var isDisabled = $("#start_period").prop('disabled');
+
+					// コース名の必須チェック
+					if ( org_id == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("組織ログインIDを入力してください。");
+						return false;
+					}
+
+					// 読みの必須チェック
+					if ( course_id == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コースIDを入力してください。");
+						return false;
+					}
+
+					// 利用開始の必須チェック
+					if ( start_period == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース期間開始日を入力してください。");
+						return false;
+					}
+
+					if ( !isDisabled ){
+
+						if ( start_period < today ){
+
+							$('#err_dis').show();
+							$(".error_section").slideToggle('slow');
+							$(".error_msg").html("コース期間開始日は今日より以前の日付になっています。");
+							return false;
+						}
+					}
+
+					// 利用終了の必須チェック
+					if ( end_period == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース期間終了日を入力してください。");
+						return false;
+					}
+					// 一年以内のチェックを外す 2022/04/04 Cherry
+				/* 	if ( end_period > oneyear ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース期間終了日は開始日より１年以内の日付を入力してください。");
+						return false;
+					} */
+
+					// 利用開始 < 利用終了 をチェック
+					if ( start_period > end_period ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("コース期間開始日 ≦ コース期間終了日 を正しく入力してください。");
+						return false;
+					}
+
+					if ( remarks == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("申込番号等（備考）を入力してください。");
+						return false;
+					}
+					
+					if ( show_flg == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("結果表示を選択してください。");
+						return false;
+					}
+					
+					$("#start_period").datepicker( "option", "disabled", false );
+					$("#org_id").attr( "disabled", false );
+					$("#course_id").attr( "disabled", false );
+					return true;
+				});
+
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ){
+
+					$(".error_section").slideToggle('slow')
+				}
+
+				$(".close_icon").on('click', function(){
+
+					$(".error_section").slideToggle('slow')
+
+					$('#err_dis').slideToggle('slow')
+
+				});
+
+				$('#org_display').on('click',function(){
+
+					var org_id = document.getElementById('org_id').value;
+					if ( org_id != "" ) {
+
+						$(this).val('').attr('disabled','disabled');
+						return true;
+					}
+				});
+
+				$('#course_display').on('click',function(){
+
+					var course_id = document.getElementById('course_id').value;
+					if ( course_id != "" ) {
+
+						$(this).val('').attr('disabled','disabled');
+						return true;
+					}
+				});
+
+				$('#btn_courseStudentRegist').on('click',function(){
+
+					$(this).val('').attr('disabled','disabled');
+					return true;
+				});
+			});
+		</script>
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}CourseContractRegist/save" method="post">
+			<input type="hidden" id="back_flg" name="back_flg" value="false" />
+			<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}"/>
+			<input type="hidden" id="se_course_id" name="se_course_id" value="{$form->se_course_id}"/>
+			<input type="hidden" id="org_name" name="org_name" value="{$form->org_name}"/>
+			<input type="hidden" id="org_name_official" name="org_name_official" value="{$form->org_name_official}"/>
+			<input type="hidden" id="course_name" name="course_name" value="{$form->course_name}"/>
+			<input type="hidden" id="offer_no" name="offer_no" value="{$form->offer_no}"/>
+			<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+			<input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}"/>
+			<input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}"/>
+			<input type="hidden" id="reset_end_period" name="reset_end_period" value="{$reset_end_period}"/>
+			<input type="hidden" id="reset_start_period" name="reset_start_period" value="{$reset_start_period}"/>
+			<input type="hidden" id="search_course_name" name="search_course_name" value="{$form->search_course_name|escape}"/>
+			<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}"/>
+			<input type="hidden" id="search_org_name" name="search_org_name" value="{$form->search_org_name}"/>
+			<input type="hidden" id="search_test_kbn" name="search_test_kbn" value="{$form->search_test_kbn}"/>
+			<input type="hidden" id="search_course_level" name="search_course_level" value="{$form->search_course_level}"/>
+			<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}"/>
+			<input type="hidden" id="info_msg" name="info_msg" value="{$info_msg}"/>
+			<input type="hidden" id="contract_start_period" name="contract_start_period" value="{$form->contract_start_period}"/>
+			<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+			<input type="hidden" id="fb_show_flg" name="fb_show_flg" value="{$form->fb_show_flg}" />
+			
+			<input type="hidden" id="page_row_ccl" name="page_row_ccl" value="{$form->page_row_ccl}" />
+			<input type="hidden" id="page_order_column_ccl" name="page_order_column_ccl" value="{$form->page_order_column_ccl}" />
+			<input type="hidden" id="page_order_dir_ccl" name="page_order_dir_ccl" value="{$form->page_order_dir_ccl}" />
+			<input type="hidden" id="page_ccl" name="page_ccl" value="{$form->page_ccl}" />
+			
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div id="err_dis">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+					{if !empty($error_msg)}
+						<div class="error_msg">{$error_msg}</div>
+					{else if !empty($info_msg)}
+						<div class="error_msg">{$info_msg}</div>
+					{else}
+						<div class="error_msg"></div>
+					{/if}
+				</section>
+				</div>
+				<section class="content">
+					<p>><span class="title">コース契約登録</span></p>
+					<p style="text-align:right"><input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}CourseContractList/search')"></p>
+				<table>
+					<tr>
+						<td style="width:180px;">
+							<label class="lbl_name" >組織ログインID<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="org_id" name="org_id" type="text" class="text" maxlength="10" value="{$form->org_id}" >
+						</td>
+						<td style="width:70px;">
+							<input type="button" class="btn_qa_assign" name="btn_qa_assign" id="org_display" onclick="javascript:showOrg('{$smarty.const.HOME_DIR}CourseContractRegist/orgShow')" style="display: none;">
+						</td>
+						<td id="abc" >
+							<label class="lbl_name" >{$form->org_name|escape}</label>
+						</td>
+						<td id="abc">
+							<label class="lbl_name" >{$form->org_name_official|escape}</label>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:180px;">
+							<label class="lbl_name" >コースID<span class="required">※</span></label>
+						</td>
+						<td>
+							<input id="course_id" name="course_id" type="text" class="text" maxlength="10" value="{$form->course_id}" >
+						</td>
+						<td>
+							<input type="button" class="btn_qa_assign" name="btn_quizassign" id="course_display" onclick="javascript:showCourse('{$smarty.const.HOME_DIR}CourseContractRegist/courseShow')" style="display: none;">
+						</td>
+						<td>
+							<label class="lbl_name" >{$form->course_name|escape}</label>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+				<div id="div_rt_area" style="margin-top: 50px; padding-top: 10px;">
+					<table style="width: 100%;">
+						<tr>
+							<td style="width:180px;">
+								<label class="lbl_name" >コース期間開始日<span class="required">※</span></label>
+							</td>
+							<td>
+								<input class="text" type="text" name="start_period" id="start_period"
+								value="{$form->start_period}" maxlength="10" onchange="changeDateFormat(this)" style="height: 15px;">
+							</td>
+							<td style="width:180px;">
+								<label class="lbl_name" >~　コース期間終了日<span class="required">※</span></label>
+							</td>
+							<td>
+								<input class="" type="text" name="end_period" id="end_period"
+								value="{$form->end_period}" maxlength="10" onchange="changeDateFormat(this)">
+							</td>
+						</tr>
+						<tr>
+							<td style="width:180px;">
+								<label class="lbl_name" >申込番号等（備考）<span class="required">※</span></label>
+							</td>
+							<td>
+								<input id="remarks" name="remarks" type="text" class="text_box" maxlength="512" value="{$form->remarks|escape}" >
+							</td>
+							<td style="width:180px;">
+								<label class="lbl_name" >結果表示<span class="required">※</span></label>
+							</td>
+							<td>
+								{if $form->fb_show_flg == 1}
+									<input type="radio" name="show_flg" value="1" id="show_flg1" checked />
+									<label for="show_flg1">しない </label>
+									<input type="radio" name="show_flg" value="0" id="show_flg2"  /> 
+									<label for="show_flg2">する</label> 
+								{else}
+									<input type="radio" name="show_flg" value="1" id="show_flg1"  /> 
+									<label for="show_flg1">しない </label>
+									<input type="radio" name="show_flg" value="0" id="show_flg2" checked /> 
+									<label for="show_flg2">する</label>
+								{/if}
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<p style="text-align:right;">
+					<input type="submit" name="insert" title="登録" value="" class="btn_insert" style="padding-right: 50px;">
+					<!-- <input type="button" title="キャンセル" value="" class="btn_back" onclick="javascript:doClear()" id="cancel" style="display:none"> -->
+				</p>
+				<p style="text-align:left;padding-top:50px;">
+					<input type="button" class="btn_qa_assign" style ="text-align:left;padding-right: 50px;"id ="btn_courseStudentRegist" title="受講生登録" name="student_regist" onclick="transfer('{$smarty.const.HOME_DIR}CourseStudentRegist/index')">
+					<!--20220309_事業部担当者対応-->
+					{if $admin_kbn != "005"}
+						<input type="button" class="btn_delete" style="float:right;padding-right: 50px;" id ="btn_delete" title="削除" name="delete" onclick="del_trans('{$smarty.const.HOME_DIR}CourseContractRegist/delete')">
+					{/if}
+				</p>
+			</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+
+		<script>
+			{literal}
+
+			//キャンセルボタン
+			function doClear() {
+
+				 $("#course_name").val("");
+				 $("#course_name_romaji").val("");
+				 $("#test_kbn").val("");
+				 $("#course_level").val("");
+				 $("#start_period").val(document.getElementById("reset_start_period").value);
+				 $("#end_period").val(document.getElementById("reset_end_period").value);
+				 document.getElementById("status2").checked = true;
+			}
+
+			//戻るボタン
+			function doBack(action) {
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#search_course_name").val(document.getElementById('search_course_name').value);
+				$("#search_page").val(document.getElementById('search_page').value);
+				$("#back_flg").val("true");
+
+				$("#main_form").submit();
+			}
+
+			// 組織情報表示ボタン
+			function showOrg(action){
+
+				var org_id = document.getElementById('org_id').value;
+				if ( org_id == "" ) {
+
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("組織ログインIDを入力してください。");
+					return false;
+				}else{
+
+					var menuOpen = document.getElementById('menuOpen').value;
+					var menuStatus = document.getElementById('menuStatus').value;
+
+					$("#main_form").attr("action", action);
+					$("#menuOpen").val(menuOpen);
+					$("#menuStatus").val(menuStatus);
+					$("#main_form").submit();
+				}
+			}
+
+			// コース情報表示ボタン
+			function showCourse(action){
+
+				var course_id = document.getElementById('course_id').value;
+				if ( course_id == "" ) {
+
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("コースIDを入力してください。");
+					return false;
+				}else{
+
+					var menuOpen = document.getElementById('menuOpen').value;
+					var menuStatus = document.getElementById('menuStatus').value;
+
+					$("#main_form").attr("action", action);
+					$("#menuOpen").val(menuOpen);
+					$("#menuStatus").val(menuStatus);
+					$("#main_form").submit();
+				}
+			}
+
+			// 削除ボタン
+			function del_trans(action){
+
+				var result = confirm("削除します。よろしいでしょうか。");
+
+				if ( result ){
+				  //はいを選んだときの処理
+					var menuOpen = document.getElementById('menuOpen').value;
+					var menuStatus = document.getElementById('menuStatus').value;
+
+					$("#main_form").attr("action", action);
+					$("#menuOpen").val(menuOpen);
+					$("#menuStatus").val(menuStatus);
+
+					$("#main_form").submit();
+				}else {
+				 //いいえを選んだときの処理
+				}
+			}
+
+			function transfer(action){
+
+
+				$("#start_period").datepicker( "option", "disabled", false );
+				$("#org_id").attr( "disabled", false );
+				$("#course_id").attr( "disabled", false );
+				var start_period = $("#start_period").val();
+				$("#contract_start_period").val(start_period);
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+
+				$("#main_form").submit();
+			}
+
+			window.onload = function init() {
+
+				var course_id = document.getElementById('course_id').value;
+				if ( course_id != "" ) {
+
+					$("#cancel").css("display","none");
+				}else {
+
+					$("#cancel").css("display","");
+				}
+				var org_no = document.getElementById('org_no').value;
+				var offer_no = document.getElementById('offer_no').value;
+				if ( org_no != "" && offer_no != "" ) {
+
+					$("#org_display").css("display","none");
+					$("#btn_delete").css("display","");
+					$("#btn_courseStudentRegist").css("display","");
+					$("#org_id").prop("disabled",true);
+					$("#course_id").prop("disabled",true);
+
+					var today = moment().format('Y/MM/DD');
+					var start_period = document.getElementById('start_period').value;
+
+					if ( start_period < today ){
+
+						$("#start_period").datepicker( "option", "disabled", true );
+					}
+				}else {
+
+					$("#org_display").css("display","");
+
+					$("#btn_delete").css("display","none");
+					$("#btn_courseStudentRegist").css("display","none");
+				}
+
+				var se_course_id = document.getElementById('se_course_id').value;
+
+				if ( se_course_id != "") {
+
+					$("#course_display").css("display","none");
+				}else {
+
+					$("#course_display").css("display","");
+				}
+			}
+			{/literal}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,5500 @@
+2022-01-31 14:47:36,125 DEBUG [4298] [] Request URI : /eccadmin_dev/Login
+2022-01-31 14:47:36,202 DEBUG [4298] [] LoginController start
+2022-01-31 14:47:36,202 DEBUG [4298] [] controllers/LoginController.php: is exist
+2022-01-31 14:47:36,298 DEBUG [4298] [] LoginForm: is exist
+2022-01-31 14:47:36,321 DEBUG [4298] [] LoginForm: form value set 
+2022-01-31 14:47:36,322 DEBUG [4298] [] ------------------------------/eccadmin_dev/Login
+2022-01-31 14:47:36,322 DEBUG [4298] [] ------------------------------login_start_check
+2022-01-31 14:47:36,322 DEBUG [4298] [] indexAction start
+2022-01-31 14:47:36,508 DEBUG [4298] [] indexAction end
+2022-01-31 14:47:36,508 DEBUG [4298] [] LoginController end
+2022-01-31 14:47:36,509 DEBUG [4298] [] finally
+2022-01-31 14:47:39,149 DEBUG [4298] [] Request URI : /eccadmin_dev/Login/login
+2022-01-31 14:47:39,150 DEBUG [4298] [] LoginController start
+2022-01-31 14:47:39,150 DEBUG [4298] [] controllers/LoginController.php: is exist
+2022-01-31 14:47:39,150 DEBUG [4298] [] LoginForm: is exist
+2022-01-31 14:47:39,150 DEBUG [4298] [] LoginForm: form value set 
+2022-01-31 14:47:39,150 DEBUG [4298] [] ------------------------------/eccadmin_dev/Login/login
+2022-01-31 14:47:39,151 DEBUG [4298] [] ------------------------------login_start_check
+2022-01-31 14:47:39,151 DEBUG [4298] [] loginAction start
+2022-01-31 14:47:39,477 DEBUG [4298] [] loginAction end
+2022-01-31 14:47:39,477 DEBUG [4298] [] LoginController end
+2022-01-31 14:47:39,477 DEBUG [4298] [] finally
+2022-01-31 14:47:39,506 DEBUG [4298] [] Request URI : /eccadmin_dev/Menu
+2022-01-31 14:47:39,506 DEBUG [4298] [] MenuController start
+2022-01-31 14:47:39,506 DEBUG [4298] [] controllers/MenuController.php: is exist
+2022-01-31 14:47:39,508 DEBUG [4298] [] MenuForm: is exist
+2022-01-31 14:47:39,508 DEBUG [4298] [] MenuForm: form value set 
+2022-01-31 14:47:39,509 DEBUG [4298] [] ------------------------------/eccadmin_dev/Menu
+2022-01-31 14:47:39,509 DEBUG [4298] [] ------------------------------login_start_check
+2022-01-31 14:47:39,509 DEBUG [4298] [] indexAction start
+2022-01-31 14:47:39,509 DEBUG [4298] [] admin_no is 1
+2022-01-31 14:47:39,564 DEBUG [4298] [] indexAction end
+2022-01-31 14:47:39,564 DEBUG [4298] [] MenuController end
+2022-01-31 14:47:39,565 DEBUG [4298] [] finally
+2022-01-31 14:47:45,158 DEBUG [3893] [] Request URI : /eccadmin_dev/QuestionList
+2022-01-31 14:47:45,159 DEBUG [3893] [] QuestionListController start
+2022-01-31 14:47:45,159 DEBUG [3893] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:47:45,165 DEBUG [3893] [] QuestionListForm: is exist
+2022-01-31 14:47:45,166 DEBUG [3893] [] QuestionListForm: form value set 
+2022-01-31 14:47:45,166 DEBUG [3893] [] ------------------------------/eccadmin_dev/QuestionList
+2022-01-31 14:47:45,166 DEBUG [3893] [] indexAction start
+2022-01-31 14:47:45,167 DEBUG [3893] [] admin_no is 1
+2022-01-31 14:47:45,169 DEBUG [3893] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => a3c2a202b119304b30ce16a211965c94
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:47:45,208 DEBUG [3893] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 26
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => a3c2a202b119304b30ce16a211965c94
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:47:45,334 DEBUG [3893] [] indexAction end
+2022-01-31 14:47:45,334 DEBUG [3893] [] QuestionListController end
+2022-01-31 14:47:45,334 DEBUG [3893] [] finally
+2022-01-31 14:47:47,900 DEBUG [3893] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:47:47,901 DEBUG [3893] [] QuestionListController start
+2022-01-31 14:47:47,901 DEBUG [3893] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:47:47,901 DEBUG [3893] [] QuestionListForm: is exist
+2022-01-31 14:47:47,902 DEBUG [3893] [] QuestionListForm: form value set 
+2022-01-31 14:47:47,902 DEBUG [3893] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:47:47,902 DEBUG [3893] [] SearchAction start
+2022-01-31 14:47:47,902 DEBUG [3893] [] admin_no is 1
+2022-01-31 14:47:47,904 DEBUG [3893] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => def92465aaa977a829b189d9c905a0be
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:47:47,905 DEBUG [3893] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => def92465aaa977a829b189d9c905a0be
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:47:47,908 DEBUG [3893] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 1
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => def92465aaa977a829b189d9c905a0be
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:47:47,997 DEBUG [3893] [] SearchAction end
+2022-01-31 14:47:47,998 DEBUG [3893] [] QuestionListController end
+2022-01-31 14:47:47,998 DEBUG [3893] [] finally
+2022-01-31 14:47:51,338 DEBUG [3893] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:47:51,338 DEBUG [3893] [] QuestionRegistController start
+2022-01-31 14:47:51,338 DEBUG [3893] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:47:51,342 DEBUG [3893] [] QuestionRegistForm: is exist
+2022-01-31 14:47:51,342 DEBUG [3893] [] QuestionRegistForm: form value set 
+2022-01-31 14:47:51,343 DEBUG [3893] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:47:51,343 DEBUG [3893] [] ------------------------------session_check_true
+2022-01-31 14:47:51,343 DEBUG [3893] [] indexAction start
+2022-01-31 14:47:51,343 DEBUG [3893] [] admin_no is 1
+2022-01-31 14:47:51,349 DEBUG [3893] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 639
+            [question_name] => Level 6 No 1
+            [qa_description] => 
+            [description] => <p class="MsoNormal"><span style="font-size: 14.4px;">● Write an essay on the given TOPIC.</span></p><p class="MsoNormal">● Use TWO of the POINTS below to support your answer.<br></p><p class="MsoNormal">● Structure: introduction, main body, and conclusion<br></p><p class="MsoNormal">● Suggested length: 120-150 words<br></p><p class="MsoNormal">※解答は解答欄に入力してください。解答時間の目安は20分です。<br></p><p class="MsoNormal"><b><font size="4"><i>TOPIC</i><br></font></b></p><p class="MsoNormal"><b><font size="4">Agree or disagree: Teachers should stop giving students homework<br></font></b></p><p class="MsoNormal"><b><font size="4"><i>&nbsp;POINTS</i><br></font></b></p><p class="MsoNormal"><b><font size="4">● Study time<br></font></b></p><p class="MsoNormal"><b><font size="4">● Study habits<br></font></b></p><p class="MsoNormal"><b><font size="4">● Students’ responsibility<br></font></b></p><p class="MsoNormal"><b><font size="4">● Effect on teachers</font></b><br></p>
+            [test_kbn] => 002
+            [course_level] => 004
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 解答例1（Agree）<br/>I agree that teachers should stop giving students homework, considering students’ study time and the burden on teachers at present.<br/>Today, many students spend a lot of time doing their homework.  If they did not have homework, students could have more leisure time outside of school.  With more free time, students could develop various non-academic life skills.  For example, they could develop their communication skills by interacting more with their friends and family.<br/>Next, homework creates a lot of work for teachers.  They have to make homework materials and check homework from each student.  This limits the time they have to devote to providing good classes, including doing things such as lesson preparation.  Without homework, teachers could focus on improving the quality of their classes.<br/>To summarize, homework should be abolished, so that students will have more leisure time, and teachers can improve their classes.<br/><br/>解答例2（Disagree）<br/>Homework is useful for fostering students’ study habits, and is helpful for teachers.  Therefore, teachers should not stop giving students homework.<br/>First, homework helps students form good study habits.  Many students develop the habit of self-study by doing their homework every day, which is important because consistent self-study is vital to improving academic performance.  If homework were abolished, students would lose the chance to develop these habits.<br/>Second, by checking students’ homework, teachers can keep track of how well students understand the classes.  Teachers can also improve their lessons based on the results of the homework.  However, without homework, teachers would lose such an opportunity to check their students’ level of understanding.<br/>Although eliminating homework may have some positive aspects such as reducing the burden of work on students, these aspects would be overweighed by the disadvantages to students’ study habits and teachers’ understanding of their students’ progress.
+            [byosha_point] => 重要語句・表現<br/>I agree (that) ...	…ということに同意する<br/>considering ...　…を考慮すれば<br/>For example, ...　 たとえば…<br/>Next, ...　次に…<br/>including ...　…を含めて<br/>To summarize, ...　要するに…、まとめると…<br/>Therefore, ...　 それゆえに…<br/>First, ...　 まず…、最初に…<br/>Second, ...　 第二に…<br/>However, ...　しかしながら…<br/>Although ...　…だが、…だけれども<br/>be overweighed by ...　(重要さなどで)…に劣る
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:47:51,476 DEBUG [3893] [] indexAction end
+2022-01-31 14:47:51,476 DEBUG [3893] [] QuestionRegistController end
+2022-01-31 14:47:51,477 DEBUG [3893] [] finally
+2022-01-31 14:48:10,788 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:10,789 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:10,789 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:10,790 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:10,790 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:10,790 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:10,791 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:10,791 DEBUG [4289] [] backAction start
+2022-01-31 14:48:10,791 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:10,791 DEBUG [4289] [] backAction end
+2022-01-31 14:48:10,791 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:10,791 DEBUG [4289] [] finally
+2022-01-31 14:48:10,818 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:10,819 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:10,819 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:10,819 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:10,819 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:10,820 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:10,820 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:10,820 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:10,822 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => f5b90a8ca90628d92e2cfdf7fc96589d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:10,823 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => f5b90a8ca90628d92e2cfdf7fc96589d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:10,826 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 1
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => f5b90a8ca90628d92e2cfdf7fc96589d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:10,916 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:10,916 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:10,916 DEBUG [4289] [] finally
+2022-01-31 14:48:15,172 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:15,210 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:15,211 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:15,211 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:15,211 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:15,212 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:15,212 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:15,212 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:15,214 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 14bb1da23fb072f42d70afb9546a00b4
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:15,214 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 14bb1da23fb072f42d70afb9546a00b4
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:15,226 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 14bb1da23fb072f42d70afb9546a00b4
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:15,318 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:15,318 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:15,318 DEBUG [4289] [] finally
+2022-01-31 14:48:17,557 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:17,557 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:17,557 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:17,558 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:17,558 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:17,559 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:17,559 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:17,559 DEBUG [4289] [] indexAction start
+2022-01-31 14:48:17,559 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:17,564 DEBUG [4289] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 228
+            [question_name] => 2018/10/09 testing
+            [qa_description] => Desciption
+            [description] => test
+            [test_kbn] => 002
+            [course_level] => 003
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 20
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => Testing sample answer
+            [byosha_point] => Testing byosha point
+            [remarks] => Testing remark
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 2
+        )
+
+)
+
+2022-01-31 14:48:17,672 DEBUG [4289] [] indexAction end
+2022-01-31 14:48:17,672 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:17,672 DEBUG [4289] [] finally
+2022-01-31 14:48:20,828 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:20,829 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:20,829 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:20,829 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:20,830 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:20,830 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:20,830 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:20,830 DEBUG [4289] [] backAction start
+2022-01-31 14:48:20,830 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:20,831 DEBUG [4289] [] backAction end
+2022-01-31 14:48:20,831 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:20,831 DEBUG [4289] [] finally
+2022-01-31 14:48:20,866 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:20,866 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:20,867 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:20,867 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:20,867 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:20,867 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:20,868 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:20,868 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:20,869 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 437d3ef3f49e8ac1c70b5acd10701f88
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:20,870 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 437d3ef3f49e8ac1c70b5acd10701f88
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:20,882 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 437d3ef3f49e8ac1c70b5acd10701f88
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:20,976 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:20,976 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:20,976 DEBUG [4289] [] finally
+2022-01-31 14:48:23,341 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:23,342 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:23,342 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:23,342 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:23,342 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:23,343 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:23,343 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:23,343 DEBUG [4289] [] indexAction start
+2022-01-31 14:48:23,343 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:23,348 DEBUG [4289] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 299
+            [question_name] => 2018/11/30 Writing Question 1
+            [qa_description] => 2018/11/30 Writing Question 1
+            [description] => Write a paragraph about yourself.
+            [test_kbn] => 002
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] => 
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 40
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => My name is~~~~~.<br/>I was born in ~~~~.<br/>~~~~~~~~~~~~~~~~~~
+            [byosha_point] => Byosha Point for question no 299
+            [remarks] => Testing
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 2
+        )
+
+)
+
+2022-01-31 14:48:23,455 DEBUG [4289] [] indexAction end
+2022-01-31 14:48:23,455 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:23,455 DEBUG [4289] [] finally
+2022-01-31 14:48:26,694 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:26,695 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:26,695 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:26,695 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:26,696 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:26,696 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:26,696 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:26,696 DEBUG [4289] [] backAction start
+2022-01-31 14:48:26,697 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:26,697 DEBUG [4289] [] backAction end
+2022-01-31 14:48:26,697 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:26,697 DEBUG [4289] [] finally
+2022-01-31 14:48:26,742 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:26,743 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:26,743 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:26,743 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:26,743 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:26,744 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:26,744 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:26,744 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:26,746 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 41d7035dedffc87444d55edcc31c2645
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:26,746 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 41d7035dedffc87444d55edcc31c2645
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:26,758 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 41d7035dedffc87444d55edcc31c2645
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:26,851 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:26,851 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:26,851 DEBUG [4289] [] finally
+2022-01-31 14:48:30,863 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:30,863 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:30,863 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:30,864 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:30,864 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:30,864 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:30,864 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:30,865 DEBUG [4289] [] indexAction start
+2022-01-31 14:48:30,865 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:30,869 DEBUG [4289] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 436
+            [question_name] => 20191009 Cherry
+            [qa_description] => ・ 以下のTOPICについて、あなたの意見とその理由を2つ書きなさい。<br/>・ POINTSは理由を書く際の参考となる観点を示したものです。ただし、これら以外の観点から理由を書いてもかまいません。<br/>・ 語数の目安は80語～100語です。<br/>※解答は解答欄に入力してください。解答時間の目安は20分です。
+            [description] => <p class="MsoNormal"><b style="font-size: 0.9em;"><span lang="EN-US">Recently<br/>in Japan, some companies have introduced </span></b><b style="font-size: 0.9em;"><span lang="EN-US" style="font-family:&quot;Century&quot;,serif;mso-ascii-font-family:<br/>&quot;Meiryo UI&quot;;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin">“</span><span lang="EN-US">No Overtime Day.</span></b><b style="font-size: 0.9em;"><span lang="EN-US" style="font-family:&quot;Century&quot;,serif;mso-ascii-font-family:&quot;Meiryo UI&quot;;<br/>mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin">”</span><span lang="EN-US"> Do you think the number of such companies will increase in the<br/>future?</span></b><br></p><br/><br/><p class="MsoNormal"><b><i><span lang="EN-US" style="font-family:&quot;Century&quot;,serif;mso-ascii-theme-font:<br/>minor-latin;mso-hansi-font-family:Century;mso-hansi-theme-font:minor-latin">POINTS<br/><o:p></o:p></span></i></b></p><br/><br/><p class="MsoNormal"><br></p>
+            [test_kbn] => 002
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 
+            [byosha_point] => 
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:48:30,977 DEBUG [4289] [] indexAction end
+2022-01-31 14:48:30,977 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:30,977 DEBUG [4289] [] finally
+2022-01-31 14:48:35,873 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:35,874 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:35,874 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:35,874 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:35,874 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:35,875 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:35,875 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:35,875 DEBUG [4289] [] backAction start
+2022-01-31 14:48:35,875 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:35,875 DEBUG [4289] [] backAction end
+2022-01-31 14:48:35,875 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:35,875 DEBUG [4289] [] finally
+2022-01-31 14:48:35,903 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:35,903 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:35,904 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:35,904 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:35,904 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:35,904 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:35,905 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:35,905 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:35,906 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 13f939bd36e9b0eccdf06dc1cc2eba03
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:35,907 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 13f939bd36e9b0eccdf06dc1cc2eba03
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:35,920 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 13f939bd36e9b0eccdf06dc1cc2eba03
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:36,012 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:36,012 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:36,012 DEBUG [4289] [] finally
+2022-01-31 14:48:38,018 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:38,019 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:38,019 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:38,019 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:38,019 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:38,020 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:38,020 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:38,020 DEBUG [4289] [] indexAction start
+2022-01-31 14:48:38,020 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:38,025 DEBUG [4289] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 565
+            [question_name] => 20200714_WritingQ3
+            [qa_description] => 
+            [description] => Introduce yourself.
+            [test_kbn] => 002
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 
+            [byosha_point] => 
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:48:38,136 DEBUG [4289] [] indexAction end
+2022-01-31 14:48:38,136 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:38,136 DEBUG [4289] [] finally
+2022-01-31 14:48:40,762 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:40,762 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:40,762 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:40,763 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:40,763 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:40,763 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:40,763 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:40,764 DEBUG [4289] [] backAction start
+2022-01-31 14:48:40,764 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:40,764 DEBUG [4289] [] backAction end
+2022-01-31 14:48:40,764 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:40,764 DEBUG [4289] [] finally
+2022-01-31 14:48:40,789 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:40,789 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:40,789 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:40,790 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:40,790 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:40,790 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:40,790 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:40,791 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:40,792 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => dc6f174b8c9c4c3fccc165f04e6c30bd
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:40,793 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => dc6f174b8c9c4c3fccc165f04e6c30bd
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:40,805 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => dc6f174b8c9c4c3fccc165f04e6c30bd
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:40,899 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:40,899 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:40,899 DEBUG [4289] [] finally
+2022-01-31 14:48:43,276 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:43,277 DEBUG [4289] [] QuestionListController start
+2022-01-31 14:48:43,277 DEBUG [4289] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:43,277 DEBUG [4289] [] QuestionListForm: is exist
+2022-01-31 14:48:43,277 DEBUG [4289] [] QuestionListForm: form value set 
+2022-01-31 14:48:43,278 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:43,278 DEBUG [4289] [] SearchAction start
+2022-01-31 14:48:43,278 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:43,280 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 0ed43ee6e5550e926f0dd4a86771dba6
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:43,281 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 0ed43ee6e5550e926f0dd4a86771dba6
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:43,293 DEBUG [4289] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 0ed43ee6e5550e926f0dd4a86771dba6
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:43,389 DEBUG [4289] [] SearchAction end
+2022-01-31 14:48:43,389 DEBUG [4289] [] QuestionListController end
+2022-01-31 14:48:43,389 DEBUG [4289] [] finally
+2022-01-31 14:48:45,352 DEBUG [4289] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:45,353 DEBUG [4289] [] QuestionRegistController start
+2022-01-31 14:48:45,353 DEBUG [4289] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:45,353 DEBUG [4289] [] QuestionRegistForm: is exist
+2022-01-31 14:48:45,353 DEBUG [4289] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:45,354 DEBUG [4289] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:45,354 DEBUG [4289] [] ------------------------------session_check_true
+2022-01-31 14:48:45,354 DEBUG [4289] [] indexAction start
+2022-01-31 14:48:45,354 DEBUG [4289] [] admin_no is 1
+2022-01-31 14:48:45,359 DEBUG [4289] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 199
+            [question_name] => P01-W5-01_1
+            [qa_description] => ・以下のTOPICについて、あなたの意見とその理由を2つ書きなさい。<br/>・POINTSは理由を書く際の参考となる観点を示したものです。ただし、これら以外の観点から理由を書いてもかまいません。<br/>・語数の目安は80語～100語です。<br/>※解答は解答欄に入力してください。解答時間の目安は20分です。
+            [description] => <div><i>TOPIC</i></div><div><b>Nowadays, Japanese people tend to avoid sending New Year’s cards.&nbsp; Do you think the number of these people will increase in the future?</b></div><div><br></div><div><i>POINTS</i></div><div><b>● Handwriting</b></div><div><b>● Social Networking Services</b></div><div><b>● Cost</b></div>
+            [test_kbn] => 002
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] => 
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 非公開
+            [sample_answer] => 解答例1（Agree）<br/>I think that Japanese people will tend to avoid sending New Year’s cards in the future.  I have two reasons to support this opinion.  First, social networking services are so widely used that more people will rely on these services, instead of mailing traditional New Year’s cards.  Second, using social networking services costs far less than writing and sending New Year’s cards when they use these services.  For example, people do not have to buy New Year postcards   It is for these two reasons that I think Japanese people will tend to avoid sending New Year’s cards in the future.  <br/><br/>解答例2（Disagree）<br/>I don’t think that Japanese people will tend to avoid sending New Year’s cards in the future.  The first reason is that newer software for making New Year’s cards make it easy for people to print their own original cards.  The second reason is that adding short handwritten messages to these cards make them very special.  I am sure that people will be very happy to receive such cards with a personal touch added.  Therefore, I don’t think that Japanese people will tend to avoid sending New Year’s cards in the future.
+            [byosha_point] => I think (that) ... / I don’t think (that) ...　…だと思う／…だと思わない<br/>tend to do　～する傾向がある、～しがちだ<br/>I have two reasons to support this opinion.　この意見を支持する理由が2つある。<br/>First, ...　まず…、最初に…<br/>Second, ...　第2に…<br/>for example　たとえば<br/>It is for these two reasons that I think ...　この2つの理由のため、私は…だと思う。<br/>The first[second] reason is that ... 最初[2つ目]の理由は…だ。<br/>[主語] make it [形容詞] for ... to do　[主語]は…が～するのを[形容詞]にする、[主語]のおかげで…は～できる<br/>I am sure that ...　…だと確信している<br/>Therefore, ...　それゆえに…
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:48:45,465 DEBUG [4289] [] indexAction end
+2022-01-31 14:48:45,465 DEBUG [4289] [] QuestionRegistController end
+2022-01-31 14:48:45,465 DEBUG [4289] [] finally
+2022-01-31 14:48:53,085 DEBUG [4318] [] Request URI : /eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:53,086 DEBUG [4318] [] QuestionRegistController start
+2022-01-31 14:48:53,086 DEBUG [4318] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:53,086 DEBUG [4318] [] QuestionRegistForm: is exist
+2022-01-31 14:48:53,087 DEBUG [4318] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:53,087 DEBUG [4318] [] ------------------------------/eccadmin_dev/QuestionRegist/back
+2022-01-31 14:48:53,087 DEBUG [4318] [] ------------------------------session_check_true
+2022-01-31 14:48:53,087 DEBUG [4318] [] backAction start
+2022-01-31 14:48:53,088 DEBUG [4318] [] admin_no is 1
+2022-01-31 14:48:53,088 DEBUG [4318] [] backAction end
+2022-01-31 14:48:53,088 DEBUG [4318] [] QuestionRegistController end
+2022-01-31 14:48:53,088 DEBUG [4318] [] finally
+2022-01-31 14:48:53,112 DEBUG [4318] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:53,112 DEBUG [4318] [] QuestionListController start
+2022-01-31 14:48:53,112 DEBUG [4318] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:53,113 DEBUG [4318] [] QuestionListForm: is exist
+2022-01-31 14:48:53,113 DEBUG [4318] [] QuestionListForm: form value set 
+2022-01-31 14:48:53,113 DEBUG [4318] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:53,113 DEBUG [4318] [] SearchAction start
+2022-01-31 14:48:53,113 DEBUG [4318] [] admin_no is 1
+2022-01-31 14:48:53,115 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 686e610663039fea239e105e571e045d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:53,116 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 686e610663039fea239e105e571e045d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:53,127 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 4
+    [max_page] => 7
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 686e610663039fea239e105e571e045d
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:53,210 DEBUG [4318] [] SearchAction end
+2022-01-31 14:48:53,210 DEBUG [4318] [] QuestionListController end
+2022-01-31 14:48:53,210 DEBUG [4318] [] finally
+2022-01-31 14:48:57,569 DEBUG [4318] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:57,570 DEBUG [4318] [] QuestionListController start
+2022-01-31 14:48:57,570 DEBUG [4318] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:48:57,570 DEBUG [4318] [] QuestionListForm: is exist
+2022-01-31 14:48:57,570 DEBUG [4318] [] QuestionListForm: form value set 
+2022-01-31 14:48:57,571 DEBUG [4318] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:48:57,571 DEBUG [4318] [] SearchAction start
+2022-01-31 14:48:57,571 DEBUG [4318] [] admin_no is 1
+2022-01-31 14:48:57,573 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 737e81ca0d84e57824a8c8f90ddd5d7b
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:57,574 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 737e81ca0d84e57824a8c8f90ddd5d7b
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:57,576 DEBUG [4318] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 1
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 737e81ca0d84e57824a8c8f90ddd5d7b
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:48:57,668 DEBUG [4318] [] SearchAction end
+2022-01-31 14:48:57,668 DEBUG [4318] [] QuestionListController end
+2022-01-31 14:48:57,668 DEBUG [4318] [] finally
+2022-01-31 14:48:59,082 DEBUG [4318] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:59,083 DEBUG [4318] [] QuestionRegistController start
+2022-01-31 14:48:59,083 DEBUG [4318] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:48:59,083 DEBUG [4318] [] QuestionRegistForm: is exist
+2022-01-31 14:48:59,084 DEBUG [4318] [] QuestionRegistForm: form value set 
+2022-01-31 14:48:59,084 DEBUG [4318] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:48:59,084 DEBUG [4318] [] ------------------------------session_check_true
+2022-01-31 14:48:59,084 DEBUG [4318] [] indexAction start
+2022-01-31 14:48:59,084 DEBUG [4318] [] admin_no is 1
+2022-01-31 14:48:59,089 DEBUG [4318] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 639
+            [question_name] => Level 6 No 1
+            [qa_description] => 
+            [description] => <p class="MsoNormal"><span style="font-size: 14.4px;">● Write an essay on the given TOPIC.</span></p><p class="MsoNormal">● Use TWO of the POINTS below to support your answer.<br></p><p class="MsoNormal">● Structure: introduction, main body, and conclusion<br></p><p class="MsoNormal">● Suggested length: 120-150 words<br></p><p class="MsoNormal">※解答は解答欄に入力してください。解答時間の目安は20分です。<br></p><p class="MsoNormal"><b><font size="4"><i>TOPIC</i><br></font></b></p><p class="MsoNormal"><b><font size="4">Agree or disagree: Teachers should stop giving students homework<br></font></b></p><p class="MsoNormal"><b><font size="4"><i>&nbsp;POINTS</i><br></font></b></p><p class="MsoNormal"><b><font size="4">● Study time<br></font></b></p><p class="MsoNormal"><b><font size="4">● Study habits<br></font></b></p><p class="MsoNormal"><b><font size="4">● Students’ responsibility<br></font></b></p><p class="MsoNormal"><b><font size="4">● Effect on teachers</font></b><br></p>
+            [test_kbn] => 002
+            [course_level] => 004
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 解答例1（Agree）<br/>I agree that teachers should stop giving students homework, considering students’ study time and the burden on teachers at present.<br/>Today, many students spend a lot of time doing their homework.  If they did not have homework, students could have more leisure time outside of school.  With more free time, students could develop various non-academic life skills.  For example, they could develop their communication skills by interacting more with their friends and family.<br/>Next, homework creates a lot of work for teachers.  They have to make homework materials and check homework from each student.  This limits the time they have to devote to providing good classes, including doing things such as lesson preparation.  Without homework, teachers could focus on improving the quality of their classes.<br/>To summarize, homework should be abolished, so that students will have more leisure time, and teachers can improve their classes.<br/><br/>解答例2（Disagree）<br/>Homework is useful for fostering students’ study habits, and is helpful for teachers.  Therefore, teachers should not stop giving students homework.<br/>First, homework helps students form good study habits.  Many students develop the habit of self-study by doing their homework every day, which is important because consistent self-study is vital to improving academic performance.  If homework were abolished, students would lose the chance to develop these habits.<br/>Second, by checking students’ homework, teachers can keep track of how well students understand the classes.  Teachers can also improve their lessons based on the results of the homework.  However, without homework, teachers would lose such an opportunity to check their students’ level of understanding.<br/>Although eliminating homework may have some positive aspects such as reducing the burden of work on students, these aspects would be overweighed by the disadvantages to students’ study habits and teachers’ understanding of their students’ progress.
+            [byosha_point] => 重要語句・表現<br/>I agree (that) ...	…ということに同意する<br/>considering ...　…を考慮すれば<br/>For example, ...　 たとえば…<br/>Next, ...　次に…<br/>including ...　…を含めて<br/>To summarize, ...　要するに…、まとめると…<br/>Therefore, ...　 それゆえに…<br/>First, ...　 まず…、最初に…<br/>Second, ...　 第二に…<br/>However, ...　しかしながら…<br/>Although ...　…だが、…だけれども<br/>be overweighed by ...　(重要さなどで)…に劣る
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:48:59,200 DEBUG [4318] [] indexAction end
+2022-01-31 14:48:59,200 DEBUG [4318] [] QuestionRegistController end
+2022-01-31 14:48:59,200 DEBUG [4318] [] finally
+2022-01-31 14:49:22,162 DEBUG [4317] [] Request URI : /eccadmin_dev/QuestionRegist/save
+2022-01-31 14:49:22,166 DEBUG [4317] [] QuestionRegistController start
+2022-01-31 14:49:22,166 DEBUG [4317] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:49:22,167 DEBUG [4317] [] QuestionRegistForm: is exist
+2022-01-31 14:49:22,167 DEBUG [4317] [] QuestionRegistForm: form value set 
+2022-01-31 14:49:22,168 DEBUG [4317] [] ------------------------------/eccadmin_dev/QuestionRegist/save
+2022-01-31 14:49:22,168 DEBUG [4317] [] ------------------------------session_check_true
+2022-01-31 14:49:22,168 DEBUG [4317] [] saveAction start
+2022-01-31 14:49:22,168 DEBUG [4317] [] admin_no is 1
+2022-01-31 14:49:22,295 DEBUG [4317] [] saveAction end
+2022-01-31 14:49:22,295 DEBUG [4317] [] QuestionRegistController end
+2022-01-31 14:49:22,295 DEBUG [4317] [] finally
+2022-01-31 14:50:05,589 DEBUG [4350] [] Request URI : /eccadmin_dev/QuestionRegist/save
+2022-01-31 14:50:05,589 DEBUG [4350] [] QuestionRegistController start
+2022-01-31 14:50:05,590 DEBUG [4350] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:50:05,590 DEBUG [4350] [] QuestionRegistForm: is exist
+2022-01-31 14:50:05,590 DEBUG [4350] [] QuestionRegistForm: form value set 
+2022-01-31 14:50:05,591 DEBUG [4350] [] ------------------------------/eccadmin_dev/QuestionRegist/save
+2022-01-31 14:50:05,591 DEBUG [4350] [] ------------------------------session_check_true
+2022-01-31 14:50:05,591 DEBUG [4350] [] saveAction start
+2022-01-31 14:50:05,591 DEBUG [4350] [] admin_no is 1
+2022-01-31 14:50:05,785 DEBUG [4350] [] saveAction end
+2022-01-31 14:50:05,785 DEBUG [4350] [] QuestionRegistController end
+2022-01-31 14:50:05,786 DEBUG [4350] [] finally
+2022-01-31 14:50:41,756 DEBUG [3893] [] Request URI : /eccadmin_dev/QuestionRegist/save
+2022-01-31 14:50:41,757 DEBUG [3893] [] QuestionRegistController start
+2022-01-31 14:50:41,757 DEBUG [3893] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:50:41,757 DEBUG [3893] [] QuestionRegistForm: is exist
+2022-01-31 14:50:41,757 DEBUG [3893] [] QuestionRegistForm: form value set 
+2022-01-31 14:50:41,758 DEBUG [3893] [] ------------------------------/eccadmin_dev/QuestionRegist/save
+2022-01-31 14:50:41,758 DEBUG [3893] [] ------------------------------session_check_true
+2022-01-31 14:50:41,758 DEBUG [3893] [] saveAction start
+2022-01-31 14:50:41,758 DEBUG [3893] [] admin_no is 1
+2022-01-31 14:50:41,861 DEBUG [3893] [] saveAction end
+2022-01-31 14:50:41,861 DEBUG [3893] [] QuestionRegistController end
+2022-01-31 14:50:41,861 DEBUG [3893] [] finally
+2022-01-31 14:53:54,383 DEBUG [4299] [] Request URI : /eccadmin_dev/QuestionList
+2022-01-31 14:53:54,384 DEBUG [4299] [] QuestionListController start
+2022-01-31 14:53:54,384 DEBUG [4299] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:53:54,384 DEBUG [4299] [] QuestionListForm: is exist
+2022-01-31 14:53:54,384 DEBUG [4299] [] QuestionListForm: form value set 
+2022-01-31 14:53:54,385 DEBUG [4299] [] ------------------------------/eccadmin_dev/QuestionList
+2022-01-31 14:53:54,385 DEBUG [4299] [] indexAction start
+2022-01-31 14:53:54,385 DEBUG [4299] [] admin_no is 1
+2022-01-31 14:53:54,387 DEBUG [4299] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 001
+    [score_pattern] => 001
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => cf78c31aa7501f52dd9ffbdef47ccdaf
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:53:54,429 DEBUG [4299] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 001
+    [score_pattern] => 001
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 26
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => cf78c31aa7501f52dd9ffbdef47ccdaf
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:53:54,554 DEBUG [4299] [] indexAction end
+2022-01-31 14:53:54,554 DEBUG [4299] [] QuestionListController end
+2022-01-31 14:53:54,554 DEBUG [4299] [] finally
+2022-01-31 14:53:59,471 DEBUG [4299] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-01-31 14:53:59,472 DEBUG [4299] [] QuestionListController start
+2022-01-31 14:53:59,472 DEBUG [4299] [] controllers/QuestionListController.php: is exist
+2022-01-31 14:53:59,472 DEBUG [4299] [] QuestionListForm: is exist
+2022-01-31 14:53:59,472 DEBUG [4299] [] QuestionListForm: form value set 
+2022-01-31 14:53:59,473 DEBUG [4299] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-01-31 14:53:59,473 DEBUG [4299] [] SearchAction start
+2022-01-31 14:53:59,473 DEBUG [4299] [] admin_no is 1
+2022-01-31 14:53:59,475 DEBUG [4299] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 001
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 001
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 4c7a935ee9da5b17d2a68159df6d9166
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:53:59,476 DEBUG [4299] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 001
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 001
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 4c7a935ee9da5b17d2a68159df6d9166
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:53:59,479 DEBUG [4299] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 001
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 1
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 001
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 4c7a935ee9da5b17d2a68159df6d9166
+    [admin_kbn] => 001
+)
+
+2022-01-31 14:53:59,572 DEBUG [4299] [] SearchAction end
+2022-01-31 14:53:59,572 DEBUG [4299] [] QuestionListController end
+2022-01-31 14:53:59,572 DEBUG [4299] [] finally
+2022-01-31 14:54:01,986 DEBUG [4299] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-01-31 14:54:01,987 DEBUG [4299] [] QuestionRegistController start
+2022-01-31 14:54:01,987 DEBUG [4299] [] controllers/QuestionRegistController.php: is exist
+2022-01-31 14:54:01,987 DEBUG [4299] [] QuestionRegistForm: is exist
+2022-01-31 14:54:01,987 DEBUG [4299] [] QuestionRegistForm: form value set 
+2022-01-31 14:54:01,988 DEBUG [4299] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-01-31 14:54:01,988 DEBUG [4299] [] ------------------------------session_check_true
+2022-01-31 14:54:01,988 DEBUG [4299] [] indexAction start
+2022-01-31 14:54:01,988 DEBUG [4299] [] admin_no is 1
+2022-01-31 14:54:01,993 DEBUG [4299] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 631
+            [question_name] => No - 1
+            [qa_description] => Please begin your narration.  You have two minutes.
+            [description] => <div><span style="font-size: 14.4px;">You have <b>one minute</b> to prepare.</span></div><div><span style="font-size: 14.4px;"><br></span></div><div><span style="font-size: 14.4px;"><u>This is a story about a woman who worked as a librarian at a city library.</u></span></div><div><span style="font-size: 14.4px;"><br></span></div><div><span style="font-size: 14.4px;">You have <b>two minutes</b> to narrate the story.</span></div><div><span style="font-size: 14.4px;"><br></span></div><div><span style="font-size: 14.4px;">Your story should begin with the following sentence:</span></div><div><span style="font-size: 14.4px;"><br></span></div><div><span style="font-size: 14.4px;"><b><u>One day, a woman was talking with another librarian in her office at the library.</u></b></span></div><div><span style="font-size: 14.4px;"><b><br></b></span></div><div><img src="/student_dev/files/image/img_631_001.png" width="80%"><br></div>
+            [test_kbn] => 001
+            [course_level] => 004
+            [qa_pattern] => 003
+            [score_pattern] => 001
+            [audio_name] => 
+            [audio_description] => 
+            [prepare_time] => 120
+            [answer_time] => 120
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 
+            [byosha_point] => One day, a woman was talking with another librarian in her office at the library.  They were looking at a graph that showed the number of library visitors was declining.  The man said that they needed to do something to deal with the problem.<br/>A few days later, the woman was having a meeting with some other librarians to discuss how to attract more visitors to the library.  The woman suggested that they organize a regular storytelling event to read to children.  The other librarians agreed with her idea.<br/>The next month, a lot of children came to the first event and enjoyed listening to a librarian read a book.  The woman was pleased to see that.<br/>A few months later, during the event, some children were running around, and not listening to the librarian.  A visitor complained to the woman that he could not focus on reading because of them.
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-01-31 14:54:02,104 DEBUG [4299] [] indexAction end
+2022-01-31 14:54:02,104 DEBUG [4299] [] QuestionRegistController end
+2022-01-31 14:54:02,105 DEBUG [4299] [] finally

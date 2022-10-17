@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> グループデータ抽出</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	{literal}
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+		<script type="text/javascript">
+			//表示再現
+			$(document).ready(function() {
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ){
+					$(".error_section").slideDown('slow')
+				}
+				$(".close_icon").on('click', function(){
+					$(".error_section").slideUp('slow')
+				});
+				$(function() {
+					$('#start_period_start').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#start_period_start').offset().left-$('.pushmenu-open')[0].offsetWidth
+										:$('#start_period_start').offset().left;
+								inst.dpDiv.css({
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+
+				$(function() {
+					$('#start_period_end').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#start_period_end').offset().left-$('.pushmenu-open')[0].offsetWidth
+										:$('#start_period_end').offset().left;
+								inst.dpDiv.css({
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+
+				$(function() {
+					$('#end_period_start').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#end_period_start').offset().left-$('.pushmenu-open')[0].offsetWidth
+										:$('#end_period_start').offset().left;
+								inst.dpDiv.css({
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+
+				});
+
+				$(function() {
+					$('#end_period_end').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+						beforeShow: function (input, inst) {
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#end_period_end').offset().left-$('.pushmenu-open')[0].offsetWidth
+										:$('#end_period_end').offset().left;
+								inst.dpDiv.css({
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}GroupDataExport/csvDownload" method="post">
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div class="container">
+					<div class="main">
+					<input type="hidden" id="org_name" name="org_name" value="{$form->org_name}">
+					<input type="hidden" id="db_org_id" name="db_org_id" value="{$form->db_org_id}">
+						<section class="error_section">
+							<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+							{if !empty($err_msg)}
+								<div class="error_msg">{$err_msg}</div>
+							{else}
+								<div class="error_msg"></div>
+							{/if}
+						</section>
+						<section class="content">
+							<p>
+								><span class="title">データ抽出 / グループ</span>
+							</p>
+							<table class="main_tbl" style="width:640px;">
+								<tr>
+									<td>組織ID<span class="required">※</span></td>
+									<td class="input">
+										<input colspan="3" type="text" class="text" id="org_id" name="org_id" value="{$org_id}" size="30"/>
+									</td>
+								</tr>
+								<tr>
+									<td>グループ利用開始</td>
+									<td class="input">
+										<input type="text" id="start_period_start" name="start_period_start" value="{$form->start_period_start}" maxlength="10" >
+									</td>
+									<td width="10px">　～　</td>
+									<td class="input">
+										<input type="text" name="start_period_end" id="start_period_end" value="{$form->start_period_end}" maxlength="10" >
+									</td>
+								</tr>
+								<tr>
+									<td>グループ利用終了</td>
+									<td class="input">
+										<input type="text" name="end_period_start" id="end_period_start" value="{$form->end_period_start}" maxlength="10" >
+									</td>
+									<td width="10px">　～　</td>
+									<td class="input">
+										<input type="text" name="end_period_end" id="end_period_end" value="{$form->end_period_end}" maxlength="10" >
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+									</td>
+									<td>
+										<div style="float: right;padding-top:30px;">
+											<input class="btn_csv_dl" name="csv" type="button" value="" title="抽出" onclick="javascript:csvDownload('{$smarty.const.HOME_DIR}GroupDataExport/csvDownload')">
+										</div>
+									</td>
+								</tr>
+							</table>
+						</section>
+					</div>
+				</div>
+			</div><!-- End divBody -->
+			<script>
+			{literal}
+
+			// csvダウンロード処理
+			function csvDownload(action){
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+				var org_id = document.getElementById('org_id').value;
+				var start_period_start = document.getElementById('start_period_start').value;
+				var end_period_start = document.getElementById('end_period_start').value;
+				var start_period_end = document.getElementById('start_period_end').value;
+				var end_period_end= document.getElementById('end_period_end').value;
+
+				if ( $(".error_msg").html() != "" ){
+					$(".error_section").slideUp('slow');
+					$(".error_msg").html("");
+				}
+
+				if ( org_id == "" ){
+					$('#err_dis').show();
+					$(".error_section").slideDown('slow');
+					$(".error_msg").html("組織IDを入力してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				}else if ( (start_period_start != "" && start_period_end !="") && ( start_period_start > start_period_end ) ){
+
+					$('#err_dis').show();
+					$(".error_section").slideDown('slow');
+					$(".error_msg").html("グループ{/literal}{$smarty.const.W007}{literal}");
+					return false;
+				}else if ( start_period_start != "" && !changeDateFormat(document.getElementById('start_period_start')) || (start_period_end != "" && !changeDateFormat(document.getElementById('start_period_end'))) ) {
+
+					$('#err_dis').show();
+					$(".error_section").slideDown('slow');
+					$(".error_msg").html("グループ{/literal}{$smarty.const.W007}{literal}");
+					$(".divBody").scrollTop(0);
+					return false;
+				}else if ( (end_period_start != "" && end_period_end !="") && ( end_period_start > end_period_end ) ){
+
+					$('#err_dis').show();
+					$(".error_section").slideDown('slow');
+					$(".error_msg").html("グループ{/literal}{$smarty.const.W008}{literal}");
+					return false;
+				}else if ( end_period_start != "" && !changeDateFormat(document.getElementById('end_period_start')) || (end_period_end != "" && !changeDateFormat(document.getElementById('end_period_end'))) ) {
+
+					$('#err_dis').show();
+					$(".error_section").slideDown('slow');
+					$(".error_msg").html("グループ{/literal}{$smarty.const.W008}{literal}");
+					$(".divBody").scrollTop(0);
+					return false;
+				}else {
+					$("#hidorg_id").val(org_id);
+					$("#menuOpen").val(menuOpen);
+					$("#menuStatus").val(menuStatus);
+					$("#main_form").submit();
+				}
+
+			}
+			{/literal}
+			</script>
+			<div class="divFooter">
+				<!--footer-->
+					{include file='footer.html'}
+				<!--footer-->
+			</div>
+		</form>
+	  <!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+
+	</body>
+</html>

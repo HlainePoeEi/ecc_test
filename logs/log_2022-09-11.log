@@ -1,0 +1,381 @@
+2022-09-11 09:50:10,791 DEBUG [151186] [] Request URI : /eccadmin_dev/Login
+2022-09-11 09:50:10,810 DEBUG [151186] [] LoginController start
+2022-09-11 09:50:10,811 DEBUG [151186] [] controllers/LoginController.php: is exist
+2022-09-11 09:50:10,811 DEBUG [151186] [] LoginForm: is exist
+2022-09-11 09:50:10,811 DEBUG [151186] [] LoginForm: form value set 
+2022-09-11 09:50:10,812 DEBUG [151186] [] ------------------------------/eccadmin_dev/Login
+2022-09-11 09:50:10,812 DEBUG [151186] [] ------------------------------login_start_check
+2022-09-11 09:50:10,812 DEBUG [151186] [] indexAction start
+2022-09-11 09:50:10,858 DEBUG [151186] [] indexAction end
+2022-09-11 09:50:10,858 DEBUG [151186] [] LoginController end
+2022-09-11 09:50:10,858 DEBUG [151186] [] finally
+2022-09-11 09:50:16,615 DEBUG [151276] [] Request URI : /eccadmin_dev/Login/login
+2022-09-11 09:50:16,619 DEBUG [151276] [] LoginController start
+2022-09-11 09:50:16,619 DEBUG [151276] [] controllers/LoginController.php: is exist
+2022-09-11 09:50:16,620 DEBUG [151276] [] LoginForm: is exist
+2022-09-11 09:50:16,620 DEBUG [151276] [] LoginForm: form value set 
+2022-09-11 09:50:16,620 DEBUG [151276] [] ------------------------------/eccadmin_dev/Login/login
+2022-09-11 09:50:16,620 DEBUG [151276] [] ------------------------------login_start_check
+2022-09-11 09:50:16,620 DEBUG [151276] [] loginAction start
+2022-09-11 09:50:16,912 DEBUG [151276] [] loginAction end
+2022-09-11 09:50:16,912 DEBUG [151276] [] LoginController end
+2022-09-11 09:50:16,913 DEBUG [151276] [] finally
+2022-09-11 09:50:16,921 DEBUG [151276] [] Request URI : /eccadmin_dev/Menu
+2022-09-11 09:50:16,921 DEBUG [151276] [] MenuController start
+2022-09-11 09:50:16,921 DEBUG [151276] [] controllers/MenuController.php: is exist
+2022-09-11 09:50:16,921 DEBUG [151276] [] MenuForm: is exist
+2022-09-11 09:50:16,921 DEBUG [151276] [] MenuForm: form value set 
+2022-09-11 09:50:16,922 DEBUG [151276] [] ------------------------------/eccadmin_dev/Menu
+2022-09-11 09:50:16,922 DEBUG [151276] [] ------------------------------login_start_check
+2022-09-11 09:50:16,922 DEBUG [151276] [] indexAction start
+2022-09-11 09:50:16,922 DEBUG [151276] [] admin_no is 1
+2022-09-11 09:50:16,983 DEBUG [151276] [] indexAction end
+2022-09-11 09:50:16,983 DEBUG [151276] [] MenuController end
+2022-09-11 09:50:16,983 DEBUG [151276] [] finally
+2022-09-11 09:50:22,966 DEBUG [151186] [] Request URI : /eccadmin_dev/AtReportList
+2022-09-11 09:50:22,966 DEBUG [151186] [] AtReportListController start
+2022-09-11 09:50:22,967 DEBUG [151186] [] controllers/AtReportListController.php: is exist
+2022-09-11 09:50:23,064 DEBUG [151186] [] AtReportListForm: is exist
+2022-09-11 09:50:23,086 DEBUG [151186] [] AtReportListForm: form value set 
+2022-09-11 09:50:23,087 DEBUG [151186] [] ------------------------------/eccadmin_dev/AtReportList
+2022-09-11 09:50:23,087 DEBUG [151186] [] indexAction start
+2022-09-11 09:50:23,087 DEBUG [151186] [] admin_no is 1
+2022-09-11 09:50:23,177 DEBUG [151186] [] indexAction end
+2022-09-11 09:50:23,177 DEBUG [151186] [] AtReportListController end
+2022-09-11 09:50:23,178 DEBUG [151186] [] finally
+2022-09-11 09:50:26,064 DEBUG [151202] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-09-11 09:50:26,064 DEBUG [151202] [] AtReportRegistController start
+2022-09-11 09:50:26,065 DEBUG [151202] [] controllers/AtReportRegistController.php: is exist
+2022-09-11 09:50:26,106 DEBUG [151202] [] AtReportRegistForm: is exist
+2022-09-11 09:50:26,116 DEBUG [151202] [] AtReportRegistForm: form value set 
+2022-09-11 09:50:26,117 DEBUG [151202] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-09-11 09:50:26,117 DEBUG [151202] [] ------------------------------session_check_true
+2022-09-11 09:50:26,117 DEBUG [151202] [] indexAction start
+2022-09-11 09:50:26,117 DEBUG [151202] [] admin_no is 1
+2022-09-11 09:50:26,121 DEBUG [151202] [] Array
+(
+    [0] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 002
+            [at_no] => 186
+            [offer_no] => 259
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => AT Report Speaking Course
+            [at_type_name] => コース
+        )
+
+    [1] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 001
+            [at_no] => 298
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => 2022 TOEIC Test (AT)
+            [at_type_name] => 試験
+        )
+
+    [2] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 001
+            [at_no] => 299
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => AT ELCT_v1.0
+            [at_type_name] => 試験
+        )
+
+    [3] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 002
+            [at_no] => 6
+            [offer_no] => 257
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => 2級 Writing Course 2
+            [at_type_name] => コース
+        )
+
+)
+
+2022-09-11 09:50:26,210 DEBUG [151202] [] indexAction end
+2022-09-11 09:50:26,210 DEBUG [151202] [] AtReportRegistController end
+2022-09-11 09:50:26,210 DEBUG [151202] [] finally
+2022-09-11 09:50:35,693 DEBUG [151280] [] Request URI : /eccadmin_dev/TestInfoPreview/index
+2022-09-11 09:50:35,697 DEBUG [151280] [] TestInfoPreviewController start
+2022-09-11 09:50:35,697 DEBUG [151280] [] controllers/TestInfoPreviewController.php: is exist
+2022-09-11 09:50:35,700 DEBUG [151280] [] TestInfoPreviewForm: is exist
+2022-09-11 09:50:35,700 DEBUG [151280] [] TestInfoPreviewForm: form value set 
+2022-09-11 09:50:35,701 DEBUG [151280] [] ------------------------------/eccadmin_dev/TestInfoPreview/index
+2022-09-11 09:50:35,701 DEBUG [151280] [] ------------------------------session_check_true
+2022-09-11 09:50:35,701 DEBUG [151280] [] indexAction start
+2022-09-11 09:50:35,701 DEBUG [151280] [] admin_no is 1
+2022-09-11 09:50:35,704 DEBUG [151280] [] Array
+(
+    [0] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 1
+            [test_info_no] => 298
+            [quiz_info_no] => 418
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [test_info_name] => 2022 TOEIC Test (AT)
+            [test_time] => 1200
+            [audio_name] => 
+            [quiz_name] => TOEIC Quiz 1
+            [quiz_description] => <h3 style="margin: 0px; padding: 0px 0px 0px 14px; font-size: 16.0028px; color: rgb(255, 89, 0); font-weight: normal; line-height: 1.4; border-left: 8px solid rgb(255, 89, 0); font-family: Verdana, メイリオ, Meiryo, &quot;ヒラギノ角ゴ Pro W3&quot;, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;ＭＳ Ｐゴシック&quot;, &quot;MS PGothic&quot;, sans-serif; background-color: rgb(255, 255, 255);">空欄に入る最も適切なものを選択肢（1）～（3）の中から選んでください。</h3>
+            [long_description] => <span style="font-family: " google="" sans",="" roboto,="" robotodraft,="" helvetica,="" arial,="" sans-serif;="" font-size:="" 22px;="" font-variant-ligatures:="" no-contextual;="" background-color:="" rgb(255,="" 255,="" 255);"=""><font color="#990000">【TOEIC Program】穴埋めエクササイズ！空欄に入る単語は?</font></span><br>
+        )
+
+    [1] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 1
+            [test_info_no] => 298
+            [quiz_info_no] => 419
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [test_info_name] => 2022 TOEIC Test (AT)
+            [test_time] => 1200
+            [audio_name] => 
+            [quiz_name] => TOEIC Quiz 2
+            [quiz_description] => <span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">以下の空欄に入る最も適切なものを選択肢（1）～（3）の中から</span><wbr style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);"><span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">選んでください。</span><br>
+            [long_description] => <span style="font-family: " google="" sans",="" roboto,="" robotodraft,="" helvetica,="" arial,="" sans-serif;="" font-size:="" 22px;="" font-variant-ligatures:="" no-contextual;="" background-color:="" rgb(255,="" 255,="" 255);"=""><font color="#990000">【TOEIC Program】穴埋めエクササイズ！空欄に入る単語は?</font></span><br>
+        )
+
+    [2] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 1
+            [test_info_no] => 298
+            [quiz_info_no] => 420
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [test_info_name] => 2022 TOEIC Test (AT)
+            [test_time] => 1200
+            [audio_name] => QuizInfoNo_420.mp3
+            [quiz_name] => audio quiz quiz 3
+            [quiz_description] => Part 1 direction<div><br></div><div><img src="/admin_dev/files/99999/QuizInfo/image/QuizInfoNo_310_001.png" width="50%"><br></div>
+            [long_description] => <span style="font-family: " google="" sans",="" roboto,="" robotodraft,="" helvetica,="" arial,="" sans-serif;="" font-size:="" 22px;="" font-variant-ligatures:="" no-contextual;="" background-color:="" rgb(255,="" 255,="" 255);"=""><font color="#990000">【TOEIC Program】穴埋めエクササイズ！空欄に入る単語は?</font></span><br>
+        )
+
+)
+
+2022-09-11 09:50:35,704 DEBUG [151280] [] Quiz COUNt3
+2022-09-11 09:50:35,705 DEBUG [151280] [] Item List1
+2022-09-11 09:50:35,743 DEBUG [151280] [] Item List1
+2022-09-11 09:50:35,745 DEBUG [151280] [] Item List1
+2022-09-11 09:50:35,746 DEBUG [151280] [] audio File : files/1/QuizInfo/audio
+2022-09-11 09:50:35,897 DEBUG [151280] [] indexAction end
+2022-09-11 09:50:35,897 DEBUG [151280] [] TestInfoPreviewController end
+2022-09-11 09:50:35,897 DEBUG [151280] [] finally
+2022-09-11 09:50:39,785 DEBUG [151280] [] Request URI : /eccadmin_dev/TestInfoPreview/back
+2022-09-11 09:50:39,786 DEBUG [151280] [] TestInfoPreviewController start
+2022-09-11 09:50:39,786 DEBUG [151280] [] controllers/TestInfoPreviewController.php: is exist
+2022-09-11 09:50:39,788 DEBUG [151280] [] TestInfoPreviewForm: is exist
+2022-09-11 09:50:39,789 DEBUG [151280] [] TestInfoPreviewForm: form value set 
+2022-09-11 09:50:39,789 DEBUG [151280] [] ------------------------------/eccadmin_dev/TestInfoPreview/back
+2022-09-11 09:50:39,789 DEBUG [151280] [] ------------------------------session_check_true
+2022-09-11 09:50:39,790 DEBUG [151280] [] backAction start
+2022-09-11 09:50:39,790 DEBUG [151280] [] backAction end
+2022-09-11 09:50:39,790 DEBUG [151280] [] TestInfoPreviewController end
+2022-09-11 09:50:39,790 DEBUG [151280] [] finally
+2022-09-11 09:50:39,800 DEBUG [151280] [] Request URI : /eccadmin_dev/AtReportList/index
+2022-09-11 09:50:39,801 DEBUG [151280] [] AtReportListController start
+2022-09-11 09:50:39,801 DEBUG [151280] [] controllers/AtReportListController.php: is exist
+2022-09-11 09:50:39,803 DEBUG [151280] [] AtReportListForm: is exist
+2022-09-11 09:50:39,804 DEBUG [151280] [] AtReportListForm: form value set 
+2022-09-11 09:50:39,804 DEBUG [151280] [] ------------------------------/eccadmin_dev/AtReportList/index
+2022-09-11 09:50:39,804 DEBUG [151280] [] indexAction start
+2022-09-11 09:50:39,804 DEBUG [151280] [] admin_no is 1
+2022-09-11 09:50:39,870 DEBUG [151280] [] indexAction end
+2022-09-11 09:50:39,870 DEBUG [151280] [] AtReportListController end
+2022-09-11 09:50:39,870 DEBUG [151280] [] finally
+2022-09-11 09:50:49,924 DEBUG [151243] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-09-11 09:50:49,924 DEBUG [151243] [] AtReportRegistController start
+2022-09-11 09:50:49,925 DEBUG [151243] [] controllers/AtReportRegistController.php: is exist
+2022-09-11 09:50:49,930 DEBUG [151243] [] AtReportRegistForm: is exist
+2022-09-11 09:50:49,930 DEBUG [151243] [] AtReportRegistForm: form value set 
+2022-09-11 09:50:49,930 DEBUG [151243] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-09-11 09:50:49,930 DEBUG [151243] [] ------------------------------session_check_true
+2022-09-11 09:50:49,931 DEBUG [151243] [] indexAction start
+2022-09-11 09:50:49,931 DEBUG [151243] [] admin_no is 1
+2022-09-11 09:50:49,934 DEBUG [151243] [] Array
+(
+    [0] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 002
+            [at_no] => 186
+            [offer_no] => 259
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => AT Report Speaking Course
+            [at_type_name] => コース
+        )
+
+    [1] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 001
+            [at_no] => 298
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => 2022 TOEIC Test (AT)
+            [at_type_name] => 試験
+        )
+
+    [2] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 001
+            [at_no] => 299
+            [offer_no] => 
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => AT ELCT_v1.0
+            [at_type_name] => 試験
+        )
+
+    [3] => T_AT_Report_DetailDto Object
+        (
+            [org_no] => 1
+            [at_report_no] => 4
+            [at_type] => 002
+            [at_no] => 6
+            [offer_no] => 257
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [at_report_name] => オンライン プラクティス①
+            [org_name] => ECC　新商品開発 プロジェクト
+            [org_id] => ecc
+            [test_info_name] => 2級 Writing Course 2
+            [at_type_name] => コース
+        )
+
+)
+
+2022-09-11 09:50:50,017 DEBUG [151243] [] indexAction end
+2022-09-11 09:50:50,017 DEBUG [151243] [] AtReportRegistController end
+2022-09-11 09:50:50,017 DEBUG [151243] [] finally
+2022-09-11 11:12:52,431 DEBUG [153262] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-09-11 11:12:52,432 DEBUG [153262] [] CourseContractConfirmListController start
+2022-09-11 11:12:52,432 DEBUG [153262] [] controllers/CourseContractConfirmListController.php: is exist
+2022-09-11 11:12:52,480 DEBUG [153262] [] CourseContractConfirmListForm: is exist
+2022-09-11 11:12:52,481 DEBUG [153262] [] CourseContractConfirmListForm: form value set 
+2022-09-11 11:12:52,481 DEBUG [153262] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-09-11 11:12:52,481 DEBUG [153262] [] indexAction start
+2022-09-11 11:12:52,482 DEBUG [153262] [] admin_no is 
+2022-09-11 11:12:52,482 DEBUG [153262] [] indexAction end
+2022-09-11 11:12:52,482 DEBUG [153262] [] CourseContractConfirmListController end
+2022-09-11 11:12:52,482 DEBUG [153262] [] finally
+2022-09-11 11:12:52,497 DEBUG [153262] [] Request URI : /eccadmin_dev/Error/disp
+2022-09-11 11:12:52,497 DEBUG [153262] [] ErrorController start
+2022-09-11 11:12:52,498 DEBUG [153262] [] controllers/ErrorController.php: is exist
+2022-09-11 11:12:52,498 DEBUG [153262] [] ErrorForm: is exist
+2022-09-11 11:12:52,498 DEBUG [153262] [] ErrorForm: form value set 
+2022-09-11 11:12:52,498 DEBUG [153262] [] ------------------------------/eccadmin_dev/Error/disp
+2022-09-11 11:12:52,499 DEBUG [153262] [] ------------------------------login_start_check
+2022-09-11 11:12:52,499 DEBUG [153262] [] dispAction start
+2022-09-11 11:12:52,511 DEBUG [153262] [] dispAction end
+2022-09-11 11:12:52,511 DEBUG [153262] [] ErrorController end
+2022-09-11 11:12:52,511 DEBUG [153262] [] finally
+2022-09-11 11:12:53,497 DEBUG [153262] [] Request URI : /eccadmin_dev/Login
+2022-09-11 11:12:53,497 DEBUG [153262] [] LoginController start
+2022-09-11 11:12:53,497 DEBUG [153262] [] controllers/LoginController.php: is exist
+2022-09-11 11:12:53,497 DEBUG [153262] [] LoginForm: is exist
+2022-09-11 11:12:53,498 DEBUG [153262] [] LoginForm: form value set 
+2022-09-11 11:12:53,498 DEBUG [153262] [] ------------------------------/eccadmin_dev/Login
+2022-09-11 11:12:53,498 DEBUG [153262] [] ------------------------------login_start_check
+2022-09-11 11:12:53,498 DEBUG [153262] [] indexAction start
+2022-09-11 11:12:53,512 DEBUG [153262] [] indexAction end
+2022-09-11 11:12:53,512 DEBUG [153262] [] LoginController end
+2022-09-11 11:12:53,512 DEBUG [153262] [] finally
+2022-09-11 11:12:57,155 DEBUG [153262] [] Request URI : /eccadmin_dev/Login/login
+2022-09-11 11:12:57,155 DEBUG [153262] [] LoginController start
+2022-09-11 11:12:57,156 DEBUG [153262] [] controllers/LoginController.php: is exist
+2022-09-11 11:12:57,156 DEBUG [153262] [] LoginForm: is exist
+2022-09-11 11:12:57,156 DEBUG [153262] [] LoginForm: form value set 
+2022-09-11 11:12:57,156 DEBUG [153262] [] ------------------------------/eccadmin_dev/Login/login
+2022-09-11 11:12:57,157 DEBUG [153262] [] ------------------------------login_start_check
+2022-09-11 11:12:57,157 DEBUG [153262] [] loginAction start
+2022-09-11 11:12:57,173 DEBUG [153262] [] loginAction end
+2022-09-11 11:12:57,173 DEBUG [153262] [] LoginController end
+2022-09-11 11:12:57,173 DEBUG [153262] [] finally

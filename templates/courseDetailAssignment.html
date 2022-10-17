@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>コース詳細割当</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/courseDetailAssignment.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/assignment.css"	rel="stylesheet">
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}CourseDetailAssignment/save" method="post">
+			<input type="hidden" id="course_id" value="{$form->course_id}" name="course_id"/>
+			<input type="hidden" id="page" name="page" value="{$form->page}" />
+			<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+			<input class="text" type="hidden"  name="rd_status" id="rd_status" >
+			<input type="hidden" id="entryList" name="entryList" value=""/>
+			<input type="hidden" id="back_flg" name="back_flg" value="false" />
+			<input type="hidden" id="clevel" name="clevel" value="{$form->clevel}"/>
+			<input type="hidden" id="ckbn" name="ckbn" value="{$form->ckbn}" />
+			<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+			<input type="hidden" id="search_end_period" name="search_end_period" value="{$search_end_period}"/>
+			<input type="hidden" id="search_start_period" name="search_start_period" value="{$search_start_period}"/>
+			<input type="hidden" id="search_course_name" name="search_course_name" value="{$search_course_name|escape}"/>
+			<input type="hidden" id="search_status" name="search_status" value="{$form->search_status}" />
+			<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}"/>
+			<input type="hidden" id="search_test_kbn" name="search_test_kbn" value="{$search_test_kbn}" />
+			<input type="hidden" id="search_course_level" name="search_course_level" value="{$search_course_level}" />
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div id="err_dis">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right;" class="close_icon">
+						{if !empty($error_msg)}
+							<div class="error_msg">{$error_msg}</div>
+						{else if !empty($info_msg)}
+							<div class="error_msg">{$info_msg}</div>
+						{else}
+							<div class="error_msg"></div>
+						{/if}
+					</section>
+				</div>
+				<section class="content">
+					<p>
+						><span class="title">コース / コース詳細割当</span>
+					</p>
+					<p style="text-align:right;width:100%;">
+						<input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}CourseList/search')">
+					</p>
+					<table class="testAss_tbl">
+						<tr>
+							<td class="td_two">コース名</td>
+							<td class="td_input">{$form->course_name}</td>
+						</tr>
+						<tr>
+							<td class="td_two">レベル</td>
+							 <td class="td_input">
+								{if !empty($courseLevel)}
+									{foreach $courseLevel as $value}
+										{if $value->type == $clevel}
+											<label>{$value->name}</label>
+										{/if}
+									{/foreach}
+								{/if}
+							 </td>
+						</tr>
+						<tr>
+							<td class="td_two">SW</td>
+							<td class="td_input">
+								{if !empty($testKbn)}
+									{foreach $testKbn as $value}
+										{if $value->type == $ckbn}
+											<label>{$value->name}</label>
+										{/if}
+									{/foreach}
+								{/if}
+							</td>
+						<tr>
+						<tr>
+							<td class="td_two">利用期間</td>
+							<td class="td_input">{$form->start_period} ~ {$form->end_period}</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>コース詳細名</td>
+							<td class="td_input"><input class="text" type="text"  name="course_detail_name" id="course_detail_name" maxlength="32" size="30"></td>
+						</tr>
+						<tr>
+							<td>
+								<label class="lbl_name">公開</label>
+							</td>
+							<td>
+								<label><input type="radio" name="rd_status1" value="0" id="rd_status1" />しない</label>
+								<label><input type="radio" name="rd_status1" value="1" id="rd_status1" checked/>する</label>
+							</td>
+						</tr>
+					</table>
+					<br/>
+					<div align="right" style="width:100%">
+						<input type="button" id="btn_search" name="search" title="検索" class="btn_search" alt="search" value="" style="padding-right:50px;" onclick="javascript:detailSearch();" >
+					</div>
+
+					<table class="join_header_border" id="testAss_uppertbl">
+						<thead>
+							<tr>
+								<th style="width:100px; ">番号</th>
+								<th style="width:100px; ">コース詳細番号</th>
+								<th style="width:330px; ">コース詳細名</th>
+								<th style="width:330px; ">コース詳細ローマ字</th>
+								<th style="width:220px; ">レベル</th>
+								<th style="width:220px; ">SW</th>
+								<th style="width:260px; ">利用期間</th>
+								<th style="width:50px; ">追加</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<div style="width:100%; display: block;">
+							</div>
+						</tbody>
+
+					</table>
+
+					<br>
+					<table id="testAss_lowertbl1" class="myTable join_header_border" >
+						<thead>
+							<tr>
+								<th style="width:70px; ">番号</th>
+								<th style="width:70px; ">コース詳細番号</th>
+								<th style="width:300px; ">コース詳細名</th>
+								<th style="width:300px; ">コース詳細ローマ字</th>
+								<th style="width:200px; ">レベル</th>
+								<th style="width:200px; ">SW</th>
+								<th style="width:200px; ">利用期間</th>
+								<th style="width:170px;"></th>
+								<th style="width:50px; text-align:center;">削除</th>
+							</tr>
+						</thead>
+						 {if count($addlist) == 1}
+						 <tbody>
+							{foreach $addlist as $result}
+							<tr>
+								<td style="width:150px;">{$result->rowno}</td>
+								<td style="width:150px;">{$result->course_detail_no}</td>
+								<td width="350px">{$result->course_detail_name}</td>
+								<td width="350px">{$result->course_detail_romaji}</td>
+								<td width="250px">{$result->course_level}</td>
+								<td width="250px">{$result->test_kbn}</td>
+								<td width="300px">{$result->start_period} ~ {$result->end_period}</td>
+								<td style="width:200px; text-align:center;">
+									 <button style="  background-color: Transparent;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/>
+									<button style="  background-color: Transparent;border:0px;"  disabled="disabled" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/>
+								</td>
+								<td style="width:30px; text-align:center;">
+									<a href="javascript:moveToUpperTable('{$result->rowno}')">
+									<img src="{$smarty.const.HOME_DIR}image/minus.svg" style="width:25px;height:25px;"/> </a>
+								</td>
+							</tr>
+							{/foreach}
+						</tbody>
+						{else}
+						<tbody>
+							{foreach $addlist as $key =>$result}
+							{if $key == 0}
+							<tr>
+								<td style="width:150px;">{$result->rowno}</td>
+								<td style="width:150px;">{$result->course_detail_no}</td>
+								<td width="350px">{$result->course_detail_name}</td>
+								<td width="350px">{$result->course_detail_romaji}</td>
+								<td width="250px">{$result->course_level}</td>
+								<td width="250px">{$result->test_kbn}</td>
+								<td width="300px">{$result->start_period} ~ {$result->end_period}</td>
+								<td style="width:200px; text-align:center;">
+									<button style="  background-color: Transparent;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/>
+									<button style="  background-color: Transparent;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/>
+								</td>
+								<td style="width:30px; text-align:center;">
+									<a href="javascript:moveToUpperTable('{$result->rowno}')">
+									<img src="{$smarty.const.HOME_DIR}image/minus.svg" style="width:25px;height:25px;"/> </a>
+									</td>
+							</tr>
+							{else if $key == count($addlist)-1}
+							<tr>
+								<td style="width:150px;">{$result->rowno}</td>
+								<td style="width:150px;">{$result->course_detail_no}</td>
+								<td width="350px">{$result->course_detail_name}</td>
+								<td width="350px">{$result->course_detail_romaji}</td>
+								<td width="250px">{$result->course_level}</td>
+								<td width="250px">{$result->test_kbn}</td>
+								<td width="300px">{$result->start_period} ~ {$result->end_period}</td>
+								<td style="width:200px; text-align:center;">
+									 <button style="background-color: Transparent;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/>
+								   	 <button style="background-color: Transparent;border:0px;" disabled="disabled"  onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/>
+								</td>
+								<td style="width:30px; text-align:center;">
+									<a href="javascript:moveToUpperTable('{$result->rowno}')">
+									<img src="{$smarty.const.HOME_DIR}image/minus.svg" style="width:25px;height:25px;"/> </a>
+								</td>
+							</tr>
+							{else}
+							<tr>
+								<td style="width:150px;">{$result->rowno}</td>
+								<td style="width:150px;">{$result->course_detail_no}</td>
+								<td width="350px">{$result->course_detail_name}</td>
+								<td width="350px">{$result->course_detail_romaji}</td>
+								<td width="250px">{$result->course_level}</td>
+								<td width="250px">{$result->test_kbn}</td>
+								<td width="300px">{$result->start_period} ~ {$result->end_period}</td>
+								<td style="width:200px; text-align:center;">
+									 <button style="background-color: Transparent;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/>
+									 <button style="background-color: Transparent;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/>
+								</td>
+								<td style="width:30px; text-align:center;">
+									<a href="javascript:moveToUpperTable('{$result->rowno}')">
+									<img src="{$smarty.const.HOME_DIR}image/minus.svg" style="width:25px;height:25px;"/> </a>
+									</td>
+							</tr>
+							{/if}
+							{/foreach}
+						</tbody>
+						{/if}
+					</table>
+
+					<table class="btn_div" style="text-align:right;width:100%;">
+						<tr>
+							<td>
+								<input type="button" value="" class="btn_resetbtn" title="リセット"
+								onclick="javascript:cancel('{$form->course_detail_no}','{$smarty.const.HOME_DIR}CourseDetailAssignment/index');">
+								<input type="button" name="insert" value="" class="btn_insert" title="登録"
+								onclick="javascript:insertCourseDetailAssignmentData();" />
+							</td>
+						</tr>
+					</table>
+				</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+
+		<script>
+			{literal}
+
+			//リセット
+			function cancel(course_detail_no, action){
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#course_detail_no").val(course_detail_no);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#main_form").submit();
+			}
+
+			//戻るボタン
+			function doBack(action) {
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#search_course_name").val(document.getElementById('search_course_name').value);
+				$("#search_page").val(document.getElementById('search_page').value);
+				$("#back_flg").val("true");
+
+				$("#main_form").submit();
+			}
+			{/literal}
+		</script>
+	</body>
+</html>

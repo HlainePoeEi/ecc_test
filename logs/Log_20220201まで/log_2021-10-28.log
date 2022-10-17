@@ -1,0 +1,60 @@
+2021-10-28 15:48:48,070 DEBUG [99641] [] Request URI : /eccadmin_dev/Login
+2021-10-28 15:48:48,090 DEBUG [99641] [] LoginController start
+2021-10-28 15:48:48,090 DEBUG [99641] [] controllers/LoginController.php: is exist
+2021-10-28 15:48:48,090 DEBUG [99641] [] LoginForm: is exist
+2021-10-28 15:48:48,091 DEBUG [99641] [] LoginForm: form value set 
+2021-10-28 15:48:48,091 DEBUG [99641] [] ------------------------------/eccadmin_dev/Login
+2021-10-28 15:48:48,091 DEBUG [99641] [] ------------------------------login_start_check
+2021-10-28 15:48:48,091 DEBUG [99641] [] indexAction start
+2021-10-28 15:48:48,135 DEBUG [99641] [] indexAction end
+2021-10-28 15:48:48,135 DEBUG [99641] [] LoginController end
+2021-10-28 15:48:48,136 DEBUG [99641] [] finally
+2021-10-28 15:48:51,020 DEBUG [99711] [] Request URI : /eccadmin_dev/Login/login
+2021-10-28 15:48:51,020 DEBUG [99711] [] LoginController start
+2021-10-28 15:48:51,020 DEBUG [99711] [] controllers/LoginController.php: is exist
+2021-10-28 15:48:51,021 DEBUG [99711] [] LoginForm: is exist
+2021-10-28 15:48:51,021 DEBUG [99711] [] LoginForm: form value set 
+2021-10-28 15:48:51,021 DEBUG [99711] [] ------------------------------/eccadmin_dev/Login/login
+2021-10-28 15:48:51,021 DEBUG [99711] [] ------------------------------login_start_check
+2021-10-28 15:48:51,022 DEBUG [99711] [] loginAction start
+2021-10-28 15:48:51,325 DEBUG [99711] [] loginAction end
+2021-10-28 15:48:51,325 DEBUG [99711] [] LoginController end
+2021-10-28 15:48:51,325 DEBUG [99711] [] finally
+2021-10-28 15:48:51,349 DEBUG [99711] [] Request URI : /eccadmin_dev/Menu
+2021-10-28 15:48:51,349 DEBUG [99711] [] MenuController start
+2021-10-28 15:48:51,349 DEBUG [99711] [] controllers/MenuController.php: is exist
+2021-10-28 15:48:51,349 DEBUG [99711] [] MenuForm: is exist
+2021-10-28 15:48:51,349 DEBUG [99711] [] MenuForm: form value set 
+2021-10-28 15:48:51,350 DEBUG [99711] [] ------------------------------/eccadmin_dev/Menu
+2021-10-28 15:48:51,350 DEBUG [99711] [] ------------------------------login_start_check
+2021-10-28 15:48:51,350 DEBUG [99711] [] indexAction start
+2021-10-28 15:48:51,350 DEBUG [99711] [] admin_no is 1
+2021-10-28 15:48:51,375 DEBUG [99711] [] indexAction end
+2021-10-28 15:48:51,375 DEBUG [99711] [] MenuController end
+2021-10-28 15:48:51,375 DEBUG [99711] [] finally
+2021-10-28 15:48:54,960 DEBUG [99712] [] Request URI : /eccadmin_dev/QuizInfoList
+2021-10-28 15:48:54,961 DEBUG [99712] [] QuizInfoListController start
+2021-10-28 15:48:54,961 DEBUG [99712] [] controllers/QuizInfoListController.php: is exist
+2021-10-28 15:48:54,968 DEBUG [99712] [] QuizInfoListForm: is exist
+2021-10-28 15:48:54,968 DEBUG [99712] [] QuizInfoListForm: form value set 
+2021-10-28 15:48:54,969 DEBUG [99712] [] ------------------------------/eccadmin_dev/QuizInfoList
+2021-10-28 15:48:54,969 DEBUG [99712] [] indexAction start
+2021-10-28 15:48:54,969 DEBUG [99712] [] admin_no is 1
+2021-10-28 15:48:54,969 DEBUG [99712] [] 
+2021-10-28 15:48:55,075 DEBUG [99712] [] indexAction end
+2021-10-28 15:48:55,075 DEBUG [99712] [] QuizInfoListController end
+2021-10-28 15:48:55,076 DEBUG [99712] [] finally
+2021-10-28 15:48:57,828 DEBUG [99711] [] Request URI : /eccadmin_dev/QuizInfoRegist/index
+2021-10-28 15:48:57,829 DEBUG [99711] [] QuizInfoRegistController start
+2021-10-28 15:48:57,829 DEBUG [99711] [] controllers/QuizInfoRegistController.php: is exist
+2021-10-28 15:48:57,832 DEBUG [99711] [] QuizInfoRegistForm: is exist
+2021-10-28 15:48:57,833 DEBUG [99711] [] QuizInfoRegistForm: form value set 
+2021-10-28 15:48:57,833 DEBUG [99711] [] ------------------------------/eccadmin_dev/QuizInfoRegist/index
+2021-10-28 15:48:57,833 DEBUG [99711] [] ------------------------------session_check_true
+2021-10-28 15:48:57,833 DEBUG [99711] [] indexAction start
+2021-10-28 15:48:57,834 DEBUG [99711] [] admin_no is 1
+2021-10-28 15:48:57,834 DEBUG [99711] [] org_no : 
+2021-10-28 15:48:57,837 DEBUG [99711] [] quiz_info_no
+2021-10-28 15:48:57,952 DEBUG [99711] [] indexAction end
+2021-10-28 15:48:57,952 DEBUG [99711] [] QuizInfoRegistController end
+2021-10-28 15:48:57,952 DEBUG [99711] [] finally

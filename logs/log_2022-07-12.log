@@ -1,0 +1,292 @@
+2022-07-12 12:04:09,278 DEBUG [70225] [] Request URI : /eccadmin_dev/Login
+2022-07-12 12:04:09,313 DEBUG [70225] [] LoginController start
+2022-07-12 12:04:09,314 DEBUG [70225] [] controllers/LoginController.php: is exist
+2022-07-12 12:04:09,316 DEBUG [70225] [] LoginForm: is exist
+2022-07-12 12:04:09,317 DEBUG [70225] [] LoginForm: form value set 
+2022-07-12 12:04:09,317 DEBUG [70225] [] ------------------------------/eccadmin_dev/Login
+2022-07-12 12:04:09,317 DEBUG [70225] [] ------------------------------login_start_check
+2022-07-12 12:04:09,317 DEBUG [70225] [] indexAction start
+2022-07-12 12:04:09,377 DEBUG [70225] [] indexAction end
+2022-07-12 12:04:09,377 DEBUG [70225] [] LoginController end
+2022-07-12 12:04:09,377 DEBUG [70225] [] finally
+2022-07-12 12:04:13,603 DEBUG [70225] [] Request URI : /eccadmin_dev/Login/login
+2022-07-12 12:04:13,608 DEBUG [70225] [] LoginController start
+2022-07-12 12:04:13,608 DEBUG [70225] [] controllers/LoginController.php: is exist
+2022-07-12 12:04:13,610 DEBUG [70225] [] LoginForm: is exist
+2022-07-12 12:04:13,611 DEBUG [70225] [] LoginForm: form value set 
+2022-07-12 12:04:13,611 DEBUG [70225] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-12 12:04:13,611 DEBUG [70225] [] ------------------------------login_start_check
+2022-07-12 12:04:13,611 DEBUG [70225] [] loginAction start
+2022-07-12 12:04:13,909 DEBUG [70225] [] loginAction end
+2022-07-12 12:04:13,909 DEBUG [70225] [] LoginController end
+2022-07-12 12:04:13,909 DEBUG [70225] [] finally
+2022-07-12 12:04:13,934 DEBUG [70225] [] Request URI : /eccadmin_dev/Menu
+2022-07-12 12:04:13,937 DEBUG [70225] [] MenuController start
+2022-07-12 12:04:13,937 DEBUG [70225] [] controllers/MenuController.php: is exist
+2022-07-12 12:04:13,939 DEBUG [70225] [] MenuForm: is exist
+2022-07-12 12:04:13,939 DEBUG [70225] [] MenuForm: form value set 
+2022-07-12 12:04:13,939 DEBUG [70225] [] ------------------------------/eccadmin_dev/Menu
+2022-07-12 12:04:13,939 DEBUG [70225] [] ------------------------------login_start_check
+2022-07-12 12:04:13,939 DEBUG [70225] [] indexAction start
+2022-07-12 12:04:13,939 DEBUG [70225] [] admin_no is 1
+2022-07-12 12:04:13,993 DEBUG [70225] [] indexAction end
+2022-07-12 12:04:13,993 DEBUG [70225] [] MenuController end
+2022-07-12 12:04:13,993 DEBUG [70225] [] finally
+2022-07-12 12:04:19,011 DEBUG [69478] [] Request URI : /eccadmin_dev/WordBookList
+2022-07-12 12:04:19,016 DEBUG [69478] [] WordBookListController start
+2022-07-12 12:04:19,016 DEBUG [69478] [] controllers/WordBookListController.php: is exist
+2022-07-12 12:04:19,019 DEBUG [69478] [] WordBookListForm: is exist
+2022-07-12 12:04:19,020 DEBUG [69478] [] WordBookListForm: form value set 
+2022-07-12 12:04:19,020 DEBUG [69478] [] ------------------------------/eccadmin_dev/WordBookList
+2022-07-12 12:04:19,020 DEBUG [69478] [] indexAction start
+2022-07-12 12:04:19,021 DEBUG [69478] [] admin_no is 1
+2022-07-12 12:04:19,122 DEBUG [69478] [] indexAction end
+2022-07-12 12:04:19,122 DEBUG [69478] [] WordBookListController end
+2022-07-12 12:04:19,122 DEBUG [69478] [] finally
+2022-07-12 12:04:24,693 DEBUG [70245] [] Request URI : /eccadmin_dev/WordSort/index
+2022-07-12 12:04:24,702 DEBUG [70245] [] WordSortController start
+2022-07-12 12:04:24,702 DEBUG [70245] [] controllers/WordSortController.php: is exist
+2022-07-12 12:04:24,706 DEBUG [70245] [] WordSortForm: is exist
+2022-07-12 12:04:24,706 DEBUG [70245] [] WordSortForm: form value set 
+2022-07-12 12:04:24,707 DEBUG [70245] [] ------------------------------/eccadmin_dev/WordSort/index
+2022-07-12 12:04:24,707 DEBUG [70245] [] ------------------------------session_check_true
+2022-07-12 12:04:24,707 DEBUG [70245] [] indexAction start
+2022-07-12 12:04:24,707 DEBUG [70245] [] admin_no is 1
+2022-07-12 12:04:24,815 DEBUG [70245] [] indexAction end
+2022-07-12 12:04:24,815 DEBUG [70245] [] WordSortController end
+2022-07-12 12:04:24,815 DEBUG [70245] [] finally
+2022-07-12 12:04:26,201 DEBUG [70269] [] Request URI : /eccadmin_dev/WordSort/save
+2022-07-12 12:04:26,209 DEBUG [70269] [] WordSortController start
+2022-07-12 12:04:26,210 DEBUG [70269] [] controllers/WordSortController.php: is exist
+2022-07-12 12:04:26,213 DEBUG [70269] [] WordSortForm: is exist
+2022-07-12 12:04:26,213 DEBUG [70269] [] WordSortForm: form value set 
+2022-07-12 12:04:26,214 DEBUG [70269] [] ------------------------------/eccadmin_dev/WordSort/save
+2022-07-12 12:04:26,214 DEBUG [70269] [] ------------------------------session_check_true
+2022-07-12 12:04:26,214 DEBUG [70269] [] saveAction start
+2022-07-12 12:04:26,214 DEBUG [70269] [] admin_no is 1
+2022-07-12 12:04:26,224 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,225 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,226 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,227 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,228 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,230 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,231 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,232 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,234 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,235 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,236 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,237 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,238 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,240 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,241 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,242 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,243 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,245 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,246 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,247 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,248 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,249 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,251 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,252 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,254 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,255 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,256 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,257 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,258 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,260 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,261 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,263 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,264 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,265 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,266 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,267 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,269 DEBUG [70269] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:04:26,278 DEBUG [70269] [] rollback
+2022-07-12 12:04:26,278 ERROR [70269] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'creater_id' cannot be null' in /var/www/html/eccadmin_dev/dao/BaseDao.php:428
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(428): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/service/WordBookWordService.php(129): BaseDao->bulkInsertWithPdo(Array, Object(PDO))
+#2 /var/www/html/eccadmin_dev/controllers/WordSortController.php(165): WordBookWordService->insertWordBookSetList(Array, Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/WordSortController.php(108): WordSortController->resetWordbookSetWordData('1', '22')
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): WordSortController->saveAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2022-07-12 12:04:26,279 DEBUG [70269] [] finally
+2022-07-12 12:04:26,302 DEBUG [70269] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-12 12:04:26,307 DEBUG [70269] [] ErrorController start
+2022-07-12 12:04:26,307 DEBUG [70269] [] controllers/ErrorController.php: is exist
+2022-07-12 12:04:26,307 DEBUG [70269] [] ErrorForm: is exist
+2022-07-12 12:04:26,307 DEBUG [70269] [] ErrorForm: form value set 
+2022-07-12 12:04:26,308 DEBUG [70269] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-12 12:04:26,308 DEBUG [70269] [] ------------------------------login_start_check
+2022-07-12 12:04:26,308 DEBUG [70269] [] dispAction start
+2022-07-12 12:04:26,331 DEBUG [70269] [] dispAction end
+2022-07-12 12:04:26,331 DEBUG [70269] [] ErrorController end
+2022-07-12 12:04:26,331 DEBUG [70269] [] finally
+2022-07-12 12:05:35,332 DEBUG [69619] [] Request URI : /eccadmin_dev/Login
+2022-07-12 12:05:35,337 DEBUG [69619] [] LoginController start
+2022-07-12 12:05:35,337 DEBUG [69619] [] controllers/LoginController.php: is exist
+2022-07-12 12:05:35,340 DEBUG [69619] [] LoginForm: is exist
+2022-07-12 12:05:35,340 DEBUG [69619] [] LoginForm: form value set 
+2022-07-12 12:05:35,341 DEBUG [69619] [] ------------------------------/eccadmin_dev/Login
+2022-07-12 12:05:35,341 DEBUG [69619] [] ------------------------------login_start_check
+2022-07-12 12:05:35,341 DEBUG [69619] [] indexAction start
+2022-07-12 12:05:35,368 DEBUG [69619] [] indexAction end
+2022-07-12 12:05:35,368 DEBUG [69619] [] LoginController end
+2022-07-12 12:05:35,368 DEBUG [69619] [] finally
+2022-07-12 12:05:38,305 DEBUG [69619] [] Request URI : /eccadmin_dev/Login/login
+2022-07-12 12:05:38,310 DEBUG [69619] [] LoginController start
+2022-07-12 12:05:38,310 DEBUG [69619] [] controllers/LoginController.php: is exist
+2022-07-12 12:05:38,313 DEBUG [69619] [] LoginForm: is exist
+2022-07-12 12:05:38,313 DEBUG [69619] [] LoginForm: form value set 
+2022-07-12 12:05:38,314 DEBUG [69619] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-12 12:05:38,314 DEBUG [69619] [] ------------------------------login_start_check
+2022-07-12 12:05:38,314 DEBUG [69619] [] loginAction start
+2022-07-12 12:05:38,610 DEBUG [69619] [] loginAction end
+2022-07-12 12:05:38,610 DEBUG [69619] [] LoginController end
+2022-07-12 12:05:38,611 DEBUG [69619] [] finally
+2022-07-12 12:05:38,664 DEBUG [69909] [] Request URI : /eccadmin_dev/Menu
+2022-07-12 12:05:38,669 DEBUG [69909] [] MenuController start
+2022-07-12 12:05:38,669 DEBUG [69909] [] controllers/MenuController.php: is exist
+2022-07-12 12:05:38,672 DEBUG [69909] [] MenuForm: is exist
+2022-07-12 12:05:38,672 DEBUG [69909] [] MenuForm: form value set 
+2022-07-12 12:05:38,673 DEBUG [69909] [] ------------------------------/eccadmin_dev/Menu
+2022-07-12 12:05:38,673 DEBUG [69909] [] ------------------------------login_start_check
+2022-07-12 12:05:38,673 DEBUG [69909] [] indexAction start
+2022-07-12 12:05:38,673 DEBUG [69909] [] admin_no is 1
+2022-07-12 12:05:38,734 DEBUG [69909] [] indexAction end
+2022-07-12 12:05:38,734 DEBUG [69909] [] MenuController end
+2022-07-12 12:05:38,734 DEBUG [69909] [] finally
+2022-07-12 12:05:49,778 DEBUG [69478] [] Request URI : /eccadmin_dev/WordBookList
+2022-07-12 12:05:49,783 DEBUG [69478] [] WordBookListController start
+2022-07-12 12:05:49,783 DEBUG [69478] [] controllers/WordBookListController.php: is exist
+2022-07-12 12:05:49,786 DEBUG [69478] [] WordBookListForm: is exist
+2022-07-12 12:05:49,786 DEBUG [69478] [] WordBookListForm: form value set 
+2022-07-12 12:05:49,787 DEBUG [69478] [] ------------------------------/eccadmin_dev/WordBookList
+2022-07-12 12:05:49,787 DEBUG [69478] [] indexAction start
+2022-07-12 12:05:49,787 DEBUG [69478] [] admin_no is 1
+2022-07-12 12:05:49,864 DEBUG [69478] [] indexAction end
+2022-07-12 12:05:49,864 DEBUG [69478] [] WordBookListController end
+2022-07-12 12:05:49,864 DEBUG [69478] [] finally
+2022-07-12 12:05:52,309 DEBUG [69478] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-07-12 12:05:52,314 DEBUG [69478] [] WordBookWordController start
+2022-07-12 12:05:52,314 DEBUG [69478] [] controllers/WordBookWordController.php: is exist
+2022-07-12 12:05:52,318 DEBUG [69478] [] WordBookWordForm: is exist
+2022-07-12 12:05:52,319 DEBUG [69478] [] WordBookWordForm: form value set 
+2022-07-12 12:05:52,319 DEBUG [69478] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-07-12 12:05:52,319 DEBUG [69478] [] ------------------------------session_check_true
+2022-07-12 12:05:52,319 DEBUG [69478] [] indexAction start
+2022-07-12 12:05:52,319 DEBUG [69478] [] admin_no is 1
+2022-07-12 12:05:52,320 DEBUG [69478] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-07-12 12:05:52,459 DEBUG [69478] [] indexAction end
+2022-07-12 12:05:52,459 DEBUG [69478] [] WordBookWordController end
+2022-07-12 12:05:52,459 DEBUG [69478] [] finally
+2022-07-12 12:05:54,229 DEBUG [70195] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-07-12 12:05:54,234 DEBUG [70195] [] WordBookWordController start
+2022-07-12 12:05:54,234 DEBUG [70195] [] controllers/WordBookWordController.php: is exist
+2022-07-12 12:05:54,239 DEBUG [70195] [] WordBookWordForm: is exist
+2022-07-12 12:05:54,240 DEBUG [70195] [] WordBookWordForm: form value set 
+2022-07-12 12:05:54,240 DEBUG [70195] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-07-12 12:05:54,240 DEBUG [70195] [] ------------------------------session_check_true
+2022-07-12 12:05:54,241 DEBUG [70195] [] vocubRegistAction start
+2022-07-12 12:05:54,243 DEBUG [70195] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:54,244 DEBUG [70195] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:54,244 DEBUG [70195] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:54,250 DEBUG [70195] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-07-12 12:05:54,330 DEBUG [70195] [] vocubRegistAction end
+2022-07-12 12:05:54,330 DEBUG [70195] [] WordBookWordController end
+2022-07-12 12:05:54,331 DEBUG [70195] [] finally
+2022-07-12 12:05:55,565 DEBUG [70245] [] Request URI : /eccadmin_dev/WordBookWord/back
+2022-07-12 12:05:55,570 DEBUG [70245] [] WordBookWordController start
+2022-07-12 12:05:55,570 DEBUG [70245] [] controllers/WordBookWordController.php: is exist
+2022-07-12 12:05:55,575 DEBUG [70245] [] WordBookWordForm: is exist
+2022-07-12 12:05:55,576 DEBUG [70245] [] WordBookWordForm: form value set 
+2022-07-12 12:05:55,576 DEBUG [70245] [] ------------------------------/eccadmin_dev/WordBookWord/back
+2022-07-12 12:05:55,576 DEBUG [70245] [] ------------------------------session_check_true
+2022-07-12 12:05:55,576 DEBUG [70245] [] backAction start
+2022-07-12 12:05:55,576 DEBUG [70245] [] backAction end
+2022-07-12 12:05:55,576 DEBUG [70245] [] WordBookWordController end
+2022-07-12 12:05:55,577 DEBUG [70245] [] finally
+2022-07-12 12:05:55,607 DEBUG [70245] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-07-12 12:05:55,613 DEBUG [70245] [] WordBookListController start
+2022-07-12 12:05:55,613 DEBUG [70245] [] controllers/WordBookListController.php: is exist
+2022-07-12 12:05:55,616 DEBUG [70245] [] WordBookListForm: is exist
+2022-07-12 12:05:55,616 DEBUG [70245] [] WordBookListForm: form value set 
+2022-07-12 12:05:55,617 DEBUG [70245] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-07-12 12:05:55,617 DEBUG [70245] [] SearchAction start
+2022-07-12 12:05:55,617 DEBUG [70245] [] admin_no is 1
+2022-07-12 12:05:55,694 DEBUG [70245] [] SearchAction end
+2022-07-12 12:05:55,694 DEBUG [70245] [] WordBookListController end
+2022-07-12 12:05:55,694 DEBUG [70245] [] finally
+2022-07-12 12:05:58,205 DEBUG [70245] [] Request URI : /eccadmin_dev/WordSort/index
+2022-07-12 12:05:58,211 DEBUG [70245] [] WordSortController start
+2022-07-12 12:05:58,211 DEBUG [70245] [] controllers/WordSortController.php: is exist
+2022-07-12 12:05:58,214 DEBUG [70245] [] WordSortForm: is exist
+2022-07-12 12:05:58,215 DEBUG [70245] [] WordSortForm: form value set 
+2022-07-12 12:05:58,215 DEBUG [70245] [] ------------------------------/eccadmin_dev/WordSort/index
+2022-07-12 12:05:58,215 DEBUG [70245] [] ------------------------------session_check_true
+2022-07-12 12:05:58,215 DEBUG [70245] [] indexAction start
+2022-07-12 12:05:58,215 DEBUG [70245] [] admin_no is 1
+2022-07-12 12:05:58,296 DEBUG [70245] [] indexAction end
+2022-07-12 12:05:58,296 DEBUG [70245] [] WordSortController end
+2022-07-12 12:05:58,297 DEBUG [70245] [] finally
+2022-07-12 12:05:59,644 DEBUG [70245] [] Request URI : /eccadmin_dev/WordSort/save
+2022-07-12 12:05:59,649 DEBUG [70245] [] WordSortController start
+2022-07-12 12:05:59,649 DEBUG [70245] [] controllers/WordSortController.php: is exist
+2022-07-12 12:05:59,652 DEBUG [70245] [] WordSortForm: is exist
+2022-07-12 12:05:59,653 DEBUG [70245] [] WordSortForm: form value set 
+2022-07-12 12:05:59,653 DEBUG [70245] [] ------------------------------/eccadmin_dev/WordSort/save
+2022-07-12 12:05:59,653 DEBUG [70245] [] ------------------------------session_check_true
+2022-07-12 12:05:59,653 DEBUG [70245] [] saveAction start
+2022-07-12 12:05:59,653 DEBUG [70245] [] admin_no is 1
+2022-07-12 12:05:59,656 DEBUG [70245] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:59,658 DEBUG [70245] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:59,659 DEBUG [70245] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-07-12 12:05:59,725 DEBUG [70245] [] saveAction end
+2022-07-12 12:05:59,725 DEBUG [70245] [] WordSortController end
+2022-07-12 12:05:59,726 DEBUG [70245] [] finally
+2022-07-12 12:08:54,026 DEBUG [70281] [] Request URI : /eccadmin_dev/WordSort/back
+2022-07-12 12:08:54,035 DEBUG [70281] [] WordSortController start
+2022-07-12 12:08:54,035 DEBUG [70281] [] controllers/WordSortController.php: is exist
+2022-07-12 12:08:54,038 DEBUG [70281] [] WordSortForm: is exist
+2022-07-12 12:08:54,038 DEBUG [70281] [] WordSortForm: form value set 
+2022-07-12 12:08:54,039 DEBUG [70281] [] ------------------------------/eccadmin_dev/WordSort/back
+2022-07-12 12:08:54,039 DEBUG [70281] [] ------------------------------session_check_true
+2022-07-12 12:08:54,039 DEBUG [70281] [] backAction start
+2022-07-12 12:08:54,039 DEBUG [70281] [] backAction end
+2022-07-12 12:08:54,039 DEBUG [70281] [] WordSortController end
+2022-07-12 12:08:54,040 DEBUG [70281] [] finally
+2022-07-12 12:08:54,063 DEBUG [70281] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-07-12 12:08:54,067 DEBUG [70281] [] WordBookListController start
+2022-07-12 12:08:54,067 DEBUG [70281] [] controllers/WordBookListController.php: is exist
+2022-07-12 12:08:54,070 DEBUG [70281] [] WordBookListForm: is exist
+2022-07-12 12:08:54,070 DEBUG [70281] [] WordBookListForm: form value set 
+2022-07-12 12:08:54,070 DEBUG [70281] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-07-12 12:08:54,070 DEBUG [70281] [] SearchAction start
+2022-07-12 12:08:54,070 DEBUG [70281] [] admin_no is 1
+2022-07-12 12:08:54,143 DEBUG [70281] [] SearchAction end
+2022-07-12 12:08:54,143 DEBUG [70281] [] WordBookListController end
+2022-07-12 12:08:54,143 DEBUG [70281] [] finally
+2022-07-12 12:10:43,485 DEBUG [70269] [] Request URI : /eccadmin_dev/Login/logout
+2022-07-12 12:10:43,490 DEBUG [70269] [] LoginController start
+2022-07-12 12:10:43,490 DEBUG [70269] [] controllers/LoginController.php: is exist
+2022-07-12 12:10:43,492 DEBUG [70269] [] LoginForm: is exist
+2022-07-12 12:10:43,493 DEBUG [70269] [] LoginForm: form value set 
+2022-07-12 12:10:43,493 DEBUG [70269] [] ------------------------------/eccadmin_dev/Login/logout
+2022-07-12 12:10:43,493 DEBUG [70269] [] ------------------------------login_start_check
+2022-07-12 12:10:43,493 DEBUG [70269] [] logoutAction start
+2022-07-12 12:10:43,494 DEBUG [70269] [] logoutAction end
+2022-07-12 12:10:43,494 DEBUG [70269] [] LoginController end
+2022-07-12 12:10:43,494 DEBUG [70269] [] finally
+2022-07-12 12:10:43,521 DEBUG [70269] [] Request URI : /eccadmin_dev/Login
+2022-07-12 12:10:43,525 DEBUG [70269] [] LoginController start
+2022-07-12 12:10:43,525 DEBUG [70269] [] controllers/LoginController.php: is exist
+2022-07-12 12:10:43,528 DEBUG [70269] [] LoginForm: is exist
+2022-07-12 12:10:43,528 DEBUG [70269] [] LoginForm: form value set 
+2022-07-12 12:10:43,528 DEBUG [70269] [] ------------------------------/eccadmin_dev/Login
+2022-07-12 12:10:43,529 DEBUG [70269] [] ------------------------------login_start_check
+2022-07-12 12:10:43,529 DEBUG [70269] [] indexAction start
+2022-07-12 12:10:43,554 DEBUG [70269] [] indexAction end
+2022-07-12 12:10:43,554 DEBUG [70269] [] LoginController end
+2022-07-12 12:10:43,555 DEBUG [70269] [] finally

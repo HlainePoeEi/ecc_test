@@ -1,0 +1,2138 @@
+2022-09-16 18:18:22,973 DEBUG [43800] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:18:22,978 DEBUG [43800] [] ExcelContract2SkillListController start
+2022-09-16 18:18:22,978 DEBUG [43800] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:18:22,989 DEBUG [43800] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:18:22,989 DEBUG [43800] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:18:22,990 DEBUG [43800] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:18:22,990 DEBUG [43800] [] indexAction start
+2022-09-16 18:18:22,990 DEBUG [43800] [] admin_no is 1
+2022-09-16 18:18:23,067 DEBUG [43800] [] indexAction end
+2022-09-16 18:18:23,067 DEBUG [43800] [] ExcelContract2SkillListController end
+2022-09-16 18:18:23,067 DEBUG [43800] [] finally
+2022-09-16 18:18:29,052 DEBUG [43752] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:18:29,057 DEBUG [43752] [] ExcelContract2SkillListController start
+2022-09-16 18:18:29,057 DEBUG [43752] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:18:29,068 DEBUG [43752] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:18:29,068 DEBUG [43752] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:18:29,068 DEBUG [43752] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:18:29,069 DEBUG [43752] [] showAction start
+2022-09-16 18:18:29,069 DEBUG [43752] [] admin_no is 1
+2022-09-16 18:18:29,069 DEBUG [43752] [] showAction end
+2022-09-16 18:18:29,069 DEBUG [43752] [] ExcelContract2SkillListController end
+2022-09-16 18:18:29,069 DEBUG [43752] [] finally
+2022-09-16 18:18:29,095 DEBUG [43752] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:18:29,099 DEBUG [43752] [] ExcelContract2SkillListController start
+2022-09-16 18:18:29,099 DEBUG [43752] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:18:29,107 DEBUG [43752] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:18:29,108 DEBUG [43752] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:18:29,108 DEBUG [43752] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:18:29,108 DEBUG [43752] [] viewExcelListAction start
+2022-09-16 18:18:29,342 DEBUG [43752] [] viewExcelListAction end
+2022-09-16 18:18:29,342 DEBUG [43752] [] ExcelContract2SkillListController end
+2022-09-16 18:18:29,342 DEBUG [43752] [] finally
+2022-09-16 18:18:31,296 DEBUG [43752] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:18:31,301 DEBUG [43752] [] ExcelContract2SkillListController start
+2022-09-16 18:18:31,301 DEBUG [43752] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:18:31,312 DEBUG [43752] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:18:31,312 DEBUG [43752] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:18:31,313 DEBUG [43752] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:18:31,313 DEBUG [43752] [] isValidAction start
+2022-09-16 18:18:31,313 DEBUG [43752] [] admin_no is 1
+2022-09-16 18:18:31,313 DEBUG [43752] [] admin_no is 1
+2022-09-16 18:18:31,314 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,315 DEBUG [43752] [] 
+2022-09-16 18:18:31,315 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,316 DEBUG [43752] [] 
+2022-09-16 18:18:31,316 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,317 DEBUG [43752] [] 
+2022-09-16 18:18:31,317 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,318 DEBUG [43752] [] 
+2022-09-16 18:18:31,318 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,319 DEBUG [43752] [] 
+2022-09-16 18:18:31,319 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,320 DEBUG [43752] [] 
+2022-09-16 18:18:31,320 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,321 DEBUG [43752] [] 
+2022-09-16 18:18:31,321 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,322 DEBUG [43752] [] 
+2022-09-16 18:18:31,322 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,323 DEBUG [43752] [] 
+2022-09-16 18:18:31,323 DEBUG [43752] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:18:31,324 DEBUG [43752] [] 
+2022-09-16 18:18:31,592 DEBUG [43752] [] isValidAction end
+2022-09-16 18:18:31,592 DEBUG [43752] [] ExcelContract2SkillListController end
+2022-09-16 18:18:31,592 DEBUG [43752] [] finally
+2022-09-16 18:19:01,512 DEBUG [43951] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:19:01,520 DEBUG [43951] [] ExcelContract2SkillListController start
+2022-09-16 18:19:01,520 DEBUG [43951] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:01,532 DEBUG [43951] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:01,532 DEBUG [43951] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:01,532 DEBUG [43951] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:19:01,533 DEBUG [43951] [] indexAction start
+2022-09-16 18:19:01,533 DEBUG [43951] [] admin_no is 1
+2022-09-16 18:19:01,614 DEBUG [43951] [] indexAction end
+2022-09-16 18:19:01,614 DEBUG [43951] [] ExcelContract2SkillListController end
+2022-09-16 18:19:01,614 DEBUG [43951] [] finally
+2022-09-16 18:19:07,017 DEBUG [43914] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:19:07,022 DEBUG [43914] [] ExcelContract2SkillListController start
+2022-09-16 18:19:07,022 DEBUG [43914] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:07,034 DEBUG [43914] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:07,034 DEBUG [43914] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:07,035 DEBUG [43914] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:19:07,035 DEBUG [43914] [] showAction start
+2022-09-16 18:19:07,035 DEBUG [43914] [] admin_no is 1
+2022-09-16 18:19:07,036 DEBUG [43914] [] showAction end
+2022-09-16 18:19:07,036 DEBUG [43914] [] ExcelContract2SkillListController end
+2022-09-16 18:19:07,036 DEBUG [43914] [] finally
+2022-09-16 18:19:07,065 DEBUG [43914] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:19:07,069 DEBUG [43914] [] ExcelContract2SkillListController start
+2022-09-16 18:19:07,069 DEBUG [43914] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:07,079 DEBUG [43914] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:07,080 DEBUG [43914] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:07,080 DEBUG [43914] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:19:07,080 DEBUG [43914] [] viewExcelListAction start
+2022-09-16 18:19:07,350 DEBUG [43914] [] viewExcelListAction end
+2022-09-16 18:19:07,350 DEBUG [43914] [] ExcelContract2SkillListController end
+2022-09-16 18:19:07,351 DEBUG [43914] [] finally
+2022-09-16 18:19:09,336 DEBUG [43914] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:19:09,342 DEBUG [43914] [] ExcelContract2SkillListController start
+2022-09-16 18:19:09,342 DEBUG [43914] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:09,353 DEBUG [43914] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:09,354 DEBUG [43914] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:09,354 DEBUG [43914] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:19:09,354 DEBUG [43914] [] isValidAction start
+2022-09-16 18:19:09,354 DEBUG [43914] [] admin_no is 1
+2022-09-16 18:19:09,354 DEBUG [43914] [] admin_no is 1
+2022-09-16 18:19:09,355 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,356 DEBUG [43914] [] 
+2022-09-16 18:19:09,356 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,357 DEBUG [43914] [] 
+2022-09-16 18:19:09,357 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,358 DEBUG [43914] [] 
+2022-09-16 18:19:09,359 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,359 DEBUG [43914] [] 
+2022-09-16 18:19:09,359 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,360 DEBUG [43914] [] 
+2022-09-16 18:19:09,360 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,361 DEBUG [43914] [] 
+2022-09-16 18:19:09,361 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,362 DEBUG [43914] [] 
+2022-09-16 18:19:09,362 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,363 DEBUG [43914] [] 
+2022-09-16 18:19:09,363 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,364 DEBUG [43914] [] 
+2022-09-16 18:19:09,364 DEBUG [43914] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:09,365 DEBUG [43914] [] 
+2022-09-16 18:19:09,625 DEBUG [43914] [] isValidAction end
+2022-09-16 18:19:09,625 DEBUG [43914] [] ExcelContract2SkillListController end
+2022-09-16 18:19:09,625 DEBUG [43914] [] finally
+2022-09-16 18:19:45,589 DEBUG [43752] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:19:45,594 DEBUG [43752] [] ExcelContract2SkillListController start
+2022-09-16 18:19:45,594 DEBUG [43752] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:45,605 DEBUG [43752] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:45,605 DEBUG [43752] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:45,606 DEBUG [43752] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:19:45,606 DEBUG [43752] [] indexAction start
+2022-09-16 18:19:45,606 DEBUG [43752] [] admin_no is 1
+2022-09-16 18:19:45,689 DEBUG [43752] [] indexAction end
+2022-09-16 18:19:45,689 DEBUG [43752] [] ExcelContract2SkillListController end
+2022-09-16 18:19:45,689 DEBUG [43752] [] finally
+2022-09-16 18:19:51,671 DEBUG [43956] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:19:51,676 DEBUG [43956] [] ExcelContract2SkillListController start
+2022-09-16 18:19:51,676 DEBUG [43956] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:51,687 DEBUG [43956] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:51,687 DEBUG [43956] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:51,688 DEBUG [43956] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:19:51,688 DEBUG [43956] [] showAction start
+2022-09-16 18:19:51,688 DEBUG [43956] [] admin_no is 1
+2022-09-16 18:19:51,688 DEBUG [43956] [] showAction end
+2022-09-16 18:19:51,688 DEBUG [43956] [] ExcelContract2SkillListController end
+2022-09-16 18:19:51,688 DEBUG [43956] [] finally
+2022-09-16 18:19:51,719 DEBUG [43956] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:19:51,724 DEBUG [43956] [] ExcelContract2SkillListController start
+2022-09-16 18:19:51,724 DEBUG [43956] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:51,735 DEBUG [43956] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:51,735 DEBUG [43956] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:51,736 DEBUG [43956] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:19:51,736 DEBUG [43956] [] viewExcelListAction start
+2022-09-16 18:19:51,995 DEBUG [43956] [] viewExcelListAction end
+2022-09-16 18:19:51,995 DEBUG [43956] [] ExcelContract2SkillListController end
+2022-09-16 18:19:51,995 DEBUG [43956] [] finally
+2022-09-16 18:19:55,168 DEBUG [43956] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:19:55,173 DEBUG [43956] [] ExcelContract2SkillListController start
+2022-09-16 18:19:55,174 DEBUG [43956] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:19:55,185 DEBUG [43956] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:19:55,185 DEBUG [43956] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:19:55,186 DEBUG [43956] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:19:55,186 DEBUG [43956] [] isValidAction start
+2022-09-16 18:19:55,186 DEBUG [43956] [] admin_no is 1
+2022-09-16 18:19:55,186 DEBUG [43956] [] admin_no is 1
+2022-09-16 18:19:55,187 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,188 DEBUG [43956] [] 
+2022-09-16 18:19:55,188 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,189 DEBUG [43956] [] 
+2022-09-16 18:19:55,189 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,190 DEBUG [43956] [] 
+2022-09-16 18:19:55,190 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,191 DEBUG [43956] [] 
+2022-09-16 18:19:55,191 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,192 DEBUG [43956] [] 
+2022-09-16 18:19:55,192 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,193 DEBUG [43956] [] 
+2022-09-16 18:19:55,194 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,194 DEBUG [43956] [] 
+2022-09-16 18:19:55,194 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,195 DEBUG [43956] [] 
+2022-09-16 18:19:55,196 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,196 DEBUG [43956] [] 
+2022-09-16 18:19:55,197 DEBUG [43956] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:19:55,197 DEBUG [43956] [] 
+2022-09-16 18:19:55,453 DEBUG [43956] [] isValidAction end
+2022-09-16 18:19:55,453 DEBUG [43956] [] ExcelContract2SkillListController end
+2022-09-16 18:19:55,453 DEBUG [43956] [] finally
+2022-09-16 18:20:37,513 DEBUG [43752] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:20:37,518 DEBUG [43752] [] ExcelContract2SkillListController start
+2022-09-16 18:20:37,518 DEBUG [43752] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:20:37,530 DEBUG [43752] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:20:37,530 DEBUG [43752] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:20:37,531 DEBUG [43752] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:20:37,531 DEBUG [43752] [] indexAction start
+2022-09-16 18:20:37,531 DEBUG [43752] [] admin_no is 1
+2022-09-16 18:20:37,620 DEBUG [43752] [] indexAction end
+2022-09-16 18:20:37,620 DEBUG [43752] [] ExcelContract2SkillListController end
+2022-09-16 18:20:37,620 DEBUG [43752] [] finally
+2022-09-16 18:20:44,803 DEBUG [43892] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:20:44,808 DEBUG [43892] [] ExcelContract2SkillListController start
+2022-09-16 18:20:44,808 DEBUG [43892] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:20:44,819 DEBUG [43892] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:20:44,820 DEBUG [43892] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:20:44,820 DEBUG [43892] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:20:44,820 DEBUG [43892] [] showAction start
+2022-09-16 18:20:44,820 DEBUG [43892] [] admin_no is 1
+2022-09-16 18:20:44,821 DEBUG [43892] [] showAction end
+2022-09-16 18:20:44,821 DEBUG [43892] [] ExcelContract2SkillListController end
+2022-09-16 18:20:44,821 DEBUG [43892] [] finally
+2022-09-16 18:20:44,853 DEBUG [43892] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:20:44,857 DEBUG [43892] [] ExcelContract2SkillListController start
+2022-09-16 18:20:44,857 DEBUG [43892] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:20:44,867 DEBUG [43892] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:20:44,868 DEBUG [43892] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:20:44,868 DEBUG [43892] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:20:44,868 DEBUG [43892] [] viewExcelListAction start
+2022-09-16 18:20:45,124 DEBUG [43892] [] viewExcelListAction end
+2022-09-16 18:20:45,124 DEBUG [43892] [] ExcelContract2SkillListController end
+2022-09-16 18:20:45,125 DEBUG [43892] [] finally
+2022-09-16 18:20:47,023 DEBUG [43892] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:20:47,029 DEBUG [43892] [] ExcelContract2SkillListController start
+2022-09-16 18:20:47,029 DEBUG [43892] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:20:47,040 DEBUG [43892] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:20:47,041 DEBUG [43892] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:20:47,041 DEBUG [43892] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:20:47,041 DEBUG [43892] [] isValidAction start
+2022-09-16 18:20:47,042 DEBUG [43892] [] admin_no is 1
+2022-09-16 18:20:47,042 DEBUG [43892] [] admin_no is 1
+2022-09-16 18:20:47,043 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,044 DEBUG [43892] [] 
+2022-09-16 18:20:47,044 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,045 DEBUG [43892] [] 
+2022-09-16 18:20:47,045 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,046 DEBUG [43892] [] 
+2022-09-16 18:20:47,047 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,047 DEBUG [43892] [] 
+2022-09-16 18:20:47,048 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,048 DEBUG [43892] [] 
+2022-09-16 18:20:47,049 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,050 DEBUG [43892] [] 
+2022-09-16 18:20:47,050 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,051 DEBUG [43892] [] 
+2022-09-16 18:20:47,051 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,052 DEBUG [43892] [] 
+2022-09-16 18:20:47,052 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,053 DEBUG [43892] [] 
+2022-09-16 18:20:47,053 DEBUG [43892] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:20:47,054 DEBUG [43892] [] 
+2022-09-16 18:20:47,057 DEBUG [43892] [] cdList
+2022-09-16 18:20:47,057 DEBUG [43892] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 163
+            [course_detail_no] => 155
+            [course_detail_name] => デーモMスピーキングテスト詳細④
+            [course_detail_romaji] => demoM_SpeakingTestdetail④
+            [course_level] => Level 4
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2019/07/22
+            [end_period] => 2020/06/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-09-16 18:20:47,058 DEBUG [43892] [] 受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:20:47,343 DEBUG [43892] [] isValidAction end
+2022-09-16 18:20:47,344 DEBUG [43892] [] ExcelContract2SkillListController end
+2022-09-16 18:20:47,344 DEBUG [43892] [] finally
+2022-09-16 18:44:26,151 DEBUG [44378] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:44:26,156 DEBUG [44378] [] ExcelContract2SkillListController start
+2022-09-16 18:44:26,156 DEBUG [44378] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:44:26,167 DEBUG [44378] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:44:26,167 DEBUG [44378] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:44:26,168 DEBUG [44378] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:44:26,168 DEBUG [44378] [] indexAction start
+2022-09-16 18:44:26,168 DEBUG [44378] [] admin_no is 1
+2022-09-16 18:44:26,256 DEBUG [44378] [] indexAction end
+2022-09-16 18:44:26,256 DEBUG [44378] [] ExcelContract2SkillListController end
+2022-09-16 18:44:26,256 DEBUG [44378] [] finally
+2022-09-16 18:44:30,560 DEBUG [44378] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:44:30,565 DEBUG [44378] [] ExcelContract2SkillListController start
+2022-09-16 18:44:30,565 DEBUG [44378] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:44:30,576 DEBUG [44378] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:44:30,577 DEBUG [44378] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:44:30,577 DEBUG [44378] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:44:30,577 DEBUG [44378] [] showAction start
+2022-09-16 18:44:30,578 DEBUG [44378] [] admin_no is 1
+2022-09-16 18:44:30,578 DEBUG [44378] [] showAction end
+2022-09-16 18:44:30,578 DEBUG [44378] [] ExcelContract2SkillListController end
+2022-09-16 18:44:30,578 DEBUG [44378] [] finally
+2022-09-16 18:44:30,603 DEBUG [44378] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:44:30,607 DEBUG [44378] [] ExcelContract2SkillListController start
+2022-09-16 18:44:30,607 DEBUG [44378] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:44:30,617 DEBUG [44378] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:44:30,617 DEBUG [44378] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:44:30,617 DEBUG [44378] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:44:30,618 DEBUG [44378] [] viewExcelListAction start
+2022-09-16 18:44:30,868 DEBUG [44378] [] viewExcelListAction end
+2022-09-16 18:44:30,868 DEBUG [44378] [] ExcelContract2SkillListController end
+2022-09-16 18:44:30,868 DEBUG [44378] [] finally
+2022-09-16 18:44:33,715 DEBUG [44378] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:44:33,721 DEBUG [44378] [] ExcelContract2SkillListController start
+2022-09-16 18:44:33,721 DEBUG [44378] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:44:33,733 DEBUG [44378] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:44:33,733 DEBUG [44378] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:44:33,734 DEBUG [44378] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:44:33,734 DEBUG [44378] [] isValidAction start
+2022-09-16 18:44:33,734 DEBUG [44378] [] admin_no is 1
+2022-09-16 18:44:33,734 DEBUG [44378] [] admin_no is 1
+2022-09-16 18:44:33,735 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,736 DEBUG [44378] [] 
+2022-09-16 18:44:33,736 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,737 DEBUG [44378] [] 
+2022-09-16 18:44:33,737 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,738 DEBUG [44378] [] 
+2022-09-16 18:44:33,738 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,739 DEBUG [44378] [] 
+2022-09-16 18:44:33,739 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,740 DEBUG [44378] [] 
+2022-09-16 18:44:33,740 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,741 DEBUG [44378] [] 
+2022-09-16 18:44:33,741 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,742 DEBUG [44378] [] 
+2022-09-16 18:44:33,742 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,743 DEBUG [44378] [] 
+2022-09-16 18:44:33,743 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,744 DEBUG [44378] [] 
+2022-09-16 18:44:33,744 DEBUG [44378] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:44:33,745 DEBUG [44378] [] 
+2022-09-16 18:44:33,747 DEBUG [44378] [] cdList
+2022-09-16 18:44:33,747 DEBUG [44378] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 163
+            [course_detail_no] => 155
+            [course_detail_name] => デーモMスピーキングテスト詳細④
+            [course_detail_romaji] => demoM_SpeakingTestdetail④
+            [course_level] => Level 4
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2019/07/22
+            [end_period] => 2020/06/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-09-16 18:44:33,748 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,749 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,750 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,750 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,751 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,752 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,752 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,753 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,754 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,755 DEBUG [44378] [] 1目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser121目の受講者情報が正しくありません。ログインID: checkuser12ログインID: checkuser12
+2022-09-16 18:44:33,755 DEBUG [44378] [] Array
+(
+    [0] => 
+)
+
+2022-09-16 18:44:34,012 DEBUG [44378] [] isValidAction end
+2022-09-16 18:44:34,013 DEBUG [44378] [] ExcelContract2SkillListController end
+2022-09-16 18:44:34,013 DEBUG [44378] [] finally
+2022-09-16 18:44:56,717 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:44:56,722 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:44:56,723 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:44:56,734 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:44:56,734 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:44:56,735 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:44:56,735 DEBUG [44382] [] indexAction start
+2022-09-16 18:44:56,735 DEBUG [44382] [] admin_no is 1
+2022-09-16 18:44:56,815 DEBUG [44382] [] indexAction end
+2022-09-16 18:44:56,815 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:44:56,816 DEBUG [44382] [] finally
+2022-09-16 18:45:01,463 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:45:01,469 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:45:01,469 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:01,480 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:01,481 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:01,481 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:45:01,481 DEBUG [44382] [] showAction start
+2022-09-16 18:45:01,481 DEBUG [44382] [] admin_no is 1
+2022-09-16 18:45:01,482 DEBUG [44382] [] showAction end
+2022-09-16 18:45:01,482 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:45:01,482 DEBUG [44382] [] finally
+2022-09-16 18:45:01,507 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:45:01,512 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:45:01,512 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:01,521 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:01,522 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:01,522 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:45:01,522 DEBUG [44382] [] viewExcelListAction start
+2022-09-16 18:45:01,775 DEBUG [44382] [] viewExcelListAction end
+2022-09-16 18:45:01,775 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:45:01,775 DEBUG [44382] [] finally
+2022-09-16 18:45:03,858 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:45:03,864 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:45:03,864 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:03,875 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:03,876 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:03,876 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:45:03,876 DEBUG [44382] [] isValidAction start
+2022-09-16 18:45:03,877 DEBUG [44382] [] admin_no is 1
+2022-09-16 18:45:03,877 DEBUG [44382] [] admin_no is 1
+2022-09-16 18:45:03,877 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,878 DEBUG [44382] [] 
+2022-09-16 18:45:03,878 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,879 DEBUG [44382] [] 
+2022-09-16 18:45:03,879 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,880 DEBUG [44382] [] 
+2022-09-16 18:45:03,880 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,881 DEBUG [44382] [] 
+2022-09-16 18:45:03,881 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,882 DEBUG [44382] [] 
+2022-09-16 18:45:03,882 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,883 DEBUG [44382] [] 
+2022-09-16 18:45:03,883 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,884 DEBUG [44382] [] 
+2022-09-16 18:45:03,884 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,885 DEBUG [44382] [] 
+2022-09-16 18:45:03,885 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,886 DEBUG [44382] [] 
+2022-09-16 18:45:03,886 DEBUG [44382] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:03,887 DEBUG [44382] [] 
+2022-09-16 18:45:03,889 DEBUG [44382] [] cdList
+2022-09-16 18:45:03,890 DEBUG [44382] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 163
+            [course_detail_no] => 155
+            [course_detail_name] => デーモMスピーキングテスト詳細④
+            [course_detail_romaji] => demoM_SpeakingTestdetail④
+            [course_level] => Level 4
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2019/07/22
+            [end_period] => 2020/06/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-09-16 18:45:03,890 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,891 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,892 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,892 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,893 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,894 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,894 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,895 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,896 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,897 DEBUG [44382] [] 1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:03,897 DEBUG [44382] [] Array
+(
+    [0] => 
+)
+
+2022-09-16 18:45:04,151 DEBUG [44382] [] isValidAction end
+2022-09-16 18:45:04,151 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:45:04,151 DEBUG [44382] [] finally
+2022-09-16 18:45:28,989 DEBUG [44413] [] Request URI : /eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:45:28,995 DEBUG [44413] [] ExcelContract2SkillListController start
+2022-09-16 18:45:28,995 DEBUG [44413] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:29,006 DEBUG [44413] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:29,007 DEBUG [44413] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:29,007 DEBUG [44413] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList
+2022-09-16 18:45:29,007 DEBUG [44413] [] indexAction start
+2022-09-16 18:45:29,007 DEBUG [44413] [] admin_no is 1
+2022-09-16 18:45:29,095 DEBUG [44413] [] indexAction end
+2022-09-16 18:45:29,095 DEBUG [44413] [] ExcelContract2SkillListController end
+2022-09-16 18:45:29,095 DEBUG [44413] [] finally
+2022-09-16 18:45:34,496 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:45:34,500 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:45:34,500 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:34,510 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:34,510 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:34,511 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/show
+2022-09-16 18:45:34,511 DEBUG [44382] [] showAction start
+2022-09-16 18:45:34,511 DEBUG [44382] [] admin_no is 1
+2022-09-16 18:45:34,512 DEBUG [44382] [] showAction end
+2022-09-16 18:45:34,512 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:45:34,512 DEBUG [44382] [] finally
+2022-09-16 18:45:34,535 DEBUG [44382] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:45:34,539 DEBUG [44382] [] ExcelContract2SkillListController start
+2022-09-16 18:45:34,539 DEBUG [44382] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:34,549 DEBUG [44382] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:34,549 DEBUG [44382] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:34,550 DEBUG [44382] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/viewExcelList
+2022-09-16 18:45:34,550 DEBUG [44382] [] viewExcelListAction start
+2022-09-16 18:45:34,963 DEBUG [44382] [] viewExcelListAction end
+2022-09-16 18:45:34,963 DEBUG [44382] [] ExcelContract2SkillListController end
+2022-09-16 18:45:34,963 DEBUG [44382] [] finally
+2022-09-16 18:45:37,170 DEBUG [44067] [] Request URI : /eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:45:37,175 DEBUG [44067] [] ExcelContract2SkillListController start
+2022-09-16 18:45:37,175 DEBUG [44067] [] controllers/ExcelContract2SkillListController.php: is exist
+2022-09-16 18:45:37,187 DEBUG [44067] [] ExcelContract2SkillListForm: is exist
+2022-09-16 18:45:37,187 DEBUG [44067] [] ExcelContract2SkillListForm: form value set 
+2022-09-16 18:45:37,187 DEBUG [44067] [] ------------------------------/eccadmin_dev/ExcelContract2SkillList/isValid
+2022-09-16 18:45:37,188 DEBUG [44067] [] isValidAction start
+2022-09-16 18:45:37,188 DEBUG [44067] [] admin_no is 1
+2022-09-16 18:45:37,188 DEBUG [44067] [] admin_no is 1
+2022-09-16 18:45:37,189 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 545
+    [org_no] => ecc
+    [course_id] => 163
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,190 DEBUG [44067] [] 
+2022-09-16 18:45:37,190 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 546
+    [org_no] => ecc
+    [course_id] => 164
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,191 DEBUG [44067] [] 
+2022-09-16 18:45:37,191 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 547
+    [org_no] => ecc
+    [course_id] => 175
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,192 DEBUG [44067] [] 
+2022-09-16 18:45:37,192 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 548
+    [org_no] => ecc
+    [course_id] => 176
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,193 DEBUG [44067] [] 
+2022-09-16 18:45:37,193 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 549
+    [org_no] => ecc
+    [course_id] => 177
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,194 DEBUG [44067] [] 
+2022-09-16 18:45:37,194 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 550
+    [org_no] => ecc
+    [course_id] => 178
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,195 DEBUG [44067] [] 
+2022-09-16 18:45:37,195 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 551
+    [org_no] => ecc
+    [course_id] => 179
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,196 DEBUG [44067] [] 
+2022-09-16 18:45:37,196 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 552
+    [org_no] => ecc
+    [course_id] => 180
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,197 DEBUG [44067] [] 
+2022-09-16 18:45:37,197 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 553
+    [org_no] => ecc
+    [course_id] => 221
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,198 DEBUG [44067] [] 
+2022-09-16 18:45:37,198 DEBUG [44067] [] T_Course_OrgDto Object
+(
+    [offer_no] => 554
+    [org_no] => ecc
+    [course_id] => 223
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-09-16 18:45:37,199 DEBUG [44067] [] 
+2022-09-16 18:45:37,201 DEBUG [44067] [] cdList
+2022-09-16 18:45:37,201 DEBUG [44067] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 163
+            [course_detail_no] => 155
+            [course_detail_name] => デーモMスピーキングテスト詳細④
+            [course_detail_romaji] => demoM_SpeakingTestdetail④
+            [course_level] => Level 4
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2019/07/22
+            [end_period] => 2020/06/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-09-16 18:45:37,202 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,203 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,204 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,204 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,205 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,205 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>6目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,206 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>6目の受講者情報が正しくありません。<br/>7目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,207 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>6目の受講者情報が正しくありません。<br/>7目の受講者情報が正しくありません。<br/>8目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,207 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>6目の受講者情報が正しくありません。<br/>7目の受講者情報が正しくありません。<br/>8目の受講者情報が正しくありません。<br/>9目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,208 DEBUG [44067] [] 1目の受講者情報が正しくありません。<br/>2目の受講者情報が正しくありません。<br/>3目の受講者情報が正しくありません。<br/>4目の受講者情報が正しくありません。<br/>5目の受講者情報が正しくありません。<br/>6目の受講者情報が正しくありません。<br/>7目の受講者情報が正しくありません。<br/>8目の受講者情報が正しくありません。<br/>9目の受講者情報が正しくありません。<br/>10目の受講者情報が正しくありません。<br/>ログインID: checkuser12
+2022-09-16 18:45:37,208 DEBUG [44067] [] Array
+(
+    [0] => 
+)
+
+2022-09-16 18:45:37,467 DEBUG [44067] [] isValidAction end
+2022-09-16 18:45:37,468 DEBUG [44067] [] ExcelContract2SkillListController end
+2022-09-16 18:45:37,468 DEBUG [44067] [] finally

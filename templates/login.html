@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ログイン</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="{$smarty.const.HOME_DIR}css/login.css" rel="stylesheet" type="text/css"/>
+	{literal}
+	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+
+</head>
+<body id="body" class="pushmenu-push">
+<form action="{$smarty.const.HOME_DIR}Login/login" method="post" style="margin:0px;padding:0px">
+	<div id="divOuterFrame" align="center" >
+
+		<div id="divTitle" style="height:50px;padding-top:12px;">
+			<div align="left" style="width: 50%; float:left;">
+				&emsp;<span class="title"><font size="5"><b>運用管理用</b></font></span>
+			</div>
+			<div align="right" style="width: 50%; float:right;">
+				<image src="{$smarty.const.HOME_DIR}image/top_logo.svg">
+			</div>
+		</div>
+		<div id="login" align="center" >
+			<table>
+				<tr height="100px;">
+					<td>
+						<img src="{$smarty.const.HOME_DIR}image/login_id.svg" style="width:40px;height:40px;">
+					</td>
+					<td>
+						<input id="login_id" name="login_id" type="text" autocomplete="off" width="250px;" value="{$login_id}" maxlength="20" placeholder="Login ID" style="ime-mode: disabled;">
+					</td>
+				</tr>
+				<tr height="100px;">
+					<td>
+						<img src="{$smarty.const.HOME_DIR}image/pw.svg" style="width:40px;height:40px;">
+					</td>
+					<td>
+						<input id="password" name="password" type="password" autocomplete="off" width="250px;" value="{$password}" maxlength="20" placeholder="Password" style="ime-mode: disabled;">
+					</td>
+				</tr>
+			</table>
+			<div style=" padding-top:20px;">
+				<span style="text-align: center;">{$error}</span>
+				</br></br>
+				<!-- <input name="submit" type="submit" value="LOGIN" id="btnLogin" style="margin-left:10px;background-image:url({$smarty.const.HOME_DIR}image/login.svg);background-size:35px 35px;"> -->
+				<div>
+					<input name="submit" type="submit" value="" id="btnLogin" style="background-image:url({$smarty.const.HOME_DIR}image/login.svg);">
+					<!-- <a href="" style="border-bottom: solid 1px #8eafd5; color: black; padding: 10px 0;">パスワード再発行はこちら</a> -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</form>
+	<!--footer-->
+		{include file='footer.html'}
+	<!--footer-->
+</body>
+</html>

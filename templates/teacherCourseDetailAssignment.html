@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>コース詳細割当</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datables_select_box.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/datatables.min.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/datatables_select.min.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+		<script>
+		$(document).ready(function() {
+
+			// MSGのあるなし
+			if ( $(".error_msg").html() != "" ) {
+
+				$(".error_section").slideDown('slow');
+			}
+
+			$(".close_icon").on('click',function(){
+
+				$(".error_section").slideUp('slow');
+
+			});
+
+			$('#teacher_course_detail_list').DataTable( {
+				"scrollY": 300,
+				"scrollX": true,
+				"bFilter": false,
+				"ordering": false,
+				select : true,
+				 columnDefs: [ {
+					"searchable": false,
+					orderable: false,
+					className: 'select-checkbox', targets:   0,
+				} ],
+				select: {
+					style:    'multi',
+					selector: 'td:first-child',
+					info: false
+				},
+				"language": {
+							"info":" _TOTAL_ 件中 _START_ から _END_ まで表示",
+							 "paginate": {
+								"first":      "First",
+								"last":       "Last",
+								"next":       "次",
+								"previous":   "前"
+							},
+							"lengthMenu":" _MENU_ 件表示"
+						  },
+
+				"initComplete": function () {
+					getTotalRowCount();
+				},
+				drawCallback: function(){
+
+					$('.paginate_button', this.api().table().container()).on('click', function(){
+						$(".select-info").remove();
+						getTotalRowCount();
+					});
+
+					 $("#teacher_course_detail_list_filter label input").on('keyup', function(){
+						$(".select-info").remove();
+						getTotalRowCount();
+					});
+
+					 $("#teacher_course_detail_list_filter label input").on('click', function(){
+						$(".select-info").remove();
+						getTotalRowCount();
+					});
+
+					$("#teacher_course_detail_list_length label select option").change(function() {
+						$(".select-info").remove();
+						getTotalRowCount();
+					 });
+				},
+				order: [[ 1, 'asc' ]]
+			});
+		});
+	</script>
+	</head>
+	<body class="pushmenu-push">
+		<form autocomplete="off" id="main_form" action="{$smarty.const.HOME_DIR}TeacherCourseDetailAssignment/Save" method="post">
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div id="err_dis">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+					{if !empty($error_msg)}
+						<div class="error_msg">{$error_msg}</div>
+					{else if !empty($info_msg)}
+						<div class="error_msg">{$info_msg}</div>
+					{else}
+						<div class="error_msg"></div>
+					{/if}
+				</section>
+				</div>
+				<section class="content">
+					<p>
+						><span class="title">講師/コース詳細割当</span>
+					</p>
+					<p style="text-align:right"><input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}TeacherCourseDetailAssignment/back')"></p>
+
+					<input type="hidden" id="teacher_no" name="teacher_no" value="{$form->teacher_no}" />
+					<input type="hidden" id="login_id" name="login_id" value="{$form->login_id}" />
+					<input type="hidden" id="nick_name" name="nick_name" value="{$form->nick_name}" />
+					<input type="hidden" id="t_name" name="t_name" value="{$form->t_name}" />
+					<input type="hidden" id="display_name" name="display_name" value="{$form->display_name}" />
+					<input type="hidden" id="search_test_kbn" name="search_test_kbn" value="{$form->search_test_kbn}" />
+					<input type="hidden" id="search_course_level" name="search_course_level" value="{$form->search_course_level}" />
+					<input type="hidden" id="entryList" name="entryList" value="{$form->entryList}"/>
+					<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+					<input type="hidden" id="search_name" name="search_name" value="{$form->search_name}" />
+					<input type="hidden" id="back_flg" name="back_flg" value="1" />
+					<input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}"/>
+					<input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}"/>
+					<input type="hidden" id="search_school_kbn" name="search_school_kbn" value="{$form->search_school_kbn}" />
+
+					<table>
+						<tr>
+							<td style="width:150px;">講師名</td>
+							<td>
+								<span>{$form->login_id}</span>&nbsp;
+								<span>{$form->t_name}</span>&nbsp;
+								<span>{$form->nick_name}&nbsp;</span>
+								<span>{$form->display_name}</span>
+							</td>
+						</tr>
+						<tr>
+							<td style="width:150px;">レベル</td>
+							<td>
+								{if !empty($course_level)}
+									{foreach $course_level as $item}
+										{if (in_array($item->type, $search_course_level))}
+											<label><input type="checkbox" class="course_level" name="course_level" value='{$item->type}' checked>{$item->name}</label>
+										{else}
+											<label><input type="checkbox" class="course_level" name="course_level" value='{$item->type}' >{$item->name}</label>
+										{/if}
+									{/foreach}
+								{/if}
+							</td>
+						</tr>
+						<tr>
+							<td style="width:150px;">SW</td>
+							<td>
+								{if !empty($test_kbn)}
+									{foreach $test_kbn as $item}
+										{if (in_array($item->type, $search_test_kbn))}
+											<label><input type="checkbox" class="test_kbn" name="test_kbn" value='{$item->type}' checked>{$item->name}</label>
+										{else}
+											<label><input type="checkbox" class="test_kbn" name="test_kbn" value='{$item->type}' >{$item->name}</label>
+										{/if}
+									{/foreach}
+								{/if}
+							</td>
+						</tr>
+					</table>
+					<div align="right">
+						<input type="button" class="btn_search" onclick="trans('{$smarty.const.HOME_DIR}TeacherCourseDetailAssignment/search')" title="検索" style="padding-right:50px;">
+					</div>
+					{if count($courseDetailList) > 0}
+						<table id="teacher_course_detail_list" class="display" style="border-collapse: collapse; font-size: 1.0em;" style="display:none;">
+							<thead>
+					            <tr>
+					                <th></th>
+					                <th>コース詳細名</th>
+					                <th>Detail　Name</th>
+					                <th>SW</th>
+					                <th>Level</th>
+					            </tr>
+        					</thead>
+        					<tbody>
+	        					{foreach $courseDetailList as $result}
+	        						{if (in_array($result->course_detail_no,$data_list))}
+	        							{assign var="selected" value="selected"}
+	        						{else}
+	 									{assign var="selected" value=""}
+	        						{/if}
+	        						<tr id="course_detail_no_{$result->course_detail_no}" class="{$selected}">
+			        					<td></td>
+										<td>{$result->course_detail_name|escape}</td>
+										<td>{$result->course_detail_romaji|escape}</td>
+										<td>{$result->test_kbn|escape}</td>
+										<td>{$result->course_level|escape}</td>
+									</tr>
+								{/foreach}
+        					</tbody>
+						</table>
+						<div align="right">
+							<input type="submit" name="insert" value="" id="btn_insert" class="btn_insert" title="登録" />
+						</div>
+					{/if}
+				</section>
+			</div>
+		</form>
+		<script>
+
+			function trans(action){
+
+				prepareCheckboxData();
+
+				$("#main_form").attr("action", action);
+				$("#main_form").submit();
+			}
+
+			function prepareCheckboxData(){
+
+				var test_kbn_list = '';
+				var test_kbn_count = $("input.test_kbn:checked").length;
+				var count = 0;
+				$("#search_test_kbn").val("");
+				$("#search_course_level").val("");
+
+				$('input.test_kbn:checked').each(function() {
+					count++;
+					test_kbn_list += $(this).val();
+
+					if ( count < test_kbn_count ){
+						test_kbn_list += ",";
+					}
+				});
+				$("#search_test_kbn").val(test_kbn_list);
+
+				count = 0;
+				var course_level_count = $("input.course_level:checked").length;
+				var course_level_list = '';
+
+				$('input.course_level:checked').each(function() {
+					count++;
+					course_level_list += $(this).val();
+
+					if ( count < course_level_count ){
+						course_level_list += ",";
+					}
+				});
+				$("#search_course_level").val(course_level_list);
+			}
+
+			$(function(){
+				var entryList = [];
+				$('#teacher_course_detail_list tbody tr').each(function() {
+
+					var course_detail_no = $(this).attr('id');
+					course_detail_no = course_detail_no.split("course_detail_no_")[1];
+
+					entryList = $("#entryList").val();
+					entryList = entryList.split(",");
+
+					var flag = $.inArray( course_detail_no, entryList);
+
+					if(flag != -1){
+						$(this).addClass('selected');
+					}
+				});
+			});
+
+			function getTotalRowCount(){
+
+				var rowsCount = $("#entryList").val();
+				rowsCount = rowsCount.split(",");
+
+				 if(rowsCount.length > 0){
+					 $(".dataTables_info").append("<span class=select-info>"+
+								"<span class=select-item>"+ (rowsCount.length - 1) +" 行 選ばれた。</span>"+
+								"<span class=select-item></span>"+
+								"<span class=select-item></span>"+
+							"</span>");
+				 }
+			}
+
+			$('#teacher_course_detail_list tbody tr').on('click', function(){
+
+				var course_detail_selected_list = $("#entryList").val();
+	 			var course_detail_no = $(this).attr('id');
+	 			course_detail_no = course_detail_no.split("course_detail_no_")[1];
+	 			var selected_class = $(this).attr('class');
+	 			selected_class = selected_class.split(" ");
+	 			var table = $('#teacher_course_detail_list').DataTable();
+
+	 			if(selected_class.length > 1){
+
+	 				var course_detail_list = course_detail_selected_list.split(",");
+	 				var temp = $.inArray( course_detail_no, course_detail_list );
+	 				if(temp != -1){
+	 					course_detail_selected_list = course_detail_selected_list.replace(course_detail_no + ",", "");
+	 				}
+	 				$("#entryList").val(course_detail_selected_list);
+	 				$(this).toggleClass('selected');
+	 			}else{
+
+	 				if(course_detail_selected_list == ""){
+
+	 					course_detail_selected_list += course_detail_no + ",";
+	 				}else{
+
+	 					var course_detail_list = course_detail_selected_list.split(",");
+	 					var temp = $.inArray( course_detail_no, course_detail_list );
+	 					if(temp == -1){
+	 						course_detail_selected_list += course_detail_no + ",";
+	 					}
+	 				}
+	 				$(this).toggleClass('selected');
+	 				$("#entryList").val(course_detail_selected_list);
+	 			}
+
+	 			$(".select-info").remove();
+	 			getTotalRowCount();
+			});
+		</script>
+		<!--footer-->
+		{include file='footer.html'}
+		<!--footer-->
+	</body>
+</html>

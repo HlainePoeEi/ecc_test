@@ -1,0 +1,588 @@
+2022-05-31 16:09:45,577 DEBUG [92314] [] Request URI : /eccadmin_dev/Login
+2022-05-31 16:09:45,602 DEBUG [92314] [] LoginController start
+2022-05-31 16:09:45,602 DEBUG [92314] [] controllers/LoginController.php: is exist
+2022-05-31 16:09:45,602 DEBUG [92314] [] LoginForm: is exist
+2022-05-31 16:09:45,602 DEBUG [92314] [] LoginForm: form value set 
+2022-05-31 16:09:45,603 DEBUG [92314] [] ------------------------------/eccadmin_dev/Login
+2022-05-31 16:09:45,603 DEBUG [92314] [] ------------------------------login_start_check
+2022-05-31 16:09:45,603 DEBUG [92314] [] indexAction start
+2022-05-31 16:09:45,649 DEBUG [92314] [] indexAction end
+2022-05-31 16:09:45,649 DEBUG [92314] [] LoginController end
+2022-05-31 16:09:45,649 DEBUG [92314] [] finally
+2022-05-31 16:09:48,657 DEBUG [92314] [] Request URI : /eccadmin_dev/Login/login
+2022-05-31 16:09:48,658 DEBUG [92314] [] LoginController start
+2022-05-31 16:09:48,658 DEBUG [92314] [] controllers/LoginController.php: is exist
+2022-05-31 16:09:48,658 DEBUG [92314] [] LoginForm: is exist
+2022-05-31 16:09:48,658 DEBUG [92314] [] LoginForm: form value set 
+2022-05-31 16:09:48,659 DEBUG [92314] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-31 16:09:48,659 DEBUG [92314] [] ------------------------------login_start_check
+2022-05-31 16:09:48,659 DEBUG [92314] [] loginAction start
+2022-05-31 16:09:48,977 DEBUG [92314] [] loginAction end
+2022-05-31 16:09:48,977 DEBUG [92314] [] LoginController end
+2022-05-31 16:09:48,977 DEBUG [92314] [] finally
+2022-05-31 16:09:48,994 DEBUG [92314] [] Request URI : /eccadmin_dev/Menu
+2022-05-31 16:09:48,994 DEBUG [92314] [] MenuController start
+2022-05-31 16:09:48,995 DEBUG [92314] [] controllers/MenuController.php: is exist
+2022-05-31 16:09:48,995 DEBUG [92314] [] MenuForm: is exist
+2022-05-31 16:09:48,995 DEBUG [92314] [] MenuForm: form value set 
+2022-05-31 16:09:48,996 DEBUG [92314] [] ------------------------------/eccadmin_dev/Menu
+2022-05-31 16:09:48,996 DEBUG [92314] [] ------------------------------login_start_check
+2022-05-31 16:09:48,996 DEBUG [92314] [] indexAction start
+2022-05-31 16:09:48,996 DEBUG [92314] [] admin_no is 1
+2022-05-31 16:09:49,024 DEBUG [92314] [] indexAction end
+2022-05-31 16:09:49,024 DEBUG [92314] [] MenuController end
+2022-05-31 16:09:49,025 DEBUG [92314] [] finally
+2022-05-31 16:09:52,990 DEBUG [92314] [] Request URI : /eccadmin_dev/AtReportList
+2022-05-31 16:09:52,991 DEBUG [92314] [] AtReportListController start
+2022-05-31 16:09:52,991 DEBUG [92314] [] controllers/AtReportListController.php: is exist
+2022-05-31 16:09:52,994 DEBUG [92314] [] AtReportListForm: is exist
+2022-05-31 16:09:52,994 DEBUG [92314] [] AtReportListForm: form value set 
+2022-05-31 16:09:52,995 DEBUG [92314] [] ------------------------------/eccadmin_dev/AtReportList
+2022-05-31 16:09:52,995 DEBUG [92314] [] indexAction start
+2022-05-31 16:09:52,995 DEBUG [92314] [] admin_no is 1
+2022-05-31 16:09:53,087 DEBUG [92314] [] indexAction end
+2022-05-31 16:09:53,087 DEBUG [92314] [] AtReportListController end
+2022-05-31 16:09:53,088 DEBUG [92314] [] finally
+2022-05-31 16:09:54,659 DEBUG [92195] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-05-31 16:09:54,660 DEBUG [92195] [] AtReportRegistController start
+2022-05-31 16:09:54,660 DEBUG [92195] [] controllers/AtReportRegistController.php: is exist
+2022-05-31 16:09:54,665 DEBUG [92195] [] AtReportRegistForm: is exist
+2022-05-31 16:09:54,665 DEBUG [92195] [] AtReportRegistForm: form value set 
+2022-05-31 16:09:54,666 DEBUG [92195] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-05-31 16:09:54,666 DEBUG [92195] [] ------------------------------session_check_true
+2022-05-31 16:09:54,666 DEBUG [92195] [] indexAction start
+2022-05-31 16:09:54,666 DEBUG [92195] [] admin_no is 1
+2022-05-31 16:09:54,758 DEBUG [92195] [] indexAction end
+2022-05-31 16:09:54,758 DEBUG [92195] [] AtReportRegistController end
+2022-05-31 16:09:54,758 DEBUG [92195] [] finally
+2022-05-31 16:10:04,309 DEBUG [92277] [] Request URI : /eccadmin_dev/AtReportRegist/save
+2022-05-31 16:10:04,310 DEBUG [92277] [] AtReportRegistController start
+2022-05-31 16:10:04,310 DEBUG [92277] [] controllers/AtReportRegistController.php: is exist
+2022-05-31 16:10:04,314 DEBUG [92277] [] AtReportRegistForm: is exist
+2022-05-31 16:10:04,314 DEBUG [92277] [] AtReportRegistForm: form value set 
+2022-05-31 16:10:04,315 DEBUG [92277] [] ------------------------------/eccadmin_dev/AtReportRegist/save
+2022-05-31 16:10:04,315 DEBUG [92277] [] ------------------------------session_check_true
+2022-05-31 16:10:04,315 DEBUG [92277] [] saveAction start
+2022-05-31 16:10:04,319 DEBUG [92277] [] admin_no is 1
+2022-05-31 16:10:04,319 DEBUG [92277] [] saveAction end
+2022-05-31 16:10:04,319 DEBUG [92277] [] AtReportRegistController end
+2022-05-31 16:10:04,319 DEBUG [92277] [] finally
+2022-05-31 16:10:04,341 DEBUG [92277] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-05-31 16:10:04,341 DEBUG [92277] [] AtReportListController start
+2022-05-31 16:10:04,341 DEBUG [92277] [] controllers/AtReportListController.php: is exist
+2022-05-31 16:10:04,344 DEBUG [92277] [] AtReportListForm: is exist
+2022-05-31 16:10:04,344 DEBUG [92277] [] AtReportListForm: form value set 
+2022-05-31 16:10:04,344 DEBUG [92277] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-05-31 16:10:04,344 DEBUG [92277] [] SearchAction start
+2022-05-31 16:10:04,345 DEBUG [92277] [] --------back--------
+2022-05-31 16:10:04,345 DEBUG [92277] [] admin_no is 1
+2022-05-31 16:10:04,407 DEBUG [92277] [] SearchAction end
+2022-05-31 16:10:04,407 DEBUG [92277] [] AtReportListController end
+2022-05-31 16:10:04,407 DEBUG [92277] [] finally
+2022-05-31 16:11:53,449 DEBUG [92277] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-05-31 16:11:53,450 DEBUG [92277] [] AtReportRegistController start
+2022-05-31 16:11:53,450 DEBUG [92277] [] controllers/AtReportRegistController.php: is exist
+2022-05-31 16:11:53,455 DEBUG [92277] [] AtReportRegistForm: is exist
+2022-05-31 16:11:53,455 DEBUG [92277] [] AtReportRegistForm: form value set 
+2022-05-31 16:11:53,456 DEBUG [92277] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-05-31 16:11:53,456 DEBUG [92277] [] ------------------------------session_check_true
+2022-05-31 16:11:53,456 DEBUG [92277] [] indexAction start
+2022-05-31 16:11:53,456 DEBUG [92277] [] admin_no is 1
+2022-05-31 16:11:53,538 DEBUG [92277] [] indexAction end
+2022-05-31 16:11:53,538 DEBUG [92277] [] AtReportRegistController end
+2022-05-31 16:11:53,538 DEBUG [92277] [] finally
+2022-05-31 16:11:59,806 DEBUG [92836] [] Request URI : /eccadmin_dev/AtReportRegist/save
+2022-05-31 16:11:59,807 DEBUG [92836] [] AtReportRegistController start
+2022-05-31 16:11:59,807 DEBUG [92836] [] controllers/AtReportRegistController.php: is exist
+2022-05-31 16:11:59,812 DEBUG [92836] [] AtReportRegistForm: is exist
+2022-05-31 16:11:59,812 DEBUG [92836] [] AtReportRegistForm: form value set 
+2022-05-31 16:11:59,813 DEBUG [92836] [] ------------------------------/eccadmin_dev/AtReportRegist/save
+2022-05-31 16:11:59,813 DEBUG [92836] [] ------------------------------session_check_true
+2022-05-31 16:11:59,813 DEBUG [92836] [] saveAction start
+2022-05-31 16:11:59,817 DEBUG [92836] [] admin_no is 1
+2022-05-31 16:11:59,817 DEBUG [92836] [] saveAction end
+2022-05-31 16:11:59,817 DEBUG [92836] [] AtReportRegistController end
+2022-05-31 16:11:59,817 DEBUG [92836] [] finally
+2022-05-31 16:11:59,839 DEBUG [92836] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-05-31 16:11:59,839 DEBUG [92836] [] AtReportListController start
+2022-05-31 16:11:59,839 DEBUG [92836] [] controllers/AtReportListController.php: is exist
+2022-05-31 16:11:59,842 DEBUG [92836] [] AtReportListForm: is exist
+2022-05-31 16:11:59,842 DEBUG [92836] [] AtReportListForm: form value set 
+2022-05-31 16:11:59,843 DEBUG [92836] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-05-31 16:11:59,843 DEBUG [92836] [] SearchAction start
+2022-05-31 16:11:59,843 DEBUG [92836] [] --------back--------
+2022-05-31 16:11:59,843 DEBUG [92836] [] admin_no is 1
+2022-05-31 16:11:59,908 DEBUG [92836] [] SearchAction end
+2022-05-31 16:11:59,909 DEBUG [92836] [] AtReportListController end
+2022-05-31 16:11:59,909 DEBUG [92836] [] finally
+2022-05-31 16:26:44,903 DEBUG [92314] [] Request URI : /eccadmin_dev/AtReportCourseRegist/index
+2022-05-31 16:26:44,904 DEBUG [92314] [] AtReportCourseRegistController start
+2022-05-31 16:26:44,904 DEBUG [92314] [] controllers/AtReportCourseRegistController.php: is exist
+2022-05-31 16:26:44,907 DEBUG [92314] [] AtReportCourseRegistForm: is exist
+2022-05-31 16:26:44,908 DEBUG [92314] [] AtReportCourseRegistForm: form value set 
+2022-05-31 16:26:44,908 DEBUG [92314] [] ------------------------------/eccadmin_dev/AtReportCourseRegist/index
+2022-05-31 16:26:44,908 DEBUG [92314] [] ------------------------------session_check_true
+2022-05-31 16:26:44,908 DEBUG [92314] [] indexAction start
+2022-05-31 16:26:44,909 DEBUG [92314] [] admin_no is 1
+2022-05-31 16:26:44,910 DEBUG [92314] [] getCourseListData
+2022-05-31 16:26:44,910 DEBUG [92314] []  SELECT  distinct tco.offer_no, course.course_id course_id  ,course.course_name course_name  ,course.remarks remarks ,org.org_no org_no ,org.org_id org_id ,date_format(course.start_period,'%Y/%m/%d') as start_period  ,date_format(course.end_period,'%Y/%m/%d') as end_period  ,CASE WHEN course.status = 0 THEN  '非公開'  ELSE '公開' END AS status  FROM  T_COURSE course  INNER JOIN T_COURSE_ORG as tco  ON course.course_id = tco.course_id   AND course.del_flg =  '0'  LEFT JOIN T_AT_REPORT as report  ON  tco.org_no = report.org_no   AND report.del_flg =  '0'  LEFT JOIN T_AT_REPORT_DETAIL as report_detail  ON tco.org_no = report_detail.org_no  AND course.course_id = report_detail.at_no  AND report_detail.at_type =  '002'  AND report_detail.del_flg =  '0'  INNER JOIN M_ORGANIZATION as org  ON tco.org_no = org.org_no  AND org.del_flg =  '0'  WHERE tco.start_period <= :end_period  AND tco.end_period >= :start_period  AND course.status = '1' AND (tco.org_no =:org_no )  AND course.del_flg = '0'  GROUP BY org.org_no,tco.offer_no, report.at_report_no, course.course_id,course.course_name , course.remarks, start_period,end_period  ORDER BY  course.course_id ASC
+2022-05-31 16:26:44,915 DEBUG [92314] [] getRegisteredCourseList
+2022-05-31 16:26:44,915 DEBUG [92314] [] SELECT org.org_no, report.at_report_no, report.at_report_name,report_detail.offer_no offer_no, course.course_id course_id, course.course_name course_name, course.remarks, course.start_period, course.end_period FROM T_AT_REPORT_DETAIL report_detail LEFT JOIN M_ORGANIZATION AS org ON report_detail.org_no = org.org_no LEFT JOIN T_AT_REPORT AS report ON report_detail.at_report_no = report.at_report_no LEFT JOIN T_COURSE AS course ON report_detail.at_no = course.course_id AND report_detail.at_type = '002' AND course.status = '1'INNER JOIN T_COURSE_ORG AS co ON course.course_id = co.course_id AND report_detail.org_no = co.org_no AND report_detail.offer_no = co.offer_no WHERE report.org_no = report_detail.org_no  AND report.del_flg = '0'  AND course.del_flg = '0'  AND report_detail.del_flg = '0'  AND course.start_period <= :end_period  AND course.end_period >= :start_period AND org.org_no=:org_no AND report_detail.at_report_no=:at_report_no  GROUP BY org.org_no, report.at_report_no, course.course_id, course.course_name, course.remarks, start_period,end_period ORDER BY report_detail.disp_no ASC 
+2022-05-31 16:26:44,916 DEBUG [92314] [] registerTestList
+2022-05-31 16:26:44,916 DEBUG [92314] [] Array
+(
+    [0] => 187
+    [1] => 188
+)
+
+2022-05-31 16:26:44,917 DEBUG [92314] [] registerOfferList
+2022-05-31 16:26:44,917 DEBUG [92314] [] Array
+(
+    [0] => 260
+    [1] => 261
+)
+
+2022-05-31 16:26:44,917 DEBUG [92314] [] exist_test_list
+2022-05-31 16:26:44,917 DEBUG [92314] [] Array
+(
+    [0] => T_Test_InfoDto Object
+        (
+            [org_no] => 1
+            [test_info_no] => 
+            [test_info_name] => 
+            [long_description] => 
+            [show_flg] => 
+            [test_time] => 
+            [status] => 公開
+            [start_period] => 2022/02/18
+            [end_period] => 2023/04/30
+            [remarks] => NO_DISPLAY_COURSE_REPORT
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [offer_no] => 260
+            [course_id] => 187
+            [course_name] => AT Report Course
+            [org_id] => ecc
+            [checked] => 1
+        )
+
+    [1] => T_Test_InfoDto Object
+        (
+            [org_no] => 1
+            [test_info_no] => 
+            [test_info_name] => 
+            [long_description] => 
+            [show_flg] => 
+            [test_time] => 
+            [status] => 公開
+            [start_period] => 2022/02/18
+            [end_period] => 2023/04/30
+            [remarks] => NO_DISPLAY_COURSE_REPORT
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [offer_no] => 261
+            [course_id] => 188
+            [course_name] => WritingCourseAT2
+            [org_id] => ecc
+            [checked] => 1
+        )
+
+)
+
+2022-05-31 16:26:44,999 DEBUG [92314] [] indexAction end
+2022-05-31 16:26:44,999 DEBUG [92314] [] AtReportCourseRegistController end
+2022-05-31 16:26:44,999 DEBUG [92314] [] finally
+2022-05-31 16:26:51,728 DEBUG [92728] [] Request URI : /eccadmin_dev/CourseList
+2022-05-31 16:26:51,729 DEBUG [92728] [] CourseListController start
+2022-05-31 16:26:51,729 DEBUG [92728] [] controllers/CourseListController.php: is exist
+2022-05-31 16:26:51,733 DEBUG [92728] [] CourseListForm: is exist
+2022-05-31 16:26:51,733 DEBUG [92728] [] CourseListForm: form value set 
+2022-05-31 16:26:51,733 DEBUG [92728] [] ------------------------------/eccadmin_dev/CourseList
+2022-05-31 16:26:51,734 DEBUG [92728] [] indexAction start
+2022-05-31 16:26:51,734 DEBUG [92728] [] admin_no is 1
+2022-05-31 16:26:51,865 DEBUG [92728] [] indexAction end
+2022-05-31 16:26:51,865 DEBUG [92728] [] CourseListController end
+2022-05-31 16:26:51,865 DEBUG [92728] [] finally
+2022-05-31 16:26:54,403 DEBUG [93191] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-05-31 16:26:54,403 DEBUG [93191] [] CourseListController start
+2022-05-31 16:26:54,403 DEBUG [93191] [] controllers/CourseListController.php: is exist
+2022-05-31 16:26:54,407 DEBUG [93191] [] CourseListForm: is exist
+2022-05-31 16:26:54,407 DEBUG [93191] [] CourseListForm: form value set 
+2022-05-31 16:26:54,408 DEBUG [93191] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-05-31 16:26:54,408 DEBUG [93191] [] SearchAction start
+2022-05-31 16:26:54,408 DEBUG [93191] [] admin_no is 1
+2022-05-31 16:26:54,514 DEBUG [93191] [] SearchAction end
+2022-05-31 16:26:54,514 DEBUG [93191] [] CourseListController end
+2022-05-31 16:26:54,514 DEBUG [93191] [] finally
+2022-05-31 16:26:56,323 DEBUG [93191] [] Request URI : /eccadmin_dev/CourseRegist/index
+2022-05-31 16:26:56,323 DEBUG [93191] [] CourseRegistController start
+2022-05-31 16:26:56,323 DEBUG [93191] [] controllers/CourseRegistController.php: is exist
+2022-05-31 16:26:56,327 DEBUG [93191] [] CourseRegistForm: is exist
+2022-05-31 16:26:56,327 DEBUG [93191] [] CourseRegistForm: form value set 
+2022-05-31 16:26:56,328 DEBUG [93191] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2022-05-31 16:26:56,328 DEBUG [93191] [] ------------------------------session_check_true
+2022-05-31 16:26:56,328 DEBUG [93191] [] indexAction start
+2022-05-31 16:26:56,328 DEBUG [93191] [] admin_no is 1
+2022-05-31 16:26:56,405 DEBUG [93191] [] indexAction end
+2022-05-31 16:26:56,405 DEBUG [93191] [] CourseRegistController end
+2022-05-31 16:26:56,405 DEBUG [93191] [] finally
+2022-05-31 16:27:00,437 DEBUG [92313] [] Request URI : /eccadmin_dev/CourseRegist/save
+2022-05-31 16:27:00,438 DEBUG [92313] [] CourseRegistController start
+2022-05-31 16:27:00,438 DEBUG [92313] [] controllers/CourseRegistController.php: is exist
+2022-05-31 16:27:00,442 DEBUG [92313] [] CourseRegistForm: is exist
+2022-05-31 16:27:00,442 DEBUG [92313] [] CourseRegistForm: form value set 
+2022-05-31 16:27:00,443 DEBUG [92313] [] ------------------------------/eccadmin_dev/CourseRegist/save
+2022-05-31 16:27:00,443 DEBUG [92313] [] ------------------------------session_check_true
+2022-05-31 16:27:00,443 DEBUG [92313] [] saveAction start
+2022-05-31 16:27:00,443 DEBUG [92313] [] admin_no is 1
+2022-05-31 16:27:00,534 DEBUG [92313] [] saveAction end
+2022-05-31 16:27:00,535 DEBUG [92313] [] CourseRegistController end
+2022-05-31 16:27:00,535 DEBUG [92313] [] finally
+2022-05-31 16:27:03,525 DEBUG [92313] [] Request URI : /eccadmin_dev/Login/logout
+2022-05-31 16:27:03,526 DEBUG [92313] [] LoginController start
+2022-05-31 16:27:03,526 DEBUG [92313] [] controllers/LoginController.php: is exist
+2022-05-31 16:27:03,526 DEBUG [92313] [] LoginForm: is exist
+2022-05-31 16:27:03,526 DEBUG [92313] [] LoginForm: form value set 
+2022-05-31 16:27:03,527 DEBUG [92313] [] ------------------------------/eccadmin_dev/Login/logout
+2022-05-31 16:27:03,527 DEBUG [92313] [] ------------------------------login_start_check
+2022-05-31 16:27:03,527 DEBUG [92313] [] logoutAction start
+2022-05-31 16:27:03,527 DEBUG [92313] [] logoutAction end
+2022-05-31 16:27:03,527 DEBUG [92313] [] LoginController end
+2022-05-31 16:27:03,527 DEBUG [92313] [] finally
+2022-05-31 16:27:03,554 DEBUG [92313] [] Request URI : /eccadmin_dev/Login
+2022-05-31 16:27:03,554 DEBUG [92313] [] LoginController start
+2022-05-31 16:27:03,554 DEBUG [92313] [] controllers/LoginController.php: is exist
+2022-05-31 16:27:03,555 DEBUG [92313] [] LoginForm: is exist
+2022-05-31 16:27:03,555 DEBUG [92313] [] LoginForm: form value set 
+2022-05-31 16:27:03,555 DEBUG [92313] [] ------------------------------/eccadmin_dev/Login
+2022-05-31 16:27:03,555 DEBUG [92313] [] ------------------------------login_start_check
+2022-05-31 16:27:03,555 DEBUG [92313] [] indexAction start
+2022-05-31 16:27:03,571 DEBUG [92313] [] indexAction end
+2022-05-31 16:27:03,571 DEBUG [92313] [] LoginController end
+2022-05-31 16:27:03,571 DEBUG [92313] [] finally
+2022-05-31 17:17:49,619 DEBUG [94034] [] Request URI : /eccadmin_dev/Login
+2022-05-31 17:17:49,623 DEBUG [94034] [] LoginController start
+2022-05-31 17:17:49,624 DEBUG [94034] [] controllers/LoginController.php: is exist
+2022-05-31 17:17:49,624 DEBUG [94034] [] LoginForm: is exist
+2022-05-31 17:17:49,625 DEBUG [94034] [] LoginForm: form value set 
+2022-05-31 17:17:49,625 DEBUG [94034] [] ------------------------------/eccadmin_dev/Login
+2022-05-31 17:17:49,625 DEBUG [94034] [] ------------------------------login_start_check
+2022-05-31 17:17:49,625 DEBUG [94034] [] indexAction start
+2022-05-31 17:17:49,642 DEBUG [94034] [] indexAction end
+2022-05-31 17:17:49,643 DEBUG [94034] [] LoginController end
+2022-05-31 17:17:49,643 DEBUG [94034] [] finally
+2022-05-31 17:17:52,600 DEBUG [94034] [] Request URI : /eccadmin_dev/Login/login
+2022-05-31 17:17:52,600 DEBUG [94034] [] LoginController start
+2022-05-31 17:17:52,600 DEBUG [94034] [] controllers/LoginController.php: is exist
+2022-05-31 17:17:52,601 DEBUG [94034] [] LoginForm: is exist
+2022-05-31 17:17:52,601 DEBUG [94034] [] LoginForm: form value set 
+2022-05-31 17:17:52,601 DEBUG [94034] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-31 17:17:52,601 DEBUG [94034] [] ------------------------------login_start_check
+2022-05-31 17:17:52,601 DEBUG [94034] [] loginAction start
+2022-05-31 17:17:52,905 DEBUG [94034] [] loginAction end
+2022-05-31 17:17:52,905 DEBUG [94034] [] LoginController end
+2022-05-31 17:17:52,905 DEBUG [94034] [] finally
+2022-05-31 17:17:52,924 DEBUG [94034] [] Request URI : /eccadmin_dev/Menu
+2022-05-31 17:17:52,924 DEBUG [94034] [] MenuController start
+2022-05-31 17:17:52,924 DEBUG [94034] [] controllers/MenuController.php: is exist
+2022-05-31 17:17:52,925 DEBUG [94034] [] MenuForm: is exist
+2022-05-31 17:17:52,925 DEBUG [94034] [] MenuForm: form value set 
+2022-05-31 17:17:52,926 DEBUG [94034] [] ------------------------------/eccadmin_dev/Menu
+2022-05-31 17:17:52,926 DEBUG [94034] [] ------------------------------login_start_check
+2022-05-31 17:17:52,926 DEBUG [94034] [] indexAction start
+2022-05-31 17:17:52,926 DEBUG [94034] [] admin_no is 1
+2022-05-31 17:17:52,955 DEBUG [94034] [] indexAction end
+2022-05-31 17:17:52,955 DEBUG [94034] [] MenuController end
+2022-05-31 17:17:52,955 DEBUG [94034] [] finally
+2022-05-31 17:17:56,593 DEBUG [93919] [] Request URI : /eccadmin_dev/AtReportRegist
+2022-05-31 17:17:56,594 DEBUG [93919] [] AtReportRegistController start
+2022-05-31 17:17:56,594 DEBUG [93919] [] controllers/AtReportRegistController.php: is exist
+2022-05-31 17:17:56,599 DEBUG [93919] [] AtReportRegistForm: is exist
+2022-05-31 17:17:56,599 DEBUG [93919] [] AtReportRegistForm: form value set 
+2022-05-31 17:17:56,600 DEBUG [93919] [] ------------------------------/eccadmin_dev/AtReportRegist
+2022-05-31 17:17:56,600 DEBUG [93919] [] ------------------------------session_check_true
+2022-05-31 17:17:56,600 DEBUG [93919] [] indexAction start
+2022-05-31 17:17:56,600 DEBUG [93919] [] admin_no is 1
+2022-05-31 17:17:56,682 DEBUG [93919] [] indexAction end
+2022-05-31 17:17:56,682 DEBUG [93919] [] AtReportRegistController end
+2022-05-31 17:17:56,682 DEBUG [93919] [] finally
+2022-05-31 17:17:57,944 DEBUG [93919] [] Request URI : /eccadmin_dev/AtReportList
+2022-05-31 17:17:57,944 DEBUG [93919] [] AtReportListController start
+2022-05-31 17:17:57,944 DEBUG [93919] [] controllers/AtReportListController.php: is exist
+2022-05-31 17:17:57,947 DEBUG [93919] [] AtReportListForm: is exist
+2022-05-31 17:17:57,948 DEBUG [93919] [] AtReportListForm: form value set 
+2022-05-31 17:17:57,948 DEBUG [93919] [] ------------------------------/eccadmin_dev/AtReportList
+2022-05-31 17:17:57,948 DEBUG [93919] [] indexAction start
+2022-05-31 17:17:57,949 DEBUG [93919] [] admin_no is 1
+2022-05-31 17:17:58,018 DEBUG [93919] [] indexAction end
+2022-05-31 17:17:58,018 DEBUG [93919] [] AtReportListController end
+2022-05-31 17:17:58,019 DEBUG [93919] [] finally
+2022-05-31 17:18:02,269 DEBUG [93919] [] Request URI : /eccadmin_dev/CourseList
+2022-05-31 17:18:02,270 DEBUG [93919] [] CourseListController start
+2022-05-31 17:18:02,270 DEBUG [93919] [] controllers/CourseListController.php: is exist
+2022-05-31 17:18:02,274 DEBUG [93919] [] CourseListForm: is exist
+2022-05-31 17:18:02,274 DEBUG [93919] [] CourseListForm: form value set 
+2022-05-31 17:18:02,274 DEBUG [93919] [] ------------------------------/eccadmin_dev/CourseList
+2022-05-31 17:18:02,275 DEBUG [93919] [] indexAction start
+2022-05-31 17:18:02,275 DEBUG [93919] [] admin_no is 1
+2022-05-31 17:18:02,381 DEBUG [93919] [] indexAction end
+2022-05-31 17:18:02,381 DEBUG [93919] [] CourseListController end
+2022-05-31 17:18:02,381 DEBUG [93919] [] finally
+2022-05-31 17:18:04,692 DEBUG [93951] [] Request URI : /eccadmin_dev/CourseList/Search
+2022-05-31 17:18:04,696 DEBUG [93951] [] CourseListController start
+2022-05-31 17:18:04,696 DEBUG [93951] [] controllers/CourseListController.php: is exist
+2022-05-31 17:18:04,700 DEBUG [93951] [] CourseListForm: is exist
+2022-05-31 17:18:04,701 DEBUG [93951] [] CourseListForm: form value set 
+2022-05-31 17:18:04,701 DEBUG [93951] [] ------------------------------/eccadmin_dev/CourseList/Search
+2022-05-31 17:18:04,702 DEBUG [93951] [] SearchAction start
+2022-05-31 17:18:04,702 DEBUG [93951] [] admin_no is 1
+2022-05-31 17:18:04,804 DEBUG [93951] [] SearchAction end
+2022-05-31 17:18:04,804 DEBUG [93951] [] CourseListController end
+2022-05-31 17:18:04,804 DEBUG [93951] [] finally
+2022-05-31 17:18:06,958 DEBUG [93951] [] Request URI : /eccadmin_dev/CourseRegist/index
+2022-05-31 17:18:06,958 DEBUG [93951] [] CourseRegistController start
+2022-05-31 17:18:06,958 DEBUG [93951] [] controllers/CourseRegistController.php: is exist
+2022-05-31 17:18:06,962 DEBUG [93951] [] CourseRegistForm: is exist
+2022-05-31 17:18:06,962 DEBUG [93951] [] CourseRegistForm: form value set 
+2022-05-31 17:18:06,963 DEBUG [93951] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2022-05-31 17:18:06,963 DEBUG [93951] [] ------------------------------session_check_true
+2022-05-31 17:18:06,963 DEBUG [93951] [] indexAction start
+2022-05-31 17:18:06,963 DEBUG [93951] [] admin_no is 1
+2022-05-31 17:18:07,038 DEBUG [93951] [] indexAction end
+2022-05-31 17:18:07,038 DEBUG [93951] [] CourseRegistController end
+2022-05-31 17:18:07,038 DEBUG [93951] [] finally
+2022-05-31 17:18:10,890 DEBUG [93951] [] Request URI : /eccadmin_dev/CourseRegist/save
+2022-05-31 17:18:10,890 DEBUG [93951] [] CourseRegistController start
+2022-05-31 17:18:10,891 DEBUG [93951] [] controllers/CourseRegistController.php: is exist
+2022-05-31 17:18:10,894 DEBUG [93951] [] CourseRegistForm: is exist
+2022-05-31 17:18:10,894 DEBUG [93951] [] CourseRegistForm: form value set 
+2022-05-31 17:18:10,895 DEBUG [93951] [] ------------------------------/eccadmin_dev/CourseRegist/save
+2022-05-31 17:18:10,895 DEBUG [93951] [] ------------------------------session_check_true
+2022-05-31 17:18:10,895 DEBUG [93951] [] saveAction start
+2022-05-31 17:18:10,895 DEBUG [93951] [] admin_no is 1
+2022-05-31 17:18:10,967 DEBUG [93951] [] saveAction end
+2022-05-31 17:18:10,967 DEBUG [93951] [] CourseRegistController end
+2022-05-31 17:18:10,967 DEBUG [93951] [] finally
+2022-05-31 17:19:50,979 DEBUG [94063] [] Request URI : /eccadmin_dev/CourseRegist/save
+2022-05-31 17:19:50,983 DEBUG [94063] [] CourseRegistController start
+2022-05-31 17:19:50,983 DEBUG [94063] [] controllers/CourseRegistController.php: is exist
+2022-05-31 17:19:50,988 DEBUG [94063] [] CourseRegistForm: is exist
+2022-05-31 17:19:50,988 DEBUG [94063] [] CourseRegistForm: form value set 
+2022-05-31 17:19:50,989 DEBUG [94063] [] ------------------------------/eccadmin_dev/CourseRegist/save
+2022-05-31 17:19:50,989 DEBUG [94063] [] ------------------------------session_check_true
+2022-05-31 17:19:50,989 DEBUG [94063] [] saveAction start
+2022-05-31 17:19:50,989 DEBUG [94063] [] admin_no is 1
+2022-05-31 17:19:51,064 DEBUG [94063] [] saveAction end
+2022-05-31 17:19:51,064 DEBUG [94063] [] CourseRegistController end
+2022-05-31 17:19:51,064 DEBUG [94063] [] finally
+2022-05-31 17:20:00,671 DEBUG [94024] [] Request URI : /eccadmin_dev/CourseRegist/save
+2022-05-31 17:20:00,672 DEBUG [94024] [] CourseRegistController start
+2022-05-31 17:20:00,672 DEBUG [94024] [] controllers/CourseRegistController.php: is exist
+2022-05-31 17:20:00,675 DEBUG [94024] [] CourseRegistForm: is exist
+2022-05-31 17:20:00,676 DEBUG [94024] [] CourseRegistForm: form value set 
+2022-05-31 17:20:00,676 DEBUG [94024] [] ------------------------------/eccadmin_dev/CourseRegist/save
+2022-05-31 17:20:00,676 DEBUG [94024] [] ------------------------------session_check_true
+2022-05-31 17:20:00,676 DEBUG [94024] [] saveAction start
+2022-05-31 17:20:00,676 DEBUG [94024] [] admin_no is 1
+2022-05-31 17:20:00,750 DEBUG [94024] [] saveAction end
+2022-05-31 17:20:00,750 DEBUG [94024] [] CourseRegistController end
+2022-05-31 17:20:00,750 DEBUG [94024] [] finally
+2022-05-31 17:20:03,909 DEBUG [94024] [] Request URI : /eccadmin_dev/Login/logout
+2022-05-31 17:20:03,910 DEBUG [94024] [] LoginController start
+2022-05-31 17:20:03,910 DEBUG [94024] [] controllers/LoginController.php: is exist
+2022-05-31 17:20:03,910 DEBUG [94024] [] LoginForm: is exist
+2022-05-31 17:20:03,910 DEBUG [94024] [] LoginForm: form value set 
+2022-05-31 17:20:03,911 DEBUG [94024] [] ------------------------------/eccadmin_dev/Login/logout
+2022-05-31 17:20:03,911 DEBUG [94024] [] ------------------------------login_start_check
+2022-05-31 17:20:03,911 DEBUG [94024] [] logoutAction start
+2022-05-31 17:20:03,911 DEBUG [94024] [] logoutAction end
+2022-05-31 17:20:03,911 DEBUG [94024] [] LoginController end
+2022-05-31 17:20:03,911 DEBUG [94024] [] finally
+2022-05-31 17:20:03,931 DEBUG [94024] [] Request URI : /eccadmin_dev/Login
+2022-05-31 17:20:03,931 DEBUG [94024] [] LoginController start
+2022-05-31 17:20:03,932 DEBUG [94024] [] controllers/LoginController.php: is exist
+2022-05-31 17:20:03,932 DEBUG [94024] [] LoginForm: is exist
+2022-05-31 17:20:03,932 DEBUG [94024] [] LoginForm: form value set 
+2022-05-31 17:20:03,932 DEBUG [94024] [] ------------------------------/eccadmin_dev/Login
+2022-05-31 17:20:03,932 DEBUG [94024] [] ------------------------------login_start_check
+2022-05-31 17:20:03,932 DEBUG [94024] [] indexAction start
+2022-05-31 17:20:03,948 DEBUG [94024] [] indexAction end
+2022-05-31 17:20:03,948 DEBUG [94024] [] LoginController end
+2022-05-31 17:20:03,948 DEBUG [94024] [] finally
+2022-05-31 17:23:07,784 DEBUG [94116] [] Request URI : /eccadmin_dev/Login
+2022-05-31 17:23:07,785 DEBUG [94116] [] LoginController start
+2022-05-31 17:23:07,785 DEBUG [94116] [] controllers/LoginController.php: is exist
+2022-05-31 17:23:07,785 DEBUG [94116] [] LoginForm: is exist
+2022-05-31 17:23:07,786 DEBUG [94116] [] LoginForm: form value set 
+2022-05-31 17:23:07,786 DEBUG [94116] [] ------------------------------/eccadmin_dev/Login
+2022-05-31 17:23:07,786 DEBUG [94116] [] ------------------------------login_start_check
+2022-05-31 17:23:07,786 DEBUG [94116] [] indexAction start
+2022-05-31 17:23:07,802 DEBUG [94116] [] indexAction end
+2022-05-31 17:23:07,802 DEBUG [94116] [] LoginController end
+2022-05-31 17:23:07,802 DEBUG [94116] [] finally
+2022-05-31 17:23:10,816 DEBUG [94116] [] Request URI : /eccadmin_dev/Login/login
+2022-05-31 17:23:10,817 DEBUG [94116] [] LoginController start
+2022-05-31 17:23:10,817 DEBUG [94116] [] controllers/LoginController.php: is exist
+2022-05-31 17:23:10,817 DEBUG [94116] [] LoginForm: is exist
+2022-05-31 17:23:10,817 DEBUG [94116] [] LoginForm: form value set 
+2022-05-31 17:23:10,818 DEBUG [94116] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-31 17:23:10,818 DEBUG [94116] [] ------------------------------login_start_check
+2022-05-31 17:23:10,818 DEBUG [94116] [] loginAction start
+2022-05-31 17:23:11,116 DEBUG [94116] [] loginAction end
+2022-05-31 17:23:11,116 DEBUG [94116] [] LoginController end
+2022-05-31 17:23:11,116 DEBUG [94116] [] finally
+2022-05-31 17:23:11,131 DEBUG [94116] [] Request URI : /eccadmin_dev/Menu
+2022-05-31 17:23:11,131 DEBUG [94116] [] MenuController start
+2022-05-31 17:23:11,132 DEBUG [94116] [] controllers/MenuController.php: is exist
+2022-05-31 17:23:11,132 DEBUG [94116] [] MenuForm: is exist
+2022-05-31 17:23:11,132 DEBUG [94116] [] MenuForm: form value set 
+2022-05-31 17:23:11,133 DEBUG [94116] [] ------------------------------/eccadmin_dev/Menu
+2022-05-31 17:23:11,133 DEBUG [94116] [] ------------------------------login_start_check
+2022-05-31 17:23:11,133 DEBUG [94116] [] indexAction start
+2022-05-31 17:23:11,133 DEBUG [94116] [] admin_no is 1
+2022-05-31 17:23:11,162 DEBUG [94116] [] indexAction end
+2022-05-31 17:23:11,162 DEBUG [94116] [] MenuController end
+2022-05-31 17:23:11,162 DEBUG [94116] [] finally
+2022-05-31 17:23:13,583 DEBUG [94116] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-05-31 17:23:13,583 DEBUG [94116] [] CourseContractConfirmListController start
+2022-05-31 17:23:13,583 DEBUG [94116] [] controllers/CourseContractConfirmListController.php: is exist
+2022-05-31 17:23:13,586 DEBUG [94116] [] CourseContractConfirmListForm: is exist
+2022-05-31 17:23:13,587 DEBUG [94116] [] CourseContractConfirmListForm: form value set 
+2022-05-31 17:23:13,587 DEBUG [94116] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-05-31 17:23:13,587 DEBUG [94116] [] indexAction start
+2022-05-31 17:23:13,588 DEBUG [94116] [] admin_no is 1
+2022-05-31 17:23:13,685 DEBUG [94116] [] indexAction end
+2022-05-31 17:23:13,685 DEBUG [94116] [] CourseContractConfirmListController end
+2022-05-31 17:23:13,685 DEBUG [94116] [] finally
+2022-05-31 17:23:20,513 DEBUG [94112] [] Request URI : /eccadmin_dev/CourseContractConfirmList/Search
+2022-05-31 17:23:20,513 DEBUG [94112] [] CourseContractConfirmListController start
+2022-05-31 17:23:20,513 DEBUG [94112] [] controllers/CourseContractConfirmListController.php: is exist
+2022-05-31 17:23:20,516 DEBUG [94112] [] CourseContractConfirmListForm: is exist
+2022-05-31 17:23:20,517 DEBUG [94112] [] CourseContractConfirmListForm: form value set 
+2022-05-31 17:23:20,517 DEBUG [94112] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/Search
+2022-05-31 17:23:20,517 DEBUG [94112] [] SearchAction start
+2022-05-31 17:23:20,517 DEBUG [94112] [] admin_no is 1
+2022-05-31 17:23:20,520 DEBUG [94112] [] CourseContractConfirmList　Query
+2022-05-31 17:23:20,520 DEBUG [94112] []  SELECT   o.org_no    ,o.org_id  ,o.org_name  ,o.org_name_official  ,c.course_id  ,c.course_name  ,date_format(co.start_period,'%Y/%m/%d') AS  co_start_period ,date_format(co.end_period,'%Y/%m/%d') AS  co_end_period ,co.remarks  ,co.offer_no  ,d.course_detail_no  ,d.course_detail_name  ,s.student_no  ,s.student_name  ,s.login_id  ,date_format(cds.start_period,'%Y/%m/%d') AS cds_start_period  ,date_format(cds.end_period,'%Y/%m/%d') AS cds_end_period  ,date_format(answer.answer_dt,'%Y/%m/%d') AS a_answer_dt  ,date_format(r.update_dt,'%Y/%m/%d') AS u_update_dt  ,teacher.display_name AS display_name  ,teacher.login_id AS teacher_code ,teacher.name AS teacher_name ,teacher.school_kbn AS teacher_school   ,CONCAT(if (student_mark.result_marks IS NULL,'-', student_mark.result_marks ),'/',total_mark.marks) AS result  FROM M_ORGANIZATION o  INNER JOIN T_COURSE_ORG as co  ON co.org_no = o.org_no  AND co.del_flg = '0'  AND o.del_flg = '0'  INNER JOIN T_COURSE as c  ON c.course_id = co.course_id  AND c.del_flg = '0'  INNER JOIN T_COURSE_DETAIL as cd  ON cd.course_id = c.course_id  AND cd.del_flg = '0'  INNER JOIN T_DETAIL as d  ON d.course_detail_no = cd.course_detail_no  AND c.course_level = d.course_level  AND c.test_kbn = d.test_kbn  AND d.del_flg = '0'  LEFT JOIN T_COURSE_DETAIL_STUDENT as cds  ON cds.offer_no = co.offer_no  AND cds.course_id = c.course_id  AND cds.course_detail_no = cd.course_detail_no  AND cds.del_flg = '0'  LEFT JOIN T_STUDENT as s  ON s.org_no = co.org_no  AND s.student_no = cds.student_no  AND s.del_flg = '0'  LEFT JOIN T_4SKILL_RESULT as r  ON r.offer_no = co.offer_no  AND r.course_id = c.course_id  AND r.course_detail_no = cd.course_detail_no  AND r.student_no = cds.student_no  AND r.del_flg = '0'  LEFT JOIN ( SELECT teacher_no,  del_flg, display_name, login_id, name, CASE WHEN school_kbn = '001' THEN 'Philippines'  WHEN school_kbn = '002' THEN 'Japan' ELSE NULL END AS school_kbn  FROM T_TEACHER) teacher  ON r.updater_id = teacher.teacher_no  AND teacher.del_flg = '0'  LEFT JOIN (  SELECT offer_no  	,course_id course_id  	,course_detail_no course_detail_no  	,student_no  	,MIN(answer_dt) answer_dt  	FROM T_4SKILL_ANSWER  	WHERE del_flg = '0'   	GROUP BY offer_no,course_id,course_detail_no,student_no ) answer  ON c.course_id = answer.course_id  AND cd.course_detail_no = answer.course_detail_no  AND co.offer_no = answer.offer_no  AND s.student_no = answer.student_no  LEFT JOIN (  	SELECT a.offer_no ,a.student_no,a.course_id,a.course_detail_no,SUM(a.marks) as result_marks  	FROM (  		SELECT skill_answer.offer_no  		,skill_answer.student_no  		,skill_answer.course_id  		,skill_answer.course_detail_no  		,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no  		,skill_result_detail.rule_detail_no  		,mark_detail.marks  		FROM T_4SKILL_ANSWER skill_answer  		LEFT JOIN T_4SKILL_RESULT skill_result  		ON skill_answer.offer_no = skill_result.offer_no  		AND skill_answer.student_no = skill_result.student_no  		AND skill_answer.course_id = skill_result.course_id  		AND skill_answer.course_detail_no = skill_result.course_detail_no  		INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail  		ON skill_result.result_no = skill_result_detail.result_no  		INNER JOIN M_MARK_DETAIL mark_detail  		ON skill_result_detail.rule_no = mark_detail.rule_no  		AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no  		AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no  		AND skill_answer.del_flg = '0'  		AND skill_result.del_flg = '0'  		GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id,mark_detail.marks  		,skill_answer.course_detail_no ,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no  	) as a  	GROUP BY a.offer_no  ,a.student_no  ,a.course_id  ,a.course_detail_no  ) as student_mark  ON s.student_no = student_mark.student_no  AND co.offer_no = student_mark.offer_no  AND co.course_id = student_mark.course_id  AND cd.course_detail_no = student_mark.course_detail_no  LEFT JOIN  (  	SELECT mark_rule.course_level  	, mark_rule.test_kbn  	, course.course_id  	, course_detail.course_detail_no  	, SUM(mark_detail.max_marks) marks  	FROM T_COURSE course  	INNER JOIN T_COURSE_DETAIL course_detail  	ON course.course_id = course_detail.course_id  	AND course.del_flg = '0'  	AND course_detail.del_flg = '0'  	INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa  	ON course_detail.course_detail_no = course_detail_qa.course_detail_no  	AND course_detail_qa.del_flg = '0'  	INNER JOIN T_QUESTION ques  	ON course_detail_qa.question_no = ques.question_no  	AND ques.del_flg = '0'  	INNER JOIN  M_MARK_RULE mark_rule  	ON ques.score_pattern = mark_rule.score_pattern  	AND course.course_level = mark_rule.course_level  	AND course.test_kbn = mark_rule.test_kbn  	INNER JOIN  (  		SELECT  rule_no  			,SUM(max_marks) AS max_marks  			FROM (  				SELECT rule_no  				,sub_rule_no  				,MAX(marks) AS max_marks  				FROM M_MARK_DETAIL  				WHERE del_flg = '0'  				GROUP BY rule_no,sub_rule_no) AS max  			GROUP BY rule_no  		) mark_detail  	ON mark_rule.rule_no = mark_detail.rule_no  	GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no  ) as total_mark  ON c.course_id = total_mark.course_id  AND cd.course_detail_no = total_mark.course_detail_no  AND c.course_level =  total_mark.course_level  AND c.test_kbn =  total_mark.test_kbn  WHERE  '1' = '1'  AND c.course_id = :course_id_from  AND co.end_period >= :start_period  AND co.start_period <= :end_period  AND s.login_id = :login_id_from  GROUP BY o.org_no,o.org_id,o.org_name,o.org_name_official,c.course_id,c.course_name,co_start_period,co_end_period,co.remarks,co.offer_no, d.course_detail_no, d.course_detail_name,s.student_no,s.student_name,s.login_id,cds_start_period,cds_end_period,a_answer_dt,u_update_dt,display_name,teacher.login_id,teacher_name,teacher.school_kbn ORDER BY o.org_no,co.offer_no, c.course_id, cd.disp_no, cds.course_detail_no,s.login_id
+2022-05-31 17:23:20,735 DEBUG [94112] [] SearchAction end
+2022-05-31 17:23:20,735 DEBUG [94112] [] CourseContractConfirmListController end
+2022-05-31 17:23:20,735 DEBUG [94112] [] finally
+2022-05-31 17:23:23,226 DEBUG [94112] [] Request URI : /eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:23:23,227 DEBUG [94112] [] StudentCourseDetailEditController start
+2022-05-31 17:23:23,227 DEBUG [94112] [] controllers/StudentCourseDetailEditController.php: is exist
+2022-05-31 17:23:23,231 DEBUG [94112] [] StudentCourseDetailEditForm: is exist
+2022-05-31 17:23:23,231 DEBUG [94112] [] StudentCourseDetailEditForm: form value set 
+2022-05-31 17:23:23,231 DEBUG [94112] [] ------------------------------/eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:23:23,232 DEBUG [94112] [] ------------------------------session_check_true
+2022-05-31 17:23:23,232 DEBUG [94112] [] indexAction start
+2022-05-31 17:23:23,232 DEBUG [94112] [] admin_no is 1
+2022-05-31 17:23:23,233 DEBUG [94112] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:23:23,523 DEBUG [94112] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:23:23,825 DEBUG [94112] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:23:24,221 DEBUG [94112] [] indexAction end
+2022-05-31 17:23:24,221 DEBUG [94112] [] StudentCourseDetailEditController end
+2022-05-31 17:23:24,221 DEBUG [94112] [] finally
+2022-05-31 17:44:18,919 DEBUG [94795] [] Request URI : /eccadmin_dev/StudentCourseDetailEdit/retake
+2022-05-31 17:44:18,923 DEBUG [94795] [] StudentCourseDetailEditController start
+2022-05-31 17:44:18,923 DEBUG [94795] [] controllers/StudentCourseDetailEditController.php: is exist
+2022-05-31 17:44:18,927 DEBUG [94795] [] StudentCourseDetailEditForm: is exist
+2022-05-31 17:44:18,927 DEBUG [94795] [] StudentCourseDetailEditForm: form value set 
+2022-05-31 17:44:18,928 DEBUG [94795] [] ------------------------------/eccadmin_dev/StudentCourseDetailEdit/retake
+2022-05-31 17:44:18,928 DEBUG [94795] [] ------------------------------session_check_true
+2022-05-31 17:44:18,928 DEBUG [94795] [] retakeAction start
+2022-05-31 17:44:18,928 DEBUG [94795] [] admin_no is 1
+2022-05-31 17:44:18,935 DEBUG [94795] [] 再受講設定しました。
+2022-05-31 17:44:18,935 DEBUG [94795] [] ユーザーの組織 :1
+2022-05-31 17:44:18,935 DEBUG [94795] [] 受講者No :1
+2022-05-31 17:44:18,935 DEBUG [94795] [] Offer No :261
+2022-05-31 17:44:18,935 DEBUG [94795] [] コース名 :26
+2022-05-31 17:44:18,935 DEBUG [94795] [] コース詳細名 :26
+2022-05-31 17:44:18,936 DEBUG [94795] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:44:19,225 DEBUG [94795] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:44:19,513 DEBUG [94795] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:44:19,866 DEBUG [94795] [] retakeAction end
+2022-05-31 17:44:19,866 DEBUG [94795] [] StudentCourseDetailEditController end
+2022-05-31 17:44:19,866 DEBUG [94795] [] finally
+2022-05-31 17:45:45,803 DEBUG [94840] [] Request URI : /eccadmin_dev/CourseContractConfirmList/search
+2022-05-31 17:45:45,804 DEBUG [94840] [] CourseContractConfirmListController start
+2022-05-31 17:45:45,804 DEBUG [94840] [] controllers/CourseContractConfirmListController.php: is exist
+2022-05-31 17:45:45,807 DEBUG [94840] [] CourseContractConfirmListForm: is exist
+2022-05-31 17:45:45,807 DEBUG [94840] [] CourseContractConfirmListForm: form value set 
+2022-05-31 17:45:45,808 DEBUG [94840] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/search
+2022-05-31 17:45:45,808 DEBUG [94840] [] searchAction start
+2022-05-31 17:45:45,808 DEBUG [94840] [] admin_no is 1
+2022-05-31 17:45:45,810 DEBUG [94840] [] CourseContractConfirmList　Query
+2022-05-31 17:45:45,810 DEBUG [94840] []  SELECT   o.org_no    ,o.org_id  ,o.org_name  ,o.org_name_official  ,c.course_id  ,c.course_name  ,date_format(co.start_period,'%Y/%m/%d') AS  co_start_period ,date_format(co.end_period,'%Y/%m/%d') AS  co_end_period ,co.remarks  ,co.offer_no  ,d.course_detail_no  ,d.course_detail_name  ,s.student_no  ,s.student_name  ,s.login_id  ,date_format(cds.start_period,'%Y/%m/%d') AS cds_start_period  ,date_format(cds.end_period,'%Y/%m/%d') AS cds_end_period  ,date_format(answer.answer_dt,'%Y/%m/%d') AS a_answer_dt  ,date_format(r.update_dt,'%Y/%m/%d') AS u_update_dt  ,teacher.display_name AS display_name  ,teacher.login_id AS teacher_code ,teacher.name AS teacher_name ,teacher.school_kbn AS teacher_school   ,CONCAT(if (student_mark.result_marks IS NULL,'-', student_mark.result_marks ),'/',total_mark.marks) AS result  FROM M_ORGANIZATION o  INNER JOIN T_COURSE_ORG as co  ON co.org_no = o.org_no  AND co.del_flg = '0'  AND o.del_flg = '0'  INNER JOIN T_COURSE as c  ON c.course_id = co.course_id  AND c.del_flg = '0'  INNER JOIN T_COURSE_DETAIL as cd  ON cd.course_id = c.course_id  AND cd.del_flg = '0'  INNER JOIN T_DETAIL as d  ON d.course_detail_no = cd.course_detail_no  AND c.course_level = d.course_level  AND c.test_kbn = d.test_kbn  AND d.del_flg = '0'  LEFT JOIN T_COURSE_DETAIL_STUDENT as cds  ON cds.offer_no = co.offer_no  AND cds.course_id = c.course_id  AND cds.course_detail_no = cd.course_detail_no  AND cds.del_flg = '0'  LEFT JOIN T_STUDENT as s  ON s.org_no = co.org_no  AND s.student_no = cds.student_no  AND s.del_flg = '0'  LEFT JOIN T_4SKILL_RESULT as r  ON r.offer_no = co.offer_no  AND r.course_id = c.course_id  AND r.course_detail_no = cd.course_detail_no  AND r.student_no = cds.student_no  AND r.del_flg = '0'  LEFT JOIN ( SELECT teacher_no,  del_flg, display_name, login_id, name, CASE WHEN school_kbn = '001' THEN 'Philippines'  WHEN school_kbn = '002' THEN 'Japan' ELSE NULL END AS school_kbn  FROM T_TEACHER) teacher  ON r.updater_id = teacher.teacher_no  AND teacher.del_flg = '0'  LEFT JOIN (  SELECT offer_no  	,course_id course_id  	,course_detail_no course_detail_no  	,student_no  	,MIN(answer_dt) answer_dt  	FROM T_4SKILL_ANSWER  	WHERE del_flg = '0'   	GROUP BY offer_no,course_id,course_detail_no,student_no ) answer  ON c.course_id = answer.course_id  AND cd.course_detail_no = answer.course_detail_no  AND co.offer_no = answer.offer_no  AND s.student_no = answer.student_no  LEFT JOIN (  	SELECT a.offer_no ,a.student_no,a.course_id,a.course_detail_no,SUM(a.marks) as result_marks  	FROM (  		SELECT skill_answer.offer_no  		,skill_answer.student_no  		,skill_answer.course_id  		,skill_answer.course_detail_no  		,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no  		,skill_result_detail.rule_detail_no  		,mark_detail.marks  		FROM T_4SKILL_ANSWER skill_answer  		LEFT JOIN T_4SKILL_RESULT skill_result  		ON skill_answer.offer_no = skill_result.offer_no  		AND skill_answer.student_no = skill_result.student_no  		AND skill_answer.course_id = skill_result.course_id  		AND skill_answer.course_detail_no = skill_result.course_detail_no  		INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail  		ON skill_result.result_no = skill_result_detail.result_no  		INNER JOIN M_MARK_DETAIL mark_detail  		ON skill_result_detail.rule_no = mark_detail.rule_no  		AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no  		AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no  		AND skill_answer.del_flg = '0'  		AND skill_result.del_flg = '0'  		GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id,mark_detail.marks  		,skill_answer.course_detail_no ,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no  	) as a  	GROUP BY a.offer_no  ,a.student_no  ,a.course_id  ,a.course_detail_no  ) as student_mark  ON s.student_no = student_mark.student_no  AND co.offer_no = student_mark.offer_no  AND co.course_id = student_mark.course_id  AND cd.course_detail_no = student_mark.course_detail_no  LEFT JOIN  (  	SELECT mark_rule.course_level  	, mark_rule.test_kbn  	, course.course_id  	, course_detail.course_detail_no  	, SUM(mark_detail.max_marks) marks  	FROM T_COURSE course  	INNER JOIN T_COURSE_DETAIL course_detail  	ON course.course_id = course_detail.course_id  	AND course.del_flg = '0'  	AND course_detail.del_flg = '0'  	INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa  	ON course_detail.course_detail_no = course_detail_qa.course_detail_no  	AND course_detail_qa.del_flg = '0'  	INNER JOIN T_QUESTION ques  	ON course_detail_qa.question_no = ques.question_no  	AND ques.del_flg = '0'  	INNER JOIN  M_MARK_RULE mark_rule  	ON ques.score_pattern = mark_rule.score_pattern  	AND course.course_level = mark_rule.course_level  	AND course.test_kbn = mark_rule.test_kbn  	INNER JOIN  (  		SELECT  rule_no  			,SUM(max_marks) AS max_marks  			FROM (  				SELECT rule_no  				,sub_rule_no  				,MAX(marks) AS max_marks  				FROM M_MARK_DETAIL  				WHERE del_flg = '0'  				GROUP BY rule_no,sub_rule_no) AS max  			GROUP BY rule_no  		) mark_detail  	ON mark_rule.rule_no = mark_detail.rule_no  	GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no  ) as total_mark  ON c.course_id = total_mark.course_id  AND cd.course_detail_no = total_mark.course_detail_no  AND c.course_level =  total_mark.course_level  AND c.test_kbn =  total_mark.test_kbn  WHERE  '1' = '1'  AND c.course_id = :course_id_from  AND co.end_period >= :start_period  AND co.start_period <= :end_period  AND s.login_id = :login_id_from  GROUP BY o.org_no,o.org_id,o.org_name,o.org_name_official,c.course_id,c.course_name,co_start_period,co_end_period,co.remarks,co.offer_no, d.course_detail_no, d.course_detail_name,s.student_no,s.student_name,s.login_id,cds_start_period,cds_end_period,a_answer_dt,u_update_dt,display_name,teacher.login_id,teacher_name,teacher.school_kbn ORDER BY o.org_no,co.offer_no, c.course_id, cd.disp_no, cds.course_detail_no,s.login_id
+2022-05-31 17:45:46,030 DEBUG [94840] [] searchAction end
+2022-05-31 17:45:46,030 DEBUG [94840] [] CourseContractConfirmListController end
+2022-05-31 17:45:46,030 DEBUG [94840] [] finally
+2022-05-31 17:45:48,727 DEBUG [94840] [] Request URI : /eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:45:48,727 DEBUG [94840] [] StudentCourseDetailEditController start
+2022-05-31 17:45:48,727 DEBUG [94840] [] controllers/StudentCourseDetailEditController.php: is exist
+2022-05-31 17:45:48,731 DEBUG [94840] [] StudentCourseDetailEditForm: is exist
+2022-05-31 17:45:48,731 DEBUG [94840] [] StudentCourseDetailEditForm: form value set 
+2022-05-31 17:45:48,732 DEBUG [94840] [] ------------------------------/eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:45:48,732 DEBUG [94840] [] ------------------------------session_check_true
+2022-05-31 17:45:48,732 DEBUG [94840] [] indexAction start
+2022-05-31 17:45:48,732 DEBUG [94840] [] admin_no is 1
+2022-05-31 17:45:48,734 DEBUG [94840] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:45:49,025 DEBUG [94840] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:45:49,318 DEBUG [94840] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:45:49,697 DEBUG [94840] [] indexAction end
+2022-05-31 17:45:49,697 DEBUG [94840] [] StudentCourseDetailEditController end
+2022-05-31 17:45:49,697 DEBUG [94840] [] finally
+2022-05-31 17:47:17,596 DEBUG [94934] [] Request URI : /eccadmin_dev/CourseContractConfirmList/search
+2022-05-31 17:47:17,600 DEBUG [94934] [] CourseContractConfirmListController start
+2022-05-31 17:47:17,600 DEBUG [94934] [] controllers/CourseContractConfirmListController.php: is exist
+2022-05-31 17:47:17,603 DEBUG [94934] [] CourseContractConfirmListForm: is exist
+2022-05-31 17:47:17,604 DEBUG [94934] [] CourseContractConfirmListForm: form value set 
+2022-05-31 17:47:17,604 DEBUG [94934] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/search
+2022-05-31 17:47:17,604 DEBUG [94934] [] searchAction start
+2022-05-31 17:47:17,605 DEBUG [94934] [] admin_no is 1
+2022-05-31 17:47:17,607 DEBUG [94934] [] CourseContractConfirmList　Query
+2022-05-31 17:47:17,607 DEBUG [94934] []  SELECT   o.org_no    ,o.org_id  ,o.org_name  ,o.org_name_official  ,c.course_id  ,c.course_name  ,date_format(co.start_period,'%Y/%m/%d') AS  co_start_period ,date_format(co.end_period,'%Y/%m/%d') AS  co_end_period ,co.remarks  ,co.offer_no  ,d.course_detail_no  ,d.course_detail_name  ,s.student_no  ,s.student_name  ,s.login_id  ,date_format(cds.start_period,'%Y/%m/%d') AS cds_start_period  ,date_format(cds.end_period,'%Y/%m/%d') AS cds_end_period  ,date_format(answer.answer_dt,'%Y/%m/%d') AS a_answer_dt  ,date_format(r.update_dt,'%Y/%m/%d') AS u_update_dt  ,teacher.display_name AS display_name  ,teacher.login_id AS teacher_code ,teacher.name AS teacher_name ,teacher.school_kbn AS teacher_school   ,CONCAT(if (student_mark.result_marks IS NULL,'-', student_mark.result_marks ),'/',total_mark.marks) AS result  FROM M_ORGANIZATION o  INNER JOIN T_COURSE_ORG as co  ON co.org_no = o.org_no  AND co.del_flg = '0'  AND o.del_flg = '0'  INNER JOIN T_COURSE as c  ON c.course_id = co.course_id  AND c.del_flg = '0'  INNER JOIN T_COURSE_DETAIL as cd  ON cd.course_id = c.course_id  AND cd.del_flg = '0'  INNER JOIN T_DETAIL as d  ON d.course_detail_no = cd.course_detail_no  AND c.course_level = d.course_level  AND c.test_kbn = d.test_kbn  AND d.del_flg = '0'  LEFT JOIN T_COURSE_DETAIL_STUDENT as cds  ON cds.offer_no = co.offer_no  AND cds.course_id = c.course_id  AND cds.course_detail_no = cd.course_detail_no  AND cds.del_flg = '0'  LEFT JOIN T_STUDENT as s  ON s.org_no = co.org_no  AND s.student_no = cds.student_no  AND s.del_flg = '0'  LEFT JOIN T_4SKILL_RESULT as r  ON r.offer_no = co.offer_no  AND r.course_id = c.course_id  AND r.course_detail_no = cd.course_detail_no  AND r.student_no = cds.student_no  AND r.del_flg = '0'  LEFT JOIN ( SELECT teacher_no,  del_flg, display_name, login_id, name, CASE WHEN school_kbn = '001' THEN 'Philippines'  WHEN school_kbn = '002' THEN 'Japan' ELSE NULL END AS school_kbn  FROM T_TEACHER) teacher  ON r.updater_id = teacher.teacher_no  AND teacher.del_flg = '0'  LEFT JOIN (  SELECT offer_no  	,course_id course_id  	,course_detail_no course_detail_no  	,student_no  	,MIN(answer_dt) answer_dt  	FROM T_4SKILL_ANSWER  	WHERE del_flg = '0'   	GROUP BY offer_no,course_id,course_detail_no,student_no ) answer  ON c.course_id = answer.course_id  AND cd.course_detail_no = answer.course_detail_no  AND co.offer_no = answer.offer_no  AND s.student_no = answer.student_no  LEFT JOIN (  	SELECT a.offer_no ,a.student_no,a.course_id,a.course_detail_no,SUM(a.marks) as result_marks  	FROM (  		SELECT skill_answer.offer_no  		,skill_answer.student_no  		,skill_answer.course_id  		,skill_answer.course_detail_no  		,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no  		,skill_result_detail.rule_detail_no  		,mark_detail.marks  		FROM T_4SKILL_ANSWER skill_answer  		LEFT JOIN T_4SKILL_RESULT skill_result  		ON skill_answer.offer_no = skill_result.offer_no  		AND skill_answer.student_no = skill_result.student_no  		AND skill_answer.course_id = skill_result.course_id  		AND skill_answer.course_detail_no = skill_result.course_detail_no  		INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail  		ON skill_result.result_no = skill_result_detail.result_no  		INNER JOIN M_MARK_DETAIL mark_detail  		ON skill_result_detail.rule_no = mark_detail.rule_no  		AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no  		AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no  		AND skill_answer.del_flg = '0'  		AND skill_result.del_flg = '0'  		GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id,mark_detail.marks  		,skill_answer.course_detail_no ,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no  	) as a  	GROUP BY a.offer_no  ,a.student_no  ,a.course_id  ,a.course_detail_no  ) as student_mark  ON s.student_no = student_mark.student_no  AND co.offer_no = student_mark.offer_no  AND co.course_id = student_mark.course_id  AND cd.course_detail_no = student_mark.course_detail_no  LEFT JOIN  (  	SELECT mark_rule.course_level  	, mark_rule.test_kbn  	, course.course_id  	, course_detail.course_detail_no  	, SUM(mark_detail.max_marks) marks  	FROM T_COURSE course  	INNER JOIN T_COURSE_DETAIL course_detail  	ON course.course_id = course_detail.course_id  	AND course.del_flg = '0'  	AND course_detail.del_flg = '0'  	INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa  	ON course_detail.course_detail_no = course_detail_qa.course_detail_no  	AND course_detail_qa.del_flg = '0'  	INNER JOIN T_QUESTION ques  	ON course_detail_qa.question_no = ques.question_no  	AND ques.del_flg = '0'  	INNER JOIN  M_MARK_RULE mark_rule  	ON ques.score_pattern = mark_rule.score_pattern  	AND course.course_level = mark_rule.course_level  	AND course.test_kbn = mark_rule.test_kbn  	INNER JOIN  (  		SELECT  rule_no  			,SUM(max_marks) AS max_marks  			FROM (  				SELECT rule_no  				,sub_rule_no  				,MAX(marks) AS max_marks  				FROM M_MARK_DETAIL  				WHERE del_flg = '0'  				GROUP BY rule_no,sub_rule_no) AS max  			GROUP BY rule_no  		) mark_detail  	ON mark_rule.rule_no = mark_detail.rule_no  	GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no  ) as total_mark  ON c.course_id = total_mark.course_id  AND cd.course_detail_no = total_mark.course_detail_no  AND c.course_level =  total_mark.course_level  AND c.test_kbn =  total_mark.test_kbn  WHERE  '1' = '1'  AND c.course_id = :course_id_from  AND co.end_period >= :start_period  AND co.start_period <= :end_period  AND s.login_id = :login_id_from  GROUP BY o.org_no,o.org_id,o.org_name,o.org_name_official,c.course_id,c.course_name,co_start_period,co_end_period,co.remarks,co.offer_no, d.course_detail_no, d.course_detail_name,s.student_no,s.student_name,s.login_id,cds_start_period,cds_end_period,a_answer_dt,u_update_dt,display_name,teacher.login_id,teacher_name,teacher.school_kbn ORDER BY o.org_no,co.offer_no, c.course_id, cd.disp_no, cds.course_detail_no,s.login_id
+2022-05-31 17:47:17,819 DEBUG [94934] [] searchAction end
+2022-05-31 17:47:17,819 DEBUG [94934] [] CourseContractConfirmListController end
+2022-05-31 17:47:17,819 DEBUG [94934] [] finally
+2022-05-31 17:47:21,422 DEBUG [94916] [] Request URI : /eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:47:21,422 DEBUG [94916] [] StudentCourseDetailEditController start
+2022-05-31 17:47:21,422 DEBUG [94916] [] controllers/StudentCourseDetailEditController.php: is exist
+2022-05-31 17:47:21,427 DEBUG [94916] [] StudentCourseDetailEditForm: is exist
+2022-05-31 17:47:21,427 DEBUG [94916] [] StudentCourseDetailEditForm: form value set 
+2022-05-31 17:47:21,427 DEBUG [94916] [] ------------------------------/eccadmin_dev/StudentCourseDetailEdit/index
+2022-05-31 17:47:21,428 DEBUG [94916] [] ------------------------------session_check_true
+2022-05-31 17:47:21,428 DEBUG [94916] [] indexAction start
+2022-05-31 17:47:21,428 DEBUG [94916] [] admin_no is 1
+2022-05-31 17:47:21,429 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:21,726 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:22,024 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:22,395 DEBUG [94916] [] indexAction end
+2022-05-31 17:47:22,395 DEBUG [94916] [] StudentCourseDetailEditController end
+2022-05-31 17:47:22,395 DEBUG [94916] [] finally
+2022-05-31 17:47:25,769 DEBUG [94916] [] Request URI : /eccadmin_dev/StudentCourseDetailEdit/retake
+2022-05-31 17:47:25,770 DEBUG [94916] [] StudentCourseDetailEditController start
+2022-05-31 17:47:25,770 DEBUG [94916] [] controllers/StudentCourseDetailEditController.php: is exist
+2022-05-31 17:47:25,774 DEBUG [94916] [] StudentCourseDetailEditForm: is exist
+2022-05-31 17:47:25,774 DEBUG [94916] [] StudentCourseDetailEditForm: form value set 
+2022-05-31 17:47:25,775 DEBUG [94916] [] ------------------------------/eccadmin_dev/StudentCourseDetailEdit/retake
+2022-05-31 17:47:25,775 DEBUG [94916] [] ------------------------------session_check_true
+2022-05-31 17:47:25,775 DEBUG [94916] [] retakeAction start
+2022-05-31 17:47:25,775 DEBUG [94916] [] admin_no is 1
+2022-05-31 17:47:25,779 DEBUG [94916] [] 再受講設定しました。
+2022-05-31 17:47:25,779 DEBUG [94916] [] ユーザーの組織 :1
+2022-05-31 17:47:25,779 DEBUG [94916] [] 受講者No :1
+2022-05-31 17:47:25,779 DEBUG [94916] [] Offer No :261
+2022-05-31 17:47:25,779 DEBUG [94916] [] コース名 :26
+2022-05-31 17:47:25,779 DEBUG [94916] [] コース詳細名 :26
+2022-05-31 17:47:25,781 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:26,077 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:26,368 DEBUG [94916] []  SELECT DISTINCT m_org.org_no  ,m_org.org_id  ,m_org.org_name  ,m_org.org_name_official  ,course.course_id  ,course.course_name  ,course.remarks  ,detail.course_detail_name  ,detail.course_detail_romaji  ,detail.course_detail_no  ,course_detail.disp_no  ,detail.status  ,(SELECT name FROM M_TYPE a WHERE category=:course_level AND a.type=detail.course_level) AS course_level  ,(SELECT name FROM M_TYPE a WHERE category=:test_kbn AND a.type=detail.test_kbn) AS test_kbn  ,date_format(course_org.start_period,'%Y/%m/%d') AS start_period  ,date_format(course_org.end_period,'%Y/%m/%d') AS end_period  ,student.student_no  ,student.student_name  ,student.student_name_romaji  ,student.login_id  ,date_format(detail_student.start_period,'%Y/%m/%d') AS stu_course_start_period ,date_format(detail_student.end_period,'%Y/%m/%d') AS stu_course_end_period ,date_format(skill_answer.answer_dt,'%Y/%m/%d') AS answer_dt  ,date_format(skill_result.update_dt,'%Y/%m/%d') AS update_dt FROM T_COURSE course  LEFT JOIN T_COURSE_ORG as course_org  ON course_org.course_id = course.course_id  LEFT JOIN M_ORGANIZATION as m_org  ON course_org.org_no = m_org.org_no  LEFT JOIN T_COURSE_DETAIL as course_detail   ON course.course_id = course_detail.course_id   LEFT JOIN T_DETAIL as detail  ON course_detail.course_detail_no = detail.course_detail_no  LEFT JOIN T_COURSE_DETAIL_STUDENT as detail_student  ON detail_student.offer_no = course_org.offer_no  AND detail_student.org_no = m_org.org_no  AND detail_student.course_id = course.course_id  AND detail_student.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_STUDENT as student ON detail_student.student_no = student.student_no  AND m_org.org_no = student.org_no LEFT JOIN (  SELECT answer.offer_no offer_no  ,answer.course_id course_id  ,answer.course_detail_no course_detail_no  ,answer.student_no student_no  ,MIN(answer.answer_dt) answer_dt  FROM T_COURSE_DETAIL_QUESTION cdques   LEFT JOIN T_4SKILL_ANSWER as answer ON answer.course_detail_no = cdques.course_detail_no  AND answer.question_no = cdques.question_no  AND answer.del_flg = 0  AND cdques.del_flg = 0  GROUP BY offer_no ,course_id ,course_detail_no, student_no ) skill_answer  ON skill_answer.offer_no = course_org.offer_no  AND skill_answer.student_no = student.student_no  AND skill_answer.course_id = course.course_id  AND skill_answer.course_detail_no = course_detail.course_detail_no  LEFT JOIN T_4SKILL_RESULT as skill_result ON skill_result.offer_no = course_org.offer_no  AND skill_result.student_no = student.student_no  AND skill_result.course_id = course.course_id  AND skill_result.course_detail_no = course_detail.course_detail_no  AND skill_result.del_flg = 0  WHERE course.course_id = :course_id  AND course_detail.course_detail_no = :course_detail_no  AND student.student_no = :student_no  AND m_org.org_no = :org_no  AND course_org.offer_no = :offer_no  AND course.del_flg = '0'  AND course_detail.del_flg = '0'  AND detail.del_flg = '0'  AND detail_student.del_flg = '0'  AND m_org.del_flg = '0'  GROUP BY  org_no,org_id, org_name,org_name_official,course_id,course_name,remarks,course_detail_name,course_detail_romaji,course_detail_no,disp_no,status,course_level,test_kbn,start_period,end_period,student_no,student_name,login_id,stu_course_end_period,stu_course_start_period,answer_dt,update_dt ORDER BY  course_detail.disp_no ASC 
+2022-05-31 17:47:26,745 DEBUG [94916] [] retakeAction end
+2022-05-31 17:47:26,745 DEBUG [94916] [] StudentCourseDetailEditController end
+2022-05-31 17:47:26,745 DEBUG [94916] [] finally

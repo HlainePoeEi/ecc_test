@@ -1,0 +1,163 @@
+/*@import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css';
+@import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css';*/
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+
+.answerProgress {
+    position: relative;
+    height: 20px;
+    background-color: #EFF5FD;
+    border:none;
+    width:700px;    
+    float:left;
+}
+.answerBar {
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    background: linear-gradient(#2EFEF7,#01DFD7,#04B4AE,#04B4AE)
+}
+.prepareProgress {
+    position: relative;
+    height: 30px;
+    background-color: #EFF5FD;
+}
+.prepareBar {
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    background: linear-gradient(#FACC2E,#FFBF00,#DBA901)
+}
+.answerLabel {
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+.prepareLabel {
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+.divProgress{
+    width:500px;
+    height:30px;
+    padding-top:0px;
+    position: relative;
+  
+}
+.lblAnswerTime{
+    color:#01DFD7;
+    margin-left: 300px;
+}
+.divAnswer{  
+    height:40px;
+}
+#divQuiz{
+   margin-left:50px;
+   margin-top:0px;
+   margin-right:10px;
+   width:100%;
+   clear:both;
+   overflow-y: hidden;
+   height: 100%;
+}
+.testList{
+    margin-left: 90%;
+    display: none;
+    background: url(../image/back.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+}
+.testName{
+    font-size: 20px;
+    color: #ADD8E6;
+}
+.quizDescription{
+    font-size: 18px;
+    color: #FF0000;
+}
+/*
+.tbl_search{
+    display: none;    
+    border:1px;
+    width:100%;   
+} */
+.cor{
+    color: #0EA40E;
+    font-size: 20px;
+}
+#image{
+    width:100px;
+    height:100px; 
+}
+td.quizNo{
+    color:#ADD8E6;
+    font-weight: bold;
+    font-size: 20px;
+}
+.hintans{
+    font-size: 20px;
+    color:#0EA40E;
+    display:none; 
+}
+.quizContent{
+    color: black;
+    font-size: 17px;
+    font-weight:normal;
+}
+.radioImg{
+    display: none;
+    width:10px;
+    height:10px;
+}
+.giveup{
+    background-color: #ADD8E6;
+    width: 150px;
+    height: 30px;
+}
+.hintanswer{
+    margin-left: 140px;
+    background-color: #ADD8E6;
+    width: 150px;
+    height: 30px;
+}
+.next_quiz{
+    margin-left: 5px;
+    background-color: #ADD8E6;
+    display: none;
+    width: 700px;
+    height: 30px;
+}
+.check_quiz{
+    margin-left: 5px;
+    background-color: #ADD8E6;
+    width: 700px;
+    height: 30px;
+}
+.resultShow ,.resultHead{
+    display: block;
+}
+.resultQuizNo{
+    width: 60px;
+}
+.resultQuestion{
+    width: 700px;
+}
+.resultAnswer{
+    width: 100px;
+}
+.answertext {
+    height: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #5b5d5e;
+    outline: 0;
+    font-size: 15px;
+    width: 400px;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>お知らせ設定</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+			<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+			<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+			<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+
+		<script type="text/javascript">
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "input:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			// エンターキー押下時のsubmitを無効化
+			$(document).on("keypress", "select:not(.allow_submit)", function(event) {
+				return event.which !== 13;
+			});
+			//表示再現
+			$(document).ready(function() {
+
+				$(function() {
+					$('#start_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+
+						beforeShow: function (input, inst) {
+
+							setTimeout(function () {
+								var leftWidth=($('.pushmenu-open').length>0)?$('#start_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+	                                    :$('#start_period').offset().left;
+								inst.dpDiv.css({
+								    top: $('#start_period').offset().top + 35,
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+
+				$(function() {
+					$('#end_period').datepicker({
+						showOn : "button",
+						buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
+						dateFormat: 'yy/mm/dd',
+						buttonImageOnly : true,
+
+						beforeShow: function (input, inst) {
+
+							setTimeout(function () {
+                                var leftWidth=($('.pushmenu-open').length>0)?$('#end_period').offset().left-$('.pushmenu-open')[0].offsetWidth
+                                        :$('#end_period').offset().left;
+								inst.dpDiv.css({
+									top: $('#end_period').offset().top + 35,
+									left: leftWidth
+								});
+							}, 0);
+						}
+					});
+				});
+
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ){
+
+					$(".error_section").slideToggle('slow')
+				}
+
+				$(".close_icon").on('click', function(){
+
+					$(".error_section").slideToggle('slow')
+					$('#err_dis').slideToggle('slow')
+				});
+
+				/* ラジオボタンのチェック変更イベント */
+				$('#main_form input').on('change', function() {
+
+					var status_val = $('input[name=chk_status]:checked', '#main_form').val();
+					$("#status").val(status_val);
+					$("#answer_flg").val(status_val);
+				});
+
+				/**
+				*
+				*  検索ボタン押下、必須チェック処理
+				*
+				**/
+				$(".btn_insert").on('click', function(){
+
+					$("#page").val(1);
+					$(".error_section").hide();
+
+					document.getElementById("target_Kbn").disabled = false;
+					var start_period = document.getElementById('start_period').value;
+					var end_period = document.getElementById('end_period').value;
+					var description = document.getElementById('description').value;
+					var target_Kbn = document.getElementById('target_Kbn').value;
+
+					// 科目の必須チェック
+					if ( target_Kbn == "" ){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("対象を一つ選択してください。");
+						$('#err_dis')[0].focus();
+						return false;
+					}
+
+					// 学年名の必須チェック
+					if ( description == "" ){
+
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("内容を入力してください。");
+						$('#err_dis')[0].focus();
+						return false;
+					}
+
+					// 利用開始日の必須チェック
+					if ( start_period == "" ){
+
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("利用開始日を入力してください。");
+						$('#err_dis')[0].focus();
+						return false;
+					}
+
+					// 利用終了日の必須チェック
+					if ( end_period == "" ){
+
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("利用終了日を入力してください。");
+						$('#err_dis')[0].focus();
+						return false;
+					}
+
+					// 利用開始日 < 利用終了日チェック
+					if ( start_period > end_period ){
+
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html("{$smarty.const.W004}");
+						$('#err_dis')[0].focus();
+						return false;
+					}
+					var isDisabled = $("#start_period").prop('disabled');
+					var today = new Date();
+					var dd = today.getDate();
+					var mm = today.getMonth()+1; //January is 0!
+					var yyyy = today.getFullYear();
+					if ( dd < 10 ){
+						dd = '0' + dd
+					}
+					if ( mm < 10 ){
+						mm = '0' + mm
+					}
+
+					today = yyyy + '/' + mm + '/' + dd;
+					if ( !isDisabled ){
+
+						if ( start_period < today ){
+
+							$('#err_dis').show();
+							$(".error_section").slideToggle('slow');
+							$(".error_msg").html("利用開始日は今日より以前の日付になっています。");
+							$(".divBody").scrollTop(0);
+							return false;
+						}
+					}
+					document.getElementById("start_period").disabled = false;
+					return true;
+				});
+			});
+		</script>
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}SystemNoticeRegist/save" method="post">
+			<input type="hidden" id="system_notice_no" name="system_notice_no" value="{$form->system_notice_no}">
+			<input type="hidden" id="system_kbn" name="system_kbn" value="{$form->system_kbn}"/>
+			<input type="hidden" id="reset_start_period" name="reset_start_period" value="{$form->start_period}">
+			<input type="hidden" id="reset_end_period" name="reset_end_period" value="{$form->end_period}"/>
+			<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+			<input type="hidden" id="page" name="page" value="{$form->page}" />
+			<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}"/>
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<div id="err_dis" tabindex="1">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+						{if !empty($error_msg)}
+							<div class="error_msg">{$error_msg}</div>
+						{else if !empty($info_msg)}
+							<div class="error_msg">{$info_msg}</div>
+						{else}
+							<div class="error_msg"></div>
+						{/if}
+					</section>
+				</div>
+				<section class="content">
+					<p>
+						><span class="title">お知らせ / お知らせ設定</span>
+					</p>
+					<table class="main_tbl">
+						<tr>
+							<td>対象<span class="required">※</span></td>
+							<td>
+								<select name="target_Kbn" id="target_Kbn">
+									<option value="">選択してください。</option>
+									{if !empty($targetKbn)}
+										{foreach $targetKbn as $value}
+											{if $value->type == $form->system_kbn}
+												<option value="{$value->type}" selected>{$value->name} </option>
+											{else}
+												<option value="{$value->type}">{$value->name} </option>
+											{/if}
+										{/foreach}
+									{/if}
+								</select>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="st_col">内容<span class="required">※</span></td>
+							<td class="st_col" colspan="2">
+								<textarea name="description" id="description" cols="40" maxlength = "1024" style="width : 100%; height : 60px; margin-top : 10px; overflow-y : scroll; resize : none;">{$form->description|escape}</textarea>
+								<br>( 例：ただいまご利用できません。しばらくお待ちください。)
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="st_col">利用開始日<span class="required">※</span></td>
+							<td class="input" style="width:250px;"><input class="text" type="text" name="start_period" id="start_period"
+									value="{$form->start_period}" maxlength="10" onchange="changeDateFormat(this)" style="height: 15px;"></td>
+							<td class="st_col">利用終了日<span class="required">※</span></td>
+							<td class="input"><input class="" type="text" name="end_period" id="end_period"
+							 value="{$form->end_period}" maxlength="10" onchange="changeDateFormat(this)"></td>
+						</tr>
+					</table>
+					<p style="text-align:right;">
+						<input type="submit" name="btn_insert" title="登録" value="" class="btn_insert"  style="padding-right: 50px;">
+						<input type="button" title="キャンセル" value="" class="btn_close" onclick="javascript:doClear()"  id="cancel" style="display:none">
+					</p>
+					<div class="pagging" align="right">
+						{if !empty($list)}
+							{if $form->max_page gte 4}
+								{if $form->page gt 1}
+									<a href="javascript:doPage(1);">&lt;&lt;</a>
+									<a href="javascript:doPage({$form->page-1});">&lt;</a>
+								{/if}
+								{if (($form->page + 3) eq $form->max_page) || (($form->page + 3) gte $form->max_page)}
+									{section name=i start=$form->max_page-3 loop=$form->max_page+1}
+										{if $form->page eq $smarty.section.i.index}
+											<label>{$smarty.section.i.index}</label>
+										{else}
+											<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{else}
+									{section name=i start=$form->page loop=$form->page+4}
+										{if $form->page eq $smarty.section.i.index}
+											<label>{$smarty.section.i.index}</label>
+										{else}
+											<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{/if}
+								{if $form->page lte $form->max_page-1}
+									<a href="javascript:doPage({$form->page+1});">&gt;</a>
+									<a href="javascript:doPage({$form->max_page});">&gt;&gt;</a>
+								{/if}
+							{else}
+								{if $form->page gt 1}
+									<a href="javascript:doPage(1);">&lt;&lt;</a>
+									<a href="javascript:doPage({$form->page-1});">&lt;</a>
+								{else}
+									<a class="disable_link">&lt;</a>
+								{/if}
+									{section name=i start=1 loop=$form->max_page+1}
+										{if $form->page eq $smarty.section.i.index}
+											<label>{$smarty.section.i.index}</label>
+										{else}
+											<a href="javascript:doPage({$smarty.section.i.index});">{$smarty.section.i.index}</a>
+										{/if}
+									{/section}
+								{if $form->page lte $form->max_page-1}
+									<a href="javascript:doPage({$form->page+1});">&gt;</a>
+									<a href="javascript:doPage({$form->max_page});">&gt;&gt;</a>
+								{else}
+									<a class="disable_link">&gt;</a>
+								{/if}
+							{/if}
+						{/if}
+					</div>
+					<table class="tbl_search">
+						<thead>
+							<tr>
+								<th width="100px">対象</th>
+								<th width="300px">内容</th>
+								<th width="200px">期間</th>
+								<th width="150px">運用者名</th>
+								<th class="td_img">編集</th>
+							</tr>
+						</thead>
+						<tbody>
+						{if !empty($list)}
+							{foreach $list as $result}
+							<tr>
+								<td width="100px">{$result->name|escape}</td>
+								<td width="300px">{$result->description|escape}</td>
+								<td width="200px">{$result->start_period}～{$result->end_period}</td>
+								<td width="150px">{$result->admin_name|escape}</td>
+								<td class="td_edit">
+									<input type="button" class="btn_edit" title="編集" onclick="edit_trans('{$result->system_notice_no}','{$smarty.const.HOME_DIR}SystemNoticeRegist/index')">
+								</td>
+							</tr>
+							{/foreach}
+						{/if }
+						</tbody>
+					</table>
+				</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+
+		<script>
+			{literal}
+
+			window.onload = function init() {
+
+				var system_notice_no = document.getElementById('system_notice_no').value;
+
+				var mode = document.getElementById('screen_mode').value;
+				if( mode == 'update'){
+					document.getElementById("target_Kbn").disabled = true;
+					$("#cancel").css("display","none");
+				}else{
+					document.getElementById("target_Kbn").disabled = false;
+					$("#cancel").css("display","");
+				}
+
+				var today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; //January is 0!
+				var yyyy = today.getFullYear();
+				if(dd<10) {
+					dd = '0'+dd
+				}
+				if(mm<10) {
+					mm = '0'+mm
+				}
+				today = yyyy + '/' + mm + '/' + dd;
+				var start_period = document.getElementById('start_period').value;
+				if(start_period < today){
+					$( "#start_period" ).datepicker( "option", "disabled", true );
+					document.getElementById("start_period").disabled = true;
+				}
+			}
+
+			// ページング
+			function doPage(pageNo){
+
+				var home_dir = document.getElementById('home_dir').value;
+				var screen_mode = document.getElementById('screen_mode').value;
+				$("#screen_mode").val(screen_mode);
+				$("#page").val(pageNo);
+				$("#main_form").attr("action", home_dir+"SystemNoticeRegist/search");
+				$("#main_form").submit();
+			}
+
+			// 編集ボタン処理
+			function edit_trans(system_notice_no ,action){
+
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#system_notice_no").val(system_notice_no);
+
+				$("#main_form").submit();
+			}
+
+			// キャンセルボタン処理
+			function doClear(){
+
+				var reset_start_period = document.getElementById('reset_start_period').value;
+				var reset_end_period = document.getElementById('reset_end_period').value;
+
+				$("#system_notice_no").val("");
+				$("#target_Kbn").val("");
+				$("#description").val("");
+				$("#start_period").val(reset_start_period);
+				$("#end_period").val(reset_end_period);
+			}
+
+		{/literal}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>テスト確認</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	{literal}
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/testlist.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/testpreview.css" rel="stylesheet">
+
+		<script type="text/javascript">
+
+			var elem;
+			var answer_time;
+			var answer_start_time;
+			var progress_interval = 1000;
+			var progress_init = 100;
+			var width ;
+			var id;
+			var result_list = [];
+
+			function move_timer(){
+				//プログレスバー初期値設定
+				var listkey = $("#current_quiz").val();
+				elem =  $("#quiz_"+listkey+" .answerBar");
+				elem.css("width", progress_init + '%');
+				element = document.getElementById('answer_time_' + listkey);
+				if (element != null) {
+					answer_time = element.value * 1000;
+				}else {
+					answer_time = null;
+				}
+
+				width = 0;
+				answer_start_time = new Date().getTime();
+				stopInterval();
+				id = setInterval(frame, progress_interval);
+				function frame() {
+					var current_time = new Date().getTime();
+					var time_gap = current_time - answer_start_time;
+
+					width = progress_init - parseInt(time_gap * 100 / answer_time ) ;
+
+					if (width > 0){
+						elem.css("width", width + '%');
+					    //document.getElementById("answerLabel").innerHTML = width * 1 + '%';
+					}else{
+						stopInterval();
+						stopAnswer();
+						audioStop();
+					}
+				}
+
+			}
+			function stopInterval(){
+
+					clearInterval(id);
+			}
+			function stopAnswer(){
+				elem.css("width", 0 + '%');
+				process_quiz();
+				$( "input:radio" ).prop( "disabled", true );
+				$( "input:text" ).prop( "disabled", true );
+
+			}
+			function process_quiz(){
+
+				var listkey = $("#current_quiz").val();
+				var type = $("#quiz_type_"+listkey).val();
+
+				var corr1 = "#cor_ans_"+listkey+"_1";
+				var corr2 = "#cor_ans_"+listkey+"_2";
+
+				if( type == 1){
+					$( "input:radio" ).prop( "disabled", true );
+
+					$("input:radio[name='ans_"+listkey+"']").each(function( index ) {
+						if ($(this).val() == $(corr1).val()){
+							var idx = index+1;
+							$("#ans_img_"+listkey+"_"+idx).prop("src","{$smarty.const.HOME_DIR}image/quiz_answer_right.png").show();
+						}else{
+							var idx = index+1;
+							$("#ans_img_"+listkey+"_"+idx).prop("src","{$smarty.const.HOME_DIR}/image/quiz_answer_wrong.png").show();
+						}
+					});
+					// check
+
+					if($('input[name=ans_'+listkey+']:checked').val() != ""){
+
+						var answer = $('input[name=ans_'+listkey+']:checked').val();
+						if (answer == $(corr1).val() || answer == $(corr2).val()){
+							result_list[listkey] = 1;
+						}else{
+							 result_list[listkey] = 0;
+						}
+					}else{
+						result_list[listkey] = 0;
+					}
+
+				}else{
+
+					$( "input:text" ).prop( "disabled", true );
+					var ans1 = false;
+					var ans2 = false;
+					var ans_id1 ="#ans_img_"+listkey+"_1";
+					var ans_id2 ="#ans_img_"+listkey+"_2";
+
+					var ans_1 ="#ans_"+listkey+"_1";
+					var ans_2 ="#ans_"+listkey+"_2";
+
+					if ( $( ans_1).length  &&  $( ans_2 ).length ) {
+						if ($(ans_1).val() == $(corr1).val() && $(ans_2).val() == $(corr2).val()){
+							result_list[listkey] = 1;
+						}else{
+					 	 	 result_list[listkey] = 0;
+					    }
+					}else if ( $( ans_1).length ){
+						if ($(ans_1).val() == $(corr1).val()){
+							result_list[listkey] = 1;
+						}else{
+					 	 	 result_list[listkey] = 0;
+					    }
+					}else if ( $( ans_2).length ){
+						if ($(ans_2).val() == $(corr2).val()){
+							result_list[listkey] = 1;
+						}else{
+							result_list[listkey] = 0;
+						}
+					}
+
+					$(ans_id1).html($(corr1).val());
+					$(ans_id2).html($(corr2).val());
+				}
+
+				var check_btn ="#check_"+listkey ;
+				var next_btn ="#next_"+listkey ;
+				var total = $("#total_quiz").val();
+
+				if(listkey == parseInt(total)-1){
+
+					$(".next_quiz").text('結果画面へ');
+				}
+
+				$(check_btn).hide();
+				$(next_btn).show();
+			}
+
+			$(document).ready(function(){
+				// MSGのあるなし
+				if ( $(".error_msg").html() != "" ) {
+
+					$(".error_section").slideToggle('slow')
+				}
+
+				$(".close_icon").on('click',function(){
+
+					$(".error_section").slideToggle('slow')
+
+				});
+
+				$(".hintans").hide();
+
+				$(".next_quiz").click(function(){
+
+					$( "input:radio" ).prop( "disabled", false );
+					$( "input:text" ).prop( "disabled", false );
+					$(".hintans").hide();
+
+					var current_id = this.id;
+					var current_index = $("#"+current_id).data("currentid");
+					var current_quiz = "quiz_"+current_index;
+					var next_index = parseInt(current_index)+1;
+					var next_quiz = "quiz_"+ next_index;
+					var total = $("#total_quiz").val();
+
+					if(parseInt(current_index) < parseInt(total)-1){
+						$("#"+current_quiz).hide();
+						$("#"+next_quiz).show();
+					}else{
+						$("#testlist").show();
+						$("#divAnswer").hide();
+						stopAnswer();
+						$("#"+current_quiz).hide();
+						$("#tbl_finalresult").show();
+
+						for(var i = 0; i< total ; i++){
+							var td_idx = "#final_result_"+i;
+							var img = "";
+							if(result_list[i] == 0){
+								$("#correct_file_"+current_index).hide();
+								$("#wrong_file_"+current_index).show();
+								img += "<img src='"+{$smarty.const.HOME_DIR}+"image/quiz_answer_wrong.png' width='25px' height='25px'/>";
+							}else{
+								img += "<img src='"+{$smarty.const.HOME_DIR}+"image/quiz_answer_right.png' width='25px' height='25px'/>";
+							}
+
+							$(td_idx).html(img);
+						}
+					}
+					var nxt_quiz = parseInt($("#current_quiz").val())+1;
+					$("#current_quiz").val(nxt_quiz);
+					move_timer();
+
+				});
+
+			$(".hintanswer").click(function(){
+
+				$(".hintans").show();
+
+			});
+			$(".giveup").click(function(){
+				stopInterval();
+				audioStop();
+				var id = this.id;
+				var listkey = $("#"+id).data("listkey");
+				var type = $("#"+id).data("type");
+
+				var ans_id1 ="#ans_img_"+listkey+"_1";
+				var ans_id2 ="#ans_img_"+listkey+"_2";
+
+				var corr1 = "#cor_ans_"+listkey+"_1";
+				var corr2 = "#cor_ans_"+listkey+"_2";
+
+				$(ans_id1).html($(corr1).val());
+				$(ans_id2).html($(corr2).val());
+
+				result_list[listkey] = 0;
+
+				var check_btn ="#check_"+listkey ;
+				var next_btn ="#next_"+listkey ;
+				$(check_btn).hide();
+
+				var total = $("#total_quiz").val();
+
+				if(listkey == parseInt(total)-1){
+
+					$(".next_quiz").text('結果画面へ');
+				}
+				$(next_btn).show();
+
+			});
+			$(".check_quiz").click(function(){
+
+				stopInterval();
+
+				process_quiz();
+
+				audioStop();
+			});
+			 $("audio").each(function(){
+				$(this).attr('controlsList','nodownload');
+				//$(this).load();
+			});
+
+			move_timer();
+
+		});
+		//for audio
+		function audioStop(){
+			$("audio").each(function(){
+			    $(this).trigger('pause');
+			});
+		}
+		//戻るボタン処理
+		function doBack(action){
+
+			$("#main_form").attr("action", action);
+			$("#main_form").submit();
+		}
+
+		</script>
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}TestPreview/index" method="post">
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+							{if !empty($err_msg)}
+								<div class="error_msg">{$err_msg}</div>
+							{else}
+								<div  class="error_msg"></div>
+							{/if}
+					</section>
+					<section class="content">
+						<p>
+							><span class="title">テスト / テストプレビュー</span>
+						</p>
+						<!-- 戻るボタンの事 -->
+						<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+						<input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}"/>
+						<input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}"/>
+						<input type="hidden" id="search_test_name" name="search_test_name" value="{$form->search_test_name|escape}"/>
+						<input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark|escape}"/>
+						<input type="hidden" id="search_rd_status1" name="search_rd_status1" value="{$form->search_rd_status1}"/>
+						<input type="hidden" id="search_rd_status2" name="search_rd_status2" value="{$form->search_rd_status2}"/>
+						<input type="hidden" id="search_rdstatus" name="search_rdstatus" value="{$form->search_rdstatus}"/>
+						<input type="hidden" id="search_chk_status1" name="search_chk_status1" value="{$form->search_chk_status1}"/>
+						<input type="hidden" id="search_chk_status2" name="search_chk_status2" value="{$form->search_chk_status2}"/>
+						<input type="hidden" id="search_status" name="search_status" value="{$form->search_status}"/>
+						<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}"/>
+
+						<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
+						<input type="hidden" id="search_page_order_column" name="search_page_order_column" value="{$form->search_page_order_column}" />
+						<input type="hidden" id="search_page_order_dir" name="search_page_order_dir" value="{$form->search_page_order_dir}" />
+					<div id="divQuiz" align="left">
+
+						 {if !empty($list)}
+							<input type="hidden" id="total_quiz" value="{count($list)}" />
+
+								{foreach $list as $key=>$result}
+								<input id="cor_ans_{$key}_1" type="hidden" value="{$result->correct1}">
+								<input id="cor_ans_{$key}_2" type="hidden" value="{$result->correct2}">
+								<input id="quiz_type_{$key}" type="hidden" value="{$result->quiz_type}">
+								<input type="hidden" id="answer_time_{$key}" value="{$result->answer_time}">
+
+							<table {if $key != 0}style="display: none;" {else} style="width: 100%;" {/if}>
+								<tbody>
+									<tr>
+										<td class="testName">{$result->test_name}
+											<input type="button" id="testlist" class="testList" value="" title="テスト一覧画面へ" onclick="javascript:doBack('{$smarty.const.HOME_DIR}TestPreview/back')">
+										</td>
+									</tr>
+									<tr>
+										<td class="quizDescription">{$result->description}</td>
+									</tr>
+								</tbody>
+							</table>
+							<table  id="tbl_finalresult" class="tbl_search" cellpadding="10" style="display: none;" >
+								<tr>
+									<th class="resultQuizNo">No</th>
+									<th class="resultQuestion">Question</th>
+									<th class="resultAnswer">Result</th>
+								</tr>
+								<tbody>
+									{if !empty($list)}
+									{foreach $list as $key=>$result}
+									<tr>
+										<td class="resultQuizNo">{$key+1}</td>
+										<td class="resultQuestion"><span style="font-size: 18px;">{$result->quiz_content}</span><br></br>
+										<span class="cor">{$result->correct1}</span>
+										{if !empty($result->correct2)}
+											<span class="cor">,{$result->correct2}</span>
+										{/if}
+										<!-- 20190709-クイズ・解説追加 -->
+										<br>
+										{if !empty($result->explanation)}
+											{$result->explanation}
+										{/if}
+										<!-- <br></br> -->
+										{if !empty($result->image_name)}
+										{assign var="specialmsg" value="{$folder_check}/{$image_file}/{$result->image_name}"}
+										{if file_exists({$specialmsg})}
+										<span>
+											<img id="image" type="image"
+											src="{$smarty.const.HOME_DIR}/{$image_file}/{$result->image_name}">
+										</span>
+										{/if}
+										{/if}
+										<br></br>
+										{if !empty($result->audio_name)}
+										{assign var="audiomsg" value="{$folder_check}/{$audio_file}/{$result->audio_name}"}
+										{if file_exists({$audiomsg})}
+										<span>
+											<audio controls class="quiz_audio">
+												<source src="{$smarty.const.ADMIN_HOME_DIR}/{$audio_file}/{$result->audio_name}" type="audio/ogg">
+											</audio>
+										</span>
+										{/if}
+										{/if}
+										</td>
+										<td id="final_result_{$key}" class="resultAnswer"></td>
+									</tr>
+									{/foreach}
+									{/if}
+								</tbody>
+							</table>
+
+							<table id="quiz_{$key}" {if $key != 0}style="display: none;"{/if} cellspacing="20px;">
+							    <tbody>
+								<tr>
+									<td class ="quizNo">{$key+1}/{count($list)}
+									.<span class="quizContent" ">{$result->quiz_content}</span></td>
+								</tr>
+								{if $result->quiz_type eq 2}
+								<tr>
+									<td>
+										<label class="hintans">{$result->hint}</label>
+									</td>
+								</tr>
+								{/if}
+								{if !empty($result->image_name)}
+								{assign var="specialmsg" value="{$folder_check}/{$image_file}/{$result->image_name}"}
+								{if file_exists({$specialmsg})}
+								<tr>
+									<td>
+										<img id="image" type="image"
+											src="{$smarty.const.ADMIN_HOME_DIR}/{$image_file}/{$result->image_name}">
+									</td>
+								</tr>
+								{else}
+								<tr>
+									<td>
+										<label>画像ファイルを見つかりません</label>
+									</td>
+								</tr>
+								{/if}
+								{/if}
+								{if !empty($result->audio_name)}
+								{assign var="audiomsg" value="{$folder_check}/{$audio_file}/{$result->audio_name}"}
+								{if file_exists({$audiomsg})}
+								<tr>
+									<td>
+										<audio controls class="quiz_audio">
+											<source src="{$smarty.const.ADMIN_HOME_DIR}/{$audio_file}/{$result->audio_name}" type="audio/ogg" >
+										</audio>
+									</td>
+								</tr>
+								{else}
+								<tr>
+									<td>
+										<label>音声ファイルを見つかりません</label>
+									</td>
+								</tr>
+								{/if}
+								{/if}
+								<tr>
+									<td>
+										<div class="divProgress" >
+											<div class="divAnswer">
+												<label class="lblAnswerTime">AnswerTime:{$result->answer_time}秒</label>
+												<div>
+													<div class="answerProgress">
+							 							<div class="answerBar"><div class="answerLabel"></div></div>
+													</div>
+												</div>
+											</div>
+										 </div>
+									</td>
+								</tr>
+								{if $result->quiz_type eq 1}
+									{foreach $quiz_answer[$key] as $k=>$q}
+									<tr>
+										<td>
+											<table id="tblanswer_{$key}_{$k+1}">
+												<tr>
+													<td width="500px">
+														<label ><input type="radio" name="ans_{$key}" value="{$q}"> {$q}</label>
+													</td>
+													<td><img class="radioImg" src="" id="ans_img_{$key}_{$k+1}" /></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									{/foreach}
+								{else}
+									<tr>
+										<td>
+											<table id="tblanswer_{$key}">
+												<tr>
+													<td><button type="button" id="giveup_{$key}" data-listkey="{$key}" data-type="{$result->quiz_type}" class="giveup">ギブアップ</button></td>
+													<td><button type="button"  class="hintanswer">ヒント</button></td>
+												</tr>
+												<tr>
+													<td><input type="text" class="answertext" id="ans_{$key}_1"  value="" size="30" maxlength="512" autocomplete="off" autofocus>	</td>
+													<td id="ans_img_{$key}_1" style="color: red;"></td>
+												</tr>
+												{if !empty($result->correct2)}
+												<tr>
+													<td><input type="text" class="answertext" id="ans_{$key}_2"  value="" size="30" maxlength="512" autocomplete="off" autofocus></td>
+													<td id="ans_img_{$key}_2"  style="color: red;"></td>
+												</tr>
+												{/if}
+											</table>
+										</td>
+									</tr>
+								{/if}
+								<tr>
+									<td >
+										<button type="button" id="next_{$key}" data-currentid={$key} class="next_quiz">Quiz No {$key+2}へ</button>
+										<button type="button" id="check_{$key}" data-currentid={$key} class="check_quiz">チェック</button>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+							{/foreach}
+							<input id="current_quiz" type="hidden" value="0">
+						{/if}
+					</div>
+					</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+	</body>
+</html>

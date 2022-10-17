@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Practice 並び順設定</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	{literal}
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/atReportDisplayList.js"></script>
+    {/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+    <link href="{$smarty.const.HOME_DIR}css/quizInfoAssignment.css"	rel="stylesheet">
+	</head>
+<body class="pushmenu-push">
+	<form id="main_form" action="{$smarty.const.HOME_DIR}AtReportDisplayList/save" method="post">
+	     <input type="hidden" id ="manager_no" name="manager_no"/>
+		{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+					    {if !empty($err_msg)}
+						<div class="error_msg">{$err_msg}</div>
+						{else}
+						<div class="error_msg"></div>
+						{/if}
+				</section>
+				<section class="content">
+						<p>
+							><span class="title"> Online Practice 並び順設定</span>
+						</p>
+						<p style="text-align:right;width:100%;">
+							<input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}AtReportDisplayList/back')">
+						</p>
+
+						<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+						<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}"/>
+						<input type="hidden" id="at_report_no" name="at_report_no" value="{$form->at_report_no}"/>
+						<input type="hidden" id="entryList" name="entryList" value=""/>
+						<input type="hidden" id="err_msg" name="err_msg" value="{$err_msg}"/>
+						<input type="hidden" id="addlist" name="addlist" value="{$addlist}"/>
+						
+						<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}" />
+						<input type="hidden" id="search_at_report_name" name="search_at_report_name" value="{$form->search_at_report_name|escape}"/>
+						<input type="hidden" id="search_test_info_name" name="search_test_info_name" value="{$form->search_test_info_name|escape}"/>
+						<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+						<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
+						<input type="hidden" id="search_page_order_column" name="search_page_order_column" value="{$form->search_page_order_column}" />
+						<input type="hidden" id="search_page_order_dir" name="search_page_order_dir" value="{$form->search_page_order_dir}" />
+						<table class="testAss_tbl">
+							<tr>
+								<td class="td_two">レポート名</td>
+								<td class="td_input">{$at_report_name|escape}</td>
+							</tr>
+							<tr>
+								<td class="td_two"></td>
+								<td class="td_input"></td>
+							</tr>
+						</table>
+						<br>
+						<table id="testAss_lowertbl1" class="myTable join_header_border_quiz">
+							<thead>
+								<tr>
+									<th style="width:150px; ">番号</th>
+									<th style="width:300px; ">試験名</th>
+									<th style="width:700px; "></th>
+									<th style="width:100px; "></th>
+								</tr>
+							</thead>
+							 {if count($addlist) == 1}
+							 <tbody>
+								{foreach $addlist as $result}
+								<tr style="width:100%;">
+									<td style="width:150px;">1</td>
+									<td style="width:300px;">{$result->test_info_name|escape}</td>
+									<td style="width:700px;">{$result->at_type_name}</td>
+									<td style="width:100px; text-align:center;">
+										 <button style="background-color:#fff;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+										<button style="background-color:#fff;border:0px;"  disabled="disabled" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+									</td>
+									<td>{$result->at_type}-{$result->at_no}-{$result->offer_no}</td>
+								</tr>
+								{/foreach}
+							</tbody>
+							{else}
+							<tbody>
+								{foreach $addlist as $key =>$result}
+								{if $key == 0}
+									<tr style="width:100%;">
+									<td style="width:150px;">{$key + 1}</td>
+									<td style="width:300px;">{$result->test_info_name|escape}</td>
+									<td style="width:700px;">{$result->at_type_name}</td>
+									<td style="width:100px; text-align:center;">
+										 <button style="background-color:#fff;border:0px;" disabled="disabled" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+										 <button style="background-color:#fff;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+									</td>
+									<td>{$result->at_type}-{$result->at_no}-{$result->offer_no}</td>
+									</tr>
+								{else if $key == count($addlist)-1}
+									<tr style="width:100%;">
+									<td style="width:150px;">{$key + 1}</td>
+									<td style="width:300px;">{$result->test_info_name|escape}</td>
+									<td style="width:700px;">{$result->at_type_name}</td>
+									<td style="width:100px; text-align:center;">
+										 <button style="background-color:#fff;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+										 <button style="background-color:#fff;border:0px;" disabled="disabled"  onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+									</td>
+									<td>{$result->at_type}-{$result->at_no}-{$result->offer_no}</td>
+									</tr>
+								{else}
+								<tr style="width:100%;">
+									<td style="width:150px;">{$key + 1}</td>
+									<td style="width:300px;">{$result->test_info_name|escape}</td>
+									<td style="width:700px;">{$result->at_type_name}</td>
+									<td style="width:100px; text-align:center;">
+										 <button style="background-color:#fff;border:0px;" onClick="MoveUp.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/up.svg" style="width: 25px;height:25px;"/></button>
+										 <button style="background-color:#fff;border:0px;" onClick="MoveDown.call(this);return false;"><img src="{$smarty.const.HOME_DIR}image/down.svg"  style="width: 25px;height:25px;"/></button>
+									</td>
+									<td>{$result->at_type}-{$result->at_no}-{$result->offer_no}</td>
+								</tr>
+								{/if}
+								{/foreach}
+							</tbody>
+							{/if}
+						</table>
+			<table class="btn_div">
+				<tr>
+					<td>
+					<input type="button" value="" class="btn_resetbtn" title="リセット"
+					onclick="javascript:cancel('{$form->at_report_no}','{$smarty.const.HOME_DIR}AtReportDisplayList/index');">
+					<input type="button" name="insert" value="" class="btn_insert" title="登録"
+					onclick="javascript:insertData();" />
+					</td>
+				</tr>
+			</table>
+				</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+	</form>
+
+	<script>
+		{literal}
+
+			//登録ボタン処理
+			function doInsert(action){
+
+				 var menuOpen = document.getElementById('menuOpen').value;
+		         var menuStatus = document.getElementById('menuStatus').value;
+				 $("#main_form").attr("action", action);
+			     $("#menuOpen").val(menuOpen);
+			     $("#menuStatus").val(menuStatus);
+			     $("#main_form").submit();
+			}
+
+			//登録ボタン処理
+			function doBack(action){
+
+				var menuOpen = document.getElementById('menuOpen').value;
+		        var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+			    $("#menuOpen").val(menuOpen);
+			    $("#menuStatus").val(menuStatus);
+			    $("#main_form").submit();
+			}
+
+			//リセット
+			function cancel(at_report_no, action){
+
+				var menuOpen = document.getElementById('menuOpen').value;
+			    var menuStatus = document.getElementById('menuStatus').value;
+
+				$("#main_form").attr("action", action);
+				$("#at_report_no").val(at_report_no);
+			    $("#menuOpen").val(menuOpen);
+			    $("#menuStatus").val(menuStatus);
+			    $("#main_form").submit();
+			}
+
+			//戻るボタン処理
+			function doBack(action){
+
+				$("#main_form").attr("action", action);
+				$("#main_form").submit();
+			}
+
+		{/literal}
+	</script>
+
+	<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+
+	</body>
+</html>

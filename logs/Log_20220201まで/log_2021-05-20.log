@@ -1,0 +1,57 @@
+2021-05-20 12:53:18,964 DEBUG [69699] [] Request URI : /eccadmin_dev/Login
+2021-05-20 12:53:19,066 DEBUG [69699] [] LoginController start
+2021-05-20 12:53:19,074 DEBUG [69699] [] controllers/LoginController.php: is exist
+2021-05-20 12:53:19,171 DEBUG [69699] [] LoginForm: is exist
+2021-05-20 12:53:19,172 DEBUG [69699] [] LoginForm: form value set 
+2021-05-20 12:53:19,173 DEBUG [69699] [] ------------------------------/eccadmin_dev/Login
+2021-05-20 12:53:19,173 DEBUG [69699] [] ------------------------------login_start_check
+2021-05-20 12:53:19,173 DEBUG [69699] [] indexAction start
+2021-05-20 12:53:19,324 DEBUG [69699] [] indexAction end
+2021-05-20 12:53:19,324 DEBUG [69699] [] LoginController end
+2021-05-20 12:53:19,324 DEBUG [69699] [] finally
+2021-05-20 12:53:22,631 DEBUG [69699] [] Request URI : /eccadmin_dev/Login/login
+2021-05-20 12:53:22,631 DEBUG [69699] [] LoginController start
+2021-05-20 12:53:22,631 DEBUG [69699] [] controllers/LoginController.php: is exist
+2021-05-20 12:53:22,632 DEBUG [69699] [] LoginForm: is exist
+2021-05-20 12:53:22,632 DEBUG [69699] [] LoginForm: form value set 
+2021-05-20 12:53:22,632 DEBUG [69699] [] ------------------------------/eccadmin_dev/Login/login
+2021-05-20 12:53:22,632 DEBUG [69699] [] ------------------------------login_start_check
+2021-05-20 12:53:22,632 DEBUG [69699] [] loginAction start
+2021-05-20 12:53:22,926 DEBUG [69699] [] loginAction end
+2021-05-20 12:53:22,926 DEBUG [69699] [] LoginController end
+2021-05-20 12:53:22,926 DEBUG [69699] [] finally
+2021-05-20 12:53:22,954 DEBUG [69699] [] Request URI : /eccadmin_dev/Menu
+2021-05-20 12:53:22,954 DEBUG [69699] [] MenuController start
+2021-05-20 12:53:22,954 DEBUG [69699] [] controllers/MenuController.php: is exist
+2021-05-20 12:53:23,042 DEBUG [69699] [] MenuForm: is exist
+2021-05-20 12:53:23,048 DEBUG [69699] [] MenuForm: form value set 
+2021-05-20 12:53:23,048 DEBUG [69699] [] ------------------------------/eccadmin_dev/Menu
+2021-05-20 12:53:23,049 DEBUG [69699] [] ------------------------------login_start_check
+2021-05-20 12:53:23,049 DEBUG [69699] [] indexAction start
+2021-05-20 12:53:23,049 DEBUG [69699] [] admin_no is 1
+2021-05-20 12:53:23,145 DEBUG [69699] [] indexAction end
+2021-05-20 12:53:23,145 DEBUG [69699] [] MenuController end
+2021-05-20 12:53:23,145 DEBUG [69699] [] finally
+2021-05-20 12:53:26,598 DEBUG [69859] [] Request URI : /eccadmin_dev/OrganizationList
+2021-05-20 12:53:26,599 DEBUG [69859] [] OrganizationListController start
+2021-05-20 12:53:26,599 DEBUG [69859] [] controllers/OrganizationListController.php: is exist
+2021-05-20 12:53:26,631 DEBUG [69859] [] OrganizationListForm: is exist
+2021-05-20 12:53:26,640 DEBUG [69859] [] OrganizationListForm: form value set 
+2021-05-20 12:53:26,641 DEBUG [69859] [] ------------------------------/eccadmin_dev/OrganizationList
+2021-05-20 12:53:26,641 DEBUG [69859] [] indexAction start
+2021-05-20 12:53:26,641 DEBUG [69859] [] admin_no is 1
+2021-05-20 12:53:26,812 DEBUG [69859] [] indexAction end
+2021-05-20 12:53:26,812 DEBUG [69859] [] OrganizationListController end
+2021-05-20 12:53:26,812 DEBUG [69859] [] finally
+2021-05-20 12:53:29,013 DEBUG [68319] [] Request URI : /eccadmin_dev/GradeRegist/index
+2021-05-20 12:53:29,013 DEBUG [68319] [] GradeRegistController start
+2021-05-20 12:53:29,013 DEBUG [68319] [] controllers/GradeRegistController.php: is exist
+2021-05-20 12:53:29,085 DEBUG [68319] [] GradeRegistForm: is exist
+2021-05-20 12:53:29,086 DEBUG [68319] [] GradeRegistForm: form value set 
+2021-05-20 12:53:29,087 DEBUG [68319] [] ------------------------------/eccadmin_dev/GradeRegist/index
+2021-05-20 12:53:29,087 DEBUG [68319] [] ------------------------------session_check_true
+2021-05-20 12:53:29,087 DEBUG [68319] [] indexAction start
+2021-05-20 12:53:29,087 DEBUG [68319] [] admin_no is 1
+2021-05-20 12:53:29,177 DEBUG [68319] [] indexAction end
+2021-05-20 12:53:29,177 DEBUG [68319] [] GradeRegistController end
+2021-05-20 12:53:29,177 DEBUG [68319] [] finally

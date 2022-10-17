@@ -1,0 +1,370 @@
+2020-07-22 10:23:48,794 DEBUG [116716] [] Request URI : /eccadmin_dev/Login
+2020-07-22 10:23:48,821 DEBUG [116716] [] LoginController start
+2020-07-22 10:23:48,821 DEBUG [116716] [] controllers/LoginController.php: is exist
+2020-07-22 10:23:48,821 DEBUG [116716] [] LoginForm: is exist
+2020-07-22 10:23:48,821 DEBUG [116716] [] LoginForm: form value set 
+2020-07-22 10:23:48,822 DEBUG [116716] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 10:23:48,822 DEBUG [116716] [] ------------------------------login_start_check
+2020-07-22 10:23:48,822 DEBUG [116716] [] indexAction start
+2020-07-22 10:23:48,867 DEBUG [116716] [] indexAction end
+2020-07-22 10:23:48,867 DEBUG [116716] [] LoginController end
+2020-07-22 10:23:48,867 DEBUG [116716] [] finally
+2020-07-22 10:23:51,942 DEBUG [116716] [] Request URI : /eccadmin_dev/Login/login
+2020-07-22 10:23:51,942 DEBUG [116716] [] LoginController start
+2020-07-22 10:23:51,942 DEBUG [116716] [] controllers/LoginController.php: is exist
+2020-07-22 10:23:51,943 DEBUG [116716] [] LoginForm: is exist
+2020-07-22 10:23:51,943 DEBUG [116716] [] LoginForm: form value set 
+2020-07-22 10:23:51,943 DEBUG [116716] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-22 10:23:51,943 DEBUG [116716] [] ------------------------------login_start_check
+2020-07-22 10:23:51,943 DEBUG [116716] [] loginAction start
+2020-07-22 10:23:52,239 DEBUG [116716] [] loginAction end
+2020-07-22 10:23:52,239 DEBUG [116716] [] LoginController end
+2020-07-22 10:23:52,239 DEBUG [116716] [] finally
+2020-07-22 10:23:52,253 DEBUG [116716] [] Request URI : /eccadmin_dev/Menu
+2020-07-22 10:23:52,254 DEBUG [116716] [] MenuController start
+2020-07-22 10:23:52,254 DEBUG [116716] [] controllers/MenuController.php: is exist
+2020-07-22 10:23:52,254 DEBUG [116716] [] MenuForm: is exist
+2020-07-22 10:23:52,254 DEBUG [116716] [] MenuForm: form value set 
+2020-07-22 10:23:52,254 DEBUG [116716] [] ------------------------------/eccadmin_dev/Menu
+2020-07-22 10:23:52,254 DEBUG [116716] [] ------------------------------login_start_check
+2020-07-22 10:23:52,254 DEBUG [116716] [] indexAction start
+2020-07-22 10:23:52,254 DEBUG [116716] [] admin_no is 1
+2020-07-22 10:23:52,278 DEBUG [116716] [] indexAction end
+2020-07-22 10:23:52,278 DEBUG [116716] [] MenuController end
+2020-07-22 10:23:52,278 DEBUG [116716] [] finally
+2020-07-22 10:23:54,570 DEBUG [116716] [] Request URI : /eccadmin_dev/CourseStatusList
+2020-07-22 10:23:54,570 DEBUG [116716] [] CourseStatusListController start
+2020-07-22 10:23:54,571 DEBUG [116716] [] controllers/CourseStatusListController.php: is exist
+2020-07-22 10:23:54,571 DEBUG [116716] [] CourseStatusListForm: is exist
+2020-07-22 10:23:54,571 DEBUG [116716] [] CourseStatusListForm: form value set 
+2020-07-22 10:23:54,571 DEBUG [116716] [] ------------------------------/eccadmin_dev/CourseStatusList
+2020-07-22 10:23:54,572 DEBUG [116716] [] indexAction start
+2020-07-22 10:23:54,572 DEBUG [116716] [] admin_no is 1
+2020-07-22 10:23:54,670 DEBUG [116716] [] indexAction end
+2020-07-22 10:23:54,671 DEBUG [116716] [] CourseStatusListController end
+2020-07-22 10:23:54,671 DEBUG [116716] [] finally
+2020-07-22 10:23:56,277 DEBUG [116716] [] Request URI : /eccadmin_dev/CourseStatusList/Search
+2020-07-22 10:23:56,277 DEBUG [116716] [] CourseStatusListController start
+2020-07-22 10:23:56,277 DEBUG [116716] [] controllers/CourseStatusListController.php: is exist
+2020-07-22 10:23:56,278 DEBUG [116716] [] CourseStatusListForm: is exist
+2020-07-22 10:23:56,278 DEBUG [116716] [] CourseStatusListForm: form value set 
+2020-07-22 10:23:56,278 DEBUG [116716] [] ------------------------------/eccadmin_dev/CourseStatusList/Search
+2020-07-22 10:23:56,279 DEBUG [116716] [] SearchAction start
+2020-07-22 10:23:56,279 DEBUG [116716] [] admin_no is 1
+2020-07-22 10:23:56,280 DEBUG [116716] [] course list query
+2020-07-22 10:23:56,281 DEBUG [116716] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id 
+2020-07-22 10:23:57,455 DEBUG [116716] [] course list query
+2020-07-22 10:23:57,455 DEBUG [116716] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id  LIMIT 0 , 10
+2020-07-22 10:23:58,250 DEBUG [116716] [] SearchAction end
+2020-07-22 10:23:58,250 DEBUG [116716] [] CourseStatusListController end
+2020-07-22 10:23:58,251 DEBUG [116716] [] finally
+2020-07-22 10:24:12,721 DEBUG [117062] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-22 10:24:12,722 DEBUG [117062] [] LoginController start
+2020-07-22 10:24:12,722 DEBUG [117062] [] controllers/LoginController.php: is exist
+2020-07-22 10:24:12,722 DEBUG [117062] [] LoginForm: is exist
+2020-07-22 10:24:12,722 DEBUG [117062] [] LoginForm: form value set 
+2020-07-22 10:24:12,722 DEBUG [117062] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-22 10:24:12,723 DEBUG [117062] [] ------------------------------login_start_check
+2020-07-22 10:24:12,723 DEBUG [117062] [] logoutAction start
+2020-07-22 10:24:12,723 DEBUG [117062] [] logoutAction end
+2020-07-22 10:24:12,723 DEBUG [117062] [] LoginController end
+2020-07-22 10:24:12,723 DEBUG [117062] [] finally
+2020-07-22 10:24:12,742 DEBUG [117062] [] Request URI : /eccadmin_dev/Login
+2020-07-22 10:24:12,742 DEBUG [117062] [] LoginController start
+2020-07-22 10:24:12,742 DEBUG [117062] [] controllers/LoginController.php: is exist
+2020-07-22 10:24:12,742 DEBUG [117062] [] LoginForm: is exist
+2020-07-22 10:24:12,742 DEBUG [117062] [] LoginForm: form value set 
+2020-07-22 10:24:12,743 DEBUG [117062] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 10:24:12,743 DEBUG [117062] [] ------------------------------login_start_check
+2020-07-22 10:24:12,743 DEBUG [117062] [] indexAction start
+2020-07-22 10:24:12,758 DEBUG [117062] [] indexAction end
+2020-07-22 10:24:12,758 DEBUG [117062] [] LoginController end
+2020-07-22 10:24:12,758 DEBUG [117062] [] finally
+2020-07-22 10:24:47,258 DEBUG [116875] [] Request URI : /eccadmin_dev/Login
+2020-07-22 10:24:47,259 DEBUG [116875] [] LoginController start
+2020-07-22 10:24:47,259 DEBUG [116875] [] controllers/LoginController.php: is exist
+2020-07-22 10:24:47,259 DEBUG [116875] [] LoginForm: is exist
+2020-07-22 10:24:47,259 DEBUG [116875] [] LoginForm: form value set 
+2020-07-22 10:24:47,260 DEBUG [116875] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 10:24:47,260 DEBUG [116875] [] ------------------------------login_start_check
+2020-07-22 10:24:47,260 DEBUG [116875] [] indexAction start
+2020-07-22 10:24:47,276 DEBUG [116875] [] indexAction end
+2020-07-22 10:24:47,276 DEBUG [116875] [] LoginController end
+2020-07-22 10:24:47,276 DEBUG [116875] [] finally
+2020-07-22 10:24:50,488 DEBUG [116875] [] Request URI : /eccadmin_dev/Login/login
+2020-07-22 10:24:50,488 DEBUG [116875] [] LoginController start
+2020-07-22 10:24:50,489 DEBUG [116875] [] controllers/LoginController.php: is exist
+2020-07-22 10:24:50,489 DEBUG [116875] [] LoginForm: is exist
+2020-07-22 10:24:50,489 DEBUG [116875] [] LoginForm: form value set 
+2020-07-22 10:24:50,489 DEBUG [116875] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-22 10:24:50,489 DEBUG [116875] [] ------------------------------login_start_check
+2020-07-22 10:24:50,490 DEBUG [116875] [] loginAction start
+2020-07-22 10:24:50,793 DEBUG [116875] [] loginAction end
+2020-07-22 10:24:50,793 DEBUG [116875] [] LoginController end
+2020-07-22 10:24:50,793 DEBUG [116875] [] finally
+2020-07-22 10:24:50,807 DEBUG [116875] [] Request URI : /eccadmin_dev/Menu
+2020-07-22 10:24:50,808 DEBUG [116875] [] MenuController start
+2020-07-22 10:24:50,808 DEBUG [116875] [] controllers/MenuController.php: is exist
+2020-07-22 10:24:50,808 DEBUG [116875] [] MenuForm: is exist
+2020-07-22 10:24:50,808 DEBUG [116875] [] MenuForm: form value set 
+2020-07-22 10:24:50,808 DEBUG [116875] [] ------------------------------/eccadmin_dev/Menu
+2020-07-22 10:24:50,808 DEBUG [116875] [] ------------------------------login_start_check
+2020-07-22 10:24:50,808 DEBUG [116875] [] indexAction start
+2020-07-22 10:24:50,809 DEBUG [116875] [] admin_no is 1
+2020-07-22 10:24:50,833 DEBUG [116875] [] indexAction end
+2020-07-22 10:24:50,833 DEBUG [116875] [] MenuController end
+2020-07-22 10:24:50,833 DEBUG [116875] [] finally
+2020-07-22 10:25:11,175 DEBUG [116337] [] Request URI : /eccadmin_dev/CourseList
+2020-07-22 10:25:11,176 DEBUG [116337] [] CourseListController start
+2020-07-22 10:25:11,176 DEBUG [116337] [] controllers/CourseListController.php: is exist
+2020-07-22 10:25:11,176 DEBUG [116337] [] CourseListForm: is exist
+2020-07-22 10:25:11,177 DEBUG [116337] [] CourseListForm: form value set 
+2020-07-22 10:25:11,177 DEBUG [116337] [] ------------------------------/eccadmin_dev/CourseList
+2020-07-22 10:25:11,177 DEBUG [116337] [] indexAction start
+2020-07-22 10:25:11,177 DEBUG [116337] [] admin_no is 1
+2020-07-22 10:25:11,273 DEBUG [116337] [] indexAction end
+2020-07-22 10:25:11,273 DEBUG [116337] [] CourseListController end
+2020-07-22 10:25:11,273 DEBUG [116337] [] finally
+2020-07-22 10:25:20,278 DEBUG [116917] [] Request URI : /eccadmin_dev/CourseList/Search
+2020-07-22 10:25:20,279 DEBUG [116917] [] CourseListController start
+2020-07-22 10:25:20,279 DEBUG [116917] [] controllers/CourseListController.php: is exist
+2020-07-22 10:25:20,279 DEBUG [116917] [] CourseListForm: is exist
+2020-07-22 10:25:20,280 DEBUG [116917] [] CourseListForm: form value set 
+2020-07-22 10:25:20,280 DEBUG [116917] [] ------------------------------/eccadmin_dev/CourseList/Search
+2020-07-22 10:25:20,280 DEBUG [116917] [] SearchAction start
+2020-07-22 10:25:20,281 DEBUG [116917] [] admin_no is 1
+2020-07-22 10:25:20,382 DEBUG [116917] [] SearchAction end
+2020-07-22 10:25:20,383 DEBUG [116917] [] CourseListController end
+2020-07-22 10:25:20,383 DEBUG [116917] [] finally
+2020-07-22 10:25:28,967 DEBUG [117062] [] Request URI : /eccadmin_dev/TeacherList
+2020-07-22 10:25:28,968 DEBUG [117062] [] TeacherListController start
+2020-07-22 10:25:28,968 DEBUG [117062] [] controllers/TeacherListController.php: is exist
+2020-07-22 10:25:28,972 DEBUG [117062] [] TeacherListForm: is exist
+2020-07-22 10:25:28,972 DEBUG [117062] [] TeacherListForm: form value set 
+2020-07-22 10:25:28,973 DEBUG [117062] [] ------------------------------/eccadmin_dev/TeacherList
+2020-07-22 10:25:28,973 DEBUG [117062] [] indexAction start
+2020-07-22 10:25:28,973 DEBUG [117062] [] admin_no is 1
+2020-07-22 10:25:29,061 DEBUG [117062] [] indexAction end
+2020-07-22 10:25:29,061 DEBUG [117062] [] TeacherListController end
+2020-07-22 10:25:29,061 DEBUG [117062] [] finally
+2020-07-22 10:25:32,952 DEBUG [117062] [] Request URI : /eccadmin_dev/TeacherCourseDetailAssignment/index
+2020-07-22 10:25:32,952 DEBUG [117062] [] TeacherCourseDetailAssignmentController start
+2020-07-22 10:25:32,952 DEBUG [117062] [] controllers/TeacherCourseDetailAssignmentController.php: is exist
+2020-07-22 10:25:32,955 DEBUG [117062] [] TeacherCourseDetailAssignmentForm: is exist
+2020-07-22 10:25:32,955 DEBUG [117062] [] TeacherCourseDetailAssignmentForm: form value set 
+2020-07-22 10:25:32,956 DEBUG [117062] [] ------------------------------/eccadmin_dev/TeacherCourseDetailAssignment/index
+2020-07-22 10:25:32,956 DEBUG [117062] [] ------------------------------session_check_true
+2020-07-22 10:25:32,956 DEBUG [117062] [] indexAction start
+2020-07-22 10:25:32,956 DEBUG [117062] [] admin_no is 1
+2020-07-22 10:25:33,034 DEBUG [117062] [] indexAction end
+2020-07-22 10:25:33,034 DEBUG [117062] [] TeacherCourseDetailAssignmentController end
+2020-07-22 10:25:33,035 DEBUG [117062] [] finally
+2020-07-22 10:25:44,302 DEBUG [116716] [] Request URI : /eccadmin_dev/TeacherCourseDetailAssignment/Save
+2020-07-22 10:25:44,302 DEBUG [116716] [] TeacherCourseDetailAssignmentController start
+2020-07-22 10:25:44,302 DEBUG [116716] [] controllers/TeacherCourseDetailAssignmentController.php: is exist
+2020-07-22 10:25:44,303 DEBUG [116716] [] TeacherCourseDetailAssignmentForm: is exist
+2020-07-22 10:25:44,303 DEBUG [116716] [] TeacherCourseDetailAssignmentForm: form value set 
+2020-07-22 10:25:44,304 DEBUG [116716] [] ------------------------------/eccadmin_dev/TeacherCourseDetailAssignment/Save
+2020-07-22 10:25:44,304 DEBUG [116716] [] ------------------------------session_check_true
+2020-07-22 10:25:44,304 DEBUG [116716] [] SaveAction start
+2020-07-22 10:25:44,304 DEBUG [116716] [] admin_no is 1
+2020-07-22 10:25:44,309 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,311 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,312 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,318 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,319 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,321 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,322 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,323 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,325 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,326 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,327 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,329 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,331 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,332 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,334 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,335 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,336 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,338 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,339 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,341 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,342 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,343 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,345 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,346 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,348 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,349 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,350 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,352 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,353 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,354 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,356 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,357 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,359 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,360 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,361 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,363 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,364 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,365 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,367 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,368 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,369 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,371 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,372 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,373 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,375 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,376 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,377 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,378 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,379 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,381 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,382 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,383 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,384 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,386 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,387 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,388 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,390 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,391 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,392 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,393 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,394 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,395 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,396 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,398 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,399 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,400 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,401 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,403 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,404 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,405 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,407 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,408 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,409 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,410 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,411 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,413 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,414 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,415 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,417 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,418 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,419 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,420 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,422 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,423 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,424 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,426 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,427 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,428 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,429 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,431 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,432 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,434 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,435 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,436 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,437 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,438 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,440 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,441 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,442 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,443 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,445 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,446 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,448 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,449 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,450 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,451 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,452 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,454 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,455 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,457 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,458 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,459 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,460 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,461 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,462 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,463 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,465 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,466 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,468 DEBUG [116716] [] INSERT INTO  T_TEACHER_COURSE_DETAIL (teacher_no,course_detail_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :teacher_no,:course_detail_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2020-07-22 10:25:44,548 DEBUG [116716] [] SaveAction end
+2020-07-22 10:25:44,548 DEBUG [116716] [] TeacherCourseDetailAssignmentController end
+2020-07-22 10:25:44,548 DEBUG [116716] [] finally
+2020-07-22 10:25:47,309 DEBUG [116716] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-22 10:25:47,309 DEBUG [116716] [] LoginController start
+2020-07-22 10:25:47,309 DEBUG [116716] [] controllers/LoginController.php: is exist
+2020-07-22 10:25:47,309 DEBUG [116716] [] LoginForm: is exist
+2020-07-22 10:25:47,310 DEBUG [116716] [] LoginForm: form value set 
+2020-07-22 10:25:47,310 DEBUG [116716] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-22 10:25:47,310 DEBUG [116716] [] ------------------------------login_start_check
+2020-07-22 10:25:47,310 DEBUG [116716] [] logoutAction start
+2020-07-22 10:25:47,310 DEBUG [116716] [] logoutAction end
+2020-07-22 10:25:47,311 DEBUG [116716] [] LoginController end
+2020-07-22 10:25:47,311 DEBUG [116716] [] finally
+2020-07-22 10:25:47,332 DEBUG [116716] [] Request URI : /eccadmin_dev/Login
+2020-07-22 10:25:47,333 DEBUG [116716] [] LoginController start
+2020-07-22 10:25:47,333 DEBUG [116716] [] controllers/LoginController.php: is exist
+2020-07-22 10:25:47,333 DEBUG [116716] [] LoginForm: is exist
+2020-07-22 10:25:47,333 DEBUG [116716] [] LoginForm: form value set 
+2020-07-22 10:25:47,334 DEBUG [116716] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 10:25:47,334 DEBUG [116716] [] ------------------------------login_start_check
+2020-07-22 10:25:47,334 DEBUG [116716] [] indexAction start
+2020-07-22 10:25:47,349 DEBUG [116716] [] indexAction end
+2020-07-22 10:25:47,349 DEBUG [116716] [] LoginController end
+2020-07-22 10:25:47,350 DEBUG [116716] [] finally
+2020-07-22 13:02:27,309 DEBUG [125282] [] Request URI : /eccadmin_dev/Login
+2020-07-22 13:02:27,309 DEBUG [125282] [] LoginController start
+2020-07-22 13:02:27,309 DEBUG [125282] [] controllers/LoginController.php: is exist
+2020-07-22 13:02:27,310 DEBUG [125282] [] LoginForm: is exist
+2020-07-22 13:02:27,310 DEBUG [125282] [] LoginForm: form value set 
+2020-07-22 13:02:27,311 DEBUG [125282] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 13:02:27,311 DEBUG [125282] [] ------------------------------login_start_check
+2020-07-22 13:02:27,311 DEBUG [125282] [] indexAction start
+2020-07-22 13:02:27,324 DEBUG [125282] [] indexAction end
+2020-07-22 13:02:27,324 DEBUG [125282] [] LoginController end
+2020-07-22 13:02:27,324 DEBUG [125282] [] finally
+2020-07-22 16:10:35,561 DEBUG [128859] [] Request URI : /eccadmin_dev/Login
+2020-07-22 16:10:35,562 DEBUG [128859] [] LoginController start
+2020-07-22 16:10:35,562 DEBUG [128859] [] controllers/LoginController.php: is exist
+2020-07-22 16:10:35,563 DEBUG [128859] [] LoginForm: is exist
+2020-07-22 16:10:35,563 DEBUG [128859] [] LoginForm: form value set 
+2020-07-22 16:10:35,563 DEBUG [128859] [] ------------------------------/eccadmin_dev/Login
+2020-07-22 16:10:35,563 DEBUG [128859] [] ------------------------------login_start_check
+2020-07-22 16:10:35,563 DEBUG [128859] [] indexAction start
+2020-07-22 16:10:35,579 DEBUG [128859] [] indexAction end
+2020-07-22 16:10:35,579 DEBUG [128859] [] LoginController end
+2020-07-22 16:10:35,579 DEBUG [128859] [] finally
+2020-07-22 16:10:38,702 DEBUG [128859] [] Request URI : /eccadmin_dev/Login/login
+2020-07-22 16:10:38,702 DEBUG [128859] [] LoginController start
+2020-07-22 16:10:38,702 DEBUG [128859] [] controllers/LoginController.php: is exist
+2020-07-22 16:10:38,703 DEBUG [128859] [] LoginForm: is exist
+2020-07-22 16:10:38,703 DEBUG [128859] [] LoginForm: form value set 
+2020-07-22 16:10:38,703 DEBUG [128859] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-22 16:10:38,703 DEBUG [128859] [] ------------------------------login_start_check
+2020-07-22 16:10:38,703 DEBUG [128859] [] loginAction start
+2020-07-22 16:10:38,999 DEBUG [128859] [] loginAction end
+2020-07-22 16:10:38,999 DEBUG [128859] [] LoginController end
+2020-07-22 16:10:38,999 DEBUG [128859] [] finally
+2020-07-22 16:10:39,015 DEBUG [128859] [] Request URI : /eccadmin_dev/Menu
+2020-07-22 16:10:39,015 DEBUG [128859] [] MenuController start
+2020-07-22 16:10:39,015 DEBUG [128859] [] controllers/MenuController.php: is exist
+2020-07-22 16:10:39,016 DEBUG [128859] [] MenuForm: is exist
+2020-07-22 16:10:39,016 DEBUG [128859] [] MenuForm: form value set 
+2020-07-22 16:10:39,016 DEBUG [128859] [] ------------------------------/eccadmin_dev/Menu
+2020-07-22 16:10:39,016 DEBUG [128859] [] ------------------------------login_start_check
+2020-07-22 16:10:39,016 DEBUG [128859] [] indexAction start
+2020-07-22 16:10:39,016 DEBUG [128859] [] admin_no is 1
+2020-07-22 16:10:39,040 DEBUG [128859] [] indexAction end
+2020-07-22 16:10:39,040 DEBUG [128859] [] MenuController end
+2020-07-22 16:10:39,040 DEBUG [128859] [] finally
+2020-07-22 16:10:41,830 DEBUG [128859] [] Request URI : /eccadmin_dev/ExcelSubjectAreaList
+2020-07-22 16:10:41,830 DEBUG [128859] [] ExcelSubjectAreaListController start
+2020-07-22 16:10:41,830 DEBUG [128859] [] controllers/ExcelSubjectAreaListController.php: is exist
+2020-07-22 16:10:41,831 DEBUG [128859] [] ExcelSubjectAreaListForm: is exist
+2020-07-22 16:10:41,831 DEBUG [128859] [] ExcelSubjectAreaListForm: form value set 
+2020-07-22 16:10:41,832 DEBUG [128859] [] ------------------------------/eccadmin_dev/ExcelSubjectAreaList
+2020-07-22 16:10:41,832 DEBUG [128859] [] indexAction start
+2020-07-22 16:10:41,832 DEBUG [128859] [] admin_no is 1
+2020-07-22 16:10:41,938 DEBUG [128859] [] indexAction end
+2020-07-22 16:10:41,938 DEBUG [128859] [] ExcelSubjectAreaListController end
+2020-07-22 16:10:41,938 DEBUG [128859] [] finally

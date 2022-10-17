@@ -1,0 +1,14 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+	<param name="Encoding" value="UTF-8" />
+    <appender name="myAppender" class="LoggerAppenderDailyFile">
+        <param name="file" value="logs/log_%s.log" />
+        <param name="datepattern" value="Y-m-d" />
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%d{Y-m-d H:i:s,u} %p [%t] [%x] %m%n%ex" />
+        </layout>
+    </appender>
+    <root>
+        <level value="DEBUG" />
+        <appender_ref ref="myAppender" />
+    </root>
+</configuration>

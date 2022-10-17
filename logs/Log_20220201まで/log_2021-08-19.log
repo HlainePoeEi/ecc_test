@@ -1,0 +1,1031 @@
+2021-08-19 13:09:55,403 DEBUG [143077] [] Request URI : /eccadmin_dev/Login
+2021-08-19 13:09:55,427 DEBUG [143077] [] LoginController start
+2021-08-19 13:09:55,427 DEBUG [143077] [] controllers/LoginController.php: is exist
+2021-08-19 13:09:55,428 DEBUG [143077] [] LoginForm: is exist
+2021-08-19 13:09:55,428 DEBUG [143077] [] LoginForm: form value set 
+2021-08-19 13:09:55,428 DEBUG [143077] [] ------------------------------/eccadmin_dev/Login
+2021-08-19 13:09:55,428 DEBUG [143077] [] ------------------------------login_start_check
+2021-08-19 13:09:55,428 DEBUG [143077] [] indexAction start
+2021-08-19 13:09:55,473 DEBUG [143077] [] indexAction end
+2021-08-19 13:09:55,473 DEBUG [143077] [] LoginController end
+2021-08-19 13:09:55,473 DEBUG [143077] [] finally
+2021-08-19 13:10:00,164 DEBUG [143077] [] Request URI : /eccadmin_dev/Login/login
+2021-08-19 13:10:00,165 DEBUG [143077] [] LoginController start
+2021-08-19 13:10:00,165 DEBUG [143077] [] controllers/LoginController.php: is exist
+2021-08-19 13:10:00,165 DEBUG [143077] [] LoginForm: is exist
+2021-08-19 13:10:00,165 DEBUG [143077] [] LoginForm: form value set 
+2021-08-19 13:10:00,166 DEBUG [143077] [] ------------------------------/eccadmin_dev/Login/login
+2021-08-19 13:10:00,166 DEBUG [143077] [] ------------------------------login_start_check
+2021-08-19 13:10:00,166 DEBUG [143077] [] loginAction start
+2021-08-19 13:10:00,467 DEBUG [143077] [] loginAction end
+2021-08-19 13:10:00,467 DEBUG [143077] [] LoginController end
+2021-08-19 13:10:00,467 DEBUG [143077] [] finally
+2021-08-19 13:10:00,490 DEBUG [143077] [] Request URI : /eccadmin_dev/Menu
+2021-08-19 13:10:00,490 DEBUG [143077] [] MenuController start
+2021-08-19 13:10:00,490 DEBUG [143077] [] controllers/MenuController.php: is exist
+2021-08-19 13:10:00,491 DEBUG [143077] [] MenuForm: is exist
+2021-08-19 13:10:00,491 DEBUG [143077] [] MenuForm: form value set 
+2021-08-19 13:10:00,491 DEBUG [143077] [] ------------------------------/eccadmin_dev/Menu
+2021-08-19 13:10:00,491 DEBUG [143077] [] ------------------------------login_start_check
+2021-08-19 13:10:00,491 DEBUG [143077] [] indexAction start
+2021-08-19 13:10:00,491 DEBUG [143077] [] admin_no is 1
+2021-08-19 13:10:00,527 DEBUG [143077] [] indexAction end
+2021-08-19 13:10:00,527 DEBUG [143077] [] MenuController end
+2021-08-19 13:10:00,527 DEBUG [143077] [] finally
+2021-08-19 13:10:03,004 DEBUG [145218] [] Request URI : /eccadmin_dev/TestInfoList
+2021-08-19 13:10:03,005 DEBUG [145218] [] TestInfoListController start
+2021-08-19 13:10:03,005 DEBUG [145218] [] controllers/TestInfoListController.php: is exist
+2021-08-19 13:10:03,005 DEBUG [145218] [] TestInfoListForm: is exist
+2021-08-19 13:10:03,005 DEBUG [145218] [] TestInfoListForm: form value set 
+2021-08-19 13:10:03,006 DEBUG [145218] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-08-19 13:10:03,006 DEBUG [145218] [] indexAction start
+2021-08-19 13:10:03,006 DEBUG [145218] [] admin_no is 1
+2021-08-19 13:10:03,008 DEBUG [145218] [] test List count:2
+2021-08-19 13:10:03,103 DEBUG [145218] [] indexAction end
+2021-08-19 13:10:03,103 DEBUG [145218] [] TestInfoListController end
+2021-08-19 13:10:03,104 DEBUG [145218] [] finally
+2021-08-19 13:10:06,642 DEBUG [145272] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-08-19 13:10:06,643 DEBUG [145272] [] TestInfoCopyController start
+2021-08-19 13:10:06,643 DEBUG [145272] [] controllers/TestInfoCopyController.php: is exist
+2021-08-19 13:10:06,644 DEBUG [145272] [] TestInfoCopyForm: is exist
+2021-08-19 13:10:06,644 DEBUG [145272] [] TestInfoCopyForm: form value set 
+2021-08-19 13:10:06,644 DEBUG [145272] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-08-19 13:10:06,645 DEBUG [145272] [] ------------------------------session_check_true
+2021-08-19 13:10:06,645 DEBUG [145272] [] indexAction start
+2021-08-19 13:10:06,645 DEBUG [145272] [] admin_no is 1
+2021-08-19 13:10:06,645 DEBUG [145272] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-08-19 13:10:06,647 DEBUG [145272] [] test_info_no
+2021-08-19 13:10:06,741 DEBUG [145272] [] indexAction end
+2021-08-19 13:10:06,741 DEBUG [145272] [] TestInfoCopyController end
+2021-08-19 13:10:06,741 DEBUG [145272] [] finally
+2021-08-19 13:10:09,253 DEBUG [143077] [] Request URI : /eccadmin_dev/TestInfoCopy/back
+2021-08-19 13:10:09,254 DEBUG [143077] [] TestInfoCopyController start
+2021-08-19 13:10:09,254 DEBUG [143077] [] controllers/TestInfoCopyController.php: is exist
+2021-08-19 13:10:09,254 DEBUG [143077] [] TestInfoCopyForm: is exist
+2021-08-19 13:10:09,255 DEBUG [143077] [] TestInfoCopyForm: form value set 
+2021-08-19 13:10:09,255 DEBUG [143077] [] ------------------------------/eccadmin_dev/TestInfoCopy/back
+2021-08-19 13:10:09,255 DEBUG [143077] [] ------------------------------session_check_true
+2021-08-19 13:10:09,255 DEBUG [143077] [] backAction start
+2021-08-19 13:10:09,255 DEBUG [143077] [] backAction end
+2021-08-19 13:10:09,256 DEBUG [143077] [] TestInfoCopyController end
+2021-08-19 13:10:09,256 DEBUG [143077] [] finally
+2021-08-19 13:10:09,285 DEBUG [143077] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-08-19 13:10:09,286 DEBUG [143077] [] TestInfoListController start
+2021-08-19 13:10:09,286 DEBUG [143077] [] controllers/TestInfoListController.php: is exist
+2021-08-19 13:10:09,286 DEBUG [143077] [] TestInfoListForm: is exist
+2021-08-19 13:10:09,286 DEBUG [143077] [] TestInfoListForm: form value set 
+2021-08-19 13:10:09,287 DEBUG [143077] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-08-19 13:10:09,287 DEBUG [143077] [] SearchAction start
+2021-08-19 13:10:09,287 DEBUG [143077] [] admin_no is 1
+2021-08-19 13:10:09,287 DEBUG [143077] [] org_id99999
+2021-08-19 13:10:09,289 DEBUG [143077] [] test List count:2
+2021-08-19 13:10:09,369 DEBUG [143077] [] SearchAction end
+2021-08-19 13:10:09,370 DEBUG [143077] [] TestInfoListController end
+2021-08-19 13:10:09,370 DEBUG [143077] [] finally
+2021-08-19 13:10:11,250 DEBUG [143077] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-08-19 13:10:11,250 DEBUG [143077] [] TestInfoCopyController start
+2021-08-19 13:10:11,250 DEBUG [143077] [] controllers/TestInfoCopyController.php: is exist
+2021-08-19 13:10:11,251 DEBUG [143077] [] TestInfoCopyForm: is exist
+2021-08-19 13:10:11,251 DEBUG [143077] [] TestInfoCopyForm: form value set 
+2021-08-19 13:10:11,251 DEBUG [143077] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-08-19 13:10:11,251 DEBUG [143077] [] ------------------------------session_check_true
+2021-08-19 13:10:11,252 DEBUG [143077] [] indexAction start
+2021-08-19 13:10:11,252 DEBUG [143077] [] admin_no is 1
+2021-08-19 13:10:11,252 DEBUG [143077] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-08-19 13:10:11,254 DEBUG [143077] [] test_info_no
+2021-08-19 13:10:11,328 DEBUG [143077] [] indexAction end
+2021-08-19 13:10:11,328 DEBUG [143077] [] TestInfoCopyController end
+2021-08-19 13:10:11,328 DEBUG [143077] [] finally
+2021-08-19 18:03:18,333 DEBUG [152510] [] Request URI : /eccadmin_dev/TestInfoList
+2021-08-19 18:03:18,333 DEBUG [152510] [] TestInfoListController start
+2021-08-19 18:03:18,333 DEBUG [152510] [] controllers/TestInfoListController.php: is exist
+2021-08-19 18:03:18,334 DEBUG [152510] [] TestInfoListForm: is exist
+2021-08-19 18:03:18,334 DEBUG [152510] [] TestInfoListForm: form value set 
+2021-08-19 18:03:18,335 DEBUG [152510] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-08-19 18:03:18,335 DEBUG [152510] [] indexAction start
+2021-08-19 18:03:18,335 DEBUG [152510] [] admin_no is 
+2021-08-19 18:03:18,335 DEBUG [152510] [] indexAction end
+2021-08-19 18:03:18,335 DEBUG [152510] [] TestInfoListController end
+2021-08-19 18:03:18,335 DEBUG [152510] [] finally
+2021-08-19 18:03:18,363 DEBUG [152510] [] Request URI : /eccadmin_dev/Error/disp
+2021-08-19 18:03:18,364 DEBUG [152510] [] ErrorController start
+2021-08-19 18:03:18,364 DEBUG [152510] [] controllers/ErrorController.php: is exist
+2021-08-19 18:03:18,364 DEBUG [152510] [] ErrorForm: is exist
+2021-08-19 18:03:18,365 DEBUG [152510] [] ErrorForm: form value set 
+2021-08-19 18:03:18,365 DEBUG [152510] [] ------------------------------/eccadmin_dev/Error/disp
+2021-08-19 18:03:18,365 DEBUG [152510] [] ------------------------------login_start_check
+2021-08-19 18:03:18,365 DEBUG [152510] [] dispAction start
+2021-08-19 18:03:18,395 DEBUG [152510] [] dispAction end
+2021-08-19 18:03:18,395 DEBUG [152510] [] ErrorController end
+2021-08-19 18:03:18,395 DEBUG [152510] [] finally
+2021-08-19 18:03:20,150 DEBUG [152510] [] Request URI : /eccadmin_dev/Login
+2021-08-19 18:03:20,151 DEBUG [152510] [] LoginController start
+2021-08-19 18:03:20,151 DEBUG [152510] [] controllers/LoginController.php: is exist
+2021-08-19 18:03:20,151 DEBUG [152510] [] LoginForm: is exist
+2021-08-19 18:03:20,151 DEBUG [152510] [] LoginForm: form value set 
+2021-08-19 18:03:20,152 DEBUG [152510] [] ------------------------------/eccadmin_dev/Login
+2021-08-19 18:03:20,152 DEBUG [152510] [] ------------------------------login_start_check
+2021-08-19 18:03:20,152 DEBUG [152510] [] indexAction start
+2021-08-19 18:03:20,165 DEBUG [152510] [] indexAction end
+2021-08-19 18:03:20,166 DEBUG [152510] [] LoginController end
+2021-08-19 18:03:20,166 DEBUG [152510] [] finally
+2021-08-19 18:03:23,440 DEBUG [152510] [] Request URI : /eccadmin_dev/Login/login
+2021-08-19 18:03:23,441 DEBUG [152510] [] LoginController start
+2021-08-19 18:03:23,441 DEBUG [152510] [] controllers/LoginController.php: is exist
+2021-08-19 18:03:23,441 DEBUG [152510] [] LoginForm: is exist
+2021-08-19 18:03:23,441 DEBUG [152510] [] LoginForm: form value set 
+2021-08-19 18:03:23,442 DEBUG [152510] [] ------------------------------/eccadmin_dev/Login/login
+2021-08-19 18:03:23,442 DEBUG [152510] [] ------------------------------login_start_check
+2021-08-19 18:03:23,442 DEBUG [152510] [] loginAction start
+2021-08-19 18:03:23,740 DEBUG [152510] [] loginAction end
+2021-08-19 18:03:23,740 DEBUG [152510] [] LoginController end
+2021-08-19 18:03:23,740 DEBUG [152510] [] finally
+2021-08-19 18:03:23,759 DEBUG [152510] [] Request URI : /eccadmin_dev/Menu
+2021-08-19 18:03:23,759 DEBUG [152510] [] MenuController start
+2021-08-19 18:03:23,760 DEBUG [152510] [] controllers/MenuController.php: is exist
+2021-08-19 18:03:23,760 DEBUG [152510] [] MenuForm: is exist
+2021-08-19 18:03:23,760 DEBUG [152510] [] MenuForm: form value set 
+2021-08-19 18:03:23,760 DEBUG [152510] [] ------------------------------/eccadmin_dev/Menu
+2021-08-19 18:03:23,760 DEBUG [152510] [] ------------------------------login_start_check
+2021-08-19 18:03:23,761 DEBUG [152510] [] indexAction start
+2021-08-19 18:03:23,761 DEBUG [152510] [] admin_no is 1
+2021-08-19 18:03:23,786 DEBUG [152510] [] indexAction end
+2021-08-19 18:03:23,786 DEBUG [152510] [] MenuController end
+2021-08-19 18:03:23,786 DEBUG [152510] [] finally
+2021-08-19 18:03:26,158 DEBUG [152510] [] Request URI : /eccadmin_dev/TestInfoList
+2021-08-19 18:03:26,159 DEBUG [152510] [] TestInfoListController start
+2021-08-19 18:03:26,159 DEBUG [152510] [] controllers/TestInfoListController.php: is exist
+2021-08-19 18:03:26,159 DEBUG [152510] [] TestInfoListForm: is exist
+2021-08-19 18:03:26,159 DEBUG [152510] [] TestInfoListForm: form value set 
+2021-08-19 18:03:26,160 DEBUG [152510] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-08-19 18:03:26,160 DEBUG [152510] [] indexAction start
+2021-08-19 18:03:26,160 DEBUG [152510] [] admin_no is 1
+2021-08-19 18:03:26,162 DEBUG [152510] [] test List count:2
+2021-08-19 18:03:26,243 DEBUG [152510] [] indexAction end
+2021-08-19 18:03:26,243 DEBUG [152510] [] TestInfoListController end
+2021-08-19 18:03:26,243 DEBUG [152510] [] finally
+2021-08-19 18:03:29,519 DEBUG [152510] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-08-19 18:03:29,519 DEBUG [152510] [] TestInfoCopyController start
+2021-08-19 18:03:29,519 DEBUG [152510] [] controllers/TestInfoCopyController.php: is exist
+2021-08-19 18:03:29,520 DEBUG [152510] [] TestInfoCopyForm: is exist
+2021-08-19 18:03:29,520 DEBUG [152510] [] TestInfoCopyForm: form value set 
+2021-08-19 18:03:29,521 DEBUG [152510] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-08-19 18:03:29,521 DEBUG [152510] [] ------------------------------session_check_true
+2021-08-19 18:03:29,521 DEBUG [152510] [] indexAction start
+2021-08-19 18:03:29,521 DEBUG [152510] [] admin_no is 1
+2021-08-19 18:03:29,522 DEBUG [152510] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-08-19 18:03:29,523 DEBUG [152510] [] test_info_no
+2021-08-19 18:03:29,606 DEBUG [152510] [] indexAction end
+2021-08-19 18:03:29,606 DEBUG [152510] [] TestInfoCopyController end
+2021-08-19 18:03:29,606 DEBUG [152510] [] finally
+2021-08-19 18:03:41,523 DEBUG [152181] [] Request URI : /eccadmin_dev/TestInfoCopy/save
+2021-08-19 18:03:41,524 DEBUG [152181] [] TestInfoCopyController start
+2021-08-19 18:03:41,524 DEBUG [152181] [] controllers/TestInfoCopyController.php: is exist
+2021-08-19 18:03:41,525 DEBUG [152181] [] TestInfoCopyForm: is exist
+2021-08-19 18:03:41,525 DEBUG [152181] [] TestInfoCopyForm: form value set 
+2021-08-19 18:03:41,526 DEBUG [152181] [] ------------------------------/eccadmin_dev/TestInfoCopy/save
+2021-08-19 18:03:41,526 DEBUG [152181] [] ------------------------------session_check_true
+2021-08-19 18:03:41,526 DEBUG [152181] [] saveAction start
+2021-08-19 18:03:41,527 DEBUG [152181] [] Error : 1
+2021-08-19 18:03:41,527 DEBUG [152181] [] INSERT INTO  T_TEST_INFO (org_no,test_info_no,test_info_name,long_description,show_flg,test_time,status,start_period,end_period,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:test_info_name,:long_description,:show_flg,:test_time,:status,:start_period,:end_period,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-08-19 18:03:41,528 DEBUG [152181] [] test result is 1
+2021-08-19 18:03:41,528 DEBUG [152181] [] 99999
+2021-08-19 18:03:41,528 DEBUG [152181] [] 176
+2021-08-19 18:03:41,528 DEBUG [152181] [] INSERT INTO  T_TEST_INFO_CONF (org_no,test_info_no,editable_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:editable_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-08-19 18:03:41,530 DEBUG [152181] [] result1
+2021-08-19 18:03:41,530 DEBUG [152181] [] Array
+(
+    [0] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 
+            [test_info_no] => 
+            [quiz_info_no] => 306
+            [disp_no] => 1
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 
+            [test_info_no] => 
+            [quiz_info_no] => 308
+            [disp_no] => 2
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Test_Info_QuizDto Object
+        (
+            [org_no] => 
+            [test_info_no] => 
+            [quiz_info_no] => 310
+            [disp_no] => 3
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,531 DEBUG [152181] [] quiz_info_no
+2021-08-19 18:03:41,537 DEBUG [152181] [] quizInfoNo :306
+2021-08-19 18:03:41,538 DEBUG [152181] [] quizInfo
+2021-08-19 18:03:41,538 DEBUG [152181] [] T_Quiz_InfoDto Object
+(
+    [org_no] => 2
+    [quiz_info_no] => 390
+    [quiz_name] => TOEIC Quiz 1
+    [long_description] => <h3 style="margin: 0px; padding: 0px 0px 0px 14px; font-size: 16.0028px; color: rgb(255, 89, 0); font-weight: normal; line-height: 1.4; border-left: 8px solid rgb(255, 89, 0); font-family: Verdana, メイリオ, Meiryo, &quot;ヒラギノ角ゴ Pro W3&quot;, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;ＭＳ Ｐゴシック&quot;, &quot;MS PGothic&quot;, sans-serif; background-color: rgb(255, 255, 255);">空欄に入る最も適切なものを選択肢（1）～（3）の中から選んでください。</h3>
+    [audio_name] => 
+    [remarks] => 
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,538 DEBUG [152181] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-08-19 18:03:41,539 DEBUG [152181] [] result  is 1
+2021-08-19 18:03:41,539 DEBUG [152181] [] T_Test_Info_QuizDto Object
+(
+    [org_no] => 2
+    [test_info_no] => 263
+    [quiz_info_no] => 390
+    [disp_no] => 1
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,540 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] => We should get a [            ] for the new technology we invented so our rivals won't be able to use it.
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,540 DEBUG [152181] [] itemDto
+2021-08-19 18:03:41,540 DEBUG [152181] [] T_Quiz_ItemDto Object
+(
+    [quiz_info_no] => 390
+    [quiz_item_no] => 1
+    [quiz_type] => 001
+    [description] => We should get a [            ] for the new technology we invented so our rivals won't be able to use it.
+    [marks] => 5
+    [explanation] => 
+    [remarks] => 
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,542 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => (1) logo
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => (2) patent
+            [correct_flag] => 1
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => (3) title
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,542 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,542 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 390
+    [quiz_item_no] => 1
+    [option_no] => 1
+    [description] => (1) logo
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,542 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,542 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 390
+    [quiz_item_no] => 1
+    [option_no] => 2
+    [description] => (2) patent
+    [correct_flag] => 1
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,542 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,542 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 390
+    [quiz_item_no] => 1
+    [option_no] => 3
+    [description] => (3) title
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,543 DEBUG [152181] [] quiz_info_no
+2021-08-19 18:03:41,545 DEBUG [152181] [] quizInfoNo :308
+2021-08-19 18:03:41,545 DEBUG [152181] [] quizInfo
+2021-08-19 18:03:41,546 DEBUG [152181] [] T_Quiz_InfoDto Object
+(
+    [org_no] => 2
+    [quiz_info_no] => 391
+    [quiz_name] => TOEIC Quiz 2
+    [long_description] => <span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">以下の空欄に入る最も適切なものを選択肢（1）～（3）の中から</span><wbr style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);"><span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">選んでください。</span><br>
+    [audio_name] => 
+    [remarks] => TOEIC quiz 2
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,546 DEBUG [152181] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-08-19 18:03:41,547 DEBUG [152181] [] result  is 1
+2021-08-19 18:03:41,547 DEBUG [152181] [] T_Test_Info_QuizDto Object
+(
+    [org_no] => 2
+    [test_info_no] => 263
+    [quiz_info_no] => 391
+    [disp_no] => 2
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,548 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] => Free health consultations are available for [          ] are registered for classes at Women Fitness.
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,548 DEBUG [152181] [] itemDto
+2021-08-19 18:03:41,548 DEBUG [152181] [] T_Quiz_ItemDto Object
+(
+    [quiz_info_no] => 391
+    [quiz_item_no] => 1
+    [quiz_type] => 001
+    [description] => Free health consultations are available for [          ] are registered for classes at Women Fitness.
+    [marks] => 5
+    [explanation] => 
+    [remarks] => 
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,549 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => (1) the people
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => (2) who
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => (3) those who
+            [correct_flag] => 1
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,550 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,550 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 391
+    [quiz_item_no] => 1
+    [option_no] => 1
+    [description] => (1) the people
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,550 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,550 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 391
+    [quiz_item_no] => 1
+    [option_no] => 2
+    [description] => (2) who
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,550 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,550 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 391
+    [quiz_item_no] => 1
+    [option_no] => 3
+    [description] => (3) those who
+    [correct_flag] => 1
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,551 DEBUG [152181] [] quiz_info_no
+2021-08-19 18:03:41,552 DEBUG [152181] [] quizInfoNo :310
+2021-08-19 18:03:41,553 DEBUG [152181] [] ori_path  : /var/www/html/admin_dev/files/99999/QuizInfo/audio/QuizInfoNo_310.mp3
+2021-08-19 18:03:41,553 DEBUG [152181] [] des_path  : /var/www/html/admin_dev/files/2/QuizInfo/audio/QuizInfoNo_392.mp3
+2021-08-19 18:03:41,555 DEBUG [152181] [] quizInfo
+2021-08-19 18:03:41,555 DEBUG [152181] [] T_Quiz_InfoDto Object
+(
+    [org_no] => 2
+    [quiz_info_no] => 392
+    [quiz_name] => audio quiz quiz 3
+    [long_description] => Part 1 direction<div><br></div><div><img src="/admin_dev/files/99999/QuizInfo/image/QuizInfoNo_310_001.png" width="50%"><br></div>
+    [audio_name] => QuizInfoNo_392.mp3
+    [remarks] => 
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,556 DEBUG [152181] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-08-19 18:03:41,556 DEBUG [152181] [] result  is 1
+2021-08-19 18:03:41,556 DEBUG [152181] [] T_Test_Info_QuizDto Object
+(
+    [org_no] => 2
+    [test_info_no] => 263
+    [quiz_info_no] => 392
+    [disp_no] => 3
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,557 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] =>  Where do you live?
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,558 DEBUG [152181] [] itemDto
+2021-08-19 18:03:41,558 DEBUG [152181] [] T_Quiz_ItemDto Object
+(
+    [quiz_info_no] => 392
+    [quiz_item_no] => 1
+    [quiz_type] => 001
+    [description] =>  Where do you live?
+    [marks] => 5
+    [explanation] => 
+    [remarks] => 
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,559 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => A. I am live in London.
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => B. My live is London.
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => I live in London.
+            [correct_flag] => 1
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [3] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 
+            [quiz_item_no] => 1
+            [option_no] => 4
+            [description] => I lives in London.
+            [correct_flag] => 0
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-08-19 18:03:41,559 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,559 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 392
+    [quiz_item_no] => 1
+    [option_no] => 1
+    [description] => A. I am live in London.
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,559 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,559 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 392
+    [quiz_item_no] => 1
+    [option_no] => 2
+    [description] => B. My live is London.
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,560 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,560 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 392
+    [quiz_item_no] => 1
+    [option_no] => 3
+    [description] => I live in London.
+    [correct_flag] => 1
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,560 DEBUG [152181] [] optDto
+2021-08-19 18:03:41,560 DEBUG [152181] [] T_Quiz_Item_OptionDto Object
+(
+    [quiz_info_no] => 392
+    [quiz_item_no] => 1
+    [option_no] => 4
+    [description] => I lives in London.
+    [correct_flag] => 0
+    [del_flg] => 0
+    [create_dt] => 2021/08/19 18:03:41
+    [creater_id] => 1
+    [update_dt] => 2021/08/19 18:03:41
+    [updater_id] => 1
+)
+
+2021-08-19 18:03:41,560 DEBUG [152181] [] quizList
+2021-08-19 18:03:41,560 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_InfoDto Object
+        (
+            [org_no] => 2
+            [quiz_info_no] => 390
+            [quiz_name] => TOEIC Quiz 1
+            [long_description] => <h3 style="margin: 0px; padding: 0px 0px 0px 14px; font-size: 16.0028px; color: rgb(255, 89, 0); font-weight: normal; line-height: 1.4; border-left: 8px solid rgb(255, 89, 0); font-family: Verdana, メイリオ, Meiryo, &quot;ヒラギノ角ゴ Pro W3&quot;, &quot;Hiragino Kaku Gothic Pro&quot;, &quot;ＭＳ Ｐゴシック&quot;, &quot;MS PGothic&quot;, sans-serif; background-color: rgb(255, 255, 255);">空欄に入る最も適切なものを選択肢（1）～（3）の中から選んでください。</h3>
+            [audio_name] => 
+            [remarks] => 
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [1] => T_Quiz_InfoDto Object
+        (
+            [org_no] => 2
+            [quiz_info_no] => 391
+            [quiz_name] => TOEIC Quiz 2
+            [long_description] => <span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">以下の空欄に入る最も適切なものを選択肢（1）～（3）の中から</span><wbr style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);"><span style="color: rgb(34, 34, 34); font-size: small; background-color: rgb(255, 255, 255);">選んでください。</span><br>
+            [audio_name] => 
+            [remarks] => TOEIC quiz 2
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [2] => T_Quiz_InfoDto Object
+        (
+            [org_no] => 2
+            [quiz_info_no] => 392
+            [quiz_name] => audio quiz quiz 3
+            [long_description] => Part 1 direction<div><br></div><div><img src="/admin_dev/files/99999/QuizInfo/image/QuizInfoNo_310_001.png" width="50%"><br></div>
+            [audio_name] => QuizInfoNo_392.mp3
+            [remarks] => 
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+)
+
+2021-08-19 18:03:41,560 DEBUG [152181] [] quizItemList
+2021-08-19 18:03:41,560 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 390
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] => We should get a [            ] for the new technology we invented so our rivals won't be able to use it.
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [1] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 391
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] => Free health consultations are available for [          ] are registered for classes at Women Fitness.
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [2] => T_Quiz_ItemDto Object
+        (
+            [quiz_info_no] => 392
+            [quiz_item_no] => 1
+            [quiz_type] => 001
+            [description] =>  Where do you live?
+            [marks] => 5
+            [explanation] => 
+            [remarks] => 
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+)
+
+2021-08-19 18:03:41,560 DEBUG [152181] [] quizOptionList
+2021-08-19 18:03:41,560 DEBUG [152181] [] Array
+(
+    [0] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 390
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => (1) logo
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [1] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 390
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => (2) patent
+            [correct_flag] => 1
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [2] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 390
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => (3) title
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [3] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 391
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => (1) the people
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [4] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 391
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => (2) who
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [5] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 391
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => (3) those who
+            [correct_flag] => 1
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [6] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 392
+            [quiz_item_no] => 1
+            [option_no] => 1
+            [description] => A. I am live in London.
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [7] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 392
+            [quiz_item_no] => 1
+            [option_no] => 2
+            [description] => B. My live is London.
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [8] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 392
+            [quiz_item_no] => 1
+            [option_no] => 3
+            [description] => I live in London.
+            [correct_flag] => 1
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+    [9] => T_Quiz_Item_OptionDto Object
+        (
+            [quiz_info_no] => 392
+            [quiz_item_no] => 1
+            [option_no] => 4
+            [description] => I lives in London.
+            [correct_flag] => 0
+            [del_flg] => 0
+            [create_dt] => 2021/08/19 18:03:41
+            [creater_id] => 1
+            [update_dt] => 2021/08/19 18:03:41
+            [updater_id] => 1
+        )
+
+)
+
+2021-08-19 18:03:41,561 DEBUG [152181] [] result 1 is 1
+2021-08-19 18:03:41,562 DEBUG [152181] [] result 2 is 1
+2021-08-19 18:03:41,564 DEBUG [152181] [] result 3 is 1
+2021-08-19 18:03:41,641 DEBUG [152181] [] saveAction end
+2021-08-19 18:03:41,641 DEBUG [152181] [] TestInfoCopyController end
+2021-08-19 18:03:41,642 DEBUG [152181] [] finally
+2021-08-19 18:03:41,660 DEBUG [152339] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-08-19 18:03:41,661 DEBUG [152339] [] TestInfoListController start
+2021-08-19 18:03:41,661 DEBUG [152339] [] controllers/TestInfoListController.php: is exist
+2021-08-19 18:03:41,661 DEBUG [152339] [] TestInfoListForm: is exist
+2021-08-19 18:03:41,661 DEBUG [152339] [] TestInfoListForm: form value set 
+2021-08-19 18:03:41,662 DEBUG [152339] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-08-19 18:03:41,662 DEBUG [152339] [] SearchAction start
+2021-08-19 18:03:41,662 DEBUG [152339] [] admin_no is 1
+2021-08-19 18:03:41,662 DEBUG [152339] [] org_id99999
+2021-08-19 18:03:41,664 DEBUG [152339] [] test List count:2
+2021-08-19 18:03:41,746 DEBUG [152339] [] SearchAction end
+2021-08-19 18:03:41,746 DEBUG [152339] [] TestInfoListController end
+2021-08-19 18:03:41,747 DEBUG [152339] [] finally

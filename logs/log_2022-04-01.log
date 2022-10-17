@@ -1,0 +1,2363 @@
+2022-04-01 11:15:05,369 DEBUG [28073] [] Request URI : /eccadmin_dev/Login
+2022-04-01 11:15:05,388 DEBUG [28073] [] LoginController start
+2022-04-01 11:15:05,388 DEBUG [28073] [] controllers/LoginController.php: is exist
+2022-04-01 11:15:05,388 DEBUG [28073] [] LoginForm: is exist
+2022-04-01 11:15:05,388 DEBUG [28073] [] LoginForm: form value set 
+2022-04-01 11:15:05,389 DEBUG [28073] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 11:15:05,389 DEBUG [28073] [] ------------------------------login_start_check
+2022-04-01 11:15:05,389 DEBUG [28073] [] indexAction start
+2022-04-01 11:15:05,441 DEBUG [28073] [] indexAction end
+2022-04-01 11:15:05,441 DEBUG [28073] [] LoginController end
+2022-04-01 11:15:05,441 DEBUG [28073] [] finally
+2022-04-01 11:15:07,534 DEBUG [28073] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 11:15:07,535 DEBUG [28073] [] LoginController start
+2022-04-01 11:15:07,535 DEBUG [28073] [] controllers/LoginController.php: is exist
+2022-04-01 11:15:07,535 DEBUG [28073] [] LoginForm: is exist
+2022-04-01 11:15:07,535 DEBUG [28073] [] LoginForm: form value set 
+2022-04-01 11:15:07,536 DEBUG [28073] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 11:15:07,536 DEBUG [28073] [] ------------------------------login_start_check
+2022-04-01 11:15:07,536 DEBUG [28073] [] loginAction start
+2022-04-01 11:15:07,845 DEBUG [28073] [] loginAction end
+2022-04-01 11:15:07,845 DEBUG [28073] [] LoginController end
+2022-04-01 11:15:07,845 DEBUG [28073] [] finally
+2022-04-01 11:15:07,978 DEBUG [28073] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 11:15:07,978 DEBUG [28073] [] MenuController start
+2022-04-01 11:15:07,978 DEBUG [28073] [] controllers/MenuController.php: is exist
+2022-04-01 11:15:07,980 DEBUG [28073] [] MenuForm: is exist
+2022-04-01 11:15:07,980 DEBUG [28073] [] MenuForm: form value set 
+2022-04-01 11:15:07,981 DEBUG [28073] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 11:15:07,981 DEBUG [28073] [] ------------------------------login_start_check
+2022-04-01 11:15:07,981 DEBUG [28073] [] indexAction start
+2022-04-01 11:15:07,981 DEBUG [28073] [] admin_no is 1
+2022-04-01 11:15:08,058 DEBUG [28073] [] indexAction end
+2022-04-01 11:15:08,058 DEBUG [28073] [] MenuController end
+2022-04-01 11:15:08,058 DEBUG [28073] [] finally
+2022-04-01 11:15:20,582 DEBUG [28150] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 11:15:20,583 DEBUG [28150] [] CourseContractListController start
+2022-04-01 11:15:20,583 DEBUG [28150] [] controllers/CourseContractListController.php: is exist
+2022-04-01 11:15:20,588 DEBUG [28150] [] CourseContractListForm: is exist
+2022-04-01 11:15:20,588 DEBUG [28150] [] CourseContractListForm: form value set 
+2022-04-01 11:15:20,589 DEBUG [28150] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 11:15:20,589 DEBUG [28150] [] indexAction start
+2022-04-01 11:15:20,589 DEBUG [28150] [] admin_no is 1
+2022-04-01 11:15:20,701 DEBUG [28150] [] indexAction end
+2022-04-01 11:15:20,701 DEBUG [28150] [] CourseContractListController end
+2022-04-01 11:15:20,702 DEBUG [28150] [] finally
+2022-04-01 11:15:24,582 DEBUG [28150] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-04-01 11:15:24,582 DEBUG [28150] [] CourseContractConfirmListController start
+2022-04-01 11:15:24,583 DEBUG [28150] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 11:15:24,586 DEBUG [28150] [] CourseContractConfirmListForm: is exist
+2022-04-01 11:15:24,586 DEBUG [28150] [] CourseContractConfirmListForm: form value set 
+2022-04-01 11:15:24,587 DEBUG [28150] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-04-01 11:15:24,587 DEBUG [28150] [] indexAction start
+2022-04-01 11:15:24,587 DEBUG [28150] [] admin_no is 1
+2022-04-01 11:15:24,694 DEBUG [28150] [] indexAction end
+2022-04-01 11:15:24,694 DEBUG [28150] [] CourseContractConfirmListController end
+2022-04-01 11:15:24,694 DEBUG [28150] [] finally
+2022-04-01 11:15:26,931 DEBUG [28150] [] Request URI : /eccadmin_dev/CourseStatusList
+2022-04-01 11:15:26,931 DEBUG [28150] [] CourseStatusListController start
+2022-04-01 11:15:26,931 DEBUG [28150] [] controllers/CourseStatusListController.php: is exist
+2022-04-01 11:15:26,933 DEBUG [28150] [] CourseStatusListForm: is exist
+2022-04-01 11:15:26,933 DEBUG [28150] [] CourseStatusListForm: form value set 
+2022-04-01 11:15:26,933 DEBUG [28150] [] ------------------------------/eccadmin_dev/CourseStatusList
+2022-04-01 11:15:26,934 DEBUG [28150] [] indexAction start
+2022-04-01 11:15:26,934 DEBUG [28150] [] admin_no is 1
+2022-04-01 11:15:27,036 DEBUG [28150] [] indexAction end
+2022-04-01 11:15:27,036 DEBUG [28150] [] CourseStatusListController end
+2022-04-01 11:15:27,036 DEBUG [28150] [] finally
+2022-04-01 11:15:29,921 DEBUG [28150] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 11:15:29,922 DEBUG [28150] [] CourseContractListController start
+2022-04-01 11:15:29,922 DEBUG [28150] [] controllers/CourseContractListController.php: is exist
+2022-04-01 11:15:29,927 DEBUG [28150] [] CourseContractListForm: is exist
+2022-04-01 11:15:29,927 DEBUG [28150] [] CourseContractListForm: form value set 
+2022-04-01 11:15:29,928 DEBUG [28150] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 11:15:29,928 DEBUG [28150] [] indexAction start
+2022-04-01 11:15:29,928 DEBUG [28150] [] admin_no is 1
+2022-04-01 11:15:30,064 DEBUG [28150] [] indexAction end
+2022-04-01 11:15:30,064 DEBUG [28150] [] CourseContractListController end
+2022-04-01 11:15:30,064 DEBUG [28150] [] finally
+2022-04-01 11:15:32,505 DEBUG [28150] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 11:15:32,506 DEBUG [28150] [] CourseContractRegistController start
+2022-04-01 11:15:32,506 DEBUG [28150] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 11:15:32,508 DEBUG [28150] [] CourseContractRegistForm: is exist
+2022-04-01 11:15:32,509 DEBUG [28150] [] CourseContractRegistForm: form value set 
+2022-04-01 11:15:32,509 DEBUG [28150] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 11:15:32,509 DEBUG [28150] [] ------------------------------session_check_true
+2022-04-01 11:15:32,509 DEBUG [28150] [] indexAction start
+2022-04-01 11:15:32,510 DEBUG [28150] [] admin_no is 1
+2022-04-01 11:15:32,583 DEBUG [28150] [] indexAction end
+2022-04-01 11:15:32,583 DEBUG [28150] [] CourseContractRegistController end
+2022-04-01 11:15:32,583 DEBUG [28150] [] finally
+2022-04-01 11:16:06,935 DEBUG [28148] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:16:06,936 DEBUG [28148] [] CourseContractRegistController start
+2022-04-01 11:16:06,936 DEBUG [28148] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 11:16:06,939 DEBUG [28148] [] CourseContractRegistForm: is exist
+2022-04-01 11:16:06,939 DEBUG [28148] [] CourseContractRegistForm: form value set 
+2022-04-01 11:16:06,939 DEBUG [28148] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:16:06,939 DEBUG [28148] [] ------------------------------session_check_true
+2022-04-01 11:16:06,940 DEBUG [28148] [] saveAction start
+2022-04-01 11:16:06,940 DEBUG [28148] [] admin_no is 1
+2022-04-01 11:16:07,014 DEBUG [28148] [] saveAction end
+2022-04-01 11:16:07,014 DEBUG [28148] [] CourseContractRegistController end
+2022-04-01 11:16:07,015 DEBUG [28148] [] finally
+2022-04-01 11:16:19,770 DEBUG [28313] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:16:19,771 DEBUG [28313] [] CourseContractRegistController start
+2022-04-01 11:16:19,771 DEBUG [28313] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 11:16:19,774 DEBUG [28313] [] CourseContractRegistForm: is exist
+2022-04-01 11:16:19,774 DEBUG [28313] [] CourseContractRegistForm: form value set 
+2022-04-01 11:16:19,774 DEBUG [28313] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:16:19,775 DEBUG [28313] [] ------------------------------session_check_true
+2022-04-01 11:16:19,775 DEBUG [28313] [] saveAction start
+2022-04-01 11:16:19,775 DEBUG [28313] [] admin_no is 1
+2022-04-01 11:16:19,849 DEBUG [28313] [] saveAction end
+2022-04-01 11:16:19,849 DEBUG [28313] [] CourseContractRegistController end
+2022-04-01 11:16:19,849 DEBUG [28313] [] finally
+2022-04-01 11:21:29,909 DEBUG [28464] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:21:29,913 DEBUG [28464] [] CourseContractRegistController start
+2022-04-01 11:21:29,913 DEBUG [28464] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 11:21:29,917 DEBUG [28464] [] CourseContractRegistForm: is exist
+2022-04-01 11:21:29,917 DEBUG [28464] [] CourseContractRegistForm: form value set 
+2022-04-01 11:21:29,918 DEBUG [28464] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:21:29,918 DEBUG [28464] [] ------------------------------session_check_true
+2022-04-01 11:21:29,918 DEBUG [28464] [] saveAction start
+2022-04-01 11:21:29,918 DEBUG [28464] [] admin_no is 1
+2022-04-01 11:21:29,996 DEBUG [28464] [] saveAction end
+2022-04-01 11:21:29,996 DEBUG [28464] [] CourseContractRegistController end
+2022-04-01 11:21:29,996 DEBUG [28464] [] finally
+2022-04-01 11:21:42,846 DEBUG [28435] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:21:42,847 DEBUG [28435] [] CourseContractRegistController start
+2022-04-01 11:21:42,847 DEBUG [28435] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 11:21:42,850 DEBUG [28435] [] CourseContractRegistForm: is exist
+2022-04-01 11:21:42,850 DEBUG [28435] [] CourseContractRegistForm: form value set 
+2022-04-01 11:21:42,851 DEBUG [28435] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 11:21:42,851 DEBUG [28435] [] ------------------------------session_check_true
+2022-04-01 11:21:42,851 DEBUG [28435] [] saveAction start
+2022-04-01 11:21:42,851 DEBUG [28435] [] admin_no is 1
+2022-04-01 11:21:42,925 DEBUG [28435] [] saveAction end
+2022-04-01 11:21:42,925 DEBUG [28435] [] CourseContractRegistController end
+2022-04-01 11:21:42,925 DEBUG [28435] [] finally
+2022-04-01 11:23:20,993 DEBUG [28436] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-04-01 11:23:20,994 DEBUG [28436] [] CourseContractConfirmListController start
+2022-04-01 11:23:20,994 DEBUG [28436] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 11:23:20,997 DEBUG [28436] [] CourseContractConfirmListForm: is exist
+2022-04-01 11:23:20,997 DEBUG [28436] [] CourseContractConfirmListForm: form value set 
+2022-04-01 11:23:20,998 DEBUG [28436] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-04-01 11:23:20,998 DEBUG [28436] [] indexAction start
+2022-04-01 11:23:20,998 DEBUG [28436] [] admin_no is 1
+2022-04-01 11:23:21,098 DEBUG [28436] [] indexAction end
+2022-04-01 11:23:21,098 DEBUG [28436] [] CourseContractConfirmListController end
+2022-04-01 11:23:21,098 DEBUG [28436] [] finally
+2022-04-01 11:23:25,374 DEBUG [28436] [] Request URI : /eccadmin_dev/CourseStatusList
+2022-04-01 11:23:25,375 DEBUG [28436] [] CourseStatusListController start
+2022-04-01 11:23:25,375 DEBUG [28436] [] controllers/CourseStatusListController.php: is exist
+2022-04-01 11:23:25,376 DEBUG [28436] [] CourseStatusListForm: is exist
+2022-04-01 11:23:25,377 DEBUG [28436] [] CourseStatusListForm: form value set 
+2022-04-01 11:23:25,377 DEBUG [28436] [] ------------------------------/eccadmin_dev/CourseStatusList
+2022-04-01 11:23:25,378 DEBUG [28436] [] indexAction start
+2022-04-01 11:23:25,378 DEBUG [28436] [] admin_no is 1
+2022-04-01 11:23:25,475 DEBUG [28436] [] indexAction end
+2022-04-01 11:23:25,475 DEBUG [28436] [] CourseStatusListController end
+2022-04-01 11:23:25,475 DEBUG [28436] [] finally
+2022-04-01 11:23:37,673 DEBUG [28458] [] Request URI : /eccadmin_dev/SWPracticeReferenceList
+2022-04-01 11:23:37,674 DEBUG [28458] [] SWPracticeReferenceListController start
+2022-04-01 11:23:37,674 DEBUG [28458] [] controllers/SWPracticeReferenceListController.php: is exist
+2022-04-01 11:23:37,707 DEBUG [28458] [] SWPracticeReferenceListForm: is exist
+2022-04-01 11:23:37,743 DEBUG [28458] [] SWPracticeReferenceListForm: form value set 
+2022-04-01 11:23:37,743 DEBUG [28458] [] ------------------------------/eccadmin_dev/SWPracticeReferenceList
+2022-04-01 11:23:37,744 DEBUG [28458] [] indexAction start
+2022-04-01 11:23:37,744 DEBUG [28458] [] admin_no is 1
+2022-04-01 11:23:37,871 DEBUG [28458] [] indexAction end
+2022-04-01 11:23:37,871 DEBUG [28458] [] SWPracticeReferenceListController end
+2022-04-01 11:23:37,871 DEBUG [28458] [] finally
+2022-04-01 11:23:46,953 DEBUG [28464] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 11:23:46,953 DEBUG [28464] [] WordBookListController start
+2022-04-01 11:23:46,953 DEBUG [28464] [] controllers/WordBookListController.php: is exist
+2022-04-01 11:23:46,956 DEBUG [28464] [] WordBookListForm: is exist
+2022-04-01 11:23:46,979 DEBUG [28464] [] WordBookListForm: form value set 
+2022-04-01 11:23:46,980 DEBUG [28464] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 11:23:46,980 DEBUG [28464] [] indexAction start
+2022-04-01 11:23:46,980 DEBUG [28464] [] admin_no is 1
+2022-04-01 11:23:47,057 DEBUG [28464] [] indexAction end
+2022-04-01 11:23:47,057 DEBUG [28464] [] WordBookListController end
+2022-04-01 11:23:47,057 DEBUG [28464] [] finally
+2022-04-01 11:24:07,356 DEBUG [28496] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 11:24:07,357 DEBUG [28496] [] WordBookRegistController start
+2022-04-01 11:24:07,357 DEBUG [28496] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:24:07,378 DEBUG [28496] [] WordBookRegistForm: is exist
+2022-04-01 11:24:07,390 DEBUG [28496] [] WordBookRegistForm: form value set 
+2022-04-01 11:24:07,391 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 11:24:07,391 DEBUG [28496] [] ------------------------------session_check_true
+2022-04-01 11:24:07,391 DEBUG [28496] [] indexAction start
+2022-04-01 11:24:07,391 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:24:07,487 DEBUG [28496] [] indexAction end
+2022-04-01 11:24:07,487 DEBUG [28496] [] WordBookRegistController end
+2022-04-01 11:24:07,487 DEBUG [28496] [] finally
+2022-04-01 11:24:09,316 DEBUG [28496] [] Request URI : /eccadmin_dev/WordList
+2022-04-01 11:24:09,316 DEBUG [28496] [] WordListController start
+2022-04-01 11:24:09,317 DEBUG [28496] [] controllers/WordListController.php: is exist
+2022-04-01 11:24:09,318 DEBUG [28496] [] WordListForm: is exist
+2022-04-01 11:24:09,324 DEBUG [28496] [] WordListForm: form value set 
+2022-04-01 11:24:09,324 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordList
+2022-04-01 11:24:09,325 DEBUG [28496] [] indexAction start
+2022-04-01 11:24:09,325 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:24:09,403 DEBUG [28496] [] indexAction end
+2022-04-01 11:24:09,403 DEBUG [28496] [] WordListController end
+2022-04-01 11:24:09,403 DEBUG [28496] [] finally
+2022-04-01 11:24:12,738 DEBUG [28496] [] Request URI : /eccadmin_dev/WordRegist
+2022-04-01 11:24:12,739 DEBUG [28496] [] WordRegistController start
+2022-04-01 11:24:12,739 DEBUG [28496] [] controllers/WordRegistController.php: is exist
+2022-04-01 11:24:12,741 DEBUG [28496] [] WordRegistForm: is exist
+2022-04-01 11:24:12,749 DEBUG [28496] [] WordRegistForm: form value set 
+2022-04-01 11:24:12,750 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordRegist
+2022-04-01 11:24:12,750 DEBUG [28496] [] ------------------------------session_check_true
+2022-04-01 11:24:12,750 DEBUG [28496] [] indexAction start
+2022-04-01 11:24:12,750 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:24:12,753 DEBUG [28496] [] word_id
+2022-04-01 11:24:12,848 DEBUG [28496] [] indexAction end
+2022-04-01 11:24:12,848 DEBUG [28496] [] WordRegistController end
+2022-04-01 11:24:12,849 DEBUG [28496] [] finally
+2022-04-01 11:24:16,664 DEBUG [28496] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 11:24:16,665 DEBUG [28496] [] WordBookListController start
+2022-04-01 11:24:16,665 DEBUG [28496] [] controllers/WordBookListController.php: is exist
+2022-04-01 11:24:16,667 DEBUG [28496] [] WordBookListForm: is exist
+2022-04-01 11:24:16,667 DEBUG [28496] [] WordBookListForm: form value set 
+2022-04-01 11:24:16,667 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 11:24:16,668 DEBUG [28496] [] indexAction start
+2022-04-01 11:24:16,668 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:24:16,736 DEBUG [28496] [] indexAction end
+2022-04-01 11:24:16,736 DEBUG [28496] [] WordBookListController end
+2022-04-01 11:24:16,737 DEBUG [28496] [] finally
+2022-04-01 11:24:18,414 DEBUG [28496] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 11:24:18,414 DEBUG [28496] [] WordBookRegistController start
+2022-04-01 11:24:18,414 DEBUG [28496] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:24:18,418 DEBUG [28496] [] WordBookRegistForm: is exist
+2022-04-01 11:24:18,418 DEBUG [28496] [] WordBookRegistForm: form value set 
+2022-04-01 11:24:18,419 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 11:24:18,419 DEBUG [28496] [] ------------------------------session_check_true
+2022-04-01 11:24:18,419 DEBUG [28496] [] indexAction start
+2022-04-01 11:24:18,419 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:24:18,503 DEBUG [28496] [] indexAction end
+2022-04-01 11:24:18,503 DEBUG [28496] [] WordBookRegistController end
+2022-04-01 11:24:18,504 DEBUG [28496] [] finally
+2022-04-01 11:25:14,746 DEBUG [28496] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:14,746 DEBUG [28496] [] WordBookRegistController start
+2022-04-01 11:25:14,747 DEBUG [28496] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:25:14,750 DEBUG [28496] [] WordBookRegistForm: is exist
+2022-04-01 11:25:14,751 DEBUG [28496] [] WordBookRegistForm: form value set 
+2022-04-01 11:25:14,751 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:14,751 DEBUG [28496] [] ------------------------------session_check_true
+2022-04-01 11:25:14,751 DEBUG [28496] [] SaveAction start
+2022-04-01 11:25:14,752 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:25:14,755 DEBUG [28496] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:25:14,841 DEBUG [28496] [] SaveAction end
+2022-04-01 11:25:14,841 DEBUG [28496] [] WordBookRegistController end
+2022-04-01 11:25:14,841 DEBUG [28496] [] finally
+2022-04-01 11:25:35,621 DEBUG [28366] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:35,621 DEBUG [28366] [] WordBookRegistController start
+2022-04-01 11:25:35,622 DEBUG [28366] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:25:35,626 DEBUG [28366] [] WordBookRegistForm: is exist
+2022-04-01 11:25:35,626 DEBUG [28366] [] WordBookRegistForm: form value set 
+2022-04-01 11:25:35,626 DEBUG [28366] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:35,627 DEBUG [28366] [] ------------------------------session_check_true
+2022-04-01 11:25:35,627 DEBUG [28366] [] SaveAction start
+2022-04-01 11:25:35,627 DEBUG [28366] [] admin_no is 1
+2022-04-01 11:25:35,630 DEBUG [28366] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:25:35,715 DEBUG [28366] [] SaveAction end
+2022-04-01 11:25:35,716 DEBUG [28366] [] WordBookRegistController end
+2022-04-01 11:25:35,716 DEBUG [28366] [] finally
+2022-04-01 11:25:50,879 DEBUG [28519] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:50,879 DEBUG [28519] [] WordBookRegistController start
+2022-04-01 11:25:50,880 DEBUG [28519] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:25:50,883 DEBUG [28519] [] WordBookRegistForm: is exist
+2022-04-01 11:25:50,884 DEBUG [28519] [] WordBookRegistForm: form value set 
+2022-04-01 11:25:50,884 DEBUG [28519] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:25:50,884 DEBUG [28519] [] ------------------------------session_check_true
+2022-04-01 11:25:50,884 DEBUG [28519] [] SaveAction start
+2022-04-01 11:25:50,885 DEBUG [28519] [] admin_no is 1
+2022-04-01 11:25:50,888 DEBUG [28519] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:25:50,971 DEBUG [28519] [] SaveAction end
+2022-04-01 11:25:50,971 DEBUG [28519] [] WordBookRegistController end
+2022-04-01 11:25:50,971 DEBUG [28519] [] finally
+2022-04-01 11:29:42,871 DEBUG [28496] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:29:42,872 DEBUG [28496] [] WordBookRegistController start
+2022-04-01 11:29:42,872 DEBUG [28496] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:29:42,876 DEBUG [28496] [] WordBookRegistForm: is exist
+2022-04-01 11:29:42,876 DEBUG [28496] [] WordBookRegistForm: form value set 
+2022-04-01 11:29:42,877 DEBUG [28496] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:29:42,877 DEBUG [28496] [] ------------------------------session_check_true
+2022-04-01 11:29:42,877 DEBUG [28496] [] SaveAction start
+2022-04-01 11:29:42,877 DEBUG [28496] [] admin_no is 1
+2022-04-01 11:29:42,880 DEBUG [28496] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:29:42,964 DEBUG [28496] [] SaveAction end
+2022-04-01 11:29:42,964 DEBUG [28496] [] WordBookRegistController end
+2022-04-01 11:29:42,965 DEBUG [28496] [] finally
+2022-04-01 11:30:29,244 DEBUG [28573] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:29,245 DEBUG [28573] [] WordBookRegistController start
+2022-04-01 11:30:29,245 DEBUG [28573] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:30:29,249 DEBUG [28573] [] WordBookRegistForm: is exist
+2022-04-01 11:30:29,249 DEBUG [28573] [] WordBookRegistForm: form value set 
+2022-04-01 11:30:29,250 DEBUG [28573] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:29,250 DEBUG [28573] [] ------------------------------session_check_true
+2022-04-01 11:30:29,250 DEBUG [28573] [] SaveAction start
+2022-04-01 11:30:29,250 DEBUG [28573] [] admin_no is 1
+2022-04-01 11:30:29,253 DEBUG [28573] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:30:29,338 DEBUG [28573] [] SaveAction end
+2022-04-01 11:30:29,338 DEBUG [28573] [] WordBookRegistController end
+2022-04-01 11:30:29,338 DEBUG [28573] [] finally
+2022-04-01 11:30:34,738 DEBUG [28607] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:34,742 DEBUG [28607] [] WordBookRegistController start
+2022-04-01 11:30:34,743 DEBUG [28607] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:30:34,747 DEBUG [28607] [] WordBookRegistForm: is exist
+2022-04-01 11:30:34,748 DEBUG [28607] [] WordBookRegistForm: form value set 
+2022-04-01 11:30:34,748 DEBUG [28607] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:34,748 DEBUG [28607] [] ------------------------------session_check_true
+2022-04-01 11:30:34,748 DEBUG [28607] [] SaveAction start
+2022-04-01 11:30:34,749 DEBUG [28607] [] admin_no is 1
+2022-04-01 11:30:34,752 DEBUG [28607] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:30:34,839 DEBUG [28607] [] SaveAction end
+2022-04-01 11:30:34,839 DEBUG [28607] [] WordBookRegistController end
+2022-04-01 11:30:34,839 DEBUG [28607] [] finally
+2022-04-01 11:30:39,435 DEBUG [28607] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:39,435 DEBUG [28607] [] WordBookRegistController start
+2022-04-01 11:30:39,435 DEBUG [28607] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:30:39,439 DEBUG [28607] [] WordBookRegistForm: is exist
+2022-04-01 11:30:39,440 DEBUG [28607] [] WordBookRegistForm: form value set 
+2022-04-01 11:30:39,440 DEBUG [28607] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:39,440 DEBUG [28607] [] ------------------------------session_check_true
+2022-04-01 11:30:39,440 DEBUG [28607] [] SaveAction start
+2022-04-01 11:30:39,440 DEBUG [28607] [] admin_no is 1
+2022-04-01 11:30:39,444 DEBUG [28607] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:30:39,528 DEBUG [28607] [] SaveAction end
+2022-04-01 11:30:39,528 DEBUG [28607] [] WordBookRegistController end
+2022-04-01 11:30:39,528 DEBUG [28607] [] finally
+2022-04-01 11:30:47,282 DEBUG [28605] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:47,286 DEBUG [28605] [] WordBookRegistController start
+2022-04-01 11:30:47,286 DEBUG [28605] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:30:47,291 DEBUG [28605] [] WordBookRegistForm: is exist
+2022-04-01 11:30:47,291 DEBUG [28605] [] WordBookRegistForm: form value set 
+2022-04-01 11:30:47,292 DEBUG [28605] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:30:47,292 DEBUG [28605] [] ------------------------------session_check_true
+2022-04-01 11:30:47,292 DEBUG [28605] [] SaveAction start
+2022-04-01 11:30:47,292 DEBUG [28605] [] admin_no is 1
+2022-04-01 11:30:47,296 DEBUG [28605] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:30:47,382 DEBUG [28605] [] SaveAction end
+2022-04-01 11:30:47,382 DEBUG [28605] [] WordBookRegistController end
+2022-04-01 11:30:47,382 DEBUG [28605] [] finally
+2022-04-01 11:34:45,363 DEBUG [28738] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:34:45,367 DEBUG [28738] [] WordBookRegistController start
+2022-04-01 11:34:45,367 DEBUG [28738] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:34:45,372 DEBUG [28738] [] WordBookRegistForm: is exist
+2022-04-01 11:34:45,372 DEBUG [28738] [] WordBookRegistForm: form value set 
+2022-04-01 11:34:45,373 DEBUG [28738] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 11:34:45,373 DEBUG [28738] [] ------------------------------session_check_false:uid=-----&-----94072eaa44cf86c88b0da05f20a674b1
+2022-04-01 11:34:45,373 DEBUG [28738] [] SaveAction start
+2022-04-01 11:34:45,373 DEBUG [28738] [] admin_no is 1
+2022-04-01 11:34:45,376 DEBUG [28738] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 11:34:45,457 DEBUG [28738] [] SaveAction end
+2022-04-01 11:34:45,457 DEBUG [28738] [] WordBookRegistController end
+2022-04-01 11:34:45,457 DEBUG [28738] [] finally
+2022-04-01 11:34:45,716 DEBUG [28573] [] Request URI : /eccadmin_dev/Error/disp
+2022-04-01 11:34:45,717 DEBUG [28573] [] ErrorController start
+2022-04-01 11:34:45,717 DEBUG [28573] [] controllers/ErrorController.php: is exist
+2022-04-01 11:34:45,717 DEBUG [28573] [] ErrorForm: is exist
+2022-04-01 11:34:45,717 DEBUG [28573] [] ErrorForm: form value set 
+2022-04-01 11:34:45,718 DEBUG [28573] [] ------------------------------/eccadmin_dev/Error/disp
+2022-04-01 11:34:45,718 DEBUG [28573] [] ------------------------------login_start_check
+2022-04-01 11:34:45,718 DEBUG [28573] [] dispAction start
+2022-04-01 11:34:45,729 DEBUG [28573] [] dispAction end
+2022-04-01 11:34:45,729 DEBUG [28573] [] ErrorController end
+2022-04-01 11:34:45,730 DEBUG [28573] [] finally
+2022-04-01 11:34:47,703 DEBUG [28573] [] Request URI : /eccadmin_dev/Login
+2022-04-01 11:34:47,704 DEBUG [28573] [] LoginController start
+2022-04-01 11:34:47,704 DEBUG [28573] [] controllers/LoginController.php: is exist
+2022-04-01 11:34:47,704 DEBUG [28573] [] LoginForm: is exist
+2022-04-01 11:34:47,704 DEBUG [28573] [] LoginForm: form value set 
+2022-04-01 11:34:47,705 DEBUG [28573] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 11:34:47,705 DEBUG [28573] [] ------------------------------login_start_check
+2022-04-01 11:34:47,705 DEBUG [28573] [] indexAction start
+2022-04-01 11:34:47,720 DEBUG [28573] [] indexAction end
+2022-04-01 11:34:47,720 DEBUG [28573] [] LoginController end
+2022-04-01 11:34:47,720 DEBUG [28573] [] finally
+2022-04-01 11:34:49,583 DEBUG [28573] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 11:34:49,584 DEBUG [28573] [] LoginController start
+2022-04-01 11:34:49,584 DEBUG [28573] [] controllers/LoginController.php: is exist
+2022-04-01 11:34:49,584 DEBUG [28573] [] LoginForm: is exist
+2022-04-01 11:34:49,585 DEBUG [28573] [] LoginForm: form value set 
+2022-04-01 11:34:49,585 DEBUG [28573] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 11:34:49,585 DEBUG [28573] [] ------------------------------login_start_check
+2022-04-01 11:34:49,585 DEBUG [28573] [] loginAction start
+2022-04-01 11:34:49,882 DEBUG [28573] [] loginAction end
+2022-04-01 11:34:49,882 DEBUG [28573] [] LoginController end
+2022-04-01 11:34:49,882 DEBUG [28573] [] finally
+2022-04-01 11:34:50,145 DEBUG [28573] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 11:34:50,145 DEBUG [28573] [] MenuController start
+2022-04-01 11:34:50,145 DEBUG [28573] [] controllers/MenuController.php: is exist
+2022-04-01 11:34:50,147 DEBUG [28573] [] MenuForm: is exist
+2022-04-01 11:34:50,147 DEBUG [28573] [] MenuForm: form value set 
+2022-04-01 11:34:50,148 DEBUG [28573] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 11:34:50,148 DEBUG [28573] [] ------------------------------login_start_check
+2022-04-01 11:34:50,148 DEBUG [28573] [] indexAction start
+2022-04-01 11:34:50,148 DEBUG [28573] [] admin_no is 1
+2022-04-01 11:34:50,201 DEBUG [28573] [] indexAction end
+2022-04-01 11:34:50,201 DEBUG [28573] [] MenuController end
+2022-04-01 11:34:50,201 DEBUG [28573] [] finally
+2022-04-01 11:34:53,731 DEBUG [28573] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 11:34:53,732 DEBUG [28573] [] WordBookRegistController start
+2022-04-01 11:34:53,732 DEBUG [28573] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 11:34:53,736 DEBUG [28573] [] WordBookRegistForm: is exist
+2022-04-01 11:34:53,736 DEBUG [28573] [] WordBookRegistForm: form value set 
+2022-04-01 11:34:53,737 DEBUG [28573] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 11:34:53,737 DEBUG [28573] [] ------------------------------session_check_true
+2022-04-01 11:34:53,737 DEBUG [28573] [] indexAction start
+2022-04-01 11:34:53,737 DEBUG [28573] [] admin_no is 1
+2022-04-01 11:34:53,823 DEBUG [28573] [] indexAction end
+2022-04-01 11:34:53,823 DEBUG [28573] [] WordBookRegistController end
+2022-04-01 11:34:53,823 DEBUG [28573] [] finally
+2022-04-01 11:36:55,138 DEBUG [28784] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 11:36:55,142 DEBUG [28784] [] OrganizationListController start
+2022-04-01 11:36:55,142 DEBUG [28784] [] controllers/OrganizationListController.php: is exist
+2022-04-01 11:36:55,144 DEBUG [28784] [] OrganizationListForm: is exist
+2022-04-01 11:36:55,145 DEBUG [28784] [] OrganizationListForm: form value set 
+2022-04-01 11:36:55,145 DEBUG [28784] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 11:36:55,145 DEBUG [28784] [] indexAction start
+2022-04-01 11:36:55,146 DEBUG [28784] [] admin_no is 1
+2022-04-01 11:36:55,263 DEBUG [28784] [] indexAction end
+2022-04-01 11:36:55,263 DEBUG [28784] [] OrganizationListController end
+2022-04-01 11:36:55,263 DEBUG [28784] [] finally
+2022-04-01 11:36:59,972 DEBUG [28784] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 11:36:59,973 DEBUG [28784] [] OrganizationRegistController start
+2022-04-01 11:36:59,973 DEBUG [28784] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 11:36:59,976 DEBUG [28784] [] OrganizationRegistForm: is exist
+2022-04-01 11:36:59,976 DEBUG [28784] [] OrganizationRegistForm: form value set 
+2022-04-01 11:36:59,976 DEBUG [28784] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 11:36:59,977 DEBUG [28784] [] ------------------------------session_check_true
+2022-04-01 11:36:59,977 DEBUG [28784] [] indexAction start
+2022-04-01 11:36:59,977 DEBUG [28784] [] admin_no is 1
+2022-04-01 11:37:00,065 DEBUG [28784] [] indexAction end
+2022-04-01 11:37:00,065 DEBUG [28784] [] OrganizationRegistController end
+2022-04-01 11:37:00,065 DEBUG [28784] [] finally
+2022-04-01 11:37:03,343 DEBUG [28784] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 11:37:03,344 DEBUG [28784] [] OrganizationListController start
+2022-04-01 11:37:03,344 DEBUG [28784] [] controllers/OrganizationListController.php: is exist
+2022-04-01 11:37:03,346 DEBUG [28784] [] OrganizationListForm: is exist
+2022-04-01 11:37:03,346 DEBUG [28784] [] OrganizationListForm: form value set 
+2022-04-01 11:37:03,347 DEBUG [28784] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 11:37:03,347 DEBUG [28784] [] indexAction start
+2022-04-01 11:37:03,347 DEBUG [28784] [] admin_no is 1
+2022-04-01 11:37:03,439 DEBUG [28784] [] indexAction end
+2022-04-01 11:37:03,439 DEBUG [28784] [] OrganizationListController end
+2022-04-01 11:37:03,439 DEBUG [28784] [] finally
+2022-04-01 12:02:02,093 DEBUG [29182] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-01 12:02:02,094 DEBUG [29182] [] LoginController start
+2022-04-01 12:02:02,094 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:02:02,095 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:02:02,095 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:02:02,095 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-01 12:02:02,095 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:02:02,095 DEBUG [29182] [] logoutAction start
+2022-04-01 12:02:02,096 DEBUG [29182] [] logoutAction end
+2022-04-01 12:02:02,096 DEBUG [29182] [] LoginController end
+2022-04-01 12:02:02,096 DEBUG [29182] [] finally
+2022-04-01 12:02:02,466 DEBUG [29182] [] Request URI : /eccadmin_dev/Login
+2022-04-01 12:02:02,466 DEBUG [29182] [] LoginController start
+2022-04-01 12:02:02,467 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:02:02,467 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:02:02,467 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:02:02,467 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 12:02:02,467 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:02:02,467 DEBUG [29182] [] indexAction start
+2022-04-01 12:02:02,483 DEBUG [29182] [] indexAction end
+2022-04-01 12:02:02,483 DEBUG [29182] [] LoginController end
+2022-04-01 12:02:02,483 DEBUG [29182] [] finally
+2022-04-01 12:02:05,938 DEBUG [29182] [] Request URI : /eccadmin_dev/Login
+2022-04-01 12:02:05,939 DEBUG [29182] [] LoginController start
+2022-04-01 12:02:05,939 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:02:05,939 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:02:05,939 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:02:05,940 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 12:02:05,940 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:02:05,940 DEBUG [29182] [] indexAction start
+2022-04-01 12:02:05,955 DEBUG [29182] [] indexAction end
+2022-04-01 12:02:05,955 DEBUG [29182] [] LoginController end
+2022-04-01 12:02:05,955 DEBUG [29182] [] finally
+2022-04-01 12:02:58,788 DEBUG [29182] [] Request URI : /eccadmin_dev/Login
+2022-04-01 12:02:58,788 DEBUG [29182] [] LoginController start
+2022-04-01 12:02:58,789 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:02:58,789 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:02:58,789 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:02:58,789 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 12:02:58,789 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:02:58,790 DEBUG [29182] [] indexAction start
+2022-04-01 12:02:58,805 DEBUG [29182] [] indexAction end
+2022-04-01 12:02:58,805 DEBUG [29182] [] LoginController end
+2022-04-01 12:02:58,805 DEBUG [29182] [] finally
+2022-04-01 12:03:00,923 DEBUG [29182] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 12:03:00,924 DEBUG [29182] [] LoginController start
+2022-04-01 12:03:00,924 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:03:00,924 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:03:00,924 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:03:00,925 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 12:03:00,925 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:03:00,925 DEBUG [29182] [] loginAction start
+2022-04-01 12:03:01,227 DEBUG [29182] [] loginAction end
+2022-04-01 12:03:01,227 DEBUG [29182] [] LoginController end
+2022-04-01 12:03:01,228 DEBUG [29182] [] finally
+2022-04-01 12:03:01,598 DEBUG [29183] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 12:03:01,599 DEBUG [29183] [] MenuController start
+2022-04-01 12:03:01,599 DEBUG [29183] [] controllers/MenuController.php: is exist
+2022-04-01 12:03:01,601 DEBUG [29183] [] MenuForm: is exist
+2022-04-01 12:03:01,601 DEBUG [29183] [] MenuForm: form value set 
+2022-04-01 12:03:01,601 DEBUG [29183] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 12:03:01,601 DEBUG [29183] [] ------------------------------login_start_check
+2022-04-01 12:03:01,602 DEBUG [29183] [] indexAction start
+2022-04-01 12:03:01,602 DEBUG [29183] [] admin_no is 1
+2022-04-01 12:03:01,655 DEBUG [29183] [] indexAction end
+2022-04-01 12:03:01,655 DEBUG [29183] [] MenuController end
+2022-04-01 12:03:01,655 DEBUG [29183] [] finally
+2022-04-01 12:03:11,531 DEBUG [29235] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 12:03:11,532 DEBUG [29235] [] OrganizationListController start
+2022-04-01 12:03:11,532 DEBUG [29235] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:03:11,534 DEBUG [29235] [] OrganizationListForm: is exist
+2022-04-01 12:03:11,535 DEBUG [29235] [] OrganizationListForm: form value set 
+2022-04-01 12:03:11,535 DEBUG [29235] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 12:03:11,535 DEBUG [29235] [] indexAction start
+2022-04-01 12:03:11,535 DEBUG [29235] [] admin_no is 1
+2022-04-01 12:03:11,633 DEBUG [29235] [] indexAction end
+2022-04-01 12:03:11,633 DEBUG [29235] [] OrganizationListController end
+2022-04-01 12:03:11,633 DEBUG [29235] [] finally
+2022-04-01 12:03:20,362 DEBUG [29159] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:03:20,363 DEBUG [29159] [] OrganizationRegistController start
+2022-04-01 12:03:20,363 DEBUG [29159] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:03:20,366 DEBUG [29159] [] OrganizationRegistForm: is exist
+2022-04-01 12:03:20,366 DEBUG [29159] [] OrganizationRegistForm: form value set 
+2022-04-01 12:03:20,367 DEBUG [29159] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:03:20,367 DEBUG [29159] [] ------------------------------session_check_true
+2022-04-01 12:03:20,367 DEBUG [29159] [] indexAction start
+2022-04-01 12:03:20,367 DEBUG [29159] [] admin_no is 1
+2022-04-01 12:03:20,462 DEBUG [29159] [] indexAction end
+2022-04-01 12:03:20,462 DEBUG [29159] [] OrganizationRegistController end
+2022-04-01 12:03:20,462 DEBUG [29159] [] finally
+2022-04-01 12:05:14,925 DEBUG [29031] [] Request URI : /eccadmin_dev/OrganizationRegist/save
+2022-04-01 12:05:14,926 DEBUG [29031] [] OrganizationRegistController start
+2022-04-01 12:05:14,926 DEBUG [29031] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:05:14,929 DEBUG [29031] [] OrganizationRegistForm: is exist
+2022-04-01 12:05:14,930 DEBUG [29031] [] OrganizationRegistForm: form value set 
+2022-04-01 12:05:14,930 DEBUG [29031] [] ------------------------------/eccadmin_dev/OrganizationRegist/save
+2022-04-01 12:05:14,930 DEBUG [29031] [] ------------------------------session_check_true
+2022-04-01 12:05:14,930 DEBUG [29031] [] saveAction start
+2022-04-01 12:05:14,931 DEBUG [29031] [] admin_no is 1
+2022-04-01 12:05:15,027 DEBUG [29031] [] saveAction end
+2022-04-01 12:05:15,027 DEBUG [29031] [] OrganizationRegistController end
+2022-04-01 12:05:15,027 DEBUG [29031] [] finally
+2022-04-01 12:05:52,428 DEBUG [29183] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:05:52,428 DEBUG [29183] [] OrganizationRegistController start
+2022-04-01 12:05:52,428 DEBUG [29183] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:05:52,431 DEBUG [29183] [] OrganizationRegistForm: is exist
+2022-04-01 12:05:52,432 DEBUG [29183] [] OrganizationRegistForm: form value set 
+2022-04-01 12:05:52,432 DEBUG [29183] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:05:52,432 DEBUG [29183] [] ------------------------------session_check_true
+2022-04-01 12:05:52,433 DEBUG [29183] [] indexAction start
+2022-04-01 12:05:52,433 DEBUG [29183] [] admin_no is 1
+2022-04-01 12:05:52,526 DEBUG [29183] [] indexAction end
+2022-04-01 12:05:52,526 DEBUG [29183] [] OrganizationRegistController end
+2022-04-01 12:05:52,527 DEBUG [29183] [] finally
+2022-04-01 12:05:55,640 DEBUG [29183] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:05:55,640 DEBUG [29183] [] OrganizationRegistController start
+2022-04-01 12:05:55,641 DEBUG [29183] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:05:55,643 DEBUG [29183] [] OrganizationRegistForm: is exist
+2022-04-01 12:05:55,644 DEBUG [29183] [] OrganizationRegistForm: form value set 
+2022-04-01 12:05:55,644 DEBUG [29183] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:05:55,645 DEBUG [29183] [] ------------------------------session_check_true
+2022-04-01 12:05:55,645 DEBUG [29183] [] indexAction start
+2022-04-01 12:05:55,645 DEBUG [29183] [] admin_no is 1
+2022-04-01 12:05:55,738 DEBUG [29183] [] indexAction end
+2022-04-01 12:05:55,738 DEBUG [29183] [] OrganizationRegistController end
+2022-04-01 12:05:55,738 DEBUG [29183] [] finally
+2022-04-01 12:05:58,048 DEBUG [29183] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 12:05:58,049 DEBUG [29183] [] OrganizationListController start
+2022-04-01 12:05:58,049 DEBUG [29183] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:05:58,050 DEBUG [29183] [] OrganizationListForm: is exist
+2022-04-01 12:05:58,051 DEBUG [29183] [] OrganizationListForm: form value set 
+2022-04-01 12:05:58,051 DEBUG [29183] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 12:05:58,051 DEBUG [29183] [] indexAction start
+2022-04-01 12:05:58,052 DEBUG [29183] [] admin_no is 1
+2022-04-01 12:05:58,150 DEBUG [29183] [] indexAction end
+2022-04-01 12:05:58,150 DEBUG [29183] [] OrganizationListController end
+2022-04-01 12:05:58,150 DEBUG [29183] [] finally
+2022-04-01 12:06:24,090 DEBUG [29235] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 12:06:24,091 DEBUG [29235] [] OrganizationListController start
+2022-04-01 12:06:24,091 DEBUG [29235] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:06:24,093 DEBUG [29235] [] OrganizationListForm: is exist
+2022-04-01 12:06:24,093 DEBUG [29235] [] OrganizationListForm: form value set 
+2022-04-01 12:06:24,094 DEBUG [29235] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 12:06:24,094 DEBUG [29235] [] searchAction start
+2022-04-01 12:06:24,094 DEBUG [29235] [] admin_no is 1
+2022-04-01 12:06:24,195 DEBUG [29235] [] searchAction end
+2022-04-01 12:06:24,195 DEBUG [29235] [] OrganizationListController end
+2022-04-01 12:06:24,195 DEBUG [29235] [] finally
+2022-04-01 12:06:50,356 DEBUG [29182] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:06:50,356 DEBUG [29182] [] OrganizationRegistController start
+2022-04-01 12:06:50,356 DEBUG [29182] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:06:50,359 DEBUG [29182] [] OrganizationRegistForm: is exist
+2022-04-01 12:06:50,360 DEBUG [29182] [] OrganizationRegistForm: form value set 
+2022-04-01 12:06:50,360 DEBUG [29182] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:06:50,360 DEBUG [29182] [] ------------------------------session_check_true
+2022-04-01 12:06:50,360 DEBUG [29182] [] indexAction start
+2022-04-01 12:06:50,361 DEBUG [29182] [] admin_no is 1
+2022-04-01 12:06:50,455 DEBUG [29182] [] indexAction end
+2022-04-01 12:06:50,456 DEBUG [29182] [] OrganizationRegistController end
+2022-04-01 12:06:50,456 DEBUG [29182] [] finally
+2022-04-01 12:08:29,067 DEBUG [29291] [] Request URI : /eccadmin_dev/OrganizationRegist/save
+2022-04-01 12:08:29,068 DEBUG [29291] [] OrganizationRegistController start
+2022-04-01 12:08:29,068 DEBUG [29291] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:08:29,071 DEBUG [29291] [] OrganizationRegistForm: is exist
+2022-04-01 12:08:29,072 DEBUG [29291] [] OrganizationRegistForm: form value set 
+2022-04-01 12:08:29,072 DEBUG [29291] [] ------------------------------/eccadmin_dev/OrganizationRegist/save
+2022-04-01 12:08:29,073 DEBUG [29291] [] ------------------------------session_check_true
+2022-04-01 12:08:29,073 DEBUG [29291] [] saveAction start
+2022-04-01 12:08:29,073 DEBUG [29291] [] admin_no is 1
+2022-04-01 12:08:29,075 DEBUG [29291] [] org_no
+2022-04-01 12:08:29,077 DEBUG [29291] [] INSERT INTO  M_ORGANIZATION (org_no,org_id,org_name,org_name_kana,org_name_official,org_kbn,org_type,function_type,org_start_date,start_period,end_period,contract_start_dt,contract_end_dt,org_admin,phone_no,mail_address,contract_no,manager_name,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:org_id,:org_name,:org_name_kana,:org_name_official,:org_kbn,:org_type,:function_type,:org_start_date,:start_period,:end_period,:contract_start_dt,:contract_end_dt,:org_admin,:phone_no,:mail_address,:contract_no,:manager_name,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 12:08:29,078 DEBUG [29291] [] INSERT INTO  T_ORG_PUSH_CONF (org_no,push_flg,count,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:push_flg,:count,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 12:08:29,079 DEBUG [29291] [] INSERT INTO  M_ORG_CONF (org_no,attendance_flg,period_cnt,task_file_size,task_file_ext,quiz_audio_size,quiz_img_size,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:attendance_flg,:period_cnt,:task_file_size,:task_file_ext,:quiz_audio_size,:quiz_img_size,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 12:08:29,177 DEBUG [29291] [] saveAction end
+2022-04-01 12:08:29,177 DEBUG [29291] [] OrganizationRegistController end
+2022-04-01 12:08:29,178 DEBUG [29291] [] finally
+2022-04-01 12:08:56,683 DEBUG [29290] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:08:56,684 DEBUG [29290] [] OrganizationRegistController start
+2022-04-01 12:08:56,684 DEBUG [29290] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 12:08:56,687 DEBUG [29290] [] OrganizationRegistForm: is exist
+2022-04-01 12:08:56,687 DEBUG [29290] [] OrganizationRegistForm: form value set 
+2022-04-01 12:08:56,688 DEBUG [29290] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 12:08:56,688 DEBUG [29290] [] ------------------------------session_check_true
+2022-04-01 12:08:56,688 DEBUG [29290] [] indexAction start
+2022-04-01 12:08:56,688 DEBUG [29290] [] admin_no is 1
+2022-04-01 12:08:56,784 DEBUG [29290] [] indexAction end
+2022-04-01 12:08:56,784 DEBUG [29290] [] OrganizationRegistController end
+2022-04-01 12:08:56,784 DEBUG [29290] [] finally
+2022-04-01 12:08:59,900 DEBUG [29290] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 12:08:59,900 DEBUG [29290] [] OrganizationListController start
+2022-04-01 12:08:59,900 DEBUG [29290] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:08:59,902 DEBUG [29290] [] OrganizationListForm: is exist
+2022-04-01 12:08:59,902 DEBUG [29290] [] OrganizationListForm: form value set 
+2022-04-01 12:08:59,903 DEBUG [29290] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 12:08:59,903 DEBUG [29290] [] indexAction start
+2022-04-01 12:08:59,903 DEBUG [29290] [] admin_no is 1
+2022-04-01 12:09:00,000 DEBUG [29290] [] indexAction end
+2022-04-01 12:09:00,000 DEBUG [29290] [] OrganizationListController end
+2022-04-01 12:09:00,000 DEBUG [29290] [] finally
+2022-04-01 12:09:07,030 DEBUG [29284] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 12:09:07,030 DEBUG [29284] [] OrganizationListController start
+2022-04-01 12:09:07,030 DEBUG [29284] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:09:07,032 DEBUG [29284] [] OrganizationListForm: is exist
+2022-04-01 12:09:07,033 DEBUG [29284] [] OrganizationListForm: form value set 
+2022-04-01 12:09:07,033 DEBUG [29284] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 12:09:07,033 DEBUG [29284] [] searchAction start
+2022-04-01 12:09:07,033 DEBUG [29284] [] admin_no is 1
+2022-04-01 12:09:07,125 DEBUG [29284] [] searchAction end
+2022-04-01 12:09:07,125 DEBUG [29284] [] OrganizationListController end
+2022-04-01 12:09:07,125 DEBUG [29284] [] finally
+2022-04-01 12:09:12,039 DEBUG [29284] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 12:09:12,039 DEBUG [29284] [] OrganizationListController start
+2022-04-01 12:09:12,039 DEBUG [29284] [] controllers/OrganizationListController.php: is exist
+2022-04-01 12:09:12,041 DEBUG [29284] [] OrganizationListForm: is exist
+2022-04-01 12:09:12,042 DEBUG [29284] [] OrganizationListForm: form value set 
+2022-04-01 12:09:12,042 DEBUG [29284] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 12:09:12,042 DEBUG [29284] [] searchAction start
+2022-04-01 12:09:12,042 DEBUG [29284] [] admin_no is 1
+2022-04-01 12:09:12,146 DEBUG [29284] [] searchAction end
+2022-04-01 12:09:12,147 DEBUG [29284] [] OrganizationListController end
+2022-04-01 12:09:12,147 DEBUG [29284] [] finally
+2022-04-01 12:10:13,169 DEBUG [29285] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 12:10:13,170 DEBUG [29285] [] CourseContractListController start
+2022-04-01 12:10:13,170 DEBUG [29285] [] controllers/CourseContractListController.php: is exist
+2022-04-01 12:10:13,175 DEBUG [29285] [] CourseContractListForm: is exist
+2022-04-01 12:10:13,175 DEBUG [29285] [] CourseContractListForm: form value set 
+2022-04-01 12:10:13,176 DEBUG [29285] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 12:10:13,176 DEBUG [29285] [] indexAction start
+2022-04-01 12:10:13,176 DEBUG [29285] [] admin_no is 1
+2022-04-01 12:10:13,293 DEBUG [29285] [] indexAction end
+2022-04-01 12:10:13,293 DEBUG [29285] [] CourseContractListController end
+2022-04-01 12:10:13,293 DEBUG [29285] [] finally
+2022-04-01 12:10:47,376 DEBUG [29235] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-04-01 12:10:47,377 DEBUG [29235] [] CourseContractListController start
+2022-04-01 12:10:47,377 DEBUG [29235] [] controllers/CourseContractListController.php: is exist
+2022-04-01 12:10:47,382 DEBUG [29235] [] CourseContractListForm: is exist
+2022-04-01 12:10:47,382 DEBUG [29235] [] CourseContractListForm: form value set 
+2022-04-01 12:10:47,383 DEBUG [29235] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-04-01 12:10:47,383 DEBUG [29235] [] SearchAction start
+2022-04-01 12:10:47,383 DEBUG [29235] [] admin_no is 1
+2022-04-01 12:10:47,501 DEBUG [29235] [] SearchAction end
+2022-04-01 12:10:47,501 DEBUG [29235] [] CourseContractListController end
+2022-04-01 12:10:47,501 DEBUG [29235] [] finally
+2022-04-01 12:10:56,847 DEBUG [29285] [] Request URI : /eccadmin_dev/CourseContractList/Search
+2022-04-01 12:10:56,848 DEBUG [29285] [] CourseContractListController start
+2022-04-01 12:10:56,848 DEBUG [29285] [] controllers/CourseContractListController.php: is exist
+2022-04-01 12:10:56,853 DEBUG [29285] [] CourseContractListForm: is exist
+2022-04-01 12:10:56,853 DEBUG [29285] [] CourseContractListForm: form value set 
+2022-04-01 12:10:56,854 DEBUG [29285] [] ------------------------------/eccadmin_dev/CourseContractList/Search
+2022-04-01 12:10:56,854 DEBUG [29285] [] SearchAction start
+2022-04-01 12:10:56,854 DEBUG [29285] [] admin_no is 1
+2022-04-01 12:10:56,971 DEBUG [29285] [] SearchAction end
+2022-04-01 12:10:56,971 DEBUG [29285] [] CourseContractListController end
+2022-04-01 12:10:56,971 DEBUG [29285] [] finally
+2022-04-01 12:11:02,424 DEBUG [29351] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 12:11:02,425 DEBUG [29351] [] CourseContractRegistController start
+2022-04-01 12:11:02,425 DEBUG [29351] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:11:02,428 DEBUG [29351] [] CourseContractRegistForm: is exist
+2022-04-01 12:11:02,428 DEBUG [29351] [] CourseContractRegistForm: form value set 
+2022-04-01 12:11:02,429 DEBUG [29351] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 12:11:02,429 DEBUG [29351] [] ------------------------------session_check_true
+2022-04-01 12:11:02,429 DEBUG [29351] [] indexAction start
+2022-04-01 12:11:02,429 DEBUG [29351] [] admin_no is 1
+2022-04-01 12:11:02,501 DEBUG [29351] [] indexAction end
+2022-04-01 12:11:02,502 DEBUG [29351] [] CourseContractRegistController end
+2022-04-01 12:11:02,502 DEBUG [29351] [] finally
+2022-04-01 12:11:37,827 DEBUG [29350] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:11:37,828 DEBUG [29350] [] CourseContractRegistController start
+2022-04-01 12:11:37,828 DEBUG [29350] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:11:37,831 DEBUG [29350] [] CourseContractRegistForm: is exist
+2022-04-01 12:11:37,831 DEBUG [29350] [] CourseContractRegistForm: form value set 
+2022-04-01 12:11:37,831 DEBUG [29350] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:11:37,832 DEBUG [29350] [] ------------------------------session_check_true
+2022-04-01 12:11:37,832 DEBUG [29350] [] orgShowAction start
+2022-04-01 12:11:37,832 DEBUG [29350] [] admin_no is 1
+2022-04-01 12:11:37,907 DEBUG [29350] [] orgShowAction end
+2022-04-01 12:11:37,907 DEBUG [29350] [] CourseContractRegistController end
+2022-04-01 12:11:37,907 DEBUG [29350] [] finally
+2022-04-01 12:11:49,396 DEBUG [29031] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:11:49,396 DEBUG [29031] [] CourseContractRegistController start
+2022-04-01 12:11:49,397 DEBUG [29031] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:11:49,399 DEBUG [29031] [] CourseContractRegistForm: is exist
+2022-04-01 12:11:49,400 DEBUG [29031] [] CourseContractRegistForm: form value set 
+2022-04-01 12:11:49,400 DEBUG [29031] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:11:49,400 DEBUG [29031] [] ------------------------------session_check_false:uid=ad3044eb17f47c419c026e7560daca94-----&-----3605fe0cf7a2b7b6b1214295db9da41d
+2022-04-01 12:11:49,400 DEBUG [29031] [] orgShowAction start
+2022-04-01 12:11:49,401 DEBUG [29031] [] admin_no is 1
+2022-04-01 12:11:49,474 DEBUG [29031] [] orgShowAction end
+2022-04-01 12:11:49,474 DEBUG [29031] [] CourseContractRegistController end
+2022-04-01 12:11:49,475 DEBUG [29031] [] finally
+2022-04-01 12:11:49,845 DEBUG [29182] [] Request URI : /eccadmin_dev/Error/disp
+2022-04-01 12:11:49,845 DEBUG [29182] [] ErrorController start
+2022-04-01 12:11:49,845 DEBUG [29182] [] controllers/ErrorController.php: is exist
+2022-04-01 12:11:49,846 DEBUG [29182] [] ErrorForm: is exist
+2022-04-01 12:11:49,846 DEBUG [29182] [] ErrorForm: form value set 
+2022-04-01 12:11:49,846 DEBUG [29182] [] ------------------------------/eccadmin_dev/Error/disp
+2022-04-01 12:11:49,846 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:11:49,846 DEBUG [29182] [] dispAction start
+2022-04-01 12:11:49,857 DEBUG [29182] [] dispAction end
+2022-04-01 12:11:49,857 DEBUG [29182] [] ErrorController end
+2022-04-01 12:11:49,857 DEBUG [29182] [] finally
+2022-04-01 12:11:51,539 DEBUG [29182] [] Request URI : /eccadmin_dev/Login
+2022-04-01 12:11:51,540 DEBUG [29182] [] LoginController start
+2022-04-01 12:11:51,540 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:11:51,540 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:11:51,540 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:11:51,541 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 12:11:51,541 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:11:51,541 DEBUG [29182] [] indexAction start
+2022-04-01 12:11:51,556 DEBUG [29182] [] indexAction end
+2022-04-01 12:11:51,556 DEBUG [29182] [] LoginController end
+2022-04-01 12:11:51,556 DEBUG [29182] [] finally
+2022-04-01 12:11:53,240 DEBUG [29182] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 12:11:53,241 DEBUG [29182] [] LoginController start
+2022-04-01 12:11:53,241 DEBUG [29182] [] controllers/LoginController.php: is exist
+2022-04-01 12:11:53,241 DEBUG [29182] [] LoginForm: is exist
+2022-04-01 12:11:53,241 DEBUG [29182] [] LoginForm: form value set 
+2022-04-01 12:11:53,242 DEBUG [29182] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 12:11:53,242 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:11:53,242 DEBUG [29182] [] loginAction start
+2022-04-01 12:11:53,546 DEBUG [29182] [] loginAction end
+2022-04-01 12:11:53,546 DEBUG [29182] [] LoginController end
+2022-04-01 12:11:53,546 DEBUG [29182] [] finally
+2022-04-01 12:11:53,913 DEBUG [29182] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 12:11:53,914 DEBUG [29182] [] MenuController start
+2022-04-01 12:11:53,914 DEBUG [29182] [] controllers/MenuController.php: is exist
+2022-04-01 12:11:53,915 DEBUG [29182] [] MenuForm: is exist
+2022-04-01 12:11:53,916 DEBUG [29182] [] MenuForm: form value set 
+2022-04-01 12:11:53,916 DEBUG [29182] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 12:11:53,916 DEBUG [29182] [] ------------------------------login_start_check
+2022-04-01 12:11:53,916 DEBUG [29182] [] indexAction start
+2022-04-01 12:11:53,916 DEBUG [29182] [] admin_no is 1
+2022-04-01 12:11:53,966 DEBUG [29182] [] indexAction end
+2022-04-01 12:11:53,966 DEBUG [29182] [] MenuController end
+2022-04-01 12:11:53,967 DEBUG [29182] [] finally
+2022-04-01 12:11:56,658 DEBUG [29182] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 12:11:56,659 DEBUG [29182] [] CourseContractListController start
+2022-04-01 12:11:56,659 DEBUG [29182] [] controllers/CourseContractListController.php: is exist
+2022-04-01 12:11:56,664 DEBUG [29182] [] CourseContractListForm: is exist
+2022-04-01 12:11:56,664 DEBUG [29182] [] CourseContractListForm: form value set 
+2022-04-01 12:11:56,665 DEBUG [29182] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 12:11:56,665 DEBUG [29182] [] indexAction start
+2022-04-01 12:11:56,665 DEBUG [29182] [] admin_no is 1
+2022-04-01 12:11:56,778 DEBUG [29182] [] indexAction end
+2022-04-01 12:11:56,778 DEBUG [29182] [] CourseContractListController end
+2022-04-01 12:11:56,778 DEBUG [29182] [] finally
+2022-04-01 12:12:10,524 DEBUG [29398] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 12:12:10,528 DEBUG [29398] [] CourseContractRegistController start
+2022-04-01 12:12:10,528 DEBUG [29398] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:12:10,531 DEBUG [29398] [] CourseContractRegistForm: is exist
+2022-04-01 12:12:10,532 DEBUG [29398] [] CourseContractRegistForm: form value set 
+2022-04-01 12:12:10,532 DEBUG [29398] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 12:12:10,532 DEBUG [29398] [] ------------------------------session_check_true
+2022-04-01 12:12:10,532 DEBUG [29398] [] indexAction start
+2022-04-01 12:12:10,533 DEBUG [29398] [] admin_no is 1
+2022-04-01 12:12:10,607 DEBUG [29398] [] indexAction end
+2022-04-01 12:12:10,607 DEBUG [29398] [] CourseContractRegistController end
+2022-04-01 12:12:10,607 DEBUG [29398] [] finally
+2022-04-01 12:12:25,826 DEBUG [29115] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:12:25,826 DEBUG [29115] [] CourseContractRegistController start
+2022-04-01 12:12:25,827 DEBUG [29115] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:12:25,829 DEBUG [29115] [] CourseContractRegistForm: is exist
+2022-04-01 12:12:25,830 DEBUG [29115] [] CourseContractRegistForm: form value set 
+2022-04-01 12:12:25,830 DEBUG [29115] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 12:12:25,830 DEBUG [29115] [] ------------------------------session_check_true
+2022-04-01 12:12:25,831 DEBUG [29115] [] orgShowAction start
+2022-04-01 12:12:25,831 DEBUG [29115] [] admin_no is 1
+2022-04-01 12:12:25,908 DEBUG [29115] [] orgShowAction end
+2022-04-01 12:12:25,908 DEBUG [29115] [] CourseContractRegistController end
+2022-04-01 12:12:25,908 DEBUG [29115] [] finally
+2022-04-01 12:13:11,253 DEBUG [29351] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 12:13:11,253 DEBUG [29351] [] CourseContractRegistController start
+2022-04-01 12:13:11,253 DEBUG [29351] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:13:11,256 DEBUG [29351] [] CourseContractRegistForm: is exist
+2022-04-01 12:13:11,256 DEBUG [29351] [] CourseContractRegistForm: form value set 
+2022-04-01 12:13:11,257 DEBUG [29351] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 12:13:11,257 DEBUG [29351] [] ------------------------------session_check_true
+2022-04-01 12:13:11,257 DEBUG [29351] [] saveAction start
+2022-04-01 12:13:11,257 DEBUG [29351] [] admin_no is 1
+2022-04-01 12:13:11,335 DEBUG [29351] [] saveAction end
+2022-04-01 12:13:11,335 DEBUG [29351] [] CourseContractRegistController end
+2022-04-01 12:13:11,335 DEBUG [29351] [] finally
+2022-04-01 12:13:29,971 DEBUG [29270] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 12:13:29,972 DEBUG [29270] [] CourseContractRegistController start
+2022-04-01 12:13:29,972 DEBUG [29270] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 12:13:29,975 DEBUG [29270] [] CourseContractRegistForm: is exist
+2022-04-01 12:13:29,975 DEBUG [29270] [] CourseContractRegistForm: form value set 
+2022-04-01 12:13:29,976 DEBUG [29270] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 12:13:29,976 DEBUG [29270] [] ------------------------------session_check_true
+2022-04-01 12:13:29,976 DEBUG [29270] [] courseShowAction start
+2022-04-01 12:13:29,976 DEBUG [29270] [] admin_no is 1
+2022-04-01 12:13:30,051 DEBUG [29270] [] courseShowAction end
+2022-04-01 12:13:30,051 DEBUG [29270] [] CourseContractRegistController end
+2022-04-01 12:13:30,051 DEBUG [29270] [] finally
+2022-04-01 12:16:04,789 DEBUG [29350] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-04-01 12:16:04,790 DEBUG [29350] [] CourseContractConfirmListController start
+2022-04-01 12:16:04,790 DEBUG [29350] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 12:16:04,793 DEBUG [29350] [] CourseContractConfirmListForm: is exist
+2022-04-01 12:16:04,793 DEBUG [29350] [] CourseContractConfirmListForm: form value set 
+2022-04-01 12:16:04,794 DEBUG [29350] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-04-01 12:16:04,794 DEBUG [29350] [] indexAction start
+2022-04-01 12:16:04,794 DEBUG [29350] [] admin_no is 1
+2022-04-01 12:16:04,895 DEBUG [29350] [] indexAction end
+2022-04-01 12:16:04,895 DEBUG [29350] [] CourseContractConfirmListController end
+2022-04-01 12:16:04,896 DEBUG [29350] [] finally
+2022-04-01 12:16:13,762 DEBUG [29400] [] Request URI : /eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 12:16:13,763 DEBUG [29400] [] CourseContractConfirmListController start
+2022-04-01 12:16:13,763 DEBUG [29400] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 12:16:13,766 DEBUG [29400] [] CourseContractConfirmListForm: is exist
+2022-04-01 12:16:13,767 DEBUG [29400] [] CourseContractConfirmListForm: form value set 
+2022-04-01 12:16:13,767 DEBUG [29400] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 12:16:13,767 DEBUG [29400] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 12:16:13,767 DEBUG [29400] [] csvWocAction start
+2022-04-01 12:16:13,768 DEBUG [29400] [] admin_no is 1
+2022-04-01 12:16:13,771 DEBUG [29400] [] CourseContractConfirmList　Query
+2022-04-01 12:16:13,772 DEBUG [29400] []  SELECT   o.org_no    ,o.org_id  ,o.org_name  ,o.org_name_official  ,c.course_id  ,c.course_name  ,date_format(co.start_period,'%Y/%m/%d') AS  co_start_period ,date_format(co.end_period,'%Y/%m/%d') AS  co_end_period ,co.remarks  ,co.offer_no  ,d.course_detail_no  ,d.course_detail_name  ,s.student_no  ,s.student_name  ,s.login_id  ,date_format(cds.start_period,'%Y/%m/%d') AS cds_start_period  ,date_format(cds.end_period,'%Y/%m/%d') AS cds_end_period  ,date_format(answer.answer_dt,'%Y/%m/%d') AS a_answer_dt  ,date_format(r.update_dt,'%Y/%m/%d') AS u_update_dt  ,teacher.display_name AS display_name  ,teacher.login_id AS teacher_code ,teacher.name AS teacher_name ,teacher.school_kbn AS teacher_school   ,CONCAT(if (student_mark.result_marks IS NULL,'-', student_mark.result_marks ),'/',total_mark.marks) AS result  FROM M_ORGANIZATION o  INNER JOIN T_COURSE_ORG as co  ON co.org_no = o.org_no  AND co.del_flg = '0'  AND o.del_flg = '0'  INNER JOIN T_COURSE as c  ON c.course_id = co.course_id  AND c.del_flg = '0'  INNER JOIN T_COURSE_DETAIL as cd  ON cd.course_id = c.course_id  AND cd.del_flg = '0'  INNER JOIN T_DETAIL as d  ON d.course_detail_no = cd.course_detail_no  AND c.course_level = d.course_level  AND c.test_kbn = d.test_kbn  AND d.del_flg = '0'  LEFT JOIN T_COURSE_DETAIL_STUDENT as cds  ON cds.offer_no = co.offer_no  AND cds.course_id = c.course_id  AND cds.course_detail_no = cd.course_detail_no  AND cds.del_flg = '0'  LEFT JOIN T_STUDENT as s  ON s.org_no = co.org_no  AND s.student_no = cds.student_no  AND s.del_flg = '0'  LEFT JOIN T_4SKILL_RESULT as r  ON r.offer_no = co.offer_no  AND r.course_id = c.course_id  AND r.course_detail_no = cd.course_detail_no  AND r.student_no = cds.student_no  AND r.del_flg = '0'  LEFT JOIN ( SELECT teacher_no,  del_flg, display_name, login_id, name, CASE WHEN school_kbn = '001' THEN 'Philippines'  WHEN school_kbn = '002' THEN 'Japan' ELSE NULL END AS school_kbn  FROM T_TEACHER) teacher  ON r.updater_id = teacher.teacher_no  AND teacher.del_flg = '0'  LEFT JOIN (  SELECT offer_no  	,course_id course_id  	,course_detail_no course_detail_no  	,student_no  	,MIN(answer_dt) answer_dt  	FROM T_4SKILL_ANSWER  	WHERE del_flg = '0'   	GROUP BY offer_no,course_id,course_detail_no,student_no ) answer  ON c.course_id = answer.course_id  AND cd.course_detail_no = answer.course_detail_no  AND co.offer_no = answer.offer_no  AND s.student_no = answer.student_no  LEFT JOIN (  	SELECT a.offer_no ,a.student_no,a.course_id,a.course_detail_no,SUM(a.marks) as result_marks  	FROM (  		SELECT skill_answer.offer_no  		,skill_answer.student_no  		,skill_answer.course_id  		,skill_answer.course_detail_no  		,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no  		,skill_result_detail.rule_detail_no  		,mark_detail.marks  		FROM T_4SKILL_ANSWER skill_answer  		LEFT JOIN T_4SKILL_RESULT skill_result  		ON skill_answer.offer_no = skill_result.offer_no  		AND skill_answer.student_no = skill_result.student_no  		AND skill_answer.course_id = skill_result.course_id  		AND skill_answer.course_detail_no = skill_result.course_detail_no  		INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail  		ON skill_result.result_no = skill_result_detail.result_no  		INNER JOIN M_MARK_DETAIL mark_detail  		ON skill_result_detail.rule_no = mark_detail.rule_no  		AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no  		AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no  		AND skill_answer.del_flg = '0'  		AND skill_result.del_flg = '0'  		GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id,mark_detail.marks  		,skill_answer.course_detail_no ,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no  	) as a  	GROUP BY a.offer_no  ,a.student_no  ,a.course_id  ,a.course_detail_no  ) as student_mark  ON s.student_no = student_mark.student_no  AND co.offer_no = student_mark.offer_no  AND co.course_id = student_mark.course_id  AND cd.course_detail_no = student_mark.course_detail_no  LEFT JOIN  (  	SELECT mark_rule.course_level  	, mark_rule.test_kbn  	, course.course_id  	, course_detail.course_detail_no  	, SUM(mark_detail.max_marks) marks  	FROM T_COURSE course  	INNER JOIN T_COURSE_DETAIL course_detail  	ON course.course_id = course_detail.course_id  	AND course.del_flg = '0'  	AND course_detail.del_flg = '0'  	INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa  	ON course_detail.course_detail_no = course_detail_qa.course_detail_no  	AND course_detail_qa.del_flg = '0'  	INNER JOIN T_QUESTION ques  	ON course_detail_qa.question_no = ques.question_no  	AND ques.del_flg = '0'  	INNER JOIN  M_MARK_RULE mark_rule  	ON ques.score_pattern = mark_rule.score_pattern  	AND course.course_level = mark_rule.course_level  	AND course.test_kbn = mark_rule.test_kbn  	INNER JOIN  (  		SELECT  rule_no  			,SUM(max_marks) AS max_marks  			FROM (  				SELECT rule_no  				,sub_rule_no  				,MAX(marks) AS max_marks  				FROM M_MARK_DETAIL  				WHERE del_flg = '0'  				GROUP BY rule_no,sub_rule_no) AS max  			GROUP BY rule_no  		) mark_detail  	ON mark_rule.rule_no = mark_detail.rule_no  	GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no  ) as total_mark  ON c.course_id = total_mark.course_id  AND cd.course_detail_no = total_mark.course_detail_no  AND c.course_level =  total_mark.course_level  AND c.test_kbn =  total_mark.test_kbn  WHERE  '1' = '1'  AND co.end_period >= :start_period  AND co.start_period <= :end_period  GROUP BY o.org_no,o.org_id,o.org_name,o.org_name_official,c.course_id,c.course_name,co_start_period,co_end_period,co.remarks,co.offer_no, d.course_detail_no, d.course_detail_name,s.student_no,s.student_name,s.login_id,cds_start_period,cds_end_period,a_answer_dt,u_update_dt,display_name,teacher.login_id,teacher_name,teacher.school_kbn ORDER BY o.org_no,co.offer_no, c.course_id, cd.disp_no, cds.course_detail_no,s.login_id
+2022-04-01 12:16:13,874 DEBUG [29400] [] csvWocAction end
+2022-04-01 12:16:13,874 DEBUG [29400] [] CourseContractConfirmListController end
+2022-04-01 12:16:13,874 DEBUG [29400] [] finally
+2022-04-01 12:16:18,317 DEBUG [29400] [] Request URI : /eccadmin_dev/CourseStatusList
+2022-04-01 12:16:18,318 DEBUG [29400] [] CourseStatusListController start
+2022-04-01 12:16:18,318 DEBUG [29400] [] controllers/CourseStatusListController.php: is exist
+2022-04-01 12:16:18,319 DEBUG [29400] [] CourseStatusListForm: is exist
+2022-04-01 12:16:18,319 DEBUG [29400] [] CourseStatusListForm: form value set 
+2022-04-01 12:16:18,320 DEBUG [29400] [] ------------------------------/eccadmin_dev/CourseStatusList
+2022-04-01 12:16:18,320 DEBUG [29400] [] indexAction start
+2022-04-01 12:16:18,320 DEBUG [29400] [] admin_no is 1
+2022-04-01 12:16:18,423 DEBUG [29400] [] indexAction end
+2022-04-01 12:16:18,424 DEBUG [29400] [] CourseStatusListController end
+2022-04-01 12:16:18,424 DEBUG [29400] [] finally
+2022-04-01 12:16:23,219 DEBUG [29400] [] Request URI : /eccadmin_dev/SWPracticeReferenceList
+2022-04-01 12:16:23,219 DEBUG [29400] [] SWPracticeReferenceListController start
+2022-04-01 12:16:23,220 DEBUG [29400] [] controllers/SWPracticeReferenceListController.php: is exist
+2022-04-01 12:16:23,223 DEBUG [29400] [] SWPracticeReferenceListForm: is exist
+2022-04-01 12:16:23,223 DEBUG [29400] [] SWPracticeReferenceListForm: form value set 
+2022-04-01 12:16:23,224 DEBUG [29400] [] ------------------------------/eccadmin_dev/SWPracticeReferenceList
+2022-04-01 12:16:23,224 DEBUG [29400] [] indexAction start
+2022-04-01 12:16:23,224 DEBUG [29400] [] admin_no is 1
+2022-04-01 12:16:23,333 DEBUG [29400] [] indexAction end
+2022-04-01 12:16:23,333 DEBUG [29400] [] SWPracticeReferenceListController end
+2022-04-01 12:16:23,333 DEBUG [29400] [] finally
+2022-04-01 16:23:39,553 DEBUG [33851] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:23:39,554 DEBUG [33851] [] LoginController start
+2022-04-01 16:23:39,554 DEBUG [33851] [] controllers/LoginController.php: is exist
+2022-04-01 16:23:39,554 DEBUG [33851] [] LoginForm: is exist
+2022-04-01 16:23:39,554 DEBUG [33851] [] LoginForm: form value set 
+2022-04-01 16:23:39,555 DEBUG [33851] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:23:39,555 DEBUG [33851] [] ------------------------------login_start_check
+2022-04-01 16:23:39,555 DEBUG [33851] [] indexAction start
+2022-04-01 16:23:39,636 DEBUG [33851] [] indexAction end
+2022-04-01 16:23:39,636 DEBUG [33851] [] LoginController end
+2022-04-01 16:23:39,636 DEBUG [33851] [] finally
+2022-04-01 16:23:42,317 DEBUG [33872] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 16:23:42,321 DEBUG [33872] [] LoginController start
+2022-04-01 16:23:42,321 DEBUG [33872] [] controllers/LoginController.php: is exist
+2022-04-01 16:23:42,322 DEBUG [33872] [] LoginForm: is exist
+2022-04-01 16:23:42,322 DEBUG [33872] [] LoginForm: form value set 
+2022-04-01 16:23:42,323 DEBUG [33872] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 16:23:42,323 DEBUG [33872] [] ------------------------------login_start_check
+2022-04-01 16:23:42,323 DEBUG [33872] [] loginAction start
+2022-04-01 16:23:42,634 DEBUG [33872] [] loginAction end
+2022-04-01 16:23:42,634 DEBUG [33872] [] LoginController end
+2022-04-01 16:23:42,634 DEBUG [33872] [] finally
+2022-04-01 16:23:42,874 DEBUG [33872] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 16:23:42,875 DEBUG [33872] [] MenuController start
+2022-04-01 16:23:42,875 DEBUG [33872] [] controllers/MenuController.php: is exist
+2022-04-01 16:23:42,876 DEBUG [33872] [] MenuForm: is exist
+2022-04-01 16:23:42,877 DEBUG [33872] [] MenuForm: form value set 
+2022-04-01 16:23:42,877 DEBUG [33872] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 16:23:42,877 DEBUG [33872] [] ------------------------------login_start_check
+2022-04-01 16:23:42,877 DEBUG [33872] [] indexAction start
+2022-04-01 16:23:42,878 DEBUG [33872] [] admin_no is 1
+2022-04-01 16:23:42,995 DEBUG [33872] [] indexAction end
+2022-04-01 16:23:42,995 DEBUG [33872] [] MenuController end
+2022-04-01 16:23:42,995 DEBUG [33872] [] finally
+2022-04-01 16:23:47,867 DEBUG [33871] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:23:47,867 DEBUG [33871] [] OrganizationRegistController start
+2022-04-01 16:23:47,868 DEBUG [33871] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:23:47,871 DEBUG [33871] [] OrganizationRegistForm: is exist
+2022-04-01 16:23:47,871 DEBUG [33871] [] OrganizationRegistForm: form value set 
+2022-04-01 16:23:47,872 DEBUG [33871] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:23:47,872 DEBUG [33871] [] ------------------------------session_check_true
+2022-04-01 16:23:47,872 DEBUG [33871] [] indexAction start
+2022-04-01 16:23:47,872 DEBUG [33871] [] admin_no is 1
+2022-04-01 16:23:47,967 DEBUG [33871] [] indexAction end
+2022-04-01 16:23:47,967 DEBUG [33871] [] OrganizationRegistController end
+2022-04-01 16:23:47,967 DEBUG [33871] [] finally
+2022-04-01 16:23:58,283 DEBUG [33293] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:23:58,284 DEBUG [33293] [] LoginController start
+2022-04-01 16:23:58,284 DEBUG [33293] [] controllers/LoginController.php: is exist
+2022-04-01 16:23:58,285 DEBUG [33293] [] LoginForm: is exist
+2022-04-01 16:23:58,285 DEBUG [33293] [] LoginForm: form value set 
+2022-04-01 16:23:58,285 DEBUG [33293] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:23:58,285 DEBUG [33293] [] ------------------------------login_start_check
+2022-04-01 16:23:58,286 DEBUG [33293] [] indexAction start
+2022-04-01 16:23:58,300 DEBUG [33293] [] indexAction end
+2022-04-01 16:23:58,300 DEBUG [33293] [] LoginController end
+2022-04-01 16:23:58,301 DEBUG [33293] [] finally
+2022-04-01 16:24:02,234 DEBUG [33293] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 16:24:02,235 DEBUG [33293] [] LoginController start
+2022-04-01 16:24:02,235 DEBUG [33293] [] controllers/LoginController.php: is exist
+2022-04-01 16:24:02,235 DEBUG [33293] [] LoginForm: is exist
+2022-04-01 16:24:02,235 DEBUG [33293] [] LoginForm: form value set 
+2022-04-01 16:24:02,236 DEBUG [33293] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 16:24:02,236 DEBUG [33293] [] ------------------------------login_start_check
+2022-04-01 16:24:02,236 DEBUG [33293] [] loginAction start
+2022-04-01 16:24:02,533 DEBUG [33293] [] loginAction end
+2022-04-01 16:24:02,533 DEBUG [33293] [] LoginController end
+2022-04-01 16:24:02,534 DEBUG [33293] [] finally
+2022-04-01 16:24:05,032 DEBUG [33872] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 16:24:05,032 DEBUG [33872] [] LoginController start
+2022-04-01 16:24:05,032 DEBUG [33872] [] controllers/LoginController.php: is exist
+2022-04-01 16:24:05,032 DEBUG [33872] [] LoginForm: is exist
+2022-04-01 16:24:05,033 DEBUG [33872] [] LoginForm: form value set 
+2022-04-01 16:24:05,033 DEBUG [33872] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 16:24:05,033 DEBUG [33872] [] ------------------------------login_start_check
+2022-04-01 16:24:05,033 DEBUG [33872] [] loginAction start
+2022-04-01 16:24:05,338 DEBUG [33872] [] loginAction end
+2022-04-01 16:24:05,338 DEBUG [33872] [] LoginController end
+2022-04-01 16:24:05,339 DEBUG [33872] [] finally
+2022-04-01 16:24:05,356 DEBUG [33872] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 16:24:05,357 DEBUG [33872] [] MenuController start
+2022-04-01 16:24:05,357 DEBUG [33872] [] controllers/MenuController.php: is exist
+2022-04-01 16:24:05,358 DEBUG [33872] [] MenuForm: is exist
+2022-04-01 16:24:05,359 DEBUG [33872] [] MenuForm: form value set 
+2022-04-01 16:24:05,359 DEBUG [33872] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 16:24:05,359 DEBUG [33872] [] ------------------------------login_start_check
+2022-04-01 16:24:05,359 DEBUG [33872] [] indexAction start
+2022-04-01 16:24:05,359 DEBUG [33872] [] admin_no is 1
+2022-04-01 16:24:05,412 DEBUG [33872] [] indexAction end
+2022-04-01 16:24:05,412 DEBUG [33872] [] MenuController end
+2022-04-01 16:24:05,412 DEBUG [33872] [] finally
+2022-04-01 16:24:33,454 DEBUG [33872] [] Request URI : /eccadmin_dev/OrganizationRegist/save
+2022-04-01 16:24:33,455 DEBUG [33872] [] OrganizationRegistController start
+2022-04-01 16:24:33,455 DEBUG [33872] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:24:33,458 DEBUG [33872] [] OrganizationRegistForm: is exist
+2022-04-01 16:24:33,458 DEBUG [33872] [] OrganizationRegistForm: form value set 
+2022-04-01 16:24:33,459 DEBUG [33872] [] ------------------------------/eccadmin_dev/OrganizationRegist/save
+2022-04-01 16:24:33,459 DEBUG [33872] [] ------------------------------session_check_true
+2022-04-01 16:24:33,459 DEBUG [33872] [] saveAction start
+2022-04-01 16:24:33,459 DEBUG [33872] [] admin_no is 1
+2022-04-01 16:24:33,557 DEBUG [33872] [] saveAction end
+2022-04-01 16:24:33,557 DEBUG [33872] [] OrganizationRegistController end
+2022-04-01 16:24:33,557 DEBUG [33872] [] finally
+2022-04-01 16:25:36,273 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:36,274 DEBUG [33869] [] OrganizationRegistController start
+2022-04-01 16:25:36,274 DEBUG [33869] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:25:36,277 DEBUG [33869] [] OrganizationRegistForm: is exist
+2022-04-01 16:25:36,278 DEBUG [33869] [] OrganizationRegistForm: form value set 
+2022-04-01 16:25:36,278 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:36,278 DEBUG [33869] [] ------------------------------session_check_true
+2022-04-01 16:25:36,278 DEBUG [33869] [] indexAction start
+2022-04-01 16:25:36,279 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:25:36,374 DEBUG [33869] [] indexAction end
+2022-04-01 16:25:36,374 DEBUG [33869] [] OrganizationRegistController end
+2022-04-01 16:25:36,374 DEBUG [33869] [] finally
+2022-04-01 16:25:39,615 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:39,615 DEBUG [33869] [] OrganizationRegistController start
+2022-04-01 16:25:39,616 DEBUG [33869] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:25:39,619 DEBUG [33869] [] OrganizationRegistForm: is exist
+2022-04-01 16:25:39,619 DEBUG [33869] [] OrganizationRegistForm: form value set 
+2022-04-01 16:25:39,619 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:39,620 DEBUG [33869] [] ------------------------------session_check_true
+2022-04-01 16:25:39,620 DEBUG [33869] [] indexAction start
+2022-04-01 16:25:39,620 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:25:39,714 DEBUG [33869] [] indexAction end
+2022-04-01 16:25:39,714 DEBUG [33869] [] OrganizationRegistController end
+2022-04-01 16:25:39,714 DEBUG [33869] [] finally
+2022-04-01 16:25:44,136 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:44,137 DEBUG [33869] [] OrganizationRegistController start
+2022-04-01 16:25:44,137 DEBUG [33869] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:25:44,140 DEBUG [33869] [] OrganizationRegistForm: is exist
+2022-04-01 16:25:44,140 DEBUG [33869] [] OrganizationRegistForm: form value set 
+2022-04-01 16:25:44,141 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:25:44,141 DEBUG [33869] [] ------------------------------session_check_true
+2022-04-01 16:25:44,141 DEBUG [33869] [] indexAction start
+2022-04-01 16:25:44,141 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:25:44,236 DEBUG [33869] [] indexAction end
+2022-04-01 16:25:44,236 DEBUG [33869] [] OrganizationRegistController end
+2022-04-01 16:25:44,236 DEBUG [33869] [] finally
+2022-04-01 16:25:45,296 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 16:25:45,296 DEBUG [33869] [] OrganizationListController start
+2022-04-01 16:25:45,296 DEBUG [33869] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:25:45,298 DEBUG [33869] [] OrganizationListForm: is exist
+2022-04-01 16:25:45,298 DEBUG [33869] [] OrganizationListForm: form value set 
+2022-04-01 16:25:45,299 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 16:25:45,299 DEBUG [33869] [] indexAction start
+2022-04-01 16:25:45,299 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:25:45,423 DEBUG [33869] [] indexAction end
+2022-04-01 16:25:45,423 DEBUG [33869] [] OrganizationListController end
+2022-04-01 16:25:45,423 DEBUG [33869] [] finally
+2022-04-01 16:25:52,544 DEBUG [33872] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 16:25:52,545 DEBUG [33872] [] OrganizationListController start
+2022-04-01 16:25:52,545 DEBUG [33872] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:25:52,547 DEBUG [33872] [] OrganizationListForm: is exist
+2022-04-01 16:25:52,547 DEBUG [33872] [] OrganizationListForm: form value set 
+2022-04-01 16:25:52,548 DEBUG [33872] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 16:25:52,548 DEBUG [33872] [] searchAction start
+2022-04-01 16:25:52,548 DEBUG [33872] [] admin_no is 1
+2022-04-01 16:25:52,643 DEBUG [33872] [] searchAction end
+2022-04-01 16:25:52,643 DEBUG [33872] [] OrganizationListController end
+2022-04-01 16:25:52,643 DEBUG [33872] [] finally
+2022-04-01 16:27:26,500 DEBUG [33862] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-01 16:27:26,501 DEBUG [33862] [] LoginController start
+2022-04-01 16:27:26,501 DEBUG [33862] [] controllers/LoginController.php: is exist
+2022-04-01 16:27:26,501 DEBUG [33862] [] LoginForm: is exist
+2022-04-01 16:27:26,501 DEBUG [33862] [] LoginForm: form value set 
+2022-04-01 16:27:26,502 DEBUG [33862] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-01 16:27:26,502 DEBUG [33862] [] ------------------------------login_start_check
+2022-04-01 16:27:26,502 DEBUG [33862] [] logoutAction start
+2022-04-01 16:27:26,502 DEBUG [33862] [] logoutAction end
+2022-04-01 16:27:26,502 DEBUG [33862] [] LoginController end
+2022-04-01 16:27:26,502 DEBUG [33862] [] finally
+2022-04-01 16:27:26,523 DEBUG [33862] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:27:26,524 DEBUG [33862] [] LoginController start
+2022-04-01 16:27:26,524 DEBUG [33862] [] controllers/LoginController.php: is exist
+2022-04-01 16:27:26,524 DEBUG [33862] [] LoginForm: is exist
+2022-04-01 16:27:26,524 DEBUG [33862] [] LoginForm: form value set 
+2022-04-01 16:27:26,524 DEBUG [33862] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:27:26,524 DEBUG [33862] [] ------------------------------login_start_check
+2022-04-01 16:27:26,524 DEBUG [33862] [] indexAction start
+2022-04-01 16:27:26,537 DEBUG [33862] [] indexAction end
+2022-04-01 16:27:26,537 DEBUG [33862] [] LoginController end
+2022-04-01 16:27:26,537 DEBUG [33862] [] finally
+2022-04-01 16:28:47,684 DEBUG [33862] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-04-01 16:28:47,684 DEBUG [33862] [] CourseContractConfirmListController start
+2022-04-01 16:28:47,684 DEBUG [33862] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 16:28:47,687 DEBUG [33862] [] CourseContractConfirmListForm: is exist
+2022-04-01 16:28:47,688 DEBUG [33862] [] CourseContractConfirmListForm: form value set 
+2022-04-01 16:28:47,688 DEBUG [33862] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-04-01 16:28:47,688 DEBUG [33862] [] indexAction start
+2022-04-01 16:28:47,689 DEBUG [33862] [] admin_no is 1
+2022-04-01 16:28:47,788 DEBUG [33862] [] indexAction end
+2022-04-01 16:28:47,788 DEBUG [33862] [] CourseContractConfirmListController end
+2022-04-01 16:28:47,788 DEBUG [33862] [] finally
+2022-04-01 16:28:52,457 DEBUG [33862] [] Request URI : /eccadmin_dev/CourseStatusList
+2022-04-01 16:28:52,458 DEBUG [33862] [] CourseStatusListController start
+2022-04-01 16:28:52,458 DEBUG [33862] [] controllers/CourseStatusListController.php: is exist
+2022-04-01 16:28:52,459 DEBUG [33862] [] CourseStatusListForm: is exist
+2022-04-01 16:28:52,459 DEBUG [33862] [] CourseStatusListForm: form value set 
+2022-04-01 16:28:52,460 DEBUG [33862] [] ------------------------------/eccadmin_dev/CourseStatusList
+2022-04-01 16:28:52,460 DEBUG [33862] [] indexAction start
+2022-04-01 16:28:52,460 DEBUG [33862] [] admin_no is 1
+2022-04-01 16:28:52,559 DEBUG [33862] [] indexAction end
+2022-04-01 16:28:52,559 DEBUG [33862] [] CourseStatusListController end
+2022-04-01 16:28:52,559 DEBUG [33862] [] finally
+2022-04-01 16:29:03,066 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:29:03,067 DEBUG [33887] [] WordBookRegistController start
+2022-04-01 16:29:03,067 DEBUG [33887] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:29:03,071 DEBUG [33887] [] WordBookRegistForm: is exist
+2022-04-01 16:29:03,071 DEBUG [33887] [] WordBookRegistForm: form value set 
+2022-04-01 16:29:03,072 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:29:03,072 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:29:03,072 DEBUG [33887] [] indexAction start
+2022-04-01 16:29:03,072 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:29:03,153 DEBUG [33887] [] indexAction end
+2022-04-01 16:29:03,153 DEBUG [33887] [] WordBookRegistController end
+2022-04-01 16:29:03,153 DEBUG [33887] [] finally
+2022-04-01 16:29:28,813 DEBUG [33277] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:29:28,814 DEBUG [33277] [] WordBookRegistController start
+2022-04-01 16:29:28,814 DEBUG [33277] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:29:28,818 DEBUG [33277] [] WordBookRegistForm: is exist
+2022-04-01 16:29:28,818 DEBUG [33277] [] WordBookRegistForm: form value set 
+2022-04-01 16:29:28,819 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:29:28,819 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:29:28,819 DEBUG [33277] [] indexAction start
+2022-04-01 16:29:28,819 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:29:28,904 DEBUG [33277] [] indexAction end
+2022-04-01 16:29:28,905 DEBUG [33277] [] WordBookRegistController end
+2022-04-01 16:29:28,905 DEBUG [33277] [] finally
+2022-04-01 16:29:33,736 DEBUG [33277] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:29:33,737 DEBUG [33277] [] OrganizationRegistController start
+2022-04-01 16:29:33,737 DEBUG [33277] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:29:33,740 DEBUG [33277] [] OrganizationRegistForm: is exist
+2022-04-01 16:29:33,740 DEBUG [33277] [] OrganizationRegistForm: form value set 
+2022-04-01 16:29:33,741 DEBUG [33277] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:29:33,741 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:29:33,741 DEBUG [33277] [] indexAction start
+2022-04-01 16:29:33,741 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:29:33,835 DEBUG [33277] [] indexAction end
+2022-04-01 16:29:33,835 DEBUG [33277] [] OrganizationRegistController end
+2022-04-01 16:29:33,835 DEBUG [33277] [] finally
+2022-04-01 16:29:36,913 DEBUG [33277] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 16:29:36,913 DEBUG [33277] [] OrganizationListController start
+2022-04-01 16:29:36,914 DEBUG [33277] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:29:36,915 DEBUG [33277] [] OrganizationListForm: is exist
+2022-04-01 16:29:36,916 DEBUG [33277] [] OrganizationListForm: form value set 
+2022-04-01 16:29:36,916 DEBUG [33277] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 16:29:36,916 DEBUG [33277] [] indexAction start
+2022-04-01 16:29:36,916 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:29:37,014 DEBUG [33277] [] indexAction end
+2022-04-01 16:29:37,015 DEBUG [33277] [] OrganizationListController end
+2022-04-01 16:29:37,015 DEBUG [33277] [] finally
+2022-04-01 16:29:42,952 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 16:29:42,953 DEBUG [33869] [] OrganizationListController start
+2022-04-01 16:29:42,953 DEBUG [33869] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:29:42,954 DEBUG [33869] [] OrganizationListForm: is exist
+2022-04-01 16:29:42,955 DEBUG [33869] [] OrganizationListForm: form value set 
+2022-04-01 16:29:42,955 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 16:29:42,956 DEBUG [33869] [] searchAction start
+2022-04-01 16:29:42,956 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:29:43,049 DEBUG [33869] [] searchAction end
+2022-04-01 16:29:43,049 DEBUG [33869] [] OrganizationListController end
+2022-04-01 16:29:43,049 DEBUG [33869] [] finally
+2022-04-01 16:30:31,233 DEBUG [33872] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:30:31,234 DEBUG [33872] [] CourseContractListController start
+2022-04-01 16:30:31,234 DEBUG [33872] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:30:31,239 DEBUG [33872] [] CourseContractListForm: is exist
+2022-04-01 16:30:31,239 DEBUG [33872] [] CourseContractListForm: form value set 
+2022-04-01 16:30:31,240 DEBUG [33872] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:30:31,240 DEBUG [33872] [] indexAction start
+2022-04-01 16:30:31,240 DEBUG [33872] [] admin_no is 1
+2022-04-01 16:30:31,351 DEBUG [33872] [] indexAction end
+2022-04-01 16:30:31,351 DEBUG [33872] [] CourseContractListController end
+2022-04-01 16:30:31,351 DEBUG [33872] [] finally
+2022-04-01 16:30:44,947 DEBUG [33851] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:30:44,948 DEBUG [33851] [] WordBookRegistController start
+2022-04-01 16:30:44,948 DEBUG [33851] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:30:44,952 DEBUG [33851] [] WordBookRegistForm: is exist
+2022-04-01 16:30:44,952 DEBUG [33851] [] WordBookRegistForm: form value set 
+2022-04-01 16:30:44,953 DEBUG [33851] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:30:44,953 DEBUG [33851] [] ------------------------------session_check_true
+2022-04-01 16:30:44,953 DEBUG [33851] [] indexAction start
+2022-04-01 16:30:44,953 DEBUG [33851] [] admin_no is 1
+2022-04-01 16:30:45,036 DEBUG [33851] [] indexAction end
+2022-04-01 16:30:45,036 DEBUG [33851] [] WordBookRegistController end
+2022-04-01 16:30:45,037 DEBUG [33851] [] finally
+2022-04-01 16:30:59,035 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookRegist/orgShow
+2022-04-01 16:30:59,036 DEBUG [33887] [] WordBookRegistController start
+2022-04-01 16:30:59,036 DEBUG [33887] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:30:59,040 DEBUG [33887] [] WordBookRegistForm: is exist
+2022-04-01 16:30:59,040 DEBUG [33887] [] WordBookRegistForm: form value set 
+2022-04-01 16:30:59,041 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookRegist/orgShow
+2022-04-01 16:30:59,041 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:30:59,041 DEBUG [33887] [] orgShowAction start
+2022-04-01 16:30:59,041 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:30:59,126 DEBUG [33887] [] orgShowAction end
+2022-04-01 16:30:59,126 DEBUG [33887] [] WordBookRegistController end
+2022-04-01 16:30:59,127 DEBUG [33887] [] finally
+2022-04-01 16:31:25,370 DEBUG [34046] [] Request URI : /eccadmin_dev/WordBookRegist/Save
+2022-04-01 16:31:25,374 DEBUG [34046] [] WordBookRegistController start
+2022-04-01 16:31:25,375 DEBUG [34046] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:31:25,379 DEBUG [34046] [] WordBookRegistForm: is exist
+2022-04-01 16:31:25,379 DEBUG [34046] [] WordBookRegistForm: form value set 
+2022-04-01 16:31:25,380 DEBUG [34046] [] ------------------------------/eccadmin_dev/WordBookRegist/Save
+2022-04-01 16:31:25,380 DEBUG [34046] [] ------------------------------session_check_true
+2022-04-01 16:31:25,380 DEBUG [34046] [] SaveAction start
+2022-04-01 16:31:25,380 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:31:25,384 DEBUG [34046] [] wordbook_id
+2022-04-01 16:31:25,389 DEBUG [34046] [] org no-----  : 7999999
+2022-04-01 16:31:25,390 DEBUG [34046] [] INSERT INTO  T_WORDBOOK (org_no,wordbook_id,word_system_kbn,tag,name,word_lang_type,trans_lang_type,status,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:wordbook_id,:word_system_kbn,:tag,:name,:word_lang_type,:trans_lang_type,:status,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 16:31:25,492 DEBUG [34046] [] SaveAction end
+2022-04-01 16:31:25,493 DEBUG [34046] [] WordBookRegistController end
+2022-04-01 16:31:25,494 DEBUG [34046] [] finally
+2022-04-01 16:31:31,162 DEBUG [34046] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:31:31,163 DEBUG [34046] [] WordBookListController start
+2022-04-01 16:31:31,163 DEBUG [34046] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:31:31,165 DEBUG [34046] [] WordBookListForm: is exist
+2022-04-01 16:31:31,165 DEBUG [34046] [] WordBookListForm: form value set 
+2022-04-01 16:31:31,165 DEBUG [34046] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:31:31,166 DEBUG [34046] [] indexAction start
+2022-04-01 16:31:31,166 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:31:31,260 DEBUG [34046] [] indexAction end
+2022-04-01 16:31:31,261 DEBUG [34046] [] WordBookListController end
+2022-04-01 16:31:31,261 DEBUG [34046] [] finally
+2022-04-01 16:31:40,724 DEBUG [33851] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-04-01 16:31:40,725 DEBUG [33851] [] WordBookWordController start
+2022-04-01 16:31:40,741 DEBUG [33851] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:31:40,745 DEBUG [33851] [] WordBookWordForm: is exist
+2022-04-01 16:31:40,764 DEBUG [33851] [] WordBookWordForm: form value set 
+2022-04-01 16:31:40,764 DEBUG [33851] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-04-01 16:31:40,764 DEBUG [33851] [] ------------------------------session_check_true
+2022-04-01 16:31:40,765 DEBUG [33851] [] indexAction start
+2022-04-01 16:31:40,765 DEBUG [33851] [] admin_no is 1
+2022-04-01 16:31:40,765 DEBUG [33851] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:31:40,874 DEBUG [33851] [] indexAction end
+2022-04-01 16:31:40,874 DEBUG [33851] [] WordBookWordController end
+2022-04-01 16:31:40,874 DEBUG [33851] [] finally
+2022-04-01 16:31:46,901 DEBUG [34047] [] Request URI : /eccadmin_dev/WordBookWord/back
+2022-04-01 16:31:46,902 DEBUG [34047] [] WordBookWordController start
+2022-04-01 16:31:46,902 DEBUG [34047] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:31:46,905 DEBUG [34047] [] WordBookWordForm: is exist
+2022-04-01 16:31:46,905 DEBUG [34047] [] WordBookWordForm: form value set 
+2022-04-01 16:31:46,906 DEBUG [34047] [] ------------------------------/eccadmin_dev/WordBookWord/back
+2022-04-01 16:31:46,906 DEBUG [34047] [] ------------------------------session_check_true
+2022-04-01 16:31:46,906 DEBUG [34047] [] backAction start
+2022-04-01 16:31:46,906 DEBUG [34047] [] backAction end
+2022-04-01 16:31:46,906 DEBUG [34047] [] WordBookWordController end
+2022-04-01 16:31:46,907 DEBUG [34047] [] finally
+2022-04-01 16:31:47,235 DEBUG [34047] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-04-01 16:31:47,235 DEBUG [34047] [] WordBookListController start
+2022-04-01 16:31:47,235 DEBUG [34047] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:31:47,237 DEBUG [34047] [] WordBookListForm: is exist
+2022-04-01 16:31:47,237 DEBUG [34047] [] WordBookListForm: form value set 
+2022-04-01 16:31:47,237 DEBUG [34047] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-04-01 16:31:47,238 DEBUG [34047] [] SearchAction start
+2022-04-01 16:31:47,238 DEBUG [34047] [] admin_no is 1
+2022-04-01 16:31:47,309 DEBUG [34047] [] SearchAction end
+2022-04-01 16:31:47,309 DEBUG [34047] [] WordBookListController end
+2022-04-01 16:31:47,309 DEBUG [34047] [] finally
+2022-04-01 16:31:56,855 DEBUG [34046] [] Request URI : /eccadmin_dev/WordList
+2022-04-01 16:31:56,855 DEBUG [34046] [] WordListController start
+2022-04-01 16:31:56,855 DEBUG [34046] [] controllers/WordListController.php: is exist
+2022-04-01 16:31:56,857 DEBUG [34046] [] WordListForm: is exist
+2022-04-01 16:31:56,857 DEBUG [34046] [] WordListForm: form value set 
+2022-04-01 16:31:56,858 DEBUG [34046] [] ------------------------------/eccadmin_dev/WordList
+2022-04-01 16:31:56,858 DEBUG [34046] [] indexAction start
+2022-04-01 16:31:56,858 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:31:56,960 DEBUG [34046] [] indexAction end
+2022-04-01 16:31:56,960 DEBUG [34046] [] WordListController end
+2022-04-01 16:31:56,960 DEBUG [34046] [] finally
+2022-04-01 16:32:03,429 DEBUG [33277] [] Request URI : /eccadmin_dev/WordRegist
+2022-04-01 16:32:03,429 DEBUG [33277] [] WordRegistController start
+2022-04-01 16:32:03,430 DEBUG [33277] [] controllers/WordRegistController.php: is exist
+2022-04-01 16:32:03,431 DEBUG [33277] [] WordRegistForm: is exist
+2022-04-01 16:32:03,432 DEBUG [33277] [] WordRegistForm: form value set 
+2022-04-01 16:32:03,432 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordRegist
+2022-04-01 16:32:03,432 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:32:03,432 DEBUG [33277] [] indexAction start
+2022-04-01 16:32:03,433 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:32:03,435 DEBUG [33277] [] word_id
+2022-04-01 16:32:03,505 DEBUG [33277] [] indexAction end
+2022-04-01 16:32:03,506 DEBUG [33277] [] WordRegistController end
+2022-04-01 16:32:03,506 DEBUG [33277] [] finally
+2022-04-01 16:32:21,995 DEBUG [34060] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:32:21,995 DEBUG [34060] [] WordBookRegistController start
+2022-04-01 16:32:21,995 DEBUG [34060] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:32:22,000 DEBUG [34060] [] WordBookRegistForm: is exist
+2022-04-01 16:32:22,000 DEBUG [34060] [] WordBookRegistForm: form value set 
+2022-04-01 16:32:22,001 DEBUG [34060] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:32:22,001 DEBUG [34060] [] ------------------------------session_check_true
+2022-04-01 16:32:22,001 DEBUG [34060] [] indexAction start
+2022-04-01 16:32:22,001 DEBUG [34060] [] admin_no is 1
+2022-04-01 16:32:22,089 DEBUG [34060] [] indexAction end
+2022-04-01 16:32:22,089 DEBUG [34060] [] WordBookRegistController end
+2022-04-01 16:32:22,089 DEBUG [34060] [] finally
+2022-04-01 16:32:23,320 DEBUG [34060] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:32:23,321 DEBUG [34060] [] WordBookListController start
+2022-04-01 16:32:23,321 DEBUG [34060] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:32:23,323 DEBUG [34060] [] WordBookListForm: is exist
+2022-04-01 16:32:23,323 DEBUG [34060] [] WordBookListForm: form value set 
+2022-04-01 16:32:23,324 DEBUG [34060] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:32:23,324 DEBUG [34060] [] indexAction start
+2022-04-01 16:32:23,324 DEBUG [34060] [] admin_no is 1
+2022-04-01 16:32:23,392 DEBUG [34060] [] indexAction end
+2022-04-01 16:32:23,392 DEBUG [34060] [] WordBookListController end
+2022-04-01 16:32:23,392 DEBUG [34060] [] finally
+2022-04-01 16:32:32,910 DEBUG [33714] [] Request URI : /eccadmin_dev/WordSort/index
+2022-04-01 16:32:32,911 DEBUG [33714] [] WordSortController start
+2022-04-01 16:32:32,911 DEBUG [33714] [] controllers/WordSortController.php: is exist
+2022-04-01 16:32:32,913 DEBUG [33714] [] WordSortForm: is exist
+2022-04-01 16:32:32,946 DEBUG [33714] [] WordSortForm: form value set 
+2022-04-01 16:32:32,946 DEBUG [33714] [] ------------------------------/eccadmin_dev/WordSort/index
+2022-04-01 16:32:32,947 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:32:32,947 DEBUG [33714] [] indexAction start
+2022-04-01 16:32:32,947 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:32:33,053 DEBUG [33714] [] indexAction end
+2022-04-01 16:32:33,053 DEBUG [33714] [] WordSortController end
+2022-04-01 16:32:33,053 DEBUG [33714] [] finally
+2022-04-01 16:32:36,312 DEBUG [33714] [] Request URI : /eccadmin_dev/WordSort/back
+2022-04-01 16:32:36,312 DEBUG [33714] [] WordSortController start
+2022-04-01 16:32:36,312 DEBUG [33714] [] controllers/WordSortController.php: is exist
+2022-04-01 16:32:36,314 DEBUG [33714] [] WordSortForm: is exist
+2022-04-01 16:32:36,314 DEBUG [33714] [] WordSortForm: form value set 
+2022-04-01 16:32:36,315 DEBUG [33714] [] ------------------------------/eccadmin_dev/WordSort/back
+2022-04-01 16:32:36,315 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:32:36,315 DEBUG [33714] [] backAction start
+2022-04-01 16:32:36,315 DEBUG [33714] [] backAction end
+2022-04-01 16:32:36,315 DEBUG [33714] [] WordSortController end
+2022-04-01 16:32:36,316 DEBUG [33714] [] finally
+2022-04-01 16:32:36,565 DEBUG [33714] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-04-01 16:32:36,566 DEBUG [33714] [] WordBookListController start
+2022-04-01 16:32:36,566 DEBUG [33714] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:32:36,568 DEBUG [33714] [] WordBookListForm: is exist
+2022-04-01 16:32:36,568 DEBUG [33714] [] WordBookListForm: form value set 
+2022-04-01 16:32:36,569 DEBUG [33714] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-04-01 16:32:36,569 DEBUG [33714] [] SearchAction start
+2022-04-01 16:32:36,569 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:32:36,640 DEBUG [33714] [] SearchAction end
+2022-04-01 16:32:36,640 DEBUG [33714] [] WordBookListController end
+2022-04-01 16:32:36,640 DEBUG [33714] [] finally
+2022-04-01 16:32:38,673 DEBUG [33714] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-04-01 16:32:38,673 DEBUG [33714] [] WordBookWordController start
+2022-04-01 16:32:38,673 DEBUG [33714] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:32:38,677 DEBUG [33714] [] WordBookWordForm: is exist
+2022-04-01 16:32:38,677 DEBUG [33714] [] WordBookWordForm: form value set 
+2022-04-01 16:32:38,677 DEBUG [33714] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-04-01 16:32:38,678 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:32:38,678 DEBUG [33714] [] indexAction start
+2022-04-01 16:32:38,678 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:32:38,679 DEBUG [33714] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:32:38,752 DEBUG [33714] [] indexAction end
+2022-04-01 16:32:38,753 DEBUG [33714] [] WordBookWordController end
+2022-04-01 16:32:38,753 DEBUG [33714] [] finally
+2022-04-01 16:32:51,831 DEBUG [34087] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:32:51,835 DEBUG [34087] [] WordBookWordController start
+2022-04-01 16:32:51,835 DEBUG [34087] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:32:51,839 DEBUG [34087] [] WordBookWordForm: is exist
+2022-04-01 16:32:51,840 DEBUG [34087] [] WordBookWordForm: form value set 
+2022-04-01 16:32:51,840 DEBUG [34087] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:32:51,840 DEBUG [34087] [] ------------------------------session_check_true
+2022-04-01 16:32:51,840 DEBUG [34087] [] vocubRegistAction start
+2022-04-01 16:32:51,843 DEBUG [34087] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:32:51,913 DEBUG [34087] [] vocubRegistAction end
+2022-04-01 16:32:51,913 DEBUG [34087] [] WordBookWordController end
+2022-04-01 16:32:51,913 DEBUG [34087] [] finally
+2022-04-01 16:32:58,657 DEBUG [33271] [] Request URI : /eccadmin_dev/WordList
+2022-04-01 16:32:58,658 DEBUG [33271] [] WordListController start
+2022-04-01 16:32:58,658 DEBUG [33271] [] controllers/WordListController.php: is exist
+2022-04-01 16:32:58,659 DEBUG [33271] [] WordListForm: is exist
+2022-04-01 16:32:58,660 DEBUG [33271] [] WordListForm: form value set 
+2022-04-01 16:32:58,660 DEBUG [33271] [] ------------------------------/eccadmin_dev/WordList
+2022-04-01 16:32:58,660 DEBUG [33271] [] indexAction start
+2022-04-01 16:32:58,661 DEBUG [33271] [] admin_no is 1
+2022-04-01 16:32:58,726 DEBUG [33271] [] indexAction end
+2022-04-01 16:32:58,726 DEBUG [33271] [] WordListController end
+2022-04-01 16:32:58,726 DEBUG [33271] [] finally
+2022-04-01 16:33:12,809 DEBUG [33277] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:33:12,810 DEBUG [33277] [] WordBookListController start
+2022-04-01 16:33:12,810 DEBUG [33277] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:33:12,812 DEBUG [33277] [] WordBookListForm: is exist
+2022-04-01 16:33:12,812 DEBUG [33277] [] WordBookListForm: form value set 
+2022-04-01 16:33:12,813 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:33:12,813 DEBUG [33277] [] indexAction start
+2022-04-01 16:33:12,813 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:33:12,882 DEBUG [33277] [] indexAction end
+2022-04-01 16:33:12,882 DEBUG [33277] [] WordBookListController end
+2022-04-01 16:33:12,882 DEBUG [33277] [] finally
+2022-04-01 16:33:21,243 DEBUG [34097] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-04-01 16:33:21,247 DEBUG [34097] [] WordBookWordController start
+2022-04-01 16:33:21,247 DEBUG [34097] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:33:21,251 DEBUG [34097] [] WordBookWordForm: is exist
+2022-04-01 16:33:21,252 DEBUG [34097] [] WordBookWordForm: form value set 
+2022-04-01 16:33:21,252 DEBUG [34097] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-04-01 16:33:21,253 DEBUG [34097] [] ------------------------------session_check_true
+2022-04-01 16:33:21,253 DEBUG [34097] [] indexAction start
+2022-04-01 16:33:21,253 DEBUG [34097] [] admin_no is 1
+2022-04-01 16:33:21,254 DEBUG [34097] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:33:21,327 DEBUG [34097] [] indexAction end
+2022-04-01 16:33:21,327 DEBUG [34097] [] WordBookWordController end
+2022-04-01 16:33:21,327 DEBUG [34097] [] finally
+2022-04-01 16:33:28,176 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:33:28,176 DEBUG [33887] [] WordBookWordController start
+2022-04-01 16:33:28,176 DEBUG [33887] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:33:28,180 DEBUG [33887] [] WordBookWordForm: is exist
+2022-04-01 16:33:28,180 DEBUG [33887] [] WordBookWordForm: form value set 
+2022-04-01 16:33:28,181 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:33:28,181 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:33:28,181 DEBUG [33887] [] vocubRegistAction start
+2022-04-01 16:33:28,183 DEBUG [33887] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:33:28,257 DEBUG [33887] [] vocubRegistAction end
+2022-04-01 16:33:28,257 DEBUG [33887] [] WordBookWordController end
+2022-04-01 16:33:28,258 DEBUG [33887] [] finally
+2022-04-01 16:33:42,026 DEBUG [33271] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:33:42,027 DEBUG [33271] [] WordBookListController start
+2022-04-01 16:33:42,027 DEBUG [33271] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:33:42,029 DEBUG [33271] [] WordBookListForm: is exist
+2022-04-01 16:33:42,029 DEBUG [33271] [] WordBookListForm: form value set 
+2022-04-01 16:33:42,030 DEBUG [33271] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:33:42,030 DEBUG [33271] [] indexAction start
+2022-04-01 16:33:42,030 DEBUG [33271] [] admin_no is 1
+2022-04-01 16:33:42,100 DEBUG [33271] [] indexAction end
+2022-04-01 16:33:42,100 DEBUG [33271] [] WordBookListController end
+2022-04-01 16:33:42,100 DEBUG [33271] [] finally
+2022-04-01 16:33:48,998 DEBUG [34046] [] Request URI : /eccadmin_dev/WordBookRegist/index
+2022-04-01 16:33:48,998 DEBUG [34046] [] WordBookRegistController start
+2022-04-01 16:33:48,998 DEBUG [34046] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:33:49,002 DEBUG [34046] [] WordBookRegistForm: is exist
+2022-04-01 16:33:49,003 DEBUG [34046] [] WordBookRegistForm: form value set 
+2022-04-01 16:33:49,003 DEBUG [34046] [] ------------------------------/eccadmin_dev/WordBookRegist/index
+2022-04-01 16:33:49,003 DEBUG [34046] [] ------------------------------session_check_true
+2022-04-01 16:33:49,003 DEBUG [34046] [] indexAction start
+2022-04-01 16:33:49,004 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:33:49,006 DEBUG [34046] []  SELECT wb.org_no, wb.wordbook_id, wb.word_system_kbn, wb.tag, wb.name, wb.word_lang_type,  wb.trans_lang_type, wb.status,wb.disp_no,wb.del_flg, wb.create_dt,wb.creater_id, wb.update_dt,wb.updater_id,  org.org_name,org.org_id , org.org_name_official, wbw.word_id FROM T_WORDBOOK wb Inner Join M_ORGANIZATION org  ON wb.org_no=org.org_no  AND org.org_no=:org_no Left Join T_WORDBOOK_WORD  wbw  ON wb.org_no=wbw.org_no  AND wb.wordbook_id=wbw.wordbook_id WHERE wb.wordbook_id=:id AND wb.del_flg = '0'  AND org.del_flg = '0' 
+2022-04-01 16:33:49,093 DEBUG [34046] [] indexAction end
+2022-04-01 16:33:49,093 DEBUG [34046] [] WordBookRegistController end
+2022-04-01 16:33:49,093 DEBUG [34046] [] finally
+2022-04-01 16:34:01,528 DEBUG [33277] [] Request URI : /eccadmin_dev/WordBookRegist/back
+2022-04-01 16:34:01,528 DEBUG [33277] [] WordBookRegistController start
+2022-04-01 16:34:01,529 DEBUG [33277] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:34:01,533 DEBUG [33277] [] WordBookRegistForm: is exist
+2022-04-01 16:34:01,533 DEBUG [33277] [] WordBookRegistForm: form value set 
+2022-04-01 16:34:01,534 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordBookRegist/back
+2022-04-01 16:34:01,534 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:34:01,534 DEBUG [33277] [] backAction start
+2022-04-01 16:34:01,534 DEBUG [33277] [] backAction end
+2022-04-01 16:34:01,534 DEBUG [33277] [] WordBookRegistController end
+2022-04-01 16:34:01,534 DEBUG [33277] [] finally
+2022-04-01 16:34:02,455 DEBUG [33277] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-04-01 16:34:02,456 DEBUG [33277] [] WordBookListController start
+2022-04-01 16:34:02,456 DEBUG [33277] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:34:02,457 DEBUG [33277] [] WordBookListForm: is exist
+2022-04-01 16:34:02,457 DEBUG [33277] [] WordBookListForm: form value set 
+2022-04-01 16:34:02,458 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-04-01 16:34:02,458 DEBUG [33277] [] SearchAction start
+2022-04-01 16:34:02,458 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:34:02,526 DEBUG [33277] [] SearchAction end
+2022-04-01 16:34:02,526 DEBUG [33277] [] WordBookListController end
+2022-04-01 16:34:02,526 DEBUG [33277] [] finally
+2022-04-01 16:34:06,681 DEBUG [33277] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-04-01 16:34:06,682 DEBUG [33277] [] WordBookWordController start
+2022-04-01 16:34:06,682 DEBUG [33277] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:34:06,685 DEBUG [33277] [] WordBookWordForm: is exist
+2022-04-01 16:34:06,685 DEBUG [33277] [] WordBookWordForm: form value set 
+2022-04-01 16:34:06,686 DEBUG [33277] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-04-01 16:34:06,686 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:34:06,686 DEBUG [33277] [] indexAction start
+2022-04-01 16:34:06,686 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:34:06,687 DEBUG [33277] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:34:06,760 DEBUG [33277] [] indexAction end
+2022-04-01 16:34:06,760 DEBUG [33277] [] WordBookWordController end
+2022-04-01 16:34:06,760 DEBUG [33277] [] finally
+2022-04-01 16:34:20,837 DEBUG [34061] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:34:20,837 DEBUG [34061] [] WordBookWordController start
+2022-04-01 16:34:20,837 DEBUG [34061] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:34:20,841 DEBUG [34061] [] WordBookWordForm: is exist
+2022-04-01 16:34:20,841 DEBUG [34061] [] WordBookWordForm: form value set 
+2022-04-01 16:34:20,842 DEBUG [34061] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:34:20,842 DEBUG [34061] [] ------------------------------session_check_true
+2022-04-01 16:34:20,842 DEBUG [34061] [] vocubRegistAction start
+2022-04-01 16:34:20,844 DEBUG [34061] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:34:20,915 DEBUG [34061] [] vocubRegistAction end
+2022-04-01 16:34:20,915 DEBUG [34061] [] WordBookWordController end
+2022-04-01 16:34:20,915 DEBUG [34061] [] finally
+2022-04-01 16:34:28,690 DEBUG [34087] [] Request URI : /eccadmin_dev/WordRegist
+2022-04-01 16:34:28,691 DEBUG [34087] [] WordRegistController start
+2022-04-01 16:34:28,691 DEBUG [34087] [] controllers/WordRegistController.php: is exist
+2022-04-01 16:34:28,692 DEBUG [34087] [] WordRegistForm: is exist
+2022-04-01 16:34:28,693 DEBUG [34087] [] WordRegistForm: form value set 
+2022-04-01 16:34:28,693 DEBUG [34087] [] ------------------------------/eccadmin_dev/WordRegist
+2022-04-01 16:34:28,693 DEBUG [34087] [] ------------------------------session_check_true
+2022-04-01 16:34:28,693 DEBUG [34087] [] indexAction start
+2022-04-01 16:34:28,693 DEBUG [34087] [] admin_no is 1
+2022-04-01 16:34:28,696 DEBUG [34087] [] word_id
+2022-04-01 16:34:28,773 DEBUG [34087] [] indexAction end
+2022-04-01 16:34:28,773 DEBUG [34087] [] WordRegistController end
+2022-04-01 16:34:28,773 DEBUG [34087] [] finally
+2022-04-01 16:35:06,244 DEBUG [34097] [] Request URI : /eccadmin_dev/WordRegist/Save
+2022-04-01 16:35:06,244 DEBUG [34097] [] WordRegistController start
+2022-04-01 16:35:06,245 DEBUG [34097] [] controllers/WordRegistController.php: is exist
+2022-04-01 16:35:06,246 DEBUG [34097] [] WordRegistForm: is exist
+2022-04-01 16:35:06,247 DEBUG [34097] [] WordRegistForm: form value set 
+2022-04-01 16:35:06,247 DEBUG [34097] [] ------------------------------/eccadmin_dev/WordRegist/Save
+2022-04-01 16:35:06,247 DEBUG [34097] [] ------------------------------session_check_true
+2022-04-01 16:35:06,247 DEBUG [34097] [] SaveAction start
+2022-04-01 16:35:06,248 DEBUG [34097] [] admin_no is 1
+2022-04-01 16:35:06,250 DEBUG [34097] [] INSERT INTO  T_WORD (org_no,word_id,word_system_kbn,word,translation,word_lang_type,trans_lang_type,remarks,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:word_id,:word_system_kbn,:word,:translation,:word_lang_type,:trans_lang_type,:remarks,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 16:35:06,322 DEBUG [34097] [] SaveAction end
+2022-04-01 16:35:06,322 DEBUG [34097] [] WordRegistController end
+2022-04-01 16:35:06,323 DEBUG [34097] [] finally
+2022-04-01 16:35:09,961 DEBUG [34097] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:35:09,962 DEBUG [34097] [] WordBookListController start
+2022-04-01 16:35:09,962 DEBUG [34097] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:35:09,964 DEBUG [34097] [] WordBookListForm: is exist
+2022-04-01 16:35:09,964 DEBUG [34097] [] WordBookListForm: form value set 
+2022-04-01 16:35:09,965 DEBUG [34097] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:35:09,965 DEBUG [34097] [] indexAction start
+2022-04-01 16:35:09,965 DEBUG [34097] [] admin_no is 1
+2022-04-01 16:35:10,033 DEBUG [34097] [] indexAction end
+2022-04-01 16:35:10,033 DEBUG [34097] [] WordBookListController end
+2022-04-01 16:35:10,033 DEBUG [34097] [] finally
+2022-04-01 16:35:11,949 DEBUG [33887] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:35:11,950 DEBUG [33887] [] LoginController start
+2022-04-01 16:35:11,950 DEBUG [33887] [] controllers/LoginController.php: is exist
+2022-04-01 16:35:11,950 DEBUG [33887] [] LoginForm: is exist
+2022-04-01 16:35:11,950 DEBUG [33887] [] LoginForm: form value set 
+2022-04-01 16:35:11,951 DEBUG [33887] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:35:11,951 DEBUG [33887] [] ------------------------------login_start_check
+2022-04-01 16:35:11,951 DEBUG [33887] [] indexAction start
+2022-04-01 16:35:11,966 DEBUG [33887] [] indexAction end
+2022-04-01 16:35:11,966 DEBUG [33887] [] LoginController end
+2022-04-01 16:35:11,966 DEBUG [33887] [] finally
+2022-04-01 16:35:15,817 DEBUG [33714] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-04-01 16:35:15,817 DEBUG [33714] [] WordBookWordController start
+2022-04-01 16:35:15,817 DEBUG [33714] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:35:15,821 DEBUG [33714] [] WordBookWordForm: is exist
+2022-04-01 16:35:15,821 DEBUG [33714] [] WordBookWordForm: form value set 
+2022-04-01 16:35:15,821 DEBUG [33714] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-04-01 16:35:15,822 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:35:15,822 DEBUG [33714] [] indexAction start
+2022-04-01 16:35:15,822 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:35:15,823 DEBUG [33714] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:35:15,892 DEBUG [33714] [] indexAction end
+2022-04-01 16:35:15,892 DEBUG [33714] [] WordBookWordController end
+2022-04-01 16:35:15,892 DEBUG [33714] [] finally
+2022-04-01 16:35:17,404 DEBUG [34062] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 16:35:17,405 DEBUG [34062] [] LoginController start
+2022-04-01 16:35:17,405 DEBUG [34062] [] controllers/LoginController.php: is exist
+2022-04-01 16:35:17,405 DEBUG [34062] [] LoginForm: is exist
+2022-04-01 16:35:17,405 DEBUG [34062] [] LoginForm: form value set 
+2022-04-01 16:35:17,406 DEBUG [34062] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 16:35:17,406 DEBUG [34062] [] ------------------------------login_start_check
+2022-04-01 16:35:17,406 DEBUG [34062] [] loginAction start
+2022-04-01 16:35:17,708 DEBUG [34062] [] loginAction end
+2022-04-01 16:35:17,708 DEBUG [34062] [] LoginController end
+2022-04-01 16:35:17,708 DEBUG [34062] [] finally
+2022-04-01 16:35:17,730 DEBUG [34062] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 16:35:17,731 DEBUG [34062] [] MenuController start
+2022-04-01 16:35:17,731 DEBUG [34062] [] controllers/MenuController.php: is exist
+2022-04-01 16:35:17,733 DEBUG [34062] [] MenuForm: is exist
+2022-04-01 16:35:17,733 DEBUG [34062] [] MenuForm: form value set 
+2022-04-01 16:35:17,733 DEBUG [34062] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 16:35:17,733 DEBUG [34062] [] ------------------------------login_start_check
+2022-04-01 16:35:17,733 DEBUG [34062] [] indexAction start
+2022-04-01 16:35:17,734 DEBUG [34062] [] admin_no is 1
+2022-04-01 16:35:17,786 DEBUG [34062] [] indexAction end
+2022-04-01 16:35:17,786 DEBUG [34062] [] MenuController end
+2022-04-01 16:35:17,786 DEBUG [34062] [] finally
+2022-04-01 16:35:20,259 DEBUG [33869] [] Request URI : /eccadmin_dev/AtReportList
+2022-04-01 16:35:20,260 DEBUG [33869] [] AtReportListController start
+2022-04-01 16:35:20,260 DEBUG [33869] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:35:20,342 DEBUG [33869] [] AtReportListForm: is exist
+2022-04-01 16:35:20,349 DEBUG [33869] [] AtReportListForm: form value set 
+2022-04-01 16:35:20,350 DEBUG [33869] [] ------------------------------/eccadmin_dev/AtReportList
+2022-04-01 16:35:20,350 DEBUG [33869] [] indexAction start
+2022-04-01 16:35:20,350 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:35:20,426 DEBUG [33869] [] indexAction end
+2022-04-01 16:35:20,426 DEBUG [33869] [] AtReportListController end
+2022-04-01 16:35:20,427 DEBUG [33869] [] finally
+2022-04-01 16:35:21,299 DEBUG [34128] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:35:21,300 DEBUG [34128] [] WordBookWordController start
+2022-04-01 16:35:21,300 DEBUG [34128] [] controllers/WordBookWordController.php: is exist
+2022-04-01 16:35:21,303 DEBUG [34128] [] WordBookWordForm: is exist
+2022-04-01 16:35:21,303 DEBUG [34128] [] WordBookWordForm: form value set 
+2022-04-01 16:35:21,304 DEBUG [34128] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-04-01 16:35:21,304 DEBUG [34128] [] ------------------------------session_check_true
+2022-04-01 16:35:21,304 DEBUG [34128] [] vocubRegistAction start
+2022-04-01 16:35:21,306 DEBUG [34128] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-04-01 16:35:21,377 DEBUG [34128] [] vocubRegistAction end
+2022-04-01 16:35:21,377 DEBUG [34128] [] WordBookWordController end
+2022-04-01 16:35:21,377 DEBUG [34128] [] finally
+2022-04-01 16:35:24,730 DEBUG [34061] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:24,730 DEBUG [34061] [] AtReportRegistController start
+2022-04-01 16:35:24,730 DEBUG [34061] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:24,735 DEBUG [34061] [] AtReportRegistForm: is exist
+2022-04-01 16:35:24,759 DEBUG [34061] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:24,760 DEBUG [34061] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:24,760 DEBUG [34061] [] ------------------------------session_check_true
+2022-04-01 16:35:24,760 DEBUG [34061] [] indexAction start
+2022-04-01 16:35:24,760 DEBUG [34061] [] admin_no is 1
+2022-04-01 16:35:24,880 DEBUG [34061] [] indexAction end
+2022-04-01 16:35:24,880 DEBUG [34061] [] AtReportRegistController end
+2022-04-01 16:35:24,880 DEBUG [34061] [] finally
+2022-04-01 16:35:29,759 DEBUG [33714] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:29,760 DEBUG [33714] [] AtReportRegistController start
+2022-04-01 16:35:29,760 DEBUG [33714] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:29,765 DEBUG [33714] [] AtReportRegistForm: is exist
+2022-04-01 16:35:29,765 DEBUG [33714] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:29,765 DEBUG [33714] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:29,766 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:35:29,766 DEBUG [33714] [] backAction start
+2022-04-01 16:35:29,766 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:35:29,766 DEBUG [33714] [] backAction end
+2022-04-01 16:35:29,766 DEBUG [33714] [] AtReportRegistController end
+2022-04-01 16:35:29,766 DEBUG [33714] [] finally
+2022-04-01 16:35:29,782 DEBUG [33714] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:29,783 DEBUG [33714] [] AtReportListController start
+2022-04-01 16:35:29,783 DEBUG [33714] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:35:29,785 DEBUG [33714] [] AtReportListForm: is exist
+2022-04-01 16:35:29,786 DEBUG [33714] [] AtReportListForm: form value set 
+2022-04-01 16:35:29,786 DEBUG [33714] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:29,786 DEBUG [33714] [] SearchAction start
+2022-04-01 16:35:29,786 DEBUG [33714] [] --------back--------
+2022-04-01 16:35:29,786 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:35:29,851 DEBUG [33714] [] SearchAction end
+2022-04-01 16:35:29,851 DEBUG [33714] [] AtReportListController end
+2022-04-01 16:35:29,851 DEBUG [33714] [] finally
+2022-04-01 16:35:32,547 DEBUG [33714] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:32,548 DEBUG [33714] [] AtReportRegistController start
+2022-04-01 16:35:32,548 DEBUG [33714] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:32,553 DEBUG [33714] [] AtReportRegistForm: is exist
+2022-04-01 16:35:32,553 DEBUG [33714] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:32,554 DEBUG [33714] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:32,554 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:35:32,554 DEBUG [33714] [] indexAction start
+2022-04-01 16:35:32,554 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:35:32,635 DEBUG [33714] [] indexAction end
+2022-04-01 16:35:32,635 DEBUG [33714] [] AtReportRegistController end
+2022-04-01 16:35:32,635 DEBUG [33714] [] finally
+2022-04-01 16:35:34,401 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:34,404 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:35:34,405 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:34,410 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:35:34,410 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:34,411 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:34,411 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:35:34,411 DEBUG [34143] [] backAction start
+2022-04-01 16:35:34,411 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:34,411 DEBUG [34143] [] backAction end
+2022-04-01 16:35:34,411 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:35:34,411 DEBUG [34143] [] finally
+2022-04-01 16:35:34,429 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:34,430 DEBUG [34143] [] AtReportListController start
+2022-04-01 16:35:34,430 DEBUG [34143] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:35:34,433 DEBUG [34143] [] AtReportListForm: is exist
+2022-04-01 16:35:34,433 DEBUG [34143] [] AtReportListForm: form value set 
+2022-04-01 16:35:34,433 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:34,434 DEBUG [34143] [] SearchAction start
+2022-04-01 16:35:34,434 DEBUG [34143] [] --------back--------
+2022-04-01 16:35:34,434 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:34,500 DEBUG [34143] [] SearchAction end
+2022-04-01 16:35:34,500 DEBUG [34143] [] AtReportListController end
+2022-04-01 16:35:34,500 DEBUG [34143] [] finally
+2022-04-01 16:35:35,713 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:35,714 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:35:35,714 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:35,719 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:35:35,719 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:35,719 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:35,720 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:35:35,720 DEBUG [34143] [] indexAction start
+2022-04-01 16:35:35,720 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:35,803 DEBUG [34143] [] indexAction end
+2022-04-01 16:35:35,803 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:35:35,803 DEBUG [34143] [] finally
+2022-04-01 16:35:36,642 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:35:36,643 DEBUG [33887] [] WordBookRegistController start
+2022-04-01 16:35:36,643 DEBUG [33887] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:35:36,647 DEBUG [33887] [] WordBookRegistForm: is exist
+2022-04-01 16:35:36,647 DEBUG [33887] [] WordBookRegistForm: form value set 
+2022-04-01 16:35:36,648 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:35:36,648 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:35:36,648 DEBUG [33887] [] indexAction start
+2022-04-01 16:35:36,648 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:35:36,733 DEBUG [33887] [] indexAction end
+2022-04-01 16:35:36,733 DEBUG [33887] [] WordBookRegistController end
+2022-04-01 16:35:36,733 DEBUG [33887] [] finally
+2022-04-01 16:35:39,052 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:39,053 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:35:39,053 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:39,058 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:35:39,058 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:39,059 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:39,059 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:35:39,059 DEBUG [34143] [] backAction start
+2022-04-01 16:35:39,059 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:39,059 DEBUG [34143] [] backAction end
+2022-04-01 16:35:39,059 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:35:39,059 DEBUG [34143] [] finally
+2022-04-01 16:35:39,075 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:39,076 DEBUG [34143] [] AtReportListController start
+2022-04-01 16:35:39,076 DEBUG [34143] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:35:39,078 DEBUG [34143] [] AtReportListForm: is exist
+2022-04-01 16:35:39,079 DEBUG [34143] [] AtReportListForm: form value set 
+2022-04-01 16:35:39,079 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:39,079 DEBUG [34143] [] SearchAction start
+2022-04-01 16:35:39,079 DEBUG [34143] [] --------back--------
+2022-04-01 16:35:39,080 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:39,145 DEBUG [34143] [] SearchAction end
+2022-04-01 16:35:39,145 DEBUG [34143] [] AtReportListController end
+2022-04-01 16:35:39,145 DEBUG [34143] [] finally
+2022-04-01 16:35:39,467 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookRegist
+2022-04-01 16:35:39,467 DEBUG [33887] [] WordBookRegistController start
+2022-04-01 16:35:39,467 DEBUG [33887] [] controllers/WordBookRegistController.php: is exist
+2022-04-01 16:35:39,471 DEBUG [33887] [] WordBookRegistForm: is exist
+2022-04-01 16:35:39,472 DEBUG [33887] [] WordBookRegistForm: form value set 
+2022-04-01 16:35:39,472 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookRegist
+2022-04-01 16:35:39,472 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:35:39,472 DEBUG [33887] [] indexAction start
+2022-04-01 16:35:39,473 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:35:39,555 DEBUG [33887] [] indexAction end
+2022-04-01 16:35:39,555 DEBUG [33887] [] WordBookRegistController end
+2022-04-01 16:35:39,556 DEBUG [33887] [] finally
+2022-04-01 16:35:40,385 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:40,386 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:35:40,386 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:40,390 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:35:40,391 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:40,391 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:40,391 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:35:40,392 DEBUG [34143] [] indexAction start
+2022-04-01 16:35:40,392 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:35:40,474 DEBUG [34143] [] indexAction end
+2022-04-01 16:35:40,474 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:35:40,474 DEBUG [34143] [] finally
+2022-04-01 16:35:43,311 DEBUG [33887] [] Request URI : /eccadmin_dev/WordBookList
+2022-04-01 16:35:43,312 DEBUG [33887] [] WordBookListController start
+2022-04-01 16:35:43,312 DEBUG [33887] [] controllers/WordBookListController.php: is exist
+2022-04-01 16:35:43,314 DEBUG [33887] [] WordBookListForm: is exist
+2022-04-01 16:35:43,314 DEBUG [33887] [] WordBookListForm: form value set 
+2022-04-01 16:35:43,315 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordBookList
+2022-04-01 16:35:43,315 DEBUG [33887] [] indexAction start
+2022-04-01 16:35:43,315 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:35:43,385 DEBUG [33887] [] indexAction end
+2022-04-01 16:35:43,385 DEBUG [33887] [] WordBookListController end
+2022-04-01 16:35:43,386 DEBUG [33887] [] finally
+2022-04-01 16:35:46,359 DEBUG [33887] [] Request URI : /eccadmin_dev/WordList
+2022-04-01 16:35:46,360 DEBUG [33887] [] WordListController start
+2022-04-01 16:35:46,360 DEBUG [33887] [] controllers/WordListController.php: is exist
+2022-04-01 16:35:46,362 DEBUG [33887] [] WordListForm: is exist
+2022-04-01 16:35:46,362 DEBUG [33887] [] WordListForm: form value set 
+2022-04-01 16:35:46,363 DEBUG [33887] [] ------------------------------/eccadmin_dev/WordList
+2022-04-01 16:35:46,363 DEBUG [33887] [] indexAction start
+2022-04-01 16:35:46,363 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:35:46,429 DEBUG [33887] [] indexAction end
+2022-04-01 16:35:46,430 DEBUG [33887] [] WordListController end
+2022-04-01 16:35:46,430 DEBUG [33887] [] finally
+2022-04-01 16:35:51,726 DEBUG [33277] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:51,727 DEBUG [33277] [] AtReportRegistController start
+2022-04-01 16:35:51,727 DEBUG [33277] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:51,731 DEBUG [33277] [] AtReportRegistForm: is exist
+2022-04-01 16:35:51,732 DEBUG [33277] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:51,732 DEBUG [33277] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:35:51,732 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:35:51,732 DEBUG [33277] [] backAction start
+2022-04-01 16:35:51,733 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:35:51,733 DEBUG [33277] [] backAction end
+2022-04-01 16:35:51,733 DEBUG [33277] [] AtReportRegistController end
+2022-04-01 16:35:51,733 DEBUG [33277] [] finally
+2022-04-01 16:35:51,749 DEBUG [33277] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:51,749 DEBUG [33277] [] AtReportListController start
+2022-04-01 16:35:51,749 DEBUG [33277] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:35:51,752 DEBUG [33277] [] AtReportListForm: is exist
+2022-04-01 16:35:51,752 DEBUG [33277] [] AtReportListForm: form value set 
+2022-04-01 16:35:51,753 DEBUG [33277] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:35:51,753 DEBUG [33277] [] SearchAction start
+2022-04-01 16:35:51,753 DEBUG [33277] [] --------back--------
+2022-04-01 16:35:51,753 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:35:51,816 DEBUG [33277] [] SearchAction end
+2022-04-01 16:35:51,816 DEBUG [33277] [] AtReportListController end
+2022-04-01 16:35:51,816 DEBUG [33277] [] finally
+2022-04-01 16:35:57,359 DEBUG [34149] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:57,363 DEBUG [34149] [] AtReportRegistController start
+2022-04-01 16:35:57,363 DEBUG [34149] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:35:57,368 DEBUG [34149] [] AtReportRegistForm: is exist
+2022-04-01 16:35:57,368 DEBUG [34149] [] AtReportRegistForm: form value set 
+2022-04-01 16:35:57,369 DEBUG [34149] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:35:57,369 DEBUG [34149] [] ------------------------------session_check_true
+2022-04-01 16:35:57,369 DEBUG [34149] [] indexAction start
+2022-04-01 16:35:57,369 DEBUG [34149] [] admin_no is 1
+2022-04-01 16:35:57,447 DEBUG [34149] [] indexAction end
+2022-04-01 16:35:57,447 DEBUG [34149] [] AtReportRegistController end
+2022-04-01 16:35:57,447 DEBUG [34149] [] finally
+2022-04-01 16:36:04,103 DEBUG [33714] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:36:04,103 DEBUG [33714] [] AtReportRegistController start
+2022-04-01 16:36:04,103 DEBUG [33714] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:36:04,108 DEBUG [33714] [] AtReportRegistForm: is exist
+2022-04-01 16:36:04,108 DEBUG [33714] [] AtReportRegistForm: form value set 
+2022-04-01 16:36:04,109 DEBUG [33714] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:36:04,109 DEBUG [33714] [] ------------------------------session_check_true
+2022-04-01 16:36:04,109 DEBUG [33714] [] backAction start
+2022-04-01 16:36:04,109 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:36:04,109 DEBUG [33714] [] backAction end
+2022-04-01 16:36:04,109 DEBUG [33714] [] AtReportRegistController end
+2022-04-01 16:36:04,109 DEBUG [33714] [] finally
+2022-04-01 16:36:04,125 DEBUG [33714] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:36:04,126 DEBUG [33714] [] AtReportListController start
+2022-04-01 16:36:04,126 DEBUG [33714] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:36:04,128 DEBUG [33714] [] AtReportListForm: is exist
+2022-04-01 16:36:04,129 DEBUG [33714] [] AtReportListForm: form value set 
+2022-04-01 16:36:04,129 DEBUG [33714] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:36:04,129 DEBUG [33714] [] SearchAction start
+2022-04-01 16:36:04,130 DEBUG [33714] [] --------back--------
+2022-04-01 16:36:04,130 DEBUG [33714] [] admin_no is 1
+2022-04-01 16:36:04,194 DEBUG [33714] [] SearchAction end
+2022-04-01 16:36:04,194 DEBUG [33714] [] AtReportListController end
+2022-04-01 16:36:04,194 DEBUG [33714] [] finally
+2022-04-01 16:36:15,086 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 16:36:15,086 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:36:15,086 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:36:15,091 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:36:15,091 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:36:15,092 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 16:36:15,092 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:36:15,092 DEBUG [34143] [] indexAction start
+2022-04-01 16:36:15,092 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:36:15,171 DEBUG [34143] [] indexAction end
+2022-04-01 16:36:15,171 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:36:15,171 DEBUG [34143] [] finally
+2022-04-01 16:36:16,936 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-01 16:36:16,936 DEBUG [34143] [] AtReportRegistController start
+2022-04-01 16:36:16,936 DEBUG [34143] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 16:36:16,941 DEBUG [34143] [] AtReportRegistForm: is exist
+2022-04-01 16:36:16,942 DEBUG [34143] [] AtReportRegistForm: form value set 
+2022-04-01 16:36:16,942 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-01 16:36:16,942 DEBUG [34143] [] ------------------------------session_check_true
+2022-04-01 16:36:16,942 DEBUG [34143] [] backAction start
+2022-04-01 16:36:16,943 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:36:16,943 DEBUG [34143] [] backAction end
+2022-04-01 16:36:16,943 DEBUG [34143] [] AtReportRegistController end
+2022-04-01 16:36:16,943 DEBUG [34143] [] finally
+2022-04-01 16:36:16,959 DEBUG [34143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 16:36:16,959 DEBUG [34143] [] AtReportListController start
+2022-04-01 16:36:16,959 DEBUG [34143] [] controllers/AtReportListController.php: is exist
+2022-04-01 16:36:16,962 DEBUG [34143] [] AtReportListForm: is exist
+2022-04-01 16:36:16,962 DEBUG [34143] [] AtReportListForm: form value set 
+2022-04-01 16:36:16,963 DEBUG [34143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 16:36:16,963 DEBUG [34143] [] SearchAction start
+2022-04-01 16:36:16,963 DEBUG [34143] [] --------back--------
+2022-04-01 16:36:16,963 DEBUG [34143] [] admin_no is 1
+2022-04-01 16:36:17,028 DEBUG [34143] [] SearchAction end
+2022-04-01 16:36:17,029 DEBUG [34143] [] AtReportListController end
+2022-04-01 16:36:17,029 DEBUG [34143] [] finally
+2022-04-01 16:36:32,023 DEBUG [34046] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:36:32,023 DEBUG [34046] [] CourseContractListController start
+2022-04-01 16:36:32,024 DEBUG [34046] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:36:32,028 DEBUG [34046] [] CourseContractListForm: is exist
+2022-04-01 16:36:32,029 DEBUG [34046] [] CourseContractListForm: form value set 
+2022-04-01 16:36:32,029 DEBUG [34046] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:36:32,029 DEBUG [34046] [] indexAction start
+2022-04-01 16:36:32,030 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:36:32,141 DEBUG [34046] [] indexAction end
+2022-04-01 16:36:32,141 DEBUG [34046] [] CourseContractListController end
+2022-04-01 16:36:32,141 DEBUG [34046] [] finally
+2022-04-01 16:36:40,553 DEBUG [33277] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:36:40,554 DEBUG [33277] [] CourseContractListController start
+2022-04-01 16:36:40,554 DEBUG [33277] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:36:40,559 DEBUG [33277] [] CourseContractListForm: is exist
+2022-04-01 16:36:40,559 DEBUG [33277] [] CourseContractListForm: form value set 
+2022-04-01 16:36:40,560 DEBUG [33277] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:36:40,560 DEBUG [33277] [] indexAction start
+2022-04-01 16:36:40,560 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:36:40,672 DEBUG [33277] [] indexAction end
+2022-04-01 16:36:40,672 DEBUG [33277] [] CourseContractListController end
+2022-04-01 16:36:40,672 DEBUG [33277] [] finally
+2022-04-01 16:36:43,185 DEBUG [33277] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:36:43,186 DEBUG [33277] [] CourseContractRegistController start
+2022-04-01 16:36:43,186 DEBUG [33277] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:36:43,188 DEBUG [33277] [] CourseContractRegistForm: is exist
+2022-04-01 16:36:43,189 DEBUG [33277] [] CourseContractRegistForm: form value set 
+2022-04-01 16:36:43,189 DEBUG [33277] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:36:43,189 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:36:43,189 DEBUG [33277] [] indexAction start
+2022-04-01 16:36:43,190 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:36:43,259 DEBUG [33277] [] indexAction end
+2022-04-01 16:36:43,259 DEBUG [33277] [] CourseContractRegistController end
+2022-04-01 16:36:43,259 DEBUG [33277] [] finally
+2022-04-01 16:37:49,221 DEBUG [33277] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:37:49,221 DEBUG [33277] [] CourseContractRegistController start
+2022-04-01 16:37:49,221 DEBUG [33277] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:37:49,224 DEBUG [33277] [] CourseContractRegistForm: is exist
+2022-04-01 16:37:49,224 DEBUG [33277] [] CourseContractRegistForm: form value set 
+2022-04-01 16:37:49,225 DEBUG [33277] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:37:49,225 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:37:49,225 DEBUG [33277] [] orgShowAction start
+2022-04-01 16:37:49,225 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:37:49,302 DEBUG [33277] [] orgShowAction end
+2022-04-01 16:37:49,302 DEBUG [33277] [] CourseContractRegistController end
+2022-04-01 16:37:49,302 DEBUG [33277] [] finally
+2022-04-01 16:38:23,530 DEBUG [33887] [] Request URI : /eccadmin_dev/CourseStatusList
+2022-04-01 16:38:23,530 DEBUG [33887] [] CourseStatusListController start
+2022-04-01 16:38:23,531 DEBUG [33887] [] controllers/CourseStatusListController.php: is exist
+2022-04-01 16:38:23,532 DEBUG [33887] [] CourseStatusListForm: is exist
+2022-04-01 16:38:23,532 DEBUG [33887] [] CourseStatusListForm: form value set 
+2022-04-01 16:38:23,533 DEBUG [33887] [] ------------------------------/eccadmin_dev/CourseStatusList
+2022-04-01 16:38:23,533 DEBUG [33887] [] indexAction start
+2022-04-01 16:38:23,533 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:38:23,635 DEBUG [33887] [] indexAction end
+2022-04-01 16:38:23,635 DEBUG [33887] [] CourseStatusListController end
+2022-04-01 16:38:23,635 DEBUG [33887] [] finally
+2022-04-01 16:38:30,021 DEBUG [34149] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2022-04-01 16:38:30,021 DEBUG [34149] [] CourseContractConfirmListController start
+2022-04-01 16:38:30,021 DEBUG [34149] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 16:38:30,025 DEBUG [34149] [] CourseContractConfirmListForm: is exist
+2022-04-01 16:38:30,025 DEBUG [34149] [] CourseContractConfirmListForm: form value set 
+2022-04-01 16:38:30,026 DEBUG [34149] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2022-04-01 16:38:30,026 DEBUG [34149] [] indexAction start
+2022-04-01 16:38:30,026 DEBUG [34149] [] admin_no is 1
+2022-04-01 16:38:30,122 DEBUG [34149] [] indexAction end
+2022-04-01 16:38:30,122 DEBUG [34149] [] CourseContractConfirmListController end
+2022-04-01 16:38:30,122 DEBUG [34149] [] finally
+2022-04-01 16:38:33,214 DEBUG [34149] [] Request URI : /eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 16:38:33,215 DEBUG [34149] [] CourseContractConfirmListController start
+2022-04-01 16:38:33,215 DEBUG [34149] [] controllers/CourseContractConfirmListController.php: is exist
+2022-04-01 16:38:33,218 DEBUG [34149] [] CourseContractConfirmListForm: is exist
+2022-04-01 16:38:33,218 DEBUG [34149] [] CourseContractConfirmListForm: form value set 
+2022-04-01 16:38:33,219 DEBUG [34149] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 16:38:33,219 DEBUG [34149] [] ------------------------------/eccadmin_dev/CourseContractConfirmList/csvWoc
+2022-04-01 16:38:33,219 DEBUG [34149] [] csvWocAction start
+2022-04-01 16:38:33,219 DEBUG [34149] [] admin_no is 1
+2022-04-01 16:38:33,222 DEBUG [34149] [] CourseContractConfirmList　Query
+2022-04-01 16:38:33,222 DEBUG [34149] []  SELECT   o.org_no    ,o.org_id  ,o.org_name  ,o.org_name_official  ,c.course_id  ,c.course_name  ,date_format(co.start_period,'%Y/%m/%d') AS  co_start_period ,date_format(co.end_period,'%Y/%m/%d') AS  co_end_period ,co.remarks  ,co.offer_no  ,d.course_detail_no  ,d.course_detail_name  ,s.student_no  ,s.student_name  ,s.login_id  ,date_format(cds.start_period,'%Y/%m/%d') AS cds_start_period  ,date_format(cds.end_period,'%Y/%m/%d') AS cds_end_period  ,date_format(answer.answer_dt,'%Y/%m/%d') AS a_answer_dt  ,date_format(r.update_dt,'%Y/%m/%d') AS u_update_dt  ,teacher.display_name AS display_name  ,teacher.login_id AS teacher_code ,teacher.name AS teacher_name ,teacher.school_kbn AS teacher_school   ,CONCAT(if (student_mark.result_marks IS NULL,'-', student_mark.result_marks ),'/',total_mark.marks) AS result  FROM M_ORGANIZATION o  INNER JOIN T_COURSE_ORG as co  ON co.org_no = o.org_no  AND co.del_flg = '0'  AND o.del_flg = '0'  INNER JOIN T_COURSE as c  ON c.course_id = co.course_id  AND c.del_flg = '0'  INNER JOIN T_COURSE_DETAIL as cd  ON cd.course_id = c.course_id  AND cd.del_flg = '0'  INNER JOIN T_DETAIL as d  ON d.course_detail_no = cd.course_detail_no  AND c.course_level = d.course_level  AND c.test_kbn = d.test_kbn  AND d.del_flg = '0'  LEFT JOIN T_COURSE_DETAIL_STUDENT as cds  ON cds.offer_no = co.offer_no  AND cds.course_id = c.course_id  AND cds.course_detail_no = cd.course_detail_no  AND cds.del_flg = '0'  LEFT JOIN T_STUDENT as s  ON s.org_no = co.org_no  AND s.student_no = cds.student_no  AND s.del_flg = '0'  LEFT JOIN T_4SKILL_RESULT as r  ON r.offer_no = co.offer_no  AND r.course_id = c.course_id  AND r.course_detail_no = cd.course_detail_no  AND r.student_no = cds.student_no  AND r.del_flg = '0'  LEFT JOIN ( SELECT teacher_no,  del_flg, display_name, login_id, name, CASE WHEN school_kbn = '001' THEN 'Philippines'  WHEN school_kbn = '002' THEN 'Japan' ELSE NULL END AS school_kbn  FROM T_TEACHER) teacher  ON r.updater_id = teacher.teacher_no  AND teacher.del_flg = '0'  LEFT JOIN (  SELECT offer_no  	,course_id course_id  	,course_detail_no course_detail_no  	,student_no  	,MIN(answer_dt) answer_dt  	FROM T_4SKILL_ANSWER  	WHERE del_flg = '0'   	GROUP BY offer_no,course_id,course_detail_no,student_no ) answer  ON c.course_id = answer.course_id  AND cd.course_detail_no = answer.course_detail_no  AND co.offer_no = answer.offer_no  AND s.student_no = answer.student_no  LEFT JOIN (  	SELECT a.offer_no ,a.student_no,a.course_id,a.course_detail_no,SUM(a.marks) as result_marks  	FROM (  		SELECT skill_answer.offer_no  		,skill_answer.student_no  		,skill_answer.course_id  		,skill_answer.course_detail_no  		,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no  		,skill_result_detail.rule_detail_no  		,mark_detail.marks  		FROM T_4SKILL_ANSWER skill_answer  		LEFT JOIN T_4SKILL_RESULT skill_result  		ON skill_answer.offer_no = skill_result.offer_no  		AND skill_answer.student_no = skill_result.student_no  		AND skill_answer.course_id = skill_result.course_id  		AND skill_answer.course_detail_no = skill_result.course_detail_no  		INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail  		ON skill_result.result_no = skill_result_detail.result_no  		INNER JOIN M_MARK_DETAIL mark_detail  		ON skill_result_detail.rule_no = mark_detail.rule_no  		AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no  		AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no  		AND skill_answer.del_flg = '0'  		AND skill_result.del_flg = '0'  		GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id,mark_detail.marks  		,skill_answer.course_detail_no ,skill_result_detail.rule_no  		,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no  	) as a  	GROUP BY a.offer_no  ,a.student_no  ,a.course_id  ,a.course_detail_no  ) as student_mark  ON s.student_no = student_mark.student_no  AND co.offer_no = student_mark.offer_no  AND co.course_id = student_mark.course_id  AND cd.course_detail_no = student_mark.course_detail_no  LEFT JOIN  (  	SELECT mark_rule.course_level  	, mark_rule.test_kbn  	, course.course_id  	, course_detail.course_detail_no  	, SUM(mark_detail.max_marks) marks  	FROM T_COURSE course  	INNER JOIN T_COURSE_DETAIL course_detail  	ON course.course_id = course_detail.course_id  	AND course.del_flg = '0'  	AND course_detail.del_flg = '0'  	INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa  	ON course_detail.course_detail_no = course_detail_qa.course_detail_no  	AND course_detail_qa.del_flg = '0'  	INNER JOIN T_QUESTION ques  	ON course_detail_qa.question_no = ques.question_no  	AND ques.del_flg = '0'  	INNER JOIN  M_MARK_RULE mark_rule  	ON ques.score_pattern = mark_rule.score_pattern  	AND course.course_level = mark_rule.course_level  	AND course.test_kbn = mark_rule.test_kbn  	INNER JOIN  (  		SELECT  rule_no  			,SUM(max_marks) AS max_marks  			FROM (  				SELECT rule_no  				,sub_rule_no  				,MAX(marks) AS max_marks  				FROM M_MARK_DETAIL  				WHERE del_flg = '0'  				GROUP BY rule_no,sub_rule_no) AS max  			GROUP BY rule_no  		) mark_detail  	ON mark_rule.rule_no = mark_detail.rule_no  	GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no  ) as total_mark  ON c.course_id = total_mark.course_id  AND cd.course_detail_no = total_mark.course_detail_no  AND c.course_level =  total_mark.course_level  AND c.test_kbn =  total_mark.test_kbn  WHERE  '1' = '1'  AND co.end_period >= :start_period  AND co.start_period <= :end_period  GROUP BY o.org_no,o.org_id,o.org_name,o.org_name_official,c.course_id,c.course_name,co_start_period,co_end_period,co.remarks,co.offer_no, d.course_detail_no, d.course_detail_name,s.student_no,s.student_name,s.login_id,cds_start_period,cds_end_period,a_answer_dt,u_update_dt,display_name,teacher.login_id,teacher_name,teacher.school_kbn ORDER BY o.org_no,co.offer_no, c.course_id, cd.disp_no, cds.course_detail_no,s.login_id
+2022-04-01 16:38:33,354 DEBUG [34149] [] csvWocAction end
+2022-04-01 16:38:33,354 DEBUG [34149] [] CourseContractConfirmListController end
+2022-04-01 16:38:33,354 DEBUG [34149] [] finally
+2022-04-01 16:38:41,339 DEBUG [33869] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:38:41,340 DEBUG [33869] [] CourseContractListController start
+2022-04-01 16:38:41,340 DEBUG [33869] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:38:41,344 DEBUG [33869] [] CourseContractListForm: is exist
+2022-04-01 16:38:41,345 DEBUG [33869] [] CourseContractListForm: form value set 
+2022-04-01 16:38:41,345 DEBUG [33869] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:38:41,345 DEBUG [33869] [] indexAction start
+2022-04-01 16:38:41,346 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:38:41,455 DEBUG [33869] [] indexAction end
+2022-04-01 16:38:41,455 DEBUG [33869] [] CourseContractListController end
+2022-04-01 16:38:41,455 DEBUG [33869] [] finally
+2022-04-01 16:38:44,595 DEBUG [33869] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:38:44,596 DEBUG [33869] [] CourseContractRegistController start
+2022-04-01 16:38:44,596 DEBUG [33869] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:38:44,598 DEBUG [33869] [] CourseContractRegistForm: is exist
+2022-04-01 16:38:44,599 DEBUG [33869] [] CourseContractRegistForm: form value set 
+2022-04-01 16:38:44,599 DEBUG [33869] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:38:44,599 DEBUG [33869] [] ------------------------------session_check_true
+2022-04-01 16:38:44,600 DEBUG [33869] [] indexAction start
+2022-04-01 16:38:44,600 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:38:44,673 DEBUG [33869] [] indexAction end
+2022-04-01 16:38:44,673 DEBUG [33869] [] CourseContractRegistController end
+2022-04-01 16:38:44,673 DEBUG [33869] [] finally
+2022-04-01 16:39:36,134 DEBUG [33887] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:39:36,135 DEBUG [33887] [] CourseContractListController start
+2022-04-01 16:39:36,135 DEBUG [33887] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:39:36,140 DEBUG [33887] [] CourseContractListForm: is exist
+2022-04-01 16:39:36,140 DEBUG [33887] [] CourseContractListForm: form value set 
+2022-04-01 16:39:36,140 DEBUG [33887] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:39:36,141 DEBUG [33887] [] indexAction start
+2022-04-01 16:39:36,141 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:39:36,252 DEBUG [33887] [] indexAction end
+2022-04-01 16:39:36,252 DEBUG [33887] [] CourseContractListController end
+2022-04-01 16:39:36,252 DEBUG [33887] [] finally
+2022-04-01 16:39:39,096 DEBUG [33887] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:39:39,097 DEBUG [33887] [] CourseContractRegistController start
+2022-04-01 16:39:39,097 DEBUG [33887] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:39:39,100 DEBUG [33887] [] CourseContractRegistForm: is exist
+2022-04-01 16:39:39,100 DEBUG [33887] [] CourseContractRegistForm: form value set 
+2022-04-01 16:39:39,101 DEBUG [33887] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-04-01 16:39:39,101 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:39:39,101 DEBUG [33887] [] indexAction start
+2022-04-01 16:39:39,101 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:39:39,173 DEBUG [33887] [] indexAction end
+2022-04-01 16:39:39,173 DEBUG [33887] [] CourseContractRegistController end
+2022-04-01 16:39:39,174 DEBUG [33887] [] finally
+2022-04-01 16:39:44,040 DEBUG [33887] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:39:44,040 DEBUG [33887] [] CourseContractRegistController start
+2022-04-01 16:39:44,041 DEBUG [33887] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:39:44,043 DEBUG [33887] [] CourseContractRegistForm: is exist
+2022-04-01 16:39:44,044 DEBUG [33887] [] CourseContractRegistForm: form value set 
+2022-04-01 16:39:44,044 DEBUG [33887] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:39:44,044 DEBUG [33887] [] ------------------------------session_check_true
+2022-04-01 16:39:44,044 DEBUG [33887] [] courseShowAction start
+2022-04-01 16:39:44,045 DEBUG [33887] [] admin_no is 1
+2022-04-01 16:39:44,118 DEBUG [33887] [] courseShowAction end
+2022-04-01 16:39:44,118 DEBUG [33887] [] CourseContractRegistController end
+2022-04-01 16:39:44,118 DEBUG [33887] [] finally
+2022-04-01 16:40:41,676 DEBUG [33869] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:40:41,677 DEBUG [33869] [] CourseContractRegistController start
+2022-04-01 16:40:41,677 DEBUG [33869] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:40:41,680 DEBUG [33869] [] CourseContractRegistForm: is exist
+2022-04-01 16:40:41,680 DEBUG [33869] [] CourseContractRegistForm: form value set 
+2022-04-01 16:40:41,681 DEBUG [33869] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:40:41,681 DEBUG [33869] [] ------------------------------session_check_true
+2022-04-01 16:40:41,681 DEBUG [33869] [] courseShowAction start
+2022-04-01 16:40:41,681 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:40:41,757 DEBUG [33869] [] courseShowAction end
+2022-04-01 16:40:41,757 DEBUG [33869] [] CourseContractRegistController end
+2022-04-01 16:40:41,757 DEBUG [33869] [] finally
+2022-04-01 16:40:47,228 DEBUG [34046] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:40:47,228 DEBUG [34046] [] CourseContractRegistController start
+2022-04-01 16:40:47,229 DEBUG [34046] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:40:47,231 DEBUG [34046] [] CourseContractRegistForm: is exist
+2022-04-01 16:40:47,232 DEBUG [34046] [] CourseContractRegistForm: form value set 
+2022-04-01 16:40:47,232 DEBUG [34046] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:40:47,232 DEBUG [34046] [] ------------------------------session_check_true
+2022-04-01 16:40:47,232 DEBUG [34046] [] courseShowAction start
+2022-04-01 16:40:47,233 DEBUG [34046] [] admin_no is 1
+2022-04-01 16:40:47,304 DEBUG [34046] [] courseShowAction end
+2022-04-01 16:40:47,304 DEBUG [34046] [] CourseContractRegistController end
+2022-04-01 16:40:47,304 DEBUG [34046] [] finally
+2022-04-01 16:41:13,143 DEBUG [34269] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:41:13,147 DEBUG [34269] [] CourseContractRegistController start
+2022-04-01 16:41:13,147 DEBUG [34269] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:41:13,150 DEBUG [34269] [] CourseContractRegistForm: is exist
+2022-04-01 16:41:13,151 DEBUG [34269] [] CourseContractRegistForm: form value set 
+2022-04-01 16:41:13,151 DEBUG [34269] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:41:13,151 DEBUG [34269] [] ------------------------------session_check_true
+2022-04-01 16:41:13,151 DEBUG [34269] [] courseShowAction start
+2022-04-01 16:41:13,152 DEBUG [34269] [] admin_no is 1
+2022-04-01 16:41:13,224 DEBUG [34269] [] courseShowAction end
+2022-04-01 16:41:13,225 DEBUG [34269] [] CourseContractRegistController end
+2022-04-01 16:41:13,225 DEBUG [34269] [] finally
+2022-04-01 16:41:19,801 DEBUG [34270] [] Request URI : /eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:41:19,805 DEBUG [34270] [] CourseContractRegistController start
+2022-04-01 16:41:19,805 DEBUG [34270] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:41:19,809 DEBUG [34270] [] CourseContractRegistForm: is exist
+2022-04-01 16:41:19,809 DEBUG [34270] [] CourseContractRegistForm: form value set 
+2022-04-01 16:41:19,810 DEBUG [34270] [] ------------------------------/eccadmin_dev/CourseContractRegist/courseShow
+2022-04-01 16:41:19,810 DEBUG [34270] [] ------------------------------session_check_true
+2022-04-01 16:41:19,810 DEBUG [34270] [] courseShowAction start
+2022-04-01 16:41:19,810 DEBUG [34270] [] admin_no is 1
+2022-04-01 16:41:19,883 DEBUG [34270] [] courseShowAction end
+2022-04-01 16:41:19,883 DEBUG [34270] [] CourseContractRegistController end
+2022-04-01 16:41:19,884 DEBUG [34270] [] finally
+2022-04-01 16:41:29,711 DEBUG [33277] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:29,712 DEBUG [33277] [] CourseContractRegistController start
+2022-04-01 16:41:29,712 DEBUG [33277] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:41:29,715 DEBUG [33277] [] CourseContractRegistForm: is exist
+2022-04-01 16:41:29,715 DEBUG [33277] [] CourseContractRegistForm: form value set 
+2022-04-01 16:41:29,716 DEBUG [33277] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:29,716 DEBUG [33277] [] ------------------------------session_check_true
+2022-04-01 16:41:29,716 DEBUG [33277] [] orgShowAction start
+2022-04-01 16:41:29,716 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:41:29,785 DEBUG [33277] [] orgShowAction end
+2022-04-01 16:41:29,785 DEBUG [33277] [] CourseContractRegistController end
+2022-04-01 16:41:29,785 DEBUG [33277] [] finally
+2022-04-01 16:41:41,832 DEBUG [34266] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:41,833 DEBUG [34266] [] CourseContractRegistController start
+2022-04-01 16:41:41,833 DEBUG [34266] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:41:41,836 DEBUG [34266] [] CourseContractRegistForm: is exist
+2022-04-01 16:41:41,836 DEBUG [34266] [] CourseContractRegistForm: form value set 
+2022-04-01 16:41:41,837 DEBUG [34266] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:41,837 DEBUG [34266] [] ------------------------------session_check_true
+2022-04-01 16:41:41,837 DEBUG [34266] [] orgShowAction start
+2022-04-01 16:41:41,837 DEBUG [34266] [] admin_no is 1
+2022-04-01 16:41:41,915 DEBUG [34266] [] orgShowAction end
+2022-04-01 16:41:41,915 DEBUG [34266] [] CourseContractRegistController end
+2022-04-01 16:41:41,916 DEBUG [34266] [] finally
+2022-04-01 16:41:48,847 DEBUG [34300] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:48,851 DEBUG [34300] [] CourseContractRegistController start
+2022-04-01 16:41:48,851 DEBUG [34300] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:41:48,854 DEBUG [34300] [] CourseContractRegistForm: is exist
+2022-04-01 16:41:48,854 DEBUG [34300] [] CourseContractRegistForm: form value set 
+2022-04-01 16:41:48,855 DEBUG [34300] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:41:48,855 DEBUG [34300] [] ------------------------------session_check_true
+2022-04-01 16:41:48,855 DEBUG [34300] [] orgShowAction start
+2022-04-01 16:41:48,856 DEBUG [34300] [] admin_no is 1
+2022-04-01 16:41:48,933 DEBUG [34300] [] orgShowAction end
+2022-04-01 16:41:48,933 DEBUG [34300] [] CourseContractRegistController end
+2022-04-01 16:41:48,934 DEBUG [34300] [] finally
+2022-04-01 16:42:00,459 DEBUG [34306] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:00,463 DEBUG [34306] [] CourseContractRegistController start
+2022-04-01 16:42:00,463 DEBUG [34306] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:42:00,466 DEBUG [34306] [] CourseContractRegistForm: is exist
+2022-04-01 16:42:00,467 DEBUG [34306] [] CourseContractRegistForm: form value set 
+2022-04-01 16:42:00,467 DEBUG [34306] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:00,467 DEBUG [34306] [] ------------------------------session_check_true
+2022-04-01 16:42:00,468 DEBUG [34306] [] orgShowAction start
+2022-04-01 16:42:00,468 DEBUG [34306] [] admin_no is 1
+2022-04-01 16:42:00,541 DEBUG [34306] [] orgShowAction end
+2022-04-01 16:42:00,541 DEBUG [34306] [] CourseContractRegistController end
+2022-04-01 16:42:00,541 DEBUG [34306] [] finally
+2022-04-01 16:42:18,993 DEBUG [34270] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:18,994 DEBUG [34270] [] CourseContractRegistController start
+2022-04-01 16:42:18,994 DEBUG [34270] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:42:18,996 DEBUG [34270] [] CourseContractRegistForm: is exist
+2022-04-01 16:42:18,997 DEBUG [34270] [] CourseContractRegistForm: form value set 
+2022-04-01 16:42:18,997 DEBUG [34270] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:18,997 DEBUG [34270] [] ------------------------------session_check_true
+2022-04-01 16:42:18,998 DEBUG [34270] [] orgShowAction start
+2022-04-01 16:42:18,998 DEBUG [34270] [] admin_no is 1
+2022-04-01 16:42:19,069 DEBUG [34270] [] orgShowAction end
+2022-04-01 16:42:19,069 DEBUG [34270] [] CourseContractRegistController end
+2022-04-01 16:42:19,069 DEBUG [34270] [] finally
+2022-04-01 16:42:27,845 DEBUG [34313] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:27,849 DEBUG [34313] [] CourseContractRegistController start
+2022-04-01 16:42:27,849 DEBUG [34313] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:42:27,853 DEBUG [34313] [] CourseContractRegistForm: is exist
+2022-04-01 16:42:27,853 DEBUG [34313] [] CourseContractRegistForm: form value set 
+2022-04-01 16:42:27,854 DEBUG [34313] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2022-04-01 16:42:27,854 DEBUG [34313] [] ------------------------------session_check_true
+2022-04-01 16:42:27,854 DEBUG [34313] [] orgShowAction start
+2022-04-01 16:42:27,854 DEBUG [34313] [] admin_no is 1
+2022-04-01 16:42:27,930 DEBUG [34313] [] orgShowAction end
+2022-04-01 16:42:27,930 DEBUG [34313] [] CourseContractRegistController end
+2022-04-01 16:42:27,930 DEBUG [34313] [] finally
+2022-04-01 16:47:06,746 DEBUG [34313] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2022-04-01 16:47:06,747 DEBUG [34313] [] CourseContractRegistController start
+2022-04-01 16:47:06,747 DEBUG [34313] [] controllers/CourseContractRegistController.php: is exist
+2022-04-01 16:47:06,749 DEBUG [34313] [] CourseContractRegistForm: is exist
+2022-04-01 16:47:06,750 DEBUG [34313] [] CourseContractRegistForm: form value set 
+2022-04-01 16:47:06,750 DEBUG [34313] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2022-04-01 16:47:06,750 DEBUG [34313] [] ------------------------------session_check_true
+2022-04-01 16:47:06,750 DEBUG [34313] [] saveAction start
+2022-04-01 16:47:06,751 DEBUG [34313] [] admin_no is 1
+2022-04-01 16:47:06,754 DEBUG [34313] [] offer_no
+2022-04-01 16:47:06,758 DEBUG [34313] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-04-01 16:47:06,830 DEBUG [34313] [] saveAction end
+2022-04-01 16:47:06,830 DEBUG [34313] [] CourseContractRegistController end
+2022-04-01 16:47:06,830 DEBUG [34313] [] finally
+2022-04-01 16:49:01,207 DEBUG [34313] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:49:01,208 DEBUG [34313] [] OrganizationRegistController start
+2022-04-01 16:49:01,208 DEBUG [34313] [] controllers/OrganizationRegistController.php: is exist
+2022-04-01 16:49:01,211 DEBUG [34313] [] OrganizationRegistForm: is exist
+2022-04-01 16:49:01,211 DEBUG [34313] [] OrganizationRegistForm: form value set 
+2022-04-01 16:49:01,212 DEBUG [34313] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2022-04-01 16:49:01,212 DEBUG [34313] [] ------------------------------session_check_true
+2022-04-01 16:49:01,212 DEBUG [34313] [] indexAction start
+2022-04-01 16:49:01,212 DEBUG [34313] [] admin_no is 1
+2022-04-01 16:49:01,307 DEBUG [34313] [] indexAction end
+2022-04-01 16:49:01,308 DEBUG [34313] [] OrganizationRegistController end
+2022-04-01 16:49:01,308 DEBUG [34313] [] finally
+2022-04-01 16:49:03,703 DEBUG [34313] [] Request URI : /eccadmin_dev/OrganizationList
+2022-04-01 16:49:03,704 DEBUG [34313] [] OrganizationListController start
+2022-04-01 16:49:03,704 DEBUG [34313] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:49:03,706 DEBUG [34313] [] OrganizationListForm: is exist
+2022-04-01 16:49:03,706 DEBUG [34313] [] OrganizationListForm: form value set 
+2022-04-01 16:49:03,706 DEBUG [34313] [] ------------------------------/eccadmin_dev/OrganizationList
+2022-04-01 16:49:03,707 DEBUG [34313] [] indexAction start
+2022-04-01 16:49:03,707 DEBUG [34313] [] admin_no is 1
+2022-04-01 16:49:03,809 DEBUG [34313] [] indexAction end
+2022-04-01 16:49:03,809 DEBUG [34313] [] OrganizationListController end
+2022-04-01 16:49:03,809 DEBUG [34313] [] finally
+2022-04-01 16:49:09,798 DEBUG [33277] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 16:49:09,798 DEBUG [33277] [] OrganizationListController start
+2022-04-01 16:49:09,798 DEBUG [33277] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:49:09,800 DEBUG [33277] [] OrganizationListForm: is exist
+2022-04-01 16:49:09,800 DEBUG [33277] [] OrganizationListForm: form value set 
+2022-04-01 16:49:09,801 DEBUG [33277] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 16:49:09,801 DEBUG [33277] [] searchAction start
+2022-04-01 16:49:09,801 DEBUG [33277] [] admin_no is 1
+2022-04-01 16:49:09,902 DEBUG [33277] [] searchAction end
+2022-04-01 16:49:09,902 DEBUG [33277] [] OrganizationListController end
+2022-04-01 16:49:09,902 DEBUG [33277] [] finally
+2022-04-01 16:49:20,763 DEBUG [33869] [] Request URI : /eccadmin_dev/OrganizationList/search
+2022-04-01 16:49:20,764 DEBUG [33869] [] OrganizationListController start
+2022-04-01 16:49:20,764 DEBUG [33869] [] controllers/OrganizationListController.php: is exist
+2022-04-01 16:49:20,766 DEBUG [33869] [] OrganizationListForm: is exist
+2022-04-01 16:49:20,766 DEBUG [33869] [] OrganizationListForm: form value set 
+2022-04-01 16:49:20,766 DEBUG [33869] [] ------------------------------/eccadmin_dev/OrganizationList/search
+2022-04-01 16:49:20,767 DEBUG [33869] [] searchAction start
+2022-04-01 16:49:20,767 DEBUG [33869] [] admin_no is 1
+2022-04-01 16:49:20,863 DEBUG [33869] [] searchAction end
+2022-04-01 16:49:20,863 DEBUG [33869] [] OrganizationListController end
+2022-04-01 16:49:20,864 DEBUG [33869] [] finally
+2022-04-01 16:50:56,852 DEBUG [34313] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:50:56,853 DEBUG [34313] [] LoginController start
+2022-04-01 16:50:56,853 DEBUG [34313] [] controllers/LoginController.php: is exist
+2022-04-01 16:50:56,853 DEBUG [34313] [] LoginForm: is exist
+2022-04-01 16:50:56,853 DEBUG [34313] [] LoginForm: form value set 
+2022-04-01 16:50:56,854 DEBUG [34313] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:50:56,854 DEBUG [34313] [] ------------------------------login_start_check
+2022-04-01 16:50:56,854 DEBUG [34313] [] indexAction start
+2022-04-01 16:50:56,870 DEBUG [34313] [] indexAction end
+2022-04-01 16:50:56,870 DEBUG [34313] [] LoginController end
+2022-04-01 16:50:56,870 DEBUG [34313] [] finally
+2022-04-01 16:53:57,769 DEBUG [34266] [] Request URI : /eccadmin_dev/CourseContractList
+2022-04-01 16:53:57,770 DEBUG [34266] [] CourseContractListController start
+2022-04-01 16:53:57,770 DEBUG [34266] [] controllers/CourseContractListController.php: is exist
+2022-04-01 16:53:57,775 DEBUG [34266] [] CourseContractListForm: is exist
+2022-04-01 16:53:57,775 DEBUG [34266] [] CourseContractListForm: form value set 
+2022-04-01 16:53:57,776 DEBUG [34266] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-04-01 16:53:57,776 DEBUG [34266] [] indexAction start
+2022-04-01 16:53:57,776 DEBUG [34266] [] admin_no is 1
+2022-04-01 16:53:57,888 DEBUG [34266] [] indexAction end
+2022-04-01 16:53:57,888 DEBUG [34266] [] CourseContractListController end
+2022-04-01 16:53:57,888 DEBUG [34266] [] finally
+2022-04-01 16:54:13,704 DEBUG [34502] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-01 16:54:13,704 DEBUG [34502] [] LoginController start
+2022-04-01 16:54:13,704 DEBUG [34502] [] controllers/LoginController.php: is exist
+2022-04-01 16:54:13,705 DEBUG [34502] [] LoginForm: is exist
+2022-04-01 16:54:13,705 DEBUG [34502] [] LoginForm: form value set 
+2022-04-01 16:54:13,705 DEBUG [34502] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-01 16:54:13,705 DEBUG [34502] [] ------------------------------login_start_check
+2022-04-01 16:54:13,706 DEBUG [34502] [] logoutAction start
+2022-04-01 16:54:13,706 DEBUG [34502] [] logoutAction end
+2022-04-01 16:54:13,706 DEBUG [34502] [] LoginController end
+2022-04-01 16:54:13,706 DEBUG [34502] [] finally
+2022-04-01 16:54:13,722 DEBUG [34502] [] Request URI : /eccadmin_dev/Login
+2022-04-01 16:54:13,722 DEBUG [34502] [] LoginController start
+2022-04-01 16:54:13,722 DEBUG [34502] [] controllers/LoginController.php: is exist
+2022-04-01 16:54:13,723 DEBUG [34502] [] LoginForm: is exist
+2022-04-01 16:54:13,723 DEBUG [34502] [] LoginForm: form value set 
+2022-04-01 16:54:13,723 DEBUG [34502] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 16:54:13,723 DEBUG [34502] [] ------------------------------login_start_check
+2022-04-01 16:54:13,723 DEBUG [34502] [] indexAction start
+2022-04-01 16:54:13,736 DEBUG [34502] [] indexAction end
+2022-04-01 16:54:13,736 DEBUG [34502] [] LoginController end
+2022-04-01 16:54:13,736 DEBUG [34502] [] finally
+2022-04-01 17:06:43,988 DEBUG [34575] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:06:43,989 DEBUG [34575] [] LoginController start
+2022-04-01 17:06:43,989 DEBUG [34575] [] controllers/LoginController.php: is exist
+2022-04-01 17:06:43,989 DEBUG [34575] [] LoginForm: is exist
+2022-04-01 17:06:43,989 DEBUG [34575] [] LoginForm: form value set 
+2022-04-01 17:06:43,990 DEBUG [34575] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:06:43,990 DEBUG [34575] [] ------------------------------login_start_check
+2022-04-01 17:06:43,990 DEBUG [34575] [] indexAction start
+2022-04-01 17:06:44,005 DEBUG [34575] [] indexAction end
+2022-04-01 17:06:44,005 DEBUG [34575] [] LoginController end
+2022-04-01 17:06:44,005 DEBUG [34575] [] finally
+2022-04-01 17:06:47,925 DEBUG [34777] [] Request URI : /eccadmin_dev/Login/login
+2022-04-01 17:06:47,926 DEBUG [34777] [] LoginController start
+2022-04-01 17:06:47,926 DEBUG [34777] [] controllers/LoginController.php: is exist
+2022-04-01 17:06:47,926 DEBUG [34777] [] LoginForm: is exist
+2022-04-01 17:06:47,926 DEBUG [34777] [] LoginForm: form value set 
+2022-04-01 17:06:47,927 DEBUG [34777] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-01 17:06:47,927 DEBUG [34777] [] ------------------------------login_start_check
+2022-04-01 17:06:47,927 DEBUG [34777] [] loginAction start
+2022-04-01 17:06:48,224 DEBUG [34777] [] loginAction end
+2022-04-01 17:06:48,224 DEBUG [34777] [] LoginController end
+2022-04-01 17:06:48,224 DEBUG [34777] [] finally
+2022-04-01 17:06:48,241 DEBUG [34304] [] Request URI : /eccadmin_dev/Menu
+2022-04-01 17:06:48,241 DEBUG [34304] [] MenuController start
+2022-04-01 17:06:48,241 DEBUG [34304] [] controllers/MenuController.php: is exist
+2022-04-01 17:06:48,243 DEBUG [34304] [] MenuForm: is exist
+2022-04-01 17:06:48,243 DEBUG [34304] [] MenuForm: form value set 
+2022-04-01 17:06:48,244 DEBUG [34304] [] ------------------------------/eccadmin_dev/Menu
+2022-04-01 17:06:48,244 DEBUG [34304] [] ------------------------------login_start_check
+2022-04-01 17:06:48,244 DEBUG [34304] [] indexAction start
+2022-04-01 17:06:48,244 DEBUG [34304] [] admin_no is 1
+2022-04-01 17:06:48,299 DEBUG [34304] [] indexAction end
+2022-04-01 17:06:48,299 DEBUG [34304] [] MenuController end
+2022-04-01 17:06:48,299 DEBUG [34304] [] finally
+2022-04-01 17:06:50,767 DEBUG [34501] [] Request URI : /eccadmin_dev/AtReportList
+2022-04-01 17:06:50,767 DEBUG [34501] [] AtReportListController start
+2022-04-01 17:06:50,767 DEBUG [34501] [] controllers/AtReportListController.php: is exist
+2022-04-01 17:06:50,770 DEBUG [34501] [] AtReportListForm: is exist
+2022-04-01 17:06:50,771 DEBUG [34501] [] AtReportListForm: form value set 
+2022-04-01 17:06:50,771 DEBUG [34501] [] ------------------------------/eccadmin_dev/AtReportList
+2022-04-01 17:06:50,771 DEBUG [34501] [] indexAction start
+2022-04-01 17:06:50,771 DEBUG [34501] [] admin_no is 1
+2022-04-01 17:06:50,836 DEBUG [34501] [] indexAction end
+2022-04-01 17:06:50,836 DEBUG [34501] [] AtReportListController end
+2022-04-01 17:06:50,836 DEBUG [34501] [] finally
+2022-04-01 17:07:07,975 DEBUG [34303] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-01 17:07:07,976 DEBUG [34303] [] AtReportRegistController start
+2022-04-01 17:07:07,976 DEBUG [34303] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 17:07:07,980 DEBUG [34303] [] AtReportRegistForm: is exist
+2022-04-01 17:07:07,980 DEBUG [34303] [] AtReportRegistForm: form value set 
+2022-04-01 17:07:07,981 DEBUG [34303] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-01 17:07:07,981 DEBUG [34303] [] ------------------------------session_check_true
+2022-04-01 17:07:07,981 DEBUG [34303] [] indexAction start
+2022-04-01 17:07:07,981 DEBUG [34303] [] admin_no is 1
+2022-04-01 17:07:08,064 DEBUG [34303] [] indexAction end
+2022-04-01 17:07:08,064 DEBUG [34303] [] AtReportRegistController end
+2022-04-01 17:07:08,064 DEBUG [34303] [] finally
+2022-04-01 17:07:16,492 DEBUG [34266] [] Request URI : /eccadmin_dev/AtReportRegist/save
+2022-04-01 17:07:16,492 DEBUG [34266] [] AtReportRegistController start
+2022-04-01 17:07:16,493 DEBUG [34266] [] controllers/AtReportRegistController.php: is exist
+2022-04-01 17:07:16,497 DEBUG [34266] [] AtReportRegistForm: is exist
+2022-04-01 17:07:16,498 DEBUG [34266] [] AtReportRegistForm: form value set 
+2022-04-01 17:07:16,498 DEBUG [34266] [] ------------------------------/eccadmin_dev/AtReportRegist/save
+2022-04-01 17:07:16,498 DEBUG [34266] [] ------------------------------session_check_true
+2022-04-01 17:07:16,499 DEBUG [34266] [] saveAction start
+2022-04-01 17:07:16,504 DEBUG [34266] [] admin_no is 1
+2022-04-01 17:07:16,504 DEBUG [34266] [] saveAction end
+2022-04-01 17:07:16,504 DEBUG [34266] [] AtReportRegistController end
+2022-04-01 17:07:16,504 DEBUG [34266] [] finally
+2022-04-01 17:07:16,524 DEBUG [34266] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-01 17:07:16,525 DEBUG [34266] [] AtReportListController start
+2022-04-01 17:07:16,525 DEBUG [34266] [] controllers/AtReportListController.php: is exist
+2022-04-01 17:07:16,528 DEBUG [34266] [] AtReportListForm: is exist
+2022-04-01 17:07:16,528 DEBUG [34266] [] AtReportListForm: form value set 
+2022-04-01 17:07:16,528 DEBUG [34266] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-01 17:07:16,529 DEBUG [34266] [] SearchAction start
+2022-04-01 17:07:16,529 DEBUG [34266] [] --------back--------
+2022-04-01 17:07:16,529 DEBUG [34266] [] admin_no is 1
+2022-04-01 17:07:16,592 DEBUG [34266] [] SearchAction end
+2022-04-01 17:07:16,592 DEBUG [34266] [] AtReportListController end
+2022-04-01 17:07:16,592 DEBUG [34266] [] finally
+2022-04-01 17:07:48,518 DEBUG [34304] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-01 17:07:48,518 DEBUG [34304] [] LoginController start
+2022-04-01 17:07:48,518 DEBUG [34304] [] controllers/LoginController.php: is exist
+2022-04-01 17:07:48,519 DEBUG [34304] [] LoginForm: is exist
+2022-04-01 17:07:48,519 DEBUG [34304] [] LoginForm: form value set 
+2022-04-01 17:07:48,519 DEBUG [34304] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-01 17:07:48,519 DEBUG [34304] [] ------------------------------login_start_check
+2022-04-01 17:07:48,519 DEBUG [34304] [] logoutAction start
+2022-04-01 17:07:48,520 DEBUG [34304] [] logoutAction end
+2022-04-01 17:07:48,520 DEBUG [34304] [] LoginController end
+2022-04-01 17:07:48,520 DEBUG [34304] [] finally
+2022-04-01 17:07:48,976 DEBUG [34304] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:07:48,976 DEBUG [34304] [] LoginController start
+2022-04-01 17:07:48,976 DEBUG [34304] [] controllers/LoginController.php: is exist
+2022-04-01 17:07:48,977 DEBUG [34304] [] LoginForm: is exist
+2022-04-01 17:07:48,977 DEBUG [34304] [] LoginForm: form value set 
+2022-04-01 17:07:48,977 DEBUG [34304] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:07:48,977 DEBUG [34304] [] ------------------------------login_start_check
+2022-04-01 17:07:48,977 DEBUG [34304] [] indexAction start
+2022-04-01 17:07:48,992 DEBUG [34304] [] indexAction end
+2022-04-01 17:07:48,993 DEBUG [34304] [] LoginController end
+2022-04-01 17:07:48,993 DEBUG [34304] [] finally
+2022-04-01 17:09:18,194 DEBUG [34266] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:09:18,195 DEBUG [34266] [] LoginController start
+2022-04-01 17:09:18,195 DEBUG [34266] [] controllers/LoginController.php: is exist
+2022-04-01 17:09:18,195 DEBUG [34266] [] LoginForm: is exist
+2022-04-01 17:09:18,195 DEBUG [34266] [] LoginForm: form value set 
+2022-04-01 17:09:18,196 DEBUG [34266] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:09:18,196 DEBUG [34266] [] ------------------------------login_start_check
+2022-04-01 17:09:18,196 DEBUG [34266] [] indexAction start
+2022-04-01 17:09:18,211 DEBUG [34266] [] indexAction end
+2022-04-01 17:09:18,211 DEBUG [34266] [] LoginController end
+2022-04-01 17:09:18,211 DEBUG [34266] [] finally
+2022-04-01 17:16:24,704 DEBUG [35012] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:16:24,705 DEBUG [35012] [] LoginController start
+2022-04-01 17:16:24,705 DEBUG [35012] [] controllers/LoginController.php: is exist
+2022-04-01 17:16:24,706 DEBUG [35012] [] LoginForm: is exist
+2022-04-01 17:16:24,706 DEBUG [35012] [] LoginForm: form value set 
+2022-04-01 17:16:24,706 DEBUG [35012] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:16:24,706 DEBUG [35012] [] ------------------------------login_start_check
+2022-04-01 17:16:24,706 DEBUG [35012] [] indexAction start
+2022-04-01 17:16:24,722 DEBUG [35012] [] indexAction end
+2022-04-01 17:16:24,722 DEBUG [35012] [] LoginController end
+2022-04-01 17:16:24,723 DEBUG [35012] [] finally
+2022-04-01 17:17:36,337 DEBUG [35007] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-01 17:17:36,338 DEBUG [35007] [] LoginController start
+2022-04-01 17:17:36,338 DEBUG [35007] [] controllers/LoginController.php: is exist
+2022-04-01 17:17:36,338 DEBUG [35007] [] LoginForm: is exist
+2022-04-01 17:17:36,338 DEBUG [35007] [] LoginForm: form value set 
+2022-04-01 17:17:36,339 DEBUG [35007] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-01 17:17:36,339 DEBUG [35007] [] ------------------------------login_start_check
+2022-04-01 17:17:36,339 DEBUG [35007] [] logoutAction start
+2022-04-01 17:17:36,339 DEBUG [35007] [] logoutAction end
+2022-04-01 17:17:36,340 DEBUG [35007] [] LoginController end
+2022-04-01 17:17:36,340 DEBUG [35007] [] finally
+2022-04-01 17:17:36,354 DEBUG [35007] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:17:36,355 DEBUG [35007] [] LoginController start
+2022-04-01 17:17:36,355 DEBUG [35007] [] controllers/LoginController.php: is exist
+2022-04-01 17:17:36,355 DEBUG [35007] [] LoginForm: is exist
+2022-04-01 17:17:36,355 DEBUG [35007] [] LoginForm: form value set 
+2022-04-01 17:17:36,355 DEBUG [35007] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:17:36,356 DEBUG [35007] [] ------------------------------login_start_check
+2022-04-01 17:17:36,356 DEBUG [35007] [] indexAction start
+2022-04-01 17:17:36,370 DEBUG [35007] [] indexAction end
+2022-04-01 17:17:36,370 DEBUG [35007] [] LoginController end
+2022-04-01 17:17:36,370 DEBUG [35007] [] finally
+2022-04-01 17:56:59,670 DEBUG [35607] [] Request URI : /eccadmin_dev/Login
+2022-04-01 17:56:59,671 DEBUG [35607] [] LoginController start
+2022-04-01 17:56:59,671 DEBUG [35607] [] controllers/LoginController.php: is exist
+2022-04-01 17:56:59,671 DEBUG [35607] [] LoginForm: is exist
+2022-04-01 17:56:59,671 DEBUG [35607] [] LoginForm: form value set 
+2022-04-01 17:56:59,672 DEBUG [35607] [] ------------------------------/eccadmin_dev/Login
+2022-04-01 17:56:59,672 DEBUG [35607] [] ------------------------------login_start_check
+2022-04-01 17:56:59,672 DEBUG [35607] [] indexAction start
+2022-04-01 17:56:59,688 DEBUG [35607] [] indexAction end
+2022-04-01 17:56:59,688 DEBUG [35607] [] LoginController end
+2022-04-01 17:56:59,688 DEBUG [35607] [] finally

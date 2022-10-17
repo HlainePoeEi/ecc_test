@@ -1,0 +1,388 @@
+2021-11-09 19:04:46,777 DEBUG [33664] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:04:46,781 DEBUG [33664] [] MenuController start
+2021-11-09 19:04:46,782 DEBUG [33664] [] controllers/MenuController.php: is exist
+2021-11-09 19:04:46,783 DEBUG [33664] [] MenuForm: is exist
+2021-11-09 19:04:46,783 DEBUG [33664] [] MenuForm: form value set 
+2021-11-09 19:04:46,783 DEBUG [33664] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:04:46,783 DEBUG [33664] [] ------------------------------login_start_check
+2021-11-09 19:04:46,783 DEBUG [33664] [] indexAction start
+2021-11-09 19:04:46,784 DEBUG [33664] [] admin_no is 1
+2021-11-09 19:04:46,833 DEBUG [33664] [] indexAction end
+2021-11-09 19:04:46,833 DEBUG [33664] [] MenuController end
+2021-11-09 19:04:46,833 DEBUG [33664] [] finally
+2021-11-09 19:04:49,000 DEBUG [33664] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:04:49,000 DEBUG [33664] [] ReportListController start
+2021-11-09 19:04:49,000 DEBUG [33664] [] controllers/ReportListController.php: is exist
+2021-11-09 19:04:49,001 DEBUG [33664] [] ReportListForm: is exist
+2021-11-09 19:04:49,001 DEBUG [33664] [] ReportListForm: form value set 
+2021-11-09 19:04:49,001 DEBUG [33664] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:04:49,001 DEBUG [33664] [] indexAction start
+2021-11-09 19:04:49,002 DEBUG [33664] [] admin_no is 1
+2021-11-09 19:04:49,002 DEBUG [33664] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:04:49,002 DEBUG [33664] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:04:49,002 DEBUG [33664] [] ========================== SELECT  report.report_no ,report.report_name report_name  ,org.org_no  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_no  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:04:49,003 DEBUG [33664] [] rollback
+2021-11-09 19:04:49,003 ERROR [33664] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.report.report_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  report...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:04:49,003 DEBUG [33664] [] finally
+2021-11-09 19:04:49,170 DEBUG [33664] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:04:49,171 DEBUG [33664] [] ErrorController start
+2021-11-09 19:04:49,171 DEBUG [33664] [] controllers/ErrorController.php: is exist
+2021-11-09 19:04:49,171 DEBUG [33664] [] ErrorForm: is exist
+2021-11-09 19:04:49,171 DEBUG [33664] [] ErrorForm: form value set 
+2021-11-09 19:04:49,172 DEBUG [33664] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:04:49,172 DEBUG [33664] [] ------------------------------login_start_check
+2021-11-09 19:04:49,172 DEBUG [33664] [] dispAction start
+2021-11-09 19:04:49,183 DEBUG [33664] [] dispAction end
+2021-11-09 19:04:49,183 DEBUG [33664] [] ErrorController end
+2021-11-09 19:04:49,184 DEBUG [33664] [] finally
+2021-11-09 19:10:59,383 DEBUG [32726] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:10:59,384 DEBUG [32726] [] MenuController start
+2021-11-09 19:10:59,384 DEBUG [32726] [] controllers/MenuController.php: is exist
+2021-11-09 19:10:59,384 DEBUG [32726] [] MenuForm: is exist
+2021-11-09 19:10:59,384 DEBUG [32726] [] MenuForm: form value set 
+2021-11-09 19:10:59,385 DEBUG [32726] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:10:59,385 DEBUG [32726] [] ------------------------------login_start_check
+2021-11-09 19:10:59,385 DEBUG [32726] [] indexAction start
+2021-11-09 19:10:59,385 DEBUG [32726] [] admin_no is 1
+2021-11-09 19:10:59,436 DEBUG [32726] [] indexAction end
+2021-11-09 19:10:59,436 DEBUG [32726] [] MenuController end
+2021-11-09 19:10:59,436 DEBUG [32726] [] finally
+2021-11-09 19:12:16,938 DEBUG [33172] [] Request URI : /eccadmin_dev/SystemNoticeRegist
+2021-11-09 19:12:16,939 DEBUG [33172] [] SystemNoticeRegistController start
+2021-11-09 19:12:16,939 DEBUG [33172] [] controllers/SystemNoticeRegistController.php: is exist
+2021-11-09 19:12:16,939 DEBUG [33172] [] SystemNoticeRegistForm: is exist
+2021-11-09 19:12:16,940 DEBUG [33172] [] SystemNoticeRegistForm: form value set 
+2021-11-09 19:12:16,940 DEBUG [33172] [] ------------------------------/eccadmin_dev/SystemNoticeRegist
+2021-11-09 19:12:16,940 DEBUG [33172] [] ------------------------------session_check_true
+2021-11-09 19:12:16,940 DEBUG [33172] [] indexAction start
+2021-11-09 19:12:16,940 DEBUG [33172] [] admin_no is 1
+2021-11-09 19:12:17,030 DEBUG [33172] [] indexAction end
+2021-11-09 19:12:17,030 DEBUG [33172] [] SystemNoticeRegistController end
+2021-11-09 19:12:17,030 DEBUG [33172] [] finally
+2021-11-09 19:12:23,653 DEBUG [33173] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:12:23,654 DEBUG [33173] [] ReportListController start
+2021-11-09 19:12:23,654 DEBUG [33173] [] controllers/ReportListController.php: is exist
+2021-11-09 19:12:23,657 DEBUG [33173] [] ReportListForm: is exist
+2021-11-09 19:12:23,657 DEBUG [33173] [] ReportListForm: form value set 
+2021-11-09 19:12:23,658 DEBUG [33173] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:12:23,658 DEBUG [33173] [] indexAction start
+2021-11-09 19:12:23,658 DEBUG [33173] [] admin_no is 1
+2021-11-09 19:12:23,658 DEBUG [33173] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:12:23,658 DEBUG [33173] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:12:23,659 DEBUG [33173] [] ========================== SELECT  ,org.org_no  report.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:12:23,659 DEBUG [33173] [] rollback
+2021-11-09 19:12:23,659 ERROR [33173] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'org.org_no  report.report_no ,test_info.test_info_no  ,report.report_name report' at line 1' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  ,org.o...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:12:23,659 DEBUG [33173] [] finally
+2021-11-09 19:12:23,862 DEBUG [33173] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:12:23,862 DEBUG [33173] [] ErrorController start
+2021-11-09 19:12:23,862 DEBUG [33173] [] controllers/ErrorController.php: is exist
+2021-11-09 19:12:23,863 DEBUG [33173] [] ErrorForm: is exist
+2021-11-09 19:12:23,863 DEBUG [33173] [] ErrorForm: form value set 
+2021-11-09 19:12:23,863 DEBUG [33173] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:12:23,863 DEBUG [33173] [] ------------------------------login_start_check
+2021-11-09 19:12:23,863 DEBUG [33173] [] dispAction start
+2021-11-09 19:12:23,875 DEBUG [33173] [] dispAction end
+2021-11-09 19:12:23,876 DEBUG [33173] [] ErrorController end
+2021-11-09 19:12:23,876 DEBUG [33173] [] finally
+2021-11-09 19:13:44,957 DEBUG [31398] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:13:44,958 DEBUG [31398] [] MenuController start
+2021-11-09 19:13:44,958 DEBUG [31398] [] controllers/MenuController.php: is exist
+2021-11-09 19:13:44,958 DEBUG [31398] [] MenuForm: is exist
+2021-11-09 19:13:44,959 DEBUG [31398] [] MenuForm: form value set 
+2021-11-09 19:13:44,959 DEBUG [31398] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:13:44,959 DEBUG [31398] [] ------------------------------login_start_check
+2021-11-09 19:13:44,959 DEBUG [31398] [] indexAction start
+2021-11-09 19:13:44,959 DEBUG [31398] [] admin_no is 1
+2021-11-09 19:13:45,008 DEBUG [31398] [] indexAction end
+2021-11-09 19:13:45,008 DEBUG [31398] [] MenuController end
+2021-11-09 19:13:45,008 DEBUG [31398] [] finally
+2021-11-09 19:13:48,057 DEBUG [31398] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:13:48,058 DEBUG [31398] [] ReportListController start
+2021-11-09 19:13:48,058 DEBUG [31398] [] controllers/ReportListController.php: is exist
+2021-11-09 19:13:48,060 DEBUG [31398] [] ReportListForm: is exist
+2021-11-09 19:13:48,060 DEBUG [31398] [] ReportListForm: form value set 
+2021-11-09 19:13:48,061 DEBUG [31398] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:13:48,061 DEBUG [31398] [] indexAction start
+2021-11-09 19:13:48,061 DEBUG [31398] [] admin_no is 1
+2021-11-09 19:13:48,062 DEBUG [31398] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:13:48,062 DEBUG [31398] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:13:48,062 DEBUG [31398] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report_test.report_no,test_info.test_info_no
+2021-11-09 19:13:48,062 DEBUG [31398] [] rollback
+2021-11-09 19:13:48,063 ERROR [31398] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #4 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.report.report_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  org.or...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:13:48,063 DEBUG [31398] [] finally
+2021-11-09 19:13:48,261 DEBUG [31398] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:13:48,262 DEBUG [31398] [] ErrorController start
+2021-11-09 19:13:48,262 DEBUG [31398] [] controllers/ErrorController.php: is exist
+2021-11-09 19:13:48,262 DEBUG [31398] [] ErrorForm: is exist
+2021-11-09 19:13:48,262 DEBUG [31398] [] ErrorForm: form value set 
+2021-11-09 19:13:48,263 DEBUG [31398] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:13:48,263 DEBUG [31398] [] ------------------------------login_start_check
+2021-11-09 19:13:48,263 DEBUG [31398] [] dispAction start
+2021-11-09 19:13:48,274 DEBUG [31398] [] dispAction end
+2021-11-09 19:13:48,275 DEBUG [31398] [] ErrorController end
+2021-11-09 19:13:48,275 DEBUG [31398] [] finally
+2021-11-09 19:18:25,951 DEBUG [31398] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:18:25,952 DEBUG [31398] [] MenuController start
+2021-11-09 19:18:25,952 DEBUG [31398] [] controllers/MenuController.php: is exist
+2021-11-09 19:18:25,952 DEBUG [31398] [] MenuForm: is exist
+2021-11-09 19:18:25,952 DEBUG [31398] [] MenuForm: form value set 
+2021-11-09 19:18:25,953 DEBUG [31398] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:18:25,953 DEBUG [31398] [] ------------------------------login_start_check
+2021-11-09 19:18:25,953 DEBUG [31398] [] indexAction start
+2021-11-09 19:18:25,953 DEBUG [31398] [] admin_no is 1
+2021-11-09 19:18:26,003 DEBUG [31398] [] indexAction end
+2021-11-09 19:18:26,003 DEBUG [31398] [] MenuController end
+2021-11-09 19:18:26,003 DEBUG [31398] [] finally
+2021-11-09 19:18:28,956 DEBUG [31398] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:18:28,957 DEBUG [31398] [] ReportListController start
+2021-11-09 19:18:28,957 DEBUG [31398] [] controllers/ReportListController.php: is exist
+2021-11-09 19:18:28,959 DEBUG [31398] [] ReportListForm: is exist
+2021-11-09 19:18:28,959 DEBUG [31398] [] ReportListForm: form value set 
+2021-11-09 19:18:28,960 DEBUG [31398] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:18:28,960 DEBUG [31398] [] indexAction start
+2021-11-09 19:18:28,960 DEBUG [31398] [] admin_no is 1
+2021-11-09 19:18:28,961 DEBUG [31398] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:18:28,961 DEBUG [31398] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report.report_no
+2021-11-09 19:18:28,961 DEBUG [31398] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report.report_no
+2021-11-09 19:18:28,961 DEBUG [31398] [] rollback
+2021-11-09 19:18:28,961 ERROR [31398] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.test_info.test_info_no' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  org.or...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:18:28,962 DEBUG [31398] [] finally
+2021-11-09 19:18:29,151 DEBUG [31398] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:18:29,152 DEBUG [31398] [] ErrorController start
+2021-11-09 19:18:29,152 DEBUG [31398] [] controllers/ErrorController.php: is exist
+2021-11-09 19:18:29,152 DEBUG [31398] [] ErrorForm: is exist
+2021-11-09 19:18:29,152 DEBUG [31398] [] ErrorForm: form value set 
+2021-11-09 19:18:29,152 DEBUG [31398] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:18:29,153 DEBUG [31398] [] ------------------------------login_start_check
+2021-11-09 19:18:29,153 DEBUG [31398] [] dispAction start
+2021-11-09 19:18:29,165 DEBUG [31398] [] dispAction end
+2021-11-09 19:18:29,165 DEBUG [31398] [] ErrorController end
+2021-11-09 19:18:29,165 DEBUG [31398] [] finally
+2021-11-09 19:18:53,197 DEBUG [33464] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:18:53,197 DEBUG [33464] [] MenuController start
+2021-11-09 19:18:53,198 DEBUG [33464] [] controllers/MenuController.php: is exist
+2021-11-09 19:18:53,198 DEBUG [33464] [] MenuForm: is exist
+2021-11-09 19:18:53,198 DEBUG [33464] [] MenuForm: form value set 
+2021-11-09 19:18:53,199 DEBUG [33464] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:18:53,199 DEBUG [33464] [] ------------------------------login_start_check
+2021-11-09 19:18:53,199 DEBUG [33464] [] indexAction start
+2021-11-09 19:18:53,199 DEBUG [33464] [] admin_no is 1
+2021-11-09 19:18:53,248 DEBUG [33464] [] indexAction end
+2021-11-09 19:18:53,248 DEBUG [33464] [] MenuController end
+2021-11-09 19:18:53,248 DEBUG [33464] [] finally
+2021-11-09 19:18:55,661 DEBUG [33464] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:18:55,661 DEBUG [33464] [] ReportListController start
+2021-11-09 19:18:55,662 DEBUG [33464] [] controllers/ReportListController.php: is exist
+2021-11-09 19:18:55,664 DEBUG [33464] [] ReportListForm: is exist
+2021-11-09 19:18:55,664 DEBUG [33464] [] ReportListForm: form value set 
+2021-11-09 19:18:55,664 DEBUG [33464] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:18:55,665 DEBUG [33464] [] indexAction start
+2021-11-09 19:18:55,665 DEBUG [33464] [] admin_no is 1
+2021-11-09 19:18:55,665 DEBUG [33464] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:18:55,665 DEBUG [33464] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report.report_no
+2021-11-09 19:18:55,665 DEBUG [33464] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name   ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY org.org_no,report.report_no
+2021-11-09 19:18:55,666 DEBUG [33464] [] rollback
+2021-11-09 19:18:55,666 ERROR [33464] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.test_info.test_info_no' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  org.or...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:18:55,666 DEBUG [33464] [] finally
+2021-11-09 19:18:55,836 DEBUG [33464] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:18:55,836 DEBUG [33464] [] ErrorController start
+2021-11-09 19:18:55,836 DEBUG [33464] [] controllers/ErrorController.php: is exist
+2021-11-09 19:18:55,836 DEBUG [33464] [] ErrorForm: is exist
+2021-11-09 19:18:55,837 DEBUG [33464] [] ErrorForm: form value set 
+2021-11-09 19:18:55,837 DEBUG [33464] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:18:55,837 DEBUG [33464] [] ------------------------------login_start_check
+2021-11-09 19:18:55,837 DEBUG [33464] [] dispAction start
+2021-11-09 19:18:55,849 DEBUG [33464] [] dispAction end
+2021-11-09 19:18:55,849 DEBUG [33464] [] ErrorController end
+2021-11-09 19:18:55,849 DEBUG [33464] [] finally
+2021-11-09 19:46:04,756 DEBUG [31398] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:46:04,757 DEBUG [31398] [] MenuController start
+2021-11-09 19:46:04,757 DEBUG [31398] [] controllers/MenuController.php: is exist
+2021-11-09 19:46:04,757 DEBUG [31398] [] MenuForm: is exist
+2021-11-09 19:46:04,758 DEBUG [31398] [] MenuForm: form value set 
+2021-11-09 19:46:04,758 DEBUG [31398] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:46:04,758 DEBUG [31398] [] ------------------------------login_start_check
+2021-11-09 19:46:04,758 DEBUG [31398] [] indexAction start
+2021-11-09 19:46:04,758 DEBUG [31398] [] admin_no is 1
+2021-11-09 19:46:04,807 DEBUG [31398] [] indexAction end
+2021-11-09 19:46:04,807 DEBUG [31398] [] MenuController end
+2021-11-09 19:46:04,807 DEBUG [31398] [] finally
+2021-11-09 19:46:08,619 DEBUG [31326] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:46:08,619 DEBUG [31326] [] ReportListController start
+2021-11-09 19:46:08,620 DEBUG [31326] [] controllers/ReportListController.php: is exist
+2021-11-09 19:46:08,622 DEBUG [31326] [] ReportListForm: is exist
+2021-11-09 19:46:08,622 DEBUG [31326] [] ReportListForm: form value set 
+2021-11-09 19:46:08,622 DEBUG [31326] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:46:08,623 DEBUG [31326] [] indexAction start
+2021-11-09 19:46:08,623 DEBUG [31326] [] admin_no is 1
+2021-11-09 19:46:08,623 DEBUG [31326] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:46:08,623 DEBUG [31326] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY report_test.report_no
+2021-11-09 19:46:08,623 DEBUG [31326] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY report_test.report_no
+2021-11-09 19:46:08,624 DEBUG [31326] [] rollback
+2021-11-09 19:46:08,624 ERROR [31326] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.org.org_no' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  org.or...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:46:08,624 DEBUG [31326] [] finally
+2021-11-09 19:46:08,823 DEBUG [31326] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:46:08,824 DEBUG [31326] [] ErrorController start
+2021-11-09 19:46:08,824 DEBUG [31326] [] controllers/ErrorController.php: is exist
+2021-11-09 19:46:08,824 DEBUG [31326] [] ErrorForm: is exist
+2021-11-09 19:46:08,824 DEBUG [31326] [] ErrorForm: form value set 
+2021-11-09 19:46:08,825 DEBUG [31326] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:46:08,825 DEBUG [31326] [] ------------------------------login_start_check
+2021-11-09 19:46:08,825 DEBUG [31326] [] dispAction start
+2021-11-09 19:46:08,837 DEBUG [31326] [] dispAction end
+2021-11-09 19:46:08,837 DEBUG [31326] [] ErrorController end
+2021-11-09 19:46:08,837 DEBUG [31326] [] finally
+2021-11-09 19:48:10,018 DEBUG [33464] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:48:10,019 DEBUG [33464] [] MenuController start
+2021-11-09 19:48:10,019 DEBUG [33464] [] controllers/MenuController.php: is exist
+2021-11-09 19:48:10,019 DEBUG [33464] [] MenuForm: is exist
+2021-11-09 19:48:10,019 DEBUG [33464] [] MenuForm: form value set 
+2021-11-09 19:48:10,020 DEBUG [33464] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:48:10,020 DEBUG [33464] [] ------------------------------login_start_check
+2021-11-09 19:48:10,020 DEBUG [33464] [] indexAction start
+2021-11-09 19:48:10,020 DEBUG [33464] [] admin_no is 1
+2021-11-09 19:48:10,136 DEBUG [33464] [] indexAction end
+2021-11-09 19:48:10,136 DEBUG [33464] [] MenuController end
+2021-11-09 19:48:10,137 DEBUG [33464] [] finally
+2021-11-09 19:48:12,998 DEBUG [33464] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:48:12,998 DEBUG [33464] [] ReportListController start
+2021-11-09 19:48:12,998 DEBUG [33464] [] controllers/ReportListController.php: is exist
+2021-11-09 19:48:13,001 DEBUG [33464] [] ReportListForm: is exist
+2021-11-09 19:48:13,001 DEBUG [33464] [] ReportListForm: form value set 
+2021-11-09 19:48:13,001 DEBUG [33464] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:48:13,001 DEBUG [33464] [] indexAction start
+2021-11-09 19:48:13,002 DEBUG [33464] [] admin_no is 1
+2021-11-09 19:48:13,002 DEBUG [33464] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:48:13,002 DEBUG [33464] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY report.report_no
+2021-11-09 19:48:13,002 DEBUG [33464] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0'  GROUP BY report.report_no
+2021-11-09 19:48:13,003 DEBUG [33464] [] rollback
+2021-11-09 19:48:13,003 ERROR [33464] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'dev.org.org_no' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by' in /var/www/html/eccadmin_dev/dao/T_ReportDao.php:32
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/T_ReportDao.php(32): PDO->prepare(' SELECT  org.or...')
+#1 /var/www/html/eccadmin_dev/service/ReportService.php(24): T_ReportDao->getReportList(Object(ReportListForm), '0')
+#2 /var/www/html/eccadmin_dev/controllers/ReportListController.php(52): ReportService->getReportList(Object(ReportListForm), '0')
+#3 /var/www/html/eccadmin_dev/controllers/ReportListController.php(35): ReportListController->search(Object(ReportListForm))
+#4 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ReportListController->indexAction()
+#5 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#6 {main}
+2021-11-09 19:48:13,003 DEBUG [33464] [] finally
+2021-11-09 19:48:13,178 DEBUG [33464] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:48:13,178 DEBUG [33464] [] ErrorController start
+2021-11-09 19:48:13,178 DEBUG [33464] [] controllers/ErrorController.php: is exist
+2021-11-09 19:48:13,178 DEBUG [33464] [] ErrorForm: is exist
+2021-11-09 19:48:13,178 DEBUG [33464] [] ErrorForm: form value set 
+2021-11-09 19:48:13,179 DEBUG [33464] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:48:13,179 DEBUG [33464] [] ------------------------------login_start_check
+2021-11-09 19:48:13,179 DEBUG [33464] [] dispAction start
+2021-11-09 19:48:13,191 DEBUG [33464] [] dispAction end
+2021-11-09 19:48:13,191 DEBUG [33464] [] ErrorController end
+2021-11-09 19:48:13,191 DEBUG [33464] [] finally
+2021-11-09 19:49:59,395 DEBUG [31927] [] Request URI : /eccadmin_dev/Menu
+2021-11-09 19:49:59,395 DEBUG [31927] [] MenuController start
+2021-11-09 19:49:59,395 DEBUG [31927] [] controllers/MenuController.php: is exist
+2021-11-09 19:49:59,396 DEBUG [31927] [] MenuForm: is exist
+2021-11-09 19:49:59,396 DEBUG [31927] [] MenuForm: form value set 
+2021-11-09 19:49:59,396 DEBUG [31927] [] ------------------------------/eccadmin_dev/Menu
+2021-11-09 19:49:59,396 DEBUG [31927] [] ------------------------------login_start_check
+2021-11-09 19:49:59,396 DEBUG [31927] [] indexAction start
+2021-11-09 19:49:59,397 DEBUG [31927] [] admin_no is 1
+2021-11-09 19:49:59,445 DEBUG [31927] [] indexAction end
+2021-11-09 19:49:59,445 DEBUG [31927] [] MenuController end
+2021-11-09 19:49:59,445 DEBUG [31927] [] finally
+2021-11-09 19:50:05,369 DEBUG [33227] [] Request URI : /eccadmin_dev/ReportList
+2021-11-09 19:50:05,370 DEBUG [33227] [] ReportListController start
+2021-11-09 19:50:05,370 DEBUG [33227] [] controllers/ReportListController.php: is exist
+2021-11-09 19:50:05,372 DEBUG [33227] [] ReportListForm: is exist
+2021-11-09 19:50:05,372 DEBUG [33227] [] ReportListForm: form value set 
+2021-11-09 19:50:05,373 DEBUG [33227] [] ------------------------------/eccadmin_dev/ReportList
+2021-11-09 19:50:05,373 DEBUG [33227] [] indexAction start
+2021-11-09 19:50:05,373 DEBUG [33227] [] admin_no is 1
+2021-11-09 19:50:05,374 DEBUG [33227] [] ========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:50:05,374 DEBUG [33227] [] search 1111========================== WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:50:05,374 DEBUG [33227] [] ========================== SELECT  org.org_no  ,report_test.report_no ,test_info.test_info_no  ,report.report_name report_name  ,org.org_name org_name  ,org.org_id org_id  ,test_info.test_info_name test_info_name ,report_test.disp_no disp_no FROM  T_REPORT_TEST_INFO report_test  LEFT JOIN M_ORGANIZATION as org 	ON report_test.org_no = org.org_no  INNER JOIN T_REPORT AS report 	ON report_test.report_no = report.report_no  LEFT JOIN T_TEST_INFO AS test_info  ON report_test.test_info_no = test_info.test_info_no  WHERE  report.org_no =  report_test.org_no AND report_test.org_no =  test_info.org_no AND report.del_flg = '0'  AND test_info.del_flg = '0'  AND report_test.del_flg = '0' 
+2021-11-09 19:50:05,459 DEBUG [33227] [] indexAction end
+2021-11-09 19:50:05,459 DEBUG [33227] [] ReportListController end
+2021-11-09 19:50:05,459 DEBUG [33227] [] finally
+2021-11-09 19:50:10,567 DEBUG [33227] [] Request URI : /eccadmin_dev/ReportRegist/index
+2021-11-09 19:50:10,568 DEBUG [33227] [] ReportRegistController start
+2021-11-09 19:50:10,568 DEBUG [33227] [] controllers/ReportRegistController.php: is exist
+2021-11-09 19:50:10,568 DEBUG [33227] [] ReportRegistForm: is exist
+2021-11-09 19:50:10,569 DEBUG [33227] [] ReportRegistForm: form value set 
+2021-11-09 19:50:10,569 DEBUG [33227] [] ------------------------------/eccadmin_dev/ReportRegist/index
+2021-11-09 19:50:10,569 DEBUG [33227] [] ------------------------------session_check_true
+2021-11-09 19:50:10,569 DEBUG [33227] [] indexAction start
+2021-11-09 19:50:10,570 DEBUG [33227] [] admin_no is 1
+2021-11-09 19:50:10,570 DEBUG [33227] [] report_no
+2021-11-09 19:50:10,660 DEBUG [33227] [] indexAction end
+2021-11-09 19:50:10,660 DEBUG [33227] [] ReportRegistController end
+2021-11-09 19:50:10,660 DEBUG [33227] [] finally
+2021-11-09 19:50:23,711 DEBUG [33172] [] Request URI : /eccadmin_dev/reportRegist/save
+2021-11-09 19:50:23,712 DEBUG [33172] [] reportRegistController start
+2021-11-09 19:50:23,712 DEBUG [33172] [] controllers/reportRegistController.php: is not exist
+2021-11-09 19:50:23,712 DEBUG [33172] [] finally
+2021-11-09 19:50:23,916 DEBUG [33172] [] Request URI : /eccadmin_dev/Error/disp
+2021-11-09 19:50:23,917 DEBUG [33172] [] ErrorController start
+2021-11-09 19:50:23,917 DEBUG [33172] [] controllers/ErrorController.php: is exist
+2021-11-09 19:50:23,917 DEBUG [33172] [] ErrorForm: is exist
+2021-11-09 19:50:23,917 DEBUG [33172] [] ErrorForm: form value set 
+2021-11-09 19:50:23,918 DEBUG [33172] [] ------------------------------/eccadmin_dev/Error/disp
+2021-11-09 19:50:23,918 DEBUG [33172] [] ------------------------------login_start_check
+2021-11-09 19:50:23,918 DEBUG [33172] [] dispAction start
+2021-11-09 19:50:23,931 DEBUG [33172] [] dispAction end
+2021-11-09 19:50:23,931 DEBUG [33172] [] ErrorController end
+2021-11-09 19:50:23,931 DEBUG [33172] [] finally

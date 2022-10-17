@@ -1,0 +1,3854 @@
+2022-07-05 17:16:45,310 DEBUG [124452] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 17:16:45,311 DEBUG [124452] [] ExcelContractListController start
+2022-07-05 17:16:45,311 DEBUG [124452] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:16:45,321 DEBUG [124452] [] ExcelContractListForm: is exist
+2022-07-05 17:16:45,321 DEBUG [124452] [] ExcelContractListForm: form value set 
+2022-07-05 17:16:45,321 DEBUG [124452] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 17:16:45,322 DEBUG [124452] [] indexAction start
+2022-07-05 17:16:45,322 DEBUG [124452] [] admin_no is 1
+2022-07-05 17:16:45,400 DEBUG [124452] [] indexAction end
+2022-07-05 17:16:45,400 DEBUG [124452] [] ExcelContractListController end
+2022-07-05 17:16:45,400 DEBUG [124452] [] finally
+2022-07-05 17:16:51,137 DEBUG [124245] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 17:16:51,138 DEBUG [124245] [] ExcelContractListController start
+2022-07-05 17:16:51,138 DEBUG [124245] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:16:51,148 DEBUG [124245] [] ExcelContractListForm: is exist
+2022-07-05 17:16:51,148 DEBUG [124245] [] ExcelContractListForm: form value set 
+2022-07-05 17:16:51,149 DEBUG [124245] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 17:16:51,149 DEBUG [124245] [] showAction start
+2022-07-05 17:16:51,149 DEBUG [124245] [] admin_no is 1
+2022-07-05 17:16:51,150 DEBUG [124245] [] showAction end
+2022-07-05 17:16:51,150 DEBUG [124245] [] ExcelContractListController end
+2022-07-05 17:16:51,150 DEBUG [124245] [] finally
+2022-07-05 17:16:51,169 DEBUG [124245] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:16:51,170 DEBUG [124245] [] ExcelContractListController start
+2022-07-05 17:16:51,170 DEBUG [124245] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:16:51,180 DEBUG [124245] [] ExcelContractListForm: is exist
+2022-07-05 17:16:51,180 DEBUG [124245] [] ExcelContractListForm: form value set 
+2022-07-05 17:16:51,180 DEBUG [124245] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:16:51,180 DEBUG [124245] [] viewExcelListAction start
+2022-07-05 17:16:51,275 DEBUG [124245] [] ここ
+2022-07-05 17:16:51,395 DEBUG [124245] [] viewExcelListAction end
+2022-07-05 17:16:51,395 DEBUG [124245] [] ExcelContractListController end
+2022-07-05 17:16:51,395 DEBUG [124245] [] finally
+2022-07-05 17:16:54,326 DEBUG [124245] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:16:54,327 DEBUG [124245] [] ExcelContractListController start
+2022-07-05 17:16:54,327 DEBUG [124245] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:16:54,338 DEBUG [124245] [] ExcelContractListForm: is exist
+2022-07-05 17:16:54,338 DEBUG [124245] [] ExcelContractListForm: form value set 
+2022-07-05 17:16:54,338 DEBUG [124245] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:16:54,339 DEBUG [124245] [] isValidAction start
+2022-07-05 17:16:54,339 DEBUG [124245] [] admin_no is 1
+2022-07-05 17:16:54,339 DEBUG [124245] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => ecc
+    [course_id] => 5
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:16:54,340 DEBUG [124245] [] 契約情報チェック NG
+2022-07-05 17:16:54,537 DEBUG [124245] [] isValidAction end
+2022-07-05 17:16:54,537 DEBUG [124245] [] ExcelContractListController end
+2022-07-05 17:16:54,537 DEBUG [124245] [] finally
+2022-07-05 17:17:26,450 DEBUG [124485] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 17:17:26,451 DEBUG [124485] [] ExcelContractListController start
+2022-07-05 17:17:26,451 DEBUG [124485] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:17:26,461 DEBUG [124485] [] ExcelContractListForm: is exist
+2022-07-05 17:17:26,462 DEBUG [124485] [] ExcelContractListForm: form value set 
+2022-07-05 17:17:26,462 DEBUG [124485] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 17:17:26,462 DEBUG [124485] [] showAction start
+2022-07-05 17:17:26,462 DEBUG [124485] [] admin_no is 1
+2022-07-05 17:17:26,463 DEBUG [124485] [] showAction end
+2022-07-05 17:17:26,463 DEBUG [124485] [] ExcelContractListController end
+2022-07-05 17:17:26,463 DEBUG [124485] [] finally
+2022-07-05 17:17:26,485 DEBUG [124485] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:17:26,485 DEBUG [124485] [] ExcelContractListController start
+2022-07-05 17:17:26,485 DEBUG [124485] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:17:26,495 DEBUG [124485] [] ExcelContractListForm: is exist
+2022-07-05 17:17:26,495 DEBUG [124485] [] ExcelContractListForm: form value set 
+2022-07-05 17:17:26,495 DEBUG [124485] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:17:26,495 DEBUG [124485] [] viewExcelListAction start
+2022-07-05 17:17:26,675 DEBUG [124485] [] ここ
+2022-07-05 17:17:26,736 DEBUG [124485] [] viewExcelListAction end
+2022-07-05 17:17:26,736 DEBUG [124485] [] ExcelContractListController end
+2022-07-05 17:17:26,736 DEBUG [124485] [] finally
+2022-07-05 17:17:28,909 DEBUG [124244] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:17:28,910 DEBUG [124244] [] ExcelContractListController start
+2022-07-05 17:17:28,910 DEBUG [124244] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:17:28,920 DEBUG [124244] [] ExcelContractListForm: is exist
+2022-07-05 17:17:28,920 DEBUG [124244] [] ExcelContractListForm: form value set 
+2022-07-05 17:17:28,921 DEBUG [124244] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:17:28,921 DEBUG [124244] [] isValidAction start
+2022-07-05 17:17:28,921 DEBUG [124244] [] admin_no is 1
+2022-07-05 17:17:28,921 DEBUG [124244] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => ecc
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:17:28,922 DEBUG [124244] [] 契約情報チェック NG
+2022-07-05 17:17:29,169 DEBUG [124244] [] isValidAction end
+2022-07-05 17:17:29,169 DEBUG [124244] [] ExcelContractListController end
+2022-07-05 17:17:29,169 DEBUG [124244] [] finally
+2022-07-05 17:58:40,319 DEBUG [125107] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 17:58:40,320 DEBUG [125107] [] ExcelContractListController start
+2022-07-05 17:58:40,320 DEBUG [125107] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:58:40,332 DEBUG [125107] [] ExcelContractListForm: is exist
+2022-07-05 17:58:40,332 DEBUG [125107] [] ExcelContractListForm: form value set 
+2022-07-05 17:58:40,332 DEBUG [125107] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 17:58:40,333 DEBUG [125107] [] indexAction start
+2022-07-05 17:58:40,333 DEBUG [125107] [] admin_no is 1
+2022-07-05 17:58:40,413 DEBUG [125107] [] indexAction end
+2022-07-05 17:58:40,413 DEBUG [125107] [] ExcelContractListController end
+2022-07-05 17:58:40,413 DEBUG [125107] [] finally
+2022-07-05 17:58:46,063 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 17:58:46,064 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:58:46,064 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:58:46,074 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:58:46,074 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:58:46,075 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 17:58:46,075 DEBUG [124977] [] showAction start
+2022-07-05 17:58:46,075 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:58:46,076 DEBUG [124977] [] showAction end
+2022-07-05 17:58:46,076 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 17:58:46,076 DEBUG [124977] [] finally
+2022-07-05 17:58:46,098 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:58:46,098 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:58:46,098 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:58:46,108 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:58:46,108 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:58:46,109 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:58:46,109 DEBUG [124977] [] viewExcelListAction start
+2022-07-05 17:58:46,298 DEBUG [124977] [] ここ
+2022-07-05 17:58:46,359 DEBUG [124977] [] viewExcelListAction end
+2022-07-05 17:58:46,359 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 17:58:46,359 DEBUG [124977] [] finally
+2022-07-05 17:58:48,187 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:58:48,188 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:58:48,188 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:58:48,199 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:58:48,199 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:58:48,199 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:58:48,200 DEBUG [124977] [] isValidAction start
+2022-07-05 17:58:48,200 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:58:48,200 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:58:48,204 DEBUG [124977] [] cdList
+2022-07-05 17:58:48,204 DEBUG [124977] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 17:58:48,204 DEBUG [124977] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 17:58:48,204 DEBUG [124977] [] course_detail_no : 1
+2022-07-05 17:58:48,204 DEBUG [124977] [] course_detail_no : 11
+2022-07-05 17:58:48,204 DEBUG [124977] [] course_detail_no : 31
+2022-07-05 17:58:48,204 DEBUG [124977] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 17:58:48,216 DEBUG [124977] [] コース詳細・受講者数が合わない。
+2022-07-05 17:58:48,464 DEBUG [124977] [] isValidAction end
+2022-07-05 17:58:48,464 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 17:58:48,464 DEBUG [124977] [] finally
+2022-07-05 17:59:35,358 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 17:59:35,359 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:59:35,359 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:59:35,368 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:59:35,369 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:59:35,369 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 17:59:35,369 DEBUG [124977] [] showAction start
+2022-07-05 17:59:35,369 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:59:35,370 DEBUG [124977] [] showAction end
+2022-07-05 17:59:35,370 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 17:59:35,370 DEBUG [124977] [] finally
+2022-07-05 17:59:35,392 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:59:35,393 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:59:35,393 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:59:35,403 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:59:35,403 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:59:35,403 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 17:59:35,403 DEBUG [124977] [] viewExcelListAction start
+2022-07-05 17:59:35,593 DEBUG [124977] [] ここ
+2022-07-05 17:59:35,654 DEBUG [124977] [] viewExcelListAction end
+2022-07-05 17:59:35,654 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 17:59:35,654 DEBUG [124977] [] finally
+2022-07-05 17:59:37,442 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:59:37,443 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 17:59:37,443 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 17:59:37,453 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 17:59:37,454 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 17:59:37,454 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 17:59:37,454 DEBUG [124977] [] isValidAction start
+2022-07-05 17:59:37,455 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:59:37,455 DEBUG [124977] [] admin_no is 1
+2022-07-05 17:59:37,458 DEBUG [124977] [] cdList
+2022-07-05 17:59:37,458 DEBUG [124977] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 17:59:37,458 DEBUG [124977] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 17:59:37,458 DEBUG [124977] [] course_detail_no : 1
+2022-07-05 17:59:37,459 DEBUG [124977] [] course_detail_no : 11
+2022-07-05 17:59:37,459 DEBUG [124977] [] course_detail_no : 31
+2022-07-05 17:59:37,459 DEBUG [124977] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 17:59:37,471 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,472 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,473 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,474 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,475 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,476 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,477 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,477 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,478 DEBUG [124977] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 17:59:37,479 DEBUG [124977] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 17:59:37,483 DEBUG [124977] [] 受講者チェック　OK
+2022-07-05 17:59:37,483 DEBUG [124977] [] INSERT INTO  T_COURSE_STUDENT (org_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 17:59:37,484 DEBUG [124977] [] rollback
+2022-07-05 17:59:37,484 ERROR [124977] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'offer_no' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(281): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(416): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 17:59:37,484 DEBUG [124977] [] finally
+2022-07-05 17:59:37,506 DEBUG [124977] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 17:59:37,506 DEBUG [124977] [] ErrorController start
+2022-07-05 17:59:37,507 DEBUG [124977] [] controllers/ErrorController.php: is exist
+2022-07-05 17:59:37,507 DEBUG [124977] [] ErrorForm: is exist
+2022-07-05 17:59:37,507 DEBUG [124977] [] ErrorForm: form value set 
+2022-07-05 17:59:37,507 DEBUG [124977] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 17:59:37,508 DEBUG [124977] [] ------------------------------login_start_check
+2022-07-05 17:59:37,508 DEBUG [124977] [] dispAction start
+2022-07-05 17:59:37,518 DEBUG [124977] [] dispAction end
+2022-07-05 17:59:37,518 DEBUG [124977] [] ErrorController end
+2022-07-05 17:59:37,518 DEBUG [124977] [] finally
+2022-07-05 18:00:53,661 DEBUG [125066] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:00:53,662 DEBUG [125066] [] LoginController start
+2022-07-05 18:00:53,662 DEBUG [125066] [] controllers/LoginController.php: is exist
+2022-07-05 18:00:53,662 DEBUG [125066] [] LoginForm: is exist
+2022-07-05 18:00:53,662 DEBUG [125066] [] LoginForm: form value set 
+2022-07-05 18:00:53,663 DEBUG [125066] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:00:53,663 DEBUG [125066] [] ------------------------------login_start_check
+2022-07-05 18:00:53,663 DEBUG [125066] [] indexAction start
+2022-07-05 18:00:53,678 DEBUG [125066] [] indexAction end
+2022-07-05 18:00:53,678 DEBUG [125066] [] LoginController end
+2022-07-05 18:00:53,679 DEBUG [125066] [] finally
+2022-07-05 18:00:55,972 DEBUG [125066] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:00:55,972 DEBUG [125066] [] LoginController start
+2022-07-05 18:00:55,972 DEBUG [125066] [] controllers/LoginController.php: is exist
+2022-07-05 18:00:55,973 DEBUG [125066] [] LoginForm: is exist
+2022-07-05 18:00:55,973 DEBUG [125066] [] LoginForm: form value set 
+2022-07-05 18:00:55,973 DEBUG [125066] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:00:55,973 DEBUG [125066] [] ------------------------------login_start_check
+2022-07-05 18:00:55,973 DEBUG [125066] [] loginAction start
+2022-07-05 18:00:56,274 DEBUG [125066] [] loginAction end
+2022-07-05 18:00:56,274 DEBUG [125066] [] LoginController end
+2022-07-05 18:00:56,275 DEBUG [125066] [] finally
+2022-07-05 18:00:56,297 DEBUG [125066] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:00:56,298 DEBUG [125066] [] MenuController start
+2022-07-05 18:00:56,298 DEBUG [125066] [] controllers/MenuController.php: is exist
+2022-07-05 18:00:56,298 DEBUG [125066] [] MenuForm: is exist
+2022-07-05 18:00:56,298 DEBUG [125066] [] MenuForm: form value set 
+2022-07-05 18:00:56,299 DEBUG [125066] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:00:56,299 DEBUG [125066] [] ------------------------------login_start_check
+2022-07-05 18:00:56,299 DEBUG [125066] [] indexAction start
+2022-07-05 18:00:56,299 DEBUG [125066] [] admin_no is 1
+2022-07-05 18:00:56,327 DEBUG [125066] [] indexAction end
+2022-07-05 18:00:56,327 DEBUG [125066] [] MenuController end
+2022-07-05 18:00:56,327 DEBUG [125066] [] finally
+2022-07-05 18:00:59,989 DEBUG [125107] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:00:59,989 DEBUG [125107] [] ExcelContractListController start
+2022-07-05 18:00:59,989 DEBUG [125107] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:01:00,000 DEBUG [125107] [] ExcelContractListForm: is exist
+2022-07-05 18:01:00,000 DEBUG [125107] [] ExcelContractListForm: form value set 
+2022-07-05 18:01:00,001 DEBUG [125107] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:01:00,001 DEBUG [125107] [] indexAction start
+2022-07-05 18:01:00,001 DEBUG [125107] [] admin_no is 1
+2022-07-05 18:01:00,082 DEBUG [125107] [] indexAction end
+2022-07-05 18:01:00,082 DEBUG [125107] [] ExcelContractListController end
+2022-07-05 18:01:00,082 DEBUG [125107] [] finally
+2022-07-05 18:01:06,463 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:01:06,463 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:01:06,463 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:01:06,474 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:01:06,475 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:01:06,475 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:01:06,475 DEBUG [125129] [] showAction start
+2022-07-05 18:01:06,475 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:01:06,476 DEBUG [125129] [] showAction end
+2022-07-05 18:01:06,476 DEBUG [125129] [] ExcelContractListController end
+2022-07-05 18:01:06,476 DEBUG [125129] [] finally
+2022-07-05 18:01:06,495 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:01:06,495 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:01:06,495 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:01:06,505 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:01:06,505 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:01:06,505 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:01:06,506 DEBUG [125129] [] viewExcelListAction start
+2022-07-05 18:01:06,691 DEBUG [125129] [] ここ
+2022-07-05 18:01:06,754 DEBUG [125129] [] viewExcelListAction end
+2022-07-05 18:01:06,754 DEBUG [125129] [] ExcelContractListController end
+2022-07-05 18:01:06,755 DEBUG [125129] [] finally
+2022-07-05 18:01:08,487 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:01:08,487 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:01:08,487 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:01:08,498 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:01:08,498 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:01:08,499 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:01:08,499 DEBUG [125129] [] isValidAction start
+2022-07-05 18:01:08,499 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:01:08,499 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:01:08,503 DEBUG [125129] [] cdList
+2022-07-05 18:01:08,503 DEBUG [125129] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:01:08,503 DEBUG [125129] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:01:08,503 DEBUG [125129] [] course_detail_no : 1
+2022-07-05 18:01:08,503 DEBUG [125129] [] course_detail_no : 11
+2022-07-05 18:01:08,503 DEBUG [125129] [] course_detail_no : 31
+2022-07-05 18:01:08,503 DEBUG [125129] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:01:08,514 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,515 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,516 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,517 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,518 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,518 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,519 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,520 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,521 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:01:08,522 DEBUG [125129] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:01:08,525 DEBUG [125129] [] 受講者チェック　OK
+2022-07-05 18:01:08,526 DEBUG [125129] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:01:08,526 DEBUG [125129] [] rollback
+2022-07-05 18:01:08,526 ERROR [125129] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'start_period' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(283): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(418): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 18:01:08,526 DEBUG [125129] [] finally
+2022-07-05 18:01:08,543 DEBUG [125129] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 18:01:08,543 DEBUG [125129] [] ErrorController start
+2022-07-05 18:01:08,544 DEBUG [125129] [] controllers/ErrorController.php: is exist
+2022-07-05 18:01:08,544 DEBUG [125129] [] ErrorForm: is exist
+2022-07-05 18:01:08,544 DEBUG [125129] [] ErrorForm: form value set 
+2022-07-05 18:01:08,544 DEBUG [125129] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 18:01:08,544 DEBUG [125129] [] ------------------------------login_start_check
+2022-07-05 18:01:08,544 DEBUG [125129] [] dispAction start
+2022-07-05 18:01:08,553 DEBUG [125129] [] dispAction end
+2022-07-05 18:01:08,553 DEBUG [125129] [] ErrorController end
+2022-07-05 18:01:08,554 DEBUG [125129] [] finally
+2022-07-05 18:01:46,680 DEBUG [125151] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:01:46,684 DEBUG [125151] [] LoginController start
+2022-07-05 18:01:46,684 DEBUG [125151] [] controllers/LoginController.php: is exist
+2022-07-05 18:01:46,684 DEBUG [125151] [] LoginForm: is exist
+2022-07-05 18:01:46,685 DEBUG [125151] [] LoginForm: form value set 
+2022-07-05 18:01:46,685 DEBUG [125151] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:01:46,685 DEBUG [125151] [] ------------------------------login_start_check
+2022-07-05 18:01:46,685 DEBUG [125151] [] indexAction start
+2022-07-05 18:01:46,702 DEBUG [125151] [] indexAction end
+2022-07-05 18:01:46,702 DEBUG [125151] [] LoginController end
+2022-07-05 18:01:46,702 DEBUG [125151] [] finally
+2022-07-05 18:01:48,902 DEBUG [125151] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:01:48,902 DEBUG [125151] [] LoginController start
+2022-07-05 18:01:48,903 DEBUG [125151] [] controllers/LoginController.php: is exist
+2022-07-05 18:01:48,903 DEBUG [125151] [] LoginForm: is exist
+2022-07-05 18:01:48,903 DEBUG [125151] [] LoginForm: form value set 
+2022-07-05 18:01:48,903 DEBUG [125151] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:01:48,903 DEBUG [125151] [] ------------------------------login_start_check
+2022-07-05 18:01:48,904 DEBUG [125151] [] loginAction start
+2022-07-05 18:01:49,208 DEBUG [125151] [] loginAction end
+2022-07-05 18:01:49,208 DEBUG [125151] [] LoginController end
+2022-07-05 18:01:49,208 DEBUG [125151] [] finally
+2022-07-05 18:01:49,262 DEBUG [125129] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:01:49,263 DEBUG [125129] [] MenuController start
+2022-07-05 18:01:49,263 DEBUG [125129] [] controllers/MenuController.php: is exist
+2022-07-05 18:01:49,264 DEBUG [125129] [] MenuForm: is exist
+2022-07-05 18:01:49,265 DEBUG [125129] [] MenuForm: form value set 
+2022-07-05 18:01:49,265 DEBUG [125129] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:01:49,265 DEBUG [125129] [] ------------------------------login_start_check
+2022-07-05 18:01:49,265 DEBUG [125129] [] indexAction start
+2022-07-05 18:01:49,266 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:01:49,318 DEBUG [125129] [] indexAction end
+2022-07-05 18:01:49,318 DEBUG [125129] [] MenuController end
+2022-07-05 18:01:49,318 DEBUG [125129] [] finally
+2022-07-05 18:01:51,013 DEBUG [125151] [] Request URI : /eccadmin_dev/CourseContractList
+2022-07-05 18:01:51,013 DEBUG [125151] [] CourseContractListController start
+2022-07-05 18:01:51,013 DEBUG [125151] [] controllers/CourseContractListController.php: is exist
+2022-07-05 18:01:51,018 DEBUG [125151] [] CourseContractListForm: is exist
+2022-07-05 18:01:51,019 DEBUG [125151] [] CourseContractListForm: form value set 
+2022-07-05 18:01:51,019 DEBUG [125151] [] ------------------------------/eccadmin_dev/CourseContractList
+2022-07-05 18:01:51,019 DEBUG [125151] [] indexAction start
+2022-07-05 18:01:51,019 DEBUG [125151] [] admin_no is 1
+2022-07-05 18:01:51,134 DEBUG [125151] [] indexAction end
+2022-07-05 18:01:51,134 DEBUG [125151] [] CourseContractListController end
+2022-07-05 18:01:51,135 DEBUG [125151] [] finally
+2022-07-05 18:01:55,117 DEBUG [125151] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2022-07-05 18:01:55,117 DEBUG [125151] [] CourseContractRegistController start
+2022-07-05 18:01:55,117 DEBUG [125151] [] controllers/CourseContractRegistController.php: is exist
+2022-07-05 18:01:55,120 DEBUG [125151] [] CourseContractRegistForm: is exist
+2022-07-05 18:01:55,121 DEBUG [125151] [] CourseContractRegistForm: form value set 
+2022-07-05 18:01:55,121 DEBUG [125151] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2022-07-05 18:01:55,121 DEBUG [125151] [] ------------------------------session_check_true
+2022-07-05 18:01:55,121 DEBUG [125151] [] indexAction start
+2022-07-05 18:01:55,121 DEBUG [125151] [] admin_no is 1
+2022-07-05 18:01:55,194 DEBUG [125151] [] indexAction end
+2022-07-05 18:01:55,194 DEBUG [125151] [] CourseContractRegistController end
+2022-07-05 18:01:55,194 DEBUG [125151] [] finally
+2022-07-05 18:01:58,716 DEBUG [125129] [] Request URI : /eccadmin_dev/CourseStudentRegist/index
+2022-07-05 18:01:58,717 DEBUG [125129] [] CourseStudentRegistController start
+2022-07-05 18:01:58,717 DEBUG [125129] [] controllers/CourseStudentRegistController.php: is exist
+2022-07-05 18:01:58,720 DEBUG [125129] [] CourseStudentRegistForm: is exist
+2022-07-05 18:01:58,720 DEBUG [125129] [] CourseStudentRegistForm: form value set 
+2022-07-05 18:01:58,721 DEBUG [125129] [] ------------------------------/eccadmin_dev/CourseStudentRegist/index
+2022-07-05 18:01:58,721 DEBUG [125129] [] ------------------------------session_check_true
+2022-07-05 18:01:58,721 DEBUG [125129] [] indexAction start
+2022-07-05 18:01:58,721 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:01:58,803 DEBUG [125129] [] indexAction end
+2022-07-05 18:01:58,803 DEBUG [125129] [] CourseStudentRegistController end
+2022-07-05 18:01:58,803 DEBUG [125129] [] finally
+2022-07-05 18:07:58,692 DEBUG [125177] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:07:58,693 DEBUG [125177] [] ExcelContractListController start
+2022-07-05 18:07:58,693 DEBUG [125177] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:07:58,704 DEBUG [125177] [] ExcelContractListForm: is exist
+2022-07-05 18:07:58,704 DEBUG [125177] [] ExcelContractListForm: form value set 
+2022-07-05 18:07:58,705 DEBUG [125177] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:07:58,705 DEBUG [125177] [] indexAction start
+2022-07-05 18:07:58,705 DEBUG [125177] [] admin_no is 1
+2022-07-05 18:07:58,784 DEBUG [125177] [] indexAction end
+2022-07-05 18:07:58,784 DEBUG [125177] [] ExcelContractListController end
+2022-07-05 18:07:58,784 DEBUG [125177] [] finally
+2022-07-05 18:08:05,063 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:08:05,064 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:08:05,064 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:08:05,074 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:08:05,074 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:08:05,075 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:08:05,075 DEBUG [125129] [] showAction start
+2022-07-05 18:08:05,075 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:08:05,076 DEBUG [125129] [] showAction end
+2022-07-05 18:08:05,076 DEBUG [125129] [] ExcelContractListController end
+2022-07-05 18:08:05,076 DEBUG [125129] [] finally
+2022-07-05 18:08:05,093 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:08:05,094 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:08:05,094 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:08:05,103 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:08:05,103 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:08:05,104 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:08:05,104 DEBUG [125129] [] viewExcelListAction start
+2022-07-05 18:08:05,282 DEBUG [125129] [] ここ
+2022-07-05 18:08:05,344 DEBUG [125129] [] viewExcelListAction end
+2022-07-05 18:08:05,344 DEBUG [125129] [] ExcelContractListController end
+2022-07-05 18:08:05,344 DEBUG [125129] [] finally
+2022-07-05 18:08:07,176 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:08:07,177 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:08:07,177 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:08:07,188 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:08:07,188 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:08:07,189 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:08:07,189 DEBUG [125129] [] isValidAction start
+2022-07-05 18:08:07,189 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:08:07,189 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:08:07,193 DEBUG [125129] [] cdList
+2022-07-05 18:08:07,193 DEBUG [125129] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:08:07,193 DEBUG [125129] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:08:07,193 DEBUG [125129] [] course_detail_no : 1
+2022-07-05 18:08:07,193 DEBUG [125129] [] course_detail_no : 11
+2022-07-05 18:08:07,193 DEBUG [125129] [] course_detail_no : 31
+2022-07-05 18:08:07,193 DEBUG [125129] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:08:07,205 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,206 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,207 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,208 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,209 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,209 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,210 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,211 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,212 DEBUG [125129] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:08:07,213 DEBUG [125129] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:08:07,218 DEBUG [125129] [] 受講者チェック　OK
+2022-07-05 18:08:07,218 DEBUG [125129] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:08:07,219 DEBUG [125129] [] rollback
+2022-07-05 18:08:07,219 ERROR [125129] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'start_period' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(291): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(426): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 18:08:07,219 DEBUG [125129] [] finally
+2022-07-05 18:08:07,237 DEBUG [125129] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 18:08:07,237 DEBUG [125129] [] ErrorController start
+2022-07-05 18:08:07,237 DEBUG [125129] [] controllers/ErrorController.php: is exist
+2022-07-05 18:08:07,238 DEBUG [125129] [] ErrorForm: is exist
+2022-07-05 18:08:07,238 DEBUG [125129] [] ErrorForm: form value set 
+2022-07-05 18:08:07,238 DEBUG [125129] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 18:08:07,238 DEBUG [125129] [] ------------------------------login_start_check
+2022-07-05 18:08:07,238 DEBUG [125129] [] dispAction start
+2022-07-05 18:08:07,248 DEBUG [125129] [] dispAction end
+2022-07-05 18:08:07,249 DEBUG [125129] [] ErrorController end
+2022-07-05 18:08:07,249 DEBUG [125129] [] finally
+2022-07-05 18:09:50,258 DEBUG [124687] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:09:50,259 DEBUG [124687] [] LoginController start
+2022-07-05 18:09:50,259 DEBUG [124687] [] controllers/LoginController.php: is exist
+2022-07-05 18:09:50,259 DEBUG [124687] [] LoginForm: is exist
+2022-07-05 18:09:50,260 DEBUG [124687] [] LoginForm: form value set 
+2022-07-05 18:09:50,260 DEBUG [124687] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:09:50,260 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:09:50,260 DEBUG [124687] [] indexAction start
+2022-07-05 18:09:50,276 DEBUG [124687] [] indexAction end
+2022-07-05 18:09:50,276 DEBUG [124687] [] LoginController end
+2022-07-05 18:09:50,276 DEBUG [124687] [] finally
+2022-07-05 18:09:52,564 DEBUG [124687] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:09:52,564 DEBUG [124687] [] LoginController start
+2022-07-05 18:09:52,565 DEBUG [124687] [] controllers/LoginController.php: is exist
+2022-07-05 18:09:52,565 DEBUG [124687] [] LoginForm: is exist
+2022-07-05 18:09:52,565 DEBUG [124687] [] LoginForm: form value set 
+2022-07-05 18:09:52,565 DEBUG [124687] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:09:52,565 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:09:52,566 DEBUG [124687] [] loginAction start
+2022-07-05 18:09:52,860 DEBUG [124687] [] loginAction end
+2022-07-05 18:09:52,860 DEBUG [124687] [] LoginController end
+2022-07-05 18:09:52,860 DEBUG [124687] [] finally
+2022-07-05 18:09:52,882 DEBUG [124687] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:09:52,883 DEBUG [124687] [] MenuController start
+2022-07-05 18:09:52,883 DEBUG [124687] [] controllers/MenuController.php: is exist
+2022-07-05 18:09:52,884 DEBUG [124687] [] MenuForm: is exist
+2022-07-05 18:09:52,884 DEBUG [124687] [] MenuForm: form value set 
+2022-07-05 18:09:52,884 DEBUG [124687] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:09:52,884 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:09:52,884 DEBUG [124687] [] indexAction start
+2022-07-05 18:09:52,884 DEBUG [124687] [] admin_no is 1
+2022-07-05 18:09:52,923 DEBUG [124687] [] indexAction end
+2022-07-05 18:09:52,923 DEBUG [124687] [] MenuController end
+2022-07-05 18:09:52,923 DEBUG [124687] [] finally
+2022-07-05 18:09:55,730 DEBUG [124687] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:09:55,731 DEBUG [124687] [] ExcelContractListController start
+2022-07-05 18:09:55,731 DEBUG [124687] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:09:55,742 DEBUG [124687] [] ExcelContractListForm: is exist
+2022-07-05 18:09:55,742 DEBUG [124687] [] ExcelContractListForm: form value set 
+2022-07-05 18:09:55,742 DEBUG [124687] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:09:55,743 DEBUG [124687] [] indexAction start
+2022-07-05 18:09:55,743 DEBUG [124687] [] admin_no is 1
+2022-07-05 18:09:55,823 DEBUG [124687] [] indexAction end
+2022-07-05 18:09:55,823 DEBUG [124687] [] ExcelContractListController end
+2022-07-05 18:09:55,823 DEBUG [124687] [] finally
+2022-07-05 18:10:00,618 DEBUG [125107] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:10:00,618 DEBUG [125107] [] ExcelContractListController start
+2022-07-05 18:10:00,618 DEBUG [125107] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:10:00,629 DEBUG [125107] [] ExcelContractListForm: is exist
+2022-07-05 18:10:00,629 DEBUG [125107] [] ExcelContractListForm: form value set 
+2022-07-05 18:10:00,630 DEBUG [125107] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:10:00,630 DEBUG [125107] [] showAction start
+2022-07-05 18:10:00,630 DEBUG [125107] [] admin_no is 1
+2022-07-05 18:10:00,631 DEBUG [125107] [] showAction end
+2022-07-05 18:10:00,631 DEBUG [125107] [] ExcelContractListController end
+2022-07-05 18:10:00,631 DEBUG [125107] [] finally
+2022-07-05 18:10:00,655 DEBUG [125107] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:10:00,655 DEBUG [125107] [] ExcelContractListController start
+2022-07-05 18:10:00,655 DEBUG [125107] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:10:00,666 DEBUG [125107] [] ExcelContractListForm: is exist
+2022-07-05 18:10:00,666 DEBUG [125107] [] ExcelContractListForm: form value set 
+2022-07-05 18:10:00,666 DEBUG [125107] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:10:00,666 DEBUG [125107] [] viewExcelListAction start
+2022-07-05 18:10:00,863 DEBUG [125107] [] ここ
+2022-07-05 18:10:00,925 DEBUG [125107] [] viewExcelListAction end
+2022-07-05 18:10:00,925 DEBUG [125107] [] ExcelContractListController end
+2022-07-05 18:10:00,925 DEBUG [125107] [] finally
+2022-07-05 18:10:02,775 DEBUG [125107] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:10:02,775 DEBUG [125107] [] ExcelContractListController start
+2022-07-05 18:10:02,775 DEBUG [125107] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:10:02,786 DEBUG [125107] [] ExcelContractListForm: is exist
+2022-07-05 18:10:02,786 DEBUG [125107] [] ExcelContractListForm: form value set 
+2022-07-05 18:10:02,787 DEBUG [125107] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:10:02,787 DEBUG [125107] [] isValidAction start
+2022-07-05 18:10:02,787 DEBUG [125107] [] admin_no is 1
+2022-07-05 18:10:02,787 DEBUG [125107] [] admin_no is 1
+2022-07-05 18:10:02,791 DEBUG [125107] [] cdList
+2022-07-05 18:10:02,791 DEBUG [125107] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:10:02,791 DEBUG [125107] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:10:02,791 DEBUG [125107] [] course_detail_no : 1
+2022-07-05 18:10:02,791 DEBUG [125107] [] course_detail_no : 11
+2022-07-05 18:10:02,791 DEBUG [125107] [] course_detail_no : 31
+2022-07-05 18:10:02,791 DEBUG [125107] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:10:02,802 DEBUG [125107] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:10:02,803 DEBUG [125107] [] start_period
+2022-07-05 18:10:02,807 DEBUG [125107] [] 受講者チェック　OK
+2022-07-05 18:10:02,807 DEBUG [125107] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:10:02,808 DEBUG [125107] [] rollback
+2022-07-05 18:10:02,808 ERROR [125107] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'start_period' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(293): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(411): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 18:10:02,808 DEBUG [125107] [] finally
+2022-07-05 18:10:02,830 DEBUG [125107] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 18:10:02,831 DEBUG [125107] [] ErrorController start
+2022-07-05 18:10:02,831 DEBUG [125107] [] controllers/ErrorController.php: is exist
+2022-07-05 18:10:02,831 DEBUG [125107] [] ErrorForm: is exist
+2022-07-05 18:10:02,831 DEBUG [125107] [] ErrorForm: form value set 
+2022-07-05 18:10:02,832 DEBUG [125107] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 18:10:02,832 DEBUG [125107] [] ------------------------------login_start_check
+2022-07-05 18:10:02,832 DEBUG [125107] [] dispAction start
+2022-07-05 18:10:02,843 DEBUG [125107] [] dispAction end
+2022-07-05 18:10:02,843 DEBUG [125107] [] ErrorController end
+2022-07-05 18:10:02,843 DEBUG [125107] [] finally
+2022-07-05 18:11:17,594 DEBUG [125151] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:11:17,595 DEBUG [125151] [] LoginController start
+2022-07-05 18:11:17,595 DEBUG [125151] [] controllers/LoginController.php: is exist
+2022-07-05 18:11:17,595 DEBUG [125151] [] LoginForm: is exist
+2022-07-05 18:11:17,595 DEBUG [125151] [] LoginForm: form value set 
+2022-07-05 18:11:17,596 DEBUG [125151] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:11:17,596 DEBUG [125151] [] ------------------------------login_start_check
+2022-07-05 18:11:17,596 DEBUG [125151] [] indexAction start
+2022-07-05 18:11:17,610 DEBUG [125151] [] indexAction end
+2022-07-05 18:11:17,610 DEBUG [125151] [] LoginController end
+2022-07-05 18:11:17,611 DEBUG [125151] [] finally
+2022-07-05 18:11:31,992 DEBUG [125129] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:11:31,993 DEBUG [125129] [] LoginController start
+2022-07-05 18:11:31,993 DEBUG [125129] [] controllers/LoginController.php: is exist
+2022-07-05 18:11:31,993 DEBUG [125129] [] LoginForm: is exist
+2022-07-05 18:11:31,993 DEBUG [125129] [] LoginForm: form value set 
+2022-07-05 18:11:31,993 DEBUG [125129] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:11:31,994 DEBUG [125129] [] ------------------------------login_start_check
+2022-07-05 18:11:31,994 DEBUG [125129] [] loginAction start
+2022-07-05 18:11:32,289 DEBUG [125129] [] loginAction end
+2022-07-05 18:11:32,289 DEBUG [125129] [] LoginController end
+2022-07-05 18:11:32,290 DEBUG [125129] [] finally
+2022-07-05 18:11:32,306 DEBUG [125129] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:11:32,306 DEBUG [125129] [] MenuController start
+2022-07-05 18:11:32,306 DEBUG [125129] [] controllers/MenuController.php: is exist
+2022-07-05 18:11:32,307 DEBUG [125129] [] MenuForm: is exist
+2022-07-05 18:11:32,307 DEBUG [125129] [] MenuForm: form value set 
+2022-07-05 18:11:32,308 DEBUG [125129] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:11:32,308 DEBUG [125129] [] ------------------------------login_start_check
+2022-07-05 18:11:32,308 DEBUG [125129] [] indexAction start
+2022-07-05 18:11:32,308 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:11:32,337 DEBUG [125129] [] indexAction end
+2022-07-05 18:11:32,337 DEBUG [125129] [] MenuController end
+2022-07-05 18:11:32,337 DEBUG [125129] [] finally
+2022-07-05 18:11:35,088 DEBUG [125129] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:11:35,089 DEBUG [125129] [] ExcelContractListController start
+2022-07-05 18:11:35,089 DEBUG [125129] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:11:35,100 DEBUG [125129] [] ExcelContractListForm: is exist
+2022-07-05 18:11:35,100 DEBUG [125129] [] ExcelContractListForm: form value set 
+2022-07-05 18:11:35,100 DEBUG [125129] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:11:35,101 DEBUG [125129] [] indexAction start
+2022-07-05 18:11:35,101 DEBUG [125129] [] admin_no is 1
+2022-07-05 18:11:35,180 DEBUG [125129] [] indexAction end
+2022-07-05 18:11:35,180 DEBUG [125129] [] ExcelContractListController end
+2022-07-05 18:11:35,181 DEBUG [125129] [] finally
+2022-07-05 18:11:40,442 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:11:40,442 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 18:11:40,442 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:11:40,453 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 18:11:40,453 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 18:11:40,454 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:11:40,454 DEBUG [124977] [] showAction start
+2022-07-05 18:11:40,454 DEBUG [124977] [] admin_no is 1
+2022-07-05 18:11:40,455 DEBUG [124977] [] showAction end
+2022-07-05 18:11:40,455 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 18:11:40,455 DEBUG [124977] [] finally
+2022-07-05 18:11:40,473 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:11:40,473 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 18:11:40,473 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:11:40,483 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 18:11:40,483 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 18:11:40,484 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:11:40,484 DEBUG [124977] [] viewExcelListAction start
+2022-07-05 18:11:40,671 DEBUG [124977] [] ここ
+2022-07-05 18:11:40,735 DEBUG [124977] [] viewExcelListAction end
+2022-07-05 18:11:40,735 DEBUG [124977] [] ExcelContractListController end
+2022-07-05 18:11:40,735 DEBUG [124977] [] finally
+2022-07-05 18:11:42,468 DEBUG [124977] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:11:42,469 DEBUG [124977] [] ExcelContractListController start
+2022-07-05 18:11:42,469 DEBUG [124977] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:11:42,480 DEBUG [124977] [] ExcelContractListForm: is exist
+2022-07-05 18:11:42,480 DEBUG [124977] [] ExcelContractListForm: form value set 
+2022-07-05 18:11:42,480 DEBUG [124977] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:11:42,481 DEBUG [124977] [] isValidAction start
+2022-07-05 18:11:42,481 DEBUG [124977] [] admin_no is 1
+2022-07-05 18:11:42,481 DEBUG [124977] [] admin_no is 1
+2022-07-05 18:11:42,484 DEBUG [124977] [] cdList
+2022-07-05 18:11:42,484 DEBUG [124977] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:11:42,485 DEBUG [124977] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:11:42,485 DEBUG [124977] [] course_detail_no : 1
+2022-07-05 18:11:42,485 DEBUG [124977] [] course_detail_no : 11
+2022-07-05 18:11:42,485 DEBUG [124977] [] course_detail_no : 31
+2022-07-05 18:11:42,485 DEBUG [124977] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:11:42,496 DEBUG [124977] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:11:42,497 DEBUG [124977] [] Array
+(
+    [0] => T_Course_OrgDto Object
+        (
+            [offer_no] => 1
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/04/01
+            [end_period] => 2018/09/29
+            [remarks] => aaaaaaaaa
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [1] => T_Course_OrgDto Object
+        (
+            [offer_no] => 24
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/08/08
+            [end_period] => 2018/11/08
+            [remarks] => test
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [2] => T_Course_OrgDto Object
+        (
+            [offer_no] => 35
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/08/24
+            [end_period] => 2018/11/24
+            [remarks] => aaaaaaaaa
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [3] => T_Course_OrgDto Object
+        (
+            [offer_no] => 44
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/30
+            [end_period] => 2018/12/31
+            [remarks] => テスト
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [4] => T_Course_OrgDto Object
+        (
+            [offer_no] => 45
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/30
+            [end_period] => 2018/12/30
+            [remarks] => test
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [5] => T_Course_OrgDto Object
+        (
+            [offer_no] => 59
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/21
+            [end_period] => 2018/09/30
+            [remarks] => GIC Myanmar
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+)
+
+2022-07-05 18:11:42,501 DEBUG [124977] [] 受講者チェック　OK
+2022-07-05 18:11:42,502 DEBUG [124977] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:11:42,502 DEBUG [124977] [] rollback
+2022-07-05 18:11:42,502 ERROR [124977] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'start_period' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(293): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(411): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 18:11:42,503 DEBUG [124977] [] finally
+2022-07-05 18:11:42,519 DEBUG [124977] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 18:11:42,520 DEBUG [124977] [] ErrorController start
+2022-07-05 18:11:42,520 DEBUG [124977] [] controllers/ErrorController.php: is exist
+2022-07-05 18:11:42,520 DEBUG [124977] [] ErrorForm: is exist
+2022-07-05 18:11:42,520 DEBUG [124977] [] ErrorForm: form value set 
+2022-07-05 18:11:42,521 DEBUG [124977] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 18:11:42,521 DEBUG [124977] [] ------------------------------login_start_check
+2022-07-05 18:11:42,521 DEBUG [124977] [] dispAction start
+2022-07-05 18:11:42,530 DEBUG [124977] [] dispAction end
+2022-07-05 18:11:42,530 DEBUG [124977] [] ErrorController end
+2022-07-05 18:11:42,531 DEBUG [124977] [] finally
+2022-07-05 18:17:50,978 DEBUG [124694] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:17:50,979 DEBUG [124694] [] LoginController start
+2022-07-05 18:17:50,979 DEBUG [124694] [] controllers/LoginController.php: is exist
+2022-07-05 18:17:50,979 DEBUG [124694] [] LoginForm: is exist
+2022-07-05 18:17:50,979 DEBUG [124694] [] LoginForm: form value set 
+2022-07-05 18:17:50,980 DEBUG [124694] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:17:50,980 DEBUG [124694] [] ------------------------------login_start_check
+2022-07-05 18:17:50,980 DEBUG [124694] [] indexAction start
+2022-07-05 18:17:50,995 DEBUG [124694] [] indexAction end
+2022-07-05 18:17:50,995 DEBUG [124694] [] LoginController end
+2022-07-05 18:17:50,996 DEBUG [124694] [] finally
+2022-07-05 18:18:18,969 DEBUG [125244] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:18:18,969 DEBUG [125244] [] LoginController start
+2022-07-05 18:18:18,969 DEBUG [125244] [] controllers/LoginController.php: is exist
+2022-07-05 18:18:18,970 DEBUG [125244] [] LoginForm: is exist
+2022-07-05 18:18:18,970 DEBUG [125244] [] LoginForm: form value set 
+2022-07-05 18:18:18,970 DEBUG [125244] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:18:18,971 DEBUG [125244] [] ------------------------------login_start_check
+2022-07-05 18:18:18,971 DEBUG [125244] [] loginAction start
+2022-07-05 18:18:19,271 DEBUG [125244] [] loginAction end
+2022-07-05 18:18:19,271 DEBUG [125244] [] LoginController end
+2022-07-05 18:18:19,271 DEBUG [125244] [] finally
+2022-07-05 18:18:19,288 DEBUG [125244] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:18:19,288 DEBUG [125244] [] MenuController start
+2022-07-05 18:18:19,288 DEBUG [125244] [] controllers/MenuController.php: is exist
+2022-07-05 18:18:19,289 DEBUG [125244] [] MenuForm: is exist
+2022-07-05 18:18:19,289 DEBUG [125244] [] MenuForm: form value set 
+2022-07-05 18:18:19,289 DEBUG [125244] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:18:19,289 DEBUG [125244] [] ------------------------------login_start_check
+2022-07-05 18:18:19,289 DEBUG [125244] [] indexAction start
+2022-07-05 18:18:19,290 DEBUG [125244] [] admin_no is 1
+2022-07-05 18:18:19,318 DEBUG [125244] [] indexAction end
+2022-07-05 18:18:19,318 DEBUG [125244] [] MenuController end
+2022-07-05 18:18:19,319 DEBUG [125244] [] finally
+2022-07-05 18:18:22,872 DEBUG [125244] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:18:22,872 DEBUG [125244] [] ExcelContractListController start
+2022-07-05 18:18:22,872 DEBUG [125244] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:18:22,883 DEBUG [125244] [] ExcelContractListForm: is exist
+2022-07-05 18:18:22,883 DEBUG [125244] [] ExcelContractListForm: form value set 
+2022-07-05 18:18:22,884 DEBUG [125244] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:18:22,884 DEBUG [125244] [] indexAction start
+2022-07-05 18:18:22,884 DEBUG [125244] [] admin_no is 1
+2022-07-05 18:18:22,963 DEBUG [125244] [] indexAction end
+2022-07-05 18:18:22,963 DEBUG [125244] [] ExcelContractListController end
+2022-07-05 18:18:22,963 DEBUG [125244] [] finally
+2022-07-05 18:18:30,662 DEBUG [125208] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:18:30,663 DEBUG [125208] [] ExcelContractListController start
+2022-07-05 18:18:30,663 DEBUG [125208] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:18:30,673 DEBUG [125208] [] ExcelContractListForm: is exist
+2022-07-05 18:18:30,673 DEBUG [125208] [] ExcelContractListForm: form value set 
+2022-07-05 18:18:30,674 DEBUG [125208] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:18:30,674 DEBUG [125208] [] showAction start
+2022-07-05 18:18:30,674 DEBUG [125208] [] admin_no is 1
+2022-07-05 18:18:30,675 DEBUG [125208] [] showAction end
+2022-07-05 18:18:30,675 DEBUG [125208] [] ExcelContractListController end
+2022-07-05 18:18:30,675 DEBUG [125208] [] finally
+2022-07-05 18:18:30,692 DEBUG [125208] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:18:30,693 DEBUG [125208] [] ExcelContractListController start
+2022-07-05 18:18:30,693 DEBUG [125208] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:18:30,702 DEBUG [125208] [] ExcelContractListForm: is exist
+2022-07-05 18:18:30,702 DEBUG [125208] [] ExcelContractListForm: form value set 
+2022-07-05 18:18:30,703 DEBUG [125208] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:18:30,703 DEBUG [125208] [] viewExcelListAction start
+2022-07-05 18:18:30,886 DEBUG [125208] [] ここ
+2022-07-05 18:18:30,949 DEBUG [125208] [] viewExcelListAction end
+2022-07-05 18:18:30,949 DEBUG [125208] [] ExcelContractListController end
+2022-07-05 18:18:30,949 DEBUG [125208] [] finally
+2022-07-05 18:18:32,732 DEBUG [125208] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:18:32,732 DEBUG [125208] [] ExcelContractListController start
+2022-07-05 18:18:32,732 DEBUG [125208] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:18:32,742 DEBUG [125208] [] ExcelContractListForm: is exist
+2022-07-05 18:18:32,743 DEBUG [125208] [] ExcelContractListForm: form value set 
+2022-07-05 18:18:32,743 DEBUG [125208] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:18:32,743 DEBUG [125208] [] isValidAction start
+2022-07-05 18:18:32,743 DEBUG [125208] [] admin_no is 1
+2022-07-05 18:18:32,743 DEBUG [125208] [] admin_no is 1
+2022-07-05 18:18:32,747 DEBUG [125208] [] cdList
+2022-07-05 18:18:32,747 DEBUG [125208] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:18:32,747 DEBUG [125208] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:18:32,747 DEBUG [125208] [] course_detail_no : 1
+2022-07-05 18:18:32,747 DEBUG [125208] [] course_detail_no : 11
+2022-07-05 18:18:32,747 DEBUG [125208] [] course_detail_no : 31
+2022-07-05 18:18:32,747 DEBUG [125208] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:18:32,758 DEBUG [125208] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:18:32,758 DEBUG [125208] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:18:32,759 DEBUG [125208] [] Array
+(
+    [0] => T_Course_OrgDto Object
+        (
+            [offer_no] => 1
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/04/01
+            [end_period] => 2018/09/29
+            [remarks] => aaaaaaaaa
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [1] => T_Course_OrgDto Object
+        (
+            [offer_no] => 24
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/08/08
+            [end_period] => 2018/11/08
+            [remarks] => test
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [2] => T_Course_OrgDto Object
+        (
+            [offer_no] => 35
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/08/24
+            [end_period] => 2018/11/24
+            [remarks] => aaaaaaaaa
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [3] => T_Course_OrgDto Object
+        (
+            [offer_no] => 44
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/30
+            [end_period] => 2018/12/31
+            [remarks] => テスト
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [4] => T_Course_OrgDto Object
+        (
+            [offer_no] => 45
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/30
+            [end_period] => 2018/12/30
+            [remarks] => test
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+    [5] => T_Course_OrgDto Object
+        (
+            [offer_no] => 59
+            [org_no] => 1
+            [course_id] => 3
+            [start_period] => 2018/09/21
+            [end_period] => 2018/09/30
+            [remarks] => GIC Myanmar
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+            [org_id] => 
+            [org_name] => 
+            [org_name_official] => 
+            [course_name] => 
+            [course_name_romaji] => 
+            [course_level] => 
+            [test_kbn] => 
+            [status] => 
+        )
+
+)
+
+2022-07-05 18:18:32,763 DEBUG [125208] [] 受講者チェック　OK
+2022-07-05 18:18:32,764 DEBUG [125208] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:18:32,764 DEBUG [125208] [] rollback
+2022-07-05 18:18:32,764 ERROR [125208] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'start_period' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(167): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(295): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(413): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-07-05 18:18:32,765 DEBUG [125208] [] finally
+2022-07-05 18:18:32,782 DEBUG [125208] [] Request URI : /eccadmin_dev/Error/disp
+2022-07-05 18:18:32,782 DEBUG [125208] [] ErrorController start
+2022-07-05 18:18:32,782 DEBUG [125208] [] controllers/ErrorController.php: is exist
+2022-07-05 18:18:32,782 DEBUG [125208] [] ErrorForm: is exist
+2022-07-05 18:18:32,782 DEBUG [125208] [] ErrorForm: form value set 
+2022-07-05 18:18:32,783 DEBUG [125208] [] ------------------------------/eccadmin_dev/Error/disp
+2022-07-05 18:18:32,783 DEBUG [125208] [] ------------------------------login_start_check
+2022-07-05 18:18:32,783 DEBUG [125208] [] dispAction start
+2022-07-05 18:18:32,792 DEBUG [125208] [] dispAction end
+2022-07-05 18:18:32,793 DEBUG [125208] [] ErrorController end
+2022-07-05 18:18:32,793 DEBUG [125208] [] finally
+2022-07-05 18:19:36,098 DEBUG [124687] [] Request URI : /eccadmin_dev/Login
+2022-07-05 18:19:36,099 DEBUG [124687] [] LoginController start
+2022-07-05 18:19:36,099 DEBUG [124687] [] controllers/LoginController.php: is exist
+2022-07-05 18:19:36,099 DEBUG [124687] [] LoginForm: is exist
+2022-07-05 18:19:36,099 DEBUG [124687] [] LoginForm: form value set 
+2022-07-05 18:19:36,100 DEBUG [124687] [] ------------------------------/eccadmin_dev/Login
+2022-07-05 18:19:36,100 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:19:36,100 DEBUG [124687] [] indexAction start
+2022-07-05 18:19:36,113 DEBUG [124687] [] indexAction end
+2022-07-05 18:19:36,113 DEBUG [124687] [] LoginController end
+2022-07-05 18:19:36,113 DEBUG [124687] [] finally
+2022-07-05 18:19:38,184 DEBUG [124687] [] Request URI : /eccadmin_dev/Login/login
+2022-07-05 18:19:38,184 DEBUG [124687] [] LoginController start
+2022-07-05 18:19:38,185 DEBUG [124687] [] controllers/LoginController.php: is exist
+2022-07-05 18:19:38,185 DEBUG [124687] [] LoginForm: is exist
+2022-07-05 18:19:38,185 DEBUG [124687] [] LoginForm: form value set 
+2022-07-05 18:19:38,185 DEBUG [124687] [] ------------------------------/eccadmin_dev/Login/login
+2022-07-05 18:19:38,186 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:19:38,186 DEBUG [124687] [] loginAction start
+2022-07-05 18:19:38,489 DEBUG [124687] [] loginAction end
+2022-07-05 18:19:38,489 DEBUG [124687] [] LoginController end
+2022-07-05 18:19:38,489 DEBUG [124687] [] finally
+2022-07-05 18:19:38,508 DEBUG [124687] [] Request URI : /eccadmin_dev/Menu
+2022-07-05 18:19:38,508 DEBUG [124687] [] MenuController start
+2022-07-05 18:19:38,508 DEBUG [124687] [] controllers/MenuController.php: is exist
+2022-07-05 18:19:38,509 DEBUG [124687] [] MenuForm: is exist
+2022-07-05 18:19:38,509 DEBUG [124687] [] MenuForm: form value set 
+2022-07-05 18:19:38,509 DEBUG [124687] [] ------------------------------/eccadmin_dev/Menu
+2022-07-05 18:19:38,510 DEBUG [124687] [] ------------------------------login_start_check
+2022-07-05 18:19:38,510 DEBUG [124687] [] indexAction start
+2022-07-05 18:19:38,510 DEBUG [124687] [] admin_no is 1
+2022-07-05 18:19:38,538 DEBUG [124687] [] indexAction end
+2022-07-05 18:19:38,538 DEBUG [124687] [] MenuController end
+2022-07-05 18:19:38,538 DEBUG [124687] [] finally
+2022-07-05 18:19:42,319 DEBUG [125314] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:19:42,323 DEBUG [125314] [] ExcelContractListController start
+2022-07-05 18:19:42,323 DEBUG [125314] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:19:42,334 DEBUG [125314] [] ExcelContractListForm: is exist
+2022-07-05 18:19:42,335 DEBUG [125314] [] ExcelContractListForm: form value set 
+2022-07-05 18:19:42,335 DEBUG [125314] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:19:42,335 DEBUG [125314] [] indexAction start
+2022-07-05 18:19:42,335 DEBUG [125314] [] admin_no is 1
+2022-07-05 18:19:42,410 DEBUG [125314] [] indexAction end
+2022-07-05 18:19:42,410 DEBUG [125314] [] ExcelContractListController end
+2022-07-05 18:19:42,410 DEBUG [125314] [] finally
+2022-07-05 18:19:47,169 DEBUG [125314] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:19:47,170 DEBUG [125314] [] ExcelContractListController start
+2022-07-05 18:19:47,170 DEBUG [125314] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:19:47,180 DEBUG [125314] [] ExcelContractListForm: is exist
+2022-07-05 18:19:47,180 DEBUG [125314] [] ExcelContractListForm: form value set 
+2022-07-05 18:19:47,180 DEBUG [125314] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:19:47,181 DEBUG [125314] [] showAction start
+2022-07-05 18:19:47,181 DEBUG [125314] [] admin_no is 1
+2022-07-05 18:19:47,181 DEBUG [125314] [] showAction end
+2022-07-05 18:19:47,181 DEBUG [125314] [] ExcelContractListController end
+2022-07-05 18:19:47,181 DEBUG [125314] [] finally
+2022-07-05 18:19:47,206 DEBUG [125314] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:19:47,206 DEBUG [125314] [] ExcelContractListController start
+2022-07-05 18:19:47,206 DEBUG [125314] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:19:47,215 DEBUG [125314] [] ExcelContractListForm: is exist
+2022-07-05 18:19:47,215 DEBUG [125314] [] ExcelContractListForm: form value set 
+2022-07-05 18:19:47,215 DEBUG [125314] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:19:47,215 DEBUG [125314] [] viewExcelListAction start
+2022-07-05 18:19:47,395 DEBUG [125314] [] ここ
+2022-07-05 18:19:47,458 DEBUG [125314] [] viewExcelListAction end
+2022-07-05 18:19:47,458 DEBUG [125314] [] ExcelContractListController end
+2022-07-05 18:19:47,458 DEBUG [125314] [] finally
+2022-07-05 18:19:49,323 DEBUG [125150] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:19:49,324 DEBUG [125150] [] ExcelContractListController start
+2022-07-05 18:19:49,324 DEBUG [125150] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:19:49,335 DEBUG [125150] [] ExcelContractListForm: is exist
+2022-07-05 18:19:49,335 DEBUG [125150] [] ExcelContractListForm: form value set 
+2022-07-05 18:19:49,335 DEBUG [125150] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:19:49,336 DEBUG [125150] [] isValidAction start
+2022-07-05 18:19:49,336 DEBUG [125150] [] admin_no is 1
+2022-07-05 18:19:49,336 DEBUG [125150] [] admin_no is 1
+2022-07-05 18:19:49,339 DEBUG [125150] [] cdList
+2022-07-05 18:19:49,339 DEBUG [125150] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:19:49,339 DEBUG [125150] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:19:49,340 DEBUG [125150] [] course_detail_no : 1
+2022-07-05 18:19:49,340 DEBUG [125150] [] course_detail_no : 11
+2022-07-05 18:19:49,340 DEBUG [125150] [] course_detail_no : 31
+2022-07-05 18:19:49,340 DEBUG [125150] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:19:49,351 DEBUG [125150] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:19:49,351 DEBUG [125150] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:19:49,352 DEBUG [125150] [] Array
+(
+)
+
+2022-07-05 18:19:49,352 DEBUG [125150] [] isValidAction end
+2022-07-05 18:19:49,352 DEBUG [125150] [] ExcelContractListController end
+2022-07-05 18:19:49,352 DEBUG [125150] [] finally
+2022-07-05 18:19:49,374 DEBUG [125150] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:19:49,375 DEBUG [125150] [] ExcelContractListController start
+2022-07-05 18:19:49,375 DEBUG [125150] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:19:49,385 DEBUG [125150] [] ExcelContractListForm: is exist
+2022-07-05 18:19:49,385 DEBUG [125150] [] ExcelContractListForm: form value set 
+2022-07-05 18:19:49,385 DEBUG [125150] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:19:49,385 DEBUG [125150] [] indexAction start
+2022-07-05 18:19:49,386 DEBUG [125150] [] admin_no is 1
+2022-07-05 18:19:49,462 DEBUG [125150] [] indexAction end
+2022-07-05 18:19:49,462 DEBUG [125150] [] ExcelContractListController end
+2022-07-05 18:19:49,462 DEBUG [125150] [] finally
+2022-07-05 18:22:39,590 DEBUG [125346] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:22:39,594 DEBUG [125346] [] ExcelContractListController start
+2022-07-05 18:22:39,594 DEBUG [125346] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:22:39,605 DEBUG [125346] [] ExcelContractListForm: is exist
+2022-07-05 18:22:39,605 DEBUG [125346] [] ExcelContractListForm: form value set 
+2022-07-05 18:22:39,606 DEBUG [125346] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:22:39,606 DEBUG [125346] [] showAction start
+2022-07-05 18:22:39,606 DEBUG [125346] [] admin_no is 1
+2022-07-05 18:22:39,607 DEBUG [125346] [] showAction end
+2022-07-05 18:22:39,607 DEBUG [125346] [] ExcelContractListController end
+2022-07-05 18:22:39,607 DEBUG [125346] [] finally
+2022-07-05 18:22:39,633 DEBUG [125346] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:22:39,633 DEBUG [125346] [] ExcelContractListController start
+2022-07-05 18:22:39,633 DEBUG [125346] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:22:39,644 DEBUG [125346] [] ExcelContractListForm: is exist
+2022-07-05 18:22:39,645 DEBUG [125346] [] ExcelContractListForm: form value set 
+2022-07-05 18:22:39,645 DEBUG [125346] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:22:39,645 DEBUG [125346] [] viewExcelListAction start
+2022-07-05 18:22:39,844 DEBUG [125346] [] ここ
+2022-07-05 18:22:39,906 DEBUG [125346] [] viewExcelListAction end
+2022-07-05 18:22:39,906 DEBUG [125346] [] ExcelContractListController end
+2022-07-05 18:22:39,906 DEBUG [125346] [] finally
+2022-07-05 18:22:41,861 DEBUG [125346] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:22:41,861 DEBUG [125346] [] ExcelContractListController start
+2022-07-05 18:22:41,861 DEBUG [125346] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:22:41,872 DEBUG [125346] [] ExcelContractListForm: is exist
+2022-07-05 18:22:41,872 DEBUG [125346] [] ExcelContractListForm: form value set 
+2022-07-05 18:22:41,873 DEBUG [125346] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:22:41,873 DEBUG [125346] [] isValidAction start
+2022-07-05 18:22:41,873 DEBUG [125346] [] admin_no is 1
+2022-07-05 18:22:41,873 DEBUG [125346] [] admin_no is 1
+2022-07-05 18:22:41,876 DEBUG [125346] [] cdList
+2022-07-05 18:22:41,877 DEBUG [125346] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:22:41,877 DEBUG [125346] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:22:41,877 DEBUG [125346] [] course_detail_no : 1
+2022-07-05 18:22:41,877 DEBUG [125346] [] course_detail_no : 11
+2022-07-05 18:22:41,877 DEBUG [125346] [] course_detail_no : 31
+2022-07-05 18:22:41,877 DEBUG [125346] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:22:41,888 DEBUG [125346] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:22:41,888 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,889 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,893 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,893 DEBUG [125346] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,894 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,912 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,912 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,913 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,917 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,917 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,918 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,918 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,919 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,922 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,922 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,923 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,923 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,924 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,927 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,928 DEBUG [125346] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,928 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,929 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,929 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,930 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,933 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,934 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,934 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,934 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,935 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,938 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,939 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,939 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,939 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,940 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,944 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,944 DEBUG [125346] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,945 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,945 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,945 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,946 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,949 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,949 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,950 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,950 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,951 DEBUG [125346] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:22:41,954 DEBUG [125346] [] 受講者チェック　OK
+2022-07-05 18:22:41,954 DEBUG [125346] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-07-05 18:22:41,954 DEBUG [125346] [] 契約情報登録 すべてOK
+2022-07-05 18:22:41,955 DEBUG [125346] [] isValidAction end
+2022-07-05 18:22:41,955 DEBUG [125346] [] ExcelContractListController end
+2022-07-05 18:22:41,956 DEBUG [125346] [] finally
+2022-07-05 18:22:41,978 DEBUG [125346] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:22:41,979 DEBUG [125346] [] ExcelContractListController start
+2022-07-05 18:22:41,979 DEBUG [125346] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:22:41,987 DEBUG [125346] [] ExcelContractListForm: is exist
+2022-07-05 18:22:41,987 DEBUG [125346] [] ExcelContractListForm: form value set 
+2022-07-05 18:22:41,988 DEBUG [125346] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:22:41,988 DEBUG [125346] [] indexAction start
+2022-07-05 18:22:41,988 DEBUG [125346] [] admin_no is 1
+2022-07-05 18:22:42,049 DEBUG [125346] [] indexAction end
+2022-07-05 18:22:42,049 DEBUG [125346] [] ExcelContractListController end
+2022-07-05 18:22:42,049 DEBUG [125346] [] finally
+2022-07-05 18:46:17,171 DEBUG [125647] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-07-05 18:46:17,172 DEBUG [125647] [] ExcelContractListController start
+2022-07-05 18:46:17,172 DEBUG [125647] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:46:17,182 DEBUG [125647] [] ExcelContractListForm: is exist
+2022-07-05 18:46:17,182 DEBUG [125647] [] ExcelContractListForm: form value set 
+2022-07-05 18:46:17,183 DEBUG [125647] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-07-05 18:46:17,183 DEBUG [125647] [] showAction start
+2022-07-05 18:46:17,183 DEBUG [125647] [] admin_no is 1
+2022-07-05 18:46:17,183 DEBUG [125647] [] showAction end
+2022-07-05 18:46:17,183 DEBUG [125647] [] ExcelContractListController end
+2022-07-05 18:46:17,183 DEBUG [125647] [] finally
+2022-07-05 18:46:17,206 DEBUG [125647] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:46:17,206 DEBUG [125647] [] ExcelContractListController start
+2022-07-05 18:46:17,206 DEBUG [125647] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:46:17,214 DEBUG [125647] [] ExcelContractListForm: is exist
+2022-07-05 18:46:17,215 DEBUG [125647] [] ExcelContractListForm: form value set 
+2022-07-05 18:46:17,215 DEBUG [125647] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-07-05 18:46:17,215 DEBUG [125647] [] viewExcelListAction start
+2022-07-05 18:46:17,390 DEBUG [125647] [] ここ
+2022-07-05 18:46:17,454 DEBUG [125647] [] viewExcelListAction end
+2022-07-05 18:46:17,454 DEBUG [125647] [] ExcelContractListController end
+2022-07-05 18:46:17,454 DEBUG [125647] [] finally
+2022-07-05 18:46:19,475 DEBUG [125647] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:46:19,476 DEBUG [125647] [] ExcelContractListController start
+2022-07-05 18:46:19,476 DEBUG [125647] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:46:19,486 DEBUG [125647] [] ExcelContractListForm: is exist
+2022-07-05 18:46:19,486 DEBUG [125647] [] ExcelContractListForm: form value set 
+2022-07-05 18:46:19,487 DEBUG [125647] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-07-05 18:46:19,487 DEBUG [125647] [] isValidAction start
+2022-07-05 18:46:19,487 DEBUG [125647] [] admin_no is 1
+2022-07-05 18:46:19,487 DEBUG [125647] [] admin_no is 1
+2022-07-05 18:46:19,490 DEBUG [125647] [] cdList
+2022-07-05 18:46:19,490 DEBUG [125647] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 1
+            [course_detail_name] => 第1回
+            [course_detail_romaji] => 1st
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 0
+            [start_period] => 2018/04/09
+            [end_period] => 2018/09/20
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [1] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 11
+            [course_detail_name] => GIC_Myanmar Speaking
+            [course_detail_romaji] => GIC_Myanmar Speaking
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/06/20
+            [end_period] => 2018/08/20
+            [course_name] => 
+            [rowno] => -8
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+    [2] => T_Course_DetailDto Object
+        (
+            [course_id] => 3
+            [course_detail_no] => 31
+            [course_detail_name] => practice01 (S5)
+            [course_detail_romaji] => p01(S5)_Students
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/09/01
+            [end_period] => 2099/12/31
+            [course_name] => 
+            [rowno] => -7
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-07-05 18:46:19,491 DEBUG [125647] [] Array
+(
+    [0] => 1
+    [1] => 11
+    [2] => 31
+)
+
+2022-07-05 18:46:19,491 DEBUG [125647] [] course_detail_no : 1
+2022-07-05 18:46:19,491 DEBUG [125647] [] course_detail_no : 11
+2022-07-05 18:46:19,491 DEBUG [125647] [] course_detail_no : 31
+2022-07-05 18:46:19,491 DEBUG [125647] [] Array
+(
+    [0] => 001
+    [3] => 002
+    [6] => 003
+)
+
+2022-07-05 18:46:19,502 DEBUG [125647] [] Array
+(
+    [0] => 5
+    [1] => ecc
+    [2] => 3
+    [3] => 1
+    [4] => 001
+    [5] => 2022-07-05
+    [6] => 2022-09-30
+    [7] => 5
+    [8] => ecc
+    [9] => 3
+    [10] => 11
+    [11] => 001
+    [12] => 2022-07-05
+    [13] => 2022-09-30
+    [14] => 5
+    [15] => ecc
+    [16] => 3
+    [17] => 31
+    [18] => 001
+    [19] => 2022-07-05
+    [20] => 2022-09-30
+    [21] => 5
+    [22] => ecc
+    [23] => 3
+    [24] => 1
+    [25] => 002
+    [26] => 2022-07-05
+    [27] => 2022-09-30
+    [28] => 5
+    [29] => ecc
+    [30] => 3
+    [31] => 11
+    [32] => 002
+    [33] => 2022-07-05
+    [34] => 2022-09-30
+    [35] => 5
+    [36] => ecc
+    [37] => 3
+    [38] => 31
+    [39] => 002
+    [40] => 2022-07-05
+    [41] => 2022-09-30
+    [42] => 5
+    [43] => ecc
+    [44] => 3
+    [45] => 1
+    [46] => 003
+    [47] => 2022-07-05
+    [48] => 2022-09-30
+    [49] => 5
+    [50] => ecc
+    [51] => 3
+    [52] => 11
+    [53] => 003
+    [54] => 2022-07-05
+    [55] => 2022-09-30
+    [56] => 5
+    [57] => ecc
+    [58] => 3
+    [59] => 31
+    [60] => 003
+    [61] => 2022-07-05
+    [62] => 2022-09-30
+)
+
+2022-07-05 18:46:19,502 DEBUG [125647] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 
+    [end_period] => 
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [course_name] => 
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:46:19,503 DEBUG [125647] [] T_Course_OrgDto Object
+(
+    [offer_no] => 5
+    [org_no] => 1
+    [course_id] => 3
+    [start_period] => 2018/06/30
+    [end_period] => 2018/08/30
+    [remarks] => eeeeeeeeee
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+    [org_id] => ecc
+    [org_name] => ECC　新商品開発 プロジェクト
+    [org_name_official] => ECC　新商品開発　プロジェクト(OFFICIAL)
+    [course_name] => 2級 Speaking Course 2
+    [course_name_romaji] => 
+    [course_level] => 
+    [test_kbn] => 
+    [status] => 
+)
+
+2022-07-05 18:46:19,507 DEBUG [125647] [] 受講者チェック　OK
+2022-07-05 18:46:19,507 DEBUG [125647] [] コース受講者データ登録済み
+2022-07-05 18:46:19,507 DEBUG [125647] [] isValidAction end
+2022-07-05 18:46:19,507 DEBUG [125647] [] ExcelContractListController end
+2022-07-05 18:46:19,508 DEBUG [125647] [] finally
+2022-07-05 18:46:19,530 DEBUG [125647] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-07-05 18:46:19,530 DEBUG [125647] [] ExcelContractListController start
+2022-07-05 18:46:19,530 DEBUG [125647] [] controllers/ExcelContractListController.php: is exist
+2022-07-05 18:46:19,539 DEBUG [125647] [] ExcelContractListForm: is exist
+2022-07-05 18:46:19,539 DEBUG [125647] [] ExcelContractListForm: form value set 
+2022-07-05 18:46:19,540 DEBUG [125647] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-07-05 18:46:19,540 DEBUG [125647] [] indexAction start
+2022-07-05 18:46:19,540 DEBUG [125647] [] admin_no is 1
+2022-07-05 18:46:19,597 DEBUG [125647] [] indexAction end
+2022-07-05 18:46:19,597 DEBUG [125647] [] ExcelContractListController end
+2022-07-05 18:46:19,597 DEBUG [125647] [] finally

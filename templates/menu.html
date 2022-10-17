@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TOP</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<script type="text/javascript" src="{$smarty.const.HOME_DIR}/js/jquery.min.js"></script>
+	<link href="{$smarty.const.HOME_DIR}/css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}/css/menu.css" rel="stylesheet">
+	<title>ECC Intersection</title>
+	<script>
+		$(document).ready(function(){
+			// MSGのあるなし
+            if ( $(".error_msg").html() != "" ) {
+                $(".error_section").slideToggle('slow')
+            }
+            $(".close_icon").on('click', function(){
+                $(".error_section").slideToggle('slow')
+                $('#err_dis').slideToggle('slow')
+            });
+
+			$('.systemNotice tr').each(function() {
+				var system_kbn = $(this).find(".kbn").html();
+				if (system_kbn == 001){
+					$(this).addClass('incharge_color');
+				} else if (system_kbn == 002) {
+					$(this).addClass('student_color');
+				}else {
+					$(this).addClass('mark_color');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body class="pushmenu-push" >
+	<form id="main_form" action="{$smarty.const.HOME_DIR}Menu/menu" method="post">
+	{include file='leftMenu.html'}
+		<div class="container">
+			<div class="main">
+				<!--header-->
+				{include file='header.html'}
+				<!--header-->
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+						{if !empty($error_msg)}
+                            <div class="error_msg">{$error_msg}</div>
+                        {else if !empty($info_msg)}
+                        <div class="error_msg">{$info_msg}</div>
+                        {else}
+                            <div class="error_msg"></div>
+                        {/if}
+				</section>
+
+				{if !empty($statusArr)}
+				<section>
+					<div id = "maintenace_div">
+						{foreach $statusArr as $key => $value}
+						{if $key == {$statusArr|@count}-1 }
+						<label>{$value}</label>
+						{else}
+						<label>{$value},</label>
+						{/if}
+						{/foreach}
+						<label>側がシステムメンテナンス中です。</label>
+					</div>
+				</section>
+				{/if}
+
+				<section class="content">
+
+					<div>
+						<p class="p_title">システムお知らせ
+							<span style="margin-left:309px;"> ログイン時刻:</span>
+							<span style="float:right;margin-top:4px;"> {$login_time}</span>
+						</p>
+						<div>
+							<table class="systemNoticeHeader" style="width:100%;">
+								<tr>
+								    <th style="width:150px;">投稿日時</th>
+								    <th style="width:620px;">タイトル</th>
+								    <th style="">対象者</th>
+								    <th style="display:none">科目</th>
+								</tr>
+							</table>
+							<div style="overflow-y:auto;height:400px;">
+								<table class="systemNotice" style="width:100%;">
+									{foreach $noticeList as $obj}
+										<tr>
+											<td style="width:150px;">
+												{$obj->start_period}
+											</td>
+											<td style="width:620px;">
+												{$obj->description}
+											</td>
+											<td style="">
+												{$obj->name}
+											</td>
+											<td class="kbn" style="display:none">
+												{$obj->system_kbn}
+											</td>
+										</tr>
+									 {/foreach}
+								</table>
+							</div>
+						</div>
+					</div>
+				</section><!-- End Content -->
+
+			</div><!-- End Main -->
+		</div><!-- End Container -->
+	</form>
+	<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+</body>
+</html>

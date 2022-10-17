@@ -1,0 +1,984 @@
+2020-07-20 11:08:43,561 DEBUG [40726] [] Request URI : /eccadmin_dev/Login
+2020-07-20 11:08:43,601 DEBUG [40726] [] LoginController start
+2020-07-20 11:08:43,601 DEBUG [40726] [] controllers/LoginController.php: is exist
+2020-07-20 11:08:43,606 DEBUG [40726] [] LoginForm: is exist
+2020-07-20 11:08:43,607 DEBUG [40726] [] LoginForm: form value set 
+2020-07-20 11:08:43,607 DEBUG [40726] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 11:08:43,607 DEBUG [40726] [] ------------------------------login_start_check
+2020-07-20 11:08:43,607 DEBUG [40726] [] indexAction start
+2020-07-20 11:08:43,667 DEBUG [40726] [] indexAction end
+2020-07-20 11:08:43,667 DEBUG [40726] [] LoginController end
+2020-07-20 11:08:43,667 DEBUG [40726] [] finally
+2020-07-20 11:08:47,069 DEBUG [40726] [] Request URI : /eccadmin_dev/Login/login
+2020-07-20 11:08:47,070 DEBUG [40726] [] LoginController start
+2020-07-20 11:08:47,070 DEBUG [40726] [] controllers/LoginController.php: is exist
+2020-07-20 11:08:47,070 DEBUG [40726] [] LoginForm: is exist
+2020-07-20 11:08:47,070 DEBUG [40726] [] LoginForm: form value set 
+2020-07-20 11:08:47,071 DEBUG [40726] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-20 11:08:47,071 DEBUG [40726] [] ------------------------------login_start_check
+2020-07-20 11:08:47,071 DEBUG [40726] [] loginAction start
+2020-07-20 11:08:47,370 DEBUG [40726] [] loginAction end
+2020-07-20 11:08:47,370 DEBUG [40726] [] LoginController end
+2020-07-20 11:08:47,371 DEBUG [40726] [] finally
+2020-07-20 11:08:47,385 DEBUG [40726] [] Request URI : /eccadmin_dev/Menu
+2020-07-20 11:08:47,385 DEBUG [40726] [] MenuController start
+2020-07-20 11:08:47,385 DEBUG [40726] [] controllers/MenuController.php: is exist
+2020-07-20 11:08:47,387 DEBUG [40726] [] MenuForm: is exist
+2020-07-20 11:08:47,387 DEBUG [40726] [] MenuForm: form value set 
+2020-07-20 11:08:47,387 DEBUG [40726] [] ------------------------------/eccadmin_dev/Menu
+2020-07-20 11:08:47,387 DEBUG [40726] [] ------------------------------login_start_check
+2020-07-20 11:08:47,387 DEBUG [40726] [] indexAction start
+2020-07-20 11:08:47,387 DEBUG [40726] [] admin_no is 1
+2020-07-20 11:08:47,414 DEBUG [40726] [] indexAction end
+2020-07-20 11:08:47,414 DEBUG [40726] [] MenuController end
+2020-07-20 11:08:47,414 DEBUG [40726] [] finally
+2020-07-20 11:08:51,212 DEBUG [40726] [] Request URI : /eccadmin_dev/CourseContractConfirmList
+2020-07-20 11:08:51,213 DEBUG [40726] [] CourseContractConfirmListController start
+2020-07-20 11:08:51,213 DEBUG [40726] [] controllers/CourseContractConfirmListController.php: is exist
+2020-07-20 11:08:51,219 DEBUG [40726] [] CourseContractConfirmListForm: is exist
+2020-07-20 11:08:51,219 DEBUG [40726] [] CourseContractConfirmListForm: form value set 
+2020-07-20 11:08:51,220 DEBUG [40726] [] ------------------------------/eccadmin_dev/CourseContractConfirmList
+2020-07-20 11:08:51,220 DEBUG [40726] [] indexAction start
+2020-07-20 11:08:51,220 DEBUG [40726] [] admin_no is 1
+2020-07-20 11:08:51,309 DEBUG [40726] [] indexAction end
+2020-07-20 11:08:51,309 DEBUG [40726] [] CourseContractConfirmListController end
+2020-07-20 11:08:51,310 DEBUG [40726] [] finally
+2020-07-20 11:08:53,629 DEBUG [40726] [] Request URI : /eccadmin_dev/CourseStatusList
+2020-07-20 11:08:53,630 DEBUG [40726] [] CourseStatusListController start
+2020-07-20 11:08:53,630 DEBUG [40726] [] controllers/CourseStatusListController.php: is exist
+2020-07-20 11:08:53,632 DEBUG [40726] [] CourseStatusListForm: is exist
+2020-07-20 11:08:53,633 DEBUG [40726] [] CourseStatusListForm: form value set 
+2020-07-20 11:08:53,633 DEBUG [40726] [] ------------------------------/eccadmin_dev/CourseStatusList
+2020-07-20 11:08:53,633 DEBUG [40726] [] indexAction start
+2020-07-20 11:08:53,633 DEBUG [40726] [] admin_no is 1
+2020-07-20 11:08:53,723 DEBUG [40726] [] indexAction end
+2020-07-20 11:08:53,723 DEBUG [40726] [] CourseStatusListController end
+2020-07-20 11:08:53,723 DEBUG [40726] [] finally
+2020-07-20 11:09:03,972 DEBUG [40864] [] Request URI : /eccadmin_dev/CourseStatusList/Search
+2020-07-20 11:09:03,973 DEBUG [40864] [] CourseStatusListController start
+2020-07-20 11:09:03,973 DEBUG [40864] [] controllers/CourseStatusListController.php: is exist
+2020-07-20 11:09:03,974 DEBUG [40864] [] CourseStatusListForm: is exist
+2020-07-20 11:09:03,975 DEBUG [40864] [] CourseStatusListForm: form value set 
+2020-07-20 11:09:03,975 DEBUG [40864] [] ------------------------------/eccadmin_dev/CourseStatusList/Search
+2020-07-20 11:09:03,975 DEBUG [40864] [] SearchAction start
+2020-07-20 11:09:03,975 DEBUG [40864] [] admin_no is 1
+2020-07-20 11:09:03,978 DEBUG [40864] [] course list query
+2020-07-20 11:09:03,978 DEBUG [40864] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  AND (d.course_detail_name LIKE :course_detail_name OR d.course_detail_romaji LIKE :course_detail_romaji )  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id 
+2020-07-20 11:09:04,087 DEBUG [40864] [] course list query
+2020-07-20 11:09:04,088 DEBUG [40864] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  AND (d.course_detail_name LIKE :course_detail_name OR d.course_detail_romaji LIKE :course_detail_romaji )  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id  LIMIT 0 , 10
+2020-07-20 11:09:04,300 DEBUG [40864] [] SearchAction end
+2020-07-20 11:09:04,300 DEBUG [40864] [] CourseStatusListController end
+2020-07-20 11:09:04,300 DEBUG [40864] [] finally
+2020-07-20 11:09:09,204 DEBUG [40864] [] Request URI : /eccadmin_dev/WritingFeedbackList/index
+2020-07-20 11:09:09,204 DEBUG [40864] [] WritingFeedbackListController start
+2020-07-20 11:09:09,204 DEBUG [40864] [] controllers/WritingFeedbackListController.php: is exist
+2020-07-20 11:09:09,209 DEBUG [40864] [] WritingFeedbackListForm: is exist
+2020-07-20 11:09:09,210 DEBUG [40864] [] WritingFeedbackListForm: form value set 
+2020-07-20 11:09:09,210 DEBUG [40864] [] ------------------------------/eccadmin_dev/WritingFeedbackList/index
+2020-07-20 11:09:09,210 DEBUG [40864] [] indexAction start
+2020-07-20 11:09:09,210 DEBUG [40864] [] admin_no is 1
+2020-07-20 11:09:09,211 DEBUG [40864] []  SELECT  answer.student_no  ,answer.course_id  ,course.test_kbn  ,answer.offer_no  ,answer.course_detail_no  ,course_detail.disp_no  ,co.org_no  FROM  T_4SKILL_RESULT answer  INNER JOIN T_COURSE course  ON course.course_id = answer.course_id  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND answer.offer_no = co.offer_no  AND co.del_flg = '0'  INNER JOIN T_COURSE_DETAIL course_detail  ON course_detail.course_detail_no = answer.course_detail_no  AND course_detail.course_id = answer.course_id  INNER JOIN (SELECT offer_no,course_id,course_detail_no,student_no,MIN(answer_dt) answer_dt  FROM T_4SKILL_ANSWER   GROUP BY offer_no,course_id,course_detail_no,student_no )ans   ON answer.offer_no = ans.offer_no  AND answer.course_id = ans.course_id  AND answer.course_detail_no = ans.course_detail_no  AND answer.student_no = ans.student_no  WHERE  answer.del_flg = 0  AND answer.student_no = :student_no  AND answer.offer_no = :offer_no  AND answer.course_id = :course_id  AND course.test_kbn = :test_kbn  GROUP BY student_no  ,answer.offer_no  ,answer.course_id  ,answer.course_detail_no  ,course_detail.disp_no  ,ans.answer_dt  ,co.org_no  ORDER BY ans.answer_dt
+2020-07-20 11:09:09,234 DEBUG [40864] []  SELECT  course.course_id  ,course.test_kbn  ,cou_detail.course_detail_no  ,cou_detail.disp_no  ,student_mark.rule_no  ,student_mark.offer_no  ,student_mark.sub_rule_no  ,student_mark.rule_detail_no  ,student_mark.result_kbn  ,student_mark.audio_name  ,student_mark.result_mark detail_result_marks   ,student_rule_total_marks.total_marks rule_result_marks  ,sub_rule_marks.total_marks detail_total_marks  ,rule_marks.total_marks rule_total_marks  ,detail.course_detail_name  ,course.course_name course_name  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.sample_answer USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') sample_answer  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.byosha_point USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') byosha_point  ,stu.student_no  ,org.org_name as org_name  ,stu.login_id as stu_login_in  ,stu.student_name as student_name  ,ques.question_no  ,student_mark.description description ,student_mark.reply_comment reply_comment  ,student_mark.sub_description sub_description  ,REPLACE(CONVERT(student_mark.answer_contents USING utf8),'"','\\"') answer_contents  ,student_mark.result_answer result_answer  ,date_format(student_mark.answer_dt,'%Y年%m月%d日') as answer_dt  ,cou_ques.disp_no  ,student_mark.answer_flg  FROM T_STUDENT stu  INNER JOIN T_COURSE_STUDENT cstu  ON stu.student_no = cstu.student_no  AND stu.org_no = cstu.org_no  AND cstu.del_flg = '0'  INNER JOIN T_COURSE course  ON cstu.course_id = course.course_id  AND course.del_flg = '0'  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND stu.org_no = co.org_no  AND co.offer_no = cstu.offer_no  AND co.del_flg = '0'  INNER JOIN M_ORGANIZATION org  ON org.org_no=co.org_no  AND org.del_flg = '0'  INNER JOIN T_COURSE_DETAIL cou_detail  ON course.course_id = cou_detail.course_id  AND cou_detail.del_flg = '0'  INNER JOIN T_COURSE_DETAIL_QUESTION cou_ques  ON cou_detail.course_detail_no = cou_ques.course_detail_no  AND cou_ques.del_flg= '0'  INNER JOIN T_QUESTION ques  ON cou_ques.question_no = ques.question_no  AND ques.del_flg= '0'  INNER JOIN T_DETAIL detail  ON cou_detail.course_detail_no = detail.course_detail_no  AND detail.del_flg = '0'  LEFT JOIN (   SELECT  skill_result.offer_no   			,skill_result.course_id   			,skill_result.course_detail_no   			,skill_answer.answer_dt answer_dt   			,skill_answer.answer_contents answer_contents   			,skill_result_detail.result_answer result_answer   			,skill_result.student_no student_no   			,skill_result.question_no   			,skill_answer.audio_name   			,skill_answer.answer_flg   			,sub_rule.rule_no   			,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,m_detail.result_kbn   			,mark_rule.description   			,sub_rule.description sub_description   			,REPLACE(CONVERT(m_detail.reply_comment USING utf8),'"','\\"') reply_comment   			,m_detail.marks result_mark   			,SUM(m_detail.marks) marks   			,skill_result_detail.result_no   			FROM T_4SKILL_RESULT  skill_result   			INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   			ON skill_result.result_no = skill_result_detail.result_no   			INNER JOIN M_MARK_RULE mark_rule   			ON skill_result_detail.rule_no = mark_rule.rule_no   			INNER JOIN M_MARK_SUB_RULE sub_rule   			ON mark_rule.rule_no = sub_rule.rule_no   			AND skill_result_detail.rule_no = sub_rule.rule_no   			AND skill_result_detail.sub_rule_no = sub_rule.sub_rule_no   			INNER JOIN M_MARK_DETAIL m_detail   			ON skill_result_detail.rule_no = m_detail.rule_no   			AND skill_result_detail.sub_rule_no = m_detail.sub_rule_no   			AND skill_result_detail.rule_detail_no = m_detail.rule_detail_no   			LEFT JOIN T_4SKILL_ANSWER skill_answer    			ON skill_answer.offer_no = skill_result.offer_no   			AND skill_answer.course_id = skill_result.course_id   			AND skill_answer.course_detail_no = skill_result.course_detail_no   			AND skill_answer.question_no = skill_result.question_no   			AND skill_answer.student_no = skill_result.student_no   			GROUP BY  skill_result.offer_no ,skill_result.course_id ,skill_result.course_detail_no   			,skill_answer.answer_dt ,skill_answer.answer_contents   			,skill_result_detail.result_answer ,skill_result.student_no   			,skill_result.question_no ,sub_rule.rule_no ,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,mark_rule.description ,sub_rule.description ,m_detail.description   			,m_detail.marks, skill_result_detail.result_no   			) as student_mark  ON course.course_id = student_mark.course_id  AND cou_detail.course_detail_no = student_mark.course_detail_no  AND cou_detail.course_id = student_mark.course_id  AND detail.course_detail_no = student_mark.course_detail_no  AND ques.question_no = student_mark.question_no  AND co.offer_no = student_mark.offer_no  AND stu.student_no = student_mark.student_no  INNER JOIN(   	SELECT  rule_no ,sub_rule_no   	,SUM(max_marks) total_marks   	FROM(  SELECT m_detail.rule_no rule_no   			,m_detail.sub_rule_no sub_rule_no   			,MAX(m_detail.marks) max_marks   			FROM M_MARK_DETAIL m_detail   			GROUP BY m_detail.rule_no,m_detail.sub_rule_no   		)as total_rule_marks   	GROUP BY rule_no, sub_rule_no   	) as sub_rule_marks  ON student_mark.rule_no  = sub_rule_marks.rule_no  AND student_mark.sub_rule_no = sub_rule_marks.sub_rule_no  INNER JOIN(   	SELECT  rule_no  	,SUM(max_marks) total_marks  	FROM(  SELECT m_detail.rule_no rule_no  			,m_detail.sub_rule_no sub_rule_no  			,MAX(m_detail.marks) max_marks  			FROM M_MARK_DETAIL m_detail  			GROUP BY m_detail.rule_no,m_detail.sub_rule_no  		)as total_rule_marks  	GROUP BY rule_no  	) as rule_marks    ON student_mark.rule_no = rule_marks.rule_no  INNER JOIN(   SELECT r_detail.result_no, m_detail.rule_no rule_no  		,SUM(m_detail.marks) total_marks  		FROM  T_4SKILL_RESULT_DETAIL r_detail  		, M_MARK_DETAIL m_detail  		WHERE r_detail.rule_no = m_detail.rule_no  		AND r_detail.sub_rule_no = m_detail.sub_rule_no  		AND r_detail.rule_detail_no = m_detail.rule_detail_no  		GROUP BY r_detail.result_no,m_detail.rule_no  	) as student_rule_total_marks  ON student_mark.rule_no = student_rule_total_marks.rule_no  AND student_mark.result_no = student_rule_total_marks.result_no  WHERE course.del_flg = '0'  AND detail.course_detail_no = :course_detail_no  AND course.course_id = :course_id  AND course.test_kbn = :test_kbn  AND stu.student_no = :student_no   AND org.org_no = :org_no  AND co.offer_no = :offer_no  ORDER BY answer_dt, offer_no, course_id, course_detail_no, question_no, rule_no, sub_rule_no, rule_detail_no 
+2020-07-20 11:09:09,428 DEBUG [40864] []  SELECT  course.course_id  ,course.test_kbn  ,cou_detail.course_detail_no  ,cou_detail.disp_no  ,student_mark.rule_no  ,student_mark.offer_no  ,student_mark.sub_rule_no  ,student_mark.rule_detail_no  ,student_mark.result_kbn  ,student_mark.audio_name  ,student_mark.result_mark detail_result_marks   ,student_rule_total_marks.total_marks rule_result_marks  ,sub_rule_marks.total_marks detail_total_marks  ,rule_marks.total_marks rule_total_marks  ,detail.course_detail_name  ,course.course_name course_name  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.sample_answer USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') sample_answer  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.byosha_point USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') byosha_point  ,stu.student_no  ,org.org_name as org_name  ,stu.login_id as stu_login_in  ,stu.student_name as student_name  ,ques.question_no  ,student_mark.description description ,student_mark.reply_comment reply_comment  ,student_mark.sub_description sub_description  ,REPLACE(CONVERT(student_mark.answer_contents USING utf8),'"','\\"') answer_contents  ,student_mark.result_answer result_answer  ,date_format(student_mark.answer_dt,'%Y年%m月%d日') as answer_dt  ,cou_ques.disp_no  ,student_mark.answer_flg  FROM T_STUDENT stu  INNER JOIN T_COURSE_STUDENT cstu  ON stu.student_no = cstu.student_no  AND stu.org_no = cstu.org_no  AND cstu.del_flg = '0'  INNER JOIN T_COURSE course  ON cstu.course_id = course.course_id  AND course.del_flg = '0'  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND stu.org_no = co.org_no  AND co.offer_no = cstu.offer_no  AND co.del_flg = '0'  INNER JOIN M_ORGANIZATION org  ON org.org_no=co.org_no  AND org.del_flg = '0'  INNER JOIN T_COURSE_DETAIL cou_detail  ON course.course_id = cou_detail.course_id  AND cou_detail.del_flg = '0'  INNER JOIN T_COURSE_DETAIL_QUESTION cou_ques  ON cou_detail.course_detail_no = cou_ques.course_detail_no  AND cou_ques.del_flg= '0'  INNER JOIN T_QUESTION ques  ON cou_ques.question_no = ques.question_no  AND ques.del_flg= '0'  INNER JOIN T_DETAIL detail  ON cou_detail.course_detail_no = detail.course_detail_no  AND detail.del_flg = '0'  LEFT JOIN (   SELECT  skill_result.offer_no   			,skill_result.course_id   			,skill_result.course_detail_no   			,skill_answer.answer_dt answer_dt   			,skill_answer.answer_contents answer_contents   			,skill_result_detail.result_answer result_answer   			,skill_result.student_no student_no   			,skill_result.question_no   			,skill_answer.audio_name   			,skill_answer.answer_flg   			,sub_rule.rule_no   			,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,m_detail.result_kbn   			,mark_rule.description   			,sub_rule.description sub_description   			,REPLACE(CONVERT(m_detail.reply_comment USING utf8),'"','\\"') reply_comment   			,m_detail.marks result_mark   			,SUM(m_detail.marks) marks   			,skill_result_detail.result_no   			FROM T_4SKILL_RESULT  skill_result   			INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   			ON skill_result.result_no = skill_result_detail.result_no   			INNER JOIN M_MARK_RULE mark_rule   			ON skill_result_detail.rule_no = mark_rule.rule_no   			INNER JOIN M_MARK_SUB_RULE sub_rule   			ON mark_rule.rule_no = sub_rule.rule_no   			AND skill_result_detail.rule_no = sub_rule.rule_no   			AND skill_result_detail.sub_rule_no = sub_rule.sub_rule_no   			INNER JOIN M_MARK_DETAIL m_detail   			ON skill_result_detail.rule_no = m_detail.rule_no   			AND skill_result_detail.sub_rule_no = m_detail.sub_rule_no   			AND skill_result_detail.rule_detail_no = m_detail.rule_detail_no   			LEFT JOIN T_4SKILL_ANSWER skill_answer    			ON skill_answer.offer_no = skill_result.offer_no   			AND skill_answer.course_id = skill_result.course_id   			AND skill_answer.course_detail_no = skill_result.course_detail_no   			AND skill_answer.question_no = skill_result.question_no   			AND skill_answer.student_no = skill_result.student_no   			GROUP BY  skill_result.offer_no ,skill_result.course_id ,skill_result.course_detail_no   			,skill_answer.answer_dt ,skill_answer.answer_contents   			,skill_result_detail.result_answer ,skill_result.student_no   			,skill_result.question_no ,sub_rule.rule_no ,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,mark_rule.description ,sub_rule.description ,m_detail.description   			,m_detail.marks, skill_result_detail.result_no   			) as student_mark  ON course.course_id = student_mark.course_id  AND cou_detail.course_detail_no = student_mark.course_detail_no  AND cou_detail.course_id = student_mark.course_id  AND detail.course_detail_no = student_mark.course_detail_no  AND ques.question_no = student_mark.question_no  AND co.offer_no = student_mark.offer_no  AND stu.student_no = student_mark.student_no  INNER JOIN(   	SELECT  rule_no ,sub_rule_no   	,SUM(max_marks) total_marks   	FROM(  SELECT m_detail.rule_no rule_no   			,m_detail.sub_rule_no sub_rule_no   			,MAX(m_detail.marks) max_marks   			FROM M_MARK_DETAIL m_detail   			GROUP BY m_detail.rule_no,m_detail.sub_rule_no   		)as total_rule_marks   	GROUP BY rule_no, sub_rule_no   	) as sub_rule_marks  ON student_mark.rule_no  = sub_rule_marks.rule_no  AND student_mark.sub_rule_no = sub_rule_marks.sub_rule_no  INNER JOIN(   	SELECT  rule_no  	,SUM(max_marks) total_marks  	FROM(  SELECT m_detail.rule_no rule_no  			,m_detail.sub_rule_no sub_rule_no  			,MAX(m_detail.marks) max_marks  			FROM M_MARK_DETAIL m_detail  			GROUP BY m_detail.rule_no,m_detail.sub_rule_no  		)as total_rule_marks  	GROUP BY rule_no  	) as rule_marks    ON student_mark.rule_no = rule_marks.rule_no  INNER JOIN(   SELECT r_detail.result_no, m_detail.rule_no rule_no  		,SUM(m_detail.marks) total_marks  		FROM  T_4SKILL_RESULT_DETAIL r_detail  		, M_MARK_DETAIL m_detail  		WHERE r_detail.rule_no = m_detail.rule_no  		AND r_detail.sub_rule_no = m_detail.sub_rule_no  		AND r_detail.rule_detail_no = m_detail.rule_detail_no  		GROUP BY r_detail.result_no,m_detail.rule_no  	) as student_rule_total_marks  ON student_mark.rule_no = student_rule_total_marks.rule_no  AND student_mark.result_no = student_rule_total_marks.result_no  WHERE course.del_flg = '0'  AND course.course_id = :course_id  AND course.test_kbn = :test_kbn  AND stu.student_no = :student_no   AND org.org_no = :org_no  AND co.offer_no = :offer_no  ORDER BY answer_dt, offer_no, course_id, course_detail_no, question_no, rule_no, sub_rule_no, rule_detail_no 
+2020-07-20 11:09:09,781 DEBUG [40864] [] indexAction end
+2020-07-20 11:09:09,781 DEBUG [40864] [] WritingFeedbackListController end
+2020-07-20 11:09:09,782 DEBUG [40864] [] finally
+2020-07-20 11:13:25,635 DEBUG [40500] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-20 11:13:25,636 DEBUG [40500] [] LoginController start
+2020-07-20 11:13:25,636 DEBUG [40500] [] controllers/LoginController.php: is exist
+2020-07-20 11:13:25,636 DEBUG [40500] [] LoginForm: is exist
+2020-07-20 11:13:25,636 DEBUG [40500] [] LoginForm: form value set 
+2020-07-20 11:13:25,637 DEBUG [40500] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-20 11:13:25,637 DEBUG [40500] [] ------------------------------login_start_check
+2020-07-20 11:13:25,637 DEBUG [40500] [] logoutAction start
+2020-07-20 11:13:25,637 DEBUG [40500] [] logoutAction end
+2020-07-20 11:13:25,637 DEBUG [40500] [] LoginController end
+2020-07-20 11:13:25,637 DEBUG [40500] [] finally
+2020-07-20 11:13:25,664 DEBUG [40500] [] Request URI : /eccadmin_dev/Login
+2020-07-20 11:13:25,664 DEBUG [40500] [] LoginController start
+2020-07-20 11:13:25,664 DEBUG [40500] [] controllers/LoginController.php: is exist
+2020-07-20 11:13:25,664 DEBUG [40500] [] LoginForm: is exist
+2020-07-20 11:13:25,664 DEBUG [40500] [] LoginForm: form value set 
+2020-07-20 11:13:25,665 DEBUG [40500] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 11:13:25,665 DEBUG [40500] [] ------------------------------login_start_check
+2020-07-20 11:13:25,665 DEBUG [40500] [] indexAction start
+2020-07-20 11:13:25,680 DEBUG [40500] [] indexAction end
+2020-07-20 11:13:25,680 DEBUG [40500] [] LoginController end
+2020-07-20 11:13:25,680 DEBUG [40500] [] finally
+2020-07-20 11:48:56,424 DEBUG [42244] [] Request URI : /eccadmin_dev/Login
+2020-07-20 11:48:56,425 DEBUG [42244] [] LoginController start
+2020-07-20 11:48:56,425 DEBUG [42244] [] controllers/LoginController.php: is exist
+2020-07-20 11:48:56,425 DEBUG [42244] [] LoginForm: is exist
+2020-07-20 11:48:56,426 DEBUG [42244] [] LoginForm: form value set 
+2020-07-20 11:48:56,426 DEBUG [42244] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 11:48:56,426 DEBUG [42244] [] ------------------------------login_start_check
+2020-07-20 11:48:56,426 DEBUG [42244] [] indexAction start
+2020-07-20 11:48:56,443 DEBUG [42244] [] indexAction end
+2020-07-20 11:48:56,443 DEBUG [42244] [] LoginController end
+2020-07-20 11:48:56,443 DEBUG [42244] [] finally
+2020-07-20 11:49:00,848 DEBUG [42244] [] Request URI : /eccadmin_dev/Login/login
+2020-07-20 11:49:00,848 DEBUG [42244] [] LoginController start
+2020-07-20 11:49:00,848 DEBUG [42244] [] controllers/LoginController.php: is exist
+2020-07-20 11:49:00,849 DEBUG [42244] [] LoginForm: is exist
+2020-07-20 11:49:00,849 DEBUG [42244] [] LoginForm: form value set 
+2020-07-20 11:49:00,849 DEBUG [42244] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-20 11:49:00,849 DEBUG [42244] [] ------------------------------login_start_check
+2020-07-20 11:49:00,850 DEBUG [42244] [] loginAction start
+2020-07-20 11:49:01,149 DEBUG [42244] [] loginAction end
+2020-07-20 11:49:01,149 DEBUG [42244] [] LoginController end
+2020-07-20 11:49:01,149 DEBUG [42244] [] finally
+2020-07-20 11:49:01,178 DEBUG [42244] [] Request URI : /eccadmin_dev/Menu
+2020-07-20 11:49:01,178 DEBUG [42244] [] MenuController start
+2020-07-20 11:49:01,178 DEBUG [42244] [] controllers/MenuController.php: is exist
+2020-07-20 11:49:01,178 DEBUG [42244] [] MenuForm: is exist
+2020-07-20 11:49:01,178 DEBUG [42244] [] MenuForm: form value set 
+2020-07-20 11:49:01,179 DEBUG [42244] [] ------------------------------/eccadmin_dev/Menu
+2020-07-20 11:49:01,179 DEBUG [42244] [] ------------------------------login_start_check
+2020-07-20 11:49:01,179 DEBUG [42244] [] indexAction start
+2020-07-20 11:49:01,179 DEBUG [42244] [] admin_no is 1
+2020-07-20 11:49:01,204 DEBUG [42244] [] indexAction end
+2020-07-20 11:49:01,204 DEBUG [42244] [] MenuController end
+2020-07-20 11:49:01,204 DEBUG [42244] [] finally
+2020-07-20 11:49:11,139 DEBUG [42281] [] Request URI : /eccadmin_dev/CourseStatusList
+2020-07-20 11:49:11,140 DEBUG [42281] [] CourseStatusListController start
+2020-07-20 11:49:11,140 DEBUG [42281] [] controllers/CourseStatusListController.php: is exist
+2020-07-20 11:49:11,140 DEBUG [42281] [] CourseStatusListForm: is exist
+2020-07-20 11:49:11,141 DEBUG [42281] [] CourseStatusListForm: form value set 
+2020-07-20 11:49:11,141 DEBUG [42281] [] ------------------------------/eccadmin_dev/CourseStatusList
+2020-07-20 11:49:11,142 DEBUG [42281] [] indexAction start
+2020-07-20 11:49:11,142 DEBUG [42281] [] admin_no is 1
+2020-07-20 11:49:11,238 DEBUG [42281] [] indexAction end
+2020-07-20 11:49:11,238 DEBUG [42281] [] CourseStatusListController end
+2020-07-20 11:49:11,239 DEBUG [42281] [] finally
+2020-07-20 11:49:15,782 DEBUG [42281] [] Request URI : /eccadmin_dev/CourseStatusList/Search
+2020-07-20 11:49:15,783 DEBUG [42281] [] CourseStatusListController start
+2020-07-20 11:49:15,783 DEBUG [42281] [] controllers/CourseStatusListController.php: is exist
+2020-07-20 11:49:15,783 DEBUG [42281] [] CourseStatusListForm: is exist
+2020-07-20 11:49:15,783 DEBUG [42281] [] CourseStatusListForm: form value set 
+2020-07-20 11:49:15,784 DEBUG [42281] [] ------------------------------/eccadmin_dev/CourseStatusList/Search
+2020-07-20 11:49:15,784 DEBUG [42281] [] SearchAction start
+2020-07-20 11:49:15,784 DEBUG [42281] [] admin_no is 1
+2020-07-20 11:49:15,786 DEBUG [42281] [] course list query
+2020-07-20 11:49:15,786 DEBUG [42281] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  AND (d.course_detail_name LIKE :course_detail_name OR d.course_detail_romaji LIKE :course_detail_romaji )  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id 
+2020-07-20 11:49:15,895 DEBUG [42281] [] course list query
+2020-07-20 11:49:15,895 DEBUG [42281] []  SELECT   co.offer_no     ,m.org_no  ,m.org_id  ,m.org_name  ,cd.course_id    ,c.course_name    ,c.course_name_romaji  ,cd.course_detail_no     ,s.student_no  ,s.login_id  ,s.student_name  ,cd.disp_no     ,d.course_detail_name     ,d.course_detail_romaji  ,d.test_kbn test_kbn     ,date_format(answer.answer_dt,'%Y/%m/%d') AS answer_dt     ,student_mark.result_marks  ,total_mark.marks total_marks  FROM  	T_COURSE_DETAIL_STUDENT detail_stu  INNER JOIN T_STUDENT s  	ON detail_stu.org_no = s.org_no  	AND detail_stu.student_no = s.student_no  	AND s.del_flg = '0'  INNER JOIN T_COURSE_STUDENT cs     	ON s.student_no = cs.student_no       	AND s.org_no = cs.org_no        	AND detail_stu.offer_no = cs.offer_no  	AND detail_stu.course_id = cs.course_id  	AND cs.del_flg = '0'  INNER JOIN T_COURSE c            	ON cs.course_id = c.course_id        	AND c.del_flg = '0'       INNER JOIN T_COURSE_ORG co       	ON c.course_id = co.course_id        	AND detail_stu.org_no = co.org_no      	AND detail_stu.offer_no = co.offer_no    	AND co.del_flg = '0'    INNER JOIN M_ORGANIZATION m      	ON detail_stu.org_no = m.org_no      	AND m.del_flg = '0'       INNER JOIN T_COURSE_DETAIL cd    	ON detail_stu.course_id = cd.course_id   	AND detail_stu.course_detail_no = cd.course_detail_no    	AND cd.del_flg = '0'   INNER JOIN T_DETAIL d       	ON detail_stu.course_detail_no = d.course_detail_no      	AND d.del_flg = '0'     LEFT JOIN 	( SELECT offer_no          					,course_id course_id           					,course_detail_no course_detail_no            					,student_no           					,MIN(answer_dt) answer_dt            				FROM T_4SKILL_ANSWER          				WHERE del_flg = '0'          				GROUP BY offer_no,course_id,course_detail_no,student_no         			) answer     	ON detail_stu.course_id = answer.course_id     	AND detail_stu.course_detail_no = answer.course_detail_no     	AND detail_stu.offer_no = answer.offer_no   	AND s.student_no = answer.student_no  LEFT JOIN (    SELECT 	a.offer_no ,a.student_no  						,a.course_id,a.course_detail_no  						,SUM(a.marks) as result_marks   				FROM (  SELECT skill_answer.offer_no    							,skill_answer.student_no    							,skill_answer.course_id   							,skill_answer.course_detail_no    							,skill_result_detail.rule_no    							,skill_result_detail.sub_rule_no    							,skill_result_detail.rule_detail_no   							,mark_detail.marks    						FROM T_4SKILL_ANSWER skill_answer   						LEFT JOIN T_4SKILL_RESULT skill_result    							ON skill_answer.offer_no = skill_result.offer_no    							AND skill_answer.student_no = skill_result.student_no    							AND skill_answer.course_id = skill_result.course_id    							AND skill_answer.course_detail_no = skill_result.course_detail_no    						INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   							ON skill_result.result_no = skill_result_detail.result_no   						INNER JOIN M_MARK_DETAIL mark_detail    							ON skill_result_detail.rule_no = mark_detail.rule_no    							AND skill_result_detail.sub_rule_no = mark_detail.sub_rule_no    							AND skill_result_detail.rule_detail_no = mark_detail.rule_detail_no    						WHERE skill_answer.del_flg = '0'          						AND skill_result.del_flg = '0'          						GROUP BY skill_answer.offer_no ,skill_answer.student_no ,skill_answer.course_id   								,skill_answer.course_detail_no ,skill_result.result_no,skill_result_detail.rule_no         								,skill_result_detail.sub_rule_no ,skill_result_detail.rule_detail_no         					) as a    				GROUP BY a.offer_no  	,a.student_no   	,a.course_id    	,a.course_detail_no    			) as student_mark   			ON detail_stu.student_no = student_mark.student_no    			AND detail_stu.offer_no = student_mark.offer_no     			AND detail_stu.course_id = student_mark.course_id       			AND detail_stu.course_detail_no = student_mark.course_detail_no    LEFT JOIN  (   SELECT mark_rule.course_level       	  					, mark_rule.test_kbn       	  					, course.course_id         					, course_detail.course_detail_no         					, SUM(mark_detail.max_marks) marks         				FROM T_COURSE course    				INNER JOIN T_COURSE_DETAIL course_detail    					ON course.course_id = course_detail.course_id    					AND course.del_flg = '0'    				AND course_detail.del_flg = '0'    				INNER JOIN T_COURSE_DETAIL_QUESTION course_detail_qa    					ON course_detail.course_detail_no = course_detail_qa.course_detail_no    					AND course_detail_qa.del_flg = '0'   				INNER JOIN T_QUESTION ques    					ON course_detail_qa.question_no = ques.question_no    					AND ques.del_flg = '0'    				INNER JOIN  M_MARK_RULE mark_rule    					ON ques.score_pattern = mark_rule.score_pattern    					AND course.course_level = mark_rule.course_level    					AND course.test_kbn = mark_rule.test_kbn    				INNER JOIN  (  	SELECT  rule_no    										,SUM(max_marks) AS max_marks    								FROM (  SELECT rule_no  							,sub_rule_no    												,MAX(marks) AS max_marks    										FROM M_MARK_DETAIL    										WHERE del_flg = '0'    										GROUP BY rule_no,sub_rule_no  									) AS max    								GROUP BY rule_no    							) mark_detail  	  				ON mark_rule.rule_no = mark_detail.rule_no    				GROUP BY mark_rule.course_level      ,mark_rule.test_kbn, course.course_id, course_detail.course_detail_no     			) as total_mark   	ON detail_stu.course_id = total_mark.course_id     	AND detail_stu.course_detail_no = total_mark.course_detail_no    	AND c.course_level =  total_mark.course_level    	AND c.test_kbn =  total_mark.test_kbn   WHERE   '1' = '1'  AND detail_stu.del_flg = '0'  AND (d.course_detail_name LIKE :course_detail_name OR d.course_detail_romaji LIKE :course_detail_romaji )  GROUP BY cd.course_id ,co.offer_no,m.org_no,m.org_id,c.course_name,c.course_name_romaji,cd.course_detail_no,s.student_no,s.login_id,s.student_name,cd.disp_no,d.course_detail_name,d.course_detail_romaji,d.test_kbn,answer.answer_dt,total_mark.marks,student_mark.result_marks  ORDER BY detail_stu.start_period DESC, s.login_id  LIMIT 0 , 10
+2020-07-20 11:49:16,103 DEBUG [42281] [] SearchAction end
+2020-07-20 11:49:16,103 DEBUG [42281] [] CourseStatusListController end
+2020-07-20 11:49:16,104 DEBUG [42281] [] finally
+2020-07-20 11:49:17,389 DEBUG [42281] [] Request URI : /eccadmin_dev/WritingFeedbackList/index
+2020-07-20 11:49:17,390 DEBUG [42281] [] WritingFeedbackListController start
+2020-07-20 11:49:17,390 DEBUG [42281] [] controllers/WritingFeedbackListController.php: is exist
+2020-07-20 11:49:17,390 DEBUG [42281] [] WritingFeedbackListForm: is exist
+2020-07-20 11:49:17,390 DEBUG [42281] [] WritingFeedbackListForm: form value set 
+2020-07-20 11:49:17,391 DEBUG [42281] [] ------------------------------/eccadmin_dev/WritingFeedbackList/index
+2020-07-20 11:49:17,391 DEBUG [42281] [] indexAction start
+2020-07-20 11:49:17,391 DEBUG [42281] [] admin_no is 1
+2020-07-20 11:49:17,392 DEBUG [42281] []  SELECT  answer.student_no  ,answer.course_id  ,course.test_kbn  ,answer.offer_no  ,answer.course_detail_no  ,course_detail.disp_no  ,co.org_no  FROM  T_4SKILL_RESULT answer  INNER JOIN T_COURSE course  ON course.course_id = answer.course_id  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND answer.offer_no = co.offer_no  AND co.del_flg = '0'  INNER JOIN T_COURSE_DETAIL course_detail  ON course_detail.course_detail_no = answer.course_detail_no  AND course_detail.course_id = answer.course_id  INNER JOIN (SELECT offer_no,course_id,course_detail_no,student_no,MIN(answer_dt) answer_dt  FROM T_4SKILL_ANSWER   GROUP BY offer_no,course_id,course_detail_no,student_no )ans   ON answer.offer_no = ans.offer_no  AND answer.course_id = ans.course_id  AND answer.course_detail_no = ans.course_detail_no  AND answer.student_no = ans.student_no  WHERE  answer.del_flg = 0  AND answer.student_no = :student_no  AND answer.offer_no = :offer_no  AND answer.course_id = :course_id  AND course.test_kbn = :test_kbn  GROUP BY student_no  ,answer.offer_no  ,answer.course_id  ,answer.course_detail_no  ,course_detail.disp_no  ,ans.answer_dt  ,co.org_no  ORDER BY ans.answer_dt
+2020-07-20 11:49:17,413 DEBUG [42281] []  SELECT  course.course_id  ,course.test_kbn  ,cou_detail.course_detail_no  ,cou_detail.disp_no  ,student_mark.rule_no  ,student_mark.offer_no  ,student_mark.sub_rule_no  ,student_mark.rule_detail_no  ,student_mark.result_kbn  ,student_mark.audio_name  ,student_mark.result_mark detail_result_marks   ,student_rule_total_marks.total_marks rule_result_marks  ,sub_rule_marks.total_marks detail_total_marks  ,rule_marks.total_marks rule_total_marks  ,detail.course_detail_name  ,course.course_name course_name  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.sample_answer USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') sample_answer  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.byosha_point USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') byosha_point  ,stu.student_no  ,org.org_name as org_name  ,stu.login_id as stu_login_in  ,stu.student_name as student_name  ,ques.question_no  ,student_mark.description description ,student_mark.reply_comment reply_comment  ,student_mark.sub_description sub_description  ,REPLACE(CONVERT(student_mark.answer_contents USING utf8),'"','\\"') answer_contents  ,student_mark.result_answer result_answer  ,date_format(student_mark.answer_dt,'%Y年%m月%d日') as answer_dt  ,cou_ques.disp_no  ,student_mark.answer_flg  FROM T_STUDENT stu  INNER JOIN T_COURSE_STUDENT cstu  ON stu.student_no = cstu.student_no  AND stu.org_no = cstu.org_no  AND cstu.del_flg = '0'  INNER JOIN T_COURSE course  ON cstu.course_id = course.course_id  AND course.del_flg = '0'  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND stu.org_no = co.org_no  AND co.offer_no = cstu.offer_no  AND co.del_flg = '0'  INNER JOIN M_ORGANIZATION org  ON org.org_no=co.org_no  AND org.del_flg = '0'  INNER JOIN T_COURSE_DETAIL cou_detail  ON course.course_id = cou_detail.course_id  AND cou_detail.del_flg = '0'  INNER JOIN T_COURSE_DETAIL_QUESTION cou_ques  ON cou_detail.course_detail_no = cou_ques.course_detail_no  AND cou_ques.del_flg= '0'  INNER JOIN T_QUESTION ques  ON cou_ques.question_no = ques.question_no  AND ques.del_flg= '0'  INNER JOIN T_DETAIL detail  ON cou_detail.course_detail_no = detail.course_detail_no  AND detail.del_flg = '0'  LEFT JOIN (   SELECT  skill_result.offer_no   			,skill_result.course_id   			,skill_result.course_detail_no   			,skill_answer.answer_dt answer_dt   			,skill_answer.answer_contents answer_contents   			,skill_result_detail.result_answer result_answer   			,skill_result.student_no student_no   			,skill_result.question_no   			,skill_answer.audio_name   			,skill_answer.answer_flg   			,sub_rule.rule_no   			,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,m_detail.result_kbn   			,mark_rule.description   			,sub_rule.description sub_description   			,REPLACE(CONVERT(m_detail.reply_comment USING utf8),'"','\\"') reply_comment   			,m_detail.marks result_mark   			,SUM(m_detail.marks) marks   			,skill_result_detail.result_no   			FROM T_4SKILL_RESULT  skill_result   			INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   			ON skill_result.result_no = skill_result_detail.result_no   			INNER JOIN M_MARK_RULE mark_rule   			ON skill_result_detail.rule_no = mark_rule.rule_no   			INNER JOIN M_MARK_SUB_RULE sub_rule   			ON mark_rule.rule_no = sub_rule.rule_no   			AND skill_result_detail.rule_no = sub_rule.rule_no   			AND skill_result_detail.sub_rule_no = sub_rule.sub_rule_no   			INNER JOIN M_MARK_DETAIL m_detail   			ON skill_result_detail.rule_no = m_detail.rule_no   			AND skill_result_detail.sub_rule_no = m_detail.sub_rule_no   			AND skill_result_detail.rule_detail_no = m_detail.rule_detail_no   			LEFT JOIN T_4SKILL_ANSWER skill_answer    			ON skill_answer.offer_no = skill_result.offer_no   			AND skill_answer.course_id = skill_result.course_id   			AND skill_answer.course_detail_no = skill_result.course_detail_no   			AND skill_answer.question_no = skill_result.question_no   			AND skill_answer.student_no = skill_result.student_no   			GROUP BY  skill_result.offer_no ,skill_result.course_id ,skill_result.course_detail_no   			,skill_answer.answer_dt ,skill_answer.answer_contents   			,skill_result_detail.result_answer ,skill_result.student_no   			,skill_result.question_no ,sub_rule.rule_no ,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,mark_rule.description ,sub_rule.description ,m_detail.description   			,m_detail.marks, skill_result_detail.result_no   			) as student_mark  ON course.course_id = student_mark.course_id  AND cou_detail.course_detail_no = student_mark.course_detail_no  AND cou_detail.course_id = student_mark.course_id  AND detail.course_detail_no = student_mark.course_detail_no  AND ques.question_no = student_mark.question_no  AND co.offer_no = student_mark.offer_no  AND stu.student_no = student_mark.student_no  INNER JOIN(   	SELECT  rule_no ,sub_rule_no   	,SUM(max_marks) total_marks   	FROM(  SELECT m_detail.rule_no rule_no   			,m_detail.sub_rule_no sub_rule_no   			,MAX(m_detail.marks) max_marks   			FROM M_MARK_DETAIL m_detail   			GROUP BY m_detail.rule_no,m_detail.sub_rule_no   		)as total_rule_marks   	GROUP BY rule_no, sub_rule_no   	) as sub_rule_marks  ON student_mark.rule_no  = sub_rule_marks.rule_no  AND student_mark.sub_rule_no = sub_rule_marks.sub_rule_no  INNER JOIN(   	SELECT  rule_no  	,SUM(max_marks) total_marks  	FROM(  SELECT m_detail.rule_no rule_no  			,m_detail.sub_rule_no sub_rule_no  			,MAX(m_detail.marks) max_marks  			FROM M_MARK_DETAIL m_detail  			GROUP BY m_detail.rule_no,m_detail.sub_rule_no  		)as total_rule_marks  	GROUP BY rule_no  	) as rule_marks    ON student_mark.rule_no = rule_marks.rule_no  INNER JOIN(   SELECT r_detail.result_no, m_detail.rule_no rule_no  		,SUM(m_detail.marks) total_marks  		FROM  T_4SKILL_RESULT_DETAIL r_detail  		, M_MARK_DETAIL m_detail  		WHERE r_detail.rule_no = m_detail.rule_no  		AND r_detail.sub_rule_no = m_detail.sub_rule_no  		AND r_detail.rule_detail_no = m_detail.rule_detail_no  		GROUP BY r_detail.result_no,m_detail.rule_no  	) as student_rule_total_marks  ON student_mark.rule_no = student_rule_total_marks.rule_no  AND student_mark.result_no = student_rule_total_marks.result_no  WHERE course.del_flg = '0'  AND detail.course_detail_no = :course_detail_no  AND course.course_id = :course_id  AND course.test_kbn = :test_kbn  AND stu.student_no = :student_no   AND org.org_no = :org_no  AND co.offer_no = :offer_no  ORDER BY answer_dt, offer_no, course_id, course_detail_no, question_no, rule_no, sub_rule_no, rule_detail_no 
+2020-07-20 11:49:17,629 DEBUG [42281] []  SELECT  course.course_id  ,course.test_kbn  ,cou_detail.course_detail_no  ,cou_detail.disp_no  ,student_mark.rule_no  ,student_mark.offer_no  ,student_mark.sub_rule_no  ,student_mark.rule_detail_no  ,student_mark.result_kbn  ,student_mark.audio_name  ,student_mark.result_mark detail_result_marks   ,student_rule_total_marks.total_marks rule_result_marks  ,sub_rule_marks.total_marks detail_total_marks  ,rule_marks.total_marks rule_total_marks  ,detail.course_detail_name  ,course.course_name course_name  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.sample_answer USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') sample_answer  ,REPLACE(REPLACE(REPLACE(CONVERT(ques.byosha_point USING utf8),'"','\\"'),'
+','<br />'),'
+','<br />') byosha_point  ,stu.student_no  ,org.org_name as org_name  ,stu.login_id as stu_login_in  ,stu.student_name as student_name  ,ques.question_no  ,student_mark.description description ,student_mark.reply_comment reply_comment  ,student_mark.sub_description sub_description  ,REPLACE(CONVERT(student_mark.answer_contents USING utf8),'"','\\"') answer_contents  ,student_mark.result_answer result_answer  ,date_format(student_mark.answer_dt,'%Y年%m月%d日') as answer_dt  ,cou_ques.disp_no  ,student_mark.answer_flg  FROM T_STUDENT stu  INNER JOIN T_COURSE_STUDENT cstu  ON stu.student_no = cstu.student_no  AND stu.org_no = cstu.org_no  AND cstu.del_flg = '0'  INNER JOIN T_COURSE course  ON cstu.course_id = course.course_id  AND course.del_flg = '0'  INNER JOIN T_COURSE_ORG co  ON course.course_id = co.course_id  AND stu.org_no = co.org_no  AND co.offer_no = cstu.offer_no  AND co.del_flg = '0'  INNER JOIN M_ORGANIZATION org  ON org.org_no=co.org_no  AND org.del_flg = '0'  INNER JOIN T_COURSE_DETAIL cou_detail  ON course.course_id = cou_detail.course_id  AND cou_detail.del_flg = '0'  INNER JOIN T_COURSE_DETAIL_QUESTION cou_ques  ON cou_detail.course_detail_no = cou_ques.course_detail_no  AND cou_ques.del_flg= '0'  INNER JOIN T_QUESTION ques  ON cou_ques.question_no = ques.question_no  AND ques.del_flg= '0'  INNER JOIN T_DETAIL detail  ON cou_detail.course_detail_no = detail.course_detail_no  AND detail.del_flg = '0'  LEFT JOIN (   SELECT  skill_result.offer_no   			,skill_result.course_id   			,skill_result.course_detail_no   			,skill_answer.answer_dt answer_dt   			,skill_answer.answer_contents answer_contents   			,skill_result_detail.result_answer result_answer   			,skill_result.student_no student_no   			,skill_result.question_no   			,skill_answer.audio_name   			,skill_answer.answer_flg   			,sub_rule.rule_no   			,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,m_detail.result_kbn   			,mark_rule.description   			,sub_rule.description sub_description   			,REPLACE(CONVERT(m_detail.reply_comment USING utf8),'"','\\"') reply_comment   			,m_detail.marks result_mark   			,SUM(m_detail.marks) marks   			,skill_result_detail.result_no   			FROM T_4SKILL_RESULT  skill_result   			INNER JOIN T_4SKILL_RESULT_DETAIL skill_result_detail   			ON skill_result.result_no = skill_result_detail.result_no   			INNER JOIN M_MARK_RULE mark_rule   			ON skill_result_detail.rule_no = mark_rule.rule_no   			INNER JOIN M_MARK_SUB_RULE sub_rule   			ON mark_rule.rule_no = sub_rule.rule_no   			AND skill_result_detail.rule_no = sub_rule.rule_no   			AND skill_result_detail.sub_rule_no = sub_rule.sub_rule_no   			INNER JOIN M_MARK_DETAIL m_detail   			ON skill_result_detail.rule_no = m_detail.rule_no   			AND skill_result_detail.sub_rule_no = m_detail.sub_rule_no   			AND skill_result_detail.rule_detail_no = m_detail.rule_detail_no   			LEFT JOIN T_4SKILL_ANSWER skill_answer    			ON skill_answer.offer_no = skill_result.offer_no   			AND skill_answer.course_id = skill_result.course_id   			AND skill_answer.course_detail_no = skill_result.course_detail_no   			AND skill_answer.question_no = skill_result.question_no   			AND skill_answer.student_no = skill_result.student_no   			GROUP BY  skill_result.offer_no ,skill_result.course_id ,skill_result.course_detail_no   			,skill_answer.answer_dt ,skill_answer.answer_contents   			,skill_result_detail.result_answer ,skill_result.student_no   			,skill_result.question_no ,sub_rule.rule_no ,sub_rule.sub_rule_no   			,m_detail.rule_detail_no   			,mark_rule.description ,sub_rule.description ,m_detail.description   			,m_detail.marks, skill_result_detail.result_no   			) as student_mark  ON course.course_id = student_mark.course_id  AND cou_detail.course_detail_no = student_mark.course_detail_no  AND cou_detail.course_id = student_mark.course_id  AND detail.course_detail_no = student_mark.course_detail_no  AND ques.question_no = student_mark.question_no  AND co.offer_no = student_mark.offer_no  AND stu.student_no = student_mark.student_no  INNER JOIN(   	SELECT  rule_no ,sub_rule_no   	,SUM(max_marks) total_marks   	FROM(  SELECT m_detail.rule_no rule_no   			,m_detail.sub_rule_no sub_rule_no   			,MAX(m_detail.marks) max_marks   			FROM M_MARK_DETAIL m_detail   			GROUP BY m_detail.rule_no,m_detail.sub_rule_no   		)as total_rule_marks   	GROUP BY rule_no, sub_rule_no   	) as sub_rule_marks  ON student_mark.rule_no  = sub_rule_marks.rule_no  AND student_mark.sub_rule_no = sub_rule_marks.sub_rule_no  INNER JOIN(   	SELECT  rule_no  	,SUM(max_marks) total_marks  	FROM(  SELECT m_detail.rule_no rule_no  			,m_detail.sub_rule_no sub_rule_no  			,MAX(m_detail.marks) max_marks  			FROM M_MARK_DETAIL m_detail  			GROUP BY m_detail.rule_no,m_detail.sub_rule_no  		)as total_rule_marks  	GROUP BY rule_no  	) as rule_marks    ON student_mark.rule_no = rule_marks.rule_no  INNER JOIN(   SELECT r_detail.result_no, m_detail.rule_no rule_no  		,SUM(m_detail.marks) total_marks  		FROM  T_4SKILL_RESULT_DETAIL r_detail  		, M_MARK_DETAIL m_detail  		WHERE r_detail.rule_no = m_detail.rule_no  		AND r_detail.sub_rule_no = m_detail.sub_rule_no  		AND r_detail.rule_detail_no = m_detail.rule_detail_no  		GROUP BY r_detail.result_no,m_detail.rule_no  	) as student_rule_total_marks  ON student_mark.rule_no = student_rule_total_marks.rule_no  AND student_mark.result_no = student_rule_total_marks.result_no  WHERE course.del_flg = '0'  AND course.course_id = :course_id  AND course.test_kbn = :test_kbn  AND stu.student_no = :student_no   AND org.org_no = :org_no  AND co.offer_no = :offer_no  ORDER BY answer_dt, offer_no, course_id, course_detail_no, question_no, rule_no, sub_rule_no, rule_detail_no 
+2020-07-20 11:49:17,952 DEBUG [42281] [] indexAction end
+2020-07-20 11:49:17,952 DEBUG [42281] [] WritingFeedbackListController end
+2020-07-20 11:49:17,952 DEBUG [42281] [] finally
+2020-07-20 11:52:46,998 DEBUG [42222] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-20 11:52:46,999 DEBUG [42222] [] LoginController start
+2020-07-20 11:52:46,999 DEBUG [42222] [] controllers/LoginController.php: is exist
+2020-07-20 11:52:46,999 DEBUG [42222] [] LoginForm: is exist
+2020-07-20 11:52:46,999 DEBUG [42222] [] LoginForm: form value set 
+2020-07-20 11:52:47,000 DEBUG [42222] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-20 11:52:47,000 DEBUG [42222] [] ------------------------------login_start_check
+2020-07-20 11:52:47,000 DEBUG [42222] [] logoutAction start
+2020-07-20 11:52:47,000 DEBUG [42222] [] logoutAction end
+2020-07-20 11:52:47,000 DEBUG [42222] [] LoginController end
+2020-07-20 11:52:47,001 DEBUG [42222] [] finally
+2020-07-20 11:52:47,018 DEBUG [42222] [] Request URI : /eccadmin_dev/Login
+2020-07-20 11:52:47,018 DEBUG [42222] [] LoginController start
+2020-07-20 11:52:47,019 DEBUG [42222] [] controllers/LoginController.php: is exist
+2020-07-20 11:52:47,019 DEBUG [42222] [] LoginForm: is exist
+2020-07-20 11:52:47,019 DEBUG [42222] [] LoginForm: form value set 
+2020-07-20 11:52:47,019 DEBUG [42222] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 11:52:47,019 DEBUG [42222] [] ------------------------------login_start_check
+2020-07-20 11:52:47,020 DEBUG [42222] [] indexAction start
+2020-07-20 11:52:47,035 DEBUG [42222] [] indexAction end
+2020-07-20 11:52:47,035 DEBUG [42222] [] LoginController end
+2020-07-20 11:52:47,035 DEBUG [42222] [] finally
+2020-07-20 15:16:17,344 DEBUG [46992] [] Request URI : /eccadmin_dev/Login
+2020-07-20 15:16:17,344 DEBUG [46992] [] LoginController start
+2020-07-20 15:16:17,345 DEBUG [46992] [] controllers/LoginController.php: is exist
+2020-07-20 15:16:17,345 DEBUG [46992] [] LoginForm: is exist
+2020-07-20 15:16:17,345 DEBUG [46992] [] LoginForm: form value set 
+2020-07-20 15:16:17,346 DEBUG [46992] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 15:16:17,346 DEBUG [46992] [] ------------------------------login_start_check
+2020-07-20 15:16:17,346 DEBUG [46992] [] indexAction start
+2020-07-20 15:16:17,362 DEBUG [46992] [] indexAction end
+2020-07-20 15:16:17,363 DEBUG [46992] [] LoginController end
+2020-07-20 15:16:17,363 DEBUG [46992] [] finally
+2020-07-20 15:16:20,675 DEBUG [46992] [] Request URI : /eccadmin_dev/Login/login
+2020-07-20 15:16:20,675 DEBUG [46992] [] LoginController start
+2020-07-20 15:16:20,675 DEBUG [46992] [] controllers/LoginController.php: is exist
+2020-07-20 15:16:20,676 DEBUG [46992] [] LoginForm: is exist
+2020-07-20 15:16:20,676 DEBUG [46992] [] LoginForm: form value set 
+2020-07-20 15:16:20,676 DEBUG [46992] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-20 15:16:20,676 DEBUG [46992] [] ------------------------------login_start_check
+2020-07-20 15:16:20,676 DEBUG [46992] [] loginAction start
+2020-07-20 15:16:20,978 DEBUG [46992] [] loginAction end
+2020-07-20 15:16:20,978 DEBUG [46992] [] LoginController end
+2020-07-20 15:16:20,979 DEBUG [46992] [] finally
+2020-07-20 15:16:20,997 DEBUG [46992] [] Request URI : /eccadmin_dev/Menu
+2020-07-20 15:16:20,998 DEBUG [46992] [] MenuController start
+2020-07-20 15:16:20,998 DEBUG [46992] [] controllers/MenuController.php: is exist
+2020-07-20 15:16:20,998 DEBUG [46992] [] MenuForm: is exist
+2020-07-20 15:16:20,998 DEBUG [46992] [] MenuForm: form value set 
+2020-07-20 15:16:20,998 DEBUG [46992] [] ------------------------------/eccadmin_dev/Menu
+2020-07-20 15:16:20,998 DEBUG [46992] [] ------------------------------login_start_check
+2020-07-20 15:16:20,998 DEBUG [46992] [] indexAction start
+2020-07-20 15:16:20,998 DEBUG [46992] [] admin_no is 1
+2020-07-20 15:16:21,024 DEBUG [46992] [] indexAction end
+2020-07-20 15:16:21,024 DEBUG [46992] [] MenuController end
+2020-07-20 15:16:21,024 DEBUG [46992] [] finally
+2020-07-20 15:17:44,866 DEBUG [46966] [] Request URI : /eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:17:44,867 DEBUG [46966] [] SubjectAreaSubjectDataExportController start
+2020-07-20 15:17:44,867 DEBUG [46966] [] controllers/SubjectAreaSubjectDataExportController.php: is exist
+2020-07-20 15:17:44,985 DEBUG [46966] [] SubjectAreaSubjectDataExportForm: is exist
+2020-07-20 15:17:44,992 DEBUG [46966] [] SubjectAreaSubjectDataExportForm: form value set 
+2020-07-20 15:17:44,992 DEBUG [46966] [] ------------------------------/eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:17:44,993 DEBUG [46966] [] ------------------------------/eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:17:44,993 DEBUG [46966] [] indexAction start
+2020-07-20 15:17:44,993 DEBUG [46966] [] admin_no is 1
+2020-07-20 15:17:45,043 DEBUG [46966] [] indexAction end
+2020-07-20 15:17:45,044 DEBUG [46966] [] SubjectAreaSubjectDataExportController end
+2020-07-20 15:17:45,044 DEBUG [46966] [] finally
+2020-07-20 15:18:20,740 DEBUG [46828] [] Request URI : /eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:18:20,740 DEBUG [46828] [] SubjectAreaSubjectDataExportController start
+2020-07-20 15:18:20,740 DEBUG [46828] [] controllers/SubjectAreaSubjectDataExportController.php: is exist
+2020-07-20 15:18:20,741 DEBUG [46828] [] SubjectAreaSubjectDataExportForm: is exist
+2020-07-20 15:18:20,741 DEBUG [46828] [] SubjectAreaSubjectDataExportForm: form value set 
+2020-07-20 15:18:20,742 DEBUG [46828] [] ------------------------------/eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:18:20,742 DEBUG [46828] [] ------------------------------/eccadmin_dev/SubjectAreaSubjectDataExport
+2020-07-20 15:18:20,742 DEBUG [46828] [] indexAction start
+2020-07-20 15:18:20,742 DEBUG [46828] [] admin_no is 1
+2020-07-20 15:18:20,783 DEBUG [46828] [] indexAction end
+2020-07-20 15:18:20,783 DEBUG [46828] [] SubjectAreaSubjectDataExportController end
+2020-07-20 15:18:20,783 DEBUG [46828] [] finally
+2020-07-20 15:19:11,236 DEBUG [46604] [] Request URI : /eccadmin_dev/ExcelSubjectAreaList
+2020-07-20 15:19:11,237 DEBUG [46604] [] ExcelSubjectAreaListController start
+2020-07-20 15:19:11,237 DEBUG [46604] [] controllers/ExcelSubjectAreaListController.php: is exist
+2020-07-20 15:19:11,328 DEBUG [46604] [] ExcelSubjectAreaListForm: is exist
+2020-07-20 15:19:11,344 DEBUG [46604] [] ExcelSubjectAreaListForm: form value set 
+2020-07-20 15:19:11,344 DEBUG [46604] [] ------------------------------/eccadmin_dev/ExcelSubjectAreaList
+2020-07-20 15:19:11,344 DEBUG [46604] [] indexAction start
+2020-07-20 15:19:11,344 DEBUG [46604] [] admin_no is 1
+2020-07-20 15:19:11,462 DEBUG [46604] [] indexAction end
+2020-07-20 15:19:11,462 DEBUG [46604] [] ExcelSubjectAreaListController end
+2020-07-20 15:19:11,463 DEBUG [46604] [] finally
+2020-07-20 15:19:25,739 DEBUG [46992] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-20 15:19:25,740 DEBUG [46992] [] LoginController start
+2020-07-20 15:19:25,740 DEBUG [46992] [] controllers/LoginController.php: is exist
+2020-07-20 15:19:25,740 DEBUG [46992] [] LoginForm: is exist
+2020-07-20 15:19:25,740 DEBUG [46992] [] LoginForm: form value set 
+2020-07-20 15:19:25,741 DEBUG [46992] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-20 15:19:25,741 DEBUG [46992] [] ------------------------------login_start_check
+2020-07-20 15:19:25,741 DEBUG [46992] [] logoutAction start
+2020-07-20 15:19:25,741 DEBUG [46992] [] logoutAction end
+2020-07-20 15:19:25,741 DEBUG [46992] [] LoginController end
+2020-07-20 15:19:25,741 DEBUG [46992] [] finally
+2020-07-20 15:19:25,764 DEBUG [46992] [] Request URI : /eccadmin_dev/Login
+2020-07-20 15:19:25,765 DEBUG [46992] [] LoginController start
+2020-07-20 15:19:25,765 DEBUG [46992] [] controllers/LoginController.php: is exist
+2020-07-20 15:19:25,765 DEBUG [46992] [] LoginForm: is exist
+2020-07-20 15:19:25,765 DEBUG [46992] [] LoginForm: form value set 
+2020-07-20 15:19:25,765 DEBUG [46992] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 15:19:25,766 DEBUG [46992] [] ------------------------------login_start_check
+2020-07-20 15:19:25,766 DEBUG [46992] [] indexAction start
+2020-07-20 15:19:25,778 DEBUG [46992] [] indexAction end
+2020-07-20 15:19:25,778 DEBUG [46992] [] LoginController end
+2020-07-20 15:19:25,778 DEBUG [46992] [] finally
+2020-07-20 18:49:30,412 DEBUG [50995] [] Request URI : /eccadmin_dev/Login
+2020-07-20 18:49:30,412 DEBUG [50995] [] LoginController start
+2020-07-20 18:49:30,412 DEBUG [50995] [] controllers/LoginController.php: is exist
+2020-07-20 18:49:30,413 DEBUG [50995] [] LoginForm: is exist
+2020-07-20 18:49:30,413 DEBUG [50995] [] LoginForm: form value set 
+2020-07-20 18:49:30,413 DEBUG [50995] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 18:49:30,413 DEBUG [50995] [] ------------------------------login_start_check
+2020-07-20 18:49:30,414 DEBUG [50995] [] indexAction start
+2020-07-20 18:49:30,429 DEBUG [50995] [] indexAction end
+2020-07-20 18:49:30,429 DEBUG [50995] [] LoginController end
+2020-07-20 18:49:30,429 DEBUG [50995] [] finally
+2020-07-20 18:58:14,920 DEBUG [51052] [] Request URI : /eccadmin_dev/Login
+2020-07-20 18:58:14,921 DEBUG [51052] [] LoginController start
+2020-07-20 18:58:14,921 DEBUG [51052] [] controllers/LoginController.php: is exist
+2020-07-20 18:58:14,921 DEBUG [51052] [] LoginForm: is exist
+2020-07-20 18:58:14,921 DEBUG [51052] [] LoginForm: form value set 
+2020-07-20 18:58:14,922 DEBUG [51052] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 18:58:14,922 DEBUG [51052] [] ------------------------------login_start_check
+2020-07-20 18:58:14,922 DEBUG [51052] [] indexAction start
+2020-07-20 18:58:14,938 DEBUG [51052] [] indexAction end
+2020-07-20 18:58:14,938 DEBUG [51052] [] LoginController end
+2020-07-20 18:58:14,938 DEBUG [51052] [] finally
+2020-07-20 18:58:17,786 DEBUG [51052] [] Request URI : /eccadmin_dev/Login/login
+2020-07-20 18:58:17,787 DEBUG [51052] [] LoginController start
+2020-07-20 18:58:17,787 DEBUG [51052] [] controllers/LoginController.php: is exist
+2020-07-20 18:58:17,787 DEBUG [51052] [] LoginForm: is exist
+2020-07-20 18:58:17,788 DEBUG [51052] [] LoginForm: form value set 
+2020-07-20 18:58:17,788 DEBUG [51052] [] ------------------------------/eccadmin_dev/Login/login
+2020-07-20 18:58:17,788 DEBUG [51052] [] ------------------------------login_start_check
+2020-07-20 18:58:17,788 DEBUG [51052] [] loginAction start
+2020-07-20 18:58:18,085 DEBUG [51052] [] loginAction end
+2020-07-20 18:58:18,085 DEBUG [51052] [] LoginController end
+2020-07-20 18:58:18,085 DEBUG [51052] [] finally
+2020-07-20 18:58:18,102 DEBUG [51052] [] Request URI : /eccadmin_dev/Menu
+2020-07-20 18:58:18,102 DEBUG [51052] [] MenuController start
+2020-07-20 18:58:18,102 DEBUG [51052] [] controllers/MenuController.php: is exist
+2020-07-20 18:58:18,102 DEBUG [51052] [] MenuForm: is exist
+2020-07-20 18:58:18,102 DEBUG [51052] [] MenuForm: form value set 
+2020-07-20 18:58:18,103 DEBUG [51052] [] ------------------------------/eccadmin_dev/Menu
+2020-07-20 18:58:18,103 DEBUG [51052] [] ------------------------------login_start_check
+2020-07-20 18:58:18,103 DEBUG [51052] [] indexAction start
+2020-07-20 18:58:18,103 DEBUG [51052] [] admin_no is 1
+2020-07-20 18:58:18,128 DEBUG [51052] [] indexAction end
+2020-07-20 18:58:18,128 DEBUG [51052] [] MenuController end
+2020-07-20 18:58:18,128 DEBUG [51052] [] finally
+2020-07-20 18:58:25,139 DEBUG [51226] [] Request URI : /eccadmin_dev/QuestionList
+2020-07-20 18:58:25,140 DEBUG [51226] [] QuestionListController start
+2020-07-20 18:58:25,140 DEBUG [51226] [] controllers/QuestionListController.php: is exist
+2020-07-20 18:58:25,146 DEBUG [51226] [] QuestionListForm: is exist
+2020-07-20 18:58:25,146 DEBUG [51226] [] QuestionListForm: form value set 
+2020-07-20 18:58:25,147 DEBUG [51226] [] ------------------------------/eccadmin_dev/QuestionList
+2020-07-20 18:58:25,147 DEBUG [51226] [] indexAction start
+2020-07-20 18:58:25,147 DEBUG [51226] [] admin_no is 1
+2020-07-20 18:58:25,150 DEBUG [51226] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 4ad7055bf4803468eb54203b49b56b2b
+    [admin_kbn] => 001
+)
+
+2020-07-20 18:58:25,179 DEBUG [51226] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 25
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 4ad7055bf4803468eb54203b49b56b2b
+    [admin_kbn] => 001
+)
+
+2020-07-20 18:58:25,263 DEBUG [51226] [] indexAction end
+2020-07-20 18:58:25,263 DEBUG [51226] [] QuestionListController end
+2020-07-20 18:58:25,263 DEBUG [51226] [] finally
+2020-07-20 18:58:28,631 DEBUG [51226] [] Request URI : /eccadmin_dev/QuestionList/Search
+2020-07-20 18:58:28,631 DEBUG [51226] [] QuestionListController start
+2020-07-20 18:58:28,631 DEBUG [51226] [] controllers/QuestionListController.php: is exist
+2020-07-20 18:58:28,632 DEBUG [51226] [] QuestionListForm: is exist
+2020-07-20 18:58:28,632 DEBUG [51226] [] QuestionListForm: form value set 
+2020-07-20 18:58:28,633 DEBUG [51226] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2020-07-20 18:58:28,633 DEBUG [51226] [] SearchAction start
+2020-07-20 18:58:28,633 DEBUG [51226] [] admin_no is 1
+2020-07-20 18:58:28,635 DEBUG [51226] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 25
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 03b50f40136f96b267490904c55ccf9b
+    [admin_kbn] => 001
+)
+
+2020-07-20 18:58:28,635 DEBUG [51226] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 25
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 03b50f40136f96b267490904c55ccf9b
+    [admin_kbn] => 001
+)
+
+2020-07-20 18:58:28,664 DEBUG [51226] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 25
+    [max_page] => 25
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 03b50f40136f96b267490904c55ccf9b
+    [admin_kbn] => 001
+)
+
+2020-07-20 18:58:28,753 DEBUG [51226] [] SearchAction end
+2020-07-20 18:58:28,753 DEBUG [51226] [] QuestionListController end
+2020-07-20 18:58:28,753 DEBUG [51226] [] finally
+2020-07-20 19:00:55,093 DEBUG [51052] [] Request URI : /eccadmin_dev/Login/logout
+2020-07-20 19:00:55,094 DEBUG [51052] [] LoginController start
+2020-07-20 19:00:55,094 DEBUG [51052] [] controllers/LoginController.php: is exist
+2020-07-20 19:00:55,094 DEBUG [51052] [] LoginForm: is exist
+2020-07-20 19:00:55,094 DEBUG [51052] [] LoginForm: form value set 
+2020-07-20 19:00:55,095 DEBUG [51052] [] ------------------------------/eccadmin_dev/Login/logout
+2020-07-20 19:00:55,095 DEBUG [51052] [] ------------------------------login_start_check
+2020-07-20 19:00:55,095 DEBUG [51052] [] logoutAction start
+2020-07-20 19:00:55,095 DEBUG [51052] [] logoutAction end
+2020-07-20 19:00:55,095 DEBUG [51052] [] LoginController end
+2020-07-20 19:00:55,095 DEBUG [51052] [] finally
+2020-07-20 19:00:55,112 DEBUG [51052] [] Request URI : /eccadmin_dev/Login
+2020-07-20 19:00:55,112 DEBUG [51052] [] LoginController start
+2020-07-20 19:00:55,112 DEBUG [51052] [] controllers/LoginController.php: is exist
+2020-07-20 19:00:55,113 DEBUG [51052] [] LoginForm: is exist
+2020-07-20 19:00:55,113 DEBUG [51052] [] LoginForm: form value set 
+2020-07-20 19:00:55,113 DEBUG [51052] [] ------------------------------/eccadmin_dev/Login
+2020-07-20 19:00:55,113 DEBUG [51052] [] ------------------------------login_start_check
+2020-07-20 19:00:55,113 DEBUG [51052] [] indexAction start
+2020-07-20 19:00:55,128 DEBUG [51052] [] indexAction end
+2020-07-20 19:00:55,128 DEBUG [51052] [] LoginController end
+2020-07-20 19:00:55,128 DEBUG [51052] [] finally

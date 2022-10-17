@@ -1,0 +1,170 @@
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+form{
+	padding-top:0px;
+	margin-top:0px;
+	align:top;
+}
+#main {
+	width:100%;
+	height:100%;
+	border:none;
+	padding-top:0px;
+	font-family:Meiryo UI;
+	background:#ffffff;
+}
+#divOuterFrame {
+	width:100%;
+	height:700px;;
+	border: none;
+	padding-top:0px;
+	font-family:Meiryo UI;
+	background:#ffffff;
+}
+#divError {
+	width:980px;
+	height:500px;
+	font-family:Meiryo UI;
+	border: none;
+	align: center;
+	background:divError;
+}
+span {
+	color:red
+}
+#divTitle {
+    background:#e6b9b8;
+	/* text-align:center; */
+	border:none;
+	width: 100%;
+	margin-bottom:0px;
+	padding-top:0px;
+	color:#fff;
+	text-color:#ffffff;
+	font-family:Meiryo UI
+}
+label{
+	font-family:Meiryo UI;
+}
+input[type=button].finish {
+ 	width:65px;
+ 	height:30px;
+	background:#4791A4;
+	color:#fff;
+	border:1px solid black;
+	padding:4px;
+	font-size:11px;
+	cursor:pointer;
+	border-radius:2px;
+	margin-bottom:15px;
+}
+input[type=text],input[type=password] {
+  width: 300px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #1abc9c;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #4791A4 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #4791A4 4%);
+  background-position: -300px 0;
+  background-size: 300px 100%;
+  background-repeat: no-repeat;
+  color: #1da99e;
+}
+input:focus, input:valid {
+ box-shadow: none;
+ outline: none;
+ background-position: 0 0;
+}
+
+#login {
+    margin: left;
+    align:center;
+    width: 50%;
+    border:none;
+    padding: 0px;
+    background:#ffffff;
+    font-family:Meiryo UI
+}
+
+input[type=submit],[type=button] {
+	width:50px;
+	height:50px;
+	background:transparent;
+	color:black;
+	/*padding:10px;
+	padding-right:20px; */
+	font-size:14px;
+	cursor:pointer;
+	border-radius:1px;
+	border:transparent;
+	margin-bottom:0px;
+	font-family:Meiryo UI;
+	background-position: right 0px center;
+	background-repeat: no-repeat;
+/* 	display: inline-block;
+	width: 200px;
+	height: 54px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+	background:transparent; */
+}
+/*
+input[type=button]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+*/
+#logout {
+	float:right;
+	padding:5px;
+	border:dashed 1px gray
+}
+a {
+	text-decoration:none;
+	color:#6495ed
+}
+i {
+	color:#6495ed
+}
+#body {
+	background:#ffffff;
+}
+
+#title {
+    background:#495888;
+    border: 2px solid #0080c0;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left:10px;
+    margin-top :50px;
+    width:300px;
+    text-color:#1B60BC;
+    font-family:Meiryo UI
+}
+#divDescription{
+	margin-top:10px;
+	margin-left:10px;
+	text-align:left;
+	margin-right:10px;
+	background:#E7EAEE;
+	font-family:Meiryo UI;
+	font-size: 16px;
+}
+#divInform {
+	margin-left:50px;
+	margin-right:10px;
+	margin-top:50px;
+	text-align:left;
+	background:#EFF5FD;
+	font-family:Meiryo UI
+}

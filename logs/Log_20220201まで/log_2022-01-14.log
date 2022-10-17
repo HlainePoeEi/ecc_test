@@ -1,0 +1,271 @@
+2022-01-14 11:26:57,766 DEBUG [110444] [] Request URI : /eccadmin_dev/login
+2022-01-14 11:26:57,807 DEBUG [110444] [] loginController start
+2022-01-14 11:26:57,807 DEBUG [110444] [] controllers/loginController.php: is not exist
+2022-01-14 11:26:57,807 DEBUG [110444] [] finally
+2022-01-14 11:26:57,979 DEBUG [110444] [] Request URI : /eccadmin_dev/Error/disp
+2022-01-14 11:26:57,979 DEBUG [110444] [] ErrorController start
+2022-01-14 11:26:57,979 DEBUG [110444] [] controllers/ErrorController.php: is exist
+2022-01-14 11:26:57,980 DEBUG [110444] [] ErrorForm: is exist
+2022-01-14 11:26:57,980 DEBUG [110444] [] ErrorForm: form value set 
+2022-01-14 11:26:57,980 DEBUG [110444] [] ------------------------------/eccadmin_dev/Error/disp
+2022-01-14 11:26:57,980 DEBUG [110444] [] ------------------------------login_start_check
+2022-01-14 11:26:57,980 DEBUG [110444] [] dispAction start
+2022-01-14 11:26:58,012 DEBUG [110444] [] dispAction end
+2022-01-14 11:26:58,012 DEBUG [110444] [] ErrorController end
+2022-01-14 11:26:58,012 DEBUG [110444] [] finally
+2022-01-14 11:27:29,078 DEBUG [110424] [] Request URI : /eccadmin_dev/Login
+2022-01-14 11:27:29,079 DEBUG [110424] [] LoginController start
+2022-01-14 11:27:29,079 DEBUG [110424] [] controllers/LoginController.php: is exist
+2022-01-14 11:27:29,079 DEBUG [110424] [] LoginForm: is exist
+2022-01-14 11:27:29,079 DEBUG [110424] [] LoginForm: form value set 
+2022-01-14 11:27:29,080 DEBUG [110424] [] ------------------------------/eccadmin_dev/Login
+2022-01-14 11:27:29,080 DEBUG [110424] [] ------------------------------login_start_check
+2022-01-14 11:27:29,080 DEBUG [110424] [] indexAction start
+2022-01-14 11:27:29,095 DEBUG [110424] [] indexAction end
+2022-01-14 11:27:29,096 DEBUG [110424] [] LoginController end
+2022-01-14 11:27:29,096 DEBUG [110424] [] finally
+2022-01-14 11:27:37,122 DEBUG [110439] [] Request URI : /eccadmin_dev/Login/login
+2022-01-14 11:27:37,122 DEBUG [110439] [] LoginController start
+2022-01-14 11:27:37,123 DEBUG [110439] [] controllers/LoginController.php: is exist
+2022-01-14 11:27:37,123 DEBUG [110439] [] LoginForm: is exist
+2022-01-14 11:27:37,123 DEBUG [110439] [] LoginForm: form value set 
+2022-01-14 11:27:37,124 DEBUG [110439] [] ------------------------------/eccadmin_dev/Login/login
+2022-01-14 11:27:37,124 DEBUG [110439] [] ------------------------------login_start_check
+2022-01-14 11:27:37,124 DEBUG [110439] [] loginAction start
+2022-01-14 11:27:37,429 DEBUG [110439] [] loginAction end
+2022-01-14 11:27:37,429 DEBUG [110439] [] LoginController end
+2022-01-14 11:27:37,429 DEBUG [110439] [] finally
+2022-01-14 11:27:37,568 DEBUG [110448] [] Request URI : /eccadmin_dev/Menu
+2022-01-14 11:27:37,568 DEBUG [110448] [] MenuController start
+2022-01-14 11:27:37,569 DEBUG [110448] [] controllers/MenuController.php: is exist
+2022-01-14 11:27:37,570 DEBUG [110448] [] MenuForm: is exist
+2022-01-14 11:27:37,570 DEBUG [110448] [] MenuForm: form value set 
+2022-01-14 11:27:37,571 DEBUG [110448] [] ------------------------------/eccadmin_dev/Menu
+2022-01-14 11:27:37,571 DEBUG [110448] [] ------------------------------login_start_check
+2022-01-14 11:27:37,571 DEBUG [110448] [] indexAction start
+2022-01-14 11:27:37,571 DEBUG [110448] [] admin_no is 1
+2022-01-14 11:27:37,632 DEBUG [110448] [] indexAction end
+2022-01-14 11:27:37,632 DEBUG [110448] [] MenuController end
+2022-01-14 11:27:37,632 DEBUG [110448] [] finally
+2022-01-14 11:34:29,391 DEBUG [110586] [] Request URI : /eccadmin_dev/WordBookList
+2022-01-14 11:34:29,392 DEBUG [110586] [] WordBookListController start
+2022-01-14 11:34:29,392 DEBUG [110586] [] controllers/WordBookListController.php: is exist
+2022-01-14 11:34:29,394 DEBUG [110586] [] WordBookListForm: is exist
+2022-01-14 11:34:29,394 DEBUG [110586] [] WordBookListForm: form value set 
+2022-01-14 11:34:29,395 DEBUG [110586] [] ------------------------------/eccadmin_dev/WordBookList
+2022-01-14 11:34:29,395 DEBUG [110586] [] indexAction start
+2022-01-14 11:34:29,395 DEBUG [110586] [] admin_no is 1
+2022-01-14 11:34:29,607 DEBUG [110586] [] indexAction end
+2022-01-14 11:34:29,607 DEBUG [110586] [] WordBookListController end
+2022-01-14 11:34:29,607 DEBUG [110586] [] finally
+2022-01-14 11:34:33,070 DEBUG [110586] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-01-14 11:34:33,071 DEBUG [110586] [] WordBookWordController start
+2022-01-14 11:34:33,071 DEBUG [110586] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:34:33,074 DEBUG [110586] [] WordBookWordForm: is exist
+2022-01-14 11:34:33,075 DEBUG [110586] [] WordBookWordForm: form value set 
+2022-01-14 11:34:33,075 DEBUG [110586] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-01-14 11:34:33,075 DEBUG [110586] [] ------------------------------session_check_true
+2022-01-14 11:34:33,075 DEBUG [110586] [] indexAction start
+2022-01-14 11:34:33,075 DEBUG [110586] [] admin_no is 1
+2022-01-14 11:34:33,076 DEBUG [110586] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:34:33,147 DEBUG [110586] [] indexAction end
+2022-01-14 11:34:33,147 DEBUG [110586] [] WordBookWordController end
+2022-01-14 11:34:33,147 DEBUG [110586] [] finally
+2022-01-14 11:34:43,700 DEBUG [110593] [] Request URI : /eccadmin_dev/WordBookList
+2022-01-14 11:34:43,704 DEBUG [110593] [] WordBookListController start
+2022-01-14 11:34:43,704 DEBUG [110593] [] controllers/WordBookListController.php: is exist
+2022-01-14 11:34:43,707 DEBUG [110593] [] WordBookListForm: is exist
+2022-01-14 11:34:43,707 DEBUG [110593] [] WordBookListForm: form value set 
+2022-01-14 11:34:43,708 DEBUG [110593] [] ------------------------------/eccadmin_dev/WordBookList
+2022-01-14 11:34:43,708 DEBUG [110593] [] indexAction start
+2022-01-14 11:34:43,708 DEBUG [110593] [] admin_no is 1
+2022-01-14 11:34:44,008 DEBUG [110593] [] indexAction end
+2022-01-14 11:34:44,009 DEBUG [110593] [] WordBookListController end
+2022-01-14 11:34:44,009 DEBUG [110593] [] finally
+2022-01-14 11:34:46,387 DEBUG [110593] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-01-14 11:34:46,388 DEBUG [110593] [] WordBookWordController start
+2022-01-14 11:34:46,388 DEBUG [110593] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:34:46,391 DEBUG [110593] [] WordBookWordForm: is exist
+2022-01-14 11:34:46,392 DEBUG [110593] [] WordBookWordForm: form value set 
+2022-01-14 11:34:46,392 DEBUG [110593] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-01-14 11:34:46,392 DEBUG [110593] [] ------------------------------session_check_true
+2022-01-14 11:34:46,392 DEBUG [110593] [] indexAction start
+2022-01-14 11:34:46,393 DEBUG [110593] [] admin_no is 1
+2022-01-14 11:34:46,393 DEBUG [110593] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:34:46,466 DEBUG [110593] [] indexAction end
+2022-01-14 11:34:46,467 DEBUG [110593] [] WordBookWordController end
+2022-01-14 11:34:46,467 DEBUG [110593] [] finally
+2022-01-14 11:37:42,573 DEBUG [110597] [] Request URI : /eccadmin_dev/WordBookWord/Search
+2022-01-14 11:37:42,574 DEBUG [110597] [] WordBookWordController start
+2022-01-14 11:37:42,574 DEBUG [110597] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:37:42,577 DEBUG [110597] [] WordBookWordForm: is exist
+2022-01-14 11:37:42,578 DEBUG [110597] [] WordBookWordForm: form value set 
+2022-01-14 11:37:42,578 DEBUG [110597] [] ------------------------------/eccadmin_dev/WordBookWord/Search
+2022-01-14 11:37:42,578 DEBUG [110597] [] ------------------------------session_check_true
+2022-01-14 11:37:42,578 DEBUG [110597] [] SearchAction start
+2022-01-14 11:37:42,579 DEBUG [110597] [] admin_no is 1
+2022-01-14 11:37:42,579 DEBUG [110597] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:37:42,648 DEBUG [110597] [] SearchAction end
+2022-01-14 11:37:42,648 DEBUG [110597] [] WordBookWordController end
+2022-01-14 11:37:42,648 DEBUG [110597] [] finally
+2022-01-14 11:39:19,507 DEBUG [110660] [] Request URI : /eccadmin_dev/WordBookList
+2022-01-14 11:39:19,508 DEBUG [110660] [] WordBookListController start
+2022-01-14 11:39:19,508 DEBUG [110660] [] controllers/WordBookListController.php: is exist
+2022-01-14 11:39:19,510 DEBUG [110660] [] WordBookListForm: is exist
+2022-01-14 11:39:19,511 DEBUG [110660] [] WordBookListForm: form value set 
+2022-01-14 11:39:19,511 DEBUG [110660] [] ------------------------------/eccadmin_dev/WordBookList
+2022-01-14 11:39:19,511 DEBUG [110660] [] indexAction start
+2022-01-14 11:39:19,512 DEBUG [110660] [] admin_no is 1
+2022-01-14 11:39:19,804 DEBUG [110660] [] indexAction end
+2022-01-14 11:39:19,804 DEBUG [110660] [] WordBookListController end
+2022-01-14 11:39:19,804 DEBUG [110660] [] finally
+2022-01-14 11:39:22,346 DEBUG [110660] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-01-14 11:39:22,347 DEBUG [110660] [] WordBookWordController start
+2022-01-14 11:39:22,347 DEBUG [110660] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:39:22,350 DEBUG [110660] [] WordBookWordForm: is exist
+2022-01-14 11:39:22,350 DEBUG [110660] [] WordBookWordForm: form value set 
+2022-01-14 11:39:22,351 DEBUG [110660] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-01-14 11:39:22,351 DEBUG [110660] [] ------------------------------session_check_true
+2022-01-14 11:39:22,351 DEBUG [110660] [] indexAction start
+2022-01-14 11:39:22,351 DEBUG [110660] [] admin_no is 1
+2022-01-14 11:39:22,352 DEBUG [110660] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:39:22,426 DEBUG [110660] [] indexAction end
+2022-01-14 11:39:22,426 DEBUG [110660] [] WordBookWordController end
+2022-01-14 11:39:22,426 DEBUG [110660] [] finally
+2022-01-14 11:39:43,442 DEBUG [110624] [] Request URI : /eccadmin_dev/WordBookWord/Search
+2022-01-14 11:39:43,443 DEBUG [110624] [] WordBookWordController start
+2022-01-14 11:39:43,443 DEBUG [110624] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:39:43,446 DEBUG [110624] [] WordBookWordForm: is exist
+2022-01-14 11:39:43,446 DEBUG [110624] [] WordBookWordForm: form value set 
+2022-01-14 11:39:43,446 DEBUG [110624] [] ------------------------------/eccadmin_dev/WordBookWord/Search
+2022-01-14 11:39:43,446 DEBUG [110624] [] ------------------------------session_check_true
+2022-01-14 11:39:43,447 DEBUG [110624] [] SearchAction start
+2022-01-14 11:39:43,447 DEBUG [110624] [] admin_no is 1
+2022-01-14 11:39:43,447 DEBUG [110624] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  AND (tw.word LIKE :word )  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:39:43,515 DEBUG [110624] [] SearchAction end
+2022-01-14 11:39:43,515 DEBUG [110624] [] WordBookWordController end
+2022-01-14 11:39:43,515 DEBUG [110624] [] finally
+2022-01-14 11:47:24,330 DEBUG [110781] [] Request URI : /eccadmin_dev/WordBookWord/back
+2022-01-14 11:47:24,330 DEBUG [110781] [] WordBookWordController start
+2022-01-14 11:47:24,330 DEBUG [110781] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:47:24,334 DEBUG [110781] [] WordBookWordForm: is exist
+2022-01-14 11:47:24,334 DEBUG [110781] [] WordBookWordForm: form value set 
+2022-01-14 11:47:24,335 DEBUG [110781] [] ------------------------------/eccadmin_dev/WordBookWord/back
+2022-01-14 11:47:24,335 DEBUG [110781] [] ------------------------------session_check_true
+2022-01-14 11:47:24,335 DEBUG [110781] [] backAction start
+2022-01-14 11:47:24,335 DEBUG [110781] [] backAction end
+2022-01-14 11:47:24,335 DEBUG [110781] [] WordBookWordController end
+2022-01-14 11:47:24,335 DEBUG [110781] [] finally
+2022-01-14 11:47:24,481 DEBUG [110781] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-01-14 11:47:24,482 DEBUG [110781] [] WordBookListController start
+2022-01-14 11:47:24,482 DEBUG [110781] [] controllers/WordBookListController.php: is exist
+2022-01-14 11:47:24,483 DEBUG [110781] [] WordBookListForm: is exist
+2022-01-14 11:47:24,484 DEBUG [110781] [] WordBookListForm: form value set 
+2022-01-14 11:47:24,484 DEBUG [110781] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-01-14 11:47:24,484 DEBUG [110781] [] SearchAction start
+2022-01-14 11:47:24,484 DEBUG [110781] [] admin_no is 1
+2022-01-14 11:47:24,692 DEBUG [110781] [] SearchAction end
+2022-01-14 11:47:24,692 DEBUG [110781] [] WordBookListController end
+2022-01-14 11:47:24,692 DEBUG [110781] [] finally
+2022-01-14 11:47:36,580 DEBUG [110772] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-01-14 11:47:36,581 DEBUG [110772] [] WordBookWordController start
+2022-01-14 11:47:36,581 DEBUG [110772] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:47:36,584 DEBUG [110772] [] WordBookWordForm: is exist
+2022-01-14 11:47:36,584 DEBUG [110772] [] WordBookWordForm: form value set 
+2022-01-14 11:47:36,585 DEBUG [110772] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-01-14 11:47:36,585 DEBUG [110772] [] ------------------------------session_check_true
+2022-01-14 11:47:36,585 DEBUG [110772] [] indexAction start
+2022-01-14 11:47:36,585 DEBUG [110772] [] admin_no is 1
+2022-01-14 11:47:36,586 DEBUG [110772] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:47:36,662 DEBUG [110772] [] indexAction end
+2022-01-14 11:47:36,662 DEBUG [110772] [] WordBookWordController end
+2022-01-14 11:47:36,662 DEBUG [110772] [] finally
+2022-01-14 11:49:53,184 DEBUG [110833] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-01-14 11:49:53,185 DEBUG [110833] [] WordBookWordController start
+2022-01-14 11:49:53,185 DEBUG [110833] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:49:53,189 DEBUG [110833] [] WordBookWordForm: is exist
+2022-01-14 11:49:53,189 DEBUG [110833] [] WordBookWordForm: form value set 
+2022-01-14 11:49:53,190 DEBUG [110833] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-01-14 11:49:53,190 DEBUG [110833] [] ------------------------------session_check_true
+2022-01-14 11:49:53,190 DEBUG [110833] [] vocubRegistAction start
+2022-01-14 11:49:53,192 DEBUG [110833] []  UPDATE  T_WORD_HISTORY  SET  del_flg='1'  WHERE  org_no =:org_no  AND wordbook_id =:wordbook_id  AND word_id =:word_id 
+2022-01-14 11:49:53,193 DEBUG [110833] []  UPDATE  T_WORD_HISTORY  SET  del_flg='1'  WHERE  org_no =:org_no  AND wordbook_id =:wordbook_id  AND word_id =:word_id 
+2022-01-14 11:49:53,193 DEBUG [110833] []  UPDATE  T_WORD_HISTORY  SET  del_flg='1'  WHERE  org_no =:org_no  AND wordbook_id =:wordbook_id  AND word_id =:word_id 
+2022-01-14 11:49:53,194 DEBUG [110833] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-01-14 11:49:53,195 DEBUG [110833] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-01-14 11:49:53,195 DEBUG [110833] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:49:53,237 DEBUG [110833] [] vocubRegistAction end
+2022-01-14 11:49:53,237 DEBUG [110833] [] WordBookWordController end
+2022-01-14 11:49:53,239 DEBUG [110833] [] finally
+2022-01-14 11:49:58,770 DEBUG [110814] [] Request URI : /eccadmin_dev/WordBookWord/back
+2022-01-14 11:49:58,770 DEBUG [110814] [] WordBookWordController start
+2022-01-14 11:49:58,770 DEBUG [110814] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:49:58,773 DEBUG [110814] [] WordBookWordForm: is exist
+2022-01-14 11:49:58,774 DEBUG [110814] [] WordBookWordForm: form value set 
+2022-01-14 11:49:58,774 DEBUG [110814] [] ------------------------------/eccadmin_dev/WordBookWord/back
+2022-01-14 11:49:58,774 DEBUG [110814] [] ------------------------------session_check_true
+2022-01-14 11:49:58,775 DEBUG [110814] [] backAction start
+2022-01-14 11:49:58,775 DEBUG [110814] [] backAction end
+2022-01-14 11:49:58,775 DEBUG [110814] [] WordBookWordController end
+2022-01-14 11:49:58,775 DEBUG [110814] [] finally
+2022-01-14 11:49:58,915 DEBUG [110814] [] Request URI : /eccadmin_dev/WordBookList/Search
+2022-01-14 11:49:58,915 DEBUG [110814] [] WordBookListController start
+2022-01-14 11:49:58,915 DEBUG [110814] [] controllers/WordBookListController.php: is exist
+2022-01-14 11:49:58,917 DEBUG [110814] [] WordBookListForm: is exist
+2022-01-14 11:49:58,917 DEBUG [110814] [] WordBookListForm: form value set 
+2022-01-14 11:49:58,918 DEBUG [110814] [] ------------------------------/eccadmin_dev/WordBookList/Search
+2022-01-14 11:49:58,918 DEBUG [110814] [] SearchAction start
+2022-01-14 11:49:58,918 DEBUG [110814] [] admin_no is 1
+2022-01-14 11:49:58,988 DEBUG [110814] [] SearchAction end
+2022-01-14 11:49:58,988 DEBUG [110814] [] WordBookListController end
+2022-01-14 11:49:58,988 DEBUG [110814] [] finally
+2022-01-14 11:50:01,569 DEBUG [110816] [] Request URI : /eccadmin_dev/WordBookWord/index
+2022-01-14 11:50:01,569 DEBUG [110816] [] WordBookWordController start
+2022-01-14 11:50:01,570 DEBUG [110816] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:50:01,573 DEBUG [110816] [] WordBookWordForm: is exist
+2022-01-14 11:50:01,573 DEBUG [110816] [] WordBookWordForm: form value set 
+2022-01-14 11:50:01,574 DEBUG [110816] [] ------------------------------/eccadmin_dev/WordBookWord/index
+2022-01-14 11:50:01,574 DEBUG [110816] [] ------------------------------session_check_true
+2022-01-14 11:50:01,574 DEBUG [110816] [] indexAction start
+2022-01-14 11:50:01,574 DEBUG [110816] [] admin_no is 1
+2022-01-14 11:50:01,575 DEBUG [110816] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:50:01,646 DEBUG [110816] [] indexAction end
+2022-01-14 11:50:01,646 DEBUG [110816] [] WordBookWordController end
+2022-01-14 11:50:01,647 DEBUG [110816] [] finally
+2022-01-14 11:54:18,763 DEBUG [110901] [] Request URI : /eccadmin_dev/WordBookWord/vocubRegist
+2022-01-14 11:54:18,767 DEBUG [110901] [] WordBookWordController start
+2022-01-14 11:54:18,767 DEBUG [110901] [] controllers/WordBookWordController.php: is exist
+2022-01-14 11:54:18,771 DEBUG [110901] [] WordBookWordForm: is exist
+2022-01-14 11:54:18,772 DEBUG [110901] [] WordBookWordForm: form value set 
+2022-01-14 11:54:18,772 DEBUG [110901] [] ------------------------------/eccadmin_dev/WordBookWord/vocubRegist
+2022-01-14 11:54:18,772 DEBUG [110901] [] ------------------------------session_check_true
+2022-01-14 11:54:18,773 DEBUG [110901] [] vocubRegistAction start
+2022-01-14 11:54:18,775 DEBUG [110901] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-01-14 11:54:18,776 DEBUG [110901] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-01-14 11:54:18,776 DEBUG [110901] [] INSERT INTO  T_WORDBOOK_WORD (org_no,wordbook_id,word_id,disp_no,creater_id,updater_id,del_flg,create_dt,update_dt ) VALUES ( :org_no,:wordbook_id,:word_id,:disp_no,:creater_id,:updater_id,:del_flg,:create_dt,:update_dt );
+2022-01-14 11:54:18,777 DEBUG [110901] [] unselectedSELECT  tw.org_no ,tw.word_id  ,tw.word  ,tw.translation  FROM T_WORD as tw  WHERE  tw.org_no=:org_no  AND tw.del_flg ='0'  ORDER BY  tw.org_no,tw.word_id ASC
+2022-01-14 11:54:18,846 DEBUG [110901] [] vocubRegistAction end
+2022-01-14 11:54:18,846 DEBUG [110901] [] WordBookWordController end
+2022-01-14 11:54:18,847 DEBUG [110901] [] finally
+2022-01-14 13:59:31,025 DEBUG [112362] [] Request URI : /eccadmin_dev/Login
+2022-01-14 13:59:31,026 DEBUG [112362] [] LoginController start
+2022-01-14 13:59:31,026 DEBUG [112362] [] controllers/LoginController.php: is exist
+2022-01-14 13:59:31,026 DEBUG [112362] [] LoginForm: is exist
+2022-01-14 13:59:31,026 DEBUG [112362] [] LoginForm: form value set 
+2022-01-14 13:59:31,027 DEBUG [112362] [] ------------------------------/eccadmin_dev/Login
+2022-01-14 13:59:31,027 DEBUG [112362] [] ------------------------------login_start_check
+2022-01-14 13:59:31,027 DEBUG [112362] [] indexAction start
+2022-01-14 13:59:31,043 DEBUG [112362] [] indexAction end
+2022-01-14 13:59:31,043 DEBUG [112362] [] LoginController end
+2022-01-14 13:59:31,043 DEBUG [112362] [] finally
+2022-01-14 22:40:29,835 DEBUG [119529] [] Request URI : /eccadmin_dev/Login
+2022-01-14 22:40:29,849 DEBUG [119529] [] LoginController start
+2022-01-14 22:40:29,849 DEBUG [119529] [] controllers/LoginController.php: is exist
+2022-01-14 22:40:29,855 DEBUG [119529] [] LoginForm: is exist
+2022-01-14 22:40:29,856 DEBUG [119529] [] LoginForm: form value set 
+2022-01-14 22:40:29,857 DEBUG [119529] [] ------------------------------/eccadmin_dev/Login
+2022-01-14 22:40:29,857 DEBUG [119529] [] ------------------------------login_start_check
+2022-01-14 22:40:29,857 DEBUG [119529] [] indexAction start
+2022-01-14 22:40:29,930 DEBUG [119529] [] indexAction end
+2022-01-14 22:40:29,930 DEBUG [119529] [] LoginController end
+2022-01-14 22:40:29,930 DEBUG [119529] [] finally

@@ -1,0 +1,998 @@
+2022-04-07 14:19:35,940 DEBUG [184802] [] Request URI : /eccadmin_dev/Login
+2022-04-07 14:19:35,972 DEBUG [184802] [] LoginController start
+2022-04-07 14:19:35,995 DEBUG [184802] [] controllers/LoginController.php: is exist
+2022-04-07 14:19:36,017 DEBUG [184802] [] LoginForm: is exist
+2022-04-07 14:19:36,022 DEBUG [184802] [] LoginForm: form value set 
+2022-04-07 14:19:36,022 DEBUG [184802] [] ------------------------------/eccadmin_dev/Login
+2022-04-07 14:19:36,022 DEBUG [184802] [] ------------------------------login_start_check
+2022-04-07 14:19:36,022 DEBUG [184802] [] indexAction start
+2022-04-07 14:19:36,076 DEBUG [184802] [] indexAction end
+2022-04-07 14:19:36,076 DEBUG [184802] [] LoginController end
+2022-04-07 14:19:36,076 DEBUG [184802] [] finally
+2022-04-07 14:19:41,572 DEBUG [184869] [] Request URI : /eccadmin_dev/Login/login
+2022-04-07 14:19:41,572 DEBUG [184869] [] LoginController start
+2022-04-07 14:19:41,572 DEBUG [184869] [] controllers/LoginController.php: is exist
+2022-04-07 14:19:41,573 DEBUG [184869] [] LoginForm: is exist
+2022-04-07 14:19:41,573 DEBUG [184869] [] LoginForm: form value set 
+2022-04-07 14:19:41,573 DEBUG [184869] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-07 14:19:41,573 DEBUG [184869] [] ------------------------------login_start_check
+2022-04-07 14:19:41,574 DEBUG [184869] [] loginAction start
+2022-04-07 14:19:41,912 DEBUG [184869] [] loginAction end
+2022-04-07 14:19:41,913 DEBUG [184869] [] LoginController end
+2022-04-07 14:19:41,913 DEBUG [184869] [] finally
+2022-04-07 14:19:44,093 DEBUG [184869] [] Request URI : /eccadmin_dev/Login/login
+2022-04-07 14:19:44,093 DEBUG [184869] [] LoginController start
+2022-04-07 14:19:44,093 DEBUG [184869] [] controllers/LoginController.php: is exist
+2022-04-07 14:19:44,094 DEBUG [184869] [] LoginForm: is exist
+2022-04-07 14:19:44,094 DEBUG [184869] [] LoginForm: form value set 
+2022-04-07 14:19:44,094 DEBUG [184869] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-07 14:19:44,094 DEBUG [184869] [] ------------------------------login_start_check
+2022-04-07 14:19:44,094 DEBUG [184869] [] loginAction start
+2022-04-07 14:19:44,388 DEBUG [184869] [] loginAction end
+2022-04-07 14:19:44,388 DEBUG [184869] [] LoginController end
+2022-04-07 14:19:44,388 DEBUG [184869] [] finally
+2022-04-07 14:19:44,406 DEBUG [184869] [] Request URI : /eccadmin_dev/Menu
+2022-04-07 14:19:44,406 DEBUG [184869] [] MenuController start
+2022-04-07 14:19:44,406 DEBUG [184869] [] controllers/MenuController.php: is exist
+2022-04-07 14:19:44,406 DEBUG [184869] [] MenuForm: is exist
+2022-04-07 14:19:44,406 DEBUG [184869] [] MenuForm: form value set 
+2022-04-07 14:19:44,407 DEBUG [184869] [] ------------------------------/eccadmin_dev/Menu
+2022-04-07 14:19:44,407 DEBUG [184869] [] ------------------------------login_start_check
+2022-04-07 14:19:44,407 DEBUG [184869] [] indexAction start
+2022-04-07 14:19:44,407 DEBUG [184869] [] admin_no is 1
+2022-04-07 14:19:44,492 DEBUG [184869] [] indexAction end
+2022-04-07 14:19:44,492 DEBUG [184869] [] MenuController end
+2022-04-07 14:19:44,492 DEBUG [184869] [] finally
+2022-04-07 14:19:47,943 DEBUG [184869] [] Request URI : /eccadmin_dev/QuestionList
+2022-04-07 14:19:47,944 DEBUG [184869] [] QuestionListController start
+2022-04-07 14:19:47,944 DEBUG [184869] [] controllers/QuestionListController.php: is exist
+2022-04-07 14:19:47,944 DEBUG [184869] [] QuestionListForm: is exist
+2022-04-07 14:19:47,945 DEBUG [184869] [] QuestionListForm: form value set 
+2022-04-07 14:19:47,945 DEBUG [184869] [] ------------------------------/eccadmin_dev/QuestionList
+2022-04-07 14:19:47,945 DEBUG [184869] [] indexAction start
+2022-04-07 14:19:47,946 DEBUG [184869] [] admin_no is 1
+2022-04-07 14:19:47,948 DEBUG [184869] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => f5cbb3b666bf78c585516dbcbd48cd05
+    [admin_kbn] => 001
+)
+
+2022-04-07 14:19:47,989 DEBUG [184869] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 27
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => f5cbb3b666bf78c585516dbcbd48cd05
+    [admin_kbn] => 001
+)
+
+2022-04-07 14:19:48,116 DEBUG [184869] [] indexAction end
+2022-04-07 14:19:48,116 DEBUG [184869] [] QuestionListController end
+2022-04-07 14:19:48,116 DEBUG [184869] [] finally
+2022-04-07 14:19:54,746 DEBUG [184882] [] Request URI : /eccadmin_dev/QuestionList/Search
+2022-04-07 14:19:54,750 DEBUG [184882] [] QuestionListController start
+2022-04-07 14:19:54,750 DEBUG [184882] [] controllers/QuestionListController.php: is exist
+2022-04-07 14:19:54,750 DEBUG [184882] [] QuestionListForm: is exist
+2022-04-07 14:19:54,751 DEBUG [184882] [] QuestionListForm: form value set 
+2022-04-07 14:19:54,751 DEBUG [184882] [] ------------------------------/eccadmin_dev/QuestionList/Search
+2022-04-07 14:19:54,751 DEBUG [184882] [] SearchAction start
+2022-04-07 14:19:54,752 DEBUG [184882] [] admin_no is 1
+2022-04-07 14:19:54,754 DEBUG [184882] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 57b92114bf923e1594bd8002594d2be7
+    [admin_kbn] => 001
+)
+
+2022-04-07 14:19:54,754 DEBUG [184882] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 57b92114bf923e1594bd8002594d2be7
+    [admin_kbn] => 001
+)
+
+2022-04-07 14:19:54,757 DEBUG [184882] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 002
+    [course_level] => 004
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 1
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [3] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 004
+                    [name] => Level 6
+                    [name_kana] => 
+                    [disp_no] => 4
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 002
+    [search_course_level] => 004
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => 57b92114bf923e1594bd8002594d2be7
+    [admin_kbn] => 001
+)
+
+2022-04-07 14:19:54,851 DEBUG [184882] [] SearchAction end
+2022-04-07 14:19:54,851 DEBUG [184882] [] QuestionListController end
+2022-04-07 14:19:54,851 DEBUG [184882] [] finally
+2022-04-07 14:19:55,753 DEBUG [184882] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2022-04-07 14:19:55,753 DEBUG [184882] [] QuestionRegistController start
+2022-04-07 14:19:55,753 DEBUG [184882] [] controllers/QuestionRegistController.php: is exist
+2022-04-07 14:19:55,754 DEBUG [184882] [] QuestionRegistForm: is exist
+2022-04-07 14:19:55,754 DEBUG [184882] [] QuestionRegistForm: form value set 
+2022-04-07 14:19:55,755 DEBUG [184882] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2022-04-07 14:19:55,755 DEBUG [184882] [] ------------------------------session_check_true
+2022-04-07 14:19:55,755 DEBUG [184882] [] indexAction start
+2022-04-07 14:19:55,755 DEBUG [184882] [] admin_no is 1
+2022-04-07 14:19:55,761 DEBUG [184882] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 639
+            [question_name] => Level 6 No 1
+            [qa_description] => 
+            [description] => <p class="MsoNormal"><span style="font-size: 14.4px;">● Write an essay on the given TOPIC.</span></p><p class="MsoNormal">● Use TWO of the POINTS below to support your answer.<br></p><p class="MsoNormal">● Structure: introduction, main body, and conclusion<br></p><p class="MsoNormal">● Suggested length: 120-150 words<br></p><p class="MsoNormal">※解答は解答欄に入力してください。解答時間の目安は20分です。<br></p><p class="MsoNormal"><b><font size="4"><i>TOPIC</i><br></font></b></p><p class="MsoNormal"><b><font size="4">Agree or disagree: Teachers should stop giving students homework<br></font></b></p><p class="MsoNormal"><b><font size="4"><i>&nbsp;POINTS</i><br></font></b></p><p class="MsoNormal"><b><font size="4">● Study time<br></font></b></p><p class="MsoNormal"><b><font size="4">● Study habits<br></font></b></p><p class="MsoNormal"><b><font size="4">● Students’ responsibility<br></font></b></p><p class="MsoNormal"><b><font size="4">● Effect on teachers</font></b><br></p>
+            [test_kbn] => 002
+            [course_level] => 004
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] =>  
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 1200
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 解答例1（Agree）<br/>I agree that teachers should stop giving students homework, considering students’ study time and the burden on teachers at present.<br/>Today, many students spend a lot of time doing their homework.  If they did not have homework, students could have more leisure time outside of school.  With more free time, students could develop various non-academic life skills.  For example, they could develop their communication skills by interacting more with their friends and family.<br/>Next, homework creates a lot of work for teachers.  They have to make homework materials and check homework from each student.  This limits the time they have to devote to providing good classes, including doing things such as lesson preparation.  Without homework, teachers could focus on improving the quality of their classes.<br/>To summarize, homework should be abolished, so that students will have more leisure time, and teachers can improve their classes.<br/><br/>解答例2（Disagree）<br/>Homework is useful for fostering students’ study habits, and is helpful for teachers.  Therefore, teachers should not stop giving students homework.<br/>First, homework helps students form good study habits.  Many students develop the habit of self-study by doing their homework every day, which is important because consistent self-study is vital to improving academic performance.  If homework were abolished, students would lose the chance to develop these habits.<br/>Second, by checking students’ homework, teachers can keep track of how well students understand the classes.  Teachers can also improve their lessons based on the results of the homework.  However, without homework, teachers would lose such an opportunity to check their students’ level of understanding.<br/>Although eliminating homework may have some positive aspects such as reducing the burden of work on students, these aspects would be overweighed by the disadvantages to students’ study habits and teachers’ understanding of their students’ progress.
+            [byosha_point] => 重要語句・表現<br/>I agree (that) ...…ということに同意する<br/>considering ...　…を考慮すれば<br/>For example ...　 たとえば…<br/>Next ...　次に…<br/>including ...　…を含めて<br/>To summarize ...　要するに…、まとめると…<br/>Therefore ...　 それゆえに…<br/>First ...　 まず…、最初に…<br/>Second ...　 第二に…<br/>However ...　しかしながら…<br/>Although ...　…だが、…だけれども<br/>be overweighed by ...　(重要さなどで)…に劣る
+            [remarks] => 
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2022-04-07 14:19:55,867 DEBUG [184882] [] indexAction end
+2022-04-07 14:19:55,867 DEBUG [184882] [] QuestionRegistController end
+2022-04-07 14:19:55,867 DEBUG [184882] [] finally
+2022-04-07 17:09:02,332 DEBUG [187465] [] Request URI : /eccadmin_dev/Login
+2022-04-07 17:09:02,333 DEBUG [187465] [] LoginController start
+2022-04-07 17:09:02,333 DEBUG [187465] [] controllers/LoginController.php: is exist
+2022-04-07 17:09:02,333 DEBUG [187465] [] LoginForm: is exist
+2022-04-07 17:09:02,333 DEBUG [187465] [] LoginForm: form value set 
+2022-04-07 17:09:02,334 DEBUG [187465] [] ------------------------------/eccadmin_dev/Login
+2022-04-07 17:09:02,334 DEBUG [187465] [] ------------------------------login_start_check
+2022-04-07 17:09:02,334 DEBUG [187465] [] indexAction start
+2022-04-07 17:09:02,350 DEBUG [187465] [] indexAction end
+2022-04-07 17:09:02,350 DEBUG [187465] [] LoginController end
+2022-04-07 17:09:02,350 DEBUG [187465] [] finally
+2022-04-07 17:09:07,031 DEBUG [187465] [] Request URI : /eccadmin_dev/Login/login
+2022-04-07 17:09:07,032 DEBUG [187465] [] LoginController start
+2022-04-07 17:09:07,032 DEBUG [187465] [] controllers/LoginController.php: is exist
+2022-04-07 17:09:07,032 DEBUG [187465] [] LoginForm: is exist
+2022-04-07 17:09:07,032 DEBUG [187465] [] LoginForm: form value set 
+2022-04-07 17:09:07,033 DEBUG [187465] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-07 17:09:07,033 DEBUG [187465] [] ------------------------------login_start_check
+2022-04-07 17:09:07,033 DEBUG [187465] [] loginAction start
+2022-04-07 17:09:07,329 DEBUG [187465] [] loginAction end
+2022-04-07 17:09:07,329 DEBUG [187465] [] LoginController end
+2022-04-07 17:09:07,330 DEBUG [187465] [] finally
+2022-04-07 17:09:07,350 DEBUG [187465] [] Request URI : /eccadmin_dev/Menu
+2022-04-07 17:09:07,351 DEBUG [187465] [] MenuController start
+2022-04-07 17:09:07,351 DEBUG [187465] [] controllers/MenuController.php: is exist
+2022-04-07 17:09:07,351 DEBUG [187465] [] MenuForm: is exist
+2022-04-07 17:09:07,351 DEBUG [187465] [] MenuForm: form value set 
+2022-04-07 17:09:07,351 DEBUG [187465] [] ------------------------------/eccadmin_dev/Menu
+2022-04-07 17:09:07,351 DEBUG [187465] [] ------------------------------login_start_check
+2022-04-07 17:09:07,351 DEBUG [187465] [] indexAction start
+2022-04-07 17:09:07,352 DEBUG [187465] [] admin_no is 1
+2022-04-07 17:09:07,379 DEBUG [187465] [] indexAction end
+2022-04-07 17:09:07,379 DEBUG [187465] [] MenuController end
+2022-04-07 17:09:07,379 DEBUG [187465] [] finally
+2022-04-07 17:09:09,878 DEBUG [187465] [] Request URI : /eccadmin_dev/TestInfoList
+2022-04-07 17:09:09,879 DEBUG [187465] [] TestInfoListController start
+2022-04-07 17:09:09,879 DEBUG [187465] [] controllers/TestInfoListController.php: is exist
+2022-04-07 17:09:09,881 DEBUG [187465] [] TestInfoListForm: is exist
+2022-04-07 17:09:09,882 DEBUG [187465] [] TestInfoListForm: form value set 
+2022-04-07 17:09:09,882 DEBUG [187465] [] ------------------------------/eccadmin_dev/TestInfoList
+2022-04-07 17:09:09,882 DEBUG [187465] [] indexAction start
+2022-04-07 17:09:09,883 DEBUG [187465] [] admin_no is 1
+2022-04-07 17:09:09,884 DEBUG [187465] [] test List count:5
+2022-04-07 17:09:09,973 DEBUG [187465] [] indexAction end
+2022-04-07 17:09:09,973 DEBUG [187465] [] TestInfoListController end
+2022-04-07 17:09:09,974 DEBUG [187465] [] finally
+2022-04-07 17:09:13,618 DEBUG [187561] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2022-04-07 17:09:13,619 DEBUG [187561] [] TestInfoListController start
+2022-04-07 17:09:13,619 DEBUG [187561] [] controllers/TestInfoListController.php: is exist
+2022-04-07 17:09:13,621 DEBUG [187561] [] TestInfoListForm: is exist
+2022-04-07 17:09:13,622 DEBUG [187561] [] TestInfoListForm: form value set 
+2022-04-07 17:09:13,622 DEBUG [187561] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2022-04-07 17:09:13,622 DEBUG [187561] [] SearchAction start
+2022-04-07 17:09:13,623 DEBUG [187561] [] admin_no is 1
+2022-04-07 17:09:13,623 DEBUG [187561] [] org_idecc
+2022-04-07 17:09:13,626 DEBUG [187561] [] test List count:69
+2022-04-07 17:09:13,720 DEBUG [187561] [] SearchAction end
+2022-04-07 17:09:13,720 DEBUG [187561] [] TestInfoListController end
+2022-04-07 17:09:13,720 DEBUG [187561] [] finally
+2022-04-07 17:09:17,030 DEBUG [187561] [] Request URI : /eccadmin_dev/QuizInfoAssign/index
+2022-04-07 17:09:17,030 DEBUG [187561] [] QuizInfoAssignController start
+2022-04-07 17:09:17,031 DEBUG [187561] [] controllers/QuizInfoAssignController.php: is exist
+2022-04-07 17:09:17,092 DEBUG [187561] [] QuizInfoAssignForm: is exist
+2022-04-07 17:09:17,103 DEBUG [187561] [] QuizInfoAssignForm: form value set 
+2022-04-07 17:09:17,103 DEBUG [187561] [] ------------------------------/eccadmin_dev/QuizInfoAssign/index
+2022-04-07 17:09:17,103 DEBUG [187561] [] ------------------------------session_check_true
+2022-04-07 17:09:17,104 DEBUG [187561] [] indexAction start
+2022-04-07 17:09:17,104 DEBUG [187561] [] admin_no is 1
+2022-04-07 17:09:17,104 DEBUG [187561] [] org :1
+2022-04-07 17:09:17,197 DEBUG [187561] [] indexAction end
+2022-04-07 17:09:17,198 DEBUG [187561] [] QuizInfoAssignController end
+2022-04-07 17:09:17,198 DEBUG [187561] [] finally
+2022-04-07 17:09:19,267 DEBUG [187561] [] Request URI : /eccadmin_dev/QuizInfoAssign/search
+2022-04-07 17:09:19,267 DEBUG [187561] [] QuizInfoAssignController start
+2022-04-07 17:09:19,267 DEBUG [187561] [] controllers/QuizInfoAssignController.php: is exist
+2022-04-07 17:09:19,271 DEBUG [187561] [] QuizInfoAssignForm: is exist
+2022-04-07 17:09:19,271 DEBUG [187561] [] QuizInfoAssignForm: form value set 
+2022-04-07 17:09:19,272 DEBUG [187561] [] ------------------------------/eccadmin_dev/QuizInfoAssign/search
+2022-04-07 17:09:19,272 DEBUG [187561] [] ------------------------------session_check_true
+2022-04-07 17:09:19,272 DEBUG [187561] [] searchAction start
+2022-04-07 17:09:19,272 DEBUG [187561] [] admin_no is 1
+2022-04-07 17:09:19,280 DEBUG [187561] [] org :1
+2022-04-07 17:09:19,282 DEBUG [187561] [] org :1
+2022-04-07 17:09:19,359 DEBUG [187561] [] searchAction end
+2022-04-07 17:09:19,359 DEBUG [187561] [] QuizInfoAssignController end
+2022-04-07 17:09:19,359 DEBUG [187561] [] finally
+2022-04-07 17:09:24,996 DEBUG [187591] [] Request URI : /eccadmin_dev/QuizInfoAssign/save
+2022-04-07 17:09:25,000 DEBUG [187591] [] QuizInfoAssignController start
+2022-04-07 17:09:25,001 DEBUG [187591] [] controllers/QuizInfoAssignController.php: is exist
+2022-04-07 17:09:25,005 DEBUG [187591] [] QuizInfoAssignForm: is exist
+2022-04-07 17:09:25,005 DEBUG [187591] [] QuizInfoAssignForm: form value set 
+2022-04-07 17:09:25,006 DEBUG [187591] [] ------------------------------/eccadmin_dev/QuizInfoAssign/save
+2022-04-07 17:09:25,006 DEBUG [187591] [] ------------------------------session_check_true
+2022-04-07 17:09:25,006 DEBUG [187591] [] saveAction start
+2022-04-07 17:09:25,006 DEBUG [187591] [] admin_no is 1
+2022-04-07 17:09:25,008 DEBUG [187591] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,update_dt ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:update_dt );
+2022-04-07 17:09:25,009 DEBUG [187591] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,update_dt ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:update_dt );
+2022-04-07 17:09:25,010 DEBUG [187591] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,update_dt ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:update_dt );
+2022-04-07 17:09:25,010 DEBUG [187591] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,update_dt ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:update_dt );
+2022-04-07 17:09:25,011 DEBUG [187591] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,update_dt ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:update_dt );
+2022-04-07 17:09:25,019 DEBUG [187591] [] org :1
+2022-04-07 17:09:25,095 DEBUG [187591] [] saveAction end
+2022-04-07 17:09:25,095 DEBUG [187591] [] QuizInfoAssignController end
+2022-04-07 17:09:25,096 DEBUG [187591] [] finally
+2022-04-07 17:10:17,549 DEBUG [187588] [] Request URI : /eccadmin_dev/Login/logout
+2022-04-07 17:10:17,550 DEBUG [187588] [] LoginController start
+2022-04-07 17:10:17,550 DEBUG [187588] [] controllers/LoginController.php: is exist
+2022-04-07 17:10:17,551 DEBUG [187588] [] LoginForm: is exist
+2022-04-07 17:10:17,551 DEBUG [187588] [] LoginForm: form value set 
+2022-04-07 17:10:17,551 DEBUG [187588] [] ------------------------------/eccadmin_dev/Login/logout
+2022-04-07 17:10:17,551 DEBUG [187588] [] ------------------------------login_start_check
+2022-04-07 17:10:17,552 DEBUG [187588] [] logoutAction start
+2022-04-07 17:10:17,552 DEBUG [187588] [] logoutAction end
+2022-04-07 17:10:17,552 DEBUG [187588] [] LoginController end
+2022-04-07 17:10:17,552 DEBUG [187588] [] finally
+2022-04-07 17:10:17,573 DEBUG [187588] [] Request URI : /eccadmin_dev/Login
+2022-04-07 17:10:17,573 DEBUG [187588] [] LoginController start
+2022-04-07 17:10:17,573 DEBUG [187588] [] controllers/LoginController.php: is exist
+2022-04-07 17:10:17,574 DEBUG [187588] [] LoginForm: is exist
+2022-04-07 17:10:17,574 DEBUG [187588] [] LoginForm: form value set 
+2022-04-07 17:10:17,574 DEBUG [187588] [] ------------------------------/eccadmin_dev/Login
+2022-04-07 17:10:17,574 DEBUG [187588] [] ------------------------------login_start_check
+2022-04-07 17:10:17,574 DEBUG [187588] [] indexAction start
+2022-04-07 17:10:17,590 DEBUG [187588] [] indexAction end
+2022-04-07 17:10:17,590 DEBUG [187588] [] LoginController end
+2022-04-07 17:10:17,591 DEBUG [187588] [] finally
+2022-04-07 17:45:41,403 DEBUG [188088] [] Request URI : /eccadmin_dev/Login
+2022-04-07 17:45:41,404 DEBUG [188088] [] LoginController start
+2022-04-07 17:45:41,404 DEBUG [188088] [] controllers/LoginController.php: is exist
+2022-04-07 17:45:41,404 DEBUG [188088] [] LoginForm: is exist
+2022-04-07 17:45:41,404 DEBUG [188088] [] LoginForm: form value set 
+2022-04-07 17:45:41,405 DEBUG [188088] [] ------------------------------/eccadmin_dev/Login
+2022-04-07 17:45:41,405 DEBUG [188088] [] ------------------------------login_start_check
+2022-04-07 17:45:41,405 DEBUG [188088] [] indexAction start
+2022-04-07 17:45:41,420 DEBUG [188088] [] indexAction end
+2022-04-07 17:45:41,420 DEBUG [188088] [] LoginController end
+2022-04-07 17:45:41,420 DEBUG [188088] [] finally
+2022-04-07 17:45:45,070 DEBUG [188088] [] Request URI : /eccadmin_dev/Login/login
+2022-04-07 17:45:45,070 DEBUG [188088] [] LoginController start
+2022-04-07 17:45:45,071 DEBUG [188088] [] controllers/LoginController.php: is exist
+2022-04-07 17:45:45,071 DEBUG [188088] [] LoginForm: is exist
+2022-04-07 17:45:45,071 DEBUG [188088] [] LoginForm: form value set 
+2022-04-07 17:45:45,071 DEBUG [188088] [] ------------------------------/eccadmin_dev/Login/login
+2022-04-07 17:45:45,072 DEBUG [188088] [] ------------------------------login_start_check
+2022-04-07 17:45:45,072 DEBUG [188088] [] loginAction start
+2022-04-07 17:45:45,371 DEBUG [188088] [] loginAction end
+2022-04-07 17:45:45,371 DEBUG [188088] [] LoginController end
+2022-04-07 17:45:45,371 DEBUG [188088] [] finally
+2022-04-07 17:45:45,388 DEBUG [188088] [] Request URI : /eccadmin_dev/Menu
+2022-04-07 17:45:45,388 DEBUG [188088] [] MenuController start
+2022-04-07 17:45:45,388 DEBUG [188088] [] controllers/MenuController.php: is exist
+2022-04-07 17:45:45,388 DEBUG [188088] [] MenuForm: is exist
+2022-04-07 17:45:45,388 DEBUG [188088] [] MenuForm: form value set 
+2022-04-07 17:45:45,389 DEBUG [188088] [] ------------------------------/eccadmin_dev/Menu
+2022-04-07 17:45:45,389 DEBUG [188088] [] ------------------------------login_start_check
+2022-04-07 17:45:45,389 DEBUG [188088] [] indexAction start
+2022-04-07 17:45:45,389 DEBUG [188088] [] admin_no is 1
+2022-04-07 17:45:45,415 DEBUG [188088] [] indexAction end
+2022-04-07 17:45:45,415 DEBUG [188088] [] MenuController end
+2022-04-07 17:45:45,415 DEBUG [188088] [] finally
+2022-04-07 17:45:48,172 DEBUG [188090] [] Request URI : /eccadmin_dev/TestInfoList
+2022-04-07 17:45:48,177 DEBUG [188090] [] TestInfoListController start
+2022-04-07 17:45:48,177 DEBUG [188090] [] controllers/TestInfoListController.php: is exist
+2022-04-07 17:45:48,180 DEBUG [188090] [] TestInfoListForm: is exist
+2022-04-07 17:45:48,181 DEBUG [188090] [] TestInfoListForm: form value set 
+2022-04-07 17:45:48,181 DEBUG [188090] [] ------------------------------/eccadmin_dev/TestInfoList
+2022-04-07 17:45:48,181 DEBUG [188090] [] indexAction start
+2022-04-07 17:45:48,182 DEBUG [188090] [] admin_no is 1
+2022-04-07 17:45:48,184 DEBUG [188090] [] test List count:5
+2022-04-07 17:45:48,274 DEBUG [188090] [] indexAction end
+2022-04-07 17:45:48,274 DEBUG [188090] [] TestInfoListController end
+2022-04-07 17:45:48,274 DEBUG [188090] [] finally
+2022-04-07 17:45:53,495 DEBUG [188141] [] Request URI : /eccadmin_dev/AtReportList
+2022-04-07 17:45:53,499 DEBUG [188141] [] AtReportListController start
+2022-04-07 17:45:53,499 DEBUG [188141] [] controllers/AtReportListController.php: is exist
+2022-04-07 17:45:53,503 DEBUG [188141] [] AtReportListForm: is exist
+2022-04-07 17:45:53,503 DEBUG [188141] [] AtReportListForm: form value set 
+2022-04-07 17:45:53,504 DEBUG [188141] [] ------------------------------/eccadmin_dev/AtReportList
+2022-04-07 17:45:53,504 DEBUG [188141] [] indexAction start
+2022-04-07 17:45:53,504 DEBUG [188141] [] admin_no is 1
+2022-04-07 17:45:53,571 DEBUG [188141] [] indexAction end
+2022-04-07 17:45:53,571 DEBUG [188141] [] AtReportListController end
+2022-04-07 17:45:53,571 DEBUG [188141] [] finally
+2022-04-07 17:45:58,035 DEBUG [188141] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-07 17:45:58,036 DEBUG [188141] [] AtReportListController start
+2022-04-07 17:45:58,036 DEBUG [188141] [] controllers/AtReportListController.php: is exist
+2022-04-07 17:45:58,039 DEBUG [188141] [] AtReportListForm: is exist
+2022-04-07 17:45:58,039 DEBUG [188141] [] AtReportListForm: form value set 
+2022-04-07 17:45:58,040 DEBUG [188141] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-07 17:45:58,040 DEBUG [188141] [] SearchAction start
+2022-04-07 17:45:58,040 DEBUG [188141] [] admin_no is 1
+2022-04-07 17:45:58,104 DEBUG [188141] [] SearchAction end
+2022-04-07 17:45:58,104 DEBUG [188141] [] AtReportListController end
+2022-04-07 17:45:58,105 DEBUG [188141] [] finally
+2022-04-07 17:46:00,408 DEBUG [188141] [] Request URI : /eccadmin_dev/AtReportRegist/index
+2022-04-07 17:46:00,409 DEBUG [188141] [] AtReportRegistController start
+2022-04-07 17:46:00,409 DEBUG [188141] [] controllers/AtReportRegistController.php: is exist
+2022-04-07 17:46:00,414 DEBUG [188141] [] AtReportRegistForm: is exist
+2022-04-07 17:46:00,414 DEBUG [188141] [] AtReportRegistForm: form value set 
+2022-04-07 17:46:00,415 DEBUG [188141] [] ------------------------------/eccadmin_dev/AtReportRegist/index
+2022-04-07 17:46:00,415 DEBUG [188141] [] ------------------------------session_check_true
+2022-04-07 17:46:00,415 DEBUG [188141] [] indexAction start
+2022-04-07 17:46:00,415 DEBUG [188141] [] admin_no is 1
+2022-04-07 17:46:00,495 DEBUG [188141] [] indexAction end
+2022-04-07 17:46:00,495 DEBUG [188141] [] AtReportRegistController end
+2022-04-07 17:46:00,495 DEBUG [188141] [] finally
+2022-04-07 17:52:14,737 DEBUG [188143] [] Request URI : /eccadmin_dev/AtReportRegist/back
+2022-04-07 17:52:14,738 DEBUG [188143] [] AtReportRegistController start
+2022-04-07 17:52:14,738 DEBUG [188143] [] controllers/AtReportRegistController.php: is exist
+2022-04-07 17:52:14,742 DEBUG [188143] [] AtReportRegistForm: is exist
+2022-04-07 17:52:14,743 DEBUG [188143] [] AtReportRegistForm: form value set 
+2022-04-07 17:52:14,743 DEBUG [188143] [] ------------------------------/eccadmin_dev/AtReportRegist/back
+2022-04-07 17:52:14,743 DEBUG [188143] [] ------------------------------session_check_true
+2022-04-07 17:52:14,743 DEBUG [188143] [] backAction start
+2022-04-07 17:52:14,744 DEBUG [188143] [] admin_no is 1
+2022-04-07 17:52:14,744 DEBUG [188143] [] backAction end
+2022-04-07 17:52:14,744 DEBUG [188143] [] AtReportRegistController end
+2022-04-07 17:52:14,744 DEBUG [188143] [] finally
+2022-04-07 17:52:14,761 DEBUG [188143] [] Request URI : /eccadmin_dev/AtReportList/Search
+2022-04-07 17:52:14,761 DEBUG [188143] [] AtReportListController start
+2022-04-07 17:52:14,761 DEBUG [188143] [] controllers/AtReportListController.php: is exist
+2022-04-07 17:52:14,764 DEBUG [188143] [] AtReportListForm: is exist
+2022-04-07 17:52:14,764 DEBUG [188143] [] AtReportListForm: form value set 
+2022-04-07 17:52:14,765 DEBUG [188143] [] ------------------------------/eccadmin_dev/AtReportList/Search
+2022-04-07 17:52:14,765 DEBUG [188143] [] SearchAction start
+2022-04-07 17:52:14,765 DEBUG [188143] [] --------back----AT Test 2----
+2022-04-07 17:52:14,765 DEBUG [188143] [] admin_no is 1
+2022-04-07 17:52:14,828 DEBUG [188143] [] SearchAction end
+2022-04-07 17:52:14,828 DEBUG [188143] [] AtReportListController end
+2022-04-07 17:52:14,828 DEBUG [188143] [] finally

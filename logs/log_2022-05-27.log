@@ -1,0 +1,573 @@
+2022-05-27 10:57:50,431 DEBUG [194543] [] Request URI : /eccadmin_dev/Login
+2022-05-27 10:57:50,464 DEBUG [194543] [] LoginController start
+2022-05-27 10:57:50,464 DEBUG [194543] [] controllers/LoginController.php: is exist
+2022-05-27 10:57:50,467 DEBUG [194543] [] LoginForm: is exist
+2022-05-27 10:57:50,467 DEBUG [194543] [] LoginForm: form value set 
+2022-05-27 10:57:50,468 DEBUG [194543] [] ------------------------------/eccadmin_dev/Login
+2022-05-27 10:57:50,468 DEBUG [194543] [] ------------------------------login_start_check
+2022-05-27 10:57:50,468 DEBUG [194543] [] indexAction start
+2022-05-27 10:57:50,530 DEBUG [194543] [] indexAction end
+2022-05-27 10:57:50,530 DEBUG [194543] [] LoginController end
+2022-05-27 10:57:50,530 DEBUG [194543] [] finally
+2022-05-27 10:57:56,372 DEBUG [195601] [] Request URI : /eccadmin_dev/Login/login
+2022-05-27 10:57:56,377 DEBUG [195601] [] LoginController start
+2022-05-27 10:57:56,377 DEBUG [195601] [] controllers/LoginController.php: is exist
+2022-05-27 10:57:56,380 DEBUG [195601] [] LoginForm: is exist
+2022-05-27 10:57:56,380 DEBUG [195601] [] LoginForm: form value set 
+2022-05-27 10:57:56,381 DEBUG [195601] [] ------------------------------/eccadmin_dev/Login/login
+2022-05-27 10:57:56,381 DEBUG [195601] [] ------------------------------login_start_check
+2022-05-27 10:57:56,381 DEBUG [195601] [] loginAction start
+2022-05-27 10:57:56,683 DEBUG [195601] [] loginAction end
+2022-05-27 10:57:56,683 DEBUG [195601] [] LoginController end
+2022-05-27 10:57:56,683 DEBUG [195601] [] finally
+2022-05-27 10:57:56,714 DEBUG [195601] [] Request URI : /eccadmin_dev/Menu
+2022-05-27 10:57:56,720 DEBUG [195601] [] MenuController start
+2022-05-27 10:57:56,720 DEBUG [195601] [] controllers/MenuController.php: is exist
+2022-05-27 10:57:56,723 DEBUG [195601] [] MenuForm: is exist
+2022-05-27 10:57:56,723 DEBUG [195601] [] MenuForm: form value set 
+2022-05-27 10:57:56,724 DEBUG [195601] [] ------------------------------/eccadmin_dev/Menu
+2022-05-27 10:57:56,724 DEBUG [195601] [] ------------------------------login_start_check
+2022-05-27 10:57:56,724 DEBUG [195601] [] indexAction start
+2022-05-27 10:57:56,724 DEBUG [195601] [] admin_no is 1
+2022-05-27 10:57:56,816 DEBUG [195601] [] indexAction end
+2022-05-27 10:57:56,817 DEBUG [195601] [] MenuController end
+2022-05-27 10:57:56,817 DEBUG [195601] [] finally
+2022-05-27 10:58:09,407 DEBUG [195538] [] Request URI : /eccadmin_dev/QuizList
+2022-05-27 10:58:09,413 DEBUG [195538] [] QuizListController start
+2022-05-27 10:58:09,413 DEBUG [195538] [] controllers/QuizListController.php: is exist
+2022-05-27 10:58:09,437 DEBUG [195538] [] QuizListForm: is exist
+2022-05-27 10:58:09,453 DEBUG [195538] [] QuizListForm: form value set 
+2022-05-27 10:58:09,453 DEBUG [195538] [] ------------------------------/eccadmin_dev/QuizList
+2022-05-27 10:58:09,454 DEBUG [195538] [] indexAction start
+2022-05-27 10:58:09,454 DEBUG [195538] [] admin_no is 1
+2022-05-27 10:58:09,565 DEBUG [195538] [] indexAction end
+2022-05-27 10:58:09,565 DEBUG [195538] [] QuizListController end
+2022-05-27 10:58:09,565 DEBUG [195538] [] finally
+2022-05-27 10:58:15,981 DEBUG [195603] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 10:58:15,990 DEBUG [195603] [] QuizListController start
+2022-05-27 10:58:15,990 DEBUG [195603] [] controllers/QuizListController.php: is exist
+2022-05-27 10:58:15,994 DEBUG [195603] [] QuizListForm: is exist
+2022-05-27 10:58:15,994 DEBUG [195603] [] QuizListForm: form value set 
+2022-05-27 10:58:15,995 DEBUG [195603] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 10:58:15,995 DEBUG [195603] [] SearchAction start
+2022-05-27 10:58:15,995 DEBUG [195603] [] admin_no is 1
+2022-05-27 10:58:15,995 DEBUG [195603] [] org id : ecc
+2022-05-27 10:58:17,780 DEBUG [195603] [] SearchAction end
+2022-05-27 10:58:17,780 DEBUG [195603] [] QuizListController end
+2022-05-27 10:58:17,780 DEBUG [195603] [] finally
+2022-05-27 10:58:32,346 DEBUG [195538] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 10:58:32,351 DEBUG [195538] [] QuizRegistController start
+2022-05-27 10:58:32,351 DEBUG [195538] [] controllers/QuizRegistController.php: is exist
+2022-05-27 10:58:32,400 DEBUG [195538] [] QuizRegistForm: is exist
+2022-05-27 10:58:32,430 DEBUG [195538] [] QuizRegistForm: form value set 
+2022-05-27 10:58:32,430 DEBUG [195538] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 10:58:32,431 DEBUG [195538] [] ------------------------------session_check_true
+2022-05-27 10:58:32,431 DEBUG [195538] [] indexAction start
+2022-05-27 10:58:32,431 DEBUG [195538] [] admin_no is 1
+2022-05-27 10:58:32,432 DEBUG [195538] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 10:58:32,566 DEBUG [195538] [] indexAction end
+2022-05-27 10:58:32,566 DEBUG [195538] [] QuizRegistController end
+2022-05-27 10:58:32,566 DEBUG [195538] [] finally
+2022-05-27 10:58:36,889 DEBUG [195139] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 10:58:36,894 DEBUG [195139] [] QuizRegistController start
+2022-05-27 10:58:36,894 DEBUG [195139] [] controllers/QuizRegistController.php: is exist
+2022-05-27 10:58:36,900 DEBUG [195139] [] QuizRegistForm: is exist
+2022-05-27 10:58:36,900 DEBUG [195139] [] QuizRegistForm: form value set 
+2022-05-27 10:58:36,901 DEBUG [195139] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 10:58:36,901 DEBUG [195139] [] ------------------------------session_check_true
+2022-05-27 10:58:36,901 DEBUG [195139] [] backAction start
+2022-05-27 10:58:36,901 DEBUG [195139] [] backAction end
+2022-05-27 10:58:36,901 DEBUG [195139] [] QuizRegistController end
+2022-05-27 10:58:36,901 DEBUG [195139] [] finally
+2022-05-27 10:58:36,926 DEBUG [195139] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 10:58:36,931 DEBUG [195139] [] QuizListController start
+2022-05-27 10:58:36,931 DEBUG [195139] [] controllers/QuizListController.php: is exist
+2022-05-27 10:58:36,934 DEBUG [195139] [] QuizListForm: is exist
+2022-05-27 10:58:36,935 DEBUG [195139] [] QuizListForm: form value set 
+2022-05-27 10:58:36,935 DEBUG [195139] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 10:58:36,935 DEBUG [195139] [] SearchAction start
+2022-05-27 10:58:36,935 DEBUG [195139] [] admin_no is 1
+2022-05-27 10:58:36,935 DEBUG [195139] [] org id : ecc
+2022-05-27 10:58:37,819 DEBUG [195139] [] SearchAction end
+2022-05-27 10:58:37,819 DEBUG [195139] [] QuizListController end
+2022-05-27 10:58:37,819 DEBUG [195139] [] finally
+2022-05-27 10:58:47,204 DEBUG [195629] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 10:58:47,209 DEBUG [195629] [] QuizListController start
+2022-05-27 10:58:47,209 DEBUG [195629] [] controllers/QuizListController.php: is exist
+2022-05-27 10:58:47,213 DEBUG [195629] [] QuizListForm: is exist
+2022-05-27 10:58:47,213 DEBUG [195629] [] QuizListForm: form value set 
+2022-05-27 10:58:47,214 DEBUG [195629] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 10:58:47,214 DEBUG [195629] [] SearchAction start
+2022-05-27 10:58:47,214 DEBUG [195629] [] admin_no is 1
+2022-05-27 10:58:47,214 DEBUG [195629] [] org id : ecc
+2022-05-27 10:58:47,289 DEBUG [195629] [] SearchAction end
+2022-05-27 10:58:47,290 DEBUG [195629] [] QuizListController end
+2022-05-27 10:58:47,290 DEBUG [195629] [] finally
+2022-05-27 10:58:49,222 DEBUG [195629] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 10:58:49,228 DEBUG [195629] [] QuizRegistController start
+2022-05-27 10:58:49,228 DEBUG [195629] [] controllers/QuizRegistController.php: is exist
+2022-05-27 10:58:49,232 DEBUG [195629] [] QuizRegistForm: is exist
+2022-05-27 10:58:49,232 DEBUG [195629] [] QuizRegistForm: form value set 
+2022-05-27 10:58:49,233 DEBUG [195629] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 10:58:49,233 DEBUG [195629] [] ------------------------------session_check_true
+2022-05-27 10:58:49,233 DEBUG [195629] [] indexAction start
+2022-05-27 10:58:49,233 DEBUG [195629] [] admin_no is 1
+2022-05-27 10:58:49,235 DEBUG [195629] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 10:58:49,327 DEBUG [195629] [] indexAction end
+2022-05-27 10:58:49,327 DEBUG [195629] [] QuizRegistController end
+2022-05-27 10:58:49,328 DEBUG [195629] [] finally
+2022-05-27 10:58:51,302 DEBUG [195652] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 10:58:51,310 DEBUG [195652] [] QuizRegistController start
+2022-05-27 10:58:51,310 DEBUG [195652] [] controllers/QuizRegistController.php: is exist
+2022-05-27 10:58:51,315 DEBUG [195652] [] QuizRegistForm: is exist
+2022-05-27 10:58:51,315 DEBUG [195652] [] QuizRegistForm: form value set 
+2022-05-27 10:58:51,316 DEBUG [195652] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 10:58:51,316 DEBUG [195652] [] ------------------------------session_check_true
+2022-05-27 10:58:51,316 DEBUG [195652] [] SaveAction start
+2022-05-27 10:58:51,316 DEBUG [195652] [] admin_no is 1
+2022-05-27 10:58:51,316 DEBUG [195652] [] screen_mode : update
+2022-05-27 10:58:51,317 DEBUG [195652] [] 2051
+2022-05-27 10:58:51,317 DEBUG [195652] []  SELECT  quiz.quiz_no FROM  T_QUIZ quiz WHERE quiz.org_no = :org_no  AND quiz.quiz_name = :quiz_name  AND quiz.del_flg = '0'  AND quiz.quiz_no != :quiz_no 
+2022-05-27 10:58:51,350 DEBUG [195652] [] duplicate_count : 0
+2022-05-27 10:58:51,352 DEBUG [195652] [] SaveAction end
+2022-05-27 10:58:51,352 DEBUG [195652] [] QuizRegistController end
+2022-05-27 10:58:51,352 DEBUG [195652] [] finally
+2022-05-27 10:58:51,381 DEBUG [195652] [] Request URI : /eccadmin_dev/QuizList/search
+2022-05-27 10:58:51,386 DEBUG [195652] [] QuizListController start
+2022-05-27 10:58:51,386 DEBUG [195652] [] controllers/QuizListController.php: is exist
+2022-05-27 10:58:51,389 DEBUG [195652] [] QuizListForm: is exist
+2022-05-27 10:58:51,389 DEBUG [195652] [] QuizListForm: form value set 
+2022-05-27 10:58:51,390 DEBUG [195652] [] ------------------------------/eccadmin_dev/QuizList/search
+2022-05-27 10:58:51,390 DEBUG [195652] [] searchAction start
+2022-05-27 10:58:51,390 DEBUG [195652] [] admin_no is 1
+2022-05-27 10:58:51,390 DEBUG [195652] [] org id : ecc
+2022-05-27 10:58:51,472 DEBUG [195652] [] searchAction end
+2022-05-27 10:58:51,472 DEBUG [195652] [] QuizListController end
+2022-05-27 10:58:51,473 DEBUG [195652] [] finally
+2022-05-27 11:04:36,430 DEBUG [195651] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:04:36,436 DEBUG [195651] [] QuizListController start
+2022-05-27 11:04:36,436 DEBUG [195651] [] controllers/QuizListController.php: is exist
+2022-05-27 11:04:36,440 DEBUG [195651] [] QuizListForm: is exist
+2022-05-27 11:04:36,440 DEBUG [195651] [] QuizListForm: form value set 
+2022-05-27 11:04:36,441 DEBUG [195651] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:04:36,441 DEBUG [195651] [] SearchAction start
+2022-05-27 11:04:36,441 DEBUG [195651] [] admin_no is 1
+2022-05-27 11:04:36,441 DEBUG [195651] [] org id : ecc
+2022-05-27 11:04:36,525 DEBUG [195651] [] SearchAction end
+2022-05-27 11:04:36,525 DEBUG [195651] [] QuizListController end
+2022-05-27 11:04:36,525 DEBUG [195651] [] finally
+2022-05-27 11:04:38,430 DEBUG [195651] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:04:38,436 DEBUG [195651] [] QuizRegistController start
+2022-05-27 11:04:38,436 DEBUG [195651] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:04:38,441 DEBUG [195651] [] QuizRegistForm: is exist
+2022-05-27 11:04:38,441 DEBUG [195651] [] QuizRegistForm: form value set 
+2022-05-27 11:04:38,442 DEBUG [195651] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:04:38,442 DEBUG [195651] [] ------------------------------session_check_true
+2022-05-27 11:04:38,442 DEBUG [195651] [] indexAction start
+2022-05-27 11:04:38,442 DEBUG [195651] [] admin_no is 1
+2022-05-27 11:04:38,444 DEBUG [195651] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:04:38,542 DEBUG [195651] [] indexAction end
+2022-05-27 11:04:38,542 DEBUG [195651] [] QuizRegistController end
+2022-05-27 11:04:38,542 DEBUG [195651] [] finally
+2022-05-27 11:04:40,795 DEBUG [195651] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 11:04:40,800 DEBUG [195651] [] QuizRegistController start
+2022-05-27 11:04:40,800 DEBUG [195651] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:04:40,805 DEBUG [195651] [] QuizRegistForm: is exist
+2022-05-27 11:04:40,806 DEBUG [195651] [] QuizRegistForm: form value set 
+2022-05-27 11:04:40,806 DEBUG [195651] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 11:04:40,806 DEBUG [195651] [] ------------------------------session_check_true
+2022-05-27 11:04:40,806 DEBUG [195651] [] SaveAction start
+2022-05-27 11:04:40,807 DEBUG [195651] [] admin_no is 1
+2022-05-27 11:04:40,807 DEBUG [195651] [] screen_mode : update
+2022-05-27 11:04:40,809 DEBUG [195651] [] SaveAction end
+2022-05-27 11:04:40,809 DEBUG [195651] [] QuizRegistController end
+2022-05-27 11:04:40,809 DEBUG [195651] [] finally
+2022-05-27 11:04:40,837 DEBUG [195651] [] Request URI : /eccadmin_dev/QuizList/search
+2022-05-27 11:04:40,842 DEBUG [195651] [] QuizListController start
+2022-05-27 11:04:40,842 DEBUG [195651] [] controllers/QuizListController.php: is exist
+2022-05-27 11:04:40,845 DEBUG [195651] [] QuizListForm: is exist
+2022-05-27 11:04:40,845 DEBUG [195651] [] QuizListForm: form value set 
+2022-05-27 11:04:40,846 DEBUG [195651] [] ------------------------------/eccadmin_dev/QuizList/search
+2022-05-27 11:04:40,846 DEBUG [195651] [] searchAction start
+2022-05-27 11:04:40,846 DEBUG [195651] [] admin_no is 1
+2022-05-27 11:04:40,846 DEBUG [195651] [] org id : ecc
+2022-05-27 11:04:40,912 DEBUG [195651] [] searchAction end
+2022-05-27 11:04:40,912 DEBUG [195651] [] QuizListController end
+2022-05-27 11:04:40,912 DEBUG [195651] [] finally
+2022-05-27 11:10:15,226 DEBUG [195652] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:15,232 DEBUG [195652] [] QuizRegistController start
+2022-05-27 11:10:15,232 DEBUG [195652] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:15,237 DEBUG [195652] [] QuizRegistForm: is exist
+2022-05-27 11:10:15,237 DEBUG [195652] [] QuizRegistForm: form value set 
+2022-05-27 11:10:15,238 DEBUG [195652] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:15,238 DEBUG [195652] [] ------------------------------session_check_true
+2022-05-27 11:10:15,238 DEBUG [195652] [] indexAction start
+2022-05-27 11:10:15,238 DEBUG [195652] [] admin_no is 1
+2022-05-27 11:10:15,240 DEBUG [195652] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:10:15,340 DEBUG [195652] [] indexAction end
+2022-05-27 11:10:15,340 DEBUG [195652] [] QuizRegistController end
+2022-05-27 11:10:15,340 DEBUG [195652] [] finally
+2022-05-27 11:10:17,456 DEBUG [195652] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 11:10:17,461 DEBUG [195652] [] QuizRegistController start
+2022-05-27 11:10:17,461 DEBUG [195652] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:17,466 DEBUG [195652] [] QuizRegistForm: is exist
+2022-05-27 11:10:17,466 DEBUG [195652] [] QuizRegistForm: form value set 
+2022-05-27 11:10:17,467 DEBUG [195652] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 11:10:17,467 DEBUG [195652] [] ------------------------------session_check_true
+2022-05-27 11:10:17,467 DEBUG [195652] [] backAction start
+2022-05-27 11:10:17,467 DEBUG [195652] [] backAction end
+2022-05-27 11:10:17,467 DEBUG [195652] [] QuizRegistController end
+2022-05-27 11:10:17,467 DEBUG [195652] [] finally
+2022-05-27 11:10:17,497 DEBUG [195652] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:10:17,503 DEBUG [195652] [] QuizListController start
+2022-05-27 11:10:17,503 DEBUG [195652] [] controllers/QuizListController.php: is exist
+2022-05-27 11:10:17,506 DEBUG [195652] [] QuizListForm: is exist
+2022-05-27 11:10:17,507 DEBUG [195652] [] QuizListForm: form value set 
+2022-05-27 11:10:17,507 DEBUG [195652] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:10:17,507 DEBUG [195652] [] SearchAction start
+2022-05-27 11:10:17,507 DEBUG [195652] [] admin_no is 1
+2022-05-27 11:10:17,507 DEBUG [195652] [] org id : ecc
+2022-05-27 11:10:17,587 DEBUG [195652] [] SearchAction end
+2022-05-27 11:10:17,587 DEBUG [195652] [] QuizListController end
+2022-05-27 11:10:17,588 DEBUG [195652] [] finally
+2022-05-27 11:10:28,999 DEBUG [195641] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:10:29,004 DEBUG [195641] [] QuizListController start
+2022-05-27 11:10:29,004 DEBUG [195641] [] controllers/QuizListController.php: is exist
+2022-05-27 11:10:29,008 DEBUG [195641] [] QuizListForm: is exist
+2022-05-27 11:10:29,008 DEBUG [195641] [] QuizListForm: form value set 
+2022-05-27 11:10:29,009 DEBUG [195641] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:10:29,009 DEBUG [195641] [] SearchAction start
+2022-05-27 11:10:29,009 DEBUG [195641] [] admin_no is 1
+2022-05-27 11:10:29,010 DEBUG [195641] [] org id : ecc
+2022-05-27 11:10:29,100 DEBUG [195641] [] SearchAction end
+2022-05-27 11:10:29,100 DEBUG [195641] [] QuizListController end
+2022-05-27 11:10:29,100 DEBUG [195641] [] finally
+2022-05-27 11:10:32,370 DEBUG [195833] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:32,379 DEBUG [195833] [] QuizRegistController start
+2022-05-27 11:10:32,379 DEBUG [195833] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:32,384 DEBUG [195833] [] QuizRegistForm: is exist
+2022-05-27 11:10:32,385 DEBUG [195833] [] QuizRegistForm: form value set 
+2022-05-27 11:10:32,385 DEBUG [195833] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:32,386 DEBUG [195833] [] ------------------------------session_check_true
+2022-05-27 11:10:32,386 DEBUG [195833] [] indexAction start
+2022-05-27 11:10:32,386 DEBUG [195833] [] admin_no is 1
+2022-05-27 11:10:32,387 DEBUG [195833] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:10:32,489 DEBUG [195833] [] indexAction end
+2022-05-27 11:10:32,489 DEBUG [195833] [] QuizRegistController end
+2022-05-27 11:10:32,490 DEBUG [195833] [] finally
+2022-05-27 11:10:37,944 DEBUG [195832] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 11:10:37,952 DEBUG [195832] [] QuizRegistController start
+2022-05-27 11:10:37,952 DEBUG [195832] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:37,957 DEBUG [195832] [] QuizRegistForm: is exist
+2022-05-27 11:10:37,958 DEBUG [195832] [] QuizRegistForm: form value set 
+2022-05-27 11:10:37,958 DEBUG [195832] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 11:10:37,959 DEBUG [195832] [] ------------------------------session_check_true
+2022-05-27 11:10:37,959 DEBUG [195832] [] SaveAction start
+2022-05-27 11:10:37,959 DEBUG [195832] [] admin_no is 1
+2022-05-27 11:10:37,959 DEBUG [195832] [] screen_mode : update
+2022-05-27 11:10:37,965 DEBUG [195832] [] SaveAction end
+2022-05-27 11:10:37,965 DEBUG [195832] [] QuizRegistController end
+2022-05-27 11:10:37,965 DEBUG [195832] [] finally
+2022-05-27 11:10:37,994 DEBUG [195832] [] Request URI : /eccadmin_dev/QuizList/search
+2022-05-27 11:10:37,998 DEBUG [195832] [] QuizListController start
+2022-05-27 11:10:37,998 DEBUG [195832] [] controllers/QuizListController.php: is exist
+2022-05-27 11:10:38,001 DEBUG [195832] [] QuizListForm: is exist
+2022-05-27 11:10:38,001 DEBUG [195832] [] QuizListForm: form value set 
+2022-05-27 11:10:38,002 DEBUG [195832] [] ------------------------------/eccadmin_dev/QuizList/search
+2022-05-27 11:10:38,002 DEBUG [195832] [] searchAction start
+2022-05-27 11:10:38,002 DEBUG [195832] [] admin_no is 1
+2022-05-27 11:10:38,002 DEBUG [195832] [] org id : ecc
+2022-05-27 11:10:38,072 DEBUG [195832] [] searchAction end
+2022-05-27 11:10:38,072 DEBUG [195832] [] QuizListController end
+2022-05-27 11:10:38,073 DEBUG [195832] [] finally
+2022-05-27 11:10:40,943 DEBUG [195832] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:40,948 DEBUG [195832] [] QuizRegistController start
+2022-05-27 11:10:40,948 DEBUG [195832] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:40,953 DEBUG [195832] [] QuizRegistForm: is exist
+2022-05-27 11:10:40,953 DEBUG [195832] [] QuizRegistForm: form value set 
+2022-05-27 11:10:40,954 DEBUG [195832] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:10:40,954 DEBUG [195832] [] ------------------------------session_check_true
+2022-05-27 11:10:40,954 DEBUG [195832] [] indexAction start
+2022-05-27 11:10:40,954 DEBUG [195832] [] admin_no is 1
+2022-05-27 11:10:40,956 DEBUG [195832] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:10:41,051 DEBUG [195832] [] indexAction end
+2022-05-27 11:10:41,052 DEBUG [195832] [] QuizRegistController end
+2022-05-27 11:10:41,052 DEBUG [195832] [] finally
+2022-05-27 11:10:42,832 DEBUG [195836] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 11:10:42,840 DEBUG [195836] [] QuizRegistController start
+2022-05-27 11:10:42,840 DEBUG [195836] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:10:42,845 DEBUG [195836] [] QuizRegistForm: is exist
+2022-05-27 11:10:42,845 DEBUG [195836] [] QuizRegistForm: form value set 
+2022-05-27 11:10:42,846 DEBUG [195836] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 11:10:42,846 DEBUG [195836] [] ------------------------------session_check_true
+2022-05-27 11:10:42,846 DEBUG [195836] [] backAction start
+2022-05-27 11:10:42,846 DEBUG [195836] [] backAction end
+2022-05-27 11:10:42,847 DEBUG [195836] [] QuizRegistController end
+2022-05-27 11:10:42,847 DEBUG [195836] [] finally
+2022-05-27 11:10:42,877 DEBUG [195836] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:10:42,882 DEBUG [195836] [] QuizListController start
+2022-05-27 11:10:42,882 DEBUG [195836] [] controllers/QuizListController.php: is exist
+2022-05-27 11:10:42,885 DEBUG [195836] [] QuizListForm: is exist
+2022-05-27 11:10:42,885 DEBUG [195836] [] QuizListForm: form value set 
+2022-05-27 11:10:42,886 DEBUG [195836] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:10:42,886 DEBUG [195836] [] SearchAction start
+2022-05-27 11:10:42,886 DEBUG [195836] [] admin_no is 1
+2022-05-27 11:10:42,886 DEBUG [195836] [] org id : ecc
+2022-05-27 11:10:42,974 DEBUG [195836] [] SearchAction end
+2022-05-27 11:10:42,974 DEBUG [195836] [] QuizListController end
+2022-05-27 11:10:42,974 DEBUG [195836] [] finally
+2022-05-27 11:37:53,794 DEBUG [196110] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:37:53,802 DEBUG [196110] [] QuizListController start
+2022-05-27 11:37:53,802 DEBUG [196110] [] controllers/QuizListController.php: is exist
+2022-05-27 11:37:53,806 DEBUG [196110] [] QuizListForm: is exist
+2022-05-27 11:37:53,806 DEBUG [196110] [] QuizListForm: form value set 
+2022-05-27 11:37:53,807 DEBUG [196110] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:37:53,807 DEBUG [196110] [] SearchAction start
+2022-05-27 11:37:53,807 DEBUG [196110] [] admin_no is 1
+2022-05-27 11:37:53,807 DEBUG [196110] [] org id : ecc
+2022-05-27 11:37:53,886 DEBUG [196110] [] SearchAction end
+2022-05-27 11:37:53,886 DEBUG [196110] [] QuizListController end
+2022-05-27 11:37:53,886 DEBUG [196110] [] finally
+2022-05-27 11:37:55,953 DEBUG [196110] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:37:55,958 DEBUG [196110] [] QuizRegistController start
+2022-05-27 11:37:55,958 DEBUG [196110] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:37:55,963 DEBUG [196110] [] QuizRegistForm: is exist
+2022-05-27 11:37:55,964 DEBUG [196110] [] QuizRegistForm: form value set 
+2022-05-27 11:37:55,964 DEBUG [196110] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:37:55,964 DEBUG [196110] [] ------------------------------session_check_true
+2022-05-27 11:37:55,964 DEBUG [196110] [] indexAction start
+2022-05-27 11:37:55,964 DEBUG [196110] [] admin_no is 1
+2022-05-27 11:37:55,966 DEBUG [196110] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:37:56,066 DEBUG [196110] [] indexAction end
+2022-05-27 11:37:56,066 DEBUG [196110] [] QuizRegistController end
+2022-05-27 11:37:56,067 DEBUG [196110] [] finally
+2022-05-27 11:37:57,955 DEBUG [196007] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 11:37:57,960 DEBUG [196007] [] QuizRegistController start
+2022-05-27 11:37:57,960 DEBUG [196007] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:37:57,964 DEBUG [196007] [] QuizRegistForm: is exist
+2022-05-27 11:37:57,965 DEBUG [196007] [] QuizRegistForm: form value set 
+2022-05-27 11:37:57,965 DEBUG [196007] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 11:37:57,965 DEBUG [196007] [] ------------------------------session_check_true
+2022-05-27 11:37:57,965 DEBUG [196007] [] SaveAction start
+2022-05-27 11:37:57,966 DEBUG [196007] [] admin_no is 1
+2022-05-27 11:37:57,966 DEBUG [196007] [] screen_mode : update
+2022-05-27 11:37:57,967 DEBUG [196007] [] SaveAction end
+2022-05-27 11:37:57,967 DEBUG [196007] [] QuizRegistController end
+2022-05-27 11:37:57,967 DEBUG [196007] [] finally
+2022-05-27 11:37:57,995 DEBUG [196007] [] Request URI : /eccadmin_dev/QuizList/search
+2022-05-27 11:37:57,999 DEBUG [196007] [] QuizListController start
+2022-05-27 11:37:57,999 DEBUG [196007] [] controllers/QuizListController.php: is exist
+2022-05-27 11:37:58,002 DEBUG [196007] [] QuizListForm: is exist
+2022-05-27 11:37:58,002 DEBUG [196007] [] QuizListForm: form value set 
+2022-05-27 11:37:58,003 DEBUG [196007] [] ------------------------------/eccadmin_dev/QuizList/search
+2022-05-27 11:37:58,003 DEBUG [196007] [] searchAction start
+2022-05-27 11:37:58,003 DEBUG [196007] [] admin_no is 1
+2022-05-27 11:37:58,003 DEBUG [196007] [] org id : ecc
+2022-05-27 11:37:58,076 DEBUG [196007] [] searchAction end
+2022-05-27 11:37:58,076 DEBUG [196007] [] QuizListController end
+2022-05-27 11:37:58,076 DEBUG [196007] [] finally
+2022-05-27 11:38:04,761 DEBUG [195997] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:04,767 DEBUG [195997] [] QuizRegistController start
+2022-05-27 11:38:04,767 DEBUG [195997] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:04,772 DEBUG [195997] [] QuizRegistForm: is exist
+2022-05-27 11:38:04,772 DEBUG [195997] [] QuizRegistForm: form value set 
+2022-05-27 11:38:04,773 DEBUG [195997] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:04,773 DEBUG [195997] [] ------------------------------session_check_true
+2022-05-27 11:38:04,773 DEBUG [195997] [] indexAction start
+2022-05-27 11:38:04,773 DEBUG [195997] [] admin_no is 1
+2022-05-27 11:38:04,774 DEBUG [195997] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:38:04,875 DEBUG [195997] [] indexAction end
+2022-05-27 11:38:04,875 DEBUG [195997] [] QuizRegistController end
+2022-05-27 11:38:04,875 DEBUG [195997] [] finally
+2022-05-27 11:38:06,260 DEBUG [195997] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 11:38:06,265 DEBUG [195997] [] QuizRegistController start
+2022-05-27 11:38:06,265 DEBUG [195997] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:06,270 DEBUG [195997] [] QuizRegistForm: is exist
+2022-05-27 11:38:06,271 DEBUG [195997] [] QuizRegistForm: form value set 
+2022-05-27 11:38:06,271 DEBUG [195997] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 11:38:06,272 DEBUG [195997] [] ------------------------------session_check_true
+2022-05-27 11:38:06,272 DEBUG [195997] [] SaveAction start
+2022-05-27 11:38:06,272 DEBUG [195997] [] admin_no is 1
+2022-05-27 11:38:06,272 DEBUG [195997] [] screen_mode : update
+2022-05-27 11:38:06,273 DEBUG [195997] [] SaveAction end
+2022-05-27 11:38:06,273 DEBUG [195997] [] QuizRegistController end
+2022-05-27 11:38:06,273 DEBUG [195997] [] finally
+2022-05-27 11:38:06,304 DEBUG [195997] [] Request URI : /eccadmin_dev/QuizList/search
+2022-05-27 11:38:06,309 DEBUG [195997] [] QuizListController start
+2022-05-27 11:38:06,309 DEBUG [195997] [] controllers/QuizListController.php: is exist
+2022-05-27 11:38:06,312 DEBUG [195997] [] QuizListForm: is exist
+2022-05-27 11:38:06,312 DEBUG [195997] [] QuizListForm: form value set 
+2022-05-27 11:38:06,313 DEBUG [195997] [] ------------------------------/eccadmin_dev/QuizList/search
+2022-05-27 11:38:06,313 DEBUG [195997] [] searchAction start
+2022-05-27 11:38:06,313 DEBUG [195997] [] admin_no is 1
+2022-05-27 11:38:06,313 DEBUG [195997] [] org id : ecc
+2022-05-27 11:38:06,394 DEBUG [195997] [] searchAction end
+2022-05-27 11:38:06,394 DEBUG [195997] [] QuizListController end
+2022-05-27 11:38:06,394 DEBUG [195997] [] finally
+2022-05-27 11:38:11,899 DEBUG [196023] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:38:11,905 DEBUG [196023] [] QuizListController start
+2022-05-27 11:38:11,905 DEBUG [196023] [] controllers/QuizListController.php: is exist
+2022-05-27 11:38:11,909 DEBUG [196023] [] QuizListForm: is exist
+2022-05-27 11:38:11,909 DEBUG [196023] [] QuizListForm: form value set 
+2022-05-27 11:38:11,910 DEBUG [196023] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:38:11,910 DEBUG [196023] [] SearchAction start
+2022-05-27 11:38:11,910 DEBUG [196023] [] admin_no is 1
+2022-05-27 11:38:11,910 DEBUG [196023] [] org id : ecc
+2022-05-27 11:38:11,995 DEBUG [196023] [] SearchAction end
+2022-05-27 11:38:11,995 DEBUG [196023] [] QuizListController end
+2022-05-27 11:38:11,995 DEBUG [196023] [] finally
+2022-05-27 11:38:33,681 DEBUG [196024] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:38:33,686 DEBUG [196024] [] QuizListController start
+2022-05-27 11:38:33,686 DEBUG [196024] [] controllers/QuizListController.php: is exist
+2022-05-27 11:38:33,690 DEBUG [196024] [] QuizListForm: is exist
+2022-05-27 11:38:33,690 DEBUG [196024] [] QuizListForm: form value set 
+2022-05-27 11:38:33,691 DEBUG [196024] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:38:33,691 DEBUG [196024] [] SearchAction start
+2022-05-27 11:38:33,691 DEBUG [196024] [] admin_no is 1
+2022-05-27 11:38:33,691 DEBUG [196024] [] org id : ecc
+2022-05-27 11:38:33,778 DEBUG [196024] [] SearchAction end
+2022-05-27 11:38:33,778 DEBUG [196024] [] QuizListController end
+2022-05-27 11:38:33,778 DEBUG [196024] [] finally
+2022-05-27 11:38:35,208 DEBUG [196024] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:35,213 DEBUG [196024] [] QuizRegistController start
+2022-05-27 11:38:35,213 DEBUG [196024] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:35,218 DEBUG [196024] [] QuizRegistForm: is exist
+2022-05-27 11:38:35,218 DEBUG [196024] [] QuizRegistForm: form value set 
+2022-05-27 11:38:35,219 DEBUG [196024] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:35,219 DEBUG [196024] [] ------------------------------session_check_true
+2022-05-27 11:38:35,219 DEBUG [196024] [] indexAction start
+2022-05-27 11:38:35,219 DEBUG [196024] [] admin_no is 1
+2022-05-27 11:38:35,221 DEBUG [196024] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:38:35,328 DEBUG [196024] [] indexAction end
+2022-05-27 11:38:35,328 DEBUG [196024] [] QuizRegistController end
+2022-05-27 11:38:35,328 DEBUG [196024] [] finally
+2022-05-27 11:38:45,731 DEBUG [195999] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 11:38:45,736 DEBUG [195999] [] QuizRegistController start
+2022-05-27 11:38:45,737 DEBUG [195999] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:45,741 DEBUG [195999] [] QuizRegistForm: is exist
+2022-05-27 11:38:45,741 DEBUG [195999] [] QuizRegistForm: form value set 
+2022-05-27 11:38:45,742 DEBUG [195999] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 11:38:45,742 DEBUG [195999] [] ------------------------------session_check_true
+2022-05-27 11:38:45,742 DEBUG [195999] [] backAction start
+2022-05-27 11:38:45,742 DEBUG [195999] [] backAction end
+2022-05-27 11:38:45,742 DEBUG [195999] [] QuizRegistController end
+2022-05-27 11:38:45,743 DEBUG [195999] [] finally
+2022-05-27 11:38:45,766 DEBUG [195999] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:38:45,770 DEBUG [195999] [] QuizListController start
+2022-05-27 11:38:45,770 DEBUG [195999] [] controllers/QuizListController.php: is exist
+2022-05-27 11:38:45,773 DEBUG [195999] [] QuizListForm: is exist
+2022-05-27 11:38:45,774 DEBUG [195999] [] QuizListForm: form value set 
+2022-05-27 11:38:45,774 DEBUG [195999] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:38:45,774 DEBUG [195999] [] SearchAction start
+2022-05-27 11:38:45,774 DEBUG [195999] [] admin_no is 1
+2022-05-27 11:38:45,774 DEBUG [195999] [] org id : ecc
+2022-05-27 11:38:45,836 DEBUG [195999] [] SearchAction end
+2022-05-27 11:38:45,836 DEBUG [195999] [] QuizListController end
+2022-05-27 11:38:45,836 DEBUG [195999] [] finally
+2022-05-27 11:38:46,767 DEBUG [195999] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:46,773 DEBUG [195999] [] QuizRegistController start
+2022-05-27 11:38:46,773 DEBUG [195999] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:46,777 DEBUG [195999] [] QuizRegistForm: is exist
+2022-05-27 11:38:46,778 DEBUG [195999] [] QuizRegistForm: form value set 
+2022-05-27 11:38:46,778 DEBUG [195999] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:38:46,778 DEBUG [195999] [] ------------------------------session_check_true
+2022-05-27 11:38:46,779 DEBUG [195999] [] indexAction start
+2022-05-27 11:38:46,779 DEBUG [195999] [] admin_no is 1
+2022-05-27 11:38:46,780 DEBUG [195999] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:38:46,878 DEBUG [195999] [] indexAction end
+2022-05-27 11:38:46,878 DEBUG [195999] [] QuizRegistController end
+2022-05-27 11:38:46,879 DEBUG [195999] [] finally
+2022-05-27 11:38:48,495 DEBUG [195999] [] Request URI : /eccadmin_dev/QuizRegist/Save
+2022-05-27 11:38:48,500 DEBUG [195999] [] QuizRegistController start
+2022-05-27 11:38:48,501 DEBUG [195999] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:38:48,505 DEBUG [195999] [] QuizRegistForm: is exist
+2022-05-27 11:38:48,506 DEBUG [195999] [] QuizRegistForm: form value set 
+2022-05-27 11:38:48,506 DEBUG [195999] [] ------------------------------/eccadmin_dev/QuizRegist/Save
+2022-05-27 11:38:48,506 DEBUG [195999] [] ------------------------------session_check_true
+2022-05-27 11:38:48,506 DEBUG [195999] [] SaveAction start
+2022-05-27 11:38:48,507 DEBUG [195999] [] admin_no is 1
+2022-05-27 11:38:48,507 DEBUG [195999] [] screen_mode : update
+2022-05-27 11:38:48,609 DEBUG [195999] [] SaveAction end
+2022-05-27 11:38:48,609 DEBUG [195999] [] QuizRegistController end
+2022-05-27 11:38:48,609 DEBUG [195999] [] finally
+2022-05-27 11:42:39,724 DEBUG [196125] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 11:42:39,730 DEBUG [196125] [] QuizRegistController start
+2022-05-27 11:42:39,730 DEBUG [196125] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:42:39,735 DEBUG [196125] [] QuizRegistForm: is exist
+2022-05-27 11:42:39,736 DEBUG [196125] [] QuizRegistForm: form value set 
+2022-05-27 11:42:39,736 DEBUG [196125] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 11:42:39,736 DEBUG [196125] [] ------------------------------session_check_true
+2022-05-27 11:42:39,737 DEBUG [196125] [] backAction start
+2022-05-27 11:42:39,737 DEBUG [196125] [] backAction end
+2022-05-27 11:42:39,737 DEBUG [196125] [] QuizRegistController end
+2022-05-27 11:42:39,737 DEBUG [196125] [] finally
+2022-05-27 11:42:39,767 DEBUG [196125] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:42:39,773 DEBUG [196125] [] QuizListController start
+2022-05-27 11:42:39,773 DEBUG [196125] [] controllers/QuizListController.php: is exist
+2022-05-27 11:42:39,776 DEBUG [196125] [] QuizListForm: is exist
+2022-05-27 11:42:39,776 DEBUG [196125] [] QuizListForm: form value set 
+2022-05-27 11:42:39,777 DEBUG [196125] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:42:39,777 DEBUG [196125] [] SearchAction start
+2022-05-27 11:42:39,777 DEBUG [196125] [] admin_no is 1
+2022-05-27 11:42:39,777 DEBUG [196125] [] org id : ecc
+2022-05-27 11:42:39,859 DEBUG [196125] [] SearchAction end
+2022-05-27 11:42:39,859 DEBUG [196125] [] QuizListController end
+2022-05-27 11:42:39,859 DEBUG [196125] [] finally
+2022-05-27 11:42:41,480 DEBUG [196125] [] Request URI : /eccadmin_dev/QuizRegist/index
+2022-05-27 11:42:41,488 DEBUG [196125] [] QuizRegistController start
+2022-05-27 11:42:41,488 DEBUG [196125] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:42:41,496 DEBUG [196125] [] QuizRegistForm: is exist
+2022-05-27 11:42:41,496 DEBUG [196125] [] QuizRegistForm: form value set 
+2022-05-27 11:42:41,497 DEBUG [196125] [] ------------------------------/eccadmin_dev/QuizRegist/index
+2022-05-27 11:42:41,497 DEBUG [196125] [] ------------------------------session_check_true
+2022-05-27 11:42:41,497 DEBUG [196125] [] indexAction start
+2022-05-27 11:42:41,497 DEBUG [196125] [] admin_no is 1
+2022-05-27 11:42:41,499 DEBUG [196125] []  SELECT  distinct name  ,type FROM M_TYPE  WHERE  del_flg = '0'   AND category = '010'   ORDER BY  type ASC 
+2022-05-27 11:42:41,615 DEBUG [196125] [] indexAction end
+2022-05-27 11:42:41,615 DEBUG [196125] [] QuizRegistController end
+2022-05-27 11:42:41,615 DEBUG [196125] [] finally
+2022-05-27 11:43:19,438 DEBUG [196195] [] Request URI : /eccadmin_dev/QuizRegist/back
+2022-05-27 11:43:19,444 DEBUG [196195] [] QuizRegistController start
+2022-05-27 11:43:19,444 DEBUG [196195] [] controllers/QuizRegistController.php: is exist
+2022-05-27 11:43:19,449 DEBUG [196195] [] QuizRegistForm: is exist
+2022-05-27 11:43:19,449 DEBUG [196195] [] QuizRegistForm: form value set 
+2022-05-27 11:43:19,450 DEBUG [196195] [] ------------------------------/eccadmin_dev/QuizRegist/back
+2022-05-27 11:43:19,450 DEBUG [196195] [] ------------------------------session_check_true
+2022-05-27 11:43:19,450 DEBUG [196195] [] backAction start
+2022-05-27 11:43:19,450 DEBUG [196195] [] backAction end
+2022-05-27 11:43:19,450 DEBUG [196195] [] QuizRegistController end
+2022-05-27 11:43:19,450 DEBUG [196195] [] finally
+2022-05-27 11:43:19,482 DEBUG [196195] [] Request URI : /eccadmin_dev/QuizList/Search
+2022-05-27 11:43:19,486 DEBUG [196195] [] QuizListController start
+2022-05-27 11:43:19,487 DEBUG [196195] [] controllers/QuizListController.php: is exist
+2022-05-27 11:43:19,490 DEBUG [196195] [] QuizListForm: is exist
+2022-05-27 11:43:19,490 DEBUG [196195] [] QuizListForm: form value set 
+2022-05-27 11:43:19,490 DEBUG [196195] [] ------------------------------/eccadmin_dev/QuizList/Search
+2022-05-27 11:43:19,491 DEBUG [196195] [] SearchAction start
+2022-05-27 11:43:19,491 DEBUG [196195] [] admin_no is 1
+2022-05-27 11:43:19,491 DEBUG [196195] [] org id : ecc
+2022-05-27 11:43:19,565 DEBUG [196195] [] SearchAction end
+2022-05-27 11:43:19,565 DEBUG [196195] [] QuizListController end
+2022-05-27 11:43:19,565 DEBUG [196195] [] finally
+2022-05-27 12:23:37,529 DEBUG [196529] [] Request URI : /eccadmin_dev/Login/logout
+2022-05-27 12:23:37,534 DEBUG [196529] [] LoginController start
+2022-05-27 12:23:37,534 DEBUG [196529] [] controllers/LoginController.php: is exist
+2022-05-27 12:23:37,537 DEBUG [196529] [] LoginForm: is exist
+2022-05-27 12:23:37,537 DEBUG [196529] [] LoginForm: form value set 
+2022-05-27 12:23:37,538 DEBUG [196529] [] ------------------------------/eccadmin_dev/Login/logout
+2022-05-27 12:23:37,538 DEBUG [196529] [] ------------------------------login_start_check
+2022-05-27 12:23:37,538 DEBUG [196529] [] logoutAction start
+2022-05-27 12:23:37,538 DEBUG [196529] [] logoutAction end
+2022-05-27 12:23:37,538 DEBUG [196529] [] LoginController end
+2022-05-27 12:23:37,538 DEBUG [196529] [] finally
+2022-05-27 12:23:37,566 DEBUG [196529] [] Request URI : /eccadmin_dev/Login
+2022-05-27 12:23:37,570 DEBUG [196529] [] LoginController start
+2022-05-27 12:23:37,570 DEBUG [196529] [] controllers/LoginController.php: is exist
+2022-05-27 12:23:37,572 DEBUG [196529] [] LoginForm: is exist
+2022-05-27 12:23:37,573 DEBUG [196529] [] LoginForm: form value set 
+2022-05-27 12:23:37,573 DEBUG [196529] [] ------------------------------/eccadmin_dev/Login
+2022-05-27 12:23:37,573 DEBUG [196529] [] ------------------------------login_start_check
+2022-05-27 12:23:37,573 DEBUG [196529] [] indexAction start
+2022-05-27 12:23:37,599 DEBUG [196529] [] indexAction end
+2022-05-27 12:23:37,599 DEBUG [196529] [] LoginController end
+2022-05-27 12:23:37,599 DEBUG [196529] [] finally

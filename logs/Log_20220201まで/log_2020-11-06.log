@@ -1,0 +1,95 @@
+2020-11-06 18:56:25,460 DEBUG [124912] [] Request URI : /eccadmin_dev/Login
+2020-11-06 18:56:25,493 DEBUG [124912] [] LoginController start
+2020-11-06 18:56:25,494 DEBUG [124912] [] controllers/LoginController.php: is exist
+2020-11-06 18:56:25,494 DEBUG [124912] [] LoginForm: is exist
+2020-11-06 18:56:25,494 DEBUG [124912] [] LoginForm: form value set 
+2020-11-06 18:56:25,495 DEBUG [124912] [] ------------------------------/eccadmin_dev/Login
+2020-11-06 18:56:25,495 DEBUG [124912] [] ------------------------------login_start_check
+2020-11-06 18:56:25,495 DEBUG [124912] [] indexAction start
+2020-11-06 18:56:25,578 DEBUG [124912] [] indexAction end
+2020-11-06 18:56:25,578 DEBUG [124912] [] LoginController end
+2020-11-06 18:56:25,578 DEBUG [124912] [] finally
+2020-11-06 18:56:28,353 DEBUG [125112] [] Request URI : /eccadmin_dev/Login/login
+2020-11-06 18:56:28,353 DEBUG [125112] [] LoginController start
+2020-11-06 18:56:28,354 DEBUG [125112] [] controllers/LoginController.php: is exist
+2020-11-06 18:56:28,354 DEBUG [125112] [] LoginForm: is exist
+2020-11-06 18:56:28,354 DEBUG [125112] [] LoginForm: form value set 
+2020-11-06 18:56:28,355 DEBUG [125112] [] ------------------------------/eccadmin_dev/Login/login
+2020-11-06 18:56:28,355 DEBUG [125112] [] ------------------------------login_start_check
+2020-11-06 18:56:28,355 DEBUG [125112] [] loginAction start
+2020-11-06 18:56:28,656 DEBUG [125112] [] loginAction end
+2020-11-06 18:56:28,656 DEBUG [125112] [] LoginController end
+2020-11-06 18:56:28,657 DEBUG [125112] [] finally
+2020-11-06 18:56:28,674 DEBUG [125112] [] Request URI : /eccadmin_dev/Menu
+2020-11-06 18:56:28,675 DEBUG [125112] [] MenuController start
+2020-11-06 18:56:28,675 DEBUG [125112] [] controllers/MenuController.php: is exist
+2020-11-06 18:56:28,677 DEBUG [125112] [] MenuForm: is exist
+2020-11-06 18:56:28,677 DEBUG [125112] [] MenuForm: form value set 
+2020-11-06 18:56:28,677 DEBUG [125112] [] ------------------------------/eccadmin_dev/Menu
+2020-11-06 18:56:28,677 DEBUG [125112] [] ------------------------------login_start_check
+2020-11-06 18:56:28,677 DEBUG [125112] [] indexAction start
+2020-11-06 18:56:28,677 DEBUG [125112] [] admin_no is 1
+2020-11-06 18:56:28,745 DEBUG [125112] [] indexAction end
+2020-11-06 18:56:28,745 DEBUG [125112] [] MenuController end
+2020-11-06 18:56:28,745 DEBUG [125112] [] finally
+2020-11-06 18:56:32,397 DEBUG [123471] [] Request URI : /eccadmin_dev/CourseContractList
+2020-11-06 18:56:32,397 DEBUG [123471] [] CourseContractListController start
+2020-11-06 18:56:32,406 DEBUG [123471] [] controllers/CourseContractListController.php: is exist
+2020-11-06 18:56:32,443 DEBUG [123471] [] CourseContractListForm: is exist
+2020-11-06 18:56:32,456 DEBUG [123471] [] CourseContractListForm: form value set 
+2020-11-06 18:56:32,457 DEBUG [123471] [] ------------------------------/eccadmin_dev/CourseContractList
+2020-11-06 18:56:32,457 DEBUG [123471] [] indexAction start
+2020-11-06 18:56:32,457 DEBUG [123471] [] admin_no is 1
+2020-11-06 18:56:32,680 DEBUG [123471] [] indexAction end
+2020-11-06 18:56:32,680 DEBUG [123471] [] CourseContractListController end
+2020-11-06 18:56:32,680 DEBUG [123471] [] finally
+2020-11-06 18:56:34,515 DEBUG [124912] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2020-11-06 18:56:34,515 DEBUG [124912] [] CourseContractRegistController start
+2020-11-06 18:56:34,516 DEBUG [124912] [] controllers/CourseContractRegistController.php: is exist
+2020-11-06 18:56:34,548 DEBUG [124912] [] CourseContractRegistForm: is exist
+2020-11-06 18:56:34,553 DEBUG [124912] [] CourseContractRegistForm: form value set 
+2020-11-06 18:56:34,553 DEBUG [124912] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2020-11-06 18:56:34,554 DEBUG [124912] [] ------------------------------session_check_true
+2020-11-06 18:56:34,554 DEBUG [124912] [] indexAction start
+2020-11-06 18:56:34,554 DEBUG [124912] [] admin_no is 1
+2020-11-06 18:56:34,623 DEBUG [124912] [] indexAction end
+2020-11-06 18:56:34,623 DEBUG [124912] [] CourseContractRegistController end
+2020-11-06 18:56:34,623 DEBUG [124912] [] finally
+2020-11-06 18:57:06,358 DEBUG [125112] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:06,359 DEBUG [125112] [] CourseContractRegistController start
+2020-11-06 18:57:06,359 DEBUG [125112] [] controllers/CourseContractRegistController.php: is exist
+2020-11-06 18:57:06,359 DEBUG [125112] [] CourseContractRegistForm: is exist
+2020-11-06 18:57:06,359 DEBUG [125112] [] CourseContractRegistForm: form value set 
+2020-11-06 18:57:06,360 DEBUG [125112] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:06,360 DEBUG [125112] [] ------------------------------session_check_true
+2020-11-06 18:57:06,360 DEBUG [125112] [] saveAction start
+2020-11-06 18:57:06,360 DEBUG [125112] [] admin_no is 1
+2020-11-06 18:57:06,425 DEBUG [125112] [] saveAction end
+2020-11-06 18:57:06,425 DEBUG [125112] [] CourseContractRegistController end
+2020-11-06 18:57:06,425 DEBUG [125112] [] finally
+2020-11-06 18:57:14,004 DEBUG [124912] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:14,005 DEBUG [124912] [] CourseContractRegistController start
+2020-11-06 18:57:14,005 DEBUG [124912] [] controllers/CourseContractRegistController.php: is exist
+2020-11-06 18:57:14,005 DEBUG [124912] [] CourseContractRegistForm: is exist
+2020-11-06 18:57:14,006 DEBUG [124912] [] CourseContractRegistForm: form value set 
+2020-11-06 18:57:14,006 DEBUG [124912] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:14,006 DEBUG [124912] [] ------------------------------session_check_true
+2020-11-06 18:57:14,006 DEBUG [124912] [] saveAction start
+2020-11-06 18:57:14,006 DEBUG [124912] [] admin_no is 1
+2020-11-06 18:57:14,071 DEBUG [124912] [] saveAction end
+2020-11-06 18:57:14,071 DEBUG [124912] [] CourseContractRegistController end
+2020-11-06 18:57:14,071 DEBUG [124912] [] finally
+2020-11-06 18:57:17,372 DEBUG [124912] [] Request URI : /eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:17,372 DEBUG [124912] [] CourseContractRegistController start
+2020-11-06 18:57:17,372 DEBUG [124912] [] controllers/CourseContractRegistController.php: is exist
+2020-11-06 18:57:17,373 DEBUG [124912] [] CourseContractRegistForm: is exist
+2020-11-06 18:57:17,373 DEBUG [124912] [] CourseContractRegistForm: form value set 
+2020-11-06 18:57:17,373 DEBUG [124912] [] ------------------------------/eccadmin_dev/CourseContractRegist/save
+2020-11-06 18:57:17,373 DEBUG [124912] [] ------------------------------session_check_true
+2020-11-06 18:57:17,374 DEBUG [124912] [] saveAction start
+2020-11-06 18:57:17,374 DEBUG [124912] [] admin_no is 1
+2020-11-06 18:57:17,377 DEBUG [124912] [] offer_no
+2020-11-06 18:57:17,383 DEBUG [124912] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2020-11-06 18:57:17,451 DEBUG [124912] [] saveAction end
+2020-11-06 18:57:17,451 DEBUG [124912] [] CourseContractRegistController end
+2020-11-06 18:57:17,451 DEBUG [124912] [] finally

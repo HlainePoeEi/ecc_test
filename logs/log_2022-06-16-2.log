@@ -1,0 +1,1630 @@
+2022-06-16 17:26:05,543 DEBUG [90342] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 17:26:05,543 DEBUG [90342] [] ExcelContractListController start
+2022-06-16 17:26:05,543 DEBUG [90342] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:26:05,552 DEBUG [90342] [] ExcelContractListForm: is exist
+2022-06-16 17:26:05,552 DEBUG [90342] [] ExcelContractListForm: form value set 
+2022-06-16 17:26:05,553 DEBUG [90342] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 17:26:05,553 DEBUG [90342] [] indexAction start
+2022-06-16 17:26:05,553 DEBUG [90342] [] admin_no is 1
+2022-06-16 17:26:05,630 DEBUG [90342] [] indexAction end
+2022-06-16 17:26:05,630 DEBUG [90342] [] ExcelContractListController end
+2022-06-16 17:26:05,630 DEBUG [90342] [] finally
+2022-06-16 17:26:10,612 DEBUG [90342] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 17:26:10,612 DEBUG [90342] [] ExcelContractListController start
+2022-06-16 17:26:10,612 DEBUG [90342] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:26:10,621 DEBUG [90342] [] ExcelContractListForm: is exist
+2022-06-16 17:26:10,621 DEBUG [90342] [] ExcelContractListForm: form value set 
+2022-06-16 17:26:10,622 DEBUG [90342] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 17:26:10,622 DEBUG [90342] [] showAction start
+2022-06-16 17:26:10,622 DEBUG [90342] [] admin_no is 1
+2022-06-16 17:26:10,623 DEBUG [90342] [] showAction end
+2022-06-16 17:26:10,623 DEBUG [90342] [] ExcelContractListController end
+2022-06-16 17:26:10,623 DEBUG [90342] [] finally
+2022-06-16 17:26:10,640 DEBUG [90342] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:26:10,641 DEBUG [90342] [] ExcelContractListController start
+2022-06-16 17:26:10,641 DEBUG [90342] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:26:10,648 DEBUG [90342] [] ExcelContractListForm: is exist
+2022-06-16 17:26:10,649 DEBUG [90342] [] ExcelContractListForm: form value set 
+2022-06-16 17:26:10,649 DEBUG [90342] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:26:10,649 DEBUG [90342] [] viewExcelListAction start
+2022-06-16 17:26:10,908 DEBUG [90342] [] K
+2022-06-16 17:26:10,908 DEBUG [90342] [] 1
+2022-06-16 17:26:10,908 DEBUG [90342] [] 1
+2022-06-16 17:26:10,957 DEBUG [90342] [] viewExcelListAction end
+2022-06-16 17:26:10,957 DEBUG [90342] [] ExcelContractListController end
+2022-06-16 17:26:10,957 DEBUG [90342] [] finally
+2022-06-16 17:26:12,506 DEBUG [90342] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:26:12,506 DEBUG [90342] [] ExcelContractListController start
+2022-06-16 17:26:12,507 DEBUG [90342] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:26:12,515 DEBUG [90342] [] ExcelContractListForm: is exist
+2022-06-16 17:26:12,515 DEBUG [90342] [] ExcelContractListForm: form value set 
+2022-06-16 17:26:12,516 DEBUG [90342] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:26:12,516 DEBUG [90342] [] isValidAction start
+2022-06-16 17:26:12,516 DEBUG [90342] [] admin_no is 1
+2022-06-16 17:26:12,516 DEBUG [90342] [] admin_no is 1
+2022-06-16 17:26:12,521 DEBUG [90342] [] cdList
+2022-06-16 17:26:12,521 DEBUG [90342] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 17:26:12,521 DEBUG [90342] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 17:26:12,521 DEBUG [90342] [] org no is 1
+2022-06-16 17:26:12,521 DEBUG [90342] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:26:12,522 DEBUG [90342] [] コース組織情報チェック　OK
+2022-06-16 17:26:12,523 DEBUG [90342] [] offer_no
+2022-06-16 17:26:12,525 DEBUG [90342] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:26:12,526 DEBUG [90342] [] コース組織情報登録　OK
+2022-06-16 17:26:12,527 DEBUG [90342] [] INSERT INTO  T_COURSE_ORG_CONF (offer_no,org_no,course_id,fb_show_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:fb_show_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:26:12,527 DEBUG [90342] [] コース組織設定登録　OK
+2022-06-16 17:26:12,531 DEBUG [90342] [] 受講者チェック　OK
+2022-06-16 17:26:12,531 DEBUG [90342] [] course_student_dto
+2022-06-16 17:26:12,531 DEBUG [90342] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:26:12,532 DEBUG [90342] [] course_detail_student_dto
+2022-06-16 17:26:12,532 DEBUG [90342] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:26:12,532 DEBUG [90342] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:26:12,533 DEBUG [90342] [] コース組織情報チェック　OK
+2022-06-16 17:26:12,534 DEBUG [90342] [] offer_no
+2022-06-16 17:26:12,537 DEBUG [90342] [] コース組織情報登録　OK
+2022-06-16 17:26:12,537 DEBUG [90342] [] コース組織設定登録　OK
+2022-06-16 17:26:12,540 DEBUG [90342] [] 受講者チェック　OK
+2022-06-16 17:26:12,541 DEBUG [90342] [] course_detail_student_dto
+2022-06-16 17:26:12,541 DEBUG [90342] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:26:12,541 DEBUG [90342] [] isValidAction end
+2022-06-16 17:26:12,542 DEBUG [90342] [] ExcelContractListController end
+2022-06-16 17:26:12,554 DEBUG [90342] [] finally
+2022-06-16 17:26:12,572 DEBUG [90342] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 17:26:12,573 DEBUG [90342] [] ExcelContractListController start
+2022-06-16 17:26:12,573 DEBUG [90342] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:26:12,581 DEBUG [90342] [] ExcelContractListForm: is exist
+2022-06-16 17:26:12,581 DEBUG [90342] [] ExcelContractListForm: form value set 
+2022-06-16 17:26:12,582 DEBUG [90342] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 17:26:12,582 DEBUG [90342] [] indexAction start
+2022-06-16 17:26:12,582 DEBUG [90342] [] admin_no is 1
+2022-06-16 17:26:12,661 DEBUG [90342] [] indexAction end
+2022-06-16 17:26:12,661 DEBUG [90342] [] ExcelContractListController end
+2022-06-16 17:26:12,662 DEBUG [90342] [] finally
+2022-06-16 17:30:25,263 DEBUG [90495] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 17:30:25,264 DEBUG [90495] [] ExcelContractListController start
+2022-06-16 17:30:25,264 DEBUG [90495] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:30:25,272 DEBUG [90495] [] ExcelContractListForm: is exist
+2022-06-16 17:30:25,273 DEBUG [90495] [] ExcelContractListForm: form value set 
+2022-06-16 17:30:25,273 DEBUG [90495] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 17:30:25,273 DEBUG [90495] [] showAction start
+2022-06-16 17:30:25,273 DEBUG [90495] [] admin_no is 1
+2022-06-16 17:30:25,274 DEBUG [90495] [] showAction end
+2022-06-16 17:30:25,274 DEBUG [90495] [] ExcelContractListController end
+2022-06-16 17:30:25,274 DEBUG [90495] [] finally
+2022-06-16 17:30:25,301 DEBUG [90495] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:30:25,301 DEBUG [90495] [] ExcelContractListController start
+2022-06-16 17:30:25,301 DEBUG [90495] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:30:25,310 DEBUG [90495] [] ExcelContractListForm: is exist
+2022-06-16 17:30:25,311 DEBUG [90495] [] ExcelContractListForm: form value set 
+2022-06-16 17:30:25,311 DEBUG [90495] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:30:25,311 DEBUG [90495] [] viewExcelListAction start
+2022-06-16 17:30:25,582 DEBUG [90495] [] K
+2022-06-16 17:30:25,582 DEBUG [90495] [] 1
+2022-06-16 17:30:25,582 DEBUG [90495] [] 1
+2022-06-16 17:30:25,670 DEBUG [90495] [] viewExcelListAction end
+2022-06-16 17:30:25,671 DEBUG [90495] [] ExcelContractListController end
+2022-06-16 17:30:25,671 DEBUG [90495] [] finally
+2022-06-16 17:30:27,239 DEBUG [90495] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:30:27,240 DEBUG [90495] [] ExcelContractListController start
+2022-06-16 17:30:27,240 DEBUG [90495] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:30:27,249 DEBUG [90495] [] ExcelContractListForm: is exist
+2022-06-16 17:30:27,249 DEBUG [90495] [] ExcelContractListForm: form value set 
+2022-06-16 17:30:27,250 DEBUG [90495] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:30:27,250 DEBUG [90495] [] isValidAction start
+2022-06-16 17:30:27,250 DEBUG [90495] [] admin_no is 1
+2022-06-16 17:30:27,250 DEBUG [90495] [] admin_no is 1
+2022-06-16 17:30:27,254 DEBUG [90495] [] cdList
+2022-06-16 17:30:27,254 DEBUG [90495] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 17:30:27,254 DEBUG [90495] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 17:30:27,255 DEBUG [90495] [] org no is 1
+2022-06-16 17:30:27,255 DEBUG [90495] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:30:27,256 DEBUG [90495] [] コース組織情報チェック　OK
+2022-06-16 17:30:27,257 DEBUG [90495] [] offer_no
+2022-06-16 17:30:27,262 DEBUG [90495] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:30:27,263 DEBUG [90495] [] コース組織情報登録　OK
+2022-06-16 17:30:27,263 DEBUG [90495] [] INSERT INTO  T_COURSE_ORG_CONF (offer_no,org_no,course_id,fb_show_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:fb_show_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:30:27,264 DEBUG [90495] [] コース組織設定登録　OK
+2022-06-16 17:30:27,267 DEBUG [90495] [] 受講者チェック　OK
+2022-06-16 17:30:27,268 DEBUG [90495] [] course_student_dto
+2022-06-16 17:30:27,268 DEBUG [90495] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:30:27,269 DEBUG [90495] [] course_detail_student_dto
+2022-06-16 17:30:27,269 DEBUG [90495] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:30:27,269 DEBUG [90495] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:30:27,270 DEBUG [90495] [] コース組織情報チェック　OK
+2022-06-16 17:30:27,270 DEBUG [90495] [] コース組織情報登録　OK
+2022-06-16 17:30:27,271 DEBUG [90495] [] コース組織設定登録　OK
+2022-06-16 17:30:27,274 DEBUG [90495] [] 受講者チェック　OK
+2022-06-16 17:30:27,274 DEBUG [90495] [] course_student_dto
+2022-06-16 17:30:27,275 DEBUG [90495] [] INSERT INTO  T_COURSE_STUDENT (org_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:30:27,275 DEBUG [90495] [] rollback
+2022-06-16 17:30:27,276 ERROR [90495] [] 予期しない例外が発生しました。
+exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1364 Field 'offer_no' doesn't have a default value' in /var/www/html/eccadmin_dev/dao/BaseDao.php:354
+Stack trace:
+#0 /var/www/html/eccadmin_dev/dao/BaseDao.php(354): PDOStatement->execute()
+#1 /var/www/html/eccadmin_dev/dao/T_Course_StudentDao.php(157): BaseDao->insertWithPdo(Object(T_Course_StudentDto), Object(PDO))
+#2 /var/www/html/eccadmin_dev/service/CourseStudentService.php(37): T_Course_StudentDao->saveCourseStudent(Object(T_Course_StudentDto), Object(PDO))
+#3 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(330): CourseStudentService->registerCourseStudentData(Object(T_Course_StudentDto))
+#4 /var/www/html/eccadmin_dev/controllers/ExcelContractListController.php(444): ExcelContractListController->saveAction()
+#5 /var/www/html/eccadmin_dev/fw/Dispatcher.php(127): ExcelContractListController->isValidAction()
+#6 /var/www/html/eccadmin_dev/index.php(31): Dispatcher->dispatch()
+#7 {main}
+2022-06-16 17:30:27,276 DEBUG [90495] [] finally
+2022-06-16 17:30:27,299 DEBUG [90495] [] Request URI : /eccadmin_dev/Error/disp
+2022-06-16 17:30:27,300 DEBUG [90495] [] ErrorController start
+2022-06-16 17:30:27,300 DEBUG [90495] [] controllers/ErrorController.php: is exist
+2022-06-16 17:30:27,300 DEBUG [90495] [] ErrorForm: is exist
+2022-06-16 17:30:27,300 DEBUG [90495] [] ErrorForm: form value set 
+2022-06-16 17:30:27,301 DEBUG [90495] [] ------------------------------/eccadmin_dev/Error/disp
+2022-06-16 17:30:27,301 DEBUG [90495] [] ------------------------------login_start_check
+2022-06-16 17:30:27,301 DEBUG [90495] [] dispAction start
+2022-06-16 17:30:27,312 DEBUG [90495] [] dispAction end
+2022-06-16 17:30:27,312 DEBUG [90495] [] ErrorController end
+2022-06-16 17:30:27,312 DEBUG [90495] [] finally
+2022-06-16 17:34:15,305 DEBUG [90401] [] Request URI : /eccadmin_dev/Login
+2022-06-16 17:34:15,306 DEBUG [90401] [] LoginController start
+2022-06-16 17:34:15,306 DEBUG [90401] [] controllers/LoginController.php: is exist
+2022-06-16 17:34:15,307 DEBUG [90401] [] LoginForm: is exist
+2022-06-16 17:34:15,307 DEBUG [90401] [] LoginForm: form value set 
+2022-06-16 17:34:15,307 DEBUG [90401] [] ------------------------------/eccadmin_dev/Login
+2022-06-16 17:34:15,307 DEBUG [90401] [] ------------------------------login_start_check
+2022-06-16 17:34:15,307 DEBUG [90401] [] indexAction start
+2022-06-16 17:34:15,321 DEBUG [90401] [] indexAction end
+2022-06-16 17:34:15,321 DEBUG [90401] [] LoginController end
+2022-06-16 17:34:15,322 DEBUG [90401] [] finally
+2022-06-16 17:34:17,641 DEBUG [90401] [] Request URI : /eccadmin_dev/Login/login
+2022-06-16 17:34:17,641 DEBUG [90401] [] LoginController start
+2022-06-16 17:34:17,641 DEBUG [90401] [] controllers/LoginController.php: is exist
+2022-06-16 17:34:17,642 DEBUG [90401] [] LoginForm: is exist
+2022-06-16 17:34:17,642 DEBUG [90401] [] LoginForm: form value set 
+2022-06-16 17:34:17,643 DEBUG [90401] [] ------------------------------/eccadmin_dev/Login/login
+2022-06-16 17:34:17,643 DEBUG [90401] [] ------------------------------login_start_check
+2022-06-16 17:34:17,643 DEBUG [90401] [] loginAction start
+2022-06-16 17:34:17,941 DEBUG [90401] [] loginAction end
+2022-06-16 17:34:17,941 DEBUG [90401] [] LoginController end
+2022-06-16 17:34:17,941 DEBUG [90401] [] finally
+2022-06-16 17:34:17,959 DEBUG [90401] [] Request URI : /eccadmin_dev/Menu
+2022-06-16 17:34:17,959 DEBUG [90401] [] MenuController start
+2022-06-16 17:34:17,959 DEBUG [90401] [] controllers/MenuController.php: is exist
+2022-06-16 17:34:17,959 DEBUG [90401] [] MenuForm: is exist
+2022-06-16 17:34:17,959 DEBUG [90401] [] MenuForm: form value set 
+2022-06-16 17:34:17,960 DEBUG [90401] [] ------------------------------/eccadmin_dev/Menu
+2022-06-16 17:34:17,960 DEBUG [90401] [] ------------------------------login_start_check
+2022-06-16 17:34:17,960 DEBUG [90401] [] indexAction start
+2022-06-16 17:34:17,960 DEBUG [90401] [] admin_no is 1
+2022-06-16 17:34:17,986 DEBUG [90401] [] indexAction end
+2022-06-16 17:34:17,987 DEBUG [90401] [] MenuController end
+2022-06-16 17:34:17,987 DEBUG [90401] [] finally
+2022-06-16 17:34:20,862 DEBUG [90401] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 17:34:20,862 DEBUG [90401] [] ExcelContractListController start
+2022-06-16 17:34:20,863 DEBUG [90401] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:34:20,871 DEBUG [90401] [] ExcelContractListForm: is exist
+2022-06-16 17:34:20,871 DEBUG [90401] [] ExcelContractListForm: form value set 
+2022-06-16 17:34:20,872 DEBUG [90401] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 17:34:20,872 DEBUG [90401] [] indexAction start
+2022-06-16 17:34:20,872 DEBUG [90401] [] admin_no is 1
+2022-06-16 17:34:20,951 DEBUG [90401] [] indexAction end
+2022-06-16 17:34:20,951 DEBUG [90401] [] ExcelContractListController end
+2022-06-16 17:34:20,951 DEBUG [90401] [] finally
+2022-06-16 17:34:25,148 DEBUG [90637] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 17:34:25,152 DEBUG [90637] [] ExcelContractListController start
+2022-06-16 17:34:25,152 DEBUG [90637] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:34:25,161 DEBUG [90637] [] ExcelContractListForm: is exist
+2022-06-16 17:34:25,162 DEBUG [90637] [] ExcelContractListForm: form value set 
+2022-06-16 17:34:25,162 DEBUG [90637] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 17:34:25,162 DEBUG [90637] [] showAction start
+2022-06-16 17:34:25,162 DEBUG [90637] [] admin_no is 1
+2022-06-16 17:34:25,163 DEBUG [90637] [] showAction end
+2022-06-16 17:34:25,163 DEBUG [90637] [] ExcelContractListController end
+2022-06-16 17:34:25,163 DEBUG [90637] [] finally
+2022-06-16 17:34:25,181 DEBUG [90637] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:34:25,181 DEBUG [90637] [] ExcelContractListController start
+2022-06-16 17:34:25,181 DEBUG [90637] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:34:25,189 DEBUG [90637] [] ExcelContractListForm: is exist
+2022-06-16 17:34:25,189 DEBUG [90637] [] ExcelContractListForm: form value set 
+2022-06-16 17:34:25,189 DEBUG [90637] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:34:25,190 DEBUG [90637] [] viewExcelListAction start
+2022-06-16 17:34:25,454 DEBUG [90637] [] K
+2022-06-16 17:34:25,455 DEBUG [90637] [] 1
+2022-06-16 17:34:25,455 DEBUG [90637] [] 1
+2022-06-16 17:34:25,505 DEBUG [90637] [] viewExcelListAction end
+2022-06-16 17:34:25,505 DEBUG [90637] [] ExcelContractListController end
+2022-06-16 17:34:25,505 DEBUG [90637] [] finally
+2022-06-16 17:34:26,979 DEBUG [90637] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:34:26,980 DEBUG [90637] [] ExcelContractListController start
+2022-06-16 17:34:26,980 DEBUG [90637] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:34:26,989 DEBUG [90637] [] ExcelContractListForm: is exist
+2022-06-16 17:34:26,989 DEBUG [90637] [] ExcelContractListForm: form value set 
+2022-06-16 17:34:26,990 DEBUG [90637] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:34:26,990 DEBUG [90637] [] isValidAction start
+2022-06-16 17:34:26,990 DEBUG [90637] [] admin_no is 1
+2022-06-16 17:34:26,990 DEBUG [90637] [] admin_no is 1
+2022-06-16 17:34:26,994 DEBUG [90637] [] cdList
+2022-06-16 17:34:26,994 DEBUG [90637] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 17:34:26,994 DEBUG [90637] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 17:34:26,995 DEBUG [90637] [] org no is 1
+2022-06-16 17:34:26,995 DEBUG [90637] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:34:26,996 DEBUG [90637] [] コース組織情報チェック　OK
+2022-06-16 17:34:26,997 DEBUG [90637] [] offer_no
+2022-06-16 17:34:26,999 DEBUG [90637] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:34:26,999 DEBUG [90637] [] コース組織情報登録　OK
+2022-06-16 17:34:27,000 DEBUG [90637] [] INSERT INTO  T_COURSE_ORG_CONF (offer_no,org_no,course_id,fb_show_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:fb_show_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:34:27,000 DEBUG [90637] [] コース組織設定登録　OK
+2022-06-16 17:34:27,004 DEBUG [90637] [] 受講者チェック　OK
+2022-06-16 17:34:27,004 DEBUG [90637] [] course_student_dto
+2022-06-16 17:34:27,005 DEBUG [90637] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:34:27,005 DEBUG [90637] [] T_Course_Detail_StudentDto Object
+(
+    [org_no] => 1
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [offer_no] => 296
+    [student_no] => 1
+    [course_id] => 5
+    [course_name] => 
+    [remarks] => 
+    [course_detail_no] => 8
+    [course_detail_name] => 
+    [course_detail_romaji] => 
+    [disp_no] => 
+    [status] => 
+    [course_level] => 
+    [test_kbn] => 
+    [student_name] => 
+    [student_name_romaji] => 
+    [login_id] => 
+    [start_period] => 2022/06/16 00:00:00
+    [end_period] => 2022/08/29 23:59:59
+    [stu_course_start_period] => 
+    [stu_course_end_period] => 
+    [answer_dt] => 
+    [del_flg] => 0
+    [creater_id] => 1
+    [create_dt] => 2022/06/16 17:34:27
+    [updater_id] => 1
+    [update_dt] => 2022/06/16 17:34:27
+    [course_start_period] => 
+    [course_end_period] => 
+)
+
+2022-06-16 17:34:27,006 DEBUG [90637] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:34:27,006 DEBUG [90637] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:34:27,007 DEBUG [90637] [] コース組織情報チェック　OK
+2022-06-16 17:34:27,007 DEBUG [90637] [] コース組織情報登録　OK
+2022-06-16 17:34:27,007 DEBUG [90637] [] コース組織設定登録　OK
+2022-06-16 17:34:27,011 DEBUG [90637] [] 受講者チェック　OK
+2022-06-16 17:34:27,011 DEBUG [90637] [] course_student_dto
+2022-06-16 17:34:27,011 DEBUG [90637] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:34:27,012 DEBUG [90637] [] T_Course_Detail_StudentDto Object
+(
+    [org_no] => 1
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [offer_no] => 296
+    [student_no] => 1075
+    [course_id] => 5
+    [course_name] => 
+    [remarks] => 
+    [course_detail_no] => 8
+    [course_detail_name] => 
+    [course_detail_romaji] => 
+    [disp_no] => 
+    [status] => 
+    [course_level] => 
+    [test_kbn] => 
+    [student_name] => 
+    [student_name_romaji] => 
+    [login_id] => 
+    [start_period] => 2022/06/16 00:00:00
+    [end_period] => 2022/08/29 23:59:59
+    [stu_course_start_period] => 
+    [stu_course_end_period] => 
+    [answer_dt] => 
+    [del_flg] => 0
+    [creater_id] => 1
+    [create_dt] => 2022/06/16 17:34:27
+    [updater_id] => 1
+    [update_dt] => 2022/06/16 17:34:27
+    [course_start_period] => 
+    [course_end_period] => 
+)
+
+2022-06-16 17:34:27,012 DEBUG [90637] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:34:27,013 DEBUG [90637] [] isValidAction end
+2022-06-16 17:34:27,013 DEBUG [90637] [] ExcelContractListController end
+2022-06-16 17:34:27,013 DEBUG [90637] [] finally
+2022-06-16 17:34:27,031 DEBUG [90637] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 17:34:27,031 DEBUG [90637] [] ExcelContractListController start
+2022-06-16 17:34:27,031 DEBUG [90637] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:34:27,039 DEBUG [90637] [] ExcelContractListForm: is exist
+2022-06-16 17:34:27,040 DEBUG [90637] [] ExcelContractListForm: form value set 
+2022-06-16 17:34:27,040 DEBUG [90637] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 17:34:27,040 DEBUG [90637] [] indexAction start
+2022-06-16 17:34:27,040 DEBUG [90637] [] admin_no is 1
+2022-06-16 17:34:27,120 DEBUG [90637] [] indexAction end
+2022-06-16 17:34:27,120 DEBUG [90637] [] ExcelContractListController end
+2022-06-16 17:34:27,120 DEBUG [90637] [] finally
+2022-06-16 17:37:31,929 DEBUG [90673] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 17:37:31,933 DEBUG [90673] [] ExcelContractListController start
+2022-06-16 17:37:31,933 DEBUG [90673] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:37:31,942 DEBUG [90673] [] ExcelContractListForm: is exist
+2022-06-16 17:37:31,943 DEBUG [90673] [] ExcelContractListForm: form value set 
+2022-06-16 17:37:31,943 DEBUG [90673] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 17:37:31,943 DEBUG [90673] [] showAction start
+2022-06-16 17:37:31,943 DEBUG [90673] [] admin_no is 1
+2022-06-16 17:37:31,944 DEBUG [90673] [] showAction end
+2022-06-16 17:37:31,944 DEBUG [90673] [] ExcelContractListController end
+2022-06-16 17:37:31,944 DEBUG [90673] [] finally
+2022-06-16 17:37:31,966 DEBUG [90673] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:37:31,966 DEBUG [90673] [] ExcelContractListController start
+2022-06-16 17:37:31,967 DEBUG [90673] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:37:31,974 DEBUG [90673] [] ExcelContractListForm: is exist
+2022-06-16 17:37:31,974 DEBUG [90673] [] ExcelContractListForm: form value set 
+2022-06-16 17:37:31,974 DEBUG [90673] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 17:37:31,975 DEBUG [90673] [] viewExcelListAction start
+2022-06-16 17:37:32,240 DEBUG [90673] [] K
+2022-06-16 17:37:32,240 DEBUG [90673] [] 1
+2022-06-16 17:37:32,240 DEBUG [90673] [] 1
+2022-06-16 17:37:32,293 DEBUG [90673] [] viewExcelListAction end
+2022-06-16 17:37:32,293 DEBUG [90673] [] ExcelContractListController end
+2022-06-16 17:37:32,293 DEBUG [90673] [] finally
+2022-06-16 17:37:34,055 DEBUG [90673] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:37:34,056 DEBUG [90673] [] ExcelContractListController start
+2022-06-16 17:37:34,056 DEBUG [90673] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:37:34,065 DEBUG [90673] [] ExcelContractListForm: is exist
+2022-06-16 17:37:34,065 DEBUG [90673] [] ExcelContractListForm: form value set 
+2022-06-16 17:37:34,065 DEBUG [90673] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 17:37:34,066 DEBUG [90673] [] isValidAction start
+2022-06-16 17:37:34,066 DEBUG [90673] [] admin_no is 1
+2022-06-16 17:37:34,066 DEBUG [90673] [] admin_no is 1
+2022-06-16 17:37:34,070 DEBUG [90673] [] cdList
+2022-06-16 17:37:34,070 DEBUG [90673] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 17:37:34,070 DEBUG [90673] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 17:37:34,070 DEBUG [90673] [] org no is 1
+2022-06-16 17:37:34,070 DEBUG [90673] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:37:34,071 DEBUG [90673] [] コース組織情報チェック　OK
+2022-06-16 17:37:34,072 DEBUG [90673] [] offer_no
+2022-06-16 17:37:34,075 DEBUG [90673] [] INSERT INTO  T_COURSE_ORG (offer_no,org_no,course_id,start_period,end_period,remarks,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:start_period,:end_period,:remarks,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:37:34,075 DEBUG [90673] [] コース組織情報登録　OK
+2022-06-16 17:37:34,076 DEBUG [90673] [] INSERT INTO  T_COURSE_ORG_CONF (offer_no,org_no,course_id,fb_show_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :offer_no,:org_no,:course_id,:fb_show_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2022-06-16 17:37:34,077 DEBUG [90673] [] コース組織設定登録　OK
+2022-06-16 17:37:34,080 DEBUG [90673] [] 受講者チェック　OK
+2022-06-16 17:37:34,080 DEBUG [90673] [] course_student_dto
+2022-06-16 17:37:34,081 DEBUG [90673] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:37:34,081 DEBUG [90673] [] T_Course_Detail_StudentDto Object
+(
+    [org_no] => 1
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [offer_no] => 297
+    [student_no] => 1
+    [course_id] => 5
+    [course_name] => 
+    [remarks] => 
+    [course_detail_no] => 8
+    [course_detail_name] => 
+    [course_detail_romaji] => 
+    [disp_no] => 
+    [status] => 
+    [course_level] => 
+    [test_kbn] => 
+    [student_name] => 
+    [student_name_romaji] => 
+    [login_id] => 
+    [start_period] => 2022/06/16 00:00:00
+    [end_period] => 2022/08/29 23:59:59
+    [stu_course_start_period] => 
+    [stu_course_end_period] => 
+    [answer_dt] => 
+    [del_flg] => 0
+    [creater_id] => 1
+    [create_dt] => 2022/06/16 17:37:34
+    [updater_id] => 1
+    [update_dt] => 2022/06/16 17:37:34
+    [course_start_period] => 
+    [course_end_period] => 
+)
+
+2022-06-16 17:37:34,082 DEBUG [90673] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:37:34,082 DEBUG [90673] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示しない
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 17:37:34,083 DEBUG [90673] [] コース組織情報チェック　OK
+2022-06-16 17:37:34,083 DEBUG [90673] [] コース組織情報登録　OK
+2022-06-16 17:37:34,083 DEBUG [90673] [] コース組織設定登録　OK
+2022-06-16 17:37:34,087 DEBUG [90673] [] 受講者チェック　OK
+2022-06-16 17:37:34,087 DEBUG [90673] [] course_student_dto
+2022-06-16 17:37:34,087 DEBUG [90673] [] INSERT INTO  T_COURSE_STUDENT (org_no,offer_no,course_id,student_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:course_id,:student_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:37:34,088 DEBUG [90673] [] T_Course_Detail_StudentDto Object
+(
+    [org_no] => 1
+    [org_id] => 
+    [org_name] => 
+    [org_name_official] => 
+    [offer_no] => 297
+    [student_no] => 1075
+    [course_id] => 5
+    [course_name] => 
+    [remarks] => 
+    [course_detail_no] => 8
+    [course_detail_name] => 
+    [course_detail_romaji] => 
+    [disp_no] => 
+    [status] => 
+    [course_level] => 
+    [test_kbn] => 
+    [student_name] => 
+    [student_name_romaji] => 
+    [login_id] => 
+    [start_period] => 2022/06/16 00:00:00
+    [end_period] => 2022/08/29 23:59:59
+    [stu_course_start_period] => 
+    [stu_course_end_period] => 
+    [answer_dt] => 
+    [del_flg] => 0
+    [creater_id] => 1
+    [create_dt] => 2022/06/16 17:37:34
+    [updater_id] => 1
+    [update_dt] => 2022/06/16 17:37:34
+    [course_start_period] => 
+    [course_end_period] => 
+)
+
+2022-06-16 17:37:34,088 DEBUG [90673] [] INSERT INTO  T_COURSE_DETAIL_STUDENT (org_no,offer_no,student_no,course_id,course_detail_no,start_period,end_period,del_flg,creater_id,create_dt,updater_id,update_dt ) VALUES ( :org_no,:offer_no,:student_no,:course_id,:course_detail_no,:start_period,:end_period,:del_flg,:creater_id,:create_dt,:updater_id,:update_dt );
+2022-06-16 17:37:34,088 DEBUG [90673] [] isValidAction end
+2022-06-16 17:37:34,089 DEBUG [90673] [] ExcelContractListController end
+2022-06-16 17:37:34,089 DEBUG [90673] [] finally
+2022-06-16 17:37:34,110 DEBUG [90673] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 17:37:34,111 DEBUG [90673] [] ExcelContractListController start
+2022-06-16 17:37:34,111 DEBUG [90673] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 17:37:34,117 DEBUG [90673] [] ExcelContractListForm: is exist
+2022-06-16 17:37:34,118 DEBUG [90673] [] ExcelContractListForm: form value set 
+2022-06-16 17:37:34,118 DEBUG [90673] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 17:37:34,118 DEBUG [90673] [] indexAction start
+2022-06-16 17:37:34,118 DEBUG [90673] [] admin_no is 1
+2022-06-16 17:37:34,182 DEBUG [90673] [] indexAction end
+2022-06-16 17:37:34,182 DEBUG [90673] [] ExcelContractListController end
+2022-06-16 17:37:34,182 DEBUG [90673] [] finally
+2022-06-16 18:08:24,482 DEBUG [90748] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:08:24,482 DEBUG [90748] [] ExcelContractListController start
+2022-06-16 18:08:24,483 DEBUG [90748] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:08:24,491 DEBUG [90748] [] ExcelContractListForm: is exist
+2022-06-16 18:08:24,492 DEBUG [90748] [] ExcelContractListForm: form value set 
+2022-06-16 18:08:24,492 DEBUG [90748] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:08:24,492 DEBUG [90748] [] showAction start
+2022-06-16 18:08:24,492 DEBUG [90748] [] admin_no is 1
+2022-06-16 18:08:24,493 DEBUG [90748] [] showAction end
+2022-06-16 18:08:24,493 DEBUG [90748] [] ExcelContractListController end
+2022-06-16 18:08:24,493 DEBUG [90748] [] finally
+2022-06-16 18:08:24,510 DEBUG [90748] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:08:24,510 DEBUG [90748] [] ExcelContractListController start
+2022-06-16 18:08:24,510 DEBUG [90748] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:08:24,517 DEBUG [90748] [] ExcelContractListForm: is exist
+2022-06-16 18:08:24,518 DEBUG [90748] [] ExcelContractListForm: form value set 
+2022-06-16 18:08:24,518 DEBUG [90748] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:08:24,518 DEBUG [90748] [] viewExcelListAction start
+2022-06-16 18:08:24,781 DEBUG [90748] [] K
+2022-06-16 18:08:24,781 DEBUG [90748] [] 1
+2022-06-16 18:08:24,781 DEBUG [90748] [] 1
+2022-06-16 18:08:24,829 DEBUG [90748] [] viewExcelListAction end
+2022-06-16 18:08:24,829 DEBUG [90748] [] ExcelContractListController end
+2022-06-16 18:08:24,829 DEBUG [90748] [] finally
+2022-06-16 18:08:58,786 DEBUG [90951] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 18:08:58,790 DEBUG [90951] [] ExcelContractListController start
+2022-06-16 18:08:58,790 DEBUG [90951] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:08:58,800 DEBUG [90951] [] ExcelContractListForm: is exist
+2022-06-16 18:08:58,800 DEBUG [90951] [] ExcelContractListForm: form value set 
+2022-06-16 18:08:58,801 DEBUG [90951] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 18:08:58,801 DEBUG [90951] [] indexAction start
+2022-06-16 18:08:58,801 DEBUG [90951] [] admin_no is 1
+2022-06-16 18:08:58,881 DEBUG [90951] [] indexAction end
+2022-06-16 18:08:58,881 DEBUG [90951] [] ExcelContractListController end
+2022-06-16 18:08:58,882 DEBUG [90951] [] finally
+2022-06-16 18:09:03,551 DEBUG [90951] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:09:03,551 DEBUG [90951] [] ExcelContractListController start
+2022-06-16 18:09:03,551 DEBUG [90951] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:09:03,559 DEBUG [90951] [] ExcelContractListForm: is exist
+2022-06-16 18:09:03,560 DEBUG [90951] [] ExcelContractListForm: form value set 
+2022-06-16 18:09:03,560 DEBUG [90951] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:09:03,560 DEBUG [90951] [] showAction start
+2022-06-16 18:09:03,560 DEBUG [90951] [] admin_no is 1
+2022-06-16 18:09:03,561 DEBUG [90951] [] showAction end
+2022-06-16 18:09:03,561 DEBUG [90951] [] ExcelContractListController end
+2022-06-16 18:09:03,561 DEBUG [90951] [] finally
+2022-06-16 18:09:03,583 DEBUG [90951] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:09:03,584 DEBUG [90951] [] ExcelContractListController start
+2022-06-16 18:09:03,584 DEBUG [90951] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:09:03,591 DEBUG [90951] [] ExcelContractListForm: is exist
+2022-06-16 18:09:03,592 DEBUG [90951] [] ExcelContractListForm: form value set 
+2022-06-16 18:09:03,592 DEBUG [90951] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:09:03,592 DEBUG [90951] [] viewExcelListAction start
+2022-06-16 18:09:03,853 DEBUG [90951] [] K
+2022-06-16 18:09:03,853 DEBUG [90951] [] 1
+2022-06-16 18:09:03,853 DEBUG [90951] [] 1
+2022-06-16 18:09:03,901 DEBUG [90951] [] viewExcelListAction end
+2022-06-16 18:09:03,901 DEBUG [90951] [] ExcelContractListController end
+2022-06-16 18:09:03,901 DEBUG [90951] [] finally
+2022-06-16 18:10:40,232 DEBUG [90865] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:10:40,233 DEBUG [90865] [] ExcelContractListController start
+2022-06-16 18:10:40,233 DEBUG [90865] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:10:40,242 DEBUG [90865] [] ExcelContractListForm: is exist
+2022-06-16 18:10:40,242 DEBUG [90865] [] ExcelContractListForm: form value set 
+2022-06-16 18:10:40,243 DEBUG [90865] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:10:40,243 DEBUG [90865] [] showAction start
+2022-06-16 18:10:40,243 DEBUG [90865] [] admin_no is 1
+2022-06-16 18:10:40,244 DEBUG [90865] [] showAction end
+2022-06-16 18:10:40,244 DEBUG [90865] [] ExcelContractListController end
+2022-06-16 18:10:40,244 DEBUG [90865] [] finally
+2022-06-16 18:10:40,262 DEBUG [90865] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:10:40,262 DEBUG [90865] [] ExcelContractListController start
+2022-06-16 18:10:40,262 DEBUG [90865] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:10:40,271 DEBUG [90865] [] ExcelContractListForm: is exist
+2022-06-16 18:10:40,271 DEBUG [90865] [] ExcelContractListForm: form value set 
+2022-06-16 18:10:40,271 DEBUG [90865] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:10:40,272 DEBUG [90865] [] viewExcelListAction start
+2022-06-16 18:10:40,534 DEBUG [90865] [] K
+2022-06-16 18:10:40,534 DEBUG [90865] [] 1
+2022-06-16 18:10:40,534 DEBUG [90865] [] 1
+2022-06-16 18:10:40,582 DEBUG [90865] [] viewExcelListAction end
+2022-06-16 18:10:40,582 DEBUG [90865] [] ExcelContractListController end
+2022-06-16 18:10:40,582 DEBUG [90865] [] finally
+2022-06-16 18:10:44,536 DEBUG [90865] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:10:44,537 DEBUG [90865] [] ExcelContractListController start
+2022-06-16 18:10:44,537 DEBUG [90865] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:10:44,546 DEBUG [90865] [] ExcelContractListForm: is exist
+2022-06-16 18:10:44,546 DEBUG [90865] [] ExcelContractListForm: form value set 
+2022-06-16 18:10:44,547 DEBUG [90865] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:10:44,547 DEBUG [90865] [] isValidAction start
+2022-06-16 18:10:44,547 DEBUG [90865] [] admin_no is 1
+2022-06-16 18:10:44,547 DEBUG [90865] [] admin_no is 1
+2022-06-16 18:10:44,551 DEBUG [90865] [] cdList
+2022-06-16 18:10:44,551 DEBUG [90865] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:10:44,552 DEBUG [90865] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 18:10:44,552 DEBUG [90865] [] chkList
+2022-06-16 18:10:44,552 DEBUG [90865] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 002
+            [login_id] => 2022-06-16
+        )
+
+)
+
+2022-06-16 18:10:44,552 DEBUG [90865] [] org no is 1
+2022-06-16 18:10:44,552 DEBUG [90865] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示する
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 18:10:44,553 DEBUG [90865] [] コース組織情報チェック　NG
+2022-06-16 18:10:44,553 DEBUG [90865] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示する
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 18:10:44,554 DEBUG [90865] [] コース組織情報チェック　NG
+2022-06-16 18:10:44,554 DEBUG [90865] [] isValidAction end
+2022-06-16 18:10:44,554 DEBUG [90865] [] ExcelContractListController end
+2022-06-16 18:10:44,554 DEBUG [90865] [] finally
+2022-06-16 18:10:44,572 DEBUG [90865] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 18:10:44,572 DEBUG [90865] [] ExcelContractListController start
+2022-06-16 18:10:44,572 DEBUG [90865] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:10:44,580 DEBUG [90865] [] ExcelContractListForm: is exist
+2022-06-16 18:10:44,580 DEBUG [90865] [] ExcelContractListForm: form value set 
+2022-06-16 18:10:44,580 DEBUG [90865] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 18:10:44,581 DEBUG [90865] [] indexAction start
+2022-06-16 18:10:44,581 DEBUG [90865] [] admin_no is 1
+2022-06-16 18:10:44,650 DEBUG [90865] [] indexAction end
+2022-06-16 18:10:44,650 DEBUG [90865] [] ExcelContractListController end
+2022-06-16 18:10:44,650 DEBUG [90865] [] finally
+2022-06-16 18:12:25,467 DEBUG [90950] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:12:25,468 DEBUG [90950] [] ExcelContractListController start
+2022-06-16 18:12:25,468 DEBUG [90950] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:12:25,477 DEBUG [90950] [] ExcelContractListForm: is exist
+2022-06-16 18:12:25,478 DEBUG [90950] [] ExcelContractListForm: form value set 
+2022-06-16 18:12:25,478 DEBUG [90950] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:12:25,478 DEBUG [90950] [] showAction start
+2022-06-16 18:12:25,478 DEBUG [90950] [] admin_no is 1
+2022-06-16 18:12:25,479 DEBUG [90950] [] showAction end
+2022-06-16 18:12:25,479 DEBUG [90950] [] ExcelContractListController end
+2022-06-16 18:12:25,479 DEBUG [90950] [] finally
+2022-06-16 18:12:25,502 DEBUG [90950] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:12:25,503 DEBUG [90950] [] ExcelContractListController start
+2022-06-16 18:12:25,503 DEBUG [90950] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:12:25,511 DEBUG [90950] [] ExcelContractListForm: is exist
+2022-06-16 18:12:25,511 DEBUG [90950] [] ExcelContractListForm: form value set 
+2022-06-16 18:12:25,512 DEBUG [90950] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:12:25,512 DEBUG [90950] [] viewExcelListAction start
+2022-06-16 18:12:25,782 DEBUG [90950] [] K
+2022-06-16 18:12:25,782 DEBUG [90950] [] 1
+2022-06-16 18:12:25,782 DEBUG [90950] [] 1
+2022-06-16 18:12:25,831 DEBUG [90950] [] viewExcelListAction end
+2022-06-16 18:12:25,831 DEBUG [90950] [] ExcelContractListController end
+2022-06-16 18:12:25,831 DEBUG [90950] [] finally
+2022-06-16 18:12:27,477 DEBUG [90950] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:12:27,477 DEBUG [90950] [] ExcelContractListController start
+2022-06-16 18:12:27,477 DEBUG [90950] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:12:27,486 DEBUG [90950] [] ExcelContractListForm: is exist
+2022-06-16 18:12:27,487 DEBUG [90950] [] ExcelContractListForm: form value set 
+2022-06-16 18:12:27,487 DEBUG [90950] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:12:27,487 DEBUG [90950] [] isValidAction start
+2022-06-16 18:12:27,488 DEBUG [90950] [] admin_no is 1
+2022-06-16 18:12:27,488 DEBUG [90950] [] admin_no is 1
+2022-06-16 18:12:27,492 DEBUG [90950] [] cdList
+2022-06-16 18:12:27,492 DEBUG [90950] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:12:27,492 DEBUG [90950] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 18:12:27,492 DEBUG [90950] [] chkList
+2022-06-16 18:12:27,492 DEBUG [90950] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 002
+        )
+
+)
+
+2022-06-16 18:12:27,492 DEBUG [90950] [] org no is 1
+2022-06-16 18:12:27,492 DEBUG [90950] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示する
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 18:12:27,493 DEBUG [90950] [] コース組織情報チェック　NG
+2022-06-16 18:12:27,493 DEBUG [90950] [] Array
+(
+    [0] => ecc
+    [1] => 5
+    [2] => 2022-06-16
+    [3] => 2022-08-30
+    [4] => June 14 Test
+    [5] => 表示する
+    [6] => 8
+    [7] => 001
+    [8] => 2022-06-16
+    [9] => 2022-08-29
+    [10] => ecc
+    [11] => 5
+    [12] => 2022-06-16
+    [13] => 2022-08-30
+    [14] => June 14 Test
+    [15] => 表示する
+    [16] => 8
+    [17] => 002
+    [18] => 2022-06-16
+    [19] => 2022-08-29
+)
+
+2022-06-16 18:12:27,494 DEBUG [90950] [] コース組織情報チェック　NG
+2022-06-16 18:12:27,494 DEBUG [90950] [] isValidAction end
+2022-06-16 18:12:27,494 DEBUG [90950] [] ExcelContractListController end
+2022-06-16 18:12:27,495 DEBUG [90950] [] finally
+2022-06-16 18:12:27,517 DEBUG [90950] [] Request URI : /eccadmin_dev/ExcelContractList
+2022-06-16 18:12:27,518 DEBUG [90950] [] ExcelContractListController start
+2022-06-16 18:12:27,518 DEBUG [90950] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:12:27,526 DEBUG [90950] [] ExcelContractListForm: is exist
+2022-06-16 18:12:27,526 DEBUG [90950] [] ExcelContractListForm: form value set 
+2022-06-16 18:12:27,526 DEBUG [90950] [] ------------------------------/eccadmin_dev/ExcelContractList
+2022-06-16 18:12:27,527 DEBUG [90950] [] indexAction start
+2022-06-16 18:12:27,527 DEBUG [90950] [] admin_no is 1
+2022-06-16 18:12:27,603 DEBUG [90950] [] indexAction end
+2022-06-16 18:12:27,603 DEBUG [90950] [] ExcelContractListController end
+2022-06-16 18:12:27,603 DEBUG [90950] [] finally
+2022-06-16 18:14:58,214 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:14:58,218 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:14:58,218 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:14:58,227 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:14:58,228 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:14:58,228 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:14:58,228 DEBUG [90966] [] showAction start
+2022-06-16 18:14:58,228 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:14:58,229 DEBUG [90966] [] showAction end
+2022-06-16 18:14:58,229 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:14:58,229 DEBUG [90966] [] finally
+2022-06-16 18:14:58,253 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:14:58,254 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:14:58,254 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:14:58,261 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:14:58,261 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:14:58,262 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:14:58,262 DEBUG [90966] [] viewExcelListAction start
+2022-06-16 18:14:58,528 DEBUG [90966] [] K
+2022-06-16 18:14:58,528 DEBUG [90966] [] 1
+2022-06-16 18:14:58,528 DEBUG [90966] [] 1
+2022-06-16 18:14:58,579 DEBUG [90966] [] viewExcelListAction end
+2022-06-16 18:14:58,579 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:14:58,580 DEBUG [90966] [] finally
+2022-06-16 18:15:00,626 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:15:00,627 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:15:00,627 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:15:00,636 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:15:00,637 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:15:00,637 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:15:00,637 DEBUG [90966] [] isValidAction start
+2022-06-16 18:15:00,637 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:15:00,637 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:15:00,641 DEBUG [90966] [] cdList
+2022-06-16 18:15:00,641 DEBUG [90966] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:15:00,642 DEBUG [90966] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 18:15:00,642 DEBUG [90966] [] chkList
+2022-06-16 18:15:00,642 DEBUG [90966] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:15:00,642 DEBUG [90966] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:15:00,642 DEBUG [90966] [] コース詳細・受講者データ重複しています
+2022-06-16 18:15:00,954 DEBUG [90966] [] isValidAction end
+2022-06-16 18:15:00,954 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:15:00,954 DEBUG [90966] [] finally
+2022-06-16 18:17:11,564 DEBUG [90957] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:17:11,565 DEBUG [90957] [] ExcelContractListController start
+2022-06-16 18:17:11,565 DEBUG [90957] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:17:11,574 DEBUG [90957] [] ExcelContractListForm: is exist
+2022-06-16 18:17:11,574 DEBUG [90957] [] ExcelContractListForm: form value set 
+2022-06-16 18:17:11,575 DEBUG [90957] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:17:11,575 DEBUG [90957] [] showAction start
+2022-06-16 18:17:11,575 DEBUG [90957] [] admin_no is 1
+2022-06-16 18:17:11,575 DEBUG [90957] [] showAction end
+2022-06-16 18:17:11,576 DEBUG [90957] [] ExcelContractListController end
+2022-06-16 18:17:11,576 DEBUG [90957] [] finally
+2022-06-16 18:17:11,593 DEBUG [90957] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:17:11,593 DEBUG [90957] [] ExcelContractListController start
+2022-06-16 18:17:11,593 DEBUG [90957] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:17:11,600 DEBUG [90957] [] ExcelContractListForm: is exist
+2022-06-16 18:17:11,600 DEBUG [90957] [] ExcelContractListForm: form value set 
+2022-06-16 18:17:11,601 DEBUG [90957] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:17:11,601 DEBUG [90957] [] viewExcelListAction start
+2022-06-16 18:17:11,853 DEBUG [90957] [] K
+2022-06-16 18:17:11,853 DEBUG [90957] [] 1
+2022-06-16 18:17:11,853 DEBUG [90957] [] 1
+2022-06-16 18:17:11,903 DEBUG [90957] [] viewExcelListAction end
+2022-06-16 18:17:11,903 DEBUG [90957] [] ExcelContractListController end
+2022-06-16 18:17:11,903 DEBUG [90957] [] finally
+2022-06-16 18:30:28,001 DEBUG [90790] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:30:28,002 DEBUG [90790] [] ExcelContractListController start
+2022-06-16 18:30:28,002 DEBUG [90790] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:30:28,011 DEBUG [90790] [] ExcelContractListForm: is exist
+2022-06-16 18:30:28,011 DEBUG [90790] [] ExcelContractListForm: form value set 
+2022-06-16 18:30:28,012 DEBUG [90790] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:30:28,012 DEBUG [90790] [] showAction start
+2022-06-16 18:30:28,012 DEBUG [90790] [] admin_no is 1
+2022-06-16 18:30:28,013 DEBUG [90790] [] showAction end
+2022-06-16 18:30:28,013 DEBUG [90790] [] ExcelContractListController end
+2022-06-16 18:30:28,013 DEBUG [90790] [] finally
+2022-06-16 18:30:28,030 DEBUG [90790] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:30:28,030 DEBUG [90790] [] ExcelContractListController start
+2022-06-16 18:30:28,030 DEBUG [90790] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:30:28,038 DEBUG [90790] [] ExcelContractListForm: is exist
+2022-06-16 18:30:28,038 DEBUG [90790] [] ExcelContractListForm: form value set 
+2022-06-16 18:30:28,038 DEBUG [90790] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:30:28,039 DEBUG [90790] [] viewExcelListAction start
+2022-06-16 18:30:28,292 DEBUG [90790] [] K
+2022-06-16 18:30:28,292 DEBUG [90790] [] 1
+2022-06-16 18:30:28,293 DEBUG [90790] [] 1
+2022-06-16 18:30:28,341 DEBUG [90790] [] viewExcelListAction end
+2022-06-16 18:30:28,341 DEBUG [90790] [] ExcelContractListController end
+2022-06-16 18:30:28,341 DEBUG [90790] [] finally
+2022-06-16 18:30:43,370 DEBUG [91143] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:30:43,373 DEBUG [91143] [] ExcelContractListController start
+2022-06-16 18:30:43,374 DEBUG [91143] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:30:43,383 DEBUG [91143] [] ExcelContractListForm: is exist
+2022-06-16 18:30:43,383 DEBUG [91143] [] ExcelContractListForm: form value set 
+2022-06-16 18:30:43,384 DEBUG [91143] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:30:43,384 DEBUG [91143] [] showAction start
+2022-06-16 18:30:43,384 DEBUG [91143] [] admin_no is 1
+2022-06-16 18:30:43,385 DEBUG [91143] [] showAction end
+2022-06-16 18:30:43,385 DEBUG [91143] [] ExcelContractListController end
+2022-06-16 18:30:43,385 DEBUG [91143] [] finally
+2022-06-16 18:30:43,403 DEBUG [91143] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:30:43,403 DEBUG [91143] [] ExcelContractListController start
+2022-06-16 18:30:43,403 DEBUG [91143] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:30:43,410 DEBUG [91143] [] ExcelContractListForm: is exist
+2022-06-16 18:30:43,411 DEBUG [91143] [] ExcelContractListForm: form value set 
+2022-06-16 18:30:43,411 DEBUG [91143] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:30:43,411 DEBUG [91143] [] viewExcelListAction start
+2022-06-16 18:30:43,667 DEBUG [91143] [] K
+2022-06-16 18:30:43,667 DEBUG [91143] [] 1
+2022-06-16 18:30:43,667 DEBUG [91143] [] 1
+2022-06-16 18:30:43,716 DEBUG [91143] [] viewExcelListAction end
+2022-06-16 18:30:43,716 DEBUG [91143] [] ExcelContractListController end
+2022-06-16 18:30:43,716 DEBUG [91143] [] finally
+2022-06-16 18:30:46,727 DEBUG [91144] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:30:46,731 DEBUG [91144] [] ExcelContractListController start
+2022-06-16 18:30:46,731 DEBUG [91144] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:30:46,740 DEBUG [91144] [] ExcelContractListForm: is exist
+2022-06-16 18:30:46,740 DEBUG [91144] [] ExcelContractListForm: form value set 
+2022-06-16 18:30:46,741 DEBUG [91144] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:30:46,741 DEBUG [91144] [] isValidAction start
+2022-06-16 18:30:46,741 DEBUG [91144] [] admin_no is 1
+2022-06-16 18:30:46,741 DEBUG [91144] [] admin_no is 1
+2022-06-16 18:30:46,746 DEBUG [91144] [] cdList
+2022-06-16 18:30:46,746 DEBUG [91144] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:30:46,746 DEBUG [91144] [] Array
+(
+    [0] => 8
+)
+
+2022-06-16 18:30:46,746 DEBUG [91144] [] chkList
+2022-06-16 18:30:46,746 DEBUG [91144] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:30:46,746 DEBUG [91144] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 8
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:30:46,746 DEBUG [91144] [] コース詳細・受講者データ重複しています
+2022-06-16 18:30:47,059 DEBUG [91144] [] isValidAction end
+2022-06-16 18:30:47,059 DEBUG [91144] [] ExcelContractListController end
+2022-06-16 18:30:47,060 DEBUG [91144] [] finally
+2022-06-16 18:31:06,046 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:31:06,047 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:31:06,047 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:06,055 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:31:06,056 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:06,056 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:31:06,056 DEBUG [90966] [] showAction start
+2022-06-16 18:31:06,056 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:31:06,057 DEBUG [90966] [] showAction end
+2022-06-16 18:31:06,057 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:31:06,057 DEBUG [90966] [] finally
+2022-06-16 18:31:06,075 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:31:06,076 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:31:06,076 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:06,084 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:31:06,084 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:06,084 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:31:06,084 DEBUG [90966] [] viewExcelListAction start
+2022-06-16 18:31:06,348 DEBUG [90966] [] K
+2022-06-16 18:31:06,348 DEBUG [90966] [] 1
+2022-06-16 18:31:06,348 DEBUG [90966] [] 1
+2022-06-16 18:31:06,396 DEBUG [90966] [] viewExcelListAction end
+2022-06-16 18:31:06,396 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:31:06,396 DEBUG [90966] [] finally
+2022-06-16 18:31:08,718 DEBUG [90966] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:31:08,719 DEBUG [90966] [] ExcelContractListController start
+2022-06-16 18:31:08,719 DEBUG [90966] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:08,728 DEBUG [90966] [] ExcelContractListForm: is exist
+2022-06-16 18:31:08,728 DEBUG [90966] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:08,729 DEBUG [90966] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:31:08,729 DEBUG [90966] [] isValidAction start
+2022-06-16 18:31:08,729 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:31:08,729 DEBUG [90966] [] admin_no is 1
+2022-06-16 18:31:08,734 DEBUG [90966] [] cdList
+2022-06-16 18:31:08,734 DEBUG [90966] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:31:08,734 DEBUG [90966] [] Array
+(
+    [0] => 8
+    [1] => 9
+)
+
+2022-06-16 18:31:09,046 DEBUG [90966] [] isValidAction end
+2022-06-16 18:31:09,046 DEBUG [90966] [] ExcelContractListController end
+2022-06-16 18:31:09,046 DEBUG [90966] [] finally
+2022-06-16 18:31:57,228 DEBUG [91143] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:31:57,229 DEBUG [91143] [] ExcelContractListController start
+2022-06-16 18:31:57,229 DEBUG [91143] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:57,238 DEBUG [91143] [] ExcelContractListForm: is exist
+2022-06-16 18:31:57,238 DEBUG [91143] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:57,238 DEBUG [91143] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:31:57,239 DEBUG [91143] [] showAction start
+2022-06-16 18:31:57,239 DEBUG [91143] [] admin_no is 1
+2022-06-16 18:31:57,239 DEBUG [91143] [] showAction end
+2022-06-16 18:31:57,239 DEBUG [91143] [] ExcelContractListController end
+2022-06-16 18:31:57,240 DEBUG [91143] [] finally
+2022-06-16 18:31:57,257 DEBUG [91143] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:31:57,258 DEBUG [91143] [] ExcelContractListController start
+2022-06-16 18:31:57,258 DEBUG [91143] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:57,266 DEBUG [91143] [] ExcelContractListForm: is exist
+2022-06-16 18:31:57,266 DEBUG [91143] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:57,266 DEBUG [91143] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:31:57,266 DEBUG [91143] [] viewExcelListAction start
+2022-06-16 18:31:57,524 DEBUG [91143] [] K
+2022-06-16 18:31:57,524 DEBUG [91143] [] 1
+2022-06-16 18:31:57,524 DEBUG [91143] [] 1
+2022-06-16 18:31:57,572 DEBUG [91143] [] viewExcelListAction end
+2022-06-16 18:31:57,572 DEBUG [91143] [] ExcelContractListController end
+2022-06-16 18:31:57,572 DEBUG [91143] [] finally
+2022-06-16 18:31:59,078 DEBUG [91143] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:31:59,078 DEBUG [91143] [] ExcelContractListController start
+2022-06-16 18:31:59,079 DEBUG [91143] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:31:59,088 DEBUG [91143] [] ExcelContractListForm: is exist
+2022-06-16 18:31:59,088 DEBUG [91143] [] ExcelContractListForm: form value set 
+2022-06-16 18:31:59,089 DEBUG [91143] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:31:59,089 DEBUG [91143] [] isValidAction start
+2022-06-16 18:31:59,089 DEBUG [91143] [] admin_no is 1
+2022-06-16 18:31:59,089 DEBUG [91143] [] admin_no is 1
+2022-06-16 18:31:59,093 DEBUG [91143] [] cdList
+2022-06-16 18:31:59,093 DEBUG [91143] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:31:59,093 DEBUG [91143] [] Array
+(
+    [0] => 9
+)
+
+2022-06-16 18:31:59,093 DEBUG [91143] [] chkList
+2022-06-16 18:31:59,094 DEBUG [91143] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:31:59,094 DEBUG [91143] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:31:59,094 DEBUG [91143] [] コース詳細・受講者データ重複しています
+2022-06-16 18:31:59,408 DEBUG [91143] [] isValidAction end
+2022-06-16 18:31:59,408 DEBUG [91143] [] ExcelContractListController end
+2022-06-16 18:31:59,408 DEBUG [91143] [] finally
+2022-06-16 18:32:39,069 DEBUG [91142] [] Request URI : /eccadmin_dev/ExcelContractList/show
+2022-06-16 18:32:39,070 DEBUG [91142] [] ExcelContractListController start
+2022-06-16 18:32:39,070 DEBUG [91142] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:32:39,079 DEBUG [91142] [] ExcelContractListForm: is exist
+2022-06-16 18:32:39,080 DEBUG [91142] [] ExcelContractListForm: form value set 
+2022-06-16 18:32:39,080 DEBUG [91142] [] ------------------------------/eccadmin_dev/ExcelContractList/show
+2022-06-16 18:32:39,080 DEBUG [91142] [] showAction start
+2022-06-16 18:32:39,081 DEBUG [91142] [] admin_no is 1
+2022-06-16 18:32:39,096 DEBUG [91142] [] showAction end
+2022-06-16 18:32:39,096 DEBUG [91142] [] ExcelContractListController end
+2022-06-16 18:32:39,097 DEBUG [91142] [] finally
+2022-06-16 18:32:39,123 DEBUG [91142] [] Request URI : /eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:32:39,123 DEBUG [91142] [] ExcelContractListController start
+2022-06-16 18:32:39,123 DEBUG [91142] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:32:39,132 DEBUG [91142] [] ExcelContractListForm: is exist
+2022-06-16 18:32:39,132 DEBUG [91142] [] ExcelContractListForm: form value set 
+2022-06-16 18:32:39,132 DEBUG [91142] [] ------------------------------/eccadmin_dev/ExcelContractList/viewExcelList
+2022-06-16 18:32:39,133 DEBUG [91142] [] viewExcelListAction start
+2022-06-16 18:32:39,409 DEBUG [91142] [] K
+2022-06-16 18:32:39,409 DEBUG [91142] [] 1
+2022-06-16 18:32:39,409 DEBUG [91142] [] 1
+2022-06-16 18:32:39,458 DEBUG [91142] [] viewExcelListAction end
+2022-06-16 18:32:39,458 DEBUG [91142] [] ExcelContractListController end
+2022-06-16 18:32:39,458 DEBUG [91142] [] finally
+2022-06-16 18:32:40,726 DEBUG [91142] [] Request URI : /eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:32:40,726 DEBUG [91142] [] ExcelContractListController start
+2022-06-16 18:32:40,726 DEBUG [91142] [] controllers/ExcelContractListController.php: is exist
+2022-06-16 18:32:40,735 DEBUG [91142] [] ExcelContractListForm: is exist
+2022-06-16 18:32:40,736 DEBUG [91142] [] ExcelContractListForm: form value set 
+2022-06-16 18:32:40,736 DEBUG [91142] [] ------------------------------/eccadmin_dev/ExcelContractList/isValid
+2022-06-16 18:32:40,736 DEBUG [91142] [] isValidAction start
+2022-06-16 18:32:40,737 DEBUG [91142] [] admin_no is 1
+2022-06-16 18:32:40,737 DEBUG [91142] [] admin_no is 1
+2022-06-16 18:32:40,741 DEBUG [91142] [] cdList
+2022-06-16 18:32:40,741 DEBUG [91142] [] Array
+(
+    [0] => T_Course_DetailDto Object
+        (
+            [course_id] => 5
+            [course_detail_no] => 8
+            [course_detail_name] => 第1回 (修正不可)
+            [course_detail_romaji] => 1st (修正不可)
+            [course_level] => Level 5
+            [test_kbn] => Speaking
+            [status] => 1
+            [start_period] => 2018/04/09
+            [end_period] => 2099/04/30
+            [course_name] => 
+            [rowno] => -9
+            [disp_no] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2022-06-16 18:32:40,741 DEBUG [91142] [] Array
+(
+    [0] => 9
+)
+
+2022-06-16 18:32:40,741 DEBUG [91142] [] chkList
+2022-06-16 18:32:40,741 DEBUG [91142] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 001
+        )
+
+    [1] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 002
+        )
+
+)
+
+2022-06-16 18:32:40,741 DEBUG [91142] [] Array
+(
+    [0] => Array
+        (
+            [course_detail_no] => 9
+            [login_id] => 001
+        )
+
+)
+
+2022-06-16 18:32:40,741 DEBUG [91142] [] コース詳細・受講者データ重複しています
+2022-06-16 18:32:41,068 DEBUG [91142] [] isValidAction end
+2022-06-16 18:32:41,068 DEBUG [91142] [] ExcelContractListController end
+2022-06-16 18:32:41,068 DEBUG [91142] [] finally

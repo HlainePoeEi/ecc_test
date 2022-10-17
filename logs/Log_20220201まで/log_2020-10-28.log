@@ -1,0 +1,90 @@
+2020-10-28 10:17:46,298 DEBUG [133875] [] Request URI : /eccadmin_dev/Login
+2020-10-28 10:17:46,333 DEBUG [133875] [] LoginController start
+2020-10-28 10:17:46,333 DEBUG [133875] [] controllers/LoginController.php: is exist
+2020-10-28 10:17:46,338 DEBUG [133875] [] LoginForm: is exist
+2020-10-28 10:17:46,339 DEBUG [133875] [] LoginForm: form value set 
+2020-10-28 10:17:46,339 DEBUG [133875] [] ------------------------------/eccadmin_dev/Login
+2020-10-28 10:17:46,339 DEBUG [133875] [] ------------------------------login_start_check
+2020-10-28 10:17:46,340 DEBUG [133875] [] indexAction start
+2020-10-28 10:17:46,415 DEBUG [133875] [] indexAction end
+2020-10-28 10:17:46,415 DEBUG [133875] [] LoginController end
+2020-10-28 10:17:46,416 DEBUG [133875] [] finally
+2020-10-28 10:17:50,808 DEBUG [133985] [] Request URI : /eccadmin_dev/Login/login
+2020-10-28 10:17:50,809 DEBUG [133985] [] LoginController start
+2020-10-28 10:17:50,809 DEBUG [133985] [] controllers/LoginController.php: is exist
+2020-10-28 10:17:50,810 DEBUG [133985] [] LoginForm: is exist
+2020-10-28 10:17:50,810 DEBUG [133985] [] LoginForm: form value set 
+2020-10-28 10:17:50,810 DEBUG [133985] [] ------------------------------/eccadmin_dev/Login/login
+2020-10-28 10:17:50,810 DEBUG [133985] [] ------------------------------login_start_check
+2020-10-28 10:17:50,810 DEBUG [133985] [] loginAction start
+2020-10-28 10:17:51,113 DEBUG [133985] [] loginAction end
+2020-10-28 10:17:51,113 DEBUG [133985] [] LoginController end
+2020-10-28 10:17:51,114 DEBUG [133985] [] finally
+2020-10-28 10:17:51,145 DEBUG [133985] [] Request URI : /eccadmin_dev/Menu
+2020-10-28 10:17:51,145 DEBUG [133985] [] MenuController start
+2020-10-28 10:17:51,145 DEBUG [133985] [] controllers/MenuController.php: is exist
+2020-10-28 10:17:51,147 DEBUG [133985] [] MenuForm: is exist
+2020-10-28 10:17:51,147 DEBUG [133985] [] MenuForm: form value set 
+2020-10-28 10:17:51,148 DEBUG [133985] [] ------------------------------/eccadmin_dev/Menu
+2020-10-28 10:17:51,148 DEBUG [133985] [] ------------------------------login_start_check
+2020-10-28 10:17:51,148 DEBUG [133985] [] indexAction start
+2020-10-28 10:17:51,148 DEBUG [133985] [] admin_no is 1
+2020-10-28 10:17:51,229 DEBUG [133985] [] indexAction end
+2020-10-28 10:17:51,229 DEBUG [133985] [] MenuController end
+2020-10-28 10:17:51,229 DEBUG [133985] [] finally
+2020-10-28 10:17:55,700 DEBUG [133837] [] Request URI : /eccadmin_dev/OrganizationList
+2020-10-28 10:17:55,701 DEBUG [133837] [] OrganizationListController start
+2020-10-28 10:17:55,701 DEBUG [133837] [] controllers/OrganizationListController.php: is exist
+2020-10-28 10:17:55,705 DEBUG [133837] [] OrganizationListForm: is exist
+2020-10-28 10:17:55,705 DEBUG [133837] [] OrganizationListForm: form value set 
+2020-10-28 10:17:55,706 DEBUG [133837] [] ------------------------------/eccadmin_dev/OrganizationList
+2020-10-28 10:17:55,706 DEBUG [133837] [] indexAction start
+2020-10-28 10:17:55,706 DEBUG [133837] [] admin_no is 1
+2020-10-28 10:17:55,823 DEBUG [133837] [] indexAction end
+2020-10-28 10:17:55,823 DEBUG [133837] [] OrganizationListController end
+2020-10-28 10:17:55,823 DEBUG [133837] [] finally
+2020-10-28 10:17:58,454 DEBUG [134051] [] Request URI : /eccadmin_dev/OrganizationRegist/index
+2020-10-28 10:17:58,455 DEBUG [134051] [] OrganizationRegistController start
+2020-10-28 10:17:58,455 DEBUG [134051] [] controllers/OrganizationRegistController.php: is exist
+2020-10-28 10:17:58,554 DEBUG [134051] [] OrganizationRegistForm: is exist
+2020-10-28 10:17:58,558 DEBUG [134051] [] OrganizationRegistForm: form value set 
+2020-10-28 10:17:58,559 DEBUG [134051] [] ------------------------------/eccadmin_dev/OrganizationRegist/index
+2020-10-28 10:17:58,559 DEBUG [134051] [] ------------------------------session_check_true
+2020-10-28 10:17:58,559 DEBUG [134051] [] indexAction start
+2020-10-28 10:17:58,559 DEBUG [134051] [] admin_no is 1
+2020-10-28 10:17:58,681 DEBUG [134051] [] indexAction end
+2020-10-28 10:17:58,681 DEBUG [134051] [] OrganizationRegistController end
+2020-10-28 10:17:58,681 DEBUG [134051] [] finally
+2020-10-28 10:28:51,466 DEBUG [134161] [] Request URI : /eccadmin_dev/Login/logout
+2020-10-28 10:28:51,470 DEBUG [134161] [] LoginController start
+2020-10-28 10:28:51,470 DEBUG [134161] [] controllers/LoginController.php: is exist
+2020-10-28 10:28:51,471 DEBUG [134161] [] LoginForm: is exist
+2020-10-28 10:28:51,471 DEBUG [134161] [] LoginForm: form value set 
+2020-10-28 10:28:51,471 DEBUG [134161] [] ------------------------------/eccadmin_dev/Login/logout
+2020-10-28 10:28:51,472 DEBUG [134161] [] ------------------------------login_start_check
+2020-10-28 10:28:51,472 DEBUG [134161] [] logoutAction start
+2020-10-28 10:28:51,472 DEBUG [134161] [] logoutAction end
+2020-10-28 10:28:51,472 DEBUG [134161] [] LoginController end
+2020-10-28 10:28:51,472 DEBUG [134161] [] finally
+2020-10-28 10:28:51,829 DEBUG [134161] [] Request URI : /eccadmin_dev/Login
+2020-10-28 10:28:51,830 DEBUG [134161] [] LoginController start
+2020-10-28 10:28:51,830 DEBUG [134161] [] controllers/LoginController.php: is exist
+2020-10-28 10:28:51,830 DEBUG [134161] [] LoginForm: is exist
+2020-10-28 10:28:51,830 DEBUG [134161] [] LoginForm: form value set 
+2020-10-28 10:28:51,831 DEBUG [134161] [] ------------------------------/eccadmin_dev/Login
+2020-10-28 10:28:51,831 DEBUG [134161] [] ------------------------------login_start_check
+2020-10-28 10:28:51,831 DEBUG [134161] [] indexAction start
+2020-10-28 10:28:51,848 DEBUG [134161] [] indexAction end
+2020-10-28 10:28:51,849 DEBUG [134161] [] LoginController end
+2020-10-28 10:28:51,849 DEBUG [134161] [] finally
+2020-10-28 18:16:38,023 DEBUG [140897] [] Request URI : /eccadmin_dev/Login
+2020-10-28 18:16:38,027 DEBUG [140897] [] LoginController start
+2020-10-28 18:16:38,027 DEBUG [140897] [] controllers/LoginController.php: is exist
+2020-10-28 18:16:38,028 DEBUG [140897] [] LoginForm: is exist
+2020-10-28 18:16:38,028 DEBUG [140897] [] LoginForm: form value set 
+2020-10-28 18:16:38,028 DEBUG [140897] [] ------------------------------/eccadmin_dev/Login
+2020-10-28 18:16:38,028 DEBUG [140897] [] ------------------------------login_start_check
+2020-10-28 18:16:38,028 DEBUG [140897] [] indexAction start
+2020-10-28 18:16:38,044 DEBUG [140897] [] indexAction end
+2020-10-28 18:16:38,044 DEBUG [140897] [] LoginController end
+2020-10-28 18:16:38,044 DEBUG [140897] [] finally

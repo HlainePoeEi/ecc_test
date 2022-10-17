@@ -1,0 +1,2111 @@
+2021-07-26 11:11:47,776 DEBUG [81857] [] Request URI : /eccadmin_dev/Login
+2021-07-26 11:11:47,861 DEBUG [81857] [] LoginController start
+2021-07-26 11:11:47,862 DEBUG [81857] [] controllers/LoginController.php: is exist
+2021-07-26 11:11:47,941 DEBUG [81857] [] LoginForm: is exist
+2021-07-26 11:11:47,965 DEBUG [81857] [] LoginForm: form value set 
+2021-07-26 11:11:47,965 DEBUG [81857] [] ------------------------------/eccadmin_dev/Login
+2021-07-26 11:11:47,966 DEBUG [81857] [] ------------------------------login_start_check
+2021-07-26 11:11:47,966 DEBUG [81857] [] indexAction start
+2021-07-26 11:11:48,113 DEBUG [81857] [] indexAction end
+2021-07-26 11:11:48,113 DEBUG [81857] [] LoginController end
+2021-07-26 11:11:48,113 DEBUG [81857] [] finally
+2021-07-26 11:11:51,033 DEBUG [82144] [] Request URI : /eccadmin_dev/Login/login
+2021-07-26 11:11:51,033 DEBUG [82144] [] LoginController start
+2021-07-26 11:11:51,033 DEBUG [82144] [] controllers/LoginController.php: is exist
+2021-07-26 11:11:51,034 DEBUG [82144] [] LoginForm: is exist
+2021-07-26 11:11:51,034 DEBUG [82144] [] LoginForm: form value set 
+2021-07-26 11:11:51,034 DEBUG [82144] [] ------------------------------/eccadmin_dev/Login/login
+2021-07-26 11:11:51,035 DEBUG [82144] [] ------------------------------login_start_check
+2021-07-26 11:11:51,035 DEBUG [82144] [] loginAction start
+2021-07-26 11:11:51,360 DEBUG [82144] [] loginAction end
+2021-07-26 11:11:51,360 DEBUG [82144] [] LoginController end
+2021-07-26 11:11:51,360 DEBUG [82144] [] finally
+2021-07-26 11:11:51,376 DEBUG [82144] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 11:11:51,377 DEBUG [82144] [] MenuController start
+2021-07-26 11:11:51,377 DEBUG [82144] [] controllers/MenuController.php: is exist
+2021-07-26 11:11:51,462 DEBUG [82144] [] MenuForm: is exist
+2021-07-26 11:11:51,468 DEBUG [82144] [] MenuForm: form value set 
+2021-07-26 11:11:51,469 DEBUG [82144] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 11:11:51,469 DEBUG [82144] [] ------------------------------login_start_check
+2021-07-26 11:11:51,469 DEBUG [82144] [] indexAction start
+2021-07-26 11:11:51,469 DEBUG [82144] [] admin_no is 1
+2021-07-26 11:11:51,565 DEBUG [82144] [] indexAction end
+2021-07-26 11:11:51,565 DEBUG [82144] [] MenuController end
+2021-07-26 11:11:51,565 DEBUG [82144] [] finally
+2021-07-26 11:11:55,343 DEBUG [82325] [] Request URI : /eccadmin_dev/QuestionList
+2021-07-26 11:11:55,344 DEBUG [82325] [] QuestionListController start
+2021-07-26 11:11:55,344 DEBUG [82325] [] controllers/QuestionListController.php: is exist
+2021-07-26 11:11:55,391 DEBUG [82325] [] QuestionListForm: is exist
+2021-07-26 11:11:55,392 DEBUG [82325] [] QuestionListForm: form value set 
+2021-07-26 11:11:55,392 DEBUG [82325] [] ------------------------------/eccadmin_dev/QuestionList
+2021-07-26 11:11:55,392 DEBUG [82325] [] indexAction start
+2021-07-26 11:11:55,392 DEBUG [82325] [] admin_no is 1
+2021-07-26 11:11:55,394 DEBUG [82325] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => d6e18f9f3e2cd3b18117169d620714d0
+    [admin_kbn] => 001
+)
+
+2021-07-26 11:11:55,421 DEBUG [82325] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 26
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => d6e18f9f3e2cd3b18117169d620714d0
+    [admin_kbn] => 001
+)
+
+2021-07-26 11:11:55,594 DEBUG [82325] [] indexAction end
+2021-07-26 11:11:55,594 DEBUG [82325] [] QuestionListController end
+2021-07-26 11:11:55,595 DEBUG [82325] [] finally
+2021-07-26 11:11:57,392 DEBUG [82476] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2021-07-26 11:11:57,393 DEBUG [82476] [] QuestionRegistController start
+2021-07-26 11:11:57,393 DEBUG [82476] [] controllers/QuestionRegistController.php: is exist
+2021-07-26 11:11:57,396 DEBUG [82476] [] QuestionRegistForm: is exist
+2021-07-26 11:11:57,397 DEBUG [82476] [] QuestionRegistForm: form value set 
+2021-07-26 11:11:57,397 DEBUG [82476] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2021-07-26 11:11:57,397 DEBUG [82476] [] ------------------------------session_check_true
+2021-07-26 11:11:57,397 DEBUG [82476] [] indexAction start
+2021-07-26 11:11:57,398 DEBUG [82476] [] admin_no is 1
+2021-07-26 11:11:57,402 DEBUG [82476] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 423
+            [question_name] => 2018/10/03 問題 1
+            [qa_description] => 
+            [description] => 
+            [test_kbn] => 001
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] => Q_423.mp3
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 11
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 
+            [byosha_point] => 
+            [remarks] => 12345678901234567890
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2021-07-26 11:11:57,513 DEBUG [82476] [] indexAction end
+2021-07-26 11:11:57,513 DEBUG [82476] [] QuestionRegistController end
+2021-07-26 11:11:57,513 DEBUG [82476] [] finally
+2021-07-26 11:12:28,796 DEBUG [82629] [] Request URI : /eccadmin_dev/CourseList
+2021-07-26 11:12:28,800 DEBUG [82629] [] CourseListController start
+2021-07-26 11:12:28,800 DEBUG [82629] [] controllers/CourseListController.php: is exist
+2021-07-26 11:12:28,823 DEBUG [82629] [] CourseListForm: is exist
+2021-07-26 11:12:28,844 DEBUG [82629] [] CourseListForm: form value set 
+2021-07-26 11:12:28,845 DEBUG [82629] [] ------------------------------/eccadmin_dev/CourseList
+2021-07-26 11:12:28,845 DEBUG [82629] [] indexAction start
+2021-07-26 11:12:28,845 DEBUG [82629] [] admin_no is 1
+2021-07-26 11:12:28,981 DEBUG [82629] [] indexAction end
+2021-07-26 11:12:28,981 DEBUG [82629] [] CourseListController end
+2021-07-26 11:12:28,982 DEBUG [82629] [] finally
+2021-07-26 11:12:31,894 DEBUG [82629] [] Request URI : /eccadmin_dev/CourseRegist/index
+2021-07-26 11:12:31,895 DEBUG [82629] [] CourseRegistController start
+2021-07-26 11:12:31,895 DEBUG [82629] [] controllers/CourseRegistController.php: is exist
+2021-07-26 11:12:31,913 DEBUG [82629] [] CourseRegistForm: is exist
+2021-07-26 11:12:31,925 DEBUG [82629] [] CourseRegistForm: form value set 
+2021-07-26 11:12:31,925 DEBUG [82629] [] ------------------------------/eccadmin_dev/CourseRegist/index
+2021-07-26 11:12:31,925 DEBUG [82629] [] ------------------------------session_check_true
+2021-07-26 11:12:31,926 DEBUG [82629] [] indexAction start
+2021-07-26 11:12:31,926 DEBUG [82629] [] admin_no is 1
+2021-07-26 11:12:32,021 DEBUG [82629] [] indexAction end
+2021-07-26 11:12:32,021 DEBUG [82629] [] CourseRegistController end
+2021-07-26 11:12:32,022 DEBUG [82629] [] finally
+2021-07-26 11:12:36,769 DEBUG [82629] [] Request URI : /eccadmin_dev/CourseDetailList
+2021-07-26 11:12:36,770 DEBUG [82629] [] CourseDetailListController start
+2021-07-26 11:12:36,770 DEBUG [82629] [] controllers/CourseDetailListController.php: is exist
+2021-07-26 11:12:36,775 DEBUG [82629] [] CourseDetailListForm: is exist
+2021-07-26 11:12:36,775 DEBUG [82629] [] CourseDetailListForm: form value set 
+2021-07-26 11:12:36,776 DEBUG [82629] [] ------------------------------/eccadmin_dev/CourseDetailList
+2021-07-26 11:12:36,776 DEBUG [82629] [] indexAction start
+2021-07-26 11:12:36,776 DEBUG [82629] [] admin_no is 1
+2021-07-26 11:12:36,878 DEBUG [82629] [] indexAction end
+2021-07-26 11:12:36,878 DEBUG [82629] [] CourseDetailListController end
+2021-07-26 11:12:36,878 DEBUG [82629] [] finally
+2021-07-26 11:12:38,731 DEBUG [82629] [] Request URI : /eccadmin_dev/CourseDetailRegist/index
+2021-07-26 11:12:38,732 DEBUG [82629] [] CourseDetailRegistController start
+2021-07-26 11:12:38,732 DEBUG [82629] [] controllers/CourseDetailRegistController.php: is exist
+2021-07-26 11:12:38,734 DEBUG [82629] [] CourseDetailRegistForm: is exist
+2021-07-26 11:12:38,734 DEBUG [82629] [] CourseDetailRegistForm: form value set 
+2021-07-26 11:12:38,735 DEBUG [82629] [] ------------------------------/eccadmin_dev/CourseDetailRegist/index
+2021-07-26 11:12:38,735 DEBUG [82629] [] ------------------------------session_check_true
+2021-07-26 11:12:38,735 DEBUG [82629] [] indexAction start
+2021-07-26 11:12:38,735 DEBUG [82629] [] admin_no is 1
+2021-07-26 11:12:38,808 DEBUG [82629] [] indexAction end
+2021-07-26 11:12:38,808 DEBUG [82629] [] CourseDetailRegistController end
+2021-07-26 11:12:38,808 DEBUG [82629] [] finally
+2021-07-26 11:12:45,066 DEBUG [82630] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 11:12:45,070 DEBUG [82630] [] TestInfoListController start
+2021-07-26 11:12:45,070 DEBUG [82630] [] controllers/TestInfoListController.php: is exist
+2021-07-26 11:12:45,105 DEBUG [82630] [] TestInfoListForm: is exist
+2021-07-26 11:12:45,105 DEBUG [82630] [] TestInfoListForm: form value set 
+2021-07-26 11:12:45,106 DEBUG [82630] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 11:12:45,106 DEBUG [82630] [] indexAction start
+2021-07-26 11:12:45,106 DEBUG [82630] [] admin_no is 1
+2021-07-26 11:12:45,108 DEBUG [82630] [] test List count:2
+2021-07-26 11:12:45,187 DEBUG [82630] [] indexAction end
+2021-07-26 11:12:45,187 DEBUG [82630] [] TestInfoListController end
+2021-07-26 11:12:45,187 DEBUG [82630] [] finally
+2021-07-26 11:12:48,721 DEBUG [82630] [] Request URI : /eccadmin_dev/TestInfoRegist/index
+2021-07-26 11:12:48,721 DEBUG [82630] [] TestInfoRegistController start
+2021-07-26 11:12:48,721 DEBUG [82630] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 11:12:48,724 DEBUG [82630] [] TestInfoRegistForm: is exist
+2021-07-26 11:12:48,724 DEBUG [82630] [] TestInfoRegistForm: form value set 
+2021-07-26 11:12:48,725 DEBUG [82630] [] ------------------------------/eccadmin_dev/TestInfoRegist/index
+2021-07-26 11:12:48,725 DEBUG [82630] [] ------------------------------session_check_true
+2021-07-26 11:12:48,725 DEBUG [82630] [] indexAction start
+2021-07-26 11:12:48,725 DEBUG [82630] [] admin_no is 1
+2021-07-26 11:12:48,726 DEBUG [82630] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 11:12:48,727 DEBUG [82630] [] Array
+(
+    [0] => T_Test_InfoDto Object
+        (
+            [org_no] => 99999
+            [test_info_no] => 145
+            [test_info_name] => 2021 July Test 1
+            [long_description] => This is test from cherry.<div><br></div><div><img src="/admin_dev/files/99999/TestInfoimage/TestInfoNo_145_001.png" width="492"><br></div>
+            [show_flg] => 0
+            [test_time] => 90
+            [status] => 1
+            [start_period] => 2021/07/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-07-26 11:12:48,727 DEBUG [82630] [] T_Test_InfoDto Object
+(
+    [org_no] => 99999
+    [test_info_no] => 145
+    [test_info_name] => 2021 July Test 1
+    [long_description] => This is test from cherry.<div><br></div><div><img src="/admin_dev/files/99999/TestInfoimage/TestInfoNo_145_001.png" width="492"><br></div>
+    [show_flg] => 0
+    [test_time] => 90
+    [status] => 1
+    [start_period] => 2021/07/24
+    [end_period] => 2999/12/31
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+)
+
+2021-07-26 11:12:48,804 DEBUG [82630] [] indexAction end
+2021-07-26 11:12:48,805 DEBUG [82630] [] TestInfoRegistController end
+2021-07-26 11:12:48,805 DEBUG [82630] [] finally
+2021-07-26 11:13:01,065 DEBUG [82325] [] Request URI : /eccadmin_dev/QuestionList
+2021-07-26 11:13:01,066 DEBUG [82325] [] QuestionListController start
+2021-07-26 11:13:01,066 DEBUG [82325] [] controllers/QuestionListController.php: is exist
+2021-07-26 11:13:01,066 DEBUG [82325] [] QuestionListForm: is exist
+2021-07-26 11:13:01,067 DEBUG [82325] [] QuestionListForm: form value set 
+2021-07-26 11:13:01,067 DEBUG [82325] [] ------------------------------/eccadmin_dev/QuestionList
+2021-07-26 11:13:01,067 DEBUG [82325] [] indexAction start
+2021-07-26 11:13:01,068 DEBUG [82325] [] admin_no is 1
+2021-07-26 11:13:01,070 DEBUG [82325] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => e23ac8410baf0aa6cee182c659e49276
+    [admin_kbn] => 001
+)
+
+2021-07-26 11:13:01,099 DEBUG [82325] [] QuestionListForm Object
+(
+    [question_no] => 
+    [question_name] => 
+    [qa_description] => 
+    [description] => 
+    [test_kbn] => 
+    [course_level] => 
+    [qa_pattern] => 
+    [score_pattern] => 
+    [audio_name] => 
+    [audio_description] => 
+    [prepare_time] => 
+    [answer_time] => 
+    [audio_yes] => 
+    [yes_description] => 
+    [audio_no] => 
+    [no_description] => 
+    [status] => 
+    [sample_answer] => 
+    [byosha_point] => 
+    [remarks] => 
+    [chk_status1] => 
+    [chk_status2] => 
+    [page] => 1
+    [max_page] => 26
+    [test_kbn_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 001
+                    [name] => Speaking
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 016
+                    [type] => 002
+                    [name] => Writing
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [course_level_list] => Array
+        (
+            [0] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 001
+                    [name] => Level 5
+                    [name_kana] => 
+                    [disp_no] => 1
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [1] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 002
+                    [name] => Level 4
+                    [name_kana] => 
+                    [disp_no] => 2
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+            [2] => M_typeDto Object
+                (
+                    [category] => 021
+                    [type] => 003
+                    [name] => Level 3
+                    [name_kana] => 
+                    [disp_no] => 3
+                    [del_flg] => 0
+                    [create_dt] => 
+                    [creater_id] => 
+                    [update_dt] => 
+                    [updater_id] => 
+                )
+
+        )
+
+    [search_page] => 
+    [search_question_name] => 
+    [search_test_kbn] => 
+    [search_course_level] => 
+    [search_chk_status1] => 
+    [search_chk_status2] => 
+    [search_status] => 
+    [menuOpen] => open
+    [menuStatus] => settingMenu
+    [uid] => e23ac8410baf0aa6cee182c659e49276
+    [admin_kbn] => 001
+)
+
+2021-07-26 11:13:01,191 DEBUG [82325] [] indexAction end
+2021-07-26 11:13:01,191 DEBUG [82325] [] QuestionListController end
+2021-07-26 11:13:01,191 DEBUG [82325] [] finally
+2021-07-26 11:13:03,153 DEBUG [82325] [] Request URI : /eccadmin_dev/QuestionRegist/index
+2021-07-26 11:13:03,153 DEBUG [82325] [] QuestionRegistController start
+2021-07-26 11:13:03,153 DEBUG [82325] [] controllers/QuestionRegistController.php: is exist
+2021-07-26 11:13:03,153 DEBUG [82325] [] QuestionRegistForm: is exist
+2021-07-26 11:13:03,154 DEBUG [82325] [] QuestionRegistForm: form value set 
+2021-07-26 11:13:03,154 DEBUG [82325] [] ------------------------------/eccadmin_dev/QuestionRegist/index
+2021-07-26 11:13:03,154 DEBUG [82325] [] ------------------------------session_check_true
+2021-07-26 11:13:03,154 DEBUG [82325] [] indexAction start
+2021-07-26 11:13:03,154 DEBUG [82325] [] admin_no is 1
+2021-07-26 11:13:03,159 DEBUG [82325] [] Array
+(
+    [0] => T_QuestionDto Object
+        (
+            [question_no] => 423
+            [question_name] => 2018/10/03 問題 1
+            [qa_description] => 
+            [description] => 
+            [test_kbn] => 001
+            [course_level] => 001
+            [qa_pattern] => 001
+            [score_pattern] => 001
+            [audio_name] => Q_423.mp3
+            [audio_description] => 
+            [prepare_time] => 0
+            [answer_time] => 11
+            [audio_yes] => 
+            [yes_description] => 
+            [audio_no] => 
+            [no_description] => 
+            [status] => 公開
+            [sample_answer] => 
+            [byosha_point] => 
+            [remarks] => 12345678901234567890
+            [rowno] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 1
+        )
+
+)
+
+2021-07-26 11:13:03,272 DEBUG [82325] [] indexAction end
+2021-07-26 11:13:03,272 DEBUG [82325] [] QuestionRegistController end
+2021-07-26 11:13:03,273 DEBUG [82325] [] finally
+2021-07-26 11:14:10,757 DEBUG [82447] [] Request URI : /eccadmin_dev/Login/logout
+2021-07-26 11:14:10,757 DEBUG [82447] [] LoginController start
+2021-07-26 11:14:10,758 DEBUG [82447] [] controllers/LoginController.php: is exist
+2021-07-26 11:14:10,758 DEBUG [82447] [] LoginForm: is exist
+2021-07-26 11:14:10,758 DEBUG [82447] [] LoginForm: form value set 
+2021-07-26 11:14:10,758 DEBUG [82447] [] ------------------------------/eccadmin_dev/Login/logout
+2021-07-26 11:14:10,759 DEBUG [82447] [] ------------------------------login_start_check
+2021-07-26 11:14:10,759 DEBUG [82447] [] logoutAction start
+2021-07-26 11:14:10,759 DEBUG [82447] [] logoutAction end
+2021-07-26 11:14:10,759 DEBUG [82447] [] LoginController end
+2021-07-26 11:14:10,759 DEBUG [82447] [] finally
+2021-07-26 11:14:10,787 DEBUG [82447] [] Request URI : /eccadmin_dev/Login
+2021-07-26 11:14:10,787 DEBUG [82447] [] LoginController start
+2021-07-26 11:14:10,787 DEBUG [82447] [] controllers/LoginController.php: is exist
+2021-07-26 11:14:10,788 DEBUG [82447] [] LoginForm: is exist
+2021-07-26 11:14:10,788 DEBUG [82447] [] LoginForm: form value set 
+2021-07-26 11:14:10,788 DEBUG [82447] [] ------------------------------/eccadmin_dev/Login
+2021-07-26 11:14:10,788 DEBUG [82447] [] ------------------------------login_start_check
+2021-07-26 11:14:10,788 DEBUG [82447] [] indexAction start
+2021-07-26 11:14:10,874 DEBUG [82447] [] indexAction end
+2021-07-26 11:14:10,874 DEBUG [82447] [] LoginController end
+2021-07-26 11:14:10,875 DEBUG [82447] [] finally
+2021-07-26 12:41:00,494 DEBUG [83520] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 12:41:00,494 DEBUG [83520] [] MenuController start
+2021-07-26 12:41:00,494 DEBUG [83520] [] controllers/MenuController.php: is exist
+2021-07-26 12:41:00,495 DEBUG [83520] [] MenuForm: is exist
+2021-07-26 12:41:00,495 DEBUG [83520] [] MenuForm: form value set 
+2021-07-26 12:41:00,496 DEBUG [83520] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 12:41:00,496 DEBUG [83520] [] ------------------------------login_start_check
+2021-07-26 12:41:00,496 DEBUG [83520] [] indexAction start
+2021-07-26 12:41:00,496 DEBUG [83520] [] admin_no is 
+2021-07-26 12:41:00,496 DEBUG [83520] [] indexAction end
+2021-07-26 12:41:00,496 DEBUG [83520] [] MenuController end
+2021-07-26 12:41:00,496 DEBUG [83520] [] finally
+2021-07-26 12:41:00,544 DEBUG [83520] [] Request URI : /eccadmin_dev/Error/disp
+2021-07-26 12:41:00,545 DEBUG [83520] [] ErrorController start
+2021-07-26 12:41:00,545 DEBUG [83520] [] controllers/ErrorController.php: is exist
+2021-07-26 12:41:00,564 DEBUG [83520] [] ErrorForm: is exist
+2021-07-26 12:41:00,578 DEBUG [83520] [] ErrorForm: form value set 
+2021-07-26 12:41:00,578 DEBUG [83520] [] ------------------------------/eccadmin_dev/Error/disp
+2021-07-26 12:41:00,578 DEBUG [83520] [] ------------------------------login_start_check
+2021-07-26 12:41:00,578 DEBUG [83520] [] dispAction start
+2021-07-26 12:41:00,615 DEBUG [83520] [] dispAction end
+2021-07-26 12:41:00,615 DEBUG [83520] [] ErrorController end
+2021-07-26 12:41:00,615 DEBUG [83520] [] finally
+2021-07-26 12:41:02,130 DEBUG [83487] [] Request URI : /eccadmin_dev/Login
+2021-07-26 12:41:02,130 DEBUG [83487] [] LoginController start
+2021-07-26 12:41:02,130 DEBUG [83487] [] controllers/LoginController.php: is exist
+2021-07-26 12:41:02,131 DEBUG [83487] [] LoginForm: is exist
+2021-07-26 12:41:02,131 DEBUG [83487] [] LoginForm: form value set 
+2021-07-26 12:41:02,131 DEBUG [83487] [] ------------------------------/eccadmin_dev/Login
+2021-07-26 12:41:02,131 DEBUG [83487] [] ------------------------------login_start_check
+2021-07-26 12:41:02,131 DEBUG [83487] [] indexAction start
+2021-07-26 12:41:02,151 DEBUG [83487] [] indexAction end
+2021-07-26 12:41:02,151 DEBUG [83487] [] LoginController end
+2021-07-26 12:41:02,151 DEBUG [83487] [] finally
+2021-07-26 15:09:25,690 DEBUG [85326] [] Request URI : /eccadmin_dev/Login
+2021-07-26 15:09:25,691 DEBUG [85326] [] LoginController start
+2021-07-26 15:09:25,691 DEBUG [85326] [] controllers/LoginController.php: is exist
+2021-07-26 15:09:25,691 DEBUG [85326] [] LoginForm: is exist
+2021-07-26 15:09:25,692 DEBUG [85326] [] LoginForm: form value set 
+2021-07-26 15:09:25,692 DEBUG [85326] [] ------------------------------/eccadmin_dev/Login
+2021-07-26 15:09:25,692 DEBUG [85326] [] ------------------------------login_start_check
+2021-07-26 15:09:25,692 DEBUG [85326] [] indexAction start
+2021-07-26 15:09:25,708 DEBUG [85326] [] indexAction end
+2021-07-26 15:09:25,708 DEBUG [85326] [] LoginController end
+2021-07-26 15:09:25,708 DEBUG [85326] [] finally
+2021-07-26 15:09:28,485 DEBUG [84447] [] Request URI : /eccadmin_dev/Login/login
+2021-07-26 15:09:28,486 DEBUG [84447] [] LoginController start
+2021-07-26 15:09:28,486 DEBUG [84447] [] controllers/LoginController.php: is exist
+2021-07-26 15:09:28,486 DEBUG [84447] [] LoginForm: is exist
+2021-07-26 15:09:28,487 DEBUG [84447] [] LoginForm: form value set 
+2021-07-26 15:09:28,487 DEBUG [84447] [] ------------------------------/eccadmin_dev/Login/login
+2021-07-26 15:09:28,487 DEBUG [84447] [] ------------------------------login_start_check
+2021-07-26 15:09:28,487 DEBUG [84447] [] loginAction start
+2021-07-26 15:09:28,790 DEBUG [84447] [] loginAction end
+2021-07-26 15:09:28,790 DEBUG [84447] [] LoginController end
+2021-07-26 15:09:28,790 DEBUG [84447] [] finally
+2021-07-26 15:09:28,808 DEBUG [84447] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 15:09:28,808 DEBUG [84447] [] MenuController start
+2021-07-26 15:09:28,809 DEBUG [84447] [] controllers/MenuController.php: is exist
+2021-07-26 15:09:28,809 DEBUG [84447] [] MenuForm: is exist
+2021-07-26 15:09:28,809 DEBUG [84447] [] MenuForm: form value set 
+2021-07-26 15:09:28,809 DEBUG [84447] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 15:09:28,809 DEBUG [84447] [] ------------------------------login_start_check
+2021-07-26 15:09:28,810 DEBUG [84447] [] indexAction start
+2021-07-26 15:09:28,810 DEBUG [84447] [] admin_no is 1
+2021-07-26 15:09:28,868 DEBUG [84447] [] indexAction end
+2021-07-26 15:09:28,868 DEBUG [84447] [] MenuController end
+2021-07-26 15:09:28,868 DEBUG [84447] [] finally
+2021-07-26 15:30:00,215 DEBUG [86763] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 15:30:00,215 DEBUG [86763] [] TestInfoListController start
+2021-07-26 15:30:00,215 DEBUG [86763] [] controllers/TestInfoListController.php: is exist
+2021-07-26 15:30:00,216 DEBUG [86763] [] TestInfoListForm: is exist
+2021-07-26 15:30:00,216 DEBUG [86763] [] TestInfoListForm: form value set 
+2021-07-26 15:30:00,216 DEBUG [86763] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 15:30:00,217 DEBUG [86763] [] indexAction start
+2021-07-26 15:30:00,217 DEBUG [86763] [] admin_no is 1
+2021-07-26 15:30:00,218 DEBUG [86763] [] test List count:2
+2021-07-26 15:30:00,337 DEBUG [86763] [] indexAction end
+2021-07-26 15:30:00,338 DEBUG [86763] [] TestInfoListController end
+2021-07-26 15:30:00,338 DEBUG [86763] [] finally
+2021-07-26 16:26:10,727 DEBUG [83967] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 16:26:10,728 DEBUG [83967] [] TestInfoListController start
+2021-07-26 16:26:10,728 DEBUG [83967] [] controllers/TestInfoListController.php: is exist
+2021-07-26 16:26:10,728 DEBUG [83967] [] TestInfoListForm: is exist
+2021-07-26 16:26:10,728 DEBUG [83967] [] TestInfoListForm: form value set 
+2021-07-26 16:26:10,729 DEBUG [83967] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 16:26:10,729 DEBUG [83967] [] indexAction start
+2021-07-26 16:26:10,729 DEBUG [83967] [] admin_no is 1
+2021-07-26 16:26:10,731 DEBUG [83967] [] test List count:2
+2021-07-26 16:26:10,811 DEBUG [83967] [] indexAction end
+2021-07-26 16:26:10,811 DEBUG [83967] [] TestInfoListController end
+2021-07-26 16:26:10,811 DEBUG [83967] [] finally
+2021-07-26 16:26:41,373 DEBUG [85054] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 16:26:41,373 DEBUG [85054] [] MenuController start
+2021-07-26 16:26:41,374 DEBUG [85054] [] controllers/MenuController.php: is exist
+2021-07-26 16:26:41,374 DEBUG [85054] [] MenuForm: is exist
+2021-07-26 16:26:41,374 DEBUG [85054] [] MenuForm: form value set 
+2021-07-26 16:26:41,375 DEBUG [85054] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 16:26:41,375 DEBUG [85054] [] ------------------------------login_start_check
+2021-07-26 16:26:41,375 DEBUG [85054] [] indexAction start
+2021-07-26 16:26:41,375 DEBUG [85054] [] admin_no is 1
+2021-07-26 16:26:41,422 DEBUG [85054] [] indexAction end
+2021-07-26 16:26:41,423 DEBUG [85054] [] MenuController end
+2021-07-26 16:26:41,423 DEBUG [85054] [] finally
+2021-07-26 16:26:45,861 DEBUG [85054] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 16:26:45,862 DEBUG [85054] [] TestInfoListController start
+2021-07-26 16:26:45,862 DEBUG [85054] [] controllers/TestInfoListController.php: is exist
+2021-07-26 16:26:45,862 DEBUG [85054] [] TestInfoListForm: is exist
+2021-07-26 16:26:45,862 DEBUG [85054] [] TestInfoListForm: form value set 
+2021-07-26 16:26:45,863 DEBUG [85054] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 16:26:45,863 DEBUG [85054] [] indexAction start
+2021-07-26 16:26:45,863 DEBUG [85054] [] admin_no is 1
+2021-07-26 16:26:45,864 DEBUG [85054] [] test List count:2
+2021-07-26 16:26:45,945 DEBUG [85054] [] indexAction end
+2021-07-26 16:26:45,945 DEBUG [85054] [] TestInfoListController end
+2021-07-26 16:26:45,945 DEBUG [85054] [] finally
+2021-07-26 16:26:48,656 DEBUG [85054] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 16:26:48,656 DEBUG [85054] [] TestInfoCopyController start
+2021-07-26 16:26:48,656 DEBUG [85054] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 16:26:48,659 DEBUG [85054] [] TestInfoCopyForm: is exist
+2021-07-26 16:26:48,659 DEBUG [85054] [] TestInfoCopyForm: form value set 
+2021-07-26 16:26:48,660 DEBUG [85054] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 16:26:48,660 DEBUG [85054] [] ------------------------------session_check_true
+2021-07-26 16:26:48,660 DEBUG [85054] [] indexAction start
+2021-07-26 16:26:48,660 DEBUG [85054] [] admin_no is 1
+2021-07-26 16:26:48,661 DEBUG [85054] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 16:26:48,662 DEBUG [85054] [] test_info_no
+2021-07-26 16:26:48,736 DEBUG [85054] [] indexAction end
+2021-07-26 16:26:48,736 DEBUG [85054] [] TestInfoCopyController end
+2021-07-26 16:26:48,736 DEBUG [85054] [] finally
+2021-07-26 17:23:00,980 DEBUG [89487] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:23:00,980 DEBUG [89487] [] TestInfoListController start
+2021-07-26 17:23:00,980 DEBUG [89487] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:23:00,981 DEBUG [89487] [] TestInfoListForm: is exist
+2021-07-26 17:23:00,981 DEBUG [89487] [] TestInfoListForm: form value set 
+2021-07-26 17:23:00,981 DEBUG [89487] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:23:00,982 DEBUG [89487] [] indexAction start
+2021-07-26 17:23:00,982 DEBUG [89487] [] admin_no is 1
+2021-07-26 17:23:00,983 DEBUG [89487] [] test List count:2
+2021-07-26 17:23:01,062 DEBUG [89487] [] indexAction end
+2021-07-26 17:23:01,062 DEBUG [89487] [] TestInfoListController end
+2021-07-26 17:23:01,062 DEBUG [89487] [] finally
+2021-07-26 17:23:03,197 DEBUG [89487] [] Request URI : /eccadmin_dev/QuizInfoList
+2021-07-26 17:23:03,198 DEBUG [89487] [] QuizInfoListController start
+2021-07-26 17:23:03,198 DEBUG [89487] [] controllers/QuizInfoListController.php: is exist
+2021-07-26 17:23:03,204 DEBUG [89487] [] QuizInfoListForm: is exist
+2021-07-26 17:23:03,205 DEBUG [89487] [] QuizInfoListForm: form value set 
+2021-07-26 17:23:03,205 DEBUG [89487] [] ------------------------------/eccadmin_dev/QuizInfoList
+2021-07-26 17:23:03,206 DEBUG [89487] [] indexAction start
+2021-07-26 17:23:03,206 DEBUG [89487] [] admin_no is 1
+2021-07-26 17:23:03,206 DEBUG [89487] [] 
+2021-07-26 17:23:03,263 DEBUG [89487] [] indexAction end
+2021-07-26 17:23:03,263 DEBUG [89487] [] QuizInfoListController end
+2021-07-26 17:23:03,263 DEBUG [89487] [] finally
+2021-07-26 17:23:05,388 DEBUG [89487] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:23:05,388 DEBUG [89487] [] TestInfoListController start
+2021-07-26 17:23:05,389 DEBUG [89487] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:23:05,389 DEBUG [89487] [] TestInfoListForm: is exist
+2021-07-26 17:23:05,389 DEBUG [89487] [] TestInfoListForm: form value set 
+2021-07-26 17:23:05,389 DEBUG [89487] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:23:05,390 DEBUG [89487] [] indexAction start
+2021-07-26 17:23:05,390 DEBUG [89487] [] admin_no is 1
+2021-07-26 17:23:05,391 DEBUG [89487] [] test List count:2
+2021-07-26 17:23:05,476 DEBUG [89487] [] indexAction end
+2021-07-26 17:23:05,476 DEBUG [89487] [] TestInfoListController end
+2021-07-26 17:23:05,476 DEBUG [89487] [] finally
+2021-07-26 17:23:06,771 DEBUG [89487] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:23:06,772 DEBUG [89487] [] TestInfoCopyController start
+2021-07-26 17:23:06,772 DEBUG [89487] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:23:06,772 DEBUG [89487] [] TestInfoCopyForm: is exist
+2021-07-26 17:23:06,773 DEBUG [89487] [] TestInfoCopyForm: form value set 
+2021-07-26 17:23:06,773 DEBUG [89487] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:23:06,773 DEBUG [89487] [] ------------------------------session_check_true
+2021-07-26 17:23:06,773 DEBUG [89487] [] indexAction start
+2021-07-26 17:23:06,773 DEBUG [89487] [] admin_no is 1
+2021-07-26 17:23:06,774 DEBUG [89487] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:23:06,775 DEBUG [89487] [] test_info_no
+2021-07-26 17:23:06,856 DEBUG [89487] [] indexAction end
+2021-07-26 17:23:06,856 DEBUG [89487] [] TestInfoCopyController end
+2021-07-26 17:23:06,856 DEBUG [89487] [] finally
+2021-07-26 17:25:21,275 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:25:21,276 DEBUG [89475] [] TestInfoListController start
+2021-07-26 17:25:21,276 DEBUG [89475] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:25:21,277 DEBUG [89475] [] TestInfoListForm: is exist
+2021-07-26 17:25:21,277 DEBUG [89475] [] TestInfoListForm: form value set 
+2021-07-26 17:25:21,277 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:25:21,277 DEBUG [89475] [] indexAction start
+2021-07-26 17:25:21,278 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:25:21,279 DEBUG [89475] [] test List count:2
+2021-07-26 17:25:21,356 DEBUG [89475] [] indexAction end
+2021-07-26 17:25:21,356 DEBUG [89475] [] TestInfoListController end
+2021-07-26 17:25:21,357 DEBUG [89475] [] finally
+2021-07-26 17:25:23,692 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:25:23,692 DEBUG [89475] [] TestInfoCopyController start
+2021-07-26 17:25:23,692 DEBUG [89475] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:25:23,693 DEBUG [89475] [] TestInfoCopyForm: is exist
+2021-07-26 17:25:23,693 DEBUG [89475] [] TestInfoCopyForm: form value set 
+2021-07-26 17:25:23,693 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:25:23,693 DEBUG [89475] [] ------------------------------session_check_true
+2021-07-26 17:25:23,693 DEBUG [89475] [] indexAction start
+2021-07-26 17:25:23,694 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:25:23,694 DEBUG [89475] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:25:23,696 DEBUG [89475] [] test_info_no
+2021-07-26 17:25:23,775 DEBUG [89475] [] indexAction end
+2021-07-26 17:25:23,775 DEBUG [89475] [] TestInfoCopyController end
+2021-07-26 17:25:23,775 DEBUG [89475] [] finally
+2021-07-26 17:26:15,760 DEBUG [89410] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 17:26:15,761 DEBUG [89410] [] MenuController start
+2021-07-26 17:26:15,761 DEBUG [89410] [] controllers/MenuController.php: is exist
+2021-07-26 17:26:15,761 DEBUG [89410] [] MenuForm: is exist
+2021-07-26 17:26:15,761 DEBUG [89410] [] MenuForm: form value set 
+2021-07-26 17:26:15,762 DEBUG [89410] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 17:26:15,762 DEBUG [89410] [] ------------------------------login_start_check
+2021-07-26 17:26:15,762 DEBUG [89410] [] indexAction start
+2021-07-26 17:26:15,762 DEBUG [89410] [] admin_no is 
+2021-07-26 17:26:15,762 DEBUG [89410] [] indexAction end
+2021-07-26 17:26:15,762 DEBUG [89410] [] MenuController end
+2021-07-26 17:26:15,763 DEBUG [89410] [] finally
+2021-07-26 17:26:15,781 DEBUG [89410] [] Request URI : /eccadmin_dev/Error/disp
+2021-07-26 17:26:15,781 DEBUG [89410] [] ErrorController start
+2021-07-26 17:26:15,781 DEBUG [89410] [] controllers/ErrorController.php: is exist
+2021-07-26 17:26:15,781 DEBUG [89410] [] ErrorForm: is exist
+2021-07-26 17:26:15,781 DEBUG [89410] [] ErrorForm: form value set 
+2021-07-26 17:26:15,782 DEBUG [89410] [] ------------------------------/eccadmin_dev/Error/disp
+2021-07-26 17:26:15,782 DEBUG [89410] [] ------------------------------login_start_check
+2021-07-26 17:26:15,782 DEBUG [89410] [] dispAction start
+2021-07-26 17:26:15,794 DEBUG [89410] [] dispAction end
+2021-07-26 17:26:15,794 DEBUG [89410] [] ErrorController end
+2021-07-26 17:26:15,794 DEBUG [89410] [] finally
+2021-07-26 17:26:17,351 DEBUG [89487] [] Request URI : /eccadmin_dev/Login
+2021-07-26 17:26:17,351 DEBUG [89487] [] LoginController start
+2021-07-26 17:26:17,351 DEBUG [89487] [] controllers/LoginController.php: is exist
+2021-07-26 17:26:17,352 DEBUG [89487] [] LoginForm: is exist
+2021-07-26 17:26:17,352 DEBUG [89487] [] LoginForm: form value set 
+2021-07-26 17:26:17,352 DEBUG [89487] [] ------------------------------/eccadmin_dev/Login
+2021-07-26 17:26:17,352 DEBUG [89487] [] ------------------------------login_start_check
+2021-07-26 17:26:17,352 DEBUG [89487] [] indexAction start
+2021-07-26 17:26:17,368 DEBUG [89487] [] indexAction end
+2021-07-26 17:26:17,368 DEBUG [89487] [] LoginController end
+2021-07-26 17:26:17,368 DEBUG [89487] [] finally
+2021-07-26 17:26:20,129 DEBUG [88547] [] Request URI : /eccadmin_dev/Login/login
+2021-07-26 17:26:20,129 DEBUG [88547] [] LoginController start
+2021-07-26 17:26:20,130 DEBUG [88547] [] controllers/LoginController.php: is exist
+2021-07-26 17:26:20,130 DEBUG [88547] [] LoginForm: is exist
+2021-07-26 17:26:20,130 DEBUG [88547] [] LoginForm: form value set 
+2021-07-26 17:26:20,130 DEBUG [88547] [] ------------------------------/eccadmin_dev/Login/login
+2021-07-26 17:26:20,130 DEBUG [88547] [] ------------------------------login_start_check
+2021-07-26 17:26:20,131 DEBUG [88547] [] loginAction start
+2021-07-26 17:26:20,421 DEBUG [88547] [] loginAction end
+2021-07-26 17:26:20,421 DEBUG [88547] [] LoginController end
+2021-07-26 17:26:20,422 DEBUG [88547] [] finally
+2021-07-26 17:26:20,442 DEBUG [88547] [] Request URI : /eccadmin_dev/Menu
+2021-07-26 17:26:20,443 DEBUG [88547] [] MenuController start
+2021-07-26 17:26:20,443 DEBUG [88547] [] controllers/MenuController.php: is exist
+2021-07-26 17:26:20,443 DEBUG [88547] [] MenuForm: is exist
+2021-07-26 17:26:20,443 DEBUG [88547] [] MenuForm: form value set 
+2021-07-26 17:26:20,443 DEBUG [88547] [] ------------------------------/eccadmin_dev/Menu
+2021-07-26 17:26:20,443 DEBUG [88547] [] ------------------------------login_start_check
+2021-07-26 17:26:20,443 DEBUG [88547] [] indexAction start
+2021-07-26 17:26:20,443 DEBUG [88547] [] admin_no is 1
+2021-07-26 17:26:20,468 DEBUG [88547] [] indexAction end
+2021-07-26 17:26:20,468 DEBUG [88547] [] MenuController end
+2021-07-26 17:26:20,469 DEBUG [88547] [] finally
+2021-07-26 17:27:01,831 DEBUG [89477] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:27:01,832 DEBUG [89477] [] TestInfoListController start
+2021-07-26 17:27:01,832 DEBUG [89477] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:27:01,832 DEBUG [89477] [] TestInfoListForm: is exist
+2021-07-26 17:27:01,832 DEBUG [89477] [] TestInfoListForm: form value set 
+2021-07-26 17:27:01,833 DEBUG [89477] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:27:01,833 DEBUG [89477] [] indexAction start
+2021-07-26 17:27:01,833 DEBUG [89477] [] admin_no is 1
+2021-07-26 17:27:01,835 DEBUG [89477] [] test List count:2
+2021-07-26 17:27:01,916 DEBUG [89477] [] indexAction end
+2021-07-26 17:27:01,916 DEBUG [89477] [] TestInfoListController end
+2021-07-26 17:27:01,916 DEBUG [89477] [] finally
+2021-07-26 17:28:23,824 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:28:23,824 DEBUG [89475] [] TestInfoCopyController start
+2021-07-26 17:28:23,824 DEBUG [89475] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:28:23,825 DEBUG [89475] [] TestInfoCopyForm: is exist
+2021-07-26 17:28:23,825 DEBUG [89475] [] TestInfoCopyForm: form value set 
+2021-07-26 17:28:23,825 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:28:23,826 DEBUG [89475] [] ------------------------------session_check_true
+2021-07-26 17:28:23,826 DEBUG [89475] [] indexAction start
+2021-07-26 17:28:23,826 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:28:23,826 DEBUG [89475] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:28:23,828 DEBUG [89475] [] test_info_no
+2021-07-26 17:28:23,906 DEBUG [89475] [] indexAction end
+2021-07-26 17:28:23,906 DEBUG [89475] [] TestInfoCopyController end
+2021-07-26 17:28:23,906 DEBUG [89475] [] finally
+2021-07-26 17:29:53,283 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:29:53,287 DEBUG [89747] [] TestInfoListController start
+2021-07-26 17:29:53,288 DEBUG [89747] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:29:53,288 DEBUG [89747] [] TestInfoListForm: is exist
+2021-07-26 17:29:53,289 DEBUG [89747] [] TestInfoListForm: form value set 
+2021-07-26 17:29:53,289 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:29:53,289 DEBUG [89747] [] indexAction start
+2021-07-26 17:29:53,290 DEBUG [89747] [] admin_no is 1
+2021-07-26 17:29:53,291 DEBUG [89747] [] test List count:2
+2021-07-26 17:29:53,372 DEBUG [89747] [] indexAction end
+2021-07-26 17:29:53,372 DEBUG [89747] [] TestInfoListController end
+2021-07-26 17:29:53,372 DEBUG [89747] [] finally
+2021-07-26 17:29:55,219 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:29:55,219 DEBUG [89747] [] TestInfoCopyController start
+2021-07-26 17:29:55,219 DEBUG [89747] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:29:55,219 DEBUG [89747] [] TestInfoCopyForm: is exist
+2021-07-26 17:29:55,220 DEBUG [89747] [] TestInfoCopyForm: form value set 
+2021-07-26 17:29:55,220 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:29:55,220 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 17:29:55,220 DEBUG [89747] [] indexAction start
+2021-07-26 17:29:55,220 DEBUG [89747] [] admin_no is 1
+2021-07-26 17:29:55,221 DEBUG [89747] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:29:55,222 DEBUG [89747] [] test_info_no
+2021-07-26 17:29:55,304 DEBUG [89747] [] indexAction end
+2021-07-26 17:29:55,304 DEBUG [89747] [] TestInfoCopyController end
+2021-07-26 17:29:55,304 DEBUG [89747] [] finally
+2021-07-26 17:31:21,256 DEBUG [89476] [] Request URI : /eccadmin_dev/CourseContractList
+2021-07-26 17:31:21,256 DEBUG [89476] [] CourseContractListController start
+2021-07-26 17:31:21,256 DEBUG [89476] [] controllers/CourseContractListController.php: is exist
+2021-07-26 17:31:21,259 DEBUG [89476] [] CourseContractListForm: is exist
+2021-07-26 17:31:21,259 DEBUG [89476] [] CourseContractListForm: form value set 
+2021-07-26 17:31:21,260 DEBUG [89476] [] ------------------------------/eccadmin_dev/CourseContractList
+2021-07-26 17:31:21,260 DEBUG [89476] [] indexAction start
+2021-07-26 17:31:21,260 DEBUG [89476] [] admin_no is 1
+2021-07-26 17:31:21,373 DEBUG [89476] [] indexAction end
+2021-07-26 17:31:21,373 DEBUG [89476] [] CourseContractListController end
+2021-07-26 17:31:21,374 DEBUG [89476] [] finally
+2021-07-26 17:31:23,591 DEBUG [89476] [] Request URI : /eccadmin_dev/CourseContractRegist/index
+2021-07-26 17:31:23,592 DEBUG [89476] [] CourseContractRegistController start
+2021-07-26 17:31:23,592 DEBUG [89476] [] controllers/CourseContractRegistController.php: is exist
+2021-07-26 17:31:23,650 DEBUG [89476] [] CourseContractRegistForm: is exist
+2021-07-26 17:31:23,650 DEBUG [89476] [] CourseContractRegistForm: form value set 
+2021-07-26 17:31:23,651 DEBUG [89476] [] ------------------------------/eccadmin_dev/CourseContractRegist/index
+2021-07-26 17:31:23,651 DEBUG [89476] [] ------------------------------session_check_true
+2021-07-26 17:31:23,651 DEBUG [89476] [] indexAction start
+2021-07-26 17:31:23,651 DEBUG [89476] [] admin_no is 1
+2021-07-26 17:31:23,718 DEBUG [89476] [] indexAction end
+2021-07-26 17:31:23,718 DEBUG [89476] [] CourseContractRegistController end
+2021-07-26 17:31:23,718 DEBUG [89476] [] finally
+2021-07-26 17:31:39,404 DEBUG [89410] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:31:39,404 DEBUG [89410] [] TestInfoListController start
+2021-07-26 17:31:39,405 DEBUG [89410] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:31:39,405 DEBUG [89410] [] TestInfoListForm: is exist
+2021-07-26 17:31:39,405 DEBUG [89410] [] TestInfoListForm: form value set 
+2021-07-26 17:31:39,406 DEBUG [89410] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:31:39,406 DEBUG [89410] [] indexAction start
+2021-07-26 17:31:39,406 DEBUG [89410] [] admin_no is 1
+2021-07-26 17:31:39,407 DEBUG [89410] [] test List count:2
+2021-07-26 17:31:39,489 DEBUG [89410] [] indexAction end
+2021-07-26 17:31:39,489 DEBUG [89410] [] TestInfoListController end
+2021-07-26 17:31:39,489 DEBUG [89410] [] finally
+2021-07-26 17:31:41,206 DEBUG [89410] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:31:41,207 DEBUG [89410] [] TestInfoCopyController start
+2021-07-26 17:31:41,207 DEBUG [89410] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:31:41,207 DEBUG [89410] [] TestInfoCopyForm: is exist
+2021-07-26 17:31:41,207 DEBUG [89410] [] TestInfoCopyForm: form value set 
+2021-07-26 17:31:41,208 DEBUG [89410] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:31:41,208 DEBUG [89410] [] ------------------------------session_check_true
+2021-07-26 17:31:41,208 DEBUG [89410] [] indexAction start
+2021-07-26 17:31:41,208 DEBUG [89410] [] admin_no is 1
+2021-07-26 17:31:41,209 DEBUG [89410] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:31:41,210 DEBUG [89410] [] test_info_no
+2021-07-26 17:31:41,293 DEBUG [89410] [] indexAction end
+2021-07-26 17:31:41,294 DEBUG [89410] [] TestInfoCopyController end
+2021-07-26 17:31:41,294 DEBUG [89410] [] finally
+2021-07-26 17:33:31,028 DEBUG [89410] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:33:31,028 DEBUG [89410] [] TestInfoListController start
+2021-07-26 17:33:31,029 DEBUG [89410] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:33:31,029 DEBUG [89410] [] TestInfoListForm: is exist
+2021-07-26 17:33:31,029 DEBUG [89410] [] TestInfoListForm: form value set 
+2021-07-26 17:33:31,029 DEBUG [89410] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:33:31,030 DEBUG [89410] [] indexAction start
+2021-07-26 17:33:31,030 DEBUG [89410] [] admin_no is 1
+2021-07-26 17:33:31,031 DEBUG [89410] [] test List count:2
+2021-07-26 17:33:31,116 DEBUG [89410] [] indexAction end
+2021-07-26 17:33:31,116 DEBUG [89410] [] TestInfoListController end
+2021-07-26 17:33:31,116 DEBUG [89410] [] finally
+2021-07-26 17:33:32,791 DEBUG [89410] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:33:32,792 DEBUG [89410] [] TestInfoCopyController start
+2021-07-26 17:33:32,792 DEBUG [89410] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:33:32,792 DEBUG [89410] [] TestInfoCopyForm: is exist
+2021-07-26 17:33:32,792 DEBUG [89410] [] TestInfoCopyForm: form value set 
+2021-07-26 17:33:32,793 DEBUG [89410] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:33:32,793 DEBUG [89410] [] ------------------------------session_check_true
+2021-07-26 17:33:32,793 DEBUG [89410] [] indexAction start
+2021-07-26 17:33:32,793 DEBUG [89410] [] admin_no is 1
+2021-07-26 17:33:32,794 DEBUG [89410] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:33:32,795 DEBUG [89410] [] test_info_no
+2021-07-26 17:33:32,877 DEBUG [89410] [] indexAction end
+2021-07-26 17:33:32,877 DEBUG [89410] [] TestInfoCopyController end
+2021-07-26 17:33:32,878 DEBUG [89410] [] finally
+2021-07-26 17:34:08,630 DEBUG [89477] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:34:08,631 DEBUG [89477] [] TestInfoListController start
+2021-07-26 17:34:08,631 DEBUG [89477] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:34:08,631 DEBUG [89477] [] TestInfoListForm: is exist
+2021-07-26 17:34:08,631 DEBUG [89477] [] TestInfoListForm: form value set 
+2021-07-26 17:34:08,632 DEBUG [89477] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:34:08,632 DEBUG [89477] [] indexAction start
+2021-07-26 17:34:08,632 DEBUG [89477] [] admin_no is 1
+2021-07-26 17:34:08,634 DEBUG [89477] [] test List count:2
+2021-07-26 17:34:08,715 DEBUG [89477] [] indexAction end
+2021-07-26 17:34:08,715 DEBUG [89477] [] TestInfoListController end
+2021-07-26 17:34:08,716 DEBUG [89477] [] finally
+2021-07-26 17:34:10,124 DEBUG [89477] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:34:10,124 DEBUG [89477] [] TestInfoCopyController start
+2021-07-26 17:34:10,125 DEBUG [89477] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:34:10,125 DEBUG [89477] [] TestInfoCopyForm: is exist
+2021-07-26 17:34:10,125 DEBUG [89477] [] TestInfoCopyForm: form value set 
+2021-07-26 17:34:10,126 DEBUG [89477] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:34:10,126 DEBUG [89477] [] ------------------------------session_check_true
+2021-07-26 17:34:10,126 DEBUG [89477] [] indexAction start
+2021-07-26 17:34:10,126 DEBUG [89477] [] admin_no is 1
+2021-07-26 17:34:10,127 DEBUG [89477] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:34:10,128 DEBUG [89477] [] test_info_no
+2021-07-26 17:34:10,212 DEBUG [89477] [] indexAction end
+2021-07-26 17:34:10,212 DEBUG [89477] [] TestInfoCopyController end
+2021-07-26 17:34:10,212 DEBUG [89477] [] finally
+2021-07-26 17:34:44,089 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:34:44,090 DEBUG [89475] [] TestInfoListController start
+2021-07-26 17:34:44,090 DEBUG [89475] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:34:44,090 DEBUG [89475] [] TestInfoListForm: is exist
+2021-07-26 17:34:44,091 DEBUG [89475] [] TestInfoListForm: form value set 
+2021-07-26 17:34:44,091 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:34:44,091 DEBUG [89475] [] indexAction start
+2021-07-26 17:34:44,091 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:34:44,093 DEBUG [89475] [] test List count:2
+2021-07-26 17:34:44,171 DEBUG [89475] [] indexAction end
+2021-07-26 17:34:44,171 DEBUG [89475] [] TestInfoListController end
+2021-07-26 17:34:44,172 DEBUG [89475] [] finally
+2021-07-26 17:34:45,715 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:34:45,716 DEBUG [89475] [] TestInfoCopyController start
+2021-07-26 17:34:45,716 DEBUG [89475] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:34:45,716 DEBUG [89475] [] TestInfoCopyForm: is exist
+2021-07-26 17:34:45,716 DEBUG [89475] [] TestInfoCopyForm: form value set 
+2021-07-26 17:34:45,717 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:34:45,717 DEBUG [89475] [] ------------------------------session_check_true
+2021-07-26 17:34:45,717 DEBUG [89475] [] indexAction start
+2021-07-26 17:34:45,717 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:34:45,718 DEBUG [89475] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:34:45,719 DEBUG [89475] [] test_info_no
+2021-07-26 17:34:45,800 DEBUG [89475] [] indexAction end
+2021-07-26 17:34:45,800 DEBUG [89475] [] TestInfoCopyController end
+2021-07-26 17:34:45,800 DEBUG [89475] [] finally
+2021-07-26 17:35:54,078 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:35:54,079 DEBUG [89747] [] TestInfoListController start
+2021-07-26 17:35:54,079 DEBUG [89747] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:35:54,079 DEBUG [89747] [] TestInfoListForm: is exist
+2021-07-26 17:35:54,080 DEBUG [89747] [] TestInfoListForm: form value set 
+2021-07-26 17:35:54,080 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:35:54,080 DEBUG [89747] [] indexAction start
+2021-07-26 17:35:54,081 DEBUG [89747] [] admin_no is 1
+2021-07-26 17:35:54,082 DEBUG [89747] [] test List count:2
+2021-07-26 17:35:54,163 DEBUG [89747] [] indexAction end
+2021-07-26 17:35:54,163 DEBUG [89747] [] TestInfoListController end
+2021-07-26 17:35:54,163 DEBUG [89747] [] finally
+2021-07-26 17:35:56,346 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:35:56,347 DEBUG [89747] [] TestInfoCopyController start
+2021-07-26 17:35:56,347 DEBUG [89747] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:35:56,347 DEBUG [89747] [] TestInfoCopyForm: is exist
+2021-07-26 17:35:56,347 DEBUG [89747] [] TestInfoCopyForm: form value set 
+2021-07-26 17:35:56,348 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:35:56,348 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 17:35:56,348 DEBUG [89747] [] indexAction start
+2021-07-26 17:35:56,348 DEBUG [89747] [] admin_no is 1
+2021-07-26 17:35:56,349 DEBUG [89747] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:35:56,350 DEBUG [89747] [] test_info_no
+2021-07-26 17:35:56,435 DEBUG [89747] [] indexAction end
+2021-07-26 17:35:56,435 DEBUG [89747] [] TestInfoCopyController end
+2021-07-26 17:35:56,435 DEBUG [89747] [] finally
+2021-07-26 17:38:30,035 DEBUG [89491] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:38:30,036 DEBUG [89491] [] TestInfoListController start
+2021-07-26 17:38:30,036 DEBUG [89491] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:38:30,036 DEBUG [89491] [] TestInfoListForm: is exist
+2021-07-26 17:38:30,036 DEBUG [89491] [] TestInfoListForm: form value set 
+2021-07-26 17:38:30,037 DEBUG [89491] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:38:30,037 DEBUG [89491] [] indexAction start
+2021-07-26 17:38:30,037 DEBUG [89491] [] admin_no is 1
+2021-07-26 17:38:30,038 DEBUG [89491] [] test List count:2
+2021-07-26 17:38:30,111 DEBUG [89491] [] indexAction end
+2021-07-26 17:38:30,111 DEBUG [89491] [] TestInfoListController end
+2021-07-26 17:38:30,111 DEBUG [89491] [] finally
+2021-07-26 17:38:31,654 DEBUG [89491] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:38:31,655 DEBUG [89491] [] TestInfoCopyController start
+2021-07-26 17:38:31,655 DEBUG [89491] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:38:31,655 DEBUG [89491] [] TestInfoCopyForm: is exist
+2021-07-26 17:38:31,655 DEBUG [89491] [] TestInfoCopyForm: form value set 
+2021-07-26 17:38:31,656 DEBUG [89491] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:38:31,656 DEBUG [89491] [] ------------------------------session_check_true
+2021-07-26 17:38:31,656 DEBUG [89491] [] indexAction start
+2021-07-26 17:38:31,656 DEBUG [89491] [] admin_no is 1
+2021-07-26 17:38:31,657 DEBUG [89491] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:38:31,658 DEBUG [89491] [] test_info_no
+2021-07-26 17:38:31,741 DEBUG [89491] [] indexAction end
+2021-07-26 17:38:31,742 DEBUG [89491] [] TestInfoCopyController end
+2021-07-26 17:38:31,742 DEBUG [89491] [] finally
+2021-07-26 17:38:57,698 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoRegist/back
+2021-07-26 17:38:57,699 DEBUG [89735] [] TestInfoRegistController start
+2021-07-26 17:38:57,699 DEBUG [89735] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 17:38:57,699 DEBUG [89735] [] TestInfoRegistForm: is exist
+2021-07-26 17:38:57,699 DEBUG [89735] [] TestInfoRegistForm: form value set 
+2021-07-26 17:38:57,700 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoRegist/back
+2021-07-26 17:38:57,700 DEBUG [89735] [] ------------------------------session_check_true
+2021-07-26 17:38:57,700 DEBUG [89735] [] backAction start
+2021-07-26 17:38:57,700 DEBUG [89735] [] backAction end
+2021-07-26 17:38:57,700 DEBUG [89735] [] TestInfoRegistController end
+2021-07-26 17:38:57,701 DEBUG [89735] [] finally
+2021-07-26 17:38:57,724 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 17:38:57,725 DEBUG [89735] [] TestInfoListController start
+2021-07-26 17:38:57,725 DEBUG [89735] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:38:57,725 DEBUG [89735] [] TestInfoListForm: is exist
+2021-07-26 17:38:57,725 DEBUG [89735] [] TestInfoListForm: form value set 
+2021-07-26 17:38:57,726 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 17:38:57,726 DEBUG [89735] [] SearchAction start
+2021-07-26 17:38:57,726 DEBUG [89735] [] admin_no is 1
+2021-07-26 17:38:57,727 DEBUG [89735] [] test List count:2
+2021-07-26 17:38:57,803 DEBUG [89735] [] SearchAction end
+2021-07-26 17:38:57,803 DEBUG [89735] [] TestInfoListController end
+2021-07-26 17:38:57,803 DEBUG [89735] [] finally
+2021-07-26 17:38:59,261 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:38:59,262 DEBUG [89735] [] TestInfoCopyController start
+2021-07-26 17:38:59,262 DEBUG [89735] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:38:59,262 DEBUG [89735] [] TestInfoCopyForm: is exist
+2021-07-26 17:38:59,262 DEBUG [89735] [] TestInfoCopyForm: form value set 
+2021-07-26 17:38:59,263 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:38:59,263 DEBUG [89735] [] ------------------------------session_check_true
+2021-07-26 17:38:59,263 DEBUG [89735] [] indexAction start
+2021-07-26 17:38:59,263 DEBUG [89735] [] admin_no is 1
+2021-07-26 17:38:59,264 DEBUG [89735] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:38:59,265 DEBUG [89735] [] test_info_no
+2021-07-26 17:38:59,346 DEBUG [89735] [] indexAction end
+2021-07-26 17:38:59,346 DEBUG [89735] [] TestInfoCopyController end
+2021-07-26 17:38:59,346 DEBUG [89735] [] finally
+2021-07-26 17:39:17,056 DEBUG [87870] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:39:17,057 DEBUG [87870] [] TestInfoListController start
+2021-07-26 17:39:17,057 DEBUG [87870] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:39:17,057 DEBUG [87870] [] TestInfoListForm: is exist
+2021-07-26 17:39:17,058 DEBUG [87870] [] TestInfoListForm: form value set 
+2021-07-26 17:39:17,058 DEBUG [87870] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:39:17,058 DEBUG [87870] [] indexAction start
+2021-07-26 17:39:17,058 DEBUG [87870] [] admin_no is 1
+2021-07-26 17:39:17,060 DEBUG [87870] [] test List count:2
+2021-07-26 17:39:17,141 DEBUG [87870] [] indexAction end
+2021-07-26 17:39:17,142 DEBUG [87870] [] TestInfoListController end
+2021-07-26 17:39:17,142 DEBUG [87870] [] finally
+2021-07-26 17:39:19,268 DEBUG [87870] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:39:19,269 DEBUG [87870] [] TestInfoCopyController start
+2021-07-26 17:39:19,269 DEBUG [87870] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 17:39:19,269 DEBUG [87870] [] TestInfoCopyForm: is exist
+2021-07-26 17:39:19,269 DEBUG [87870] [] TestInfoCopyForm: form value set 
+2021-07-26 17:39:19,270 DEBUG [87870] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 17:39:19,270 DEBUG [87870] [] ------------------------------session_check_true
+2021-07-26 17:39:19,270 DEBUG [87870] [] indexAction start
+2021-07-26 17:39:19,270 DEBUG [87870] [] admin_no is 1
+2021-07-26 17:39:19,271 DEBUG [87870] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 17:39:19,272 DEBUG [87870] [] test_info_no
+2021-07-26 17:39:19,356 DEBUG [87870] [] indexAction end
+2021-07-26 17:39:19,356 DEBUG [87870] [] TestInfoCopyController end
+2021-07-26 17:39:19,356 DEBUG [87870] [] finally
+2021-07-26 17:39:23,250 DEBUG [87870] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 17:39:23,251 DEBUG [87870] [] CourseContractRegistController start
+2021-07-26 17:39:23,251 DEBUG [87870] [] controllers/CourseContractRegistController.php: is exist
+2021-07-26 17:39:23,252 DEBUG [87870] [] CourseContractRegistForm: is exist
+2021-07-26 17:39:23,252 DEBUG [87870] [] CourseContractRegistForm: form value set 
+2021-07-26 17:39:23,252 DEBUG [87870] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 17:39:23,252 DEBUG [87870] [] ------------------------------session_check_true
+2021-07-26 17:39:23,253 DEBUG [87870] [] orgShowAction start
+2021-07-26 17:39:23,253 DEBUG [87870] [] admin_no is 1
+2021-07-26 17:39:23,320 DEBUG [87870] [] orgShowAction end
+2021-07-26 17:39:23,320 DEBUG [87870] [] CourseContractRegistController end
+2021-07-26 17:39:23,320 DEBUG [87870] [] finally
+2021-07-26 17:50:37,354 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:50:37,355 DEBUG [89476] [] TestInfoListController start
+2021-07-26 17:50:37,355 DEBUG [89476] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:50:37,355 DEBUG [89476] [] TestInfoListForm: is exist
+2021-07-26 17:50:37,355 DEBUG [89476] [] TestInfoListForm: form value set 
+2021-07-26 17:50:37,356 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:50:37,356 DEBUG [89476] [] indexAction start
+2021-07-26 17:50:37,356 DEBUG [89476] [] admin_no is 1
+2021-07-26 17:50:37,358 DEBUG [89476] [] test List count:2
+2021-07-26 17:50:37,438 DEBUG [89476] [] indexAction end
+2021-07-26 17:50:37,438 DEBUG [89476] [] TestInfoListController end
+2021-07-26 17:50:37,439 DEBUG [89476] [] finally
+2021-07-26 17:54:21,173 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 17:54:21,174 DEBUG [89475] [] TestInfoListController start
+2021-07-26 17:54:21,174 DEBUG [89475] [] controllers/TestInfoListController.php: is exist
+2021-07-26 17:54:21,174 DEBUG [89475] [] TestInfoListForm: is exist
+2021-07-26 17:54:21,174 DEBUG [89475] [] TestInfoListForm: form value set 
+2021-07-26 17:54:21,175 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 17:54:21,175 DEBUG [89475] [] indexAction start
+2021-07-26 17:54:21,175 DEBUG [89475] [] admin_no is 1
+2021-07-26 17:54:21,176 DEBUG [89475] [] test List count:2
+2021-07-26 17:54:21,257 DEBUG [89475] [] indexAction end
+2021-07-26 17:54:21,258 DEBUG [89475] [] TestInfoListController end
+2021-07-26 17:54:21,258 DEBUG [89475] [] finally
+2021-07-26 18:13:51,893 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:13:51,894 DEBUG [90084] [] TestInfoListController start
+2021-07-26 18:13:51,894 DEBUG [90084] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:13:51,894 DEBUG [90084] [] TestInfoListForm: is exist
+2021-07-26 18:13:51,895 DEBUG [90084] [] TestInfoListForm: form value set 
+2021-07-26 18:13:51,895 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:13:51,895 DEBUG [90084] [] indexAction start
+2021-07-26 18:13:51,895 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:13:51,897 DEBUG [90084] [] test List count:2
+2021-07-26 18:13:51,980 DEBUG [90084] [] indexAction end
+2021-07-26 18:13:51,980 DEBUG [90084] [] TestInfoListController end
+2021-07-26 18:13:51,980 DEBUG [90084] [] finally
+2021-07-26 18:13:53,806 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:13:53,807 DEBUG [90084] [] TestInfoCopyController start
+2021-07-26 18:13:53,807 DEBUG [90084] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:13:53,810 DEBUG [90084] [] TestInfoCopyForm: is exist
+2021-07-26 18:13:53,810 DEBUG [90084] [] TestInfoCopyForm: form value set 
+2021-07-26 18:13:53,811 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:13:53,811 DEBUG [90084] [] ------------------------------session_check_true
+2021-07-26 18:13:53,811 DEBUG [90084] [] indexAction start
+2021-07-26 18:13:53,811 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:13:53,812 DEBUG [90084] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:13:53,813 DEBUG [90084] [] test_info_no
+2021-07-26 18:13:53,893 DEBUG [90084] [] indexAction end
+2021-07-26 18:13:53,893 DEBUG [90084] [] TestInfoCopyController end
+2021-07-26 18:13:53,893 DEBUG [90084] [] finally
+2021-07-26 18:13:57,316 DEBUG [90084] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 18:13:57,316 DEBUG [90084] [] CourseContractRegistController start
+2021-07-26 18:13:57,316 DEBUG [90084] [] controllers/CourseContractRegistController.php: is exist
+2021-07-26 18:13:57,317 DEBUG [90084] [] CourseContractRegistForm: is exist
+2021-07-26 18:13:57,317 DEBUG [90084] [] CourseContractRegistForm: form value set 
+2021-07-26 18:13:57,317 DEBUG [90084] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 18:13:57,317 DEBUG [90084] [] ------------------------------session_check_true
+2021-07-26 18:13:57,318 DEBUG [90084] [] orgShowAction start
+2021-07-26 18:13:57,318 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:13:57,385 DEBUG [90084] [] orgShowAction end
+2021-07-26 18:13:57,385 DEBUG [90084] [] CourseContractRegistController end
+2021-07-26 18:13:57,385 DEBUG [90084] [] finally
+2021-07-26 18:14:54,611 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:14:54,612 DEBUG [89747] [] TestInfoListController start
+2021-07-26 18:14:54,612 DEBUG [89747] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:14:54,612 DEBUG [89747] [] TestInfoListForm: is exist
+2021-07-26 18:14:54,612 DEBUG [89747] [] TestInfoListForm: form value set 
+2021-07-26 18:14:54,613 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:14:54,613 DEBUG [89747] [] indexAction start
+2021-07-26 18:14:54,613 DEBUG [89747] [] admin_no is 1
+2021-07-26 18:14:54,614 DEBUG [89747] [] test List count:2
+2021-07-26 18:14:54,693 DEBUG [89747] [] indexAction end
+2021-07-26 18:14:54,693 DEBUG [89747] [] TestInfoListController end
+2021-07-26 18:14:54,693 DEBUG [89747] [] finally
+2021-07-26 18:14:56,277 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:14:56,277 DEBUG [89747] [] TestInfoCopyController start
+2021-07-26 18:14:56,277 DEBUG [89747] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:14:56,280 DEBUG [89747] [] TestInfoCopyForm: is exist
+2021-07-26 18:14:56,281 DEBUG [89747] [] TestInfoCopyForm: form value set 
+2021-07-26 18:14:56,281 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:14:56,281 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 18:14:56,281 DEBUG [89747] [] indexAction start
+2021-07-26 18:14:56,282 DEBUG [89747] [] admin_no is 1
+2021-07-26 18:14:56,282 DEBUG [89747] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:14:56,283 DEBUG [89747] [] test_info_no
+2021-07-26 18:14:56,369 DEBUG [89747] [] indexAction end
+2021-07-26 18:14:56,369 DEBUG [89747] [] TestInfoCopyController end
+2021-07-26 18:14:56,369 DEBUG [89747] [] finally
+2021-07-26 18:14:59,174 DEBUG [89747] [] Request URI : /eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 18:14:59,175 DEBUG [89747] [] CourseContractRegistController start
+2021-07-26 18:14:59,175 DEBUG [89747] [] controllers/CourseContractRegistController.php: is exist
+2021-07-26 18:14:59,175 DEBUG [89747] [] CourseContractRegistForm: is exist
+2021-07-26 18:14:59,175 DEBUG [89747] [] CourseContractRegistForm: form value set 
+2021-07-26 18:14:59,176 DEBUG [89747] [] ------------------------------/eccadmin_dev/CourseContractRegist/orgShow
+2021-07-26 18:14:59,176 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 18:14:59,176 DEBUG [89747] [] orgShowAction start
+2021-07-26 18:14:59,176 DEBUG [89747] [] admin_no is 1
+2021-07-26 18:14:59,244 DEBUG [89747] [] orgShowAction end
+2021-07-26 18:14:59,244 DEBUG [89747] [] CourseContractRegistController end
+2021-07-26 18:14:59,244 DEBUG [89747] [] finally
+2021-07-26 18:15:49,672 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:15:49,673 DEBUG [90085] [] TestInfoListController start
+2021-07-26 18:15:49,673 DEBUG [90085] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:15:49,673 DEBUG [90085] [] TestInfoListForm: is exist
+2021-07-26 18:15:49,673 DEBUG [90085] [] TestInfoListForm: form value set 
+2021-07-26 18:15:49,674 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:15:49,674 DEBUG [90085] [] indexAction start
+2021-07-26 18:15:49,674 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:15:49,675 DEBUG [90085] [] test List count:2
+2021-07-26 18:15:49,753 DEBUG [90085] [] indexAction end
+2021-07-26 18:15:49,753 DEBUG [90085] [] TestInfoListController end
+2021-07-26 18:15:49,754 DEBUG [90085] [] finally
+2021-07-26 18:15:51,558 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:15:51,558 DEBUG [90085] [] TestInfoCopyController start
+2021-07-26 18:15:51,558 DEBUG [90085] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:15:51,559 DEBUG [90085] [] TestInfoCopyForm: is exist
+2021-07-26 18:15:51,559 DEBUG [90085] [] TestInfoCopyForm: form value set 
+2021-07-26 18:15:51,559 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:15:51,560 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:15:51,560 DEBUG [90085] [] indexAction start
+2021-07-26 18:15:51,560 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:15:51,560 DEBUG [90085] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:15:51,562 DEBUG [90085] [] test_info_no
+2021-07-26 18:15:51,643 DEBUG [90085] [] indexAction end
+2021-07-26 18:15:51,643 DEBUG [90085] [] TestInfoCopyController end
+2021-07-26 18:15:51,643 DEBUG [90085] [] finally
+2021-07-26 18:15:54,400 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:15:54,401 DEBUG [90085] [] TestInfoCopyController start
+2021-07-26 18:15:54,401 DEBUG [90085] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:15:54,401 DEBUG [90085] [] TestInfoCopyForm: is exist
+2021-07-26 18:15:54,401 DEBUG [90085] [] TestInfoCopyForm: form value set 
+2021-07-26 18:15:54,402 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:15:54,402 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:15:54,402 DEBUG [90085] [] orgShowAction start
+2021-07-26 18:15:54,402 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:15:54,488 DEBUG [90085] [] orgShowAction end
+2021-07-26 18:15:54,488 DEBUG [90085] [] TestInfoCopyController end
+2021-07-26 18:15:54,488 DEBUG [90085] [] finally
+2021-07-26 18:16:05,474 DEBUG [88547] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:16:05,475 DEBUG [88547] [] TestInfoCopyController start
+2021-07-26 18:16:05,475 DEBUG [88547] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:16:05,475 DEBUG [88547] [] TestInfoCopyForm: is exist
+2021-07-26 18:16:05,475 DEBUG [88547] [] TestInfoCopyForm: form value set 
+2021-07-26 18:16:05,476 DEBUG [88547] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:16:05,476 DEBUG [88547] [] ------------------------------session_check_true
+2021-07-26 18:16:05,476 DEBUG [88547] [] orgShowAction start
+2021-07-26 18:16:05,476 DEBUG [88547] [] admin_no is 1
+2021-07-26 18:16:05,554 DEBUG [88547] [] orgShowAction end
+2021-07-26 18:16:05,554 DEBUG [88547] [] TestInfoCopyController end
+2021-07-26 18:16:05,554 DEBUG [88547] [] finally
+2021-07-26 18:19:42,078 DEBUG [87871] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:19:42,079 DEBUG [87871] [] TestInfoListController start
+2021-07-26 18:19:42,079 DEBUG [87871] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:19:42,079 DEBUG [87871] [] TestInfoListForm: is exist
+2021-07-26 18:19:42,079 DEBUG [87871] [] TestInfoListForm: form value set 
+2021-07-26 18:19:42,080 DEBUG [87871] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:19:42,080 DEBUG [87871] [] indexAction start
+2021-07-26 18:19:42,080 DEBUG [87871] [] admin_no is 1
+2021-07-26 18:19:42,081 DEBUG [87871] [] test List count:2
+2021-07-26 18:19:42,168 DEBUG [87871] [] indexAction end
+2021-07-26 18:19:42,168 DEBUG [87871] [] TestInfoListController end
+2021-07-26 18:19:42,168 DEBUG [87871] [] finally
+2021-07-26 18:19:45,590 DEBUG [87871] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:19:45,590 DEBUG [87871] [] TestInfoCopyController start
+2021-07-26 18:19:45,590 DEBUG [87871] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:19:45,591 DEBUG [87871] [] TestInfoCopyForm: is exist
+2021-07-26 18:19:45,592 DEBUG [87871] [] TestInfoCopyForm: form value set 
+2021-07-26 18:19:45,592 DEBUG [87871] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:19:45,592 DEBUG [87871] [] ------------------------------session_check_true
+2021-07-26 18:19:45,592 DEBUG [87871] [] indexAction start
+2021-07-26 18:19:45,592 DEBUG [87871] [] admin_no is 1
+2021-07-26 18:19:45,593 DEBUG [87871] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:19:45,594 DEBUG [87871] [] test_info_no
+2021-07-26 18:19:45,678 DEBUG [87871] [] indexAction end
+2021-07-26 18:19:45,678 DEBUG [87871] [] TestInfoCopyController end
+2021-07-26 18:19:45,678 DEBUG [87871] [] finally
+2021-07-26 18:19:48,628 DEBUG [87871] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:19:48,628 DEBUG [87871] [] TestInfoCopyController start
+2021-07-26 18:19:48,628 DEBUG [87871] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:19:48,629 DEBUG [87871] [] TestInfoCopyForm: is exist
+2021-07-26 18:19:48,629 DEBUG [87871] [] TestInfoCopyForm: form value set 
+2021-07-26 18:19:48,630 DEBUG [87871] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:19:48,630 DEBUG [87871] [] ------------------------------session_check_true
+2021-07-26 18:19:48,630 DEBUG [87871] [] orgShowAction start
+2021-07-26 18:19:48,630 DEBUG [87871] [] admin_no is 1
+2021-07-26 18:19:48,713 DEBUG [87871] [] orgShowAction end
+2021-07-26 18:19:48,713 DEBUG [87871] [] TestInfoCopyController end
+2021-07-26 18:19:48,713 DEBUG [87871] [] finally
+2021-07-26 18:21:14,063 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:21:14,063 DEBUG [90084] [] TestInfoListController start
+2021-07-26 18:21:14,064 DEBUG [90084] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:21:14,064 DEBUG [90084] [] TestInfoListForm: is exist
+2021-07-26 18:21:14,064 DEBUG [90084] [] TestInfoListForm: form value set 
+2021-07-26 18:21:14,065 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:21:14,065 DEBUG [90084] [] indexAction start
+2021-07-26 18:21:14,065 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:21:14,066 DEBUG [90084] [] test List count:2
+2021-07-26 18:21:14,148 DEBUG [90084] [] indexAction end
+2021-07-26 18:21:14,148 DEBUG [90084] [] TestInfoListController end
+2021-07-26 18:21:14,148 DEBUG [90084] [] finally
+2021-07-26 18:21:17,199 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:21:17,200 DEBUG [90084] [] TestInfoCopyController start
+2021-07-26 18:21:17,200 DEBUG [90084] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:21:17,200 DEBUG [90084] [] TestInfoCopyForm: is exist
+2021-07-26 18:21:17,201 DEBUG [90084] [] TestInfoCopyForm: form value set 
+2021-07-26 18:21:17,202 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:21:17,202 DEBUG [90084] [] ------------------------------session_check_true
+2021-07-26 18:21:17,202 DEBUG [90084] [] indexAction start
+2021-07-26 18:21:17,202 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:21:17,203 DEBUG [90084] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:21:17,204 DEBUG [90084] [] test_info_no
+2021-07-26 18:21:17,284 DEBUG [90084] [] indexAction end
+2021-07-26 18:21:17,284 DEBUG [90084] [] TestInfoCopyController end
+2021-07-26 18:21:17,284 DEBUG [90084] [] finally
+2021-07-26 18:21:20,138 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:21:20,138 DEBUG [90084] [] TestInfoCopyController start
+2021-07-26 18:21:20,138 DEBUG [90084] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:21:20,139 DEBUG [90084] [] TestInfoCopyForm: is exist
+2021-07-26 18:21:20,139 DEBUG [90084] [] TestInfoCopyForm: form value set 
+2021-07-26 18:21:20,139 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:21:20,139 DEBUG [90084] [] ------------------------------session_check_true
+2021-07-26 18:21:20,139 DEBUG [90084] [] orgShowAction start
+2021-07-26 18:21:20,140 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:21:20,217 DEBUG [90084] [] orgShowAction end
+2021-07-26 18:21:20,217 DEBUG [90084] [] TestInfoCopyController end
+2021-07-26 18:21:20,217 DEBUG [90084] [] finally
+2021-07-26 18:21:27,488 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:21:27,489 DEBUG [89747] [] TestInfoRegistController start
+2021-07-26 18:21:27,489 DEBUG [89747] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:21:27,489 DEBUG [89747] [] TestInfoRegistForm: is exist
+2021-07-26 18:21:27,489 DEBUG [89747] [] TestInfoRegistForm: form value set 
+2021-07-26 18:21:27,490 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:21:27,490 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 18:21:27,490 DEBUG [89747] [] backAction start
+2021-07-26 18:21:27,490 DEBUG [89747] [] backAction end
+2021-07-26 18:21:27,490 DEBUG [89747] [] TestInfoRegistController end
+2021-07-26 18:21:27,490 DEBUG [89747] [] finally
+2021-07-26 18:21:27,509 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 18:21:27,510 DEBUG [89747] [] TestInfoListController start
+2021-07-26 18:21:27,510 DEBUG [89747] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:21:27,510 DEBUG [89747] [] TestInfoListForm: is exist
+2021-07-26 18:21:27,510 DEBUG [89747] [] TestInfoListForm: form value set 
+2021-07-26 18:21:27,510 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 18:21:27,511 DEBUG [89747] [] SearchAction start
+2021-07-26 18:21:27,511 DEBUG [89747] [] admin_no is 1
+2021-07-26 18:21:27,512 DEBUG [89747] [] test List count:2
+2021-07-26 18:21:27,587 DEBUG [89747] [] SearchAction end
+2021-07-26 18:21:27,587 DEBUG [89747] [] TestInfoListController end
+2021-07-26 18:21:27,588 DEBUG [89747] [] finally
+2021-07-26 18:21:30,621 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoRegist/index
+2021-07-26 18:21:30,621 DEBUG [89747] [] TestInfoRegistController start
+2021-07-26 18:21:30,621 DEBUG [89747] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:21:30,621 DEBUG [89747] [] TestInfoRegistForm: is exist
+2021-07-26 18:21:30,622 DEBUG [89747] [] TestInfoRegistForm: form value set 
+2021-07-26 18:21:30,622 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoRegist/index
+2021-07-26 18:21:30,622 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 18:21:30,622 DEBUG [89747] [] indexAction start
+2021-07-26 18:21:30,622 DEBUG [89747] [] admin_no is 1
+2021-07-26 18:21:30,623 DEBUG [89747] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:21:30,623 DEBUG [89747] [] Array
+(
+    [0] => T_Test_InfoDto Object
+        (
+            [org_no] => 99999
+            [test_info_no] => 145
+            [test_info_name] => 2021 July Test 1
+            [long_description] => This is test from cherry.<div><br></div><div><img src="/admin_dev/files/99999/TestInfoimage/TestInfoNo_145_001.png" width="492"><br></div>
+            [show_flg] => 0
+            [test_time] => 90
+            [status] => 1
+            [start_period] => 2021/07/24
+            [end_period] => 2999/12/31
+            [remarks] => 
+            [del_flg] => 
+            [create_dt] => 
+            [creater_id] => 
+            [update_dt] => 
+            [updater_id] => 
+        )
+
+)
+
+2021-07-26 18:21:30,624 DEBUG [89747] [] T_Test_InfoDto Object
+(
+    [org_no] => 99999
+    [test_info_no] => 145
+    [test_info_name] => 2021 July Test 1
+    [long_description] => This is test from cherry.<div><br></div><div><img src="/admin_dev/files/99999/TestInfoimage/TestInfoNo_145_001.png" width="492"><br></div>
+    [show_flg] => 0
+    [test_time] => 90
+    [status] => 1
+    [start_period] => 2021/07/24
+    [end_period] => 2999/12/31
+    [remarks] => 
+    [del_flg] => 
+    [create_dt] => 
+    [creater_id] => 
+    [update_dt] => 
+    [updater_id] => 
+)
+
+2021-07-26 18:21:30,714 DEBUG [89747] [] indexAction end
+2021-07-26 18:21:30,714 DEBUG [89747] [] TestInfoRegistController end
+2021-07-26 18:21:30,714 DEBUG [89747] [] finally
+2021-07-26 18:21:54,122 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:21:54,123 DEBUG [90085] [] TestInfoListController start
+2021-07-26 18:21:54,123 DEBUG [90085] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:21:54,123 DEBUG [90085] [] TestInfoListForm: is exist
+2021-07-26 18:21:54,123 DEBUG [90085] [] TestInfoListForm: form value set 
+2021-07-26 18:21:54,124 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:21:54,124 DEBUG [90085] [] indexAction start
+2021-07-26 18:21:54,124 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:21:54,125 DEBUG [90085] [] test List count:2
+2021-07-26 18:21:54,208 DEBUG [90085] [] indexAction end
+2021-07-26 18:21:54,208 DEBUG [90085] [] TestInfoListController end
+2021-07-26 18:21:54,209 DEBUG [90085] [] finally
+2021-07-26 18:21:57,307 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:21:57,308 DEBUG [90085] [] TestInfoCopyController start
+2021-07-26 18:21:57,308 DEBUG [90085] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:21:57,308 DEBUG [90085] [] TestInfoCopyForm: is exist
+2021-07-26 18:21:57,309 DEBUG [90085] [] TestInfoCopyForm: form value set 
+2021-07-26 18:21:57,309 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:21:57,309 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:21:57,309 DEBUG [90085] [] indexAction start
+2021-07-26 18:21:57,310 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:21:57,310 DEBUG [90085] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:21:57,311 DEBUG [90085] [] test_info_no
+2021-07-26 18:21:57,394 DEBUG [90085] [] indexAction end
+2021-07-26 18:21:57,394 DEBUG [90085] [] TestInfoCopyController end
+2021-07-26 18:21:57,394 DEBUG [90085] [] finally
+2021-07-26 18:22:06,704 DEBUG [88547] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:22:06,705 DEBUG [88547] [] TestInfoCopyController start
+2021-07-26 18:22:06,705 DEBUG [88547] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:22:06,705 DEBUG [88547] [] TestInfoCopyForm: is exist
+2021-07-26 18:22:06,705 DEBUG [88547] [] TestInfoCopyForm: form value set 
+2021-07-26 18:22:06,706 DEBUG [88547] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:22:06,706 DEBUG [88547] [] ------------------------------session_check_true
+2021-07-26 18:22:06,706 DEBUG [88547] [] orgShowAction start
+2021-07-26 18:22:06,706 DEBUG [88547] [] admin_no is 1
+2021-07-26 18:22:06,783 DEBUG [88547] [] orgShowAction end
+2021-07-26 18:22:06,783 DEBUG [88547] [] TestInfoCopyController end
+2021-07-26 18:22:06,784 DEBUG [88547] [] finally
+2021-07-26 18:24:31,937 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:24:31,938 DEBUG [89475] [] TestInfoListController start
+2021-07-26 18:24:31,938 DEBUG [89475] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:24:31,938 DEBUG [89475] [] TestInfoListForm: is exist
+2021-07-26 18:24:31,938 DEBUG [89475] [] TestInfoListForm: form value set 
+2021-07-26 18:24:31,939 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:24:31,939 DEBUG [89475] [] indexAction start
+2021-07-26 18:24:31,939 DEBUG [89475] [] admin_no is 1
+2021-07-26 18:24:31,940 DEBUG [89475] [] test List count:2
+2021-07-26 18:24:32,021 DEBUG [89475] [] indexAction end
+2021-07-26 18:24:32,022 DEBUG [89475] [] TestInfoListController end
+2021-07-26 18:24:32,022 DEBUG [89475] [] finally
+2021-07-26 18:24:33,712 DEBUG [89475] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:24:33,713 DEBUG [89475] [] TestInfoCopyController start
+2021-07-26 18:24:33,713 DEBUG [89475] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:24:33,713 DEBUG [89475] [] TestInfoCopyForm: is exist
+2021-07-26 18:24:33,714 DEBUG [89475] [] TestInfoCopyForm: form value set 
+2021-07-26 18:24:33,714 DEBUG [89475] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:24:33,714 DEBUG [89475] [] ------------------------------session_check_true
+2021-07-26 18:24:33,714 DEBUG [89475] [] indexAction start
+2021-07-26 18:24:33,714 DEBUG [89475] [] admin_no is 1
+2021-07-26 18:24:33,715 DEBUG [89475] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:24:33,716 DEBUG [89475] [] test_info_no
+2021-07-26 18:24:33,797 DEBUG [89475] [] indexAction end
+2021-07-26 18:24:33,797 DEBUG [89475] [] TestInfoCopyController end
+2021-07-26 18:24:33,797 DEBUG [89475] [] finally
+2021-07-26 18:24:56,467 DEBUG [90086] [] Request URI : /eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:24:56,468 DEBUG [90086] [] TestInfoRegistController start
+2021-07-26 18:24:56,468 DEBUG [90086] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:24:56,468 DEBUG [90086] [] TestInfoRegistForm: is exist
+2021-07-26 18:24:56,469 DEBUG [90086] [] TestInfoRegistForm: form value set 
+2021-07-26 18:24:56,469 DEBUG [90086] [] ------------------------------/eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:24:56,469 DEBUG [90086] [] ------------------------------session_check_true
+2021-07-26 18:24:56,469 DEBUG [90086] [] backAction start
+2021-07-26 18:24:56,469 DEBUG [90086] [] backAction end
+2021-07-26 18:24:56,470 DEBUG [90086] [] TestInfoRegistController end
+2021-07-26 18:24:56,470 DEBUG [90086] [] finally
+2021-07-26 18:24:56,492 DEBUG [90086] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 18:24:56,493 DEBUG [90086] [] TestInfoListController start
+2021-07-26 18:24:56,493 DEBUG [90086] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:24:56,493 DEBUG [90086] [] TestInfoListForm: is exist
+2021-07-26 18:24:56,493 DEBUG [90086] [] TestInfoListForm: form value set 
+2021-07-26 18:24:56,494 DEBUG [90086] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 18:24:56,494 DEBUG [90086] [] SearchAction start
+2021-07-26 18:24:56,494 DEBUG [90086] [] admin_no is 1
+2021-07-26 18:24:56,495 DEBUG [90086] [] test List count:2
+2021-07-26 18:24:56,570 DEBUG [90086] [] SearchAction end
+2021-07-26 18:24:56,570 DEBUG [90086] [] TestInfoListController end
+2021-07-26 18:24:56,570 DEBUG [90086] [] finally
+2021-07-26 18:24:57,986 DEBUG [90086] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:24:57,987 DEBUG [90086] [] TestInfoCopyController start
+2021-07-26 18:24:57,987 DEBUG [90086] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:24:57,987 DEBUG [90086] [] TestInfoCopyForm: is exist
+2021-07-26 18:24:57,987 DEBUG [90086] [] TestInfoCopyForm: form value set 
+2021-07-26 18:24:57,988 DEBUG [90086] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:24:57,988 DEBUG [90086] [] ------------------------------session_check_true
+2021-07-26 18:24:57,988 DEBUG [90086] [] indexAction start
+2021-07-26 18:24:57,988 DEBUG [90086] [] admin_no is 1
+2021-07-26 18:24:57,989 DEBUG [90086] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:24:57,990 DEBUG [90086] [] test_info_no
+2021-07-26 18:24:58,068 DEBUG [90086] [] indexAction end
+2021-07-26 18:24:58,069 DEBUG [90086] [] TestInfoCopyController end
+2021-07-26 18:24:58,069 DEBUG [90086] [] finally
+2021-07-26 18:25:09,126 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:25:09,127 DEBUG [89735] [] TestInfoCopyController start
+2021-07-26 18:25:09,127 DEBUG [89735] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:25:09,127 DEBUG [89735] [] TestInfoCopyForm: is exist
+2021-07-26 18:25:09,127 DEBUG [89735] [] TestInfoCopyForm: form value set 
+2021-07-26 18:25:09,128 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoCopy/orgShow
+2021-07-26 18:25:09,128 DEBUG [89735] [] ------------------------------session_check_true
+2021-07-26 18:25:09,128 DEBUG [89735] [] orgShowAction start
+2021-07-26 18:25:09,128 DEBUG [89735] [] admin_no is 1
+2021-07-26 18:25:09,209 DEBUG [89735] [] orgShowAction end
+2021-07-26 18:25:09,209 DEBUG [89735] [] TestInfoCopyController end
+2021-07-26 18:25:09,209 DEBUG [89735] [] finally
+2021-07-26 18:25:19,968 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:25:19,968 DEBUG [89476] [] TestInfoRegistController start
+2021-07-26 18:25:19,968 DEBUG [89476] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:25:19,969 DEBUG [89476] [] TestInfoRegistForm: is exist
+2021-07-26 18:25:19,969 DEBUG [89476] [] TestInfoRegistForm: form value set 
+2021-07-26 18:25:19,969 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoRegist/back
+2021-07-26 18:25:19,969 DEBUG [89476] [] ------------------------------session_check_true
+2021-07-26 18:25:19,970 DEBUG [89476] [] backAction start
+2021-07-26 18:25:19,970 DEBUG [89476] [] backAction end
+2021-07-26 18:25:19,970 DEBUG [89476] [] TestInfoRegistController end
+2021-07-26 18:25:19,970 DEBUG [89476] [] finally
+2021-07-26 18:25:19,988 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 18:25:19,988 DEBUG [89476] [] TestInfoListController start
+2021-07-26 18:25:19,988 DEBUG [89476] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:25:19,989 DEBUG [89476] [] TestInfoListForm: is exist
+2021-07-26 18:25:19,989 DEBUG [89476] [] TestInfoListForm: form value set 
+2021-07-26 18:25:19,989 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 18:25:19,989 DEBUG [89476] [] SearchAction start
+2021-07-26 18:25:19,989 DEBUG [89476] [] admin_no is 1
+2021-07-26 18:25:19,991 DEBUG [89476] [] test List count:2
+2021-07-26 18:25:20,070 DEBUG [89476] [] SearchAction end
+2021-07-26 18:25:20,070 DEBUG [89476] [] TestInfoListController end
+2021-07-26 18:25:20,070 DEBUG [89476] [] finally
+2021-07-26 18:39:18,885 DEBUG [89410] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:39:18,886 DEBUG [89410] [] TestInfoListController start
+2021-07-26 18:39:18,886 DEBUG [89410] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:39:18,886 DEBUG [89410] [] TestInfoListForm: is exist
+2021-07-26 18:39:18,886 DEBUG [89410] [] TestInfoListForm: form value set 
+2021-07-26 18:39:18,887 DEBUG [89410] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:39:18,887 DEBUG [89410] [] indexAction start
+2021-07-26 18:39:18,887 DEBUG [89410] [] admin_no is 1
+2021-07-26 18:39:18,889 DEBUG [89410] [] test List count:2
+2021-07-26 18:39:18,967 DEBUG [89410] [] indexAction end
+2021-07-26 18:39:18,967 DEBUG [89410] [] TestInfoListController end
+2021-07-26 18:39:18,967 DEBUG [89410] [] finally
+2021-07-26 18:39:26,414 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:39:26,415 DEBUG [90084] [] TestInfoCopyController start
+2021-07-26 18:39:26,415 DEBUG [90084] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:39:26,417 DEBUG [90084] [] TestInfoCopyForm: is exist
+2021-07-26 18:39:26,417 DEBUG [90084] [] TestInfoCopyForm: form value set 
+2021-07-26 18:39:26,418 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:39:26,418 DEBUG [90084] [] ------------------------------session_check_true
+2021-07-26 18:39:26,418 DEBUG [90084] [] indexAction start
+2021-07-26 18:39:26,418 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:39:26,419 DEBUG [90084] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:39:26,420 DEBUG [90084] [] test_info_no
+2021-07-26 18:39:26,504 DEBUG [90084] [] indexAction end
+2021-07-26 18:39:26,504 DEBUG [90084] [] TestInfoCopyController end
+2021-07-26 18:39:26,504 DEBUG [90084] [] finally
+2021-07-26 18:39:49,526 DEBUG [89747] [] Request URI : /eccadmin_dev/TestInfoRegist/save
+2021-07-26 18:39:49,526 DEBUG [89747] [] TestInfoRegistController start
+2021-07-26 18:39:49,527 DEBUG [89747] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:39:49,527 DEBUG [89747] [] TestInfoRegistForm: is exist
+2021-07-26 18:39:49,527 DEBUG [89747] [] TestInfoRegistForm: form value set 
+2021-07-26 18:39:49,528 DEBUG [89747] [] ------------------------------/eccadmin_dev/TestInfoRegist/save
+2021-07-26 18:39:49,528 DEBUG [89747] [] ------------------------------session_check_true
+2021-07-26 18:39:49,528 DEBUG [89747] [] saveAction start
+2021-07-26 18:39:49,528 DEBUG [89747] [] INSERT INTO  T_TEST_INFO (org_no,test_info_no,test_info_name,long_description,show_flg,test_time,status,start_period,end_period,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:test_info_name,:long_description,:show_flg,:test_time,:status,:start_period,:end_period,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:39:49,530 DEBUG [89747] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:39:49,531 DEBUG [89747] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:39:49,603 DEBUG [89747] [] saveAction end
+2021-07-26 18:39:49,603 DEBUG [89747] [] TestInfoRegistController end
+2021-07-26 18:39:49,610 DEBUG [89747] [] finally
+2021-07-26 18:39:57,399 DEBUG [88547] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:39:57,400 DEBUG [88547] [] TestInfoListController start
+2021-07-26 18:39:57,400 DEBUG [88547] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:39:57,400 DEBUG [88547] [] TestInfoListForm: is exist
+2021-07-26 18:39:57,400 DEBUG [88547] [] TestInfoListForm: form value set 
+2021-07-26 18:39:57,401 DEBUG [88547] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:39:57,401 DEBUG [88547] [] indexAction start
+2021-07-26 18:39:57,401 DEBUG [88547] [] admin_no is 1
+2021-07-26 18:39:57,403 DEBUG [88547] [] test List count:3
+2021-07-26 18:39:57,486 DEBUG [88547] [] indexAction end
+2021-07-26 18:39:57,486 DEBUG [88547] [] TestInfoListController end
+2021-07-26 18:39:57,487 DEBUG [88547] [] finally
+2021-07-26 18:40:00,583 DEBUG [88547] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:40:00,584 DEBUG [88547] [] TestInfoCopyController start
+2021-07-26 18:40:00,584 DEBUG [88547] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:40:00,584 DEBUG [88547] [] TestInfoCopyForm: is exist
+2021-07-26 18:40:00,584 DEBUG [88547] [] TestInfoCopyForm: form value set 
+2021-07-26 18:40:00,585 DEBUG [88547] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:40:00,585 DEBUG [88547] [] ------------------------------session_check_true
+2021-07-26 18:40:00,585 DEBUG [88547] [] indexAction start
+2021-07-26 18:40:00,585 DEBUG [88547] [] admin_no is 1
+2021-07-26 18:40:00,586 DEBUG [88547] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:40:00,587 DEBUG [88547] [] test_info_no
+2021-07-26 18:40:00,666 DEBUG [88547] [] indexAction end
+2021-07-26 18:40:00,666 DEBUG [88547] [] TestInfoCopyController end
+2021-07-26 18:40:00,666 DEBUG [88547] [] finally
+2021-07-26 18:40:15,354 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoRegist/save
+2021-07-26 18:40:15,354 DEBUG [89735] [] TestInfoRegistController start
+2021-07-26 18:40:15,354 DEBUG [89735] [] controllers/TestInfoRegistController.php: is exist
+2021-07-26 18:40:15,355 DEBUG [89735] [] TestInfoRegistForm: is exist
+2021-07-26 18:40:15,355 DEBUG [89735] [] TestInfoRegistForm: form value set 
+2021-07-26 18:40:15,355 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoRegist/save
+2021-07-26 18:40:15,355 DEBUG [89735] [] ------------------------------session_check_true
+2021-07-26 18:40:15,356 DEBUG [89735] [] saveAction start
+2021-07-26 18:40:15,356 DEBUG [89735] [] INSERT INTO  T_TEST_INFO (org_no,test_info_no,test_info_name,long_description,show_flg,test_time,status,start_period,end_period,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:test_info_name,:long_description,:show_flg,:test_time,:status,:start_period,:end_period,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:40:15,358 DEBUG [89735] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:40:15,359 DEBUG [89735] [] INSERT INTO  T_TEST_INFO_QUIZ (org_no,test_info_no,quiz_info_no,disp_no,del_flg,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:quiz_info_no,:disp_no,:del_flg,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:40:15,437 DEBUG [89735] [] saveAction end
+2021-07-26 18:40:15,437 DEBUG [89735] [] TestInfoRegistController end
+2021-07-26 18:40:15,438 DEBUG [89735] [] finally
+2021-07-26 18:45:12,374 DEBUG [90084] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:45:12,374 DEBUG [90084] [] TestInfoListController start
+2021-07-26 18:45:12,374 DEBUG [90084] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:45:12,375 DEBUG [90084] [] TestInfoListForm: is exist
+2021-07-26 18:45:12,375 DEBUG [90084] [] TestInfoListForm: form value set 
+2021-07-26 18:45:12,375 DEBUG [90084] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:45:12,376 DEBUG [90084] [] indexAction start
+2021-07-26 18:45:12,376 DEBUG [90084] [] admin_no is 1
+2021-07-26 18:45:12,377 DEBUG [90084] [] test List count:4
+2021-07-26 18:45:12,454 DEBUG [90084] [] indexAction end
+2021-07-26 18:45:12,454 DEBUG [90084] [] TestInfoListController end
+2021-07-26 18:45:12,454 DEBUG [90084] [] finally
+2021-07-26 18:45:18,926 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoPreview/index
+2021-07-26 18:45:18,927 DEBUG [90085] [] TestInfoPreviewController start
+2021-07-26 18:45:18,927 DEBUG [90085] [] controllers/TestInfoPreviewController.php: is exist
+2021-07-26 18:45:18,928 DEBUG [90085] [] TestInfoPreviewForm: is exist
+2021-07-26 18:45:18,929 DEBUG [90085] [] TestInfoPreviewForm: form value set 
+2021-07-26 18:45:18,929 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoPreview/index
+2021-07-26 18:45:18,929 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:45:18,929 DEBUG [90085] [] indexAction start
+2021-07-26 18:45:18,929 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:45:19,012 DEBUG [90085] [] indexAction end
+2021-07-26 18:45:19,012 DEBUG [90085] [] TestInfoPreviewController end
+2021-07-26 18:45:19,012 DEBUG [90085] [] finally
+2021-07-26 18:45:22,090 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoPreview/back
+2021-07-26 18:45:22,091 DEBUG [90085] [] TestInfoPreviewController start
+2021-07-26 18:45:22,091 DEBUG [90085] [] controllers/TestInfoPreviewController.php: is exist
+2021-07-26 18:45:22,091 DEBUG [90085] [] TestInfoPreviewForm: is exist
+2021-07-26 18:45:22,092 DEBUG [90085] [] TestInfoPreviewForm: form value set 
+2021-07-26 18:45:22,092 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoPreview/back
+2021-07-26 18:45:22,092 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:45:22,092 DEBUG [90085] [] backAction start
+2021-07-26 18:45:22,092 DEBUG [90085] [] backAction end
+2021-07-26 18:45:22,092 DEBUG [90085] [] TestInfoPreviewController end
+2021-07-26 18:45:22,093 DEBUG [90085] [] finally
+2021-07-26 18:45:22,111 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 18:45:22,112 DEBUG [90085] [] TestInfoListController start
+2021-07-26 18:45:22,112 DEBUG [90085] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:45:22,112 DEBUG [90085] [] TestInfoListForm: is exist
+2021-07-26 18:45:22,112 DEBUG [90085] [] TestInfoListForm: form value set 
+2021-07-26 18:45:22,113 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 18:45:22,113 DEBUG [90085] [] SearchAction start
+2021-07-26 18:45:22,113 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:45:22,114 DEBUG [90085] [] test List count:4
+2021-07-26 18:45:22,192 DEBUG [90085] [] SearchAction end
+2021-07-26 18:45:22,192 DEBUG [90085] [] TestInfoListController end
+2021-07-26 18:45:22,193 DEBUG [90085] [] finally
+2021-07-26 18:45:25,743 DEBUG [90085] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:45:25,744 DEBUG [90085] [] TestInfoCopyController start
+2021-07-26 18:45:25,744 DEBUG [90085] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:45:25,744 DEBUG [90085] [] TestInfoCopyForm: is exist
+2021-07-26 18:45:25,744 DEBUG [90085] [] TestInfoCopyForm: form value set 
+2021-07-26 18:45:25,745 DEBUG [90085] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:45:25,745 DEBUG [90085] [] ------------------------------session_check_true
+2021-07-26 18:45:25,745 DEBUG [90085] [] indexAction start
+2021-07-26 18:45:25,745 DEBUG [90085] [] admin_no is 1
+2021-07-26 18:45:25,746 DEBUG [90085] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:45:25,747 DEBUG [90085] [] test_info_no
+2021-07-26 18:45:25,826 DEBUG [90085] [] indexAction end
+2021-07-26 18:45:25,826 DEBUG [90085] [] TestInfoCopyController end
+2021-07-26 18:45:25,826 DEBUG [90085] [] finally
+2021-07-26 18:54:19,508 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:54:19,508 DEBUG [89735] [] TestInfoListController start
+2021-07-26 18:54:19,508 DEBUG [89735] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:54:19,509 DEBUG [89735] [] TestInfoListForm: is exist
+2021-07-26 18:54:19,509 DEBUG [89735] [] TestInfoListForm: form value set 
+2021-07-26 18:54:19,509 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:54:19,509 DEBUG [89735] [] indexAction start
+2021-07-26 18:54:19,510 DEBUG [89735] [] admin_no is 1
+2021-07-26 18:54:19,511 DEBUG [89735] [] test List count:4
+2021-07-26 18:54:19,588 DEBUG [89735] [] indexAction end
+2021-07-26 18:54:19,588 DEBUG [89735] [] TestInfoListController end
+2021-07-26 18:54:19,588 DEBUG [89735] [] finally
+2021-07-26 18:54:22,889 DEBUG [89735] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:54:22,890 DEBUG [89735] [] TestInfoCopyController start
+2021-07-26 18:54:22,890 DEBUG [89735] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:54:22,893 DEBUG [89735] [] TestInfoCopyForm: is exist
+2021-07-26 18:54:22,893 DEBUG [89735] [] TestInfoCopyForm: form value set 
+2021-07-26 18:54:22,894 DEBUG [89735] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:54:22,894 DEBUG [89735] [] ------------------------------session_check_true
+2021-07-26 18:54:22,894 DEBUG [89735] [] indexAction start
+2021-07-26 18:54:22,894 DEBUG [89735] [] admin_no is 1
+2021-07-26 18:54:22,895 DEBUG [89735] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:54:22,896 DEBUG [89735] [] test_info_no
+2021-07-26 18:54:22,976 DEBUG [89735] [] indexAction end
+2021-07-26 18:54:22,976 DEBUG [89735] [] TestInfoCopyController end
+2021-07-26 18:54:22,976 DEBUG [89735] [] finally
+2021-07-26 18:54:34,482 DEBUG [90086] [] Request URI : /eccadmin_dev/TestInfoCopy/save
+2021-07-26 18:54:34,483 DEBUG [90086] [] TestInfoCopyController start
+2021-07-26 18:54:34,483 DEBUG [90086] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:54:34,483 DEBUG [90086] [] TestInfoCopyForm: is exist
+2021-07-26 18:54:34,483 DEBUG [90086] [] TestInfoCopyForm: form value set 
+2021-07-26 18:54:34,484 DEBUG [90086] [] ------------------------------/eccadmin_dev/TestInfoCopy/save
+2021-07-26 18:54:34,484 DEBUG [90086] [] ------------------------------session_check_true
+2021-07-26 18:54:34,484 DEBUG [90086] [] saveAction start
+2021-07-26 18:54:34,656 DEBUG [90086] [] saveAction end
+2021-07-26 18:54:34,656 DEBUG [90086] [] TestInfoCopyController end
+2021-07-26 18:54:34,656 DEBUG [90086] [] finally
+2021-07-26 18:54:53,625 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoCopy/back
+2021-07-26 18:54:53,626 DEBUG [89476] [] TestInfoCopyController start
+2021-07-26 18:54:53,626 DEBUG [89476] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:54:53,626 DEBUG [89476] [] TestInfoCopyForm: is exist
+2021-07-26 18:54:53,627 DEBUG [89476] [] TestInfoCopyForm: form value set 
+2021-07-26 18:54:53,627 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoCopy/back
+2021-07-26 18:54:53,627 DEBUG [89476] [] ------------------------------session_check_true
+2021-07-26 18:54:53,627 DEBUG [89476] [] backAction start
+2021-07-26 18:54:53,627 DEBUG [89476] [] backAction end
+2021-07-26 18:54:53,628 DEBUG [89476] [] TestInfoCopyController end
+2021-07-26 18:54:53,628 DEBUG [89476] [] finally
+2021-07-26 18:54:53,647 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoList/Search
+2021-07-26 18:54:53,648 DEBUG [89476] [] TestInfoListController start
+2021-07-26 18:54:53,648 DEBUG [89476] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:54:53,648 DEBUG [89476] [] TestInfoListForm: is exist
+2021-07-26 18:54:53,648 DEBUG [89476] [] TestInfoListForm: form value set 
+2021-07-26 18:54:53,648 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoList/Search
+2021-07-26 18:54:53,649 DEBUG [89476] [] SearchAction start
+2021-07-26 18:54:53,649 DEBUG [89476] [] admin_no is 1
+2021-07-26 18:54:53,650 DEBUG [89476] [] test List count:4
+2021-07-26 18:54:53,727 DEBUG [89476] [] SearchAction end
+2021-07-26 18:54:53,727 DEBUG [89476] [] TestInfoListController end
+2021-07-26 18:54:53,728 DEBUG [89476] [] finally
+2021-07-26 18:54:57,392 DEBUG [89476] [] Request URI : /eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:54:57,393 DEBUG [89476] [] TestInfoCopyController start
+2021-07-26 18:54:57,393 DEBUG [89476] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:54:57,393 DEBUG [89476] [] TestInfoCopyForm: is exist
+2021-07-26 18:54:57,393 DEBUG [89476] [] TestInfoCopyForm: form value set 
+2021-07-26 18:54:57,394 DEBUG [89476] [] ------------------------------/eccadmin_dev/TestInfoCopy/index
+2021-07-26 18:54:57,394 DEBUG [89476] [] ------------------------------session_check_true
+2021-07-26 18:54:57,394 DEBUG [89476] [] indexAction start
+2021-07-26 18:54:57,394 DEBUG [89476] [] admin_no is 1
+2021-07-26 18:54:57,395 DEBUG [89476] [] PDOStatement Object
+(
+    [queryString] =>  SELECT  test_info.test_info_no test_info_no ,test_info.org_no org_no ,test_info.test_info_name test_info_name ,test_info.long_description long_description ,test_info.test_time test_time ,test_info.show_flg show_flg ,test_info.status status ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ,test_info.remarks remarks FROM  T_TEST_INFO test_info WHERE test_info.test_info_no = :test_info_no  AND test_info.org_no = :org_no  AND test_info.del_flg = '0' 
+)
+
+2021-07-26 18:54:57,396 DEBUG [89476] [] test_info_no
+2021-07-26 18:54:57,477 DEBUG [89476] [] indexAction end
+2021-07-26 18:54:57,477 DEBUG [89476] [] TestInfoCopyController end
+2021-07-26 18:54:57,478 DEBUG [89476] [] finally
+2021-07-26 18:55:07,612 DEBUG [87871] [] Request URI : /eccadmin_dev/TestInfoCopy/save
+2021-07-26 18:55:07,612 DEBUG [87871] [] TestInfoCopyController start
+2021-07-26 18:55:07,612 DEBUG [87871] [] controllers/TestInfoCopyController.php: is exist
+2021-07-26 18:55:07,613 DEBUG [87871] [] TestInfoCopyForm: is exist
+2021-07-26 18:55:07,613 DEBUG [87871] [] TestInfoCopyForm: form value set 
+2021-07-26 18:55:07,613 DEBUG [87871] [] ------------------------------/eccadmin_dev/TestInfoCopy/save
+2021-07-26 18:55:07,613 DEBUG [87871] [] ------------------------------session_check_true
+2021-07-26 18:55:07,614 DEBUG [87871] [] saveAction start
+2021-07-26 18:55:07,615 DEBUG [87871] [] INSERT INTO  T_TEST_INFO (org_no,test_info_no,test_info_name,long_description,show_flg,test_time,status,start_period,end_period,create_dt,creater_id,update_dt,updater_id ) VALUES ( :org_no,:test_info_no,:test_info_name,:long_description,:show_flg,:test_time,:status,:start_period,:end_period,:create_dt,:creater_id,:update_dt,:updater_id );
+2021-07-26 18:55:07,696 DEBUG [87871] [] saveAction end
+2021-07-26 18:55:07,696 DEBUG [87871] [] TestInfoCopyController end
+2021-07-26 18:55:07,700 DEBUG [87871] [] finally
+2021-07-26 18:55:11,902 DEBUG [87871] [] Request URI : /eccadmin_dev/TestInfoList
+2021-07-26 18:55:11,903 DEBUG [87871] [] TestInfoListController start
+2021-07-26 18:55:11,903 DEBUG [87871] [] controllers/TestInfoListController.php: is exist
+2021-07-26 18:55:11,903 DEBUG [87871] [] TestInfoListForm: is exist
+2021-07-26 18:55:11,903 DEBUG [87871] [] TestInfoListForm: form value set 
+2021-07-26 18:55:11,904 DEBUG [87871] [] ------------------------------/eccadmin_dev/TestInfoList
+2021-07-26 18:55:11,904 DEBUG [87871] [] indexAction start
+2021-07-26 18:55:11,904 DEBUG [87871] [] admin_no is 1
+2021-07-26 18:55:11,906 DEBUG [87871] [] test List count:4
+2021-07-26 18:55:11,986 DEBUG [87871] [] indexAction end
+2021-07-26 18:55:11,986 DEBUG [87871] [] TestInfoListController end
+2021-07-26 18:55:11,986 DEBUG [87871] [] finally

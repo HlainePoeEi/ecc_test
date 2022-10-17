@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SW Practice　コース詳細参照</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		{literal}
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/moment.js"></script>
+		{/literal}
+		<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet" >
+		<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+		<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+	</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}CourseContractRegist/save" method="post">
+			{include file='leftMenu.html'}
+			<div class="divHeader">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<div class="divBody">
+				<input type="hidden" id="search_test_kbn" name="search_test_kbn" value="{$form->search_test_kbn}" />
+				<input type="hidden" id="search_course_level" name="search_course_level" value="{$form->search_course_level}" />
+				<input type="hidden" id="search_name" name="search_name" value="{$form->search_name}" />
+				<input type="hidden" id="search_remarks" name="search_remarks" value="{$form->search_remarks}" />
+				<!-- <input type="text" id="search_status" name="search_status" value="{$form->search_status}" /> -->
+				<input type="hidden" id="status" name="status" value="{$form->status}" />
+				<input type="hidden" id="btn_flg" name="btn_flg" value="1" />
+				<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+				<input type="hidden" id="back_flg" name="back_flg" value="false" />
+				<div id="err_dis">
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+						{if !empty($error_msg)}
+							<div class="error_msg">{$error_msg}</div>
+						{else}
+							<div class="error_msg"></div>
+						{/if}
+					</section>
+				</div>
+				<section class="content">
+					<p>><span class="title">SW Practice　コース詳細参照</span></p>
+					<p style="text-align:right"><input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}SWPracticeReferenceList/search')"></p>
+					{if !empty($course_detail)}
+					<table>
+						<tr>
+							<td width="200px;">コースID </td>
+							<td width="400px;">： {$course_detail->course_id}</td>
+							<td width="200px;">SW </td>
+							<td width="400px;">： {$course_detail->test_kbn_name|escape}</td>
+							<td width="200px;">レベル </td>
+							<td width="400px;">： {$course_detail->course_level|escape}</td>
+						</tr>
+						<tr>
+							<td width="200px;">コース名 </td>
+							<td width="400px;">： {$course_detail->course_name|escape}</td>
+							<td width="200px;">コース詳細名 </td>
+							<td width="400px;">： {$course_detail->course_detail_name|escape}</td>
+							<td width="200px;">コース備考 </td>
+							<td width="400px;">： {$course_detail->remarks|escape}</td>
+						</tr>
+						<tr>
+							<td width="200px;">コース名英字 </td>
+							<td width="400px;">： {$course_detail->course_name_romaji|escape}</td>
+							<td width="200px;">コース詳細名英字 </td>
+							<td width="400px;">： {$course_detail->course_detail_romaji|escape}</td>
+						</tr>
+					</table>
+					{/if}
+					{if !empty($question_data)}
+						<div class="course_dt_question">
+							{foreach $question_data as $key=>$result}
+								<div class="course_dt_qrow">
+									<div class="course_dt_q_title">
+										<div style="width:150px;font-weight:bold;">No.{$result->disp_no}</div>
+										<div style="width:150px;" title="問題名">{$result->question_name}</div>
+										<div style="width:150px;">
+											<img src="{$smarty.const.HOME_DIR}image/prepare_time.png"  title="準備時間" class="prepare_time" title="Prepare Time" style="width:20px;cursor:pointer;" class="clock_icon">
+											{$result->prepare_time}
+										</div>
+										<div>
+											<img src="{$smarty.const.HOME_DIR}image/clock.png"  title="回答時間" class="answer_time" style="width:20px;cursor:pointer;" class="clock_icon">
+											{$result->answer_time}
+										</div>
+									</div><br/>
+									<table class="question_tbl">
+										<tr>
+											<td style="width:150px;font-weight:bold;">問題パターン</td>
+											<td width="150px;">{$result->q_pattern|escape}</td>
+											<td style="width:150px;font-weight:bold;">採点パターン</td>
+											<td width="150px;">{$result->sc_pattern|escape}</td>
+										</tr>
+									</table>
+									<br>
+									{if !empty($result->question_description) }
+										<div class="course_dt_q_desc" style="font-weight:bold;">問題説明</div><br/>
+										<div class="course_dt_q_desc">{$result->question_description}</div><br/>
+									{/if}
+									{if !empty($result->description) }
+										<div class="course_dt_q_desc" style="font-weight:bold;">内容</div><br/>
+										<div class="course_dt_q_desc">{$result->description}</div><br/>
+									{/if}
+									{if !empty($result->audio_name) }
+
+										<div class="course_dt_q_desc" style="font-weight:bold;">音声内容</div><br/>
+										{assign var="audio_file" value="{$audio_folder}qa_{$result->question_no}/{$result->audio_name|escape}"}
+
+										{if $audio_file|file_exists && $audio_file|substr:-4 == '.mp3'}
+											<div class="course_dt_q_audio">
+												<audio id="myAudio" controlslist="nodownload" controls>
+												  <source src="{$smarty.const.STUDENT_HOME_DIR}files/audio/qa_{$result->question_no}/{$result->audio_name|escape}" type="audio/mpeg">
+												</audio>
+											</div>
+										{elseif $result->audio_name|substr:-4 == '.mp4'}
+											<div style="height:300px;align:center">
+												<video id = "q_video" controls="controls" preload="none" style="height:300px;" controlslist="nodownload nofullscreen noplaybackrate" autoplay disablePictureInPicture>
+													 <source src="{$smarty.const.STUDENT_HOME_DIR}files/audio/qa_{$result->question_no}/{$result->audio_name|escape}" type="audio/mpeg">
+												</video>
+											</div>
+											<br/>
+										{elseif $audio_file|substr:-4 != '.mp3'}
+											<div class="course_dt_q_desc">{$result->audio_description}</div><br/>
+										{else}
+											<!-- 回答音声ファイルがないの場合 -->
+											<div class="div_noAudio" >
+												<p class="no_audio">音声内容フィルを見つかりません。</p>
+											</div>
+										{/if}
+									{/if}
+									{if !empty($result->audio_yes)  }
+
+										<div class="course_dt_q_desc" style="font-weight:bold;">yes音声内容</div><br/>
+										{assign var="audio_yes" value="{$audio_folder}qa_{$result->question_no}/{$result->audio_yes|escape}"}
+										{if $audio_yes|file_exists && $audio_yes|substr:-4 == '.mp3'}
+											<div class="course_dt_q_audio">
+												<audio id="myAudio" controlslist="nodownload" controls>
+												  <source src="{$smarty.const.STUDENT_HOME_DIR}files/audio/qa_{$result->question_no}/{$result->audio_yes|escape}" type="audio/mpeg">
+												</audio>
+											</div>
+										{elseif $audio_yes|substr:-4 != '.mp3'}
+											<div class="course_dt_q_desc">{$result->yes_description}</div><br/>
+										{else}
+											<!-- 回答音声ファイルがないの場合 -->
+											<div class="div_noAudio" >
+												<p class="no_audio">yes音声内容フィルを見つかりません。</p>
+											</div>
+										{/if}
+									{/if}
+									{if !empty($result->audio_no)  }
+
+										<div class="course_dt_q_desc" style="font-weight:bold;">no音声内容</div><br/>
+										{assign var="audio_no" value="{$audio_folder}qa_{$result->question_no}/{$result->audio_no|escape}"}
+
+										{if $audio_no|file_exists && $audio_no|substr:-4 == '.mp3'}
+											<div class="course_dt_q_audio">
+												<audio id="myAudio" controlslist="nodownload" controls>
+												  <source src="{$smarty.const.STUDENT_HOME_DIR}files/audio/qa_{$result->question_no}/{$result->audio_no|escape}" type="audio/mpeg">
+												</audio>
+											</div>
+										{elseif $audio_no|substr:-4 != '.mp3'}
+											<div class="course_dt_q_desc">{$result->no_description}</div><br/>
+										{else}
+											<!-- 回答音声ファイルがないの場合 -->
+											<div class="div_noAudio" >
+												<p class="no_audio">no音声内容フィルを見つかりません。</p>
+											</div>
+										{/if}
+									{/if}
+									{if !empty($result->sample_answer )}
+										<div class="course_dt_q_desc" style="font-weight:bold;">模範解答</div><br/>
+										{assign var="sample_file" value="{$audio_folder}qa_{$result->question_no}/{$result->sample_answer|escape}"}
+
+										{if $sample_file|file_exists && $sample_file|substr:-4 == '.mp3'}
+												<div class="course_dt_q_audio">
+													<audio id="myAudio" controlslist="nodownload" controls>
+													  <source src="{$smarty.const.STUDENT_HOME_DIR}files/audio/qa_{$result->question_no}/{$result->sample_answer}" type="audio/mpeg">
+													</audio>
+											</div>
+										{elseif $sample_file|substr:-4 != '.mp3'}
+											<div class="course_dt_q_desc">{$result->sample_answer}</div><br/>
+										{else}
+											<!-- 回答音声ファイルがないの場合 -->
+											<div class="div_noAudio" >
+												<p class="no_audio">模範解答音声フィルを見つかりません。</p>
+											</div>
+										{/if}
+									{/if}
+									{if !empty($result->byosha_point) }
+										<div class="course_dt_q_desc" style="font-weight:bold;">描写ポイント</div><br/>
+										<div class="course_dt_q_desc">{$result->byosha_point}</div>
+									{/if}
+								</div>
+							{/foreach}
+						</div>
+					{/if}
+				</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+		<script type="text/javascript">
+			{literal}
+
+			if ( $(".error_msg").html() != "" ) {
+
+				$(".error_section").slideToggle('slow');
+			}
+
+			$(".close_icon").on('click',function(){
+
+				$(".error_section").slideToggle('slow');
+
+				$('#err_dis').slideToggle('slow');
+
+			});
+			function doBack(action){
+
+				$("#main_form").attr("action", action);
+				$("#back_flg").val("true");
+				$("#main_form").submit();
+			}
+			{/literal}
+		</script>
+	</body>
+</html>
