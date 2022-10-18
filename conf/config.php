@@ -16,7 +16,7 @@
 // define ( "SYS_ROOT", "C:/xampp/htdocs".HOME_DIR );
 // define ( "SERVER_URL", "https://172.16.15.185".HOME_DIR );
 
-define("HOME_DIR", "/eccadmin_dev/");
+define("HOME_DIR", "/ecc_test/");
 define("STUDENT_HOME_DIR", "/student_dev/");
 define("SYS_ROOT", __DIR__ . '/../');
 define("SERVER_URL", 'https://' . $_SERVER['SERVER_NAME'] . HOME_DIR);
