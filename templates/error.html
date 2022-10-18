@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>エラー</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link href="{$smarty.const.HOME_DIR}css/login.css" rel="stylesheet" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="{$smarty.const.HOME_DIR}css/login.css" rel="stylesheet" type="text/css" />
 	{literal}
-	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
-	<script	src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	<script src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
 	{/literal}
 	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
 </head>
+
 <body id="body" class="pushmenu-push">
 	<form action="{$smarty.const.HOME_DIR}Login/login" method="post" style="margin:0px;padding:0px">
-		<div id="divOuterFrame" align="center" >
-		
+		<div id="divOuterFrame" align="center">
+
 			<div id="divTitle" style="height:60px;padding-top:7px;">
 				<image src="{$smarty.const.HOME_DIR}image/top_logo.svg">
 			</div>
@@ -21,14 +23,15 @@
 				{$data['message']}
 			</div>
 			<div id="msg" style="margin-top:30px;font-size: 20px;">
-				<a href="https://ecc-intersection.com{$smarty.const.HOME_DIR}Login">
-				ログインページへ
+				<a href="https://localhost{$smarty.const.HOME_DIR}Login">
+					ログインページへ
 				</a>
 			</div>
-		<!--footer-->
-		{include file='footer.html'}
-		<!--footer-->
+			<!--footer-->
+			{include file='footer.html'}
+			<!--footer-->
 		</div>
 	</form>
 </body>
+
 </html>
