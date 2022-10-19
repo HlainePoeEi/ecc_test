@@ -14,34 +14,34 @@ class T_YNSDao extends BaseDao
 
     public function getWordLanguage()
     {
-        // $query = " SELECT ";
-        // $query .= " category";
-        // $query .= " ,type";
-        // $query .= " ,name";
-        // $query .= " ,name_kana";
-        // $query .= " FROM ";
-        // $query .= " M_TYPE ";
-        // $query .= " WHERE category = '028' ";
-        // $query .= " AND del_flg = '0' ";
-        // $query .= " ORDER BY disp_no ASC ";
-        // $stmt = $this->pdo->prepare($query);
-        // return parent::getDataList($stmt, get_class(new T_WordDto()));
+        $query = " SELECT ";
+        $query .= " category";
+        $query .= " ,type";
+        $query .= " ,name";
+        $query .= " ,name_kana";
+        $query .= " FROM ";
+        $query .= " M_TYPE ";
+        $query .= " WHERE category = '028' ";
+        $query .= " AND del_flg = '0' ";
+        $query .= " ORDER BY disp_no ASC ";
+        $stmt = $this->pdo->prepare($query);
+        return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
 
     public function getTranslationLanguage()
     {
-        // $query = " SELECT ";
-        // $query .= " category";
-        // $query .= " ,type";
-        // $query .= " ,name";
-        // $query .= " ,name_kana";
-        // $query .= " FROM ";
-        // $query .= " M_TYPE ";
-        // $query .= " WHERE category = '029' ";
-        // $query .= " AND del_flg = '0' ";
-        // $query .= " ORDER BY disp_no ASC ";
-        // $stmt = $this->pdo->prepare($query);
-        // return parent::getDataList($stmt, get_class(new T_WordDto()));
+        $query = " SELECT ";
+        $query .= " category";
+        $query .= " ,type";
+        $query .= " ,name";
+        $query .= " ,name_kana";
+        $query .= " FROM ";
+        $query .= " M_TYPE ";
+        $query .= " WHERE category = '029' ";
+        $query .= " AND del_flg = '0' ";
+        $query .= " ORDER BY disp_no ASC ";
+        $stmt = $this->pdo->prepare($query);
+        return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
 
     public function getNextId()
@@ -51,11 +51,11 @@ class T_YNSDao extends BaseDao
 
     public function getWordListData($param, $flg)
     {
-        // $query = $this->createQuery();
+        $query = $this->createQuery();
         // $query .= $this->createSearchWhere($param);
-        // $stmt = $this->pdo->prepare($query);
+        $stmt = $this->pdo->prepare($query);
         // $this->setSearchParam($stmt, $param);
-        // return parent::getDataList($stmt, get_class(new T_WordDto()));
+        return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
 
     public function createQuery()
@@ -83,6 +83,10 @@ class T_YNSDao extends BaseDao
         // $query .= " ON t_word.org_no = m_organization.org_no ";
         // $query .= " AND m_organization.del_flg =  '0' ";
         // return $query;
+
+        $query = " SELECT *";
+        $query .= " FROM t_yns";
+        return $query;
     }
 
     public function createSearchWhere($param)
@@ -116,27 +120,17 @@ class T_YNSDao extends BaseDao
     // 	}
     // }
 
-    // public function getWordData($org_no, $word_id)
-    // {
-    // 	$query = " SELECT w.org_no,";
-    // 	$query .= " w.word_id, w.word_system_kbn, ";
-    // 	$query .= " w.word, w.word_lang_type, ";
-    // 	$query .= " w.trans_lang_type,";
-    // 	$query .= " w.translation,";
-    // 	$query .= " w.file_name,";
-    // 	$query .= " w.remarks,";
-    // 	$query .= " w.org_no,";
-    // 	$query .= " w.create_dt,w.creater_id,";
-    // 	$query .= " w.update_dt,w.updater_id ";
-    // 	$query .= " FROM T_WORD w";
-    // 	$query .= " WHERE w.word_id=:word_id";
-    // 	$query .= " AND w.org_no =:org_no ";
-    // 	$query .= " AND w.del_flg = '0' ";
-    // 	$stmt = $this->pdo->prepare($query);
-    // 	$stmt->bindParam(":org_no", $org_no, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":word_id", $word_id, PDO::PARAM_STR);
-    // 	return parent::getDataList($stmt, get_class(new T_WordDto()));
-    // }
+    public function getWordData()
+    {
+        $query = " SELECT w.word_book_name,";
+        $query .= " w.word_lang, w.trans_lang, ";
+        $query .= " FROM T_WORD w";
+        $query .= " WHERE w.id=:id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":id", $id, PDO::PARAM_STR);
+        //$stmt->bindParam(":word_id", $word_id, PDO::PARAM_STR);
+        return parent::getDataList($stmt, get_class(new T_WordDto()));
+    }
 
     // public function updateWordInfo($dto)
     // {

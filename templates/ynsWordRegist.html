@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>単語登録</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	{literal}
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/moment.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/nicEdit-latest.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
+	<script type="text/javascript">
+		// エンターキー押下時のsubmitを無効化
+		$(document).on("keypress", "input:not(.allow_submit)", function (event) {
+			return event.which !== 13;
+		});
+		// エンターキー押下時のsubmitを無効化
+		$(document).on("keypress", "select:not(.allow_submit)", function (event) {
+			return event.which !== 13;
+		});
+		//表示再現
+		$(document).ready(function () {
+			// MSGのあるなし
+			if ($(".error_msg").html() != "") {
+				$(".error_section").slideDown('slow')
+			}
+			$(".close_icon").on('click', function () {
+				$(".error_section").slideUp('slow')
+			});
+			var input_audio_file = document.getElementById("input_audio_file");
+			var audio_data = "";
+			// ------------------------------------------------------------
+			// Base64化する
+			// ------------------------------------------------------------
+			File.prototype.convertToBase64 = function (callback) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					callback(e.target.result)
+				};
+				reader.onerror = function (e) {
+					callback(null);
+				};
+				reader.readAsDataURL(this);
+			};
+			/**
+			*
+			*  登録ボタン押下、必須チェック処理
+			*
+			**/
+			$("#btn_insert").on('click', function () {
+				$(".error_section").hide();
+				var word = $('#word').val();
+				var translation = $('#translation').val();
+				var word_lang_type = $('#word_lang_type').val();
+				var trans_lang_type = $('#trans_lang_type').val();
+				if (word == "") {
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("単語名を入力してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				}
+				if (translation == "") {
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html(" 意味を入力してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				}
+				if (word_lang_type == "") {
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("単語言語を入力してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				}
+				if (trans_lang_type == "") {
+					$('#err_dis').show();
+					$(".error_section").slideToggle('slow');
+					$(".error_msg").html("訳言語を入力してください。");
+					$(".divBody").scrollTop(0);
+					return false;
+				}
+			});
+		});
+	</script>
+</head>
+
+<body class="pushmenu-push">
+	<form id="main_form" name="main_form1" action="{$smarty.const.HOME_DIR}YNSWordRegist/Save" method="post">
+		{include file='leftMenu.html'}
+		<div class="divHeader">
+			<!--header-->
+			{include file='header.html'}
+			<!--header-->
+		</div>
+		<div class="divBody">
+			<div class="main">
+				<section class="error_section">
+					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width: 15px; float: right"
+						class="close_icon">
+					{if !empty($error_msg)}
+					<div class="error_msg">{$error_msg}</div>
+					{else if !empty($info_msg)}
+					<div class="error_msg">{$info_msg}</div>
+					{else}
+					<div class="error_msg"></div>
+					{/if}
+				</section>
+				<section class="content">
+					<p>
+						>> <span class="title">単語 / 単語登録</span>
+					</p>
+					<p style="text-align: right; width: 100%;">
+						<input type="button" title="戻る" value="" class="btn_back"
+							onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSWordRegist/back')">
+					</p>
+					<input type="hidden" id="msg" name="msg" value="{$msg}" />
+					<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}" />
+					<input type="hidden" id="word_id" name="word_id" value="{$form->word_id}">
+					<input type="hidden" id="audio_data" name="audio_data" value="" />
+					<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}" />
+					<input type="hidden" id="org_name" name="org_name" value="{$form->org_name}" />
+					<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}" />
+					<input type="hidden" id="search_word" name="search_word" value="{$form->search_word}" />
+					<input type="hidden" id="search_translation" name="search_translation"
+						value="{$form->search_translation}" />
+					<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}" />
+					<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+					<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
+					<input type="hidden" id="search_page_order_column" name="search_page_order_column"
+						value="{$form->search_page_order_column}" />
+					<input type="hidden" id="search_page_order_dir" name="search_page_order_dir"
+						value="{$form->search_page_order_dir}" />
+					<div width="100%">
+
+						<table width="100%">
+							<tr>
+								<td style="width: 240px;">単語名<span class="required">※</span></td>
+								<td><input type="text" class="text" id="word" name="word" value="{$form->word}"
+										maxlength="512" size="30">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td style="width: 240px;"><label>単語言語</label><span class="required">※</span>
+								</td>
+								<td><select name="word_lang_type" id="word_lang_type" style="width: 189px;"
+										value="{$form->word_lang_type}">
+										{if !empty($word_category)} {if {($form->word_lang_type)}==""}
+										<option value="" selected>選択してください。</option>
+										{foreach $word_category as $word}
+										<option value={$word->type}> {$word->name}</option>
+										{/foreach} {/if} {if !empty({$form->word_lang_type})}
+										<option value="">選択してください。</option>
+										{foreach $word_category as $word}
+										<option value={$word->type}
+											{if
+											{($form->word_lang_type)}== {$word->type}} selected {/if} >
+											{$word->name}</option> {/foreach} {/if} {/if}
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td style="width: 240px;"><label>訳言語</label><span class="required">※</span>
+								</td>
+								<td><select name="trans_lang_type" id="trans_lang_type" style="width: 189px;"
+										value="{$form->trans_lang_type}"> {if
+										!empty($trans_category)} {if {($form->trans_lang_type)}==""}
+										<option value="" selected>選択してください。</option> {foreach
+										$trans_category as $tran}
+										<option value={$tran->type}> {$tran->name}</option>
+										{/foreach} {else}
+										<option value="">選択してください。</option> {foreach $trans_category
+										as $tran} {if {($form->trans_lang_type)}== {$tran->type}}
+										<option value={$tran->type}
+											selected>{$tran->name}</option> {else}
+										<option value={$tran->type} >{$tran->name}</option> {/if}
+										{/foreach} {/if} {/if}
+									</select>
+								</td>
+							</tr>
+						</table>
+						<br />
+						<table>
+							<tr class="rb_row1">
+								<td></td>
+								<td width="75px;"></td>
+								<td colspan="2"></td>
+								<td width="100px;"></td>
+								<td width="400px;"></td> {if $form->screen_mode eq 'update'}
+								<input id="btn_del" type="button" name="btn_del" class="btn_delete"
+									onclick="checkDelete('{$form->word_id}','{$smarty.const.HOME_DIR}WordRegist/delete');"
+									style="text-align: left;"> {/if}
+							</tr>
+							<tr>
+								<input type="submit" name="submit_add" id="btn_insert" name="btn_insert" value=""
+									class="btn_insert" style="padding-right: 20px; float: right;">
+							</tr>
+						</table>
+					</div>
+				</section>
+				<!-- End Content -->
+			</div>
+			<!-- End Main -->
+		</div>
+		<!-- End divBody -->
+		<div class="divFooter">
+			<!--footer-->
+			{include file='footer.html'}
+			<!--footer-->
+		</div>
+		</div>
+	</form>
+	<script>
+		{ literal }
+		//削除 ボタン押下処理
+		function checkDelete(word_id, action) {
+			alertDialog = confirm('Are you sure to delete this word?');
+			if (alertDialog == false) {
+				return false;
+			} else {
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+				$("#word_id").val(word_id);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#main_form").submit();
+			}
+		}
+		{ /literal}
+	</script>
+	<!--footer-->
+	{include file='footer.html'}
+	<!--footer-->
+</body>
+
+</html>
