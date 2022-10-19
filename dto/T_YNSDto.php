@@ -2,7 +2,7 @@
 
 require_once 'BaseDto.php';
 
-class T_WordDto extends BaseDto
+class T_YNSDto extends BaseDto
 {
 
     public $id;
