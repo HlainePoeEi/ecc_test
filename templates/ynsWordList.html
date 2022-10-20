@@ -83,8 +83,7 @@
 		<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}" />
 		<input type="hidden" id="msg" name="msg" value="{$msg}" />
 		<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}" />
-		<input type="hidden" id="org_name" name="org_name" value="{$form->org_name}" />
-		<input type="hidden" id="word_id" name="word_id" value="{$form->word_id}" />
+		<input type="hidden" id="id" name="id" value="{$form->id}" />
 		<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}" />
 		<input type="hidden" id="back_flg" name="back_flg" value="{$form->back_flg}" />
 		<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
@@ -163,17 +162,22 @@
 								{foreach $list as $result}
 								<tr>
 									<td width="100px;">{{$result->word_book_name}}</td>
-									<td width="100px;">{{$result->word_lang_type}}</td>
-									<td width="100px;">{{$result->trans_lang_type}}</td>
+									{if $result->word_lang_type eq '001'}
+									<td width="100px;">en</td>
+									{else}
+									<td width="100px;">ja</td>
+									{/if}
+									{if $result->trans_lang_type eq '001'}
+									<td width="100px;">en</td>
+									{else}
+									<td width="100px;">ja</td>
+									{/if}
 									<td width="100px;">
 										<input type="button" id="btn_sound" class="btn-sound_list" />
 									</td>
 									<td width="70px;">
 										<input type="button" id="btn_sound" class="btn-sound_list" />
 									</td>
-									<!-- <td width="50px;">
-										<input type="button" class="btn_edit" name="edit" title="編集" onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
-									</td> -->
 									<td width="50px;"><input type="button" class="btn_edit" name="edit" title="編集"
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
 									</td>
@@ -193,6 +197,7 @@
 			<!--footer-->
 		</div>
 	</form>
+	{ literal }
 	<script>
 		if ('speechSynthesis' in window) {
 			//   alert("このブラウザは音声合成に対応しています。🎉")
@@ -235,12 +240,10 @@
 			var menuStatus = document.getElementById('menuStatus').value;
 			$("#search_word").val($("#word").val());
 			$("#search_translation").val($("#translation").val());
-			$("#search_org_id").val($("#org_id").val());
 			setDataTableData();
 			$("#main_form").attr("action", action);
 			$("#screen_mode").val("update");
 			$("#id").val(id);
-
 			//$("#word_id").val(word_id);
 			//$("#org_no").val(org_no);
 			$("#menuOpen").val(menuOpen);
@@ -286,6 +289,7 @@
 		}
 		// { /literal}
 	</script>
+	{ /literal}
 </body>
 
 </html>

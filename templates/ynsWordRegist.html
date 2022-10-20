@@ -56,21 +56,13 @@
 			**/
 			$("#btn_insert").on('click', function () {
 				$(".error_section").hide();
-				var word = $('#word').val();
-				var translation = $('#translation').val();
+				var word_book_name = $('#word_book_name').val();
 				var word_lang_type = $('#word_lang_type').val();
 				var trans_lang_type = $('#trans_lang_type').val();
-				if (word == "") {
+				if (word_book_name == "") {
 					$('#err_dis').show();
 					$(".error_section").slideToggle('slow');
 					$(".error_msg").html("単語名を入力してください。");
-					$(".divBody").scrollTop(0);
-					return false;
-				}
-				if (translation == "") {
-					$('#err_dis').show();
-					$(".error_section").slideToggle('slow');
-					$(".error_msg").html(" 意味を入力してください。");
 					$(".divBody").scrollTop(0);
 					return false;
 				}
@@ -124,11 +116,9 @@
 					</p>
 					<input type="hidden" id="msg" name="msg" value="{$msg}" />
 					<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}" />
-					<input type="hidden" id="word_id" name="word_id" value="{$form->word_id}">
+					<input type="hidden" id="id" name="id" value="{$form->id}">
 					<input type="hidden" id="audio_data" name="audio_data" value="" />
 					<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}" />
-					<input type="hidden" id="org_name" name="org_name" value="{$form->org_name}" />
-					<input type="hidden" id="org_no" name="org_no" value="{$form->org_no}" />
 					<input type="hidden" id="search_word" name="search_word" value="{$form->search_word}" />
 					<input type="hidden" id="search_translation" name="search_translation"
 						value="{$form->search_translation}" />
@@ -144,8 +134,8 @@
 						<table width="100%">
 							<tr>
 								<td style="width: 240px;">単語名<span class="required">※</span></td>
-								<td><input type="text" class="text" id="word" name="word" value="{$form->word}"
-										maxlength="512" size="30">
+								<td><input type="text" class="text" id="word_book_name" name="word_book_name"
+										value="{$form->word_book_name}" maxlength="512" size="30">
 								</td>
 							</tr>
 							<tr>

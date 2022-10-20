@@ -6,27 +6,11 @@ class YNSWordRegistForm extends BaseForm
 {
     public $id;
 
-    public $org_no;
-
-    public $org_name;
-
-    public $org_name_official;
-
-    public $org_id;
-
-    public $admin_no;
-
-    public $word_id;
+    public $word_book_name;
 
     public $login_id;
 
-    public $word_system_kbn;
-
-    public $word;
-
     public $translation;
-
-    public $file_name;
 
     public $audio_data;
 
@@ -38,10 +22,6 @@ class YNSWordRegistForm extends BaseForm
 
     public $trans_lang_type;
 
-    public $remarks;
-
-    public $del_flg;
-
     public $create_dt;
 
     public $creater_id;
@@ -51,8 +31,6 @@ class YNSWordRegistForm extends BaseForm
     public $updater_id;
 
     public $screen_mode;
-
-    public $copy_org_no;
 
     //最大ページ
 

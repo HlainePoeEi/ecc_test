@@ -46,7 +46,7 @@ class T_YNSDao extends BaseDao
 
     public function getNextId()
     {
-        return parent::getId('word_id');
+        return parent::getId('id');
     }
 
     public function getWordListData($param, $flg)
@@ -120,54 +120,67 @@ class T_YNSDao extends BaseDao
     // 	}
     // }
 
-    public function getWordData()
+    public function getWordData($id)
     {
-        $query = " SELECT w.word_book_name,";
-        $query .= " w.word_lang, w.trans_lang, ";
-        $query .= " FROM T_WORD w";
-        $query .= " WHERE w.id=:id";
+        $query = " SELECT ";
+        $query .= " word_book_name";
+        $query .= " ,word_lang_type";
+        $query .= " ,trans_lang_type";
+        $query .= " FROM ";
+        $query .= " T_YNS ";
+        $query .= " WHERE id = :id ";
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(":id", $id, PDO::PARAM_STR);
-        //$stmt->bindParam(":word_id", $word_id, PDO::PARAM_STR);
-        return parent::getDataList($stmt, get_class(new T_WordDto()));
+        return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
 
-    // public function updateWordInfo($dto)
-    // {
-    // 	$query = " UPDATE ";
-    // 	$query .= " T_WORD ";
-    // 	$query .= " SET";
-    // 	$query .= "  word  = :word ";
-    // 	$query .= " ,org_no   = :org_no ";
-    // 	$query .= " ,translation   = :translation ";
-    // 	$query .= " ,word_lang_type   = :word_lang_type ";
-    // 	$query .= " ,trans_lang_type   = :trans_lang_type ";
-    // 	$query .= " ,file_name  = :file_name ";
-    // 	$query .= " ,remarks  = :remarks ";
-    // 	if (!StringUtil::isEmpty($dto->update_dt)) {
-    // 		$query .= " ,update_dt = :update_dt";
-    // 	}
-    // 	if (!StringUtil::isEmpty($dto->updater_id)) {
-    // 		$query .= " ,updater_id = :updater_id ";
-    // 	}
-    // 	$query .= " WHERE ";
-    // 	$query .= " word_id = :word_id ";
-    // 	$query .= " AND del_flg = '0' ";
-    // 	$stmt = $this->pdo->prepare($query);
-    // 	if (!StringUtil::isEmpty($dto->update_dt)) {
-    // 		$stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
-    // 	}
-    // 	if (!StringUtil::isEmpty($dto->updater_id)) {
-    // 		$stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
-    // 	}
-    // 	$stmt->bindParam(":word", $dto->word, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":org_no", $dto->org_no, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":translation", $dto->translation, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":word_lang_type", $dto->word_lang_type, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":trans_lang_type", $dto->trans_lang_type, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":remarks", $dto->remarks, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":file_name", $dto->file_name, PDO::PARAM_STR);
-    // 	$stmt->bindParam(":word_id", $dto->word_id, PDO::PARAM_STR);
-    // 	return parent::update($stmt);
-    // }
+    public function updateWordInfo($dto)
+    {
+        // $query = " UPDATE ";
+        // $query .= " T_YNS ";
+        // $query .= " SET";
+        // $query .= "  word_book_name  = :word_book_name ";
+        // $query .= " ,word_lang_type   = :word_lang_type ";
+        // $query .= " ,trans_lang_type   = :trans_lang_type ";
+        // // if (!StringUtil::isEmpty($dto->update_dt)) {
+        // // 	$query .= " ,update_dt = :update_dt";
+        // // }
+        // // if (!StringUtil::isEmpty($dto->updater_id)) {
+        // // 	$query .= " ,updater_id = :updater_id ";
+        // // }
+        // $query .= " WHERE ";
+        // $query .= " id = :id ";
+        // $stmt = $this->pdo->prepare($query);
+        // // if (!StringUtil::isEmpty($dto->update_dt)) {
+        // // 	$stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
+        // // }
+        // // if (!StringUtil::isEmpty($dto->updater_id)) {
+        // // 	$stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
+        // // }
+        // $stmt->bindParam(":word_book_name", $dto->word_book_name, PDO::PARAM_STR);
+        // $stmt->bindParam(":word_lang_type", $dto->word_lang_type, PDO::PARAM_STR);
+        // $stmt->bindParam(":trans_lang_type", $dto->trans_lang_type, PDO::PARAM_STR);
+        // $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
+        // return parent::update($stmt);
+
+        $query = " UPDATE ";
+        $query .= " T_YNS ";
+        $query .= " SET ";
+        $query .= " word_book_name= :word_book_name ";
+        $query .= " ,word_lang_type= :word_lang_type ";
+        $query .= " ,trans_lang_type= :trans_lang_type ";
+        $query .= " WHERE ";
+        $query .= " id = :id ";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":word_book_name", $dto->word_book_name, PDO::PARAM_STR);
+        $stmt->bindParam(":word_lang_type", $dto->word_lang_type, PDO::PARAM_STR);
+        $stmt->bindParam(":trans_lang_type", $dto->trans_lang_type, PDO::PARAM_STR);
+        $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
+
+        return parent::update($stmt);
+
+        // `word_book_name`=[value-2],
+        // `word_lang_type`=[value-3],
+        // `trans_lang_type`=[value-4] WHERE 1;
+    }
 }
