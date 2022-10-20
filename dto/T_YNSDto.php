@@ -9,7 +9,7 @@ class T_YNSDto extends BaseDto
 
     public $word_book_name;
 
-    public $word_lang;
+    public $word_lang_type;
 
-    public $tran_lang;
+    public $trans_lang_type;
 }

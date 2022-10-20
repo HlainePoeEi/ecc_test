@@ -14,7 +14,6 @@ class YNSWordRegistController extends BaseController
 			$word_service = new YNSWordService($this->pdo);
 			$id = $this->form->id;
 			$screen_mode = $this->form->screen_mode;
-			$org_no = $this->form->org_no;
 			$word_category = "";
 			$trans_category = "";
 			$err_msg = "";
@@ -39,14 +38,7 @@ class YNSWordRegistController extends BaseController
 				$list = $word_service->getWordData($id);
 				if ($list != null) {
 					foreach ($list as $value) {
-						$this->form->org_no = $value->org_no;
 						$this->form->id = $value->id;
-						// $this->form->word = $value->word;
-						// $this->form->remarks = $value->remarks;
-						// $this->form->file_name = $value->file_name;
-						// $this->form->word_lang_type = $value->word_lang_type;
-						// $this->form->trans_lang_type = $value->trans_lang_type;
-						// $this->form->translation = $value->translation;
 						$this->form->word_book_name = $value->word_book_name;
 						$this->form->word_lang_type = $value->word_lang_type;
 						$this->form->trans_lang_type = $value->trans_lang_type;
@@ -56,15 +48,12 @@ class YNSWordRegistController extends BaseController
 				// 登録処理
 			} else {
 				$word_services = new YNSWordService($this->pdo);
-				$next_word_id = $word_services->getNextId();
-				$this->form->word_id = $next_word_id->id;
-				$this->form->org_no = COMMON_TEST_INFO_ORG;
-				$this->form->word = "";
+				// $next_word_id = $word_services->getNextId();
+				// $this->form->id = $next_word_id->id;
+				$this->form->word_book_name = "";
 				$this->form->word_lang_type = "";
 				$this->form->trans_lang_type = "";
-				$this->form->translation = "";
 				$this->form->screen_mode = "new";
-				$this->form->creater_id = $_SESSION['admin_no'];
 			}
 			// メニュー情報を取得、セットする
 			$this->setMenu();
@@ -112,19 +101,17 @@ class YNSWordRegistController extends BaseController
 			$word_dto->word_book_name = $word_book_name;
 			$word_dto->word_lang_type = $word_lang_type;
 			$word_dto->trans_lang_type = $trans_lang_type;
-			$word_dto->del_flg = 0;
+			$word_dto->id = $this->form->id;
 			$this->form->id = $word_dto->id;
 			if ($screen_mode == 'update') {
 				$id = $this->form->id;
-				$word_dto->updater_id = $_SESSION['admin_no'];
-				$word_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
 				$dao = new YNSWordService($this->pdo);
 				$result = $dao->updateWordInfo($word_dto);
 				// 更新処理が正常の場合、
 				if ($result == 1) {
 					// 登録完了
 					$this->setMenu();
-					$this->smarty->assign('info_msg', I004);
+					$this->smarty->assign('info_msg', I003);
 					$this->form->screen_mode = 'update';
 					$this->smarty->assign('form', $this->form);
 					$this->smarty->display('ynsWordRegist.html');
@@ -139,11 +126,7 @@ class YNSWordRegistController extends BaseController
 				}
 				// 登録状況
 			} else {
-				$word_dto->word_id = $this->form->word_id;
-				$word_dto->creater_id = $_SESSION['admin_no'];
-				$word_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-				$word_dto->updater_id = $_SESSION['admin_no'];
-				$word_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
+				// $word_dto->id = $this->form->id;
 				$dao = new YNSWordService($this->pdo);
 				$result = $dao->saveWord($word_dto);
 				// 登録処理が正常の場合、クイズ一覧画面に遷移する。
