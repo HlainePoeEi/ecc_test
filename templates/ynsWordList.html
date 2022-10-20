@@ -162,44 +162,25 @@
 								{foreach $list as $result}
 								<tr>
 									<td width="100px;">{{$result->word_book_name}}</td>
-
 									{if $result->word_lang_type eq '001'}
-
 									<td width="100px;">en</td>
-
 									{else}
-
 									<td width="100px;">ja</td>
-
 									{/if}
-
 									{if $result->trans_lang_type eq '001'}
-
 									<td width="100px;">en</td>
-
 									{else}
-
 									<td width="100px;">ja</td>
-
 									{/if}
-
 									<td width="100px;">
-
 										<input type="button" id="btn_sound" class="btn-sound_list" />
-
 									</td>
-
 									<td width="70px;">
-
 										<input type="button" id="btn_sound" class="btn-sound_list" />
-
 									</td>
-
 									<td width="50px;"><input type="button" class="btn_edit" name="edit" title="編集"
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
-
 									</td>
-
 								</tr>
 								{/foreach}
 								{/if}
@@ -216,6 +197,7 @@
 			<!--footer-->
 		</div>
 	</form>
+	{ literal }
 	<script>
 		if ('speechSynthesis' in window) {
 			//   alert("このブラウザは音声合成に対応しています。🎉")
@@ -307,6 +289,7 @@
 		}
 		// { /literal}
 	</script>
+	{ /literal}
 </body>
 
 </html>
