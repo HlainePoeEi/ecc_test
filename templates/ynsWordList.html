@@ -11,10 +11,38 @@
 	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
 	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
 	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
+	<!-- <script type="text/javascript" charset="utf8"
+		src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script> -->
 	{/literal}
 	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
 	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
 	<link href="{$smarty.const.HOME_DIR}css/datatables.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"> -->
+	<!-- <script>
+		jQuery(function ($) {
+			//initiate dataTables plugin
+			var myTable =
+				$('#tbl_search')
+					.DataTable({
+						bAutoWidth: true,
+						"aoColumns": [
+							null,
+							null,
+							null,
+							null,
+							null,
+							null,
+						],
+						"scrollY": 440,
+						"scrollX": true,
+						"aaSorting": [],
+						select: {
+							style: 'multi'
+						},
+						scrollCollapse: true,
+					});
+		});
+	</script> -->
 	<script type="text/javascript">
 		//表示再現
 		$(document).ready(function () {
@@ -43,31 +71,39 @@
 			var current_page_row = parseInt($("#search_page_row").val());
 			var current_order_column = $("#search_page_order_column").val();
 			var current_order_dir = $("#search_page_order_dir").val();
-			if (dataArray != "") {
-				$('#tbl_search').DataTable({
-					"scrollY": 300,
-					"scrollX": true,
-					"bFilter": false,
-					"ordering": true,
-					"pageLength": current_page_row,
-					"aaSorting": [[current_order_column, current_order_dir]],
-					columnDefs: [{
-						orderable: false,
-						targets: "td_img"
-					}
-					],
-					"language": {
-						"info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
-						"paginate": {
-							"first": "First",
-							"last": "Last",
-							"next": "次",
-							"previous": "前"
-						},
-						"lengthMenu": " _MENU_ 件表示"
-					}
-				});
-			}
+			// if (dataArray != "") {
+			$('#tbl_search').DataTable({
+				// "scrollY": 300,
+				// "scrollX": true,
+				// "bFilter": false,
+				// "ordering": true,
+				"pageLength": current_page_row,
+				"searching": true,
+				"columns": [
+					{ "searchable": true },
+					{ "searchable": true },
+					{ "searchable": true },
+					{ "searchable": false },
+					{ "searchable": false },
+					{ "searchable": false },
+				],
+				// "aaSorting": [[current_order_column, current_order_dir]],
+				// columnDefs: [{
+				// 	orderable: false,
+				// 	targets: "th_img"
+				// }
+				// ],
+				"language": {
+					"info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
+					"paginate": {
+						"first": "First",
+						"last": "Last",
+						"next": "次",
+						"previous": "前"
+					},
+					"lengthMenu": " _MENU_ 件表示"
+				}
+			});
 			var table = $('#tbl_search').dataTable();
 			table.fnPageChange(current_page);
 		});
@@ -120,40 +156,25 @@
 					</section>
 					<section class="content">
 						<p>
-							>> <span class="title">単語 / 単語一覧</span>
+							>> <span class="title">YNS / 単語一覧</span>
 						</p>
-						<!-- <table class="main_tbl" style="width: 100%">
-							<tr>
-								<td>単語</td>
-								<td class="input"><input class="text" type="text"
-									name="word" id="word" value="{$form->word|escape}"
-									maxlength="512" size="30"></td>
-							</tr>
-							<tr></tr>
-							<tr>
-								<td>組織ログインID</td>
-								<td class="input"><input class="text" type="text"
-									name="search_org_id" id="search_org_id" value="{$form->search_org_id|escape}"
-									maxlength="10" size="30"></td>
-							</tr>
-						</table> -->
 						<br>
 						<div align="right" style="width: 100%">
 							<input class="text" type="text" name="word" id="word" maxlength="512" size="30"></td>
-							<input type="submit" id="btn_search" name="search" title="検索" class="btn_search"
-								alt="search" value="" style="padding-right: 50px;">
-							<input type="button" id="add" name="add_word" class="btn_add" value="" title="新規追加"
+							<input type="submit" id="btn_search" name="search" title="検索" class="btn_search1"
+								alt="search" value="" style="padding-right: 25px;">
+							<input type="button" id="add" name="add_word" class="btn_add1" value="" title="新規追加"
 								onclick="javascript:doInsert('{$smarty.const.HOME_DIR}YNSWordRegist/index')">
 						</div>
 						<br>
-						<table class="tbl_search" width="100%">
-							<thead width="100%">
-								<tr width="100%">
-									<th width="100px;">WordName</th>
-									<th width="100px;">WordLanguage</th>
-									<th width="100px;">TranslateLanguage</th>
-									<th width="100px;">Voice1</th>
-									<th width="70px;">Voice2</th>
+						<table class="tbl_search" id="tbl_search">
+							<thead>
+								<tr>
+									<th width="100px;">Word Name</th>
+									<th width="100px;">Word Language</th>
+									<th width="100px;">Translate Language</th>
+									<th width="70px;"></th>
+									<th width="70px;"></th>
 									<th width="50px;">Action</th>
 								</tr>
 							</thead>
@@ -172,13 +193,13 @@
 									{else}
 									<td width="100px;">ja</td>
 									{/if}
-									<td width="100px;">
-										<input type="button" id="btn_sound" class="btn-sound_list" />
+									<td width="70px;">
+
 									</td>
 									<td width="70px;">
-										<input type="button" id="btn_sound" class="btn-sound_list" />
+
 									</td>
-									<td width="50px;"><input type="button" class="btn_edit" name="edit" title="編集"
+									<td width="50px;"><input type="button" class="btn_edit1" name="edit" title="編集"
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
 									</td>
 								</tr>

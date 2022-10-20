@@ -269,6 +269,15 @@ section.content {
     display:inline-block;
     vertical-align: middle;
 }
+.wordMenuIcon1{
+    border: 0px;
+    width:35px;
+    height:35px;
+    background: url(../image/book.png) left top no-repeat;
+    background-size:40px 40px;
+    display:inline-block;
+    vertical-align: middle;
+}
 
 /*-------------------menu------------------*/
 
@@ -470,7 +479,7 @@ nav-list.active {
 /** error*/
 .error_section{
     padding:20px;
-    color:#FF4500
+    color:#FF4500;
     height:100%;
     display:none;
     background-color: rgba(255,165,0,0.7);
@@ -513,7 +522,7 @@ nav-list.active {
 .grp_table{
     padding-top:30px;
     height:400px;
-    width:400px;"
+    width:400px;
 }
 
 .text_box {
@@ -923,9 +932,30 @@ thead{
     border: 0;
     font-size: 16px;
 }
+.btn_search1 {
+    background: url(../image/search-paper.svg);
+    background-color: none;
+    background-size:35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    font-size: 16px;
+}
 
 .btn_add {
     background: url(../image/regist.svg);
+    background-color: none;
+    background-size:35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+.btn_add1 {
+    background: url(../image/new.png);
     background-color: none;
     background-size:35px 35px;
     background-repeat: no-repeat;
@@ -961,6 +991,17 @@ thead{
 
 .btn_edit {
     background: url(../image/edit.svg);
+    background-color: none;
+    background-size:30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+.btn_edit1 {
+    background: url(../image/edit.png);
     background-color: none;
     background-size:30px 30px;
     background-repeat: no-repeat;
@@ -1239,7 +1280,15 @@ thead{
     height: 35px;
     border: 0;
 }
-
+.btn_insert1 {
+    background: url(../image/save.png);
+    background-color: none;
+    background-size:60px 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    border: 0;
+}
 .btn_back {
     background: url(../image/back.svg);
     background-color: none;
@@ -1251,7 +1300,17 @@ thead{
     text-align: right;
     font-size: 16px;
 }
-
+.btn_back1 {
+    background: url(../image/back.png);
+    background-color: none;
+    background-size:40px 40px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
 .td_one{
     padding-right: 150px;
 

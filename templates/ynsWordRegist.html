@@ -108,10 +108,10 @@
 				</section>
 				<section class="content">
 					<p>
-						>> <span class="title">単語 / 単語登録</span>
+						>> <span class="title">YNS / 単語登録</span>
 					</p>
 					<p style="text-align: right; width: 100%;">
-						<input type="button" title="戻る" value="" class="btn_back"
+						<input type="button" title="戻る" value="" class="btn_back1"
 							onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSWordRegist/back')">
 					</p>
 					<input type="hidden" id="msg" name="msg" value="{$msg}" />
@@ -190,14 +190,14 @@
 								<td width="75px;"></td>
 								<td colspan="2"></td>
 								<td width="100px;"></td>
-								<td width="400px;"></td> {if $form->screen_mode eq 'update'}
+								<!-- <td width="400px;"></td> {if $form->screen_mode eq 'update'}
 								<input id="btn_del" type="button" name="btn_del" class="btn_delete"
 									onclick="checkDelete('{$form->word_id}','{$smarty.const.HOME_DIR}WordRegist/delete');"
-									style="text-align: left;"> {/if}
+									style="text-align: left;"> {/if} -->
 							</tr>
 							<tr>
 								<input type="submit" name="submit_add" id="btn_insert" name="btn_insert" value=""
-									class="btn_insert" style="padding-right: 20px; float: right;">
+									class="btn_insert1" style="padding-right: 20px; float: right;">
 							</tr>
 						</table>
 					</div>
@@ -214,8 +214,8 @@
 		</div>
 		</div>
 	</form>
+	{ literal }
 	<script>
-		{ literal }
 		//削除 ボタン押下処理
 		function checkDelete(word_id, action) {
 			alertDialog = confirm('Are you sure to delete this word?');
@@ -231,8 +231,8 @@
 				$("#main_form").submit();
 			}
 		}
-		{ /literal}
 	</script>
+	{ /literal}
 	<!--footer-->
 	{include file='footer.html'}
 	<!--footer-->
