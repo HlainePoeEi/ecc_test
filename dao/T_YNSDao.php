@@ -123,7 +123,8 @@ class T_YNSDao extends BaseDao
     public function getWordData($id)
     {
         $query = " SELECT ";
-        $query .= " word_book_name";
+        $query .= " id ";
+        $query .= " ,word_book_name";
         $query .= " ,word_lang_type";
         $query .= " ,trans_lang_type";
         $query .= " FROM ";
@@ -136,51 +137,17 @@ class T_YNSDao extends BaseDao
 
     public function updateWordInfo($dto)
     {
-        // $query = " UPDATE ";
-        // $query .= " T_YNS ";
-        // $query .= " SET";
-        // $query .= "  word_book_name  = :word_book_name ";
-        // $query .= " ,word_lang_type   = :word_lang_type ";
-        // $query .= " ,trans_lang_type   = :trans_lang_type ";
-        // // if (!StringUtil::isEmpty($dto->update_dt)) {
-        // // 	$query .= " ,update_dt = :update_dt";
-        // // }
-        // // if (!StringUtil::isEmpty($dto->updater_id)) {
-        // // 	$query .= " ,updater_id = :updater_id ";
-        // // }
-        // $query .= " WHERE ";
-        // $query .= " id = :id ";
-        // $stmt = $this->pdo->prepare($query);
-        // // if (!StringUtil::isEmpty($dto->update_dt)) {
-        // // 	$stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
-        // // }
-        // // if (!StringUtil::isEmpty($dto->updater_id)) {
-        // // 	$stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
-        // // }
-        // $stmt->bindParam(":word_book_name", $dto->word_book_name, PDO::PARAM_STR);
-        // $stmt->bindParam(":word_lang_type", $dto->word_lang_type, PDO::PARAM_STR);
-        // $stmt->bindParam(":trans_lang_type", $dto->trans_lang_type, PDO::PARAM_STR);
-        // $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
-        // return parent::update($stmt);
+        $query = 'update t_yns
+        SET word_book_name = :word_book_name,
+            word_lang_type = :word_lang_type,
+            trans_lang_type = :trans_lang_type
+        WHERE id = :id';
 
-        $query = " UPDATE ";
-        $query .= " T_YNS ";
-        $query .= " SET ";
-        $query .= " word_book_name= :word_book_name ";
-        $query .= " ,word_lang_type= :word_lang_type ";
-        $query .= " ,trans_lang_type= :trans_lang_type ";
-        $query .= " WHERE ";
-        $query .= " id = :id ";
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(":word_book_name", $dto->word_book_name, PDO::PARAM_STR);
         $stmt->bindParam(":word_lang_type", $dto->word_lang_type, PDO::PARAM_STR);
         $stmt->bindParam(":trans_lang_type", $dto->trans_lang_type, PDO::PARAM_STR);
         $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
-
         return parent::update($stmt);
-
-        // `word_book_name`=[value-2],
-        // `word_lang_type`=[value-3],
-        // `trans_lang_type`=[value-4] WHERE 1;
     }
 }
