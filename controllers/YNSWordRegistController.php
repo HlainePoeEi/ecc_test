@@ -91,27 +91,26 @@ class YNSWordRegistController extends BaseController
 				$this->smarty->assign('error_msg', "ドロップダウンリストのデータがありません。");
 			}
 			$screen_mode = $this->form->screen_mode;
-			$id = $this->form->id;
+			// $id = $this->form->id;
 			$word_book_name = $this->form->word_book_name;
 			$word_lang_type = $this->form->word_lang_type;
 			$trans_lang_type = $this->form->trans_lang_type;
-			$file_name = "";
 			// テストデータ情報登録
-			$word_dto = new T_YNSDto();
-			$word_dto->word_book_name = $word_book_name;
-			$word_dto->word_lang_type = $word_lang_type;
-			$word_dto->trans_lang_type = $trans_lang_type;
-			$word_dto->id = $this->form->id;
-			$this->form->id = $word_dto->id;
+			$yns_dto = new T_YNSDto();
+			$yns_dto->word_book_name = $word_book_name;
+			$yns_dto->word_lang_type = $word_lang_type;
+			$yns_dto->trans_lang_type = $trans_lang_type;
+			$yns_dto->id = $this->form->id;
+			// $this->form->id = $yns_dto->id;
 			if ($screen_mode == 'update') {
 				$id = $this->form->id;
 				$dao = new YNSWordService($this->pdo);
-				$result = $dao->updateWordInfo($word_dto);
+				$result = $dao->updateWordInfo($yns_dto);
 				// 更新処理が正常の場合、
 				if ($result == 1) {
 					// 登録完了
 					$this->setMenu();
-					$this->smarty->assign('info_msg', I003);
+					$this->smarty->assign('info_msg', I007);
 					$this->form->screen_mode = 'update';
 					$this->smarty->assign('form', $this->form);
 					$this->smarty->display('ynsWordRegist.html');
@@ -128,7 +127,7 @@ class YNSWordRegistController extends BaseController
 			} else {
 				// $word_dto->id = $this->form->id;
 				$dao = new YNSWordService($this->pdo);
-				$result = $dao->saveWord($word_dto);
+				$result = $dao->saveWord($yns_dto);
 				// 登録処理が正常の場合、クイズ一覧画面に遷移する。
 				if ($result == 1) {
 					// 登録完了
@@ -136,7 +135,7 @@ class YNSWordRegistController extends BaseController
 					// 登録完了
 					$this->setMenu();
 					$this->smarty->assign('info_msg', I004);
-					$this->form->screen_mode = 'update';
+					$this->form->screen_mode = 'new';
 					$this->smarty->assign('form', $this->form);
 					$this->smarty->display('ynsWordRegist.html');
 					// 登録出来ない場合
