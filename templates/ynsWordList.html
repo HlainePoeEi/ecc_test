@@ -201,6 +201,9 @@
 									</td>
 									<td width="50px;"><input type="button" class="btn_edit1" name="edit" title="編集"
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
+
+										<input type="button" class="btn_delete1" id="btn_del" name="edit" title="編集"
+											onclick="checkDelete('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/delete')">
 									</td>
 								</tr>
 								{/foreach}
@@ -308,6 +311,22 @@
 			// 発言を再生 (発言キュー発言に追加)
 			speechSynthesis.speak(uttr);
 		}
+		//削除 ボタン押下処理
+		function checkDelete(id, action) {
+			alertDialog = confirm('Are you sure to delete this word?');
+			if (alertDialog == false) {
+				return false;
+			} else {
+				var menuOpen = document.getElementById('menuOpen').value;
+				var menuStatus = document.getElementById('menuStatus').value;
+				$("#main_form").attr("action", action);
+				$("#id").val(id);
+				$("#menuOpen").val(menuOpen);
+				$("#menuStatus").val(menuStatus);
+				$("#main_form").submit();
+			}
+		}
+
 		// { /literal}
 	</script>
 	{ /literal}
