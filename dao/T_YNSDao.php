@@ -150,4 +150,16 @@ class T_YNSDao extends BaseDao
         $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
         return parent::update($stmt);
     }
+
+    public function deleteWordInfo($dto)
+    {
+        $query = " DELETE ";
+        $query .= " FROM ";
+        $query .= " T_YNS ";
+        $query .= " WHERE ";
+        $query .= " id = :id ";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
+        return parent::delete($stmt);
+    }
 }

@@ -1,17 +1,17 @@
-#filter{
-    position:fixed;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    background:#000000;
+#filter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000;
     background-image: url(../image/upload.gif);
     background-position: center center;
     background-repeat: no-repeat;
-    filter:alpha(opacity=60);
-    -moz-opacity:0.60;
-    opacity:0.60;
-    z-index:10000;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    z-index: 10000;
 }
 
 /*-------------------login------------------*/
@@ -19,7 +19,7 @@
 .login_btn {
     width: 100px;
     height: 45px;
-    background: #BBDEFB;
+    background: #bbdefb;
     color: #fff;
     border: 1px solid black;
     font-size: 14px;
@@ -27,14 +27,14 @@
     border-radius: 1px;
     font-family: Meiryo UI;
 }
-.login_div{
-    margin:50px;
+.login_div {
+    margin: 50px;
     clear: both;
-    padding-top:20px
+    padding-top: 20px;
 }
-.login_text{
-    height:25px;
-    width:200px;
+.login_text {
+    height: 25px;
+    width: 200px;
 }
 /*
 .login_btn:hover{
@@ -43,36 +43,36 @@
 */
 
 .ui-datepicker-trigger {
-   position: absolute;
-   width:20px;
-   height:20px;
-   margin-top:10px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
 }
 
 /*-------------------common--------------------*/
-html{
-    height:100%;
+html {
+    height: 100%;
 }
 
 body {
     margin: 0;
-    background-color: #FEFEFE;
+    background-color: #fefefe;
     font-family: Arial, Helvetics, sans-serif;
     overflow-y: hidden;
     height: 100%;
-    width:100%;
+    width: 100%;
     font-size: 0.9em;
     position: relative !important;
 }
 
-footer{
-    position:fixed;
-    width:100%;
-    height:30px;
-    bottom:0;
-    text-align:center;
-    vertical-align:middle;
-    overflow:hidden;
+footer {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
 }
 
 textarea {
@@ -80,59 +80,59 @@ textarea {
     font-size: 13.333px;
 }
 
-h1{
-    padding-left:110px;
+h1 {
+    padding-left: 110px;
 }
 
 select {
-    width:205px;
+    width: 205px;
     border: none;
     border-bottom: 1px solid #757575;
-    outline:0;
-    padding:7px;
+    outline: 0;
+    padding: 7px;
 }
 
 .divHeader {
-  position: absolute;
-  height: 70px;
-  width:100%;
+    position: absolute;
+    height: 70px;
+    width: 100%;
 }
 
 .divBody {
-  position: absolute;
-  top: 60px;
-  bottom: 40px;
-  background-color: transparent;
-  width:100%;
-  overflow-y: scroll;
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+    background-color: transparent;
+    width: 100%;
+    overflow-y: scroll;
 }
 
 .divBody1 {
-  position: absolute;
-  top: 60px;
-  bottom: 40px;
-  background-color: transparent;
-  width:100%;
+    position: absolute;
+    top: 60px;
+    bottom: 40px;
+    background-color: transparent;
+    width: 100%;
 }
 
 .divBody2 {
-  position: absolute;
-  top:230px;
-  bottom: 40px;
-  background-color: transparent;
-  width:90%;
-  overflow-y: scroll;
+    position: absolute;
+    top: 230px;
+    bottom: 40px;
+    background-color: transparent;
+    width: 90%;
+    overflow-y: scroll;
 }
 
-.divFooter{
-    position:fixed;
+.divFooter {
+    position: fixed;
     height: 40px;
-    width:100%;
-    bottom:0;
-    text-align:center;
-    overflow:hidden;
-    background:#fff;
-    color:#757575;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    overflow: hidden;
+    background: #fff;
+    color: #757575;
     line-height: 35px;
     font-size: 12px;
 }
@@ -142,21 +142,21 @@ select {
     padding: 7px;
 }
 
-.content{
-    width:80%;
-    margin:auto;
+.content {
+    width: 80%;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 50px;
-    padding-right:50px;
-    width:80%;
+    padding-right: 50px;
+    width: 80%;
 }
 
 section.content {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 50px;
-    padding-right:50px;
-    width:80%;
-    margin:auto;
+    padding-right: 50px;
+    width: 80%;
+    margin: auto;
 }
 
 .text {
@@ -166,135 +166,136 @@ section.content {
     border-width: 0px 0px 1px 0px;
     border-color: #5b5d5e;
     outline: 0;
-    width : 184px;
+    width: 184px;
 }
 
 .txtarea {
-    width:350px;
-    height:100px;
+    width: 350px;
+    height: 100px;
     border: none;
     border: 1px solid #757575;
-    outline:0;
+    outline: 0;
     resize: none;
     overflow-y: scroll;
 }
 
 /*-------------------required------------------*/
 
-.required{
-	color:red;
-	font-size:0.3rem;
-	padding-left:3px;
+.required {
+    color: red;
+    font-size: 0.3rem;
+    padding-left: 3px;
 }
 
 /*-------------------menuIcon------------------*/
-.orgMenuIcon{
+.orgMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/org.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.courseMenuIcon{
+.courseMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/sw.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.noticeMenuIcon{
+.noticeMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/notice.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.settingMenuIcon{
+.settingMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/setting.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.testMenuIcon{
+.testMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/test.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.testInfoMenuIcon{
+.testInfoMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/test_info.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.logoutMenuIcon{
+.logoutMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/logout.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.reportMenuIcon{
+.reportMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/report.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.wordMenuIcon{
+.wordMenuIcon {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/wordbook.svg) left top no-repeat;
-    background-size:35px 35px;
-    display:inline-block;
+    background-size: 35px 35px;
+    display: inline-block;
     vertical-align: middle;
 }
-.wordMenuIcon1{
+.wordMenuIcon1 {
     border: 0px;
-    width:35px;
-    height:35px;
+    width: 35px;
+    height: 35px;
     background: url(../image/book.png) left top no-repeat;
-    background-size:40px 40px;
-    display:inline-block;
+    background-size: 40px 40px;
+    display: inline-block;
     vertical-align: middle;
 }
 
 /*-------------------menu------------------*/
 
-.menu-label{
-    align-top:15px;
-    padding-left:5px;
+.menu-label {
+    align-top: 15px;
+    padding-left: 5px;
 }
 
-.pushmenu { /*this is the nav*/
+.pushmenu {
+    /*this is the nav*/
     background: #ffffff;
     font-family: Arial, Helvetics, sans-serif;
     width: 240px;
     height: 100%;
     top: 0;
     z-index: 1000;
-    position:fixed;
-    box-shadow: 2px 0px 5px 2px rgba(0,0,0,0.15);
+    position: fixed;
+    box-shadow: 2px 0px 5px 2px rgba(0, 0, 0, 0.15);
     color: #666666;
     font-size: 13px;
 }
@@ -302,14 +303,14 @@ section.content {
 .pushmenu h3 {
     font-weight: normal;
     font-size: 15px;
-    height:40px;
+    height: 40px;
     padding: 0px 0px 0px 0px;
     margin: 0px;
     //border-bottom: 0.01em solid #EEEEEE;
     //border-bottom-style: ridge;
     font-family: Arial, Helvetics, sans-serif;
-    color:#666666;
-    font-weight:bold;
+    color: #666666;
+    font-weight: bold;
 }
 
 .drawer-menu {
@@ -321,8 +322,8 @@ section.content {
 .pushmenu ul {
     font-weight: normal;
     list-style: none;
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .pushmenu a {
@@ -334,16 +335,15 @@ section.content {
 }
 
 .pushmenu a:hover {
-    background:#F0F0F0;
+    background: #f0f0f0;
 }
 
 .pushmenu a:active {
-    background: #D0D0D0;
+    background: #d0d0d0;
 }
 
 .pushmenu-left {
     left: -240px;
-
 }
 
 .pushmenu-left.pushmenu-open {
@@ -362,7 +362,8 @@ section.content {
 }
 
 /*Transition*/
-.pushmenu, .pushmenu-push {
+.pushmenu,
+.pushmenu-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -374,25 +375,24 @@ section.content {
     height: 35px;
     width: 33px;
     text-indent: -99999em;
-    float:left;
-    margin-top:5px;
+    float: left;
+    margin-top: 5px;
 }
-#nav_right{
-    text-align:right !important;
-    color:blue;
-    font-size:25px;
+#nav_right {
+    text-align: right !important;
+    color: blue;
+    font-size: 25px;
     cursor: pointer;
     height: 27px;
     width: auto;
     text-indent: -99999em;
-    float:right;
-    padding:auto;
-    padding-right:300px !important;
-    margin:auto;
+    float: right;
+    padding: auto;
+    padding-right: 300px !important;
+    margin: auto;
     color: #8acbfc;
     text-shadow: 2px 2px 4px #000000;
 }
-
 
 #nav_head {
     cursor: pointer;
@@ -409,25 +409,22 @@ nav-list.active {
     background-color: #e6b9b8;
     height: 30px;
     padding: 10px 20px 20px;
-    box-shadow: 2px 0px 7px 3px rgba(0,0,0,0.25);
-    padding:auto;
+    box-shadow: 2px 0px 7px 3px rgba(0, 0, 0, 0.25);
+    padding: auto;
 }
 /* drop down outer */
 .drawer-dropdown {
-
 }
 
-.drawer-dropdown.open{
-    border-top: 0.01em solid #EEEEEE;
+.drawer-dropdown.open {
+    border-top: 0.01em solid #eeeeee;
     border-top-style: ridge;
-    border-bottom: 0.01em solid #EEEEEE;
+    border-bottom: 0.01em solid #eeeeee;
     border-bottom-style: ridge;
 }
 
 /* drop down parent */
 .drawer-menu-item {
-
-
 }
 
 /* drawer-menu * /
@@ -439,20 +436,15 @@ nav-list.active {
 
 /* drop down child-outer */
 .drawer-dropdown-menu {
-
 }
 
 /* drop down child-item */
 .drawer-dropdown-menu-item {
-
-    padding-left:50px!important;
-
-
+    padding-left: 50px !important;
 }
 
 /* open close image */
 .drawer-caret {
-
 }
 
 /*! drawer-caret (toggle image)*/
@@ -461,7 +453,7 @@ nav-list.active {
     width: 0;
     height: 0;
     margin-left: 4px;
-    transition: transform .2s ease, opacity .2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
     transform: rotate(0deg);
     vertical-align: middle;
     border-top: 4px solid;
@@ -477,86 +469,98 @@ nav-list.active {
 /*-------------------menu------------------*/
 
 /** error*/
-.error_section{
-    padding:20px;
-    color:#FF4500;
-    height:100%;
-    display:none;
-    background-color: rgba(255,165,0,0.7);
+.error_section {
+    padding: 20px;
+    color: #ff4500;
+    height: 100%;
+    display: none;
+    background-color: rgba(255, 165, 0, 0.7);
 }
-.error_msg{
-	display: inline-flex; /* Safari */
-	inline-flex-wrap: wrap; /* Safari 6.1+ */
-	flex-wrap: wrap;
-	word-break:break-all;
+.error_msg {
+    display: inline-flex; /* Safari */
+    inline-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+    word-break: break-all;
 }
 
-.error_msg  div {
-  text-align: right;
-  width: auto;
-  height: auto;
+.error_msg div {
+    text-align: right;
+    width: auto;
+    height: auto;
 }
 
 /*----------common.css---------------*/
 
-
-.pagging{
+.pagging {
     display: inline-block;
     text-align: right;
     width: 100%;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
-.td_text_overflow{
+.td_text_overflow {
     text-overflow: ellipsis;
     -webkit-text-overflow: ellipsis; /* Safari */
     -o-text-overflow: ellipsis; /* Opera */
 }
 
 .group {
-    width:550px;
-    clear:both;
-    padding:0px 400px;
+    width: 550px;
+    clear: both;
+    padding: 0px 400px;
 }
 
-.grp_table{
-    padding-top:30px;
-    height:400px;
-    width:400px;
+.grp_table {
+    padding-top: 30px;
+    height: 400px;
+    width: 400px;
 }
 
 .text_box {
-    width:200px;
+    width: 200px;
     border: none;
     border-bottom: 1px solid #757575;
-    outline:0;
-    padding:7px;
+    outline: 0;
+    padding: 7px;
 }
 
-.lbl_name{
-    padding:10px;
+.lbl_name {
+    padding: 10px;
 }
 
 select {
-    width:265px;
+    width: 265px;
     border: none;
     border-bottom: 1px solid #757575;
-    outline:0;
-    padding:7px;
+    outline: 0;
+    padding: 7px;
 }
 
-#start_period,#end_period,#start_dt,#end_dt,#enroll_dt,#graduation_dt,#lesson_start_period,#lesson_end_period,#stu_course_start_period,#stu_course_end_period,#org_start_date,#org_end_date,#contract_start_dt,#contract_end_dt,
+#start_period,
+#end_period,
+#start_dt,
+#end_dt,
+#enroll_dt,
+#graduation_dt,
+#lesson_start_period,
+#lesson_end_period,
+#stu_course_start_period,
+#stu_course_end_period,
+#org_start_date,
+#org_end_date,
+#contract_start_dt,
+#contract_end_dt,
 #start_period_start,
 #start_period_end,
 #end_period_start,
-#end_period_end{
-    width:170px;
+#end_period_end {
+    width: 170px;
     border: none;
     border-bottom: 1px solid #757575;
-    outline:0;
+    outline: 0;
     background-repeat: no-repeat;
     background-position: right;
-    padding:7px;
+    padding: 7px;
 }
 
 .ui-datepicker {
@@ -564,16 +568,17 @@ select {
 }
 
 .insert_btn {
-    padding : 20px;
-    float:right;
+    padding: 20px;
+    float: right;
 }
 
 .insert {
     border: none;
-    outline:0;
+    outline: 0;
 }
-.tbl_insert td,tr{
-    padding : 5px;
+.tbl_insert td,
+tr {
+    padding: 5px;
 }
 
 .tbl_insert {
@@ -585,20 +590,26 @@ select {
 /********************************************
             �ꗗ��ʃO���b�h
 /********************************************/
-.tbl_search tr:nth-child(even){background-color: #f4e9e9;}
+.tbl_search tr:nth-child(even) {
+    background-color: #f4e9e9;
+}
 
-.tbl_search tr:nth-child(odd){background-color: #e8d0d0;}
+.tbl_search tr:nth-child(odd) {
+    background-color: #e8d0d0;
+}
 
-.tbl_search tr:hover {background-color: #ddd;}
+.tbl_search tr:hover {
+    background-color: #ddd;
+}
 
 .tbl_search th {
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: left; 
+    text-align: left;
     background-color: #e6b9b8;
     color: white;
-    font-weight:normal;
-	padding-left:5px;
+    font-weight: normal;
+    padding-left: 5px;
     /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
 }
 .tbl_search {
@@ -606,44 +617,46 @@ select {
     width: 100%;
 }
 
-.tbl_search td, th {
+.tbl_search td,
+th {
     border: none;
 }
 
-.tbl_search tbody{
+.tbl_search tbody {
     max-height: 450px;
-   /* display: inline-block; */
+    /* display: inline-block; */
     overflow-y: auto;
-    width:100%;
-    text-align: left; 
+    width: 100%;
+    text-align: left;
 }
 
-.task_div table tr, td {
+.task_div table tr,
+td {
     height: 30px;
 }
 /********************************************
             �ꗗ��ʃO���b�h���ʗ�
 /********************************************/
-.td_status{
+.td_status {
     width: 100px;
     white-space: nowrap;
 }
 
-.td_img{
-  width: 55px;
+.td_img {
+    width: 55px;
 }
 
-.td_period{
-    width:130px;
+.td_period {
+    width: 130px;
     white-space: nowrap;
 }
 
-.td_period_one_row{
-    width:350px;
+.td_period_one_row {
+    width: 350px;
     white-space: nowrap;
 }
 
-.td_scroll_col{
+.td_scroll_col {
     width: 25px;
 }
 
@@ -685,26 +698,25 @@ select {
     width: 300px;
 }
 
-.td_answer{
-    width:60px;
+.td_answer {
+    width: 60px;
 }
 
 /*------base.css-------------*/
 
-
 table.search_add {
-    width:80%;
+    width: 80%;
     /*width:1200px;*/
     border-collapse: collapse;
-    display:block;
+    display: block;
     margin-bottom: 10px;
     text-align: right;
 }
-.tbl_right_align{
-    width:300px !important;
+.tbl_right_align {
+    width: 300px !important;
 }
 
-.right{
+.right {
     float: right;
 }
 
@@ -736,79 +748,76 @@ table.search_add {
 .main_div {
     padding-left: 250px;
 }
-.err_msg_box{
-    color:#FF0000 !important;
-    overflow:auto;
-    height:50px;
+.err_msg_box {
+    color: #ff0000 !important;
+    overflow: auto;
+    height: 50px;
 }
-.msg_box{
-    color:#FF0000 !important;
-    overflow:auto;
-    height:50px;
+.msg_box {
+    color: #ff0000 !important;
+    overflow: auto;
+    height: 50px;
 }
 
 .text_box {
-    width:190px;
+    width: 190px;
     border: none;
     border-bottom: 1px solid #757575;
-    outline:0;
-    padding:7px;
+    outline: 0;
+    padding: 7px;
 }
 
 table.search_question_border {
     /* table-layout: fixed; */
-    width:100%;
+    width: 100%;
     border-collapse: collapse;
-    display:block;
+    display: block;
     margin-bottom: 50px;
 }
 
-.search_question_border thead{
+.search_question_border thead {
     display: inline-block;
-
 }
-.search_question_border tbody{
-    max-height:260px;
+.search_question_border tbody {
+    max-height: 260px;
     display: block;
     overflow-y: auto;
 }
 
-.search_question_border tr{
+.search_question_border tr {
     height: 30px !important;
 }
 
-.search_question_border td, .search_question_border th {
+.search_question_border td,
+.search_question_border th {
     border-bottom: 1px solid #5b5d5e;
     padding: 8px;
     text-align: left;
 }
-table.qa_regist_tbl{
+table.qa_regist_tbl {
     border-collapse: collapse;
-    padding:3px;
+    padding: 3px;
 }
-.qa_regist_tbl td{
-    padding:3px;
+.qa_regist_tbl td {
+    padding: 3px;
 }
 input:disabled {
-   /* background-color: #ffffff;*/
-   opacity: .5;
+    /* background-color: #ffffff;*/
+    opacity: 0.5;
 }
 
-
-
-
 .lblmsgconfirm {
-   border: none;
-   outline:0;
+    border: none;
+    outline: 0;
 }
 
 .msgtd {
-   max-height:60px;
-   width :400px;
-   overflow-y : auto;
-   margin-top: 10px;
-   overflow-x:hidden;
-   word-break:break-all;
+    max-height: 60px;
+    width: 400px;
+    overflow-y: auto;
+    margin-top: 10px;
+    overflow-x: hidden;
+    word-break: break-all;
 }
 
 .btn_send {
@@ -824,12 +833,8 @@ input:disabled {
 
 /*----------------form.css-----------------*/
 
-
-
-
-
-.main_tbl{
-    width:100%;
+.main_tbl {
+    width: 100%;
 }
 
 .main_tbl td {
@@ -837,57 +842,57 @@ input:disabled {
 }
 
 table.search_add {
-    width:100%;
+    width: 100%;
     border-collapse: collapse;
-    display:block;
+    display: block;
     margin-bottom: 10px;
     text-align: right;
 }
-.tbl_right_align{
-    width:300px !important;
+.tbl_right_align {
+    width: 300px !important;
 }
 
-.tbl_studgrup_lbl td{
-    padding-right:  80px;
+.tbl_studgrup_lbl td {
+    padding-right: 80px;
 }
 
-.right{
+.right {
     float: right;
 }
 
 table.search_header_border {
-    width:100%;
+    width: 100%;
     border-collapse: collapse;
-    display:block;
+    display: block;
     margin-bottom: 10px;
 }
-.search_header_border thead{
+.search_header_border thead {
     display: inline-block;
-    width:100%;
-
+    width: 100%;
 }
-.search_header_border tbody{
+.search_header_border tbody {
     max-height: 260px;
     display: inline-block;
     overflow: auto;
-    width:100%;
+    width: 100%;
 }
 
-.search_header_border tr{
+.search_header_border tr {
     height: 30px !important;
 }
 
-.sub_edit_col{
+.sub_edit_col {
     width: 150px !important;
 }
-.sub_time_interval{
+.sub_time_interval {
     width: 400px !important;
 }
-.sub_name{
+.sub_name {
     width: 300px !important;
 }
 
-.search_header_border td, .search_header_border th {
+.search_header_border td,
+.search_header_border th {
     border-bottom: 1px solid #5b5d5e;
     padding: 5px;
     text-align: left;
@@ -898,8 +903,8 @@ table.search_header_border {
     float: right;
 }
 
-thead{
-    background-color:#f8f8f8;
+thead {
+    background-color: #f8f8f8;
 }
 
 .txt_left {
@@ -925,7 +930,7 @@ thead{
 .btn_search {
     background: url(../image/search.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -935,7 +940,7 @@ thead{
 .btn_search1 {
     background: url(../image/search-paper.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -946,7 +951,7 @@ thead{
 .btn_add {
     background: url(../image/regist.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -957,7 +962,7 @@ thead{
 .btn_add1 {
     background: url(../image/new.png);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -969,7 +974,7 @@ thead{
 .btn_close {
     background: url(../image/close_icon.png);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -981,7 +986,7 @@ thead{
 .btn_help {
     background: url(../image/help.png);
     background-color: none;
-    background-size:25px 25px;
+    background-size: 25px 25px;
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
@@ -992,7 +997,7 @@ thead{
 .btn_edit {
     background: url(../image/edit.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1003,7 +1008,7 @@ thead{
 .btn_edit1 {
     background: url(../image/edit.png);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1015,7 +1020,7 @@ thead{
 .btn_copy {
     background: url(../image/copy.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1027,7 +1032,7 @@ thead{
 .btn_group_ref {
     background: url(../image/edit.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1039,7 +1044,7 @@ thead{
 .btn_group_assign {
     background: url(../image/group_assign.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1051,7 +1056,7 @@ thead{
 .btn_qa_assign {
     background: url(../image/quiz_assign.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1064,7 +1069,7 @@ thead{
 .btn_group_assign_list {
     background: url(../image/group_assign.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1076,7 +1081,7 @@ thead{
 .btn_student_assign_list {
     background: url(../image/user_assign.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1088,7 +1093,7 @@ thead{
 .btn_quiz_assign_list {
     background: url(../image/quiz_assign.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1100,7 +1105,7 @@ thead{
 .btn_csv_dl {
     background: url(../image/file_download.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1112,27 +1117,38 @@ thead{
 .btn_all_dl {
     background: url(../image/download.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
     border: 0;
 }
 
-.btn_delete{
+.btn_delete {
     background: url(../image/delete.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
     border: 0;
 }
 
-.btn_retake{
+.btn_delete1 {
+    background: url(../image/delete.png);
+    background-color: none;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border: 0;
+}
+
+.btn_retake {
     background: url(../image/retake.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1142,7 +1158,7 @@ thead{
 .btn_dl {
     background: url(../image/download.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1152,7 +1168,7 @@ thead{
 .btn_student_ref {
     background: url(../image/users_ref.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1162,7 +1178,7 @@ thead{
 .btn_test_assign {
     background: url(../image/test_assign.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1172,7 +1188,7 @@ thead{
 .btn_confirm {
     background: url(../image/check.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1182,7 +1198,7 @@ thead{
 .btn_mng_assign_list {
     background: url(../image/users_add.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1192,7 +1208,7 @@ thead{
 .btn_mng_assign {
     background: url(../image/users_add.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1202,7 +1218,7 @@ thead{
 .btn_preview_list {
     background: url(../image/preview.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1212,7 +1228,7 @@ thead{
 .btn_preview {
     background: url(../image/preview.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1222,7 +1238,7 @@ thead{
 .btn_qa_plus {
     background: url(../image/qa_plus.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1232,7 +1248,7 @@ thead{
 .btn_setting {
     background: url(../image/setting.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -1250,31 +1266,31 @@ thead{
 .main_div {
     padding-left: 250px;
 }
-.err_msg_box{
-    color:#FF0000 !important;
-    overflow:auto;
-    height:50px;
+.err_msg_box {
+    color: #ff0000 !important;
+    overflow: auto;
+    height: 50px;
 }
-.msg_box{
-    color:#FF0000 !important;
-    overflow:auto;
-    height:50px;
+.msg_box {
+    color: #ff0000 !important;
+    overflow: auto;
+    height: 50px;
 }
 
 .btn_new_groupStu {
     background: url(../image/group_assign.svg);
     background-color: none;
     background-repeat: no-repeat;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     border: 0;
     font-size: 16px;
-    height:35px;
-    width:35px;
+    height: 35px;
+    width: 35px;
 }
 .btn_insert {
     background: url(../image/regist2.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1283,7 +1299,7 @@ thead{
 .btn_insert1 {
     background: url(../image/save.png);
     background-color: none;
-    background-size:60px 60px;
+    background-size: 60px 60px;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
@@ -1292,7 +1308,7 @@ thead{
 .btn_back {
     background: url(../image/back.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1303,7 +1319,7 @@ thead{
 .btn_back1 {
     background: url(../image/back.png);
     background-color: none;
-    background-size:40px 40px;
+    background-size: 40px 40px;
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -1311,37 +1327,35 @@ thead{
     text-align: right;
     font-size: 16px;
 }
-.td_one{
+.td_one {
     padding-right: 150px;
-
 }
 
-.td_two{
+.td_two {
     padding-right: 60px;
-
 }
 
-input[type=button].button {
-    width:60px;
-    background:#40a5c6;
-    color:#fff;
-    border:1px solid black;
-    padding:1px;
-    font-size:8px;
-    cursor:pointer;
-    border-radius:1px;
-}
-input[type=button].csv {
-    float:right;
-    width:80px;
-    background:#40a5c6;
+input[type="button"].button {
+    width: 60px;
+    background: #40a5c6;
     color: #fff;
-    border:1px solid black;
-    height:30px;
-    font-size:14px;
-    cursor:pointer;
-    border-radius:1px;
-    margin:left;
+    border: 1px solid black;
+    padding: 1px;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 1px;
+}
+input[type="button"].csv {
+    float: right;
+    width: 80px;
+    background: #40a5c6;
+    color: #fff;
+    border: 1px solid black;
+    height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 1px;
+    margin: left;
 }
 
 .btn_sdown {
@@ -1366,35 +1380,29 @@ input[type=button].csv {
     font-size: 16px;
 }
 
-
 .btn_message {
     background: url(../image/message.svg);
     background-color: none;
     background-repeat: no-repeat;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     width: 30px;
     height: 30px;
     border: 0;
 }
 
-
-
-.quiz_btn{
-
+.quiz_btn {
     background: url(../image/quiz_assign.svg);
     background-color: none;
     background-repeat: no-repeat;
     width: 115px;
     height: 35px;
-    padding-left:35px;
+    padding-left: 35px;
     border: 0;
     text-align: right;
     font-size: 16px;
-
-
 }
 
-.btn_resetbtn{
+.btn_resetbtn {
     background: url(../image/reset.svg);
     background-color: none;
     background-repeat: no-repeat;
@@ -1406,14 +1414,14 @@ input[type=button].csv {
     margin-right: 50px;
 }
 
-.td_input{
- padding-right : 40px;
+.td_input {
+    padding-right: 40px;
 }
 
-table.myTable  {
+table.myTable {
     counter-reset: rowNumber;
 }
-table.myTable  tr {
+table.myTable tr {
     counter-increment: rowNumber;
 }
 
@@ -1422,38 +1430,44 @@ table.myTable  tr {
 .tblList {
     border-collapse: collapse;
     width: 100%;
-    max-height:200px;
+    max-height: 200px;
     overflow-y: scroll;
 }
 
-.tblList td, th {
+.tblList td,
+th {
     padding: 8px;
 }
 
-.tblList tr:nth-child(even){background-color: #f2f2f2;}
+.tblList tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-.tblList tr:hover {background-color: #ddd;}
+.tblList tr:hover {
+    background-color: #ddd;
+}
 
 .tblListHeader th {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
-    background-color: #B7DEE8;
+    background-color: #b7dee8;
     color: white;
-    font-weight:normal;
+    font-weight: normal;
 }
 .tblListHeader {
     border-collapse: collapse;
     width: 100%;
-    max-height:200px;
+    max-height: 200px;
     overflow-y: scroll;
 }
 
-.tblListHeader td, th {
+.tblListHeader td,
+th {
     padding-left: 8px;
 }
 
-.task_select{
+.task_select {
     width: 265px;
     border: 1px solid #757575;
     outline: 0;
@@ -1461,32 +1475,31 @@ table.myTable  tr {
     margin-right: -125px;
 }
 
-.message_select{
-	border: 1px solid #757575;
+.message_select {
+    border: 1px solid #757575;
 }
 
 .close_icon {
-	width: 15px;
-	float: right;
+    width: 15px;
+    float: right;
 }
 
-
-.stu_cd_edit td{
+.stu_cd_edit td {
     padding-right: 50px;
 }
-.margin_btm20{
+.margin_btm20 {
     margin-bottom: 20px;
 }
-.div_stucd_edit{
+.div_stucd_edit {
     border-color: #841313;
     border-radius: 20px;
     border-style: solid;
     margin-bottom: 20px;
-    padding:7px;
+    padding: 7px;
     padding-left: 30px;
 }
 
-.edit_title{
+.edit_title {
     font-weight: 6em;
 }
 
@@ -1495,25 +1508,25 @@ table.myTable  tr {
     src: url(../css/DroidSansMono.ttf);
 }
 
-#left_student_list, #right_student_list {
-    font-family: DroidSansMono, monospace
+#left_student_list,
+#right_student_list {
+    font-family: DroidSansMono, monospace;
 }
 
-
 .incharge_color {
-  background-color : #ccccf3 !important;
+    background-color: #ccccf3 !important;
 }
 
 .student_color {
-  background-color : #b6d8b6 !important;
+    background-color: #b6d8b6 !important;
 }
 
 .mark_color {
-  background-color : #f3cfd5  !important;
+    background-color: #f3cfd5 !important;
 }
 
 #maintenace_div {
-	height: 100px;
+    height: 100px;
     text-align: center;
     line-height: 100px;
     font-size: 28px;
@@ -1523,14 +1536,14 @@ table.myTable  tr {
 
 #teacher_course_detail_list_wrapper .dataTables_scrollHeadInner,
 #teacher_course_detail_list_wrapper .dataTable {
-	width:100% !important;
+    width: 100% !important;
 }
 
-#teacher_course_detail_list_wrapper table tr{
-	text-align:left;
+#teacher_course_detail_list_wrapper table tr {
+    text-align: left;
 }
 
-#teacher_course_detail_list_wrapper table thead{
+#teacher_course_detail_list_wrapper table thead {
     background-color: #e6b9b8 !important;
 }
 
@@ -1539,8 +1552,8 @@ table.myTable  tr {
 #quiz_tbl td:nth-child(1),
 #quiz_tbl th:nth-child(1),
 #quiz_assign_tbl td:nth-child(1),
-#quiz_assign_tbl th:nth-child(1){
-    width: 5% ;
+#quiz_assign_tbl th:nth-child(1) {
+    width: 5%;
     text-align: left !important;
 }
 
@@ -1550,7 +1563,7 @@ table.myTable  tr {
 #quiz_tbl th:nth-child(2),
 #quiz_assign_tbl td:nth-child(2),
 #quiz_assign_tbl th:nth-child(2) {
-    width: 25% ;
+    width: 25%;
     text-align: left !important;
 }
 
@@ -1560,7 +1573,7 @@ table.myTable  tr {
 #quiz_tbl th:nth-child(3),
 #quiz_assign_tbl td:nth-child(3),
 #quiz_assign_tbl th:nth-child(3) {
-    width: 35% ;
+    width: 35%;
     text-align: left !important;
 }
 
@@ -1570,7 +1583,7 @@ table.myTable  tr {
 #quiz_tbl th:nth-child(4),
 #quiz_assign_tbl td:nth-child(4),
 #quiz_assign_tbl th:nth-child(4) {
-    width: 15% ;
+    width: 15%;
     text-align: center !important;
 }
 
@@ -1580,7 +1593,7 @@ table.myTable  tr {
 #quiz_tbl th:nth-child(5),
 #quiz_assign_tbl td:nth-child(5),
 #quiz_assign_tbl th:nth-child(5) {
-    width: 20% ;
+    width: 20%;
     text-align: left !important;
 }
 
@@ -1592,22 +1605,22 @@ table.myTable  tr {
     word-break: break-word;
 }
 
-#quiz_assign_tbl_cb{
-	border-collapse: collapse;
-	font-size: 1.0em;
-	width:100%;
+#quiz_assign_tbl_cb {
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
 }
 
 #quiz_assign_tbl thead tr {
-	width:100%;
+    width: 100%;
 }
 
 .imgtxtarea {
-    width:800px;
-    height:100px;
+    width: 800px;
+    height: 100px;
     border: none;
     border: 1px solid #757575;
-    outline:0;
+    outline: 0;
     resize: none;
     overflow-y: scroll;
 }
@@ -1615,7 +1628,7 @@ table.myTable  tr {
 .btn_test_info_assign {
     background: url(../image/test_assign.svg);
     background-color: none;
-    background-size:35px 35px;
+    background-size: 35px 35px;
     background-repeat: no-repeat;
     width: 35px;
     height: 35px;
@@ -1625,21 +1638,20 @@ table.myTable  tr {
 .btn_test_info_assign_list {
     background: url(../image/test_assign.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     border: 0;
 }
 
-
 #test_assign_tbl_cb td:nth-child(1),
 #test_assign_tbl_cb th:nth-child(1),
 #test_tbl td:nth-child(1),
 #test_tbl th:nth-child(1),
 #test_assign_tbl td:nth-child(1),
-#test_assign_tbl th:nth-child(1){
-    width: 5% ;
+#test_assign_tbl th:nth-child(1) {
+    width: 5%;
     text-align: left !important;
 }
 
@@ -1649,7 +1661,7 @@ table.myTable  tr {
 #test_tbl th:nth-child(2),
 #test_assign_tbl td:nth-child(2),
 #test_assign_tbl th:nth-child(2) {
-    width: 25% ;
+    width: 25%;
     text-align: left !important;
 }
 
@@ -1659,7 +1671,7 @@ table.myTable  tr {
 #test_tbl th:nth-child(3),
 #test_assign_tbl td:nth-child(3),
 #test_assign_tbl th:nth-child(3) {
-    width: 35% ;
+    width: 35%;
     text-align: left !important;
 }
 
@@ -1669,7 +1681,7 @@ table.myTable  tr {
 #test_tbl th:nth-child(4),
 #test_assign_tbl td:nth-child(4),
 #test_assign_tbl th:nth-child(4) {
-    width: 15% ;
+    width: 15%;
     text-align: center !important;
 }
 
@@ -1679,7 +1691,7 @@ table.myTable  tr {
 #test_tbl th:nth-child(5),
 #test_assign_tbl td:nth-child(5),
 #test_assign_tbl th:nth-child(5) {
-    width: 20% ;
+    width: 20%;
     text-align: left !important;
 }
 
@@ -1691,40 +1703,46 @@ table.myTable  tr {
     word-break: break-word;
 }
 
-#test_assign_tbl_cb{
-	border-collapse: collapse;
-	font-size: 1.0em;
-	width:100%;
+#test_assign_tbl_cb {
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
 }
 
 #test_assign_tbl thead tr {
-	width:100%;
+    width: 100%;
 }
 
 .btn-sound_list {
-  background: url(../image/play.svg) no-repeat;
-  width: 30px;
-  height: 30px;
-  border: 0;
+    background: url(../image/play.svg) no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
 }
 
 /********************************************/
 /* AT　レポート一覧データテーブル用
 /********************************************/
-.tbl_search_at tr:nth-child(even){background-color: #f4e9e9;}
+.tbl_search_at tr:nth-child(even) {
+    background-color: #f4e9e9;
+}
 
-.tbl_search_at tr:nth-child(odd){background-color: #e8d0d0;}
+.tbl_search_at tr:nth-child(odd) {
+    background-color: #e8d0d0;
+}
 
-.tbl_search_at tr:hover {background-color: #ddd;}
+.tbl_search_at tr:hover {
+    background-color: #ddd;
+}
 
 .tbl_search_at th {
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: left; 
+    text-align: left;
     background-color: #e6b9b8;
     color: white;
-    font-weight:normal;
-	padding-left:5px;
+    font-weight: normal;
+    padding-left: 5px;
     /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
 }
 .tbl_search_at {
@@ -1732,58 +1750,65 @@ table.myTable  tr {
     width: 100%;
 }
 
-.tbl_search_at td, th {
+.tbl_search_at td,
+th {
     border: none;
-    text-align: left; 
+    text-align: left;
 }
 
-.tbl_search_at tbody{
+.tbl_search_at tbody {
     max-height: 450px;
     overflow-y: auto;
-    width:100%;
-    text-align: left; 
+    width: 100%;
+    text-align: left;
 }
 
 .btn_course_assign_list {
     background: url(../image/regist.svg);
     background-color: none;
-    background-size:30px 30px;
+    background-size: 30px 30px;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     border: 0;
 }
 
-
 /********************************************
             メニュー設定テーブル
 /********************************************/
-.tbl_menu tr:nth-child(even){background-color: #f4e9e9;}
+.tbl_menu tr:nth-child(even) {
+    background-color: #f4e9e9;
+}
 
-.tbl_menu tr:nth-child(odd){background-color: #e8d0d0;}
+.tbl_menu tr:nth-child(odd) {
+    background-color: #e8d0d0;
+}
 
-.tbl_menu tr:hover {background-color: #ddd;}
+.tbl_menu tr:hover {
+    background-color: #ddd;
+}
 
 .tbl_menu th {
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: left; 
+    text-align: left;
     background-color: #e6b9b8;
     color: white;
-    font-weight:normal;
-	padding-left:5px;
+    font-weight: normal;
+    padding-left: 5px;
     /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
 }
 .tbl_menu {
     border-collapse: collapse;
 }
 
-.tbl_menu td, th {
+.tbl_menu td,
+th {
     border: none;
 }
 
-.tbl_menu tbody{
-   /* display: inline-block; */
+.tbl_menu tbody {
+    /* display: inline-block; */
     overflow-y: auto;
-    text-align: left; 
+    text-align: left;
 }
