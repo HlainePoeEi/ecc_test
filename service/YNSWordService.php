@@ -77,4 +77,13 @@ class YNSWordService extends BaseService
 		// 単語リストを取得すること
 		return $dao->getWordListData($form, $flg);
 	}
+
+	// text to speech using php by NMZ
+	public function getAudio($dto)
+	{
+		// データベース接続
+		$dao = new T_YNSDao();
+		// 単語リストを取得すること
+		return $dao->getAudio($dto);
+	}
 }

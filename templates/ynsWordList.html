@@ -133,6 +133,8 @@
 			value="{$form->search_page_order_column}" />
 		<input type="hidden" id="search_page_order_dir" name="search_page_order_dir"
 			value="{$form->search_page_order_dir}" />
+		<!-- text to speech using php by STTO -->
+		<input type="hidden" id="word_book_name" name="word_book_name" value="{$form->word_book_name}" />
 		<!-- 戻るの場合リストか登録かの画面を分けるため -->
 		{include file='leftMenu.html'}
 		<div class="divHeader">
@@ -146,6 +148,14 @@
 					<section class="error_section">
 						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width: 15px; float: right"
 							class="close_icon">
+						<!-- text to speech using php by STTO -->
+						{if !empty($voice)}
+						{ assign var ="voice" value={{$voice}} }
+						{/if}
+						<!-- text to speech using php by NMZ -->
+						{if !empty($sound)}
+						{ assign var ="voices" value={{$sound}} }
+						{/if}
 						{if !empty($err_msg)}
 						<div class="error_msg">{$err_msg}</div>
 						{else if !empty($info_msg)}
@@ -193,11 +203,14 @@
 									{else}
 									<td width="100px;">ja</td>
 									{/if}
+									<!-- text to speech using php by STTO -->
 									<td width="70px;">
-
+										<input type="button" class="btn-sound_list1" name="v1"
+											onclick="trans1('{$result->word_book_name}','{$smarty.const.HOME_DIR}YNSWordList/sound')">
 									</td>
 									<td width="70px;">
-
+										<input type="button" class="btn_sound" name="audio" title="編集"
+											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordList/audio')">
 									</td>
 									<td width="50px;"><input type="button" class="btn_edit1" name="edit" title="編集"
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordRegist/index')">
@@ -273,6 +286,22 @@
 			$("#menuOpen").val(menuOpen);
 			$("#menuStatus").val(menuStatus);
 			$("#main_form").submit();
+		}
+		//text to speech using php by STTO
+		function trans1(word_book_name, action) {
+			var menuOpen = document.getElementById('menuOpen').value;
+			var menuStatus = document.getElementById('menuStatus').value;
+			$("#search_word").val($("#word").val());
+			$("#search_translation").val($("#translation").val());
+			setDataTableData();
+			$("#main_form").attr("action", action);
+			$("#screen_mode").val("update");
+			$("#word_book_name").val(word_book_name);
+			$("#menuOpen").val(menuOpen);
+			$("#menuStatus").val(menuStatus);
+			$("#main_form").submit();
+			var show = document.getElementById('show');
+			show.style.display = "block";
 		}
 		// 登録ボタン処理
 		function doInsert(action) {
