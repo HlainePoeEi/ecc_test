@@ -1812,3 +1812,30 @@ th {
     overflow-y: auto;
     text-align: left;
 }
+
+/* text to speech using php by STTO */
+.btn-sound_list1 {
+    background: url(../image/voices.png);
+    background-color: none;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin-left: 40px;
+    text-align: right;
+    font-size: 16px;
+}
+
+/* text to speech using php by NMZ */
+.btn_sound {
+    background: url(../image/microphone.png);
+    background-color: none;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}

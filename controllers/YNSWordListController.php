@@ -143,4 +143,30 @@ class YNSWordListController extends BaseController
 			return;
 		}
 	}
+
+	// text to speech using php by STTO
+	public function soundAction()
+	{
+		$this->search($this->form);
+		$this->smarty->assign('form', $this->form);
+		$sound = $this->form->word_book_name;
+		$txt = htmlspecialchars($sound);
+		$txt = rawurlencode($txt);
+		$html = file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q=' . $txt . '&tl=en-IN');
+		$speech = "<audio autoplay><source src='data:audio/mpeg;base64," . base64_encode($html) . "'></audio>";
+		// echo $speech;
+		$this->smarty->assign('voice', $speech);
+		$this->smarty->display('ynsWordList.html');
+	}
+
+	// text to speech using php by NMZ
+	public function audioAction()
+	{
+		$service = new YNSWordService($this->pdo);
+		$yns_dto = new T_YNSDto();
+		$yns_dto->id = $this->form->id;
+		$voice = $service->getAudio($yns_dto);
+		$this->smarty->assign('sound', $voice);
+		$this->searchAction();
+	}
 }

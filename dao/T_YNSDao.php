@@ -162,4 +162,26 @@ class T_YNSDao extends BaseDao
         $stmt->bindParam(":id", $dto->id, PDO::PARAM_STR);
         return parent::delete($stmt);
     }
+
+    // text to speech using php by NMZ
+    public function getAudio($dto)
+    {
+        $query = 'SELECT `word_book_name` FROM `t_yns` WHERE id= :id';
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(
+            ":id",
+            $dto->id,
+            PDO::PARAM_STR
+        );
+        $value = parent::getDataList($stmt, get_class(new T_YNSDto()));
+        foreach ($value as $product) {
+            $txt =  $product->word_book_name;
+        }
+        $textToTranslate = $txt;
+        $textToTranslate = htmlspecialchars($textToTranslate);
+        $textToTranslate = rawurlencode($textToTranslate);
+        $volume = file_get_contents('https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&q=' . $textToTranslate . '&tl=en-IN');
+        $player = "<audio autoplay><source src='data:audio/mpeg;base64," . base64_encode($volume) . "'></audio>";
+        return $player;
+    }
 }
