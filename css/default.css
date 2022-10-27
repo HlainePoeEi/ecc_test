@@ -959,16 +959,21 @@ thead {
     text-align: right;
     font-size: 16px;
 }
+
 .btn_add1 {
     background: url(../image/new.png);
     background-color: none;
-    background-size: 35px 35px;
+    background-size: 40px 40px;
     background-repeat: no-repeat;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border: 0;
     text-align: right;
     font-size: 16px;
+    margin-left: 750px;
+    position: absolute;
+    z-index: 1;
+    right: 160px;
 }
 
 .btn_close {
