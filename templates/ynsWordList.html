@@ -173,16 +173,16 @@
 							<input class="text" type="text" name="word" id="word" maxlength="512" size="30"></td>
 							<input type="submit" id="btn_search" name="search" title="検索" class="btn_search1"
 								alt="search" value="" style="padding-right: 25px;">
-							<input type="button" id="add" name="add_word" class="btn_add1" value="" title="新規追加"
+							<input type="button" id="add" name="add_word" class="btn_add1" value="" title="単語追加"
 								onclick="javascript:doInsert('{$smarty.const.HOME_DIR}YNSWordRegist/index')">
 						</div>
 						<br>
 						<table class="tbl_search" id="tbl_search">
 							<thead>
 								<tr>
-									<th width="100px;">Word Name</th>
-									<th width="100px;">Word Language</th>
-									<th width="100px;">Translate Language</th>
+									<th width="100px;">単語名</th>
+									<th width="100px;">単語言語</th>
+									<th width="100px;">通訳言語</th>
 									<th width="70px;"></th>
 									<th width="70px;"></th>
 									<th width="50px;">Action</th>
@@ -209,7 +209,7 @@
 											onclick="trans1('{$result->word_book_name}','{$smarty.const.HOME_DIR}YNSWordList/sound')">
 									</td>
 									<td width="70px;">
-										<input type="button" class="btn_sound" name="audio"
+										<input type="button" class="btn_sound" name="audio" 　
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordList/audio')">
 									</td>
 									<td width="50px;"><input type="button" class="btn_edit1" name="edit" title="編集"
@@ -300,8 +300,6 @@
 			$("#menuOpen").val(menuOpen);
 			$("#menuStatus").val(menuStatus);
 			$("#main_form").submit();
-			var show = document.getElementById('show');
-			show.style.display = "block";
 		}
 		// 登録ボタン処理
 		function doInsert(action) {
