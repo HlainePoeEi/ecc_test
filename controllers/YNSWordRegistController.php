@@ -177,38 +177,21 @@ class YNSWordRegistController extends BaseController
 		if ($this->check_login() == true) {
 			$word_service = new YNSWordService($this->pdo);
 
-			// $org_no = $this->form->org_no;
-
 			// メニュー情報を取得、セットする
 			$this->setMenu();
 			$word_dto = new T_YNSDto();
-			//$word_dto->word_id = $org_no;
 			$word_dto->id = $this->form->id;
 			$dao = new YNSWordService($this->pdo);
 			$result = $dao->deleteWordInfo($word_dto);
 			// 登録処理が正常の場合、クイズ一覧画面に遷移する。
 			if ($result == 1) {
 
-				// 	// 単語の単語帳情報を取得する
-				// 	$service = new WordBookWordService($this->pdo);
-				// 	$wordbookList = $service->getWordBookListByWord($org_no, $word_dto->word_id);
-
-				// 	// 単語帳単語データを削除
-				// 	$rtn = $service->deleteWordBookWordByWord($org_no, $word_dto->word_id);
-
-				// 	LogHelper::logDebug("Delete Result : " . $rtn);
-
-				// 	foreach ($wordbookList as $wordbook) {
-				// 		$wordbook_id = $wordbook->wordbook_id;
-				// 		$this->resetWordbookSetWordData($org_no, $wordbook_id);
-				// 		LogHelper::logDebug("Reset Wordbook : " . $wordbook_id);
-				// 	}
-
 				$_SESSION['regist_msg'] = I005;
 				// 登録完了
 				$this->backAction();
 				// 受講者一覧画面へ遷移する
-				//$this->dispatch('WordList/Search');
+
+
 				// 登録出来ない場合
 			} else {
 				$error = sprintf(E007, '削除');

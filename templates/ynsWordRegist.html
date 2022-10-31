@@ -17,14 +17,7 @@
 	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
 	<link href="{$smarty.const.HOME_DIR}css/style.css" rel="stylesheet">
 	<script type="text/javascript">
-		// エンターキー押下時のsubmitを無効化
-		$(document).on("keypress", "input:not(.allow_submit)", function (event) {
-			return event.which !== 13;
-		});
-		// エンターキー押下時のsubmitを無効化
-		$(document).on("keypress", "select:not(.allow_submit)", function (event) {
-			return event.which !== 13;
-		});
+
 		//表示再現
 		$(document).ready(function () {
 			// MSGのあるなし
@@ -34,21 +27,6 @@
 			$(".close_icon").on('click', function () {
 				$(".error_section").slideUp('slow')
 			});
-			var input_audio_file = document.getElementById("input_audio_file");
-			var audio_data = "";
-			// ------------------------------------------------------------
-			// Base64化する
-			// ------------------------------------------------------------
-			File.prototype.convertToBase64 = function (callback) {
-				var reader = new FileReader();
-				reader.onload = function (e) {
-					callback(e.target.result)
-				};
-				reader.onerror = function (e) {
-					callback(null);
-				};
-				reader.readAsDataURL(this);
-			};
 			/**
 			*
 			*  登録ボタン押下、必須チェック処理
@@ -117,7 +95,6 @@
 					<input type="hidden" id="msg" name="msg" value="{$msg}" />
 					<input type="hidden" id="error_msg" name="error_msg" value="{$error_msg}" />
 					<input type="hidden" id="id" name="id" value="{$form->id}">
-					<input type="hidden" id="audio_data" name="audio_data" value="" />
 					<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}" />
 					<input type="hidden" id="search_word" name="search_word" value="{$form->search_word}" />
 					<input type="hidden" id="search_translation" name="search_translation"
@@ -185,16 +162,6 @@
 						</table>
 						<br />
 						<table>
-							<tr class="rb_row1">
-								<td></td>
-								<td width="75px;"></td>
-								<td colspan="2"></td>
-								<td width="100px;"></td>
-								<!-- <td width="400px;"></td> {if $form->screen_mode eq 'update'}
-								<input id="btn_del" type="button" name="btn_del" class="btn_delete"
-									onclick="checkDelete('{$form->word_id}','{$smarty.const.HOME_DIR}WordRegist/delete');"
-									style="text-align: left;"> {/if} -->
-							</tr>
 							<tr>
 								<input type="submit" name="submit_add" id="btn_insert" name="btn_insert" value=""
 									class="btn_insert1" style="padding-right: 20px; float: right;">
@@ -214,25 +181,6 @@
 		</div>
 		</div>
 	</form>
-	{ literal }
-	<script>
-		//削除 ボタン押下処理
-		function checkDelete(word_id, action) {
-			alertDialog = confirm('Are you sure to delete this word?');
-			if (alertDialog == false) {
-				return false;
-			} else {
-				var menuOpen = document.getElementById('menuOpen').value;
-				var menuStatus = document.getElementById('menuStatus').value;
-				$("#main_form").attr("action", action);
-				$("#word_id").val(word_id);
-				$("#menuOpen").val(menuOpen);
-				$("#menuStatus").val(menuStatus);
-				$("#main_form").submit();
-			}
-		}
-	</script>
-	{ /literal}
 	<!--footer-->
 	{include file='footer.html'}
 	<!--footer-->
