@@ -170,7 +170,8 @@
 						</p>
 						<br>
 						<div class="divideCol">
-							<input class="text" type="text" name="word" id="word" maxlength="512" size="30">
+							<input class="text" type="text" name="search_word" id="search_word" maxlength="512"
+								size="30">
 							<input type="submit" id="btn_search" name="search" title="検索" class="btn_search1"
 								alt="search" value="">
 							<input type="button" id="add" name="add_word" class="btn_add1" value="" title="新規追加"
@@ -208,6 +209,7 @@
 										<input type="button" class="btn-sound_list1" name="v1"
 											onclick="trans1('{$result->word_book_name}','{$smarty.const.HOME_DIR}YNSWordList/sound')">
 									</td>
+									<!-- text to speech using php by NMZ -->
 									<td width="70px;">
 										<input type="button" class="btn_sound" name="audio" 　
 											onclick="trans('{$result->id}','{$smarty.const.HOME_DIR}YNSWordList/audio')">

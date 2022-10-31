@@ -51,9 +51,28 @@ class T_YNSDao extends BaseDao
 
     public function getWordListData($param, $flg)
     {
-        $query = $this->createQuery();
+        // $query = $this->createQuery();
         // $query .= $this->createSearchWhere($param);
+        $query = $this->createQuery();
+
+        $query .= " WHERE ";
+
+        $query .= " t_yns.word_book_name LIKE :word_book_name ";
+
+        $word_book_name = '%' . $param->search_word . '%';
+
         $stmt = $this->pdo->prepare($query);
+
+        $stmt->bindParam(
+
+            ":word_book_name",
+
+            $word_book_name,
+
+            PDO::PARAM_STR
+
+        );
+        // $stmt = $this->pdo->prepare($query);
         // $this->setSearchParam($stmt, $param);
         return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
@@ -104,6 +123,11 @@ class T_YNSDao extends BaseDao
         // $query .= " ORDER BY ";
         // $query .= " t_word.word_id DESC";
         // return $query;
+       
+
+
+
+        return parent::getDataList($stmt, get_class(new T_YNSDto()));
     }
 
     // public function setSearchParam($stmt, $param)
