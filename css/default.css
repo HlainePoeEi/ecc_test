@@ -971,9 +971,10 @@ thead {
     text-align: right;
     font-size: 16px;
     margin-left: 750px;
+    z-index: 2;
     position: absolute;
-    z-index: 1;
     right: 160px;
+    margin-top: -40px;
 }
 
 .btn_close {
