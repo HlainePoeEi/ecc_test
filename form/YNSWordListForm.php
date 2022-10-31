@@ -12,14 +12,6 @@ class YNSWordListForm extends BaseForm
 
 	public $trans_lang;
 
-	// public $search_org_id;
-	// public $search_page;
-	// public $search_page_row;
-	// public $search_page_order_column;
-	// public $search_page_order_dir;
-	// public $search_file_name;
-
-
 	public $org_no;
 	// 組織名
 	public $org_name;
