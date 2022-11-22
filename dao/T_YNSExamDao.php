@@ -196,39 +196,31 @@ class T_YNSExamDao extends BaseDao
     public function updateExamInfo($dto, $pdo)
     {
         $query = " UPDATE";
-        $query .= " T_TEST_INFO";
+        $query .= " T_YNSEXAM";
         $query .= " SET";
 
-        if (!StringUtil::isEmpty($dto->test_info_name)) {
-            $query .= " test_info_name  = :test_info_name ";
+        if (!StringUtil::isEmpty($dto->name)) {
+            $query .= " name  = :name ";
         }
 
-        if (!StringUtil::isEmpty($dto->long_description)) {
-            $query .= " ,long_description  = :long_description ";
+        if (!StringUtil::isEmpty($dto->description)) {
+            $query .= " ,description  = :description ";
         }
 
-        if (!StringUtil::isEmpty($dto->start_period)) {
-            $query .= " ,start_period  = :start_period ";
+        if (!StringUtil::isEmpty($dto->start_date)) {
+            $query .= " ,start_date  = :start_date ";
         }
 
-        if (!StringUtil::isEmpty($dto->end_period)) {
-            $query .= " ,end_period  = :end_period ";
+        if (!StringUtil::isEmpty($dto->end_date)) {
+            $query .= " ,end_date  = :end_date ";
         }
 
         if (!StringUtil::isEmpty($dto->status)) {
             $query .= " ,status  = :status ";
         }
 
-        if (!StringUtil::isEmpty($dto->test_time)) {
-            $query .= " ,test_time  = :test_time ";
-        }
-
-        if (!StringUtil::isEmpty($dto->show_flg)) {
-            $query .= " ,show_flg  = :show_flg ";
-        }
-
-        if (!StringUtil::isEmpty($dto->drill_flg)) {
-            $query .= " ,drill_flg  = :drill_flg ";
+        if (!StringUtil::isEmpty($dto->time)) {
+            $query .= " ,time  = :time ";
         }
 
         $query .= " ,remarks  = :remarks ";
@@ -236,50 +228,39 @@ class T_YNSExamDao extends BaseDao
         $query .= " ,updater_id  = :updater_id ";
 
         $query .= " WHERE ";
-        $query .= " org_no = :org_no ";
-        $query .= " AND test_info_no = :test_info_no ";
-        $query .= " AND del_flg = '0' ";
+        $query .= " AND exam_id = :exam_id ";
 
         $stmt = $pdo->prepare($query);
 
-        if (!StringUtil::isEmpty($dto->test_info_name)) {
-            $stmt->bindParam(":test_info_name", $dto->test_info_name, PDO::PARAM_STR);
+        if (!StringUtil::isEmpty($dto->name)) {
+            $stmt->bindParam(":name", $dto->name, PDO::PARAM_STR);
         }
 
-        if (!StringUtil::isEmpty($dto->long_description)) {
-            $stmt->bindParam(":long_description", $dto->long_description, PDO::PARAM_STR);
+        if (!StringUtil::isEmpty($dto->description)) {
+            $stmt->bindParam(":description", $dto->description, PDO::PARAM_STR);
         }
 
         if (!StringUtil::isEmpty($dto->status)) {
             $stmt->bindParam(":status", $dto->status, PDO::PARAM_STR);
         }
 
-        if (!StringUtil::isEmpty($dto->test_time)) {
-            $stmt->bindParam(":test_time", $dto->test_time, PDO::PARAM_INT);
+        if (!StringUtil::isEmpty($dto->time)) {
+            $stmt->bindParam(":time", $dto->time, PDO::PARAM_INT);
         }
 
-        if (!StringUtil::isEmpty($dto->show_flg)) {
-            $stmt->bindParam(":show_flg", $dto->show_flg, PDO::PARAM_INT);
+        if (!StringUtil::isEmpty($dto->start_date)) {
+            $stmt->bindParam(":start_date", $dto->start_date, PDO::PARAM_STR);
         }
 
-        if (!StringUtil::isEmpty($dto->drill_flg)) {
-            $stmt->bindParam(":drill_flg", $dto->drill_flg, PDO::PARAM_INT);
-        }
-
-        if (!StringUtil::isEmpty($dto->start_period)) {
-            $stmt->bindParam(":start_period", $dto->start_period, PDO::PARAM_STR);
-        }
-
-        if (!StringUtil::isEmpty($dto->end_period)) {
-            $stmt->bindParam(":end_period", $dto->end_period, PDO::PARAM_STR);
+        if (!StringUtil::isEmpty($dto->end_date)) {
+            $stmt->bindParam(":end_date", $dto->end_date, PDO::PARAM_STR);
         }
 
         $stmt->bindParam(":remarks", $dto->remarks, PDO::PARAM_STR);
         $stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
         $stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
 
-        $stmt->bindParam(":org_no", $dto->org_no, PDO::PARAM_STR);
-        $stmt->bindParam(":test_info_no", $dto->test_info_no, PDO::PARAM_STR);
+        $stmt->bindParam(":exam_id", $dto->exam_id, PDO::PARAM_STR);
         return parent::update($stmt);
     }
 

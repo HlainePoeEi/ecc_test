@@ -63,7 +63,7 @@ class YNSExamRegistController extends BaseController
 					if (!empty($this->form->exam_id)) {
 
 						// 検索結果を取得
-						$list = $service->getExamInfo($org_no, $exam_id);
+						$list = $service->getExamInfo($exam_id);
 
 						if (count($list) == 1) {
 
@@ -130,43 +130,35 @@ class YNSExamRegistController extends BaseController
 			if (isset($_POST['insert'])) {
 
 				// メニューが開くかどうかを確認する
-				$org_no = $_SESSION['org_no'];
 				$screen_mode = $this->form->screen_mode;
 				$date_flg = 0;
-				$test_info_no = $this->form->test_info_no;
-				$long_description = $this->form->long_description;
-				$test_time = $this->form->test_time;
-				$show_flg = $this->form->show_flg;
-				$drill_flg = $this->form->drill_flg;
+				$exam_id = $this->form->exam_id;
+				$description = $this->form->description;
+				$time = $this->form->time;
 				$status = $this->form->status;
-				$start_period = $this->form->start_period;
-				$end_period = $this->form->end_period;
+				$start_date = $this->form->start_date;
+				$end_date = $this->form->end_date;
 				$remarks = $this->form->remarks;
 
 				// テストデータ情報登録
-				$test_info_dto = new T_Test_InfoDto();
-				$test_info_dto->org_no = $_SESSION['org_no'];
-				$test_info_dto->test_info_no = $test_info_no;
-				$test_info_dto->test_info_name = $this->form->test_info_name;
+				$exam_dto = new T_YNSExamDto();
+				$exam_dto->exam_id = $exam_id;
+				$exam_dto->name = $this->form->name;
+				$exam_dto->description = $description;
+				$exam_dto->time = $time;
+				$exam_dto->start_date = $start_date;
+				$exam_dto->end_date = DateUtil::changeEndDateFormat($end_date);
+				$exam_dto->status = $status;
+				$exam_dto->remarks = $remarks;
+				//$exam_dto->updater_id = $_SESSION['manager_no'];
+				$exam_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
 
-				$test_info_dto->long_description = $long_description;
-				$test_info_dto->test_time = $test_time;
-				$test_info_dto->show_flg = $show_flg;
-				$test_info_dto->drill_flg = $drill_flg;
-				$test_info_dto->start_period = $start_period;
-				$test_info_dto->end_period = DateUtil::changeEndDateFormat($end_period);
-
-				$test_info_dto->status = $status;
-				$test_info_dto->remarks = $remarks;
-				$test_info_dto->updater_id = $_SESSION['manager_no'];
-				$test_info_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-
-				$service = new TestInfoService($this->pdo);
+				$service = new YNSExamService($this->pdo);
 
 				// 更新状況
 				if ($screen_mode == 'update') {
 
-					$result = $service->updateTestInfo($test_info_dto);
+					$result = $service->updateExamInfo($exam_dto);
 
 					// 更新処理が正常の場合、
 					if ($result == 1) {
@@ -181,7 +173,7 @@ class YNSExamRegistController extends BaseController
 						$this->smarty->assign('screen_mode', $screen_mode);
 
 						$today_date = DateUtil::getDate('Y-m-d');
-						$diff = date_diff(date_create($test_info_dto->start_period), date_create($today_date));
+						$diff = date_diff(date_create($exam_dto->start_date), date_create($today_date));
 
 						if ($diff->format("%R%a") > 0) {
 							$date_flg = 1;
@@ -198,34 +190,34 @@ class YNSExamRegistController extends BaseController
 					// 登録状況
 				} else if ($screen_mode == 'copy') {
 
-					$test_info_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					$test_info_dto->creater_id = $_SESSION['manager_no'];
+					$exam_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
+					$exam_dto->creater_id = $_SESSION['manager_no'];
 
 					// 取得結果．Tシーケンス.現在シーケンス番号+1
-					$test_info_dto->test_info_no = $this->form->test_info_no;
-					$result = $service->insertData($test_info_dto);
+					$exam_dto->exam_id = $this->form->exam_id;
+					$result = $service->insertData($exam_dto);
 
-					if ($result == 1) {
+					// if ($result == 1) {
 
-						$result1 = $service->getListQuiz($org_no, $this->form->ori_test_info_no);
-						$test_info_quiz_dto = new T_Test_Info_QuizDto();
+					// 	$result1 = $service->getListQuiz( $this->form->ori_test_info_no);
+					// 	$test_info_quiz_dto = new T_Test_Info_QuizDto();
 
-						for ($i = 0; $i < count($result1); $i++) {
+					// 	for ($i = 0; $i < count($result1); $i++) {
 
-							$value = $result1[$i];
-							$test_info_quiz_dto->test_info_no = $test_info_dto->test_info_no;
-							$test_info_quiz_dto->quiz_info_no = $value->quiz_info_no;
-							$test_info_quiz_dto->test_info_no = $test_info_no;
-							$test_info_quiz_dto->disp_no = $value->disp_no;
-							$test_info_quiz_dto->del_flg = '0';
-							$test_info_quiz_dto->org_no = $org_no;
-							$test_info_quiz_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-							$test_info_quiz_dto->creater_id = $_SESSION['manager_no'];
-							$test_info_quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-							$test_info_quiz_dto->updater_id = $_SESSION['manager_no'];
-							$result = $service->insertData($test_info_quiz_dto);
-						}
-					}
+					// 		$value = $result1[$i];
+					// 		$test_info_quiz_dto->test_info_no = $test_info_dto->test_info_no;
+					// 		$test_info_quiz_dto->quiz_info_no = $value->quiz_info_no;
+					// 		$test_info_quiz_dto->test_info_no = $test_info_no;
+					// 		$test_info_quiz_dto->disp_no = $value->disp_no;
+					// 		$test_info_quiz_dto->del_flg = '0';
+					// 		$test_info_quiz_dto->org_no = $org_no;
+					// 		$test_info_quiz_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
+					// 		$test_info_quiz_dto->creater_id = $_SESSION['manager_no'];
+					// 		$test_info_quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
+					// 		$test_info_quiz_dto->updater_id = $_SESSION['manager_no'];
+					// 		$result = $service->insertData($test_info_quiz_dto);
+					// 	}
+					// }
 
 					// 更新処理が正常の場合、
 					if ($result == 1) {
@@ -238,7 +230,7 @@ class YNSExamRegistController extends BaseController
 						$this->smarty->assign('screen_mode', $screen_mode);
 
 						$today_date = DateUtil::getDate('Y-m-d');
-						$diff = date_diff(date_create($test_info_dto->start_period), date_create($today_date));
+						$diff = date_diff(date_create($exam_dto->start_date), date_create($today_date));
 
 						if ($diff->format("%R%a") > 0) {
 							$date_flg = 1;
@@ -255,13 +247,13 @@ class YNSExamRegistController extends BaseController
 					}
 				} else if ($screen_mode == 'new') {
 
-					$service = new TestInfoService($this->pdo);
-					$test_info_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					$test_info_dto->creater_id = $_SESSION['manager_no'];
+					$service = new YNSExamService($this->pdo);
+					$exam_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
+					//$exam_dto->creater_id = $_SESSION['manager_no'];
 
-					$result = $service->insertData($test_info_dto);
+					$result = $service->insertData($exam_dto);
 
-					$this->form->test_info_no = $test_info_dto->test_info_no;
+					$this->form->exam_id = $exam_dto->exam_id;
 
 					// 登録処理が正常の場合、
 					if ($result == 1) {
@@ -274,7 +266,7 @@ class YNSExamRegistController extends BaseController
 						$this->smarty->assign('screen_mode', $screen_mode);
 
 						$today_date = DateUtil::getDate('Y-m-d');
-						$diff = date_diff(date_create($test_info_dto->start_period), date_create($today_date));
+						$diff = date_diff(date_create($exam_dto->start_date), date_create($today_date));
 
 						if ($diff->format("%R%a") > 0) {
 							$date_flg = 1;
@@ -295,7 +287,7 @@ class YNSExamRegistController extends BaseController
 			}
 			$this->smarty->assign('date_flg', $date_flg);
 			$this->smarty->assign('form', $this->form);
-			$this->smarty->display('testInfoRegist.html');
+			$this->smarty->display('ynsExamRegist.html');
 		} else {
 
 			TransitionHelper::sendMaintenance($_SESSION['error_message']);
@@ -311,15 +303,13 @@ class YNSExamRegistController extends BaseController
 		if ($this->check_maintenance() == true) {
 			// テスト情報登録画面 の場合
 			if ($this->form->btn_flg_type == "2") {
-				$this->form->org_no = $this->form->org_no;
-				$this->form->test_info_no = $this->form->test_info_no;
-				$this->form->test_info_name = $this->form->test_info_test_info_name;
-				$this->form->test_time = $this->form->test_info_test_time;
-				$this->form->show_flg = $this->form->show_flg;
-				$this->form->long_description = $this->form->long_description;
+				$this->form->exam_id = $this->form->exam_id;
+				$this->form->name = $this->form->test_info_test_info_name;
+				$this->form->time = $this->form->test_info_test_time;
+				$this->form->description = $this->form->description;
 				$this->form->status = $this->form->status;
-				$this->form->start_period = $this->form->test_info_start_period;
-				$this->form->end_period = $this->form->test_info_end_period;
+				$this->form->start_date = $this->form->test_info_start_period;
+				$this->form->end_date = $this->form->test_info_end_period;
 				$this->form->remarks = $this->form->test_info_remarks;
 				$this->form->deadline_dt_old1 = $this->form->test_info_start_period;
 				$this->form->screen_mode = $this->form->screen_mode;
@@ -332,7 +322,7 @@ class YNSExamRegistController extends BaseController
 				$this->smarty->assign('date_flg', $this->form->date_flg);
 				$this->smarty->assign('screen_mode', $this->form->screen_mode);
 				$this->smarty->assign('form', $this->form);
-				$this->smarty->display('testInfoRegist.html');
+				$this->smarty->display('ynsExamRegist.html');
 			} else {
 				// 登録完了
 				$this->setBackData();

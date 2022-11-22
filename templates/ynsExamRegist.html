@@ -29,7 +29,7 @@
     <script type="text/javascript">
       {literal}
       bkLib.onDomLoaded(function() {
-      	new nicEditor({buttonList : ['fontSize','forecolor','bold','italic','underline','strikeThrough','subscript','superscript','html','upload', 'xhtml']}).panelInstance('long_description');
+      	new nicEditor({buttonList : ['fontSize','forecolor','bold','italic','underline','strikeThrough','subscript','superscript','html','upload', 'xhtml']}).panelInstance('description');
       });
       {/literal}
 
@@ -44,19 +44,19 @@
       		// console.log(date_flg);
       		if ( date_flg == 1 || date_flg == "1" ){
 
-      			$('#start_period').datepicker("disable");
+      			$('#start_date').datepicker("disable");
       			//console.log("date picker is disabled");
       		}else {
 
       			$(function() {
-      				$('#start_period').datepicker({
+      				$('#start_date').datepicker({
       					showOn : "button",
       					buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
       					dateFormat: 'yy/mm/dd',
       					buttonImageOnly : true,
       					beforeShow: function (input, inst) {
-      						var leftWidth=($('.pushmenu-open').length>0)?$('#start_period').offset().left-$('.pushmenu-open')[0].offsetWidth
-      								:$('#start_period').offset().left;
+      						var leftWidth=($('.pushmenu-open').length>0)?$('#start_date').offset().left-$('.pushmenu-open')[0].offsetWidth
+      								:$('#start_date').offset().left;
       						setTimeout(function () {
       							inst.dpDiv.css({
       								left: leftWidth
@@ -68,15 +68,15 @@
       		}
 
       		$(function() {
-      			$('#end_period').datepicker({
+      			$('#end_date').datepicker({
       				showOn : "button",
       				buttonImage : "{$smarty.const.HOME_DIR}image/calendar.svg",
       				dateFormat: 'yy/mm/dd',
       				buttonImageOnly : true,
       				beforeShow: function (input, inst) {
       					setTimeout(function () {
-      						var leftWidth=($('.pushmenu-open').length>0)?$('#end_period').offset().left-$('.pushmenu-open')[0].offsetWidth
-      								:$('#end_period').offset().left;
+      						var leftWidth=($('.pushmenu-open').length>0)?$('#end_date').offset().left-$('.pushmenu-open')[0].offsetWidth
+      								:$('#end_date').offset().left;
       						inst.dpDiv.css({
       							left: leftWidth
       						});
@@ -103,7 +103,7 @@
 
       			var name = document.getElementById('name').value;
       			var time = document.getElementById('time').value;
-      			var nicE = new nicEditors.findEditor('long_description');
+      			var nicE = new nicEditors.findEditor('description');
       			var description = nicE.getContent();
       			var end_date = document.getElementById('end_date').value;
       			var date_flg = document.getElementById('date_flg').value;
