@@ -67,7 +67,7 @@ define("QUIZ_INFO_AUDIO_DIR", "QuizInfo/audio/");
 define("FILE_DIR1", $_SERVER["DOCUMENT_ROOT"] . HOME_DIR);
 
 define("ERROR_PAGE", HOME_DIR . "Error/disp");
-
+define("MAINTENANCE_PAGE", HOME_DIR . "Maintenance/disp");
 define("SMARTY_FILE", "libs/smarty/libs/Smarty.class.php");
 
 define("LOGGER_CLASS", "libs/log4php/src/main/php/Logger.php");
