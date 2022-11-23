@@ -11,156 +11,91 @@ require_once 'dto/T_Test_Info_QuizDto.php';
  */
 class T_YNSExamDao extends BaseDao
 {
-    public function getTestInfoResultCount($param)
-    {
-        $query = " SELECT ";
-        $query .= " distinct test_info.test_info_no test_info_no ";
-        $query .= " ,test_info.test_info_name test_info_name ";
-        $query .= " ,test_info.remarks remarks ";
-        $query .= " ,test_info.status status ";
-        $query .= " ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ";
-        $query .= " ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ";
-        $query .= " FROM ";
-        $query .= " T_TEST_INFO test_info ";
-        $query .= " LEFT JOIN T_TEST_INFO_QUIZ as test_info_quiz ";
-        $query .= " ON test_info.org_no = test_info_quiz.org_no ";
-        $query .= " AND test_info.test_info_no = test_info_quiz.test_info_no ";
-        $query .= " WHERE test_info.start_period <= :end_period ";
-        $query .= " AND test_info.end_period >= :start_period ";
-        $query .= " AND test_info.org_no = :org_no ";
+    // public function getTestInfoResultCount($param)
+    // {
+    //     $query = " SELECT ";
+    //     $query .= " distinct test_info.test_info_no test_info_no ";
+    //     $query .= " ,test_info.test_info_name test_info_name ";
+    //     $query .= " ,test_info.remarks remarks ";
+    //     $query .= " ,test_info.status status ";
+    //     $query .= " ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ";
+    //     $query .= " ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ";
+    //     $query .= " FROM ";
+    //     $query .= " T_TEST_INFO test_info ";
+    //     $query .= " LEFT JOIN T_TEST_INFO_QUIZ as test_info_quiz ";
+    //     $query .= " ON test_info.org_no = test_info_quiz.org_no ";
+    //     $query .= " AND test_info.test_info_no = test_info_quiz.test_info_no ";
+    //     $query .= " WHERE test_info.start_period <= :end_period ";
+    //     $query .= " AND test_info.end_period >= :start_period ";
+    //     $query .= " AND test_info.org_no = :org_no ";
 
-        if (!StringUtil::isEmpty($param->test_info_name)) {
-            $query .= " AND (test_info.test_info_name LIKE :test_info_name) ";
-        }
+    //     if (!StringUtil::isEmpty($param->test_info_name)) {
+    //         $query .= " AND (test_info.test_info_name LIKE :test_info_name) ";
+    //     }
 
-        if (!StringUtil::isEmpty($param->remarks)) {
-            $query .= " AND (test_info.remarks LIKE :remarks ) ";
-        }
+    //     if (!StringUtil::isEmpty($param->remarks)) {
+    //         $query .= " AND (test_info.remarks LIKE :remarks ) ";
+    //     }
 
-        if (!StringUtil::isEmpty($param->status)) {
-            $query .= " AND test_info.status IN (" . $param->status . ") ";
-        }
+    //     if (!StringUtil::isEmpty($param->status)) {
+    //         $query .= " AND test_info.status IN (" . $param->status . ") ";
+    //     }
 
-        if (!StringUtil::isEmpty($param->updater_id)) {
-            $query .= " AND (test_info.updater_id=:updater_id ) ";
-        }
+    //     if (!StringUtil::isEmpty($param->updater_id)) {
+    //         $query .= " AND (test_info.updater_id=:updater_id ) ";
+    //     }
 
-        $query .= " AND test_info.del_flg = '0' ";
-        $query .= " ORDER BY ";
-        $query .= " test_info_name ASC";
-        $query .= " ,remarks ASC";
+    //     $query .= " AND test_info.del_flg = '0' ";
+    //     $query .= " ORDER BY ";
+    //     $query .= " test_info_name ASC";
+    //     $query .= " ,remarks ASC";
 
-        $stmt = $this->pdo->prepare($query);
+    //     $stmt = $this->pdo->prepare($query);
 
-        $stmt->bindParam(":start_period", $param->start_period, PDO::PARAM_STR);
-        $stmt->bindParam(":end_period", $param->end_period, PDO::PARAM_STR);
-        $stmt->bindParam(":org_no", $param->org_no, PDO::PARAM_STR);
+    //     $stmt->bindParam(":start_period", $param->start_period, PDO::PARAM_STR);
+    //     $stmt->bindParam(":end_period", $param->end_period, PDO::PARAM_STR);
+    //     $stmt->bindParam(":org_no", $param->org_no, PDO::PARAM_STR);
 
-        if (!StringUtil::isEmpty($param->test_info_name)) {
+    //     if (!StringUtil::isEmpty($param->test_info_name)) {
 
-            $name = '%' . $param->test_info_name . '%';
-            $stmt->bindParam(":test_info_name", $name, PDO::PARAM_STR);
-        }
+    //         $name = '%' . $param->test_info_name . '%';
+    //         $stmt->bindParam(":test_info_name", $name, PDO::PARAM_STR);
+    //     }
 
-        if (!StringUtil::isEmpty($param->remarks)) {
+    //     if (!StringUtil::isEmpty($param->remarks)) {
 
-            $remarks = '%' . $param->remarks . '%';
-            $stmt->bindParam(":remarks", $remarks, PDO::PARAM_STR);
-        }
+    //         $remarks = '%' . $param->remarks . '%';
+    //         $stmt->bindParam(":remarks", $remarks, PDO::PARAM_STR);
+    //     }
 
-        if (!StringUtil::isEmpty($param->updater_id)) {
-            $stmt->bindParam(":updater_id", $param->updater_id, PDO::PARAM_STR);
-        }
+    //     if (!StringUtil::isEmpty($param->updater_id)) {
+    //         $stmt->bindParam(":updater_id", $param->updater_id, PDO::PARAM_STR);
+    //     }
 
-        $list = parent::getDataList($stmt, get_class(new T_Test_InfoDto()));
-        return count($list);
-    }
+    //     $list = parent::getDataList($stmt, get_class(new T_Test_InfoDto()));
+    //     return count($list);
+    // }
+   
     public function getTestInfoListData($param, $flg)
     {
         $offset = ($param->page - 1) * PAGE_ROW;
 
         $query = " SELECT ";
-        $query .= " distinct test_info.test_info_no test_info_no ";
-        $query .= " ,test_info.test_info_name test_info_name ";
-        $query .= " ,test_info.remarks remarks";
-        $query .= " ,date_format(test_info.start_period,'%Y/%m/%d') as start_period ";
-        $query .= " ,date_format(test_info.end_period,'%Y/%m/%d') as end_period ";
-        $query .= " ,CASE WHEN test_info.status = 0 THEN  '非公開' ";
-        $query .= " ELSE '公開' END AS status ";
-        $query .= " ,test_info_conf.editable_flg as editable_flg";
-
+        $query .= " * ";
         $query .= " FROM ";
-        $query .= " T_TEST_INFO test_info ";
-        $query .= " LEFT JOIN T_TEST_INFO_QUIZ as test_info_quiz ";
-        $query .= " ON test_info.org_no = test_info_quiz.org_no ";
-        $query .= " AND test_info.test_info_no = test_info_quiz.test_info_no ";
-
-        $query .= " LEFT JOIN T_TEST_INFO_CONF as test_info_conf ";
-        $query .= " ON test_info.org_no = test_info_conf.org_no ";
-        $query .= " AND test_info.test_info_no = test_info_conf.test_info_no ";
-        $query .= " AND test_info_conf.del_flg = 0 ";
-
-        $query .= " WHERE test_info.start_period <= :end_period ";
-        $query .= " AND test_info.end_period >= :start_period ";
-        $query .= " AND test_info.org_no = :org_no ";
-
-        // 共通試験編集不可対応
-        /*  $query .= " AND test_info.test_info_no NOT IN ( SELECT  test_info_no FROM  T_TEST_INFO_CONF  ";
-		$query .= " WHERE editable_flg = 1 ";
-		$query .= " AND del_flg = 0 )";
-	*/
-        if (!StringUtil::isEmpty($param->test_info_name)) {
-            $query .= " AND (test_info.test_info_name LIKE :test_info_name) ";
-        }
-
-        if (!StringUtil::isEmpty($param->remarks)) {
-            $query .= " AND (test_info.remarks LIKE :remarks) ";
-        }
-
-        if (!StringUtil::isEmpty($param->status)) {
-            $query .= " AND test_info.status IN (" . $param->status . ") ";
-        }
-        if (!StringUtil::isEmpty($param->updater_id)) {
-            $query .= " AND (test_info.updater_id=:updater_id ) ";
-        }
-
-        $query .= " AND test_info.del_flg = '0' ";
+        $query .= " t_ynsexam ";
         $query .= " ORDER BY ";
-        $query .= " test_info_name ASC";
+        $query .= " name ASC";
         $query .= " ,remarks ASC";
-
-        if ($flg == "1") {
-            $query .= " LIMIT " . $offset . " ,  " . PAGE_ROW;
-        }
-
         $stmt = $this->pdo->prepare($query);
 
-        $stmt->bindParam(":start_period", $param->start_period, PDO::PARAM_STR);
-        $stmt->bindParam(":end_period", $param->end_period, PDO::PARAM_STR);
-        $stmt->bindParam(":org_no", $param->org_no, PDO::PARAM_STR);
-
-        if (!StringUtil::isEmpty($param->test_info_name)) {
-
-            $name = '%' . $param->test_info_name . '%';
-            $stmt->bindParam(":test_info_name", $name, PDO::PARAM_STR);
+        return parent::getDataList($stmt, get_class(new T_YNSExamDto));
         }
-
-        if (!StringUtil::isEmpty($param->remarks)) {
-
-            $remarks = '%' . $param->remarks . '%';
-            $stmt->bindParam(":remarks", $remarks, PDO::PARAM_STR);
-        }
-
-        if (!StringUtil::isEmpty($param->updater_id)) {
-            $stmt->bindParam(":updater_id", $param->updater_id, PDO::PARAM_STR);
-        }
-
-        return parent::getDataList($stmt, get_class(new T_Test_InfoDto()));
-    }
 
     /*
 	 * 登録画面の初期表示をデータベースから取得する
 	 */
+
     public function getExamInfo($exam_id)
     {
         $query = " SELECT ";
@@ -191,6 +126,7 @@ class T_YNSExamDao extends BaseDao
      * シアイテム情報更新処理
      *
      * @param
+
      *          $dto
      */
     public function updateExamInfo($dto, $pdo)
