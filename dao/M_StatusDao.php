@@ -30,6 +30,27 @@ class M_StatusDao extends BaseDao {
 		return parent::getDataList ( $stmt, get_class(new M_StatusDto()) );
 	}
 
+	public function getStatus2() {
+        //$system_kbn = SYSTEM_KBN;
+        $query = " SELECT ";
+        $query .= " status.system_kbn, ";
+        $query .= " status.system_status, ";
+        $query .= " history.description ";
+        $query .= " FROM ";
+        $query .= " M_STATUS as status ";
+        $query .= " inner join T_STATUS_HISTORY  as history ";
+        $query .= " on status.system_kbn = history.system_kbn ";
+        $query .= " and status.system_status = history.system_status ";
+        $query .= " and history.del_flg = 0 ";
+        $query .= " WHERE ";
+        $query .= " history.system_kbn = :system_kbn ";
+        $query .= " order by history.create_dt DESC ";
+        $query .= " LIMIT 1 ";
+        $stmt = $this->pdo->prepare ( $query );
+        $stmt->bindParam ( ":system_kbn", $system_kbn, PDO::PARAM_STR );
+        return parent::getData( $stmt, get_class(new M_StatusDto()) );
+    }
+
 	public function updateSystemStatusInfo($dto){
 
 		$query = " UPDATE ";
@@ -60,5 +81,3 @@ class M_StatusDao extends BaseDao {
 	}
 
 }
-
-?>

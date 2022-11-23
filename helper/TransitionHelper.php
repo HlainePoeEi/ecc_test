@@ -37,6 +37,14 @@ class TransitionHelper {
 
 		header ( "Location: " . ERROR_PAGE );
 	}
+
+	public static function sendMaintenance($message) {
+        $data = array (
+                "message" => $message
+        );
+        $_SESSION [SESSION_KEY_DATA] = $data;
+        header ( "Location: " . MAINTENANCE_PAGE );
+    }
 }
 
 ?>
