@@ -75,7 +75,7 @@ class T_YNSExamDao extends BaseDao
     //     $list = parent::getDataList($stmt, get_class(new T_Test_InfoDto()));
     //     return count($list);
     // }
-   
+
     public function getTestInfoListData($param, $flg)
     {
         $offset = ($param->page - 1) * PAGE_ROW;
@@ -90,7 +90,7 @@ class T_YNSExamDao extends BaseDao
         $stmt = $this->pdo->prepare($query);
 
         return parent::getDataList($stmt, get_class(new T_YNSExamDto));
-        }
+    }
 
     /*
 	 * 登録画面の初期表示をデータベースから取得する
@@ -99,27 +99,22 @@ class T_YNSExamDao extends BaseDao
     public function getExamInfo($exam_id)
     {
         $query = " SELECT ";
-        $query .= " test_info.test_info_no test_info_no";
-        $query .= " ,test_info.test_info_name test_info_name";
-        $query .= " ,test_info.long_description long_description";
-        $query .= " ,test_info.test_time test_time";
-        $query .= " ,test_info.show_flg show_flg";
-        $query .= " ,test_info.drill_flg drill_flg";
-        $query .= " ,test_info.status status";
-        $query .= " ,date_format(test_info.start_period," . "'%Y/%m/%d') as start_period";
-        $query .= " ,date_format(test_info.end_period," . "'%Y/%m/%d') as end_period";
-        $query .= " ,test_info.remarks remarks";
+        $query .= " exam_id ";
+        $query .= " ,name ";
+        $query .= " ,description ";
+        $query .= " ,time ";
+        $query .= " ,status ";
+        $query .= " ,date_format(start_date, '%Y/%m/%d') as start_date ";
+        $query .= " ,date_format(end_date, '%Y/%m/%d') as end_date ";
+        $query .= " ,remarks ";
         $query .= " FROM ";
-        $query .= " T_TEST_INFO test_info";
-        $query .= " WHERE test_info.test_info_no = :test_info_no ";
-        $query .= " AND test_info.org_no = :org_no ";
-        $query .= " AND test_info.del_flg = '0' ";
+        $query .= " T_YNSEXAM ";
+        $query .= " WHERE exam_id = :exam_id ";
 
         $stmt = $this->pdo->prepare($query);
-        //$stmt->bindParam(":org_no", $org_no, PDO::PARAM_STR);
-        $stmt->bindParam(":test_info_no", $test_info_no, PDO::PARAM_STR);
+        $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
         LogHelper::logDebug($stmt);
-        return parent::getDataList($stmt, get_class(new T_Test_InfoDto()));
+        return parent::getDataList($stmt, get_class(new T_YNSExamDto()));
     }
 
     /**
@@ -132,7 +127,7 @@ class T_YNSExamDao extends BaseDao
     public function updateExamInfo($dto, $pdo)
     {
         $query = " UPDATE";
-        $query .= " T_YNSEXAM";
+        $query .= " t_ynsexam ";
         $query .= " SET";
 
         if (!StringUtil::isEmpty($dto->name)) {
@@ -160,11 +155,10 @@ class T_YNSExamDao extends BaseDao
         }
 
         $query .= " ,remarks  = :remarks ";
+        $query .= " ,create_dt   = :create_dt ";
         $query .= " ,update_dt   = :update_dt ";
-        $query .= " ,updater_id  = :updater_id ";
-
         $query .= " WHERE ";
-        $query .= " AND exam_id = :exam_id ";
+        $query .= " exam_id = :exam_id ";
 
         $stmt = $pdo->prepare($query);
 
@@ -193,9 +187,8 @@ class T_YNSExamDao extends BaseDao
         }
 
         $stmt->bindParam(":remarks", $dto->remarks, PDO::PARAM_STR);
+        $stmt->bindParam(":create_dt", $dto->create_dt, PDO::PARAM_STR);
         $stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
-        $stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
-
         $stmt->bindParam(":exam_id", $dto->exam_id, PDO::PARAM_STR);
         return parent::update($stmt);
     }

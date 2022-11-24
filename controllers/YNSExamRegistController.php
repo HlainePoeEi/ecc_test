@@ -163,7 +163,7 @@ class YNSExamRegistController extends BaseController
 					// 更新処理が正常の場合、
 					if ($result == 1) {
 
-						$msg = sprintf(I004);
+						$msg = sprintf(P001);
 						$this->smarty->assign('msg', $msg);
 						$this->smarty->assign('btn_flg', '1');
 						$this->smarty->assign('screen_mode', $screen_mode);
@@ -183,7 +183,7 @@ class YNSExamRegistController extends BaseController
 						// 更新出来ない場合、
 					} else {
 
-						$error = sprintf(E007, '更新');
+						$error = sprintf(P001);
 						$this->smarty->assign('msg', $error);
 						$this->smarty->assign('btn_flg', '0');
 					}
@@ -327,7 +327,7 @@ class YNSExamRegistController extends BaseController
 				// 登録完了
 				$this->setBackData();
 				// 受講者一覧画面へ遷移する
-				$this->dispatch('TestInfoList/Search');
+				$this->dispatch('YNSExamList/Search');
 			}
 		} else {
 			TransitionHelper::sendMaintenance($_SESSION['error_message']);

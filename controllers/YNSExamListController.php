@@ -78,10 +78,10 @@ class YNSExamListController extends BaseController
             $this->form->search_page_row_til = $_SESSION['search_page_row_til'];
             $this->form->search_page_order_column_til = $_SESSION['search_page_order_column_til'];
             $this->form->search_page_order_dir_til = $_SESSION['search_page_order_dir_til'];
-            $this->form->search_org_id = $_SESSION['search_org_id'];
+            // $this->form->search_org_id = $_SESSION['search_org_id'];
 
-            $this->form->start_date = $_SESSION['search_start_date'];
-            $this->form->end_date = $_SESSION['search_end_date'];
+            // $this->form->start_date = $_SESSION['search_start_date'];
+            // $this->form->end_date = $_SESSION['search_end_date'];
 
             $this->form->test_info_name = $_SESSION['search_test_info_name'];
             $this->form->remark = $_SESSION['search_remark'];
@@ -143,7 +143,7 @@ class YNSExamListController extends BaseController
             // メニュー情報を取得、セットする
             $this->setMenu();
             $this->smarty->assign('form', $this->form);
-            $this->smarty->display('testInfoList.html');
+            $this->smarty->display('ynsExamlist.html');
             return;
         } else {
             TransitionHelper::sendException(E002);
