@@ -163,7 +163,7 @@ class YNSExamRegistController extends BaseController
 					// 更新処理が正常の場合、
 					if ($result == 1) {
 
-						$msg = sprintf(P001);
+						$msg = sprintf(I004);
 						$this->smarty->assign('msg', $msg);
 						$this->smarty->assign('btn_flg', '1');
 						$this->smarty->assign('screen_mode', $screen_mode);
