@@ -197,14 +197,13 @@
 
 <body class="pushmenu-push">
     <form id="main_form" action="{$smarty.const.HOME_DIR}TestInfoList/Search" method="post">
+        <input type="hidden" id="org_no" name="org_no" />
         <input type="hidden" id="exam_id" name="exam_id" />
-        <input type="hidden" id="name" name="name" />
         <input type="hidden" id="screen_mode" name="screen_mode" />
         <input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
         <input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}" />
         <input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}" />
-        <input type="hidden" id="search_test_info_name" name="search_test_info_name"
-            value="{$form->search_test_info_name|escape}" />
+        <input type="hidden" id="search_test_info_name" name="search_test_info_name" value="{$form->name|escape}" />
         <input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark|escape}" />
         <input type="hidden" id="search_rd_status1" name="search_rd_status1" value="{$form->search_rd_status1}" />
         <input type="hidden" id="search_rd_status2" name="search_rd_status2" value="{$form->search_rd_status2}" />
@@ -263,7 +262,7 @@
                             <!--20220309_事業部担当者対応-->
                             {if $admin_kbn != "005"}
                             <input type="button" id="add" name="add_test" class="btn_add" value="" title="新規追加"
-                                onclick="javascript:doInsert('{$smarty.const.HOME_DIR}TestInfoRegist/index')">
+                                onclick="javascript:doInsert('{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                             {/if}
                         </div>
 
@@ -305,7 +304,7 @@
                                     <td width="30px" align="center">
                                         <input type="button" class="btn_quiz_assign_list" name="btn_quizassign"
                                             title="出題順"
-                                            onclick="assign('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}QuizInfoAssignment/index')">
+                                            onclick="assign('{$result->exam_id}','','{$smarty.const.HOME_DIR}QuizInfoAssignment/index')">
                                     </td>
                                     <td width="30px" align="center">
                                         <!--20220309_事業部担当者対応-->
@@ -325,9 +324,6 @@
                                             onclick="preview('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoPreview/index')">
                                         {/if}
                                     </td>
-                                    <td width="30px" align="center"><input type="button" class="btn_edit" name="edit"
-                                            title="編集"
-                                            onclick="trans('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                                     </td>
                                 </tr>
                                 {/foreach}
@@ -347,7 +343,6 @@
     </form>
     { literal }
     <script>
-
         // ページング
         function doPage(pageNo) {
             $("#page").val(pageNo);
@@ -412,7 +407,6 @@
 
         // 更新ボタン処理
         function trans(exam_id, action) {
-            console.log("hello");
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
 
@@ -442,6 +436,7 @@
 
             $("#main_form").attr("action", action);
             $("#screen_mode").val("update");
+            $("#org_no").val(org_no);
             $("#exam_id").val(exam_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
