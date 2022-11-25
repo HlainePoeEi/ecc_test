@@ -37,17 +37,17 @@
         $(document).ready(function () {
             check();
             $(function () {
-                $('#start_period').datepicker({
+                $('#start_date').datepicker({
                     showOn: "button",
                     buttonImage: "{$smarty.const.HOME_DIR}image/calendar.svg",
                     dateFormat: 'yy/mm/dd',
                     buttonImageOnly: true,
                     beforeShow: function (input, inst) {
                         setTimeout(function () {
-                            var leftWidth = ($('.pushmenu-open').length > 0) ? $('#start_period').offset().left - $('.pushmenu-open')[0].offsetWidth
-                                : $('#start_period').offset().left;
+                            var leftWidth = ($('.pushmenu-open').length > 0) ? $('#start_date').offset().left - $('.pushmenu-open')[0].offsetWidth
+                                : $('#start_date').offset().left;
                             inst.dpDiv.css({
-                                top: $('#start_period').offset().top + 35,
+                                top: $('#start_date').offset().top + 35,
                                 left: leftWidth
                             });
                         }, 0);
@@ -55,17 +55,17 @@
                 });
             });
             $(function () {
-                $('#end_period').datepicker({
+                $('#end_date').datepicker({
                     showOn: "button",
                     buttonImage: "{$smarty.const.HOME_DIR}image/calendar.svg",
                     dateFormat: 'yy/mm/dd',
                     buttonImageOnly: true,
                     beforeShow: function (input, inst) {
                         setTimeout(function () {
-                            var leftWidth = ($('.pushmenu-open').length > 0) ? $('#end_period').offset().left - $('.pushmenu-open')[0].offsetWidth
-                                : $('#end_period').offset().left;
+                            var leftWidth = ($('.pushmenu-open').length > 0) ? $('#end_date').offset().left - $('.pushmenu-open')[0].offsetWidth
+                                : $('#end_date').offset().left;
                             inst.dpDiv.css({
-                                top: $('#end_period').offset().top + 35,
+                                top: $('#end_date').offset().top + 35,
                                 left: leftWidth
                             });
                         }, 0);
@@ -96,33 +96,11 @@
 
                 var $new_subject_area_no = "";
 
-                if ($('#chk_status1').prop('checked') === true) {
-
-                    if ($new_subject_area_no == "")
-
-                        $new_subject_area_no = $('#chk_status1').attr('value');
-                    else
-
-                        $new_subject_area_no += $('#chk_status1').attr('value');
-                }
-
-                if ($('#chk_status2').prop('checked') === true) {
-
-                    if ($new_subject_area_no == "")
-
-                        $new_subject_area_no = $('#chk_status2').attr('value');
-                    else
-
-                        $new_subject_area_no += ',' + $('#chk_status2').attr('value');
-                }
-
-                $('#status').val($new_subject_area_no);
-
-                var start_period = document.getElementById('start_period').value;
-                var end_period = document.getElementById('end_period').value;
+                var start_date = document.getElementById('start_date').value;
+                var end_date = document.getElementById('end_date').value;
 
                 // 利用開始の必須チェック
-                if (start_period == "") {
+                if (start_date == "") {
                     $('#err_dis').show();
                     $(".error_section").slideToggle('slow');
                     $(".error_msg").html("利用開始を入力してください。");
@@ -130,7 +108,7 @@
                 }
 
                 // 利用終了の必須チェック
-                if (end_period == "") {
+                if (end_date == "") {
                     $('#err_dis').show();
                     $(".error_section").slideToggle('slow');
                     $(".error_msg").html("利用終了を入力してください。");
@@ -138,7 +116,7 @@
                 }
 
                 // 利用開始 < 利用終了チェック
-                if (start_period > end_period) {
+                if (start_date > end_date) {
                     $('#err_dis').show();
                     $(".error_section").slideToggle('slow');
                     $(".error_msg").html("{$smarty.const.W004}");
@@ -196,8 +174,8 @@
 </head>
 
 <body class="pushmenu-push">
-    <form id="main_form" action="{$smarty.const.HOME_DIR}TestInfoList/Search" method="post">
-        <input type="hidden" id="org_no" name="org_no" />
+    <form id="main_form" action="{$smarty.const.HOME_DIR}YNSExamList/search" method="post">
+
         <input type="hidden" id="exam_id" name="exam_id" />
         <input type="hidden" id="screen_mode" name="screen_mode" />
         <input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
@@ -245,13 +223,13 @@
                         <table class="main_tbl" style="width: 100%">
                             <tr>
                                 <td class="st_col">日付 (From)<span class="required">※</span></td>
-                                <td class="input"><input class="" type="text" name="start_period" id="start_period"
-                                        value="{$form->start_date}" maxlength="10" onchange="changeDateFormat(this)">
+                                <td class="input"><input class="" type="text" name="start_date" id="start_date"
+                                        value="{$form->start_date}" maxlength="10">
                                 </td>
                                 <td width="10px"></td>
                                 <td class="st_col">日付 (To)<span class="required">※</span></td>
-                                <td class="input"><input class="" type="text" name="end_period" id="end_period"
-                                        value="{$form->end_date}" maxlength="10" onchange="changeDateFormat(this)">
+                                <td class="input"><input class="" type="text" name="end_date" id="end_date"
+                                        value="{$form->end_date}" maxlength="10">
                                 </td>
                             </tr>
                         </table>

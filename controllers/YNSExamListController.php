@@ -72,26 +72,15 @@ class YNSExamListController extends BaseController
     }
     public function searchAction()
     {
-
+        $start_date = $this->form->start_date;
         if (isset($_SESSION['back_flg']) && ($_SESSION['back_flg'])) {
             $this->form->search_page_til = $_SESSION['search_page_til'];
             $this->form->search_page_row_til = $_SESSION['search_page_row_til'];
             $this->form->search_page_order_column_til = $_SESSION['search_page_order_column_til'];
             $this->form->search_page_order_dir_til = $_SESSION['search_page_order_dir_til'];
-            // $this->form->search_org_id = $_SESSION['search_org_id'];
 
-            // $this->form->start_date = $_SESSION['search_start_date'];
-            // $this->form->end_date = $_SESSION['search_end_date'];
-
-            $this->form->test_info_name = $_SESSION['search_test_info_name'];
-            $this->form->remark = $_SESSION['search_remark'];
-            $this->form->rd_status1 = $_SESSION['search_rd_status1'];
-            $this->form->rd_status2 = $_SESSION['search_rd_status2'];
-            $this->form->rdstatus = $_SESSION['search_rdstatus'];
-            $this->form->chk_status1 = $_SESSION['search_chk_status1'];
-            $this->form->chk_status2 = $_SESSION['search_chk_status2'];
-            $this->form->status = $_SESSION['search_status'];
-
+            $this->form->start_date = $_SESSION['search_start_period'];
+            $this->form->end_date = $_SESSION['search_end_period'];
             if (empty($this->form->start_date)) {
                 $this->form->start_date = DateUtil::getPreviousDate('Y/m/d');
                 $this->form->end_date = DateUtil::getNextDate('Y/m/d');
@@ -107,8 +96,8 @@ class YNSExamListController extends BaseController
             $_SESSION['search_page_order_column_til'] = "";
             $_SESSION['search_page_order_dir_til'] = "";
 
-            $_SESSION['search_start_date'] = "";
-            $_SESSION['search_end_date'] = "";
+            $_SESSION['search_start_period'] = "";
+            $_SESSION['search_end_period'] = "";
             $_SESSION['search_test_info_name'] = "";
             $_SESSION['search_remark'] = "";
             $_SESSION['search_rd_status1'] = "";
@@ -122,11 +111,6 @@ class YNSExamListController extends BaseController
         }
 
         if ($this->check_login() == true) {
-            if ($this->form->rd_status1 == "1") {
-                $this->form->updater_id = $_SESSION['admin_no'];
-            } else {
-                $this->form->updater_id = "";
-            }
 
             if (empty($this->form->page)) {
                 $this->form->page = 1;
@@ -143,7 +127,7 @@ class YNSExamListController extends BaseController
             // メニュー情報を取得、セットする
             $this->setMenu();
             $this->smarty->assign('form', $this->form);
-            $this->smarty->display('ynsExamlist.html');
+            $this->smarty->display('ynsExamList.html');
             return;
         } else {
             TransitionHelper::sendException(E002);

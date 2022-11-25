@@ -81,14 +81,26 @@ class T_YNSExamDao extends BaseDao
         $offset = ($param->page - 1) * PAGE_ROW;
 
         $query = " SELECT ";
-        $query .= " * ";
+        $query .= " exam_id ";
+        $query .= " ,name ";
+        $query .= " ,description ";
+        $query .= " ,time ";
+        $query .= " ,status ";
+        $query .= " ,date_format(start_date, '%Y/%m/%d') as start_date ";
+        $query .= " ,date_format(end_date, '%Y/%m/%d') as end_date ";
+        $query .= " ,remarks ";
         $query .= " FROM ";
         $query .= " t_ynsexam ";
+        $query .= " WHERE start_date <= :end_date ";
+        $query .= " AND ";
+        $query .= " end_date >= :start_date ";
         $query .= " ORDER BY ";
         $query .= " name ASC";
         $query .= " ,remarks ASC";
         $stmt = $this->pdo->prepare($query);
 
+        $stmt->bindParam(":start_date", $param->start_date, PDO::PARAM_STR);
+        $stmt->bindParam(":end_date", $param->end_date, PDO::PARAM_STR);
         return parent::getDataList($stmt, get_class(new T_YNSExamDto));
     }
 
