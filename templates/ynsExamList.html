@@ -302,6 +302,9 @@
                                             onclick="preview('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoPreview/index')">
                                         {/if}
                                     </td>
+                                    <td width="30px" align="center"><input type="button" class="btn_edit" name="edit"
+                                            title="編集"
+                                            onclick="trans('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                                     </td>
                                 </tr>
                                 {/foreach}
@@ -414,7 +417,6 @@
 
             $("#main_form").attr("action", action);
             $("#screen_mode").val("update");
-            $("#org_no").val(org_no);
             $("#exam_id").val(exam_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
