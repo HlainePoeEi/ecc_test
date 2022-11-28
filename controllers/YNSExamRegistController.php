@@ -68,7 +68,7 @@ class YNSExamRegistController extends BaseController
 						if (count($list) == 1) {
 
 							$this->form->name = $list[0]->name;
-							$this->form->time = "0";
+							$this->form->time = $list[0]->time;
 							$this->form->description = $list[0]->description;
 							$this->form->status = "1";
 
@@ -191,7 +191,7 @@ class YNSExamRegistController extends BaseController
 				} else if ($screen_mode == 'copy') {
 
 					$exam_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					$exam_dto->creater_id = $_SESSION['manager_no'];
+					//$exam_dto->creater_id = $_SESSION['manager_no'];
 
 					// 取得結果．Tシーケンス.現在シーケンス番号+1
 					$exam_dto->exam_id = $this->form->exam_id;

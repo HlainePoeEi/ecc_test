@@ -288,7 +288,7 @@
                                         <!--20220309_事業部担当者対応-->
                                         {if $admin_kbn != "005"}
                                         <input type="button" class="btn_copy" name="edit" title="複写"
-                                            onclick="copy('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoRegist/index')">
+                                            onclick="copy('{$result->exam_id}','{$smarty.const.HOME_DIR}ynsExamRegist/index')">
                                         {/if}
                                     </td>
                                     <td width="30px" align="center"><input type="button" class="btn_copy" name="edit"
@@ -424,7 +424,7 @@
         }
 
         // 複写ボタン処理
-        function copy(org_no, test_info_no, action) {
+        function copy(exam_id, action) {
 
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
@@ -455,8 +455,8 @@
 
             $("#main_form").attr("action", action);
             $("#screen_mode").val("copy");
-            $("#org_no").val(org_no);
-            $("#test_info_no").val(test_info_no);
+            //$("#org_no").val(org_no);
+            $("#exam_id").val(exam_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
             $("#main_form").submit();
