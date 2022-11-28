@@ -261,6 +261,7 @@
                                     <th width="30px" style="text-align:center;">複写</th>
                                     <th width="30px" style="text-align:center;">確認</th>
                                     <th width="30px" style="text-align:center;">編集</th>
+                                    <th width="30px" style="text-align:center;">削除</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -306,6 +307,10 @@
                                             title="編集"
                                             onclick="trans('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                                     </td>
+                                    <td width="30px;" align="center"> <input type="button" class="btn_delete" id="btn_del" name="delete"
+                                            title="削除"
+                                            onclick="checkDelete('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/delete')" />
+                                      </td>
                                 </tr>
                                 {/foreach}
                             </tbody>

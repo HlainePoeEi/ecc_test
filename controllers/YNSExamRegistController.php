@@ -197,28 +197,6 @@ class YNSExamRegistController extends BaseController
 					$exam_dto->exam_id = $this->form->exam_id;
 					$result = $service->insertData($exam_dto);
 
-					// if ($result == 1) {
-
-					// 	$result1 = $service->getListQuiz( $this->form->ori_test_info_no);
-					// 	$test_info_quiz_dto = new T_Test_Info_QuizDto();
-
-					// 	for ($i = 0; $i < count($result1); $i++) {
-
-					// 		$value = $result1[$i];
-					// 		$test_info_quiz_dto->test_info_no = $test_info_dto->test_info_no;
-					// 		$test_info_quiz_dto->quiz_info_no = $value->quiz_info_no;
-					// 		$test_info_quiz_dto->test_info_no = $test_info_no;
-					// 		$test_info_quiz_dto->disp_no = $value->disp_no;
-					// 		$test_info_quiz_dto->del_flg = '0';
-					// 		$test_info_quiz_dto->org_no = $org_no;
-					// 		$test_info_quiz_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					// 		$test_info_quiz_dto->creater_id = $_SESSION['manager_no'];
-					// 		$test_info_quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-					// 		$test_info_quiz_dto->updater_id = $_SESSION['manager_no'];
-					// 		$result = $service->insertData($test_info_quiz_dto);
-					// 	}
-					// }
-
 					// 更新処理が正常の場合、
 					if ($result == 1) {
 
