@@ -151,7 +151,6 @@ class YNSExamRegistController extends BaseController
 				$exam_dto->status = $status;
 				$exam_dto->remarks = $remarks;
 				$exam_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-
 				$service = new YNSExamService($this->pdo);
 
 				// 更新状況
