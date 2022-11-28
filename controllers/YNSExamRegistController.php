@@ -150,7 +150,6 @@ class YNSExamRegistController extends BaseController
 				$exam_dto->end_date = DateUtil::changeEndDateFormat($end_date);
 				$exam_dto->status = $status;
 				$exam_dto->remarks = $remarks;
-				//$exam_dto->updater_id = $_SESSION['manager_no'];
 				$exam_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
 
 				$service = new YNSExamService($this->pdo);
@@ -329,7 +328,6 @@ class YNSExamRegistController extends BaseController
 		$_SESSION['search_chk_status1'] = $this->form->search_chk_status1;
 		$_SESSION['search_chk_status2'] = $this->form->search_chk_status2;
 		$_SESSION['search_status'] = $this->form->search_status;
-
 		$_SESSION['search_page_til'] = $this->form->search_page_til;
 		$_SESSION['search_page_row_til'] = $this->form->search_page_row_til;
 		$_SESSION['search_page_order_column_til'] = $this->form->search_page_order_column_til;
