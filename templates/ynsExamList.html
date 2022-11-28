@@ -135,7 +135,6 @@
             var current_page_row = parseInt($("#search_page_row_til").val());
             var current_order_column = $("#search_page_order_column_til").val();
             var current_order_dir = $("#search_page_order_dir_til").val();
-
             console.log("current_page : " + current_page);
             console.log("current_page_row : " + current_page_row);
             console.log("current_order_column : " + current_order_column);
@@ -166,7 +165,6 @@
                     }
                 });
             }
-
             var table = $('#tbl_search').dataTable();
             table.fnPageChange(current_page);
         });
@@ -261,6 +259,7 @@
                                     <th width="30px" style="text-align:center;">複写</th>
                                     <th width="30px" style="text-align:center;">確認</th>
                                     <th width="30px" style="text-align:center;">編集</th>
+                                    <th width="30px" style="text-align:center;">削除</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -288,7 +287,7 @@
                                         <!--20220309_事業部担当者対応-->
                                         {if $admin_kbn != "005"}
                                         <input type="button" class="btn_copy" name="edit" title="複写"
-                                            onclick="copy('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoRegist/index')">
+                                            onclick="copy('{$result->exam_id}','{$smarty.const.HOME_DIR}ynsExamRegist/index')">
                                         {/if}
                                     </td>
                                     <td width="30px" align="center"><input type="button" class="btn_copy" name="edit"
@@ -306,6 +305,10 @@
                                             title="編集"
                                             onclick="trans('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                                     </td>
+                                    <td width="30px;" align="center"> <input type="button" class="btn_delete" id="btn_del" name="delete"
+                                            title="削除"
+                                            onclick="checkDelete('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/delete')" />
+                                      </td>
                                 </tr>
                                 {/foreach}
                             </tbody>
@@ -424,7 +427,7 @@
         }
 
         // 複写ボタン処理
-        function copy(org_no, test_info_no, action) {
+        function copy(exam_id, action) {
 
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
@@ -455,8 +458,8 @@
 
             $("#main_form").attr("action", action);
             $("#screen_mode").val("copy");
-            $("#org_no").val(org_no);
-            $("#test_info_no").val(test_info_no);
+            //$("#org_no").val(org_no);
+            $("#exam_id").val(exam_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
             $("#main_form").submit();

@@ -68,7 +68,7 @@ class YNSExamRegistController extends BaseController
 						if (count($list) == 1) {
 
 							$this->form->name = $list[0]->name;
-							$this->form->time = "0";
+							$this->form->time = $list[0]->time;
 							$this->form->description = $list[0]->description;
 							$this->form->status = "1";
 
@@ -150,9 +150,7 @@ class YNSExamRegistController extends BaseController
 				$exam_dto->end_date = DateUtil::changeEndDateFormat($end_date);
 				$exam_dto->status = $status;
 				$exam_dto->remarks = $remarks;
-				//$exam_dto->updater_id = $_SESSION['manager_no'];
 				$exam_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-
 				$service = new YNSExamService($this->pdo);
 
 				// 更新状況
@@ -191,33 +189,11 @@ class YNSExamRegistController extends BaseController
 				} else if ($screen_mode == 'copy') {
 
 					$exam_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					$exam_dto->creater_id = $_SESSION['manager_no'];
+					//$exam_dto->creater_id = $_SESSION['manager_no'];
 
 					// 取得結果．Tシーケンス.現在シーケンス番号+1
 					$exam_dto->exam_id = $this->form->exam_id;
 					$result = $service->insertData($exam_dto);
-
-					// if ($result == 1) {
-
-					// 	$result1 = $service->getListQuiz( $this->form->ori_test_info_no);
-					// 	$test_info_quiz_dto = new T_Test_Info_QuizDto();
-
-					// 	for ($i = 0; $i < count($result1); $i++) {
-
-					// 		$value = $result1[$i];
-					// 		$test_info_quiz_dto->test_info_no = $test_info_dto->test_info_no;
-					// 		$test_info_quiz_dto->quiz_info_no = $value->quiz_info_no;
-					// 		$test_info_quiz_dto->test_info_no = $test_info_no;
-					// 		$test_info_quiz_dto->disp_no = $value->disp_no;
-					// 		$test_info_quiz_dto->del_flg = '0';
-					// 		$test_info_quiz_dto->org_no = $org_no;
-					// 		$test_info_quiz_dto->create_dt = DateUtil::getDate('Y/m/d H:i:s');
-					// 		$test_info_quiz_dto->creater_id = $_SESSION['manager_no'];
-					// 		$test_info_quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-					// 		$test_info_quiz_dto->updater_id = $_SESSION['manager_no'];
-					// 		$result = $service->insertData($test_info_quiz_dto);
-					// 	}
-					// }
 
 					// 更新処理が正常の場合、
 					if ($result == 1) {
@@ -351,7 +327,6 @@ class YNSExamRegistController extends BaseController
 		$_SESSION['search_chk_status1'] = $this->form->search_chk_status1;
 		$_SESSION['search_chk_status2'] = $this->form->search_chk_status2;
 		$_SESSION['search_status'] = $this->form->search_status;
-
 		$_SESSION['search_page_til'] = $this->form->search_page_til;
 		$_SESSION['search_page_row_til'] = $this->form->search_page_row_til;
 		$_SESSION['search_page_order_column_til'] = $this->form->search_page_order_column_til;
