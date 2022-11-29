@@ -28,13 +28,10 @@ class YNSQuizInfoRegistController extends BaseController
         if ($this->check_login() == true) {
 
             $screen_mode = $this->form->screen_mode;
-            $orgNo = $this->form->org_no;
             $this->smarty->assign('error_msg', "");
             $this->smarty->assign('info_msg', "");
 
             $quiz_service = new YNSQuizInfoService($this->pdo);
-
-            LogHelper::logDebug("org_no : " . $this->form->org_no);
 
             // 更新
             if ($this->form->screen_mode == 'update') {
@@ -128,8 +125,6 @@ class YNSQuizInfoRegistController extends BaseController
 
             $quiz_dto->quiz_id = $this->form->quiz_id;
             $this->form->quiz_id = $quiz_dto->quiz_id;
-
-            LogHelper::logDebug("org_no : " . $this->form->org_no);
 
             if ($screen_mode == 'update') {
 
@@ -245,7 +240,7 @@ class YNSQuizInfoRegistController extends BaseController
         $audioService = new AudioService($this->pdo);
         if ($form->audio_data != null && $form->audio_data != "") {
             $audio_name = "QuizInfoNo_" . $form->quiz_id . AUDIO_EXT;
-            $audioService->saveAudioQuiz($form->audio_data, $form->org_no, QUIZ_INFO_AUDIO_DIR, $audio_name);
+            $audioService->saveAudioQuiz1($form->audio_data, QUIZ_INFO_AUDIO_DIR, $audio_name);
         }
     }
 
@@ -258,22 +253,12 @@ class YNSQuizInfoRegistController extends BaseController
         if ($this->check_login() == true) {
 
             $quiz_dto = new T_YNSQuizDto();
-            //	$org_no = COMMON_TEST_INFO_ORG;
-
-            //	$this->form->org_no = $org_no;
-
-            $org_no = $this->form->org_no;
-
-            $quiz_service = new QuizInfoService($this->pdo);
 
             // メニュー情報を取得、セットする
             $this->setMenu();
-
-            $quiz_dto->org_no = $org_no;
-            $quiz_dto->quiz_info_no = $this->form->quiz_info_no;
-            $quiz_dto->updater_id = $_SESSION['admin_no'];
+            $quiz_dto->quiz_id = $this->form->quiz_id;
             $quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
-            $dao = new QuizInfoService($this->pdo);
+            $dao = new YNSQuizInfoService($this->pdo);
             $result = $dao->deleteQuizInfo($quiz_dto);
 
             // 登録処理が正常の場合、クイズ一覧画面に遷移する。
@@ -282,7 +267,7 @@ class YNSQuizInfoRegistController extends BaseController
                 $this->setBackData();
 
                 // 受講者一覧画面へ遷移する
-                $this->dispatch('QuizInfoList/Search');
+                $this->dispatch('YNSQuizInfoList/Search');
                 // 登録出来ない場合
             } else {
                 $error = sprintf(E007, '削除');
@@ -308,7 +293,7 @@ class YNSQuizInfoRegistController extends BaseController
             $this->setBackData();
 
             // クイズ一覧画面へ遷移する
-            $this->dispatch('QuizInfoList/Search');
+            $this->dispatch('YNSQuizInfoList/Search');
         } else {
             TransitionHelper::sendException(E002);
             return;

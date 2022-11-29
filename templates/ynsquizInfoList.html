@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>クイズ一覧</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    {literal}
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
+    {/literal}
+    <link href="{$smarty.const.HOME_DIR}css/datatables.css" rel="stylesheet">
+    <link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+    <link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+    <link href="{$smarty.const.HOME_DIR}css/quizlist.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        //表示再現
+        $(document).ready(function () {
+
+            //MSGのあるなし
+            if ($(".error_msg").html() != "") {
+                $(".error_section").slideToggle('slow');
+            }
+
+            $(".close_icon").on('click', function () {
+                $(".error_section").slideToggle('slow')
+            });
+
+            //検索ボタン押下、必須チェック処理
+            $(".btn_search").on('click', function () {
+                $("#page").val(1);
+
+                //MSGのあるなし
+                if ($(".error_msg").html() != "") {
+                    $(".error_section").slideToggle('slow')
+                }
+                return true;
+            });
+
+            //データテーブルを表示する
+            var dataArray = $("#list").val();
+            var current_page = parseInt($("#search_page_qil").val());
+            var current_page_row = parseInt($("#search_page_row_qil").val());
+            var current_order_column = $("#search_page_order_column_qil").val();
+            var current_order_dir = $("#search_page_order_dir_qil").val();
+
+            console.log("current_page : " + current_page);
+            console.log("current_page_row : " + current_page_row);
+            console.log("current_order_column : " + current_order_column);
+            console.log("current_order_dir : " + current_order_dir);
+
+            if (dataArray != "") {
+                $('#tbl_search').DataTable({
+                    // "scrollY": '55vh',
+                    // "scrollX": true,
+                    // "bFilter": false,
+                    // "ordering": true,
+                    // "pageLength": current_page_row,
+                    // "aaSorting": [[current_order_column, current_order_dir]],
+                    // columnDefs: [{
+                    //     orderable: false,
+                    //     targets: "td_img"
+                    // }
+                    // ],
+                    pageLength: current_page_row,
+                    searching: true,
+                    columns: [
+                        { searchable: true },
+                        { searchable: true },
+                        { searchable: false },
+                        { searchable: false },
+                        { searchable: false },
+                    ],
+                    "language": {
+                        "info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
+                        "paginate": {
+                            "first": "First",
+                            "last": "Last",
+                            "next": "次",
+                            "previous": "前"
+                        },
+                        "lengthMenu": " _MENU_ 件表示"
+                    }
+                });
+            }
+
+            var table = $('#tbl_search').dataTable();
+            table.fnPageChange(current_page);
+        });
+    </script>
+</head>
+
+<body class="pushmenu-push">
+    <form id="main_form" action="{$smarty.const.HOME_DIR}YNSQuizInfoList/Search" method="post">
+
+        <input type="hidden" id="screen_mode" name="screen_mode" />
+        <input type="hidden" id="quiz_id" name="quiz_id" />
+        {include file='leftMenu.html'}
+
+        <!--header-->
+        <div class="divHeader">
+            {include file='header.html'}
+        </div>
+        <!--header-->
+
+        <div class="divBody">
+            <div class="main">
+
+                <section class="error_section">
+                    <img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right"
+                        class="close_icon">
+                    {if !empty($err_msg)}
+                    <div class="error_msg">{$err_msg}</div>
+                    {else}
+                    <div class="error_msg"></div>
+                    {/if}
+                </section>
+
+                <section class="content">
+                    <p>><span class="title">テスト情報 / クイズ一覧</span></p>
+
+                    <table class="main_tbl">
+
+                        <!-- クイズ名と備考行 -->
+                        <tr>
+                            <td>クイズ名</td>
+                            <td class="input">
+                                <input class="text" type="text" name="name" id="name" value="{$form->name|escape}"
+                                    maxlength="32" size="30">
+                            </td>
+                            <td width="10px"></td>
+                            <td>備考</td>
+                            <td class="input">
+                                <input class="text" type="text" name="remarks" id="remarks"
+                                    value="{$form->remarks|escape}" maxlength="32" size="30">
+                            </td>
+                        </tr>
+
+                        <!-- 内容と最終担当者行 -->
+                        <tr>
+                            <td>内容</td>
+                            <td class="input">
+                                <input class="text" type="text" name="content" id="content"
+                                    value="{$form->content|escape}" maxlength="32" size="30">
+                            </td>
+                            <td width="10px"></td>
+                        </tr>
+
+                    </table>
+
+                    <input type="hidden" id="search_page_qil" name="search_page_qil" value="{$form->search_page_qil}" />
+                    <input type="hidden" id="search_page_row_qil" name="search_page_row_qil"
+                        value="{$form->search_page_row_qil}" />
+                    <input type="hidden" id="search_page_order_column_qil" name="search_page_order_column_qil"
+                        value="{$form->search_page_order_column_qil}" />
+                    <input type="hidden" id="search_page_order_dir_qil" name="search_page_order_dir_qil"
+                        value="{$form->search_page_order_dir_qil}" />
+
+                    <input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+                    <input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+                    <input type="hidden" id="search_name" name="search_name" value="{$form->search_name|escape}" />
+                    <input type="hidden" id="search_content" name="search_content"
+                        value="{$form->search_content|escape}" />
+                    <input type="hidden" id="search_remarks" name="search_remarks" value="{$form->search_remarks}" />
+                    <br />
+
+                    <div align="right" style="width:100%">
+                        <input type="submit" name="submit_search" id="btn_search" name="btn_search" title="検索"
+                            class="btn_search" alt="search" value="" style="padding-right:50px;">
+                        <input type="button" id="add" name="add_quiz" class="btn_add" value="" title="新規追加"
+                            onclick="javascript:doInsert('{$smarty.const.HOME_DIR}YNSQuizInfoRegist/index')">
+                    </div>
+                    {if !empty($list)}
+                    <table class="tbl_search" id="tbl_search">
+                        <thead>
+                            <tr>
+                                <th class="qz_name">クイズ名</th>
+                                <th class="qz_content">内容</th>
+                                <th class="td_img">確認</th>
+                                <th class="td_img">編集</th>
+                                <th class="td_img">削除</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {foreach $list as $result}
+                            <tr>
+                                <td class="qz_name">{$result->name|escape}</td>
+                                <td class="qz_content">{$result->content}</td>
+                                <td class="td_img">
+                                    <input type="button" class="btn_preview_list" name="preview" title="確認"
+                                        onclick="trans('{$result->quiz_info_no}','{$smarty.const.HOME_DIR}QuizDetailsPreview/index')">
+                                </td>
+                                <td class="td_img">
+                                    <input type="button" class="btn_edit" name="edit" title="編集"
+                                        onclick="trans('{$result->quiz_info_no}','{$smarty.const.HOME_DIR}QuizInfoRegist/index')">
+                                </td>
+                                <td width="30px;" align="center"> <input type="button" class="btn_delete" id="btn_del"
+                                        name="delete" title="削除"
+                                        onclick="checkDelete('{$result->quiz_id}','{$smarty.const.HOME_DIR}YNSQuizInfoRegist/delete')" />
+                                </td>
+                            </tr>
+                            {/foreach}
+                        </tbody>
+                    </table>
+                    {/if}
+                </section>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="divFooter">
+            {include file='footer.html'}
+        </div>
+        <!--footer-->
+
+    </form>
+    { literal }
+    <script>
+
+        // 登録ボタン処理
+        function doInsert(action) {
+
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+
+            setDataTableData();
+
+            $("#search_page").val($("#page").val());
+            $("#search_name").val($("#name").val());
+            $("#search_content").val($("#content").val());
+            $("#search_remarks").val($("#remarks").val());
+
+            $("#menuOpen").val(menuOpen);
+            $("#main_form").attr("action", action);
+            $("#screen_mode").val('new');
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
+
+        // 更新ボタン処理
+        function trans(quiz_info_no, action) {
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+
+            setDataTableData();
+
+            $("#search_page").val($("#page").val());
+            $("#search_quiz_name").val($("#quiz_name").val());
+            $("#search_long_description").val($("#long_description").val());
+            $("#search_remark").val($("#remark").val());
+            $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
+
+            $("#main_form").attr("action", action);
+            $("#screen_mode").val('update');
+            $("#quiz_info_no").val(quiz_info_no);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
+
+        // プレビューボタン処理
+        function preview(quiz_info_no, action) {
+
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+
+            setDataTableData();
+
+            $("#search_page").val($("#page").val());
+            $("#search_quiz_name").val($("#quiz_name").val());
+            $("#search_long_description").val($("#long_description").val());
+            $("#search_remark").val($("#remark").val());
+            $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
+
+            $("#main_form").attr("action", action);
+            $("#quiz_info_no").val(quiz_info_no);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
+
+        //削除 ボタン押下処理
+        function checkDelete(quiz_id, action) {
+            alertDialog = confirm("Are you sure to delete this word?");
+            if (alertDialog == false) {
+                return false;
+            } else {
+                var menuOpen = document.getElementById("menuOpen").value;
+                var menuStatus = document.getElementById("menuStatus").value;
+                $("#main_form").attr("action", action);
+                $("#quiz_id").val(quiz_id);
+                $("#menuOpen").val(menuOpen);
+                $("#menuStatus").val(menuStatus);
+                $("#main_form").submit();
+            }
+        }
+
+        // データテーブルの情報を設定
+        function setDataTableData() {
+
+            var page = 0;
+            var page_row = 10;
+            var order;
+            var page_order_column = 1;
+            var page_order_dir = false;
+
+            //初期で登録する場合、データテーブルをチェックする
+            if ($.fn.DataTable.isDataTable('#tbl_search')) {
+
+                //データテーブルがある場合、確認ボタン、複写ボタンと編集ボタンの処理
+                var table = $('#tbl_search').DataTable();
+                var info = table.page.info();
+                page = info.page;// データテーブルのページ
+                page_row = table.page.info().length;// データテーブルのドロップダウンリストの行
+
+                order = table.order();
+                page_order_column = order[0][0];
+                page_order_dir = order[0][1];
+            }
+
+            $("#search_page_qil").val(page);
+            $("#search_page_row_qil").val(page_row);
+            $("#search_page_order_column_qil").val(page_order_column);
+            $("#search_page_order_dir_qil").val(page_order_dir);
+
+        }
+
+    </script>
+    { /literal}
+</body>
+
+</html>

@@ -14,19 +14,14 @@ require_once 'BaseDto.php';
  */
 class T_YNSQuizDto extends BaseDto
 {
+    //クイズ管理№
     public $quiz_id;
+    //クイズ名
     public $name;
-    public $type;
-    public $time;
+    //クイズ内容
     public $content;
-    public $image_name;
+    //ファイル（音声）
     public $audio_name;
-    public $correct1;
-    public $correct2;
-    public $incorrect1;
-    public $incorrect2;
-    public $incorrect3;
-    public $hint;
-    public $explanation;
+    //更新備考
     public $remarks;
 }

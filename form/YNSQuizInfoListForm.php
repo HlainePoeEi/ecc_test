@@ -11,37 +11,25 @@
 require_once 'BaseForm.php';
 
 /**
- * クイズ登録FORMクラス
+ * クイズ一覧FORMクラス
  *
  */
-class YNSQuizInfoRegistForm extends BaseForm
+class YNSQuizInfoListForm extends BaseForm
 {
+    // クイズ管理№
     public $quiz_id;
+    // クイズ名
     public $name;
-    public $content;
-    public $audio_name;
+    // 更新備考
     public $remarks;
+    //クイズ内容
+    public $content;
     public $create_dt;
     public $update_dt;
-    public $disable_mode;
-
-    public $screen_mode;
-    public $cmb_quiz_type;
-    public $file_name;
-    public $input_audio_file;
-
-    public $audio_del_flg;
-    public $audio_chk_del;
-
-    /* 音声ファイルデータ */
-    public $audio_data;
-    public $audio_file;
-
     //戻り用
-    public $search_quiz_name;
-    public $search_long_description;
-    public $search_remark;
-    public $search_rd_status1;
+    public $search_name;
+    public $search_lcontent;
+    public $search_remarks;
 
     public $search_page_qil;
     public $search_page_row_qil;

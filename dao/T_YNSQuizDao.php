@@ -83,47 +83,15 @@ class T_YNSQuizDao extends BaseDao
 	public function getQuizListData($param, $flg)
 	{
 
-		$offset = ($param->page - 1) * PAGE_ROW;
+		// $offset = ($param->page - 1) * PAGE_ROW;
 
 		$query = " SELECT ";
-		$query .= " distinct quiz.quiz_info_no quiz_info_no ";
-		$query .= " ,quiz.quiz_name quiz_name ";
-		$query .= " ,quiz.long_description long_description ";
-		$query .= " ,org.org_no org_no ";
-		$query .= " ,org.org_id org_id ";
+		$query .= " * ";
 		$query .= " FROM ";
-		$query .= " T_QUIZ_INFO quiz ";
-		$query .= " INNER JOIN M_ORGANIZATION as org ";
-		$query .= " ON quiz.org_no = org.org_no ";
-		$query .= " AND org.del_flg =  '0' ";
-
-		//	$query .= " WHERE quiz.org_no = :org_no ";
-		$query .= " WHERE 1 = 1 ";
-
-		if (!StringUtil::isEmpty($param->search_org_id)) {
-			$query .= " AND org.org_id LIKE :org_id ";
-		}
-
-		if (!StringUtil::isEmpty($param->quiz_name)) {
-			$query .= " AND (quiz.quiz_name LIKE :quiz_name) ";
-		}
-
-		if (!StringUtil::isEmpty($param->long_description)) {
-			$query .= " AND (quiz.long_description LIKE :long_description ) ";
-		}
-
-		if (!StringUtil::isEmpty($param->remark)) {
-			$query .= " AND (quiz.remarks LIKE :remark ) ";
-		}
-
-		if (!StringUtil::isEmpty($param->updater_id)) {
-			$query .= " AND (quiz.updater_id=:updater_id ) ";
-		}
-
-		$query .= " AND quiz.del_flg = '0' ";
+		$query .= " T_YNSQUIZ ";
 		$query .= " ORDER BY ";
-		$query .= " quiz_name ASC";
-		$query .= " ,long_description ASC";
+		$query .= " name ASC";
+		$query .= " ,content ASC";
 
 		if ($flg == "1") {
 			$query .= " LIMIT " . $offset . " ,  " . PAGE_ROW;
@@ -131,34 +99,22 @@ class T_YNSQuizDao extends BaseDao
 
 		$stmt = $this->pdo->prepare($query);
 
-		//	$stmt->bindParam ( ":org_no", $param->org_no, PDO::PARAM_STR );
+		if (!StringUtil::isEmpty($param->name)) {
 
-		if (!StringUtil::isEmpty($param->search_org_id)) {
-
-			$org_id = '%' . $param->search_org_id . '%';
-			$stmt->bindParam(":org_id", $org_id, PDO::PARAM_STR);
+			$name = '%' . $param->name . '%';
+			$stmt->bindParam(":name", $name, PDO::PARAM_STR);
 		}
 
-		if (!StringUtil::isEmpty($param->quiz_name)) {
+		if (!StringUtil::isEmpty($param->content)) {
 
-			$name = '%' . $param->quiz_name . '%';
-			$stmt->bindParam(":quiz_name", $name, PDO::PARAM_STR);
+			$content = '%' . $param->content . '%';
+			$stmt->bindParam(":content", $content, PDO::PARAM_STR);
 		}
 
-		if (!StringUtil::isEmpty($param->long_description)) {
+		if (!StringUtil::isEmpty($param->remarks)) {
 
-			$long_description = '%' . $param->long_description . '%';
-			$stmt->bindParam(":long_description", $long_description, PDO::PARAM_STR);
-		}
-
-		if (!StringUtil::isEmpty($param->remark)) {
-
-			$remark = '%' . $param->remark . '%';
-			$stmt->bindParam(":remark", $remark, PDO::PARAM_STR);
-		}
-
-		if (!StringUtil::isEmpty($param->updater_id)) {
-			$stmt->bindParam(":updater_id", $param->updater_id, PDO::PARAM_STR);
+			$remarks = '%' . $param->remarks . '%';
+			$stmt->bindParam(":remark", $remarks, PDO::PARAM_STR);
 		}
 
 		return parent::getDataList($stmt, get_class(new T_YNSQuizDto()));
@@ -281,25 +237,16 @@ class T_YNSQuizDao extends BaseDao
 	public function deleteQuizInfo($dto)
 	{
 
-		$query = " UPDATE ";
-		$query .= " T_QUIZ_INFO ";
-		$query .= " SET";
-		$query .= " del_flg   = '1' ";
-		$query .= " ,update_dt   = :update_dt ";
-		$query .= " ,updater_id  = :updater_id ";
+		$query = " delete ";
+		$query .= " from ";
+		$query .= " t_ynsquiz ";
 		$query .= " WHERE ";
-		$query .= " org_no = :org_no ";
-		$query .= " AND quiz_info_no = :quiz_info_no ";
-		$query .= " AND del_flg = '0' ";
+		$query .= " quiz_id = :quiz_id ";
 
 		$stmt = $this->pdo->prepare($query);
+		$stmt->bindParam(":quiz_id",  $dto->quiz_id, PDO::PARAM_STR);
 
-		$stmt->bindParam(":update_dt", $dto->update_dt,  PDO::PARAM_STR);
-		$stmt->bindParam(":updater_id",  $dto->updater_id, PDO::PARAM_STR);
-		$stmt->bindParam(":org_no",  $dto->org_no, PDO::PARAM_STR);
-		$stmt->bindParam(":quiz_info_no",  $dto->quiz_info_no, PDO::PARAM_STR);
-
-		return parent::update($stmt);
+		return parent::delete($stmt);
 	}
 
 	/**
