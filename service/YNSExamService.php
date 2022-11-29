@@ -230,4 +230,11 @@ class YNSExamService extends BaseService
 		$dao = new T_YNSExamDao();
 		return $dao->getExamResultData($param);
 	}
+
+	public function deleteExamInfo($dto)
+	{
+		// データベース接続
+		$dao = new T_YNSExamDao();
+		return $dao->deleteExamInfo($dto);
+	}
 }

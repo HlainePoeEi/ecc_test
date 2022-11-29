@@ -570,7 +570,22 @@
             $("#search_page_row_til").val(page_row);
             $("#search_page_order_column_til").val(page_order_column);
             $("#search_page_order_dir_til").val(page_order_dir);
+        }
 
+        //削除 ボタン押下処理
+        function checkDelete(exam_id, action) {
+            alertDialog = confirm("Are you sure to delete this exam?");
+            if (alertDialog == false) {
+            return false;
+            } else {
+            var menuOpen = document.getElementById("menuOpen").value;
+            var menuStatus = document.getElementById("menuStatus").value;
+            $("#main_form").attr("action", action);
+            $("#exam_id").val(exam_id);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+            }
         }
 
     </script>
