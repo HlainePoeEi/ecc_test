@@ -134,4 +134,5 @@ class YNSExamListController extends BaseController
             return;
         }
     }
+
 }

@@ -702,4 +702,16 @@ class T_YNSExamDao extends BaseDao
 
         return parent::getDataList($stmt, get_class(new T_At_Test_Info_ResultDto()));
     }
+
+    public function deleteExamInfo($dto)
+    {
+        $query = " DELETE ";
+        $query .= " FROM ";
+        $query .= " T_YNSEXAM ";
+        $query .= " WHERE ";
+        $query .= " exam_id = :exam_id ";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(":exam_id", $dto->exam_id, PDO::PARAM_STR);
+        return parent::delete($stmt);
+    }
 }

@@ -332,4 +332,37 @@ class YNSExamRegistController extends BaseController
 		$_SESSION['search_page_order_column_til'] = $this->form->search_page_order_column_til;
 		$_SESSION['search_page_order_dir_til'] = $this->form->search_page_order_dir_til;
 	}
+
+	public function deleteAction()
+	{
+		if ($this->check_login() == true) {
+			$exam_service = new YNSExamservice($this->pdo);
+
+			// メニュー情報を取得、セットする
+			$this->setMenu();
+			$exam_dto = new T_YNSExamDto();
+			$exam_dto->exam_id = $this->form->exam_id;
+			$dao = new YNSExamService($this->pdo);
+			$result = $dao->deleteExamInfo($exam_dto);
+			// 登録処理が正常の場合、クイズ一覧画面に遷移する。
+			if ($result == 1) {
+
+				$_SESSION['regist_msg'] = I005;
+				// 登録完了
+				$this->backAction();
+				// 受講者一覧画面へ遷移する
+
+				// 登録出来ない場合
+			} else {
+				$error = sprintf(E007, '削除');
+				$this->smarty->assign('msg', $error);
+				$this->smarty->assign('form', $this->form);
+				$this->smarty->display('ynsExamList.html');
+				return;
+			}
+		} else {
+			TransitionHelper::sendException(E002);
+			return;
+		}
+	}
 }
