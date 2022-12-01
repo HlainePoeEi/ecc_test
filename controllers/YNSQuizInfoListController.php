@@ -92,11 +92,10 @@ class YNSQuizInfoListController extends BaseController
         if (isset($_SESSION['back_flg']) && ($_SESSION['back_flg'])) {
             $this->form->page = $_SESSION['search_page'];
             $this->form->search_page = $_SESSION['search_page'];
-            $this->form->quiz_name = $_SESSION['search_quiz_name'];
-            $this->form->long_description = $_SESSION['search_quiz_content'];
-            $this->form->remark = $_SESSION['search_remark'];
-            $this->form->rd_status1 = $_SESSION['search_rd_status1'];
-            $this->form->search_org_id = $_SESSION['search_org_id'];
+            $this->form->name = $_SESSION['search_name'];
+            $this->form->content = $_SESSION['search_content'];
+            $this->form->remarks = $_SESSION['search_remarks'];
+            $this->form->search_quiz_id = $_SESSION['search_quiz_id'];
 
             $this->form->search_page_qil = $_SESSION['search_page_qil'];
             $this->form->search_page_row_qil = $_SESSION['search_page_row_qil'];
@@ -113,11 +112,11 @@ class YNSQuizInfoListController extends BaseController
             //クリア
             $_SESSION['back_flg'] = false;
             $_SESSION['search_page'] = "";
-            $_SESSION['search_quiz_name'] = "";
-            $_SESSION['search_long_description'] = "";
-            $_SESSION['search_remark'] = "";
+            $_SESSION['search_name'] = "";
+            $_SESSION['search_content'] = "";
+            $_SESSION['search_remarks'] = "";
             $_SESSION['search_rd_status1'] = "";
-            $_SESSION['search_org_id'] = "";
+            $_SESSION['search_quiz_id'] = "";
 
             $_SESSION['search_page_qil'] = "";
             $_SESSION['search_page_row_qil'] = "";
@@ -133,8 +132,9 @@ class YNSQuizInfoListController extends BaseController
             $this->setMenu();
 
             // 検索結果を取得
-            $list = $service->getQuizListData($this->form, "0");
+            $list = $service->getQuizSearchData($this->form, "0");
             $count = count($list);
+            echo $count;
 
             if ($count > 0) {
 
