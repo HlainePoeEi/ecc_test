@@ -28,7 +28,7 @@ class YNSQuizInfoListForm extends BaseForm
     public $update_dt;
     //戻り用
     public $search_name;
-    public $search_lcontent;
+    public $search_content;
     public $search_remarks;
 
     public $search_page_qil;

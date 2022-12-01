@@ -139,20 +139,11 @@ class T_YNSQuizDao extends BaseDao
 		$query .= " T_YNSQUIZ quiz ";
 		$query .= " WHERE quiz.del_flg = '0' ";
 
-		if (!StringUtil::isEmpty($form->org_no)) {
-			$query .= "AND quiz.org_no = :org_no ";
-		}
-
-		if (!StringUtil::isEmpty($form->quiz_info_no)) {
-			$query .= "AND quiz.quiz_info_no = :quiz_info_no ";
+		if (!StringUtil::isEmpty($form->quiz_id)) {
+			$query .= "AND quiz.quiz_id = :quiz_id ";
 		}
 
 		$stmt = $this->pdo->prepare($query);
-
-
-		if (!StringUtil::isEmpty($form->org_no)) {
-			$stmt->bindParam(":org_no", $form->org_no, PDO::PARAM_STR);
-		}
 
 		if (!StringUtil::isEmpty($form->quiz_id)) {
 			$stmt->bindParam(":quiz_id", $form->quiz_id, PDO::PARAM_STR);
@@ -300,7 +291,8 @@ class T_YNSQuizDao extends BaseDao
 		$query .= " AND lessontest.del_flg = '0'  ";
 		$query .= " AND testquiz.quiz_info_no = :quiz_info_no ";
 
-		LogHelper::logDebug("getQuizDataByQuizNoDisable Query : " . $query);
+		LogHelper::logDebug("
+		ByQuizNoDisable Query : " . $query);
 		$stmt = $this->pdo->prepare($query);
 
 		$stmt->bindParam(":org_no", $orgNo, PDO::PARAM_STR);
