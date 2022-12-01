@@ -134,7 +134,6 @@ class YNSQuizInfoListController extends BaseController
             // 検索結果を取得
             $list = $service->getQuizSearchData($this->form, "0");
             $count = count($list);
-            echo $count;
 
             if ($count > 0) {
 
