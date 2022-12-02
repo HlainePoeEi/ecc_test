@@ -276,12 +276,12 @@
                                     <td width="30px" align="center">
                                         <input type="button" class="btn_quiz_assign_list" name="btn_quizassign"
                                             title="割当"
-                                            onclick="assign('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}QuizInfoAssign/index')">
+                                            onclick="assign2('{$result->exam_id}','','{$smarty.const.HOME_DIR}APMQuizInfoAssign/index')">
                                     </td>
                                     <td width="30px" align="center">
                                         <input type="button" class="btn_quiz_assign_list" name="btn_quizassign"
                                             title="出題順"
-                                            onclick="assign('{$result->exam_id}','','{$smarty.const.HOME_DIR}QuizInfoAssignment/index')">
+                                            onclick="assign('{$result->exam_id}','','{$smarty.const.HOME_DIR}APMQuizInfoAssignment/index')">
                                     </td>
                                     <td width="30px" align="center">
                                         <!--20220309_事業部担当者対応-->
@@ -382,6 +382,86 @@
             $("#screen_mode").val("assign");
             $("#org_no").val(org_no);
             $("#test_info_no").val(test_info_no);
+            //戻るの場合リストか登録かの画面を分けるため
+            $("#btn_flg_type").val("1");
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
+
+        function assign(org_no, test_info_no, action) {
+
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+
+            $("#search_start_period").val($("#start_period").val());
+            $("#search_end_period").val($("#end_period").val());
+            $("#search_test_info_name").val($("#test_info_name").val());
+            $("#search_remarks").val($("#remarks").val());
+            $("#search_rd_status1").val($("#rd_status1").val());
+            $("#search_rd_status2").val($("#rd_status2").val());
+            $("#search_rdstatus").val($("#rdstatus").val());
+            $("#search_chk_status1").val("");
+            $("#search_org_id").val($("#search_org_id").val());
+
+            setDataTableData();
+
+            if ($("#chk_status1").prop('checked')) {
+                $("#search_chk_status1").val(1);
+            }
+
+            $("#search_chk_status2").val("");
+            if ($("#chk_status2").prop('checked')) {
+                $("#search_chk_status2").val(1);
+            }
+            $("#search_status").val($("#status").val());
+
+            $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
+
+            $("#main_form").attr("action", action);
+            $("#screen_mode").val("assign");
+            $("#org_no").val(org_no);
+            $("#test_info_no").val(test_info_no);
+            //戻るの場合リストか登録かの画面を分けるため
+            $("#btn_flg_type").val("1");
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
+
+        function assign2(exam_id, org_no, action) {
+
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+
+            $("#search_start_period").val($("#start_period").val());
+            $("#search_end_period").val($("#end_period").val());
+            $("#search_test_info_name").val($("#test_info_name").val());
+            $("#search_remarks").val($("#remarks").val());
+            $("#search_rd_status1").val($("#rd_status1").val());
+            $("#search_rd_status2").val($("#rd_status2").val());
+            $("#search_rdstatus").val($("#rdstatus").val());
+            $("#search_chk_status1").val("");
+            $("#search_org_id").val($("#search_org_id").val());
+
+            setDataTableData();
+
+            if ($("#chk_status1").prop('checked')) {
+                $("#search_chk_status1").val(1);
+            }
+
+            $("#search_chk_status2").val("");
+            if ($("#chk_status2").prop('checked')) {
+                $("#search_chk_status2").val(1);
+            }
+            $("#search_status").val($("#status").val());
+
+            $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
+
+            $("#main_form").attr("action", action);
+            $("#screen_mode").val("assign");
+            $("#org_no").val(org_no);
+            $("#exam_id").val(exam_id);
             //戻るの場合リストか登録かの画面を分けるため
             $("#btn_flg_type").val("1");
             $("#menuOpen").val(menuOpen);
