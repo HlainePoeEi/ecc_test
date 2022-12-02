@@ -193,7 +193,7 @@
                                 <td class="qz_content">{$result->content}</td>
                                 <td class="td_img">
                                     <input type="button" class="btn_preview_list" name="preview" title="確認"
-                                        onclick="trans('{$result->quiz_info_no}','{$smarty.const.HOME_DIR}QuizDetailsPreview/index')">
+                                        onclick="trans('{$result->quiz_id}','{$smarty.const.HOME_DIR}QuizDetailsPreview/index')">
                                 </td>
                                 <td class="td_img">
                                     <input type="button" class="btn_edit" name="edit" title="編集"
@@ -254,7 +254,6 @@
             $("#search_name").val($("#name").val());
             $("#search_content").val($("#content").val());
             $("#search_remarks").val($("#remarks").val());
-
             $("#main_form").attr("action", action);
             $("#screen_mode").val('update');
             $("#quiz_id").val(quiz_id);
@@ -264,7 +263,7 @@
         }
 
         // プレビューボタン処理
-        function preview(quiz_info_no, action) {
+        function preview(quiz_id, action) {
 
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
@@ -272,13 +271,13 @@
             setDataTableData();
 
             $("#search_page").val($("#page").val());
-            $("#search_quiz_name").val($("#quiz_name").val());
-            $("#search_long_description").val($("#long_description").val());
-            $("#search_remark").val($("#remark").val());
+            $("#search_name").val($("#name").val());
+            $("#search_content").val($("#content").val());
+            $("#search_remarks").val($("#remarks").val());
             $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
 
             $("#main_form").attr("action", action);
-            $("#quiz_info_no").val(quiz_info_no);
+            $("#quiz_id").val(quiz_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
             $("#main_form").submit();

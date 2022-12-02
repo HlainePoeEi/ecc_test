@@ -76,6 +76,10 @@ class T_Quiz_InfoDao extends BaseDao {
 		logHelper::logDebug("count of quiz list"  . count($list));
 		return count($list);
 	}
+	public function getQuizSearchData($param, $flg){
+		
+
+	}
 
 	public function getQuizListData($param, $flg){
 
@@ -398,5 +402,3 @@ class T_Quiz_InfoDao extends BaseDao {
 	}
 
 }
-
-?>

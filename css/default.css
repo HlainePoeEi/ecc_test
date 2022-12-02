@@ -468,7 +468,15 @@ nav-list.active {
 
 /*-------------------menu------------------*/
 
+
 /** error*/
+.error_section1 {
+    padding: 20px;
+    color: #ff4500;
+    display: none;
+    background-color: rgba(255, 165, 0, 0.7);
+}
+
 .error_section {
     padding: 20px;
     color: #ff4500;
@@ -476,6 +484,7 @@ nav-list.active {
     display: none;
     background-color: rgba(255, 165, 0, 0.7);
 }
+
 .error_msg {
     display: inline-flex; /* Safari */
     inline-flex-wrap: wrap; /* Safari 6.1+ */

@@ -24,6 +24,12 @@ class YNSQuizInfoService extends BaseService
         return $dao->getQuizResultCount($form);
     }
 
+    public function getQuizSearchData($form, $flg)
+    {
+        // データベース接続
+        $dao = new T_YNSQuizDao();
+        return $dao->getQuizSearchData($form, $flg);
+    }
     public function getQuizListData($form, $flg)
     {
         // データベース接続
@@ -107,7 +113,7 @@ class YNSQuizInfoService extends BaseService
     public function getQuizListOnTest($form)
     {
         // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao();
+        $dao = new T_YNSQuizInfoAssignmentDao();
         $pageno = ($form->page - 1) * PAGE_ROW;
         return $dao->getQuizListOnTest($form, ($form->page - 1) * PAGE_ROW);
     }

@@ -19,11 +19,11 @@ class YNSExamService extends BaseService
 		return $dao->getTestInfoResultCount($form);
 	}
 
-	public function getTestInfo($org_no, $test_info_no)
+	public function getTestInfo($org_no, $exam_id)
 	{
 		// データベース接続
 		$dao = new T_TestInfoDao();
-		return $dao->getTestInfo($org_no, $test_info_no);
+		return $dao->getTestInfo($org_no, $exam_id);
 	}
 
 	public function updateTestInfo($dto)
