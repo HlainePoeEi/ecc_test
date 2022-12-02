@@ -92,7 +92,7 @@ class AudioService extends BaseService
 	{
 
 		// 保存先フォルダ存在チェック
-		$audiodir = ADMIN_FILE_DIR . "YNSAudio" . "/" . $audio_folder;
+		$audiodir = ECCTEST_FILE_DIR . "YNSQuiz" . "/" . $audio_folder;
 
 		LogHelper::logDebug("audio dir is " . $audiodir);
 
@@ -119,6 +119,18 @@ class AudioService extends BaseService
 	{
 		// 保存先フォルダ存在チェック
 		$audiodir = ADMIN_FILE_DIR . $org_no . "/" . $audio_dir;
+		if (!is_dir($audiodir)) {
+			return;
+		}
+
+		foreach (glob($audiodir . $quiz_id . ".*") as $file) {
+			unlink($file);
+		}
+	}
+	public function deleteAudioQuiz1($audio_dir, $quiz_id)
+	{
+		// 保存先フォルダ存在チェック
+		$audiodir = ADMIN_FILE_DIR . "YNSAudio" . "/" . $audio_dir;
 		if (!is_dir($audiodir)) {
 			return;
 		}

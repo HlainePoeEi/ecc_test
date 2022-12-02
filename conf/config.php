@@ -17,6 +17,7 @@
 // define ( "SERVER_URL", "https://172.16.15.185".HOME_DIR );
 
 define("HOME_DIR", "/ecc_test/");
+define("ECCTEST_FILE_DIR", $_SERVER["DOCUMENT_ROOT"] . HOME_DIR . "files/");
 define("STUDENT_HOME_DIR", "/student_dev/");
 define("SYS_ROOT", __DIR__ . '/../');
 define("SERVER_URL", 'https://' . $_SERVER['SERVER_NAME'] . HOME_DIR);
@@ -64,6 +65,7 @@ define("F001", "%s/%s/%s/%s");
 define("AUDIO_FILE", "files");
 define("QUIZ_AUDIO_DIR", "Quiz/audio/");
 define("QUIZ_INFO_AUDIO_DIR", "QuizInfo/audio/");
+define("YNSQUIZ_INFO_AUDIO_DIR", "YNSQuizInfo/ynsAudio/");
 define("FILE_DIR1", $_SERVER["DOCUMENT_ROOT"] . HOME_DIR);
 
 define("ERROR_PAGE", HOME_DIR . "Error/disp");
