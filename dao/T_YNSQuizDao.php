@@ -181,30 +181,18 @@ class T_YNSQuizDao extends BaseDao
 	 * @param unknown $form
 	 * @return string
 	 */
-	public function getQuizDataByQuizNo($form)
+	public function getQuizDataByQuizNo($quiz_id)
 	{
 
 		$query = " SELECT ";
-		$query .= " quiz.quiz_id quiz_id ";
-		$query .= " ,quiz.name name ";
-		$query .= " ,quiz.content content ";
-		$query .= " ,quiz.audio_name audio_name ";
-		$query .= " ,quiz.remarks remarks ";
+		$query .= " * ";
 		$query .= " FROM ";
-		$query .= " T_YNSQUIZ quiz ";
-		$query .= " WHERE quiz.del_flg = '0' ";
-
-		if (!StringUtil::isEmpty($form->quiz_id)) {
-			$query .= "AND quiz.quiz_id = :quiz_id ";
-		}
+		$query .= " t_ynsquiz ";
+		$query .= " WHERE quiz_id = :quiz_id ";
 
 		$stmt = $this->pdo->prepare($query);
-
-		if (!StringUtil::isEmpty($form->quiz_id)) {
-			$stmt->bindParam(":quiz_id", $form->quiz_id, PDO::PARAM_STR);
-		}
-
-		return parent::getData($stmt, get_class(new T_YNSQuizDto()));
+		$stmt->bindParam(":quiz_id",  $quiz_id, PDO::PARAM_STR);
+		return parent::getDataList($stmt, get_class(new T_YNSQuizDto()));
 	}
 
 	public function saveQuiz($dto)
@@ -229,10 +217,10 @@ class T_YNSQuizDao extends BaseDao
 	{
 
 		$query = " UPDATE ";
-		$query .= " T_QUIZ_INFO ";
+		$query .= " t_ynsquiz ";
 		$query .= " SET";
-		$query .= " quiz_name   = :quiz_name ";
-		$query .= " ,long_description   = :long_description ";
+		$query .= " name   = :name ";
+		$query .= " ,content   = :content ";
 		$query .= " ,remarks  = :remarks ";
 
 		if (!StringUtil::isEmpty($dto->audio_name)) {
@@ -244,19 +232,14 @@ class T_YNSQuizDao extends BaseDao
 		if (!StringUtil::isEmpty($dto->update_dt)) {
 			$query .= " ,update_dt = :update_dt";
 		}
-		if (!StringUtil::isEmpty($dto->updater_id)) {
-			$query .= " ,updater_id = :updater_id ";
-		}
 
 		$query .= " WHERE ";
-		$query .= " org_no = :org_no ";
-		$query .= " AND quiz_info_no = :quiz_info_no ";
-		$query .= " AND del_flg = '0' ";
+		$query .= " quiz_id = :quiz_id ";
 
 		$stmt = $this->pdo->prepare($query);
 
-		if (!StringUtil::isEmpty($dto->long_description)) {
-			$stmt->bindParam(":long_description",  $dto->long_description, PDO::PARAM_STR);
+		if (!StringUtil::isEmpty($dto->content)) {
+			$stmt->bindParam(":content",  $dto->content, PDO::PARAM_STR);
 		}
 
 		if (!StringUtil::isEmpty($dto->audio_name)) {
@@ -266,15 +249,11 @@ class T_YNSQuizDao extends BaseDao
 		if (!StringUtil::isEmpty($dto->update_dt)) {
 			$stmt->bindParam(":update_dt", $dto->update_dt, PDO::PARAM_STR);
 		}
-		if (!StringUtil::isEmpty($dto->updater_id)) {
-			$stmt->bindParam(":updater_id", $dto->updater_id, PDO::PARAM_STR);
-		}
 
-		$stmt->bindParam(":quiz_name",  $dto->quiz_name, PDO::PARAM_STR);
-		$stmt->bindParam(":long_description",  $dto->long_description, PDO::PARAM_STR);
+		$stmt->bindParam(":name",  $dto->name, PDO::PARAM_STR);
+		$stmt->bindParam(":content",  $dto->content, PDO::PARAM_STR);
 		$stmt->bindParam(":remarks",  $dto->remarks, PDO::PARAM_STR);
-		$stmt->bindParam(":org_no",  $dto->org_no, PDO::PARAM_STR);
-		$stmt->bindParam(":quiz_info_no",  $dto->quiz_info_no, PDO::PARAM_STR);
+		$stmt->bindParam(":quiz_id",  $dto->quiz_id, PDO::PARAM_STR);
 
 		loghelper::logdebug($query);
 		return parent::update($stmt);

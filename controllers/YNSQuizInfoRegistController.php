@@ -36,19 +36,20 @@ class YNSQuizInfoRegistController extends BaseController
             // 更新
             if ($this->form->screen_mode == 'update') {
                 // 課題管理№のチェック
-                if (!empty($this->form->quiz_info_no)) {
+                if (!empty($this->form->quiz_id)) {
                     // 課題データ取得
-                    $quizInfo = $quiz_service->getQuizDataByQuizNo($this->form);
-
-                    $quizInfoNo = $this->form->quiz_info_no;
-
-                    if (count($quizInfo) == 1) {
-                        // formにデータをセットする
-                        $this->form->quiz_id = $quizInfo->quiz_id;
-                        $this->form->name = $quizInfo->name;
-                        $this->form->content = $quizInfo->content;
-                        $this->form->audio_file = $quizInfo->audio_name;
-                        $this->form->remarks = $quizInfo->remarks;
+                    $quiz_id = $this->form->quiz_id;
+                    $list = $quiz_service->getQuizDataByQuizNo($quiz_id);
+                    // $quizInfoNo = $this->form->quiz_id;
+                    if ($list != null) {
+                        foreach ($list as $value) {
+                            // formにデータをセットする
+                            $this->form->quiz_id = $value->quiz_id;
+                            $this->form->name = $value->name;
+                            $this->form->content = $value->content;
+                            $this->form->audio_file = $value->audio_name;
+                            $this->form->remarks = $value->remarks;
+                        }
                     }
 
                     $this->form->audio_del_flg = 1;
@@ -71,11 +72,11 @@ class YNSQuizInfoRegistController extends BaseController
                 }
             } else {
 
-                $this->form->org_no = COMMON_TEST_INFO_ORG;
-                $next_quiz_id = $quiz_service->getNextId();
-                $quiz_id = $next_quiz_id->id;
+                // $this->form->org_no = COMMON_TEST_INFO_ORG;
+                // $next_quiz_id = $quiz_service->getNextId();
+                // $quiz_id = $next_quiz_id->id;
 
-                $this->form->quiz_id = $quiz_id;
+                // $this->form->quiz_id = $quiz_id;
                 $this->form->name = "";
                 $this->form->content = "";
                 $this->form->audio_del_flg = 0;
@@ -128,10 +129,7 @@ class YNSQuizInfoRegistController extends BaseController
 
             if ($screen_mode == 'update') {
 
-                $quiz_dto->org_no = $this->form->org_no;
                 $quiz_id = $this->form->quiz_id;
-
-                $quiz_dto->updater_id = $_SESSION['admin_no'];
                 $quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
 
                 $audio_chk_del = $this->form->audio_chk_del;
@@ -141,38 +139,38 @@ class YNSQuizInfoRegistController extends BaseController
 
                     $audioService = new AudioService($this->pdo);
 
-                    $audio_name = "QuizInfoNo_" . $this->form->quiz_id . AUDIO_EXT;
+                    $audio_name = "YNSQuizInfoNo_" . $this->form->quiz_id . AUDIO_EXT;
                     if (!empty($this->form->audio_data)) {
 
                         $quiz_dto->audio_name = $audio_name;
 
-                        $audioService->deleteAudioQuiz($quiz_dto->org_no, QUIZ_INFO_AUDIO_DIR, "QuizInfoNo_" . $this->form->quiz_info_no);
+                        $audioService->deleteAudioQuiz1(QUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
 
                         // プロジェクト名/Files/組織管理№/Quiz/QuizInfoNo_クイズ管理№.選択されたファイルの拡張子
                         $this->SaveAudio($this->form);
                     } else {
                         if (!empty($this->form->audio_file)) {
-                            $quiz_dto->audio_name =  "QuizInfoNo_" . $this->form->quiz_id . AUDIO_EXT;
+                            $quiz_dto->audio_name =  "YNSQuizInfoNo_" . $this->form->quiz_id . AUDIO_EXT;
                         }
                     }
                     // 音声フィル削除チェックの場合、削除する
                     if ($this->form->audio_chk_del == "1") {
                         $quiz_dto->audio_name = "";
-                        $audioService->deleteAudioQuiz($quiz_dto->quiz_id, QUIZ_INFO_AUDIO_DIR, "QuizInfoNo_" . $this->form->quiz_id);
+                        $audioService->deleteAudioQuiz1($quiz_dto->quiz_id, QUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
                     }
                 }
 
-                $dao = new QuizInfoService($this->pdo);
+                $dao = new YNSQuizInfoService($this->pdo);
                 $result = $dao->updateQuizInfo($quiz_dto);
 
                 // 更新処理が正常の場合、
                 if ($result == 1) {
 
                     //登録完了
-                    $_SESSION['regist_msg'] = I004;
+                    $_SESSION['regist_msg'] = I007;
 
                     $this->setBackData();
-                    $this->dispatch('QuizInfoList/search');
+                    $this->dispatch('YNSQuizInfoList/search');
 
                     // 更新出来ない場合、
                 } else {
@@ -239,8 +237,8 @@ class YNSQuizInfoRegistController extends BaseController
 
         $audioService = new AudioService($this->pdo);
         if ($form->audio_data != null && $form->audio_data != "") {
-            $audio_name = "QuizInfoNo_" . $form->quiz_id . AUDIO_EXT;
-            $audioService->saveAudioQuiz1($form->audio_data, QUIZ_INFO_AUDIO_DIR, $audio_name);
+            $audio_name = "YNSQuizInfoNo_" . $form->quiz_id . AUDIO_EXT;
+            $audioService->saveAudioQuiz1($form->audio_data, YNSQUIZ_INFO_AUDIO_DIR, $audio_name);
         }
     }
 

@@ -37,11 +37,11 @@ class YNSQuizInfoService extends BaseService
         return $dao->getQuizListData($form, $flg);
     }
 
-    public function getQuizDataByQuizNo($form)
+    public function getQuizDataByQuizNo($id)
     {
         // データベース接続
         $dao = new T_YNSQuizDao();
-        return $dao->getQuizDataByQuizNo($form);
+        return $dao->getQuizDataByQuizNo($id);
     }
 
     public function getQuizData($org_no, $quiz_info_no)

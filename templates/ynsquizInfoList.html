@@ -197,7 +197,7 @@
                                 </td>
                                 <td class="td_img">
                                     <input type="button" class="btn_edit" name="edit" title="編集"
-                                        onclick="trans('{$result->quiz_id}','{$smarty.const.HOME_DIR}QuizInfoRegist/index')">
+                                        onclick="trans('{$result->quiz_id}','{$smarty.const.HOME_DIR}YNSQuizInfoRegist/index')">
                                 </td>
                                 <td width="30px;" align="center"> <input type="button" class="btn_delete" id="btn_del"
                                         name="delete" title="削除"
@@ -254,8 +254,6 @@
             $("#search_name").val($("#name").val());
             $("#search_content").val($("#content").val());
             $("#search_remarks").val($("#remarks").val());
-            $("#search_rd_status1").val($('input[name=rd_status1]:checked').val());
-
             $("#main_form").attr("action", action);
             $("#screen_mode").val('update');
             $("#quiz_id").val(quiz_id);
