@@ -62,6 +62,7 @@ class YNSExamListForm extends BaseForm
     public $search_status;
     public $search_org_id;
 
+    public $search_page;
     public $search_page_til;
     public $search_page_row_til;
     public $search_page_order_column_til;
