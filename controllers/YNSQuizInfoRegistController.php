@@ -170,7 +170,7 @@ class YNSQuizInfoRegistController extends BaseController
                     $_SESSION['regist_msg'] = I007;
 
                     $this->setBackData();
-                    $this->dispatch('YNSQuizInfoList/search');
+                    $this->dispatch('YNSQuizInfoList');
 
                     // 更新出来ない場合、
                 } else {

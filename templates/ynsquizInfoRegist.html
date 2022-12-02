@@ -383,16 +383,7 @@
                                 </td>
                                 <td id="btn_preview_name">プレビュー</td>
                                 <td class="space"></td>
-                                {if $form->screen_mode eq 'update'}
-                                <td>
-                                    {if $form->disable_mode == ""}
-                                    <input class="btn_delete" type="button" name="btn_del"
-                                        onclick="checkDelete('{$form->quiz_id}','{$smarty.const.HOME_DIR}YNSQuizInfoRegist/delete');"
-                                        id="btn_del">
-                                    {/if}
-                                </td>
                             </tr>
-                            {/if}
                             {if $form->disable_mode == ""}
                             <tr>
                                 <input type="submit" name="submit_add" id="btn_insert" value="" class="btn_insert"
@@ -412,26 +403,6 @@
     </form>
     { literal }
     <script>
-        //削除 ボタン押下処理
-        function checkDelete(quiz_id, action) {
-
-            alertDialog = confirm('Are you sure to delete this quiz?');
-
-            if (alertDialog == false) {
-
-                return false;
-            } else {
-
-                var menuOpen = document.getElementById('menuOpen').value;
-                var menuStatus = document.getElementById('menuStatus').value;
-
-                $("#main_form").attr("action", action);
-                $("#quiz_id").val(quiz_id);
-                $("#menuOpen").val(menuOpen);
-                $("#menuStatus").val(menuStatus);
-                $("#main_form").submit();
-            }
-        }
 
         // プレビューボタン処理
         function preview(quiz_id, action) {

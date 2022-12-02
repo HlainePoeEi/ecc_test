@@ -92,10 +92,10 @@ class YNSQuizInfoListController extends BaseController
         if (isset($_SESSION['back_flg']) && ($_SESSION['back_flg'])) {
             $this->form->page = $_SESSION['search_page'];
             $this->form->search_page = $_SESSION['search_page'];
-            $this->form->name = $_SESSION['search_name'];
-            $this->form->content = $_SESSION['search_content'];
-            $this->form->remarks = $_SESSION['search_remarks'];
-            $this->form->search_quiz_id = $_SESSION['search_quiz_id'];
+            // $this->form->name = $_SESSION['search_name'];
+            // $this->form->content = $_SESSION['search_content'];
+            // $this->form->remarks = $_SESSION['search_remarks'];
+            // $this->form->search_quiz_id = $_SESSION['search_quiz_id'];
 
             $this->form->search_page_qil = $_SESSION['search_page_qil'];
             $this->form->search_page_row_qil = $_SESSION['search_page_row_qil'];
