@@ -115,20 +115,20 @@ class YNSQuizInfoService extends BaseService
         // データベース接続
         $dao = new T_YNSQuizInfoAssignmentDao();
         $pageno = ($form->page - 1) * PAGE_ROW;
-        return $dao->getQuizListOnTest($form, ($form->page - 1) * PAGE_ROW);
+        return $dao->getQuizListOnTest($form, $pageno);
     }
 
-    public function countExistingQuiz($org_no, $test_info_no)
+    public function countExistingQuiz($exam_id)
     {
-        $dao = new T_Quiz_Info_AssignmentDao();
-        return $dao->countExistingQuiz($org_no, $test_info_no);
+        $dao = new T_YNSQuizInfoAssignmentDao();
+        return $dao->countExistingQuiz($exam_id);
     }
 
-    public function deleteQuizOnTest($org_no, $test_info_no)
+    public function deleteQuizOnTest($exam_id)
     {
         // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao($this->pdo);
-        return $dao->deleteQuizOnTest($org_no, $test_info_no, $this->pdo);
+        $dao = new T_YNSQuizInfoAssignmentDao();
+        return $dao->deleteQuizOnTest($exam_id, $this->pdo);
     }
 
     public function getRegisteredQuizList($org_no, $test_info_no)
@@ -141,29 +141,15 @@ class YNSQuizInfoService extends BaseService
     public function addQuizDataOnTest($dto)
     {
         // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao($this->pdo);
+        $dao = new T_YNSQuizInfoAssignmentDao();
         return $dao->insertWithPdo($dto, $this->pdo);
     }
 
-    public function getSearchQuizList($dto)
+    public function getTestData($exam_id)
     {
         // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao();
-        return $dao->getSearchQuizList($dto, 1);
-    }
-
-    public function getSearchQuizListJI($dto)
-    {
-        // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao();
-        return $dao->getSearchQuizListJI($dto, 1);
-    }
-
-    public function getTestData($org_no, $test_info_no)
-    {
-        // データベース接続
-        $dao = new T_Quiz_Info_AssignmentDao();
-        return $dao->getTestData($org_no, $test_info_no);
+        $dao = new T_YNSQuizInfoAssignmentDao();
+        return $dao->getTestData($exam_id);
     }
 
     public function getQuizDataByQuizNoDisable($orgNo, $quizInfoNo)

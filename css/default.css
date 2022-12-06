@@ -306,8 +306,8 @@ section.content {
     height: 40px;
     padding: 0px 0px 0px 0px;
     margin: 0px;
-    //border-bottom: 0.01em solid #EEEEEE;
-    //border-bottom-style: ridge;
+    border-bottom: 0.01em solid #EEEEEE;
+    border-bottom-style: ridge;
     font-family: Arial, Helvetics, sans-serif;
     color: #666666;
     font-weight: bold;
@@ -1856,3 +1856,4 @@ th {
     text-align: right;
     font-size: 16px;
 }
+

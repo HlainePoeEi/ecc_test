@@ -55,13 +55,13 @@ table.join_header_border {
     display: inline-block;
     width: 100%;
 	text-align: left;
-	background-color: #B7DEE8;
+	background-color: #e6b9b8;
 	color: white;
 	font-weight:normal;
 }
 .join_header_border tbody{
     display: inline-block;
-    height:110px;
+    height:250px;
     width: 100%;
     overflow-y: auto;
 }
@@ -72,7 +72,7 @@ table.join_header_border {
 }
 .join_header_border th{
 	text-align: left;
-	background-color: #B7DEE8;
+	background-color: #e6b9b8;
 	color: white;
 	font-weight:normal;
 }
@@ -86,7 +86,7 @@ table.join_header_border_quiz {
 	display: inline-block;
 	width: 100%;
 	text-align: left;
-	background-color: #B7DEE8;
+	background-color: #e6b9b8;
 	color: white;
 	font-weight:normal;
 	height: 50px;
@@ -105,8 +105,42 @@ table.join_header_border_quiz {
 }
 .join_header_border_quiz th{
 	text-align: left;
-	background-color: #B7DEE8;
+	background-color: #e6b9b8;
 	color: white;
 	font-weight:normal;
 }
 
+table.quiz_body {
+	width:100% ;
+	border-collapse: collapse;
+	display:block;
+	margin-bottom: 10px;
+}
+.quiz_body thead {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	background-color: #e6b9b8;
+	color: white;
+	font-weight:normal;
+	height: 50px;
+	padding-top: 10px;
+}
+.quiz_body tbody{
+	display: inline-block;
+	height:500px;
+	width: 100%;
+	overflow-y: auto;
+}
+.quiz_body td{
+	border-bottom: 1px solid #5b5d5e;
+	padding: 3px;
+	width: 100%;
+	text-align: left;
+}
+.quiz_body th{
+	text-align: left;
+	background-color: #e6b9b8;
+	color: white;
+	font-weight:normal;
+}
