@@ -130,7 +130,7 @@ class AudioService extends BaseService
 	public function deleteAudioQuiz1($audio_dir, $quiz_id)
 	{
 		// 保存先フォルダ存在チェック
-		$audiodir = ADMIN_FILE_DIR . "YNSAudio" . "/" . $audio_dir;
+		$audiodir = ECCTEST_FILE_DIR . "YNSQuiz" . "/" . $audio_dir;
 		if (!is_dir($audiodir)) {
 			return;
 		}
