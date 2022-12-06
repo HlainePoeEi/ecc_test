@@ -11,6 +11,7 @@
 require_once 'BaseDao.php';
 require_once 'dto/T_Quiz_InfoDto.php';
 require_once 'dto/T_Test_Info_QuizDto.php';
+require_once 'dto/T_YNSExamDto.php';
 /**
  * T_Quiz_Info_AssignmentDAOクラス
  */
