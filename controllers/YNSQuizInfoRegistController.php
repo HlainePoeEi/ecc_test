@@ -144,7 +144,7 @@ class YNSQuizInfoRegistController extends BaseController
 
                         $quiz_dto->audio_name = $audio_name;
 
-                        $audioService->deleteAudioQuiz1(QUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
+                        $audioService->deleteAudioQuiz1(YNSQUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
 
                         // プロジェクト名/Files/組織管理№/Quiz/QuizInfoNo_クイズ管理№.選択されたファイルの拡張子
                         $this->SaveAudio($this->form);
@@ -156,7 +156,7 @@ class YNSQuizInfoRegistController extends BaseController
                     // 音声フィル削除チェックの場合、削除する
                     if ($this->form->audio_chk_del == "1") {
                         $quiz_dto->audio_name = "";
-                        $audioService->deleteAudioQuiz1($quiz_dto->quiz_id, QUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
+                        $audioService->deleteAudioQuiz1($quiz_dto->quiz_id, YNSQUIZ_INFO_AUDIO_DIR, "YNSQuizInfoNo_" . $this->form->quiz_id);
                     }
                 }
 
@@ -192,7 +192,7 @@ class YNSQuizInfoRegistController extends BaseController
 
                 if (!empty($this->form->audio_data)) {
 
-                    $quiz_dto->audio_name =  "QuizInfoNo_" . $quiz_id . AUDIO_EXT;
+                    $quiz_dto->audio_name =  "YNSQuizInfoNo_" . $quiz_id . AUDIO_EXT;
                     $this->SaveAudio($this->form);
                 }
                 $quiz_dto->quiz_id = $quiz_id;
@@ -265,7 +265,7 @@ class YNSQuizInfoRegistController extends BaseController
                 $this->setBackData();
 
                 // 受講者一覧画面へ遷移する
-                $this->dispatch('YNSQuizInfoList/Search');
+                $this->dispatch('YNSQuizInfoList');
                 // 登録出来ない場合
             } else {
                 $error = sprintf(E007, '削除');
@@ -291,7 +291,7 @@ class YNSQuizInfoRegistController extends BaseController
             $this->setBackData();
 
             // クイズ一覧画面へ遷移する
-            $this->dispatch('YNSQuizInfoList/Search');
+            $this->dispatch('YNSQuizInfoList');
         } else {
             TransitionHelper::sendException(E002);
             return;
