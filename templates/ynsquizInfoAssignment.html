@@ -18,7 +18,7 @@
 </head>
 
 <body class="pushmenu-push">
-    <form id="main_form" action="{$smarty.const.HOME_DIR}QuizInfoAssignment/save" method="post">
+    <form id="main_form" action="{$smarty.const.HOME_DIR}YNSQuizInfoAssignment/save" method="post">
         <input type="hidden" id="manager_no" name="manager_no" />
         {include file='leftMenu.html'}
         <div class="divHeader">
@@ -27,7 +27,7 @@
             <!--header-->
         </div>
         <div class="divBody">
-            <section class="error_section">
+            <section class="error_section1">
                 <img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right"
                     class="close_icon">
                 {if !empty($err_msg)}
@@ -38,34 +38,17 @@
             </section>
             <section class="content">
                 <p>
-                    ><span class="title">試験情報 / クイズ出題順</span>
+                    >><span class="title">試験情報 / クイズ出題順</span>
                 </p>
                 <p style="text-align:right;width:100%;">
                     <input type="button" title="戻る" value="" class="btn_back"
-                        onclick="javascript:doBack('{$smarty.const.HOME_DIR}QuizInfoAssignment/back')">
+                        onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizInfoAssignment/back')">
                 </p>
                 <input type="hidden" id="page" name="page" value="{$form->page}" />
                 <input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
                 <input type="hidden" id="entryList" name="entryList" value="" />
-                <input type="hidden" name="test_info_no" id="test_info_no" value="{$form->test_info_no}" />
+                <input type="hidden" name="exam_id" id="exam_id" value="{$form->exam_id}" />
                 <input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
-                <input type="hidden" id="search_start_period" name="search_start_period"
-                    value="{$form->search_start_period}" />
-                <input type="hidden" id="search_end_period" name="search_end_period"
-                    value="{$form->search_end_period}" />
-                <input type="hidden" id="search_test_info_name" name="search_test_info_name"
-                    value="{$form->search_test_info_name|escape}" />
-                <input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark|escape}" />
-                <input type="hidden" id="search_rd_status1" name="search_rd_status1"
-                    value="{$form->search_rd_status1}" />
-                <input type="hidden" id="search_rd_status2" name="search_rd_status2"
-                    value="{$form->search_rd_status2}" />
-                <input type="hidden" id="search_rdstatus" name="search_rdstatus" value="{$form->search_rdstatus}" />
-                <input type="hidden" id="search_chk_status1" name="search_chk_status1"
-                    value="{$form->search_chk_status1}" />
-                <input type="hidden" id="search_chk_status2" name="search_chk_status2"
-                    value="{$form->search_chk_status2}" />
-                <input type="hidden" id="search_status" name="search_status" value="{$form->search_status}" />
                 <input type="hidden" id="search_page_row_til" name="search_page_row_til"
                     value="{$form->search_page_row_til}" />
                 <input type="hidden" id="search_page_order_column_til" name="search_page_order_column_til"
@@ -76,11 +59,11 @@
                 <table class="testAss_tbl">
                     <tr>
                         <td class="td_two">試験名</td>
-                        <td class="td_input">{$form->test_info_name|escape}</td>
+                        <td class="td_input">{$form->exam_name|escape}</td>
                     </tr>
                     <tr>
                         <td class="td_two">利用期間</td>
-                        <td class="td_input">{$form->start_period}~{$form->end_period}</td>
+                        <td class="td_input">{$form->start_date}~{$form->end_date}</td>
                     </tr>
                 </table>
                 <br>
@@ -88,8 +71,8 @@
                     <thead>
                         <tr>
                             <th style="width:150px; ">番号</th>
-                            <th style="width:500px; ">クイズ名</th>
-                            <th style="width:700px; ">問題</th>
+                            <th style="width:300px; ">クイズ名</th>
+                            <th style="width:500px; ">問題</th>
                             <th style="width:100px; "></th>
                         </tr>
                     </thead>
@@ -98,8 +81,8 @@
                         {foreach $addlist as $result}
                         <tr width="100%">
                             <td style="width:150px;">{$result->rowno}</td>
-                            <td style="width:500px;">{$result->quiz_name|escape}</td>
-                            <td style="width:700px;">{$result->long_description}</td>
+                            <td style="width:300px;">{$result->name|escape}</td>
+                            <td style="width:500px;">{$result->content}</td>
                             <td style="width:100px; text-align:center;">
                                 <button style="background-color:#fff;border:0px;" disabled="disabled"
                                     onClick="MoveUp.call(this);return false;"><img
@@ -110,7 +93,7 @@
                                         src="{$smarty.const.HOME_DIR}image/down.svg"
                                         style="width: 25px;height:25px;" /></button>
                             </td>
-                            <td>{$result->quiz_info_no}</td>
+                            <td>{$result->quiz_id}</td>
                         </tr>
                         {/foreach}
                     </tbody>
@@ -120,8 +103,8 @@
                         {if $key == 0}
                         <tr width="100%">
                             <td style="width:150px;">{$result->rowno}</td>
-                            <td style="width:500px;">{$result->quiz_name|escape}</td>
-                            <td style="width:700px;">{$result->long_description}</td>
+                            <td style="width:300px;">{$result->name|escape}</td>
+                            <td style="width:500px;">{$result->content}</td>
                             <td style="width:100px; text-align:center;">
                                 <button style="background-color:#fff;border:0px;" disabled="disabled"
                                     onClick="MoveUp.call(this);return false;"><img
@@ -132,13 +115,13 @@
                                         src="{$smarty.const.HOME_DIR}image/down.svg"
                                         style="width: 25px;height:25px;" /></button>
                             </td>
-                            <td>{$result->quiz_info_no}</td>
+                            <td>{$result->quiz_id}</td>
                         </tr>
                         {else if $key == count($addlist)-1}
                         <tr width="100%">
                             <td style="width:150px;">{$result->rowno}</td>
-                            <td style="width:500px;">{$result->quiz_name|escape}</td>
-                            <td style="width:700px;">{$result->long_description}</td>
+                            <td style="width:300px;">{$result->name|escape}</td>
+                            <td style="width:500px;">{$result->content}</td>
                             <td style="width:100px; text-align:center;">
                                 <button style="background-color:#fff;border:0px;"
                                     onClick="MoveUp.call(this);return false;"><img
@@ -149,13 +132,13 @@
                                         src="{$smarty.const.HOME_DIR}image/down.svg"
                                         style="width: 25px;height:25px;" /></button>
                             </td>
-                            <td>{$result->quiz_info_no}</td>
+                            <td>{$result->quiz_id}</td>
                         </tr>
                         {else}
                         <tr width="100%">
                             <td style="width:150px;">{$result->rowno}</td>
-                            <td style="width:500px;">{$result->quiz_name|escape}</td>
-                            <td style="width:700px;">{$result->long_description}</td>
+                            <td style="width:300px;">{$result->name|escape}</td>
+                            <td style="width:500px;">{$result->content}</td>
                             <td style="width:100px; text-align:center;">
                                 <button style="background-color:#fff;border:0px;"
                                     onClick="MoveUp.call(this);return false;"><img
@@ -166,7 +149,7 @@
                                         src="{$smarty.const.HOME_DIR}image/down.svg"
                                         style="width: 25px;height:25px;" /></button>
                             </td>
-                            <td>{$result->quiz_info_no}</td>
+                            <td>{$result->quiz_id}</td>
                         </tr>
                         {/if}
                         {/foreach}
@@ -177,7 +160,7 @@
                     <tr>
                         <td>
                             <input type="button" value="" class="btn_resetbtn" title="リセット"
-                                onclick="javascript:cancel('{$form->test_info_no}','{$smarty.const.HOME_DIR}QuizInfoAssignment/index');">
+                                onclick="javascript:cancel('{$form->exam_id}','{$smarty.const.HOME_DIR}YNSQuizInfoAssignment/index');">
                             <input type="button" name="insert" value="" class="btn_insert" title="登録"
                                 onclick="javascript:insertQuizInfoAssignmentData();" />
                         </td>
@@ -190,8 +173,8 @@
         <!--footer-->
     </form>
 
-    <script>
-		{literal}
+    {literal}
+        <script>
 			//ページング
 			function doPage(pageNo){
 				$("#page").val(pageNo);
@@ -233,13 +216,13 @@
 			}
 
 			//リセット
-			function cancel(test_info_no, action){
+			function cancel(exam_id, action){
 
 				var menuOpen = document.getElementById('menuOpen').value;
 			    var menuStatus = document.getElementById('menuStatus').value;
 
 				$("#main_form").attr("action", action);
-				$("#test_info_no").val(test_info_no);
+				$("#exam_id").val(exam_id);
 			    $("#menuOpen").val(menuOpen);
 			    $("#menuStatus").val(menuStatus);
 			    $("#main_form").submit();
@@ -252,9 +235,8 @@
 				$("#main_form").submit();
 			}
 
-		{/literal}
-    </script>
-
+        </script>
+    {/literal}
     <!--footer-->
     {include file='footer.html'}
     <!--footer-->

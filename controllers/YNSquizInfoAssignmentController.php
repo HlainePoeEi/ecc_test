@@ -13,7 +13,7 @@ require_once 'conf/config.php';
 require_once 'dao/T_YNSQuizInfoAssignmentDao.php';
 require_once 'service/YNSQuizInfoService.php';
 require_once 'dto/T_Quiz_InfoDto.php';
-require_once 'dto/T_Test_Info_QuizDto.php';
+require_once 'dto/T_YNS_Exam_QuizDto.php';
 require_once 'dto/PageDto.php';
 require_once 'util/DateUtil.php';
 
@@ -52,9 +52,9 @@ class YNSQuizInfoAssignmentController extends BaseController
             $this->form->page = 1;
         }
 
-        if (isset($_SESSION['org_no'])) {
-            $this->form->org_no = $_SESSION['org_no'];
-        }
+        // if (isset($_SESS2ION['org_no'])) {
+        //     $this->form->org_no = $_SESSION['org_no'];
+        // }
 
         $service = new YNSQuizInfoService($this->pdo);
 
@@ -82,20 +82,20 @@ class YNSQuizInfoAssignmentController extends BaseController
 
             $service = new YNSQuizInfoService($this->pdo);
 
-            if (isset($_SESSION['org_no'])) {
-                $org_no = $_SESSION['org_no'];
-            }
+            // if (isset($_SESSION['org_no'])) {
+            //     $org_no = $_SESSION['org_no'];
+            // }
 
             if (isset($_SESSION['login_id'])) {
                 $login_id = $_SESSION['login_id'];
             }
 
-            $test_info_no = $this->form->test_info_no;
-            $count = $service->countExistingQuiz($org_no, $test_info_no);
+            $exam_id = $this->form->exam_id;
+            $count = $service->countExistingQuiz($exam_id);
 
             if ($count > 0) {
                 // 削除処理
-                $service->deleteQuizOnTest($org_no, $test_info_no);
+                $service->deleteQuizOnTest($exam_id);
             }
             $insertDataList = explode(',', $this->form->entryList);
 
@@ -104,18 +104,18 @@ class YNSQuizInfoAssignmentController extends BaseController
 
                 if ($insertData != null || $insertData != "") {
 
-                    $test_quizDto = new T_Test_Info_QuizDto();
-                    $test_quizDto->org_no = $org_no;
-                    $test_quizDto->test_info_no = $test_info_no;
-                    $test_quizDto->quiz_info_no = $insertData;
-                    $test_quizDto->disp_no = ++$display_no;
-                    $test_quizDto->del_flg = '0';
-                    $test_quizDto->create_dt = DateUtil::getDate("Y/m/d H:i:s");;
-                    $test_quizDto->update_dt = DateUtil::getDate("Y/m/d H:i:s");;
-                    $test_quizDto->creater_id = $_SESSION['manager_no'];
-                    $test_quizDto->updater_id = $_SESSION['manager_no'];
+                    $exam_quizDto = new T_YNS_Exam_QuizDto();
 
-                    $result = $service->addQuizDataOnTest($test_quizDto);
+                    $exam_quizDto->exam_id = $exam_id;
+                    $exam_quizDto->quiz_id = (int)$insertData;
+                    $exam_quizDto->disp_no = ++$display_no;
+                   
+                    // $test_quizDto->create_dt = DateUtil::getDate("Y/m/d H:i:s");;
+                    // $test_quizDto->update_dt = DateUtil::getDate("Y/m/d H:i:s");;
+                    // $test_quizDto->creater_id = $_SESSION['manager_no'];
+                    // $test_quizDto->updater_id = $_SESSION['manager_no'];
+
+                    $result = $service->addQuizDataOnTest($exam_quizDto);
                 }
             }
 
@@ -132,30 +132,27 @@ class YNSQuizInfoAssignmentController extends BaseController
     public function dataSearch($err_msg)
     {
 
-        $this->form = $this->form;
+        // $this->form = $this->form;
 
         $this->form->page = 1;
 
-        $test_info_no = $this->form->test_info_no;
-        if ($test_info_no != Null) {
-            if (isset($_SESSION['org_no'])) {
-                $this->form->org_no = $_SESSION['org_no'];
+        $exam_id = $this->form->exam_id;
+        if ($exam_id != Null) {
 
-                $service = new QuizInfoService($this->pdo);
-                $list = $service->getTestData($this->form->org_no, $test_info_no);
+                $service = new YNSQuizInfoService($this->pdo);
+                $list = $service->getTestData($exam_id);
 
                 if ($list != null) {
                     foreach ($list as $value) {
 
-                        $this->form->test_info_name = $value->test_info_name;
-                        $this->form->test_info_no = $value->test_info_no;
-
-                        $this->form->start_period = $value->start_period;
-                        $this->form->end_period = $value->end_period;
+                        $this->form->exam_name = $value->name;
+                        $this->form->exam_id = $value->exam_id;
+                        $this->form->start_date = $value->start_date;
+                        $this->form->end_date = $value->end_date;
                     }
                 }
-            }
-
+            //clear assign value
+            //clear_assign($addlist);
             $this->search($this->form);
 
             // メニュー情報を取得、セットする
@@ -163,7 +160,7 @@ class YNSQuizInfoAssignmentController extends BaseController
 
             $this->smarty->assign('err_msg', $err_msg);
             $this->smarty->assign('form', $this->form);
-            $this->smarty->display('quizInfoAssignment.html');
+            $this->smarty->display('ynsquizInfoAssignment.html');
         } else {
             TransitionHelper::sendException(E002);
             return;
@@ -182,7 +179,7 @@ class YNSQuizInfoAssignmentController extends BaseController
             $this->setBackData();
 
             // 受講者一覧画面へ遷移する
-            $this->dispatch('TestInfoList/Search');
+            $this->dispatch('YNSExamList/Search');
         } else {
 
             TransitionHelper::sendMaintenance($_SESSION['error_message']);
@@ -197,15 +194,6 @@ class YNSQuizInfoAssignmentController extends BaseController
     {
         $_SESSION['back_flg'] = true;
         $_SESSION['search_page'] = $this->form->search_page;
-        $_SESSION['search_start_period'] = $this->form->search_start_period;
-        $_SESSION['search_end_period'] = $this->form->search_end_period;
-        $_SESSION['search_test_info_name'] = $this->form->search_test_info_name;
-        $_SESSION['search_remark'] = $this->form->search_remark;
-        $_SESSION['search_rd_status1'] = $this->form->search_rd_status1;
-        $_SESSION['search_rd_status2'] = $this->form->search_rd_status2;
-        $_SESSION['search_rdstatus'] = $this->form->search_rdstatus;
-        $_SESSION['search_chk_status1'] = $this->form->search_chk_status1;
-        $_SESSION['search_chk_status2'] = $this->form->search_chk_status2;
         $_SESSION['search_status'] = $this->form->search_status;
 
         $_SESSION['search_page_til'] = $this->form->search_page_til;

@@ -2,18 +2,18 @@
 $(document).ready(function() {
 	// MSGのあるなし
 	if ( $(".error_msg").html() != "" ) {
-		$(".error_section").slideToggle('slow')
+		$(".error_section1").slideToggle('slow')
 	}
 	$(".post_btn1").on('click',function(){
 		$('#main_form').submit();
 	});
 	$(".close_icon").on('click',function(){
-		$(".error_section").slideToggle('slow');
+		$(".error_section1").slideToggle('slow');
 	});
 	$("#search").on('click',function(){
 		// MSGのあるなし
 		if ( $(".error_msg").html() != "" ) {
-		   	$(".error_section").slideToggle('slow');
+		   	$(".error_section1").slideToggle('slow');
 		}
 		return true;
 	});
@@ -126,7 +126,7 @@ function rearrangeLowerRowNo() {
 function insertQuizInfoAssignmentData() {
 	// formのデータを取得する
 	var homeDir = $('#home_dir').val();
-	var test_info_no = document.getElementById('test_info_no').value;
+	var exam_id = document.getElementById('exam_id').value;
 	// 下テーブルのデータを取得する
 	document.getElementById("entryList").value = readLowerTbl();
 	console.log(document.getElementById("entryList").value);
@@ -148,6 +148,7 @@ function readLowerTbl() {
 				tblDataArrStr += "," + lower_tbl.rows[j].cells[4].innerHTML;
 		}
 	}
+	console.log(tblDataArrStr);
 	return tblDataArrStr;
 }
 /*

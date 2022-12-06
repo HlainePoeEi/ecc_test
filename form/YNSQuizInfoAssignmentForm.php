@@ -17,6 +17,28 @@ require_once 'BaseForm.php';
 class YNSQuizInfoAssignmentForm extends BaseForm
 {
 
+    public $exam_id;
+
+    public $exam_name;
+
+    public $description;
+
+    public $exam_status;
+
+    public $exam_time;
+
+    public $start_date;
+
+    public $end_date;
+
+    public $quiz_name;
+
+    public $quiz_content;
+
+    public $quiz_remarks;
+
+    public $disp_no;
+
     //組織管理№
     public $org_no;
     //行数
