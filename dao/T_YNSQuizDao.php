@@ -335,7 +335,7 @@ class T_YNSQuizDao extends BaseDao
 		return count($list);
 	}
 
-	public function getQuizDataByQuizNoDisable($orgNo, $quizInfoNo)
+	public function getQuizDataByQuizNoDisable($quizInfoNo)
 	{
 
 		$query .= " SELECT  testquiz.quiz_info_no quiz_info_no   ";
