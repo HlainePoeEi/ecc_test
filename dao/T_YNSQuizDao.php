@@ -80,7 +80,8 @@ class T_YNSQuizDao extends BaseDao
 		return count($list);
 	}
 
-	public function getQuizSearchData($param, $flg){
+	public function getQuizSearchData($param, $flg)
+	{
 
 		$query = " SELECT ";
 		$query .= " quiz.name name ";
@@ -88,51 +89,51 @@ class T_YNSQuizDao extends BaseDao
 		$query .= " FROM ";
 		$query .= " T_YNSQUIZ quiz ";
 
-		if(! StringUtil::isEmpty($param->name) || ! StringUtil::isEmpty($param->content) || ! StringUtil::isEmpty($param->remarks)) {
+		if (!StringUtil::isEmpty($param->name) || !StringUtil::isEmpty($param->content) || !StringUtil::isEmpty($param->remarks)) {
 			$query .= " WHERE ";
 		}
 
-		if (! StringUtil::isEmpty($param->name)) {
+		if (!StringUtil::isEmpty($param->name)) {
 			$query .= "	(quiz.name LIKE :name) ";
-		}elseif(! StringUtil::isEmpty($param->content) || ! StringUtil::isEmpty($param->remarks)){
+		} elseif (!StringUtil::isEmpty($param->content) || !StringUtil::isEmpty($param->remarks)) {
 			$query .= "	(quiz.name = '') ";
 		}
 
-		if (! StringUtil::isEmpty($param->content)) {
+		if (!StringUtil::isEmpty($param->content)) {
 			$query .= " OR (quiz.content LIKE :content ) ";
 		}
 
-		if (! StringUtil::isEmpty($param->remarks)) {
+		if (!StringUtil::isEmpty($param->remarks)) {
 			$query .= " OR (quiz.remarks LIKE :remarks) ";
 		}
-		
+
 		$query .= " ORDER BY ";
 		$query .= " name ASC";
 		$query .= " ,content ASC";
 
 		LogHelper::logDebug($query);
-		
-		$stmt = $this->pdo->prepare ( $query );
 
-		if (! StringUtil::isEmpty($param->name)) {
+		$stmt = $this->pdo->prepare($query);
 
-			$name = '%'.$param->name.'%';
-			$stmt->bindParam(":name",$name, PDO::PARAM_STR);
+		if (!StringUtil::isEmpty($param->name)) {
+
+			$name = '%' . $param->name . '%';
+			$stmt->bindParam(":name", $name, PDO::PARAM_STR);
 		}
 
-		if (! StringUtil::isEmpty($param->content)) {
+		if (!StringUtil::isEmpty($param->content)) {
 
-			$content = '%'.$param->content.'%';
-			$stmt->bindParam(":content",$content, PDO::PARAM_STR);
+			$content = '%' . $param->content . '%';
+			$stmt->bindParam(":content", $content, PDO::PARAM_STR);
 		}
 
-		if (! StringUtil::isEmpty($param->remarks)) {
+		if (!StringUtil::isEmpty($param->remarks)) {
 
-			$remarks = '%'.$param->remarks.'%';
-			$stmt->bindParam(":remarks",$remarks, PDO::PARAM_STR);
+			$remarks = '%' . $param->remarks . '%';
+			$stmt->bindParam(":remarks", $remarks, PDO::PARAM_STR);
 		}
 
-		return parent::getDataList( $stmt, get_class(new T_YNSQuizDto()) );
+		return parent::getDataList($stmt, get_class(new T_YNSQuizDto()));
 	}
 
 	public function getQuizListData($param, $flg)
@@ -312,7 +313,7 @@ class T_YNSQuizDao extends BaseDao
 		return count($list);
 	}
 
-	public function getQuizDataByQuizNoDisable($orgNo, $quizInfoNo)
+	public function getQuizDataByQuizNoDisable($quizInfoNo)
 	{
 
 		$query .= " SELECT  testquiz.quiz_info_no quiz_info_no   ";
