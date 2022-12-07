@@ -8,7 +8,7 @@
  *****************************************************/
 
 require_once 'dao/T_YMHTestInfoDao.php';
-require_once 'dto/T_YMHTestInfoDto.php';
+require_once 'dto/T_YNSExamDto.php';
 require_once 'service/BaseService.php';
 
 class YMHTestInfoService extends BaseService{
