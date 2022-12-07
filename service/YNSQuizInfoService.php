@@ -152,11 +152,11 @@ class YNSQuizInfoService extends BaseService
         return $dao->getTestData($exam_id);
     }
 
-    public function getQuizDataByQuizNoDisable($orgNo, $quizInfoNo)
+    public function getQuizDataByQuizNoDisable($quizInfoNo)
     {
         // データベース接続
         $dao = new T_YNSQuizDao();
-        return $dao->getQuizDataByQuizNoDisable($orgNo, $quizInfoNo);
+        return $dao->getQuizDataByQuizNoDisable($quizInfoNo);
     }
 
     public function bulkInsertWithPdo($list)
