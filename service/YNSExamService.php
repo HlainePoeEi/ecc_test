@@ -101,12 +101,12 @@ class YNSExamService extends BaseService
 	// 	return $dao->getOptionList($item_no, $quiz_info_no);
 	// }
 	// //テストプレビュー
-	// public function getListQuizForPreview($org_no, $test_no)
-	// {
-	// 	// データベース接続
-	// 	$dao = new T_TestInfoDao();
-	// 	return $dao->getListQuizForPreview($org_no, $test_no);
-	// }
+	public function getListQuizForPreview($exam_id)
+	{
+		// データベース接続
+		$dao = new T_YNSExamDao();
+		return $dao->getListQuizForPreview($exam_id);
+	}
 
 	public function getExamListData($form, $flg)
 	{
@@ -202,13 +202,6 @@ class YNSExamService extends BaseService
 		// データベース接続
 		$dao = new T_YNSExamDao();
 		return $dao->getOptionList($item_no, $quiz_info_no);
-	}
-	//テストプレビュー
-	public function getListQuizForPreview($org_no, $test_no)
-	{
-		// データベース接続
-		$dao = new T_YNSExamDao();
-		return $dao->getListQuizForPreview($org_no, $test_no);
 	}
 
 	public function getItemData($test_no, $org_no)

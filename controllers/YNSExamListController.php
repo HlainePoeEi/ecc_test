@@ -79,8 +79,8 @@ class YNSExamListController extends BaseController
             $this->form->search_page_order_column_til = $_SESSION['search_page_order_column_til'];
             $this->form->search_page_order_dir_til = $_SESSION['search_page_order_dir_til'];
 
-            $this->form->start_date = $_SESSION['search_start_period'];
-            $this->form->end_date = $_SESSION['search_end_period'];
+            // $this->form->start_date = $_SESSION['search_start_period'];
+            // $this->form->end_date = $_SESSION['search_end_period'];
             if (empty($this->form->start_date)) {
                 $this->form->start_date = DateUtil::getPreviousDate('Y/m/d');
                 $this->form->end_date = DateUtil::getNextDate('Y/m/d');
@@ -134,5 +134,4 @@ class YNSExamListController extends BaseController
             return;
         }
     }
-
 }
