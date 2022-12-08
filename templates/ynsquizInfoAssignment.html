@@ -78,7 +78,7 @@
                     </thead>
                     {if count($addlist) == 1}
                     <tbody>
-                        {foreach $addlist as $result}
+                        {foreach $addlist as $key =>$result}
                         <tr width="100%">
                             <td style="width:150px;">{$result->rowno}</td>
                             <td style="width:300px;">{$result->name|escape}</td>
@@ -174,68 +174,68 @@
     </form>
 
     {literal}
-        <script>
-			//ページング
-			function doPage(pageNo){
-				$("#page").val(pageNo);
-				$("#main_form").submit();
-			}
+    <script>
+        //ページング
+        function doPage(pageNo) {
+            $("#page").val(pageNo);
+            $("#main_form").submit();
+        }
 
-			//更新ボタン処理
-			function trans(manager_no,action){
+        //更新ボタン処理
+        function trans(manager_no, action) {
 
-				var menuOpen = document.getElementById('menuOpen').value;
-		        var menuStatus = document.getElementById('menuStatus').value;
-				$("#main_form").attr("action", action);
-			    $("#manager_no").val(manager_no);
-			    $("#menuOpen").val(menuOpen);
-			    $("#menuStatus").val(menuStatus);
-			    $("#main_form").submit();
-			}
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+            $("#main_form").attr("action", action);
+            $("#manager_no").val(manager_no);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
 
-			//登録ボタン処理
-			function doInsert(action){
+        //登録ボタン処理
+        function doInsert(action) {
 
-				 var menuOpen = document.getElementById('menuOpen').value;
-		         var menuStatus = document.getElementById('menuStatus').value;
-				 $("#main_form").attr("action", action);
-			     $("#menuOpen").val(menuOpen);
-			     $("#menuStatus").val(menuStatus);
-			     $("#main_form").submit();
-			}
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+            $("#main_form").attr("action", action);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
 
-			//登録ボタン処理
-			function doBack(action){
+        //登録ボタン処理
+        function doBack(action) {
 
-				var menuOpen = document.getElementById('menuOpen').value;
-		        var menuStatus = document.getElementById('menuStatus').value;
-				$("#main_form").attr("action", action);
-			    $("#menuOpen").val(menuOpen);
-			    $("#menuStatus").val(menuStatus);
-			    $("#main_form").submit();
-			}
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
+            $("#main_form").attr("action", action);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
 
-			//リセット
-			function cancel(exam_id, action){
+        //リセット
+        function cancel(exam_id, action) {
 
-				var menuOpen = document.getElementById('menuOpen').value;
-			    var menuStatus = document.getElementById('menuStatus').value;
+            var menuOpen = document.getElementById('menuOpen').value;
+            var menuStatus = document.getElementById('menuStatus').value;
 
-				$("#main_form").attr("action", action);
-				$("#exam_id").val(exam_id);
-			    $("#menuOpen").val(menuOpen);
-			    $("#menuStatus").val(menuStatus);
-			    $("#main_form").submit();
-			}
+            $("#main_form").attr("action", action);
+            $("#exam_id").val(exam_id);
+            $("#menuOpen").val(menuOpen);
+            $("#menuStatus").val(menuStatus);
+            $("#main_form").submit();
+        }
 
-			//戻るボタン処理
-			function doBack(action){
+        //戻るボタン処理
+        function doBack(action) {
 
-				$("#main_form").attr("action", action);
-				$("#main_form").submit();
-			}
+            $("#main_form").attr("action", action);
+            $("#main_form").submit();
+        }
 
-        </script>
+    </script>
     {/literal}
     <!--footer-->
     {include file='footer.html'}

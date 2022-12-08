@@ -298,7 +298,7 @@
                                         <!--20220309_事業部担当者対応-->
                                         {if $admin_kbn != "005"}
                                         <input type="button" class="btn_preview_list" name="edit" title="確認"
-                                            onclick="preview('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoPreview/index')">
+                                            onclick="preview('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSTestInfoPreview/index')">
                                         {/if}
                                     </td>
                                     <td width="30px" align="center"><input type="button" class="btn_edit" name="edit"
@@ -585,7 +585,7 @@
         }
 
         // プレビューボタン処理
-        function preview(org_no, test_info_no, action) {
+        function preview(exam_id, action) {
 
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
@@ -616,8 +616,7 @@
 
             $("#main_form").attr("action", action);
             $("#screen_mode").val("preview");
-            $("#org_no").val(org_no);
-            $("#test_info_no").val(test_info_no);
+            $("#exam_id").val(exam_id);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
             $("#main_form").submit();
@@ -656,15 +655,15 @@
         function checkDelete(exam_id, action) {
             alertDialog = confirm("Are you sure to delete this exam?");
             if (alertDialog == false) {
-            return false;
+                return false;
             } else {
-            var menuOpen = document.getElementById("menuOpen").value;
-            var menuStatus = document.getElementById("menuStatus").value;
-            $("#main_form").attr("action", action);
-            $("#exam_id").val(exam_id);
-            $("#menuOpen").val(menuOpen);
-            $("#menuStatus").val(menuStatus);
-            $("#main_form").submit();
+                var menuOpen = document.getElementById("menuOpen").value;
+                var menuStatus = document.getElementById("menuStatus").value;
+                $("#main_form").attr("action", action);
+                $("#exam_id").val(exam_id);
+                $("#menuOpen").val(menuOpen);
+                $("#menuStatus").val(menuStatus);
+                $("#main_form").submit();
             }
         }
 
