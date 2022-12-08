@@ -55,11 +55,10 @@ class YNSQuizDetailsPreviewController extends BaseController
 
             // データベース接続
             $qzInfoService = new YNSQuizInfoService($this->pdo);
-            $qzItemDtService = new QuizDetailsService($this->pdo);
-            $qzOptDtService = new QuizDetailsService($this->pdo);
 
             //Tクイズ情報テーブルから取得
             $dataInfo = $qzInfoService->getQuizDataByQuizNo($quiz_id);
+
 
             //クイズア情報Noの存在チャック
 
@@ -69,28 +68,10 @@ class YNSQuizDetailsPreviewController extends BaseController
             $items = array(array());
             $options = array(array(array()));
 
-            $service = new YNSExamService($this->pdo);
-            $itemList = $service->getItemList($quiz_id);
-            LogHelper::logDebug("Item List" . count($itemList));
-            if (!empty($itemList)) {
-                for ($j = 0; $j < count($itemList); $j++) {
-                    $i=0;
-                    $items[$i][$j] = $itemList[$j];
-                    $optionList = $service->getOptionList($items[$i][$j]->quiz_item_no, $quiz_id);
 
-                    if (!empty($optionList)) {
-                        for ($k = 0; $k < count($optionList); $k++) {
-                            $options[$i][$j][$k] = $optionList[$k];
-                        }
-                    }
-                }
-            }
+            $audio_file = sprintf(F001, AUDIO_FILE, 'YNSQuiz', 'YNSQuizInfo', 'ynsAudio');
 
-            $audio_file = sprintf(F001, AUDIO_FILE, 'YNSQuiz', 'YNSQuizInfo', 'ynSAudio');
-
-            LogHelper::logDebug("audio file name is " . $dataInfo->audio_name);
-            LogHelper::logDebug("folder_check is " . $folder_check);
-            LogHelper::logDebug("audio_file is " . $audio_file);
+            LogHelper::logDebug("audio File : " . $audio_file);
 
             $this->smarty->assign('folder_check', $_SERVER["DOCUMENT_ROOT"] . ADMIN_HOME_DIR);
             $this->smarty->assign('audio_file', $audio_file);
@@ -101,8 +82,8 @@ class YNSQuizDetailsPreviewController extends BaseController
             // $this->smarty->assign('$audio_name', $dataInfo->audio_name);
 
             $this->smarty->assign('error_msg', "");
-            $this->smarty->assign('form', $this->form);
-            $this->smarty->display('quizDetailsPreview.html');
+            $this->smarty->assign('dataInfo', $dataInfo);
+            $this->smarty->display('ynsQuizDetailsPreview.html');
         }
     }
 

@@ -514,7 +514,7 @@ class T_YNSExamDao extends BaseDao
         return parent::getDataList($stmt, get_class(new T_Test_Info_QuizDto()));
     }
 
-    public function getItemList($quiz_info_no)
+    public function getItemList($quiz_id)
     {
         $query = " SELECT ";
         $query .= " tquizitem.quiz_type quiz_type ";

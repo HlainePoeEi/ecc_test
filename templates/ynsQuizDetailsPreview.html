@@ -332,77 +332,33 @@
                 <input type="hidden" id="search_page_order_dir_qil" name="search_page_order_dir_qil"
                     value="{$form->search_page_order_dir_qil}" />
 
+                {if !empty($dataInfo)} {foreach $dataInfo as $result}
                 <div class="qz_no">
                     <input type="hidden" id="quiz_info_no" value="{$form->quiz_info_no}" name="quiz_info_no">
-                    <label class="qz_name">{$form->quiz_name|escape}</label>
+                    <label class="qz_name"><b>Quiz Name:</b>{$result->name|escape}</label>
                 </div>
+                <br><br><br>
                 <div style="word-break : break-all;">
-                    <label style="white-space: pre-wrap;"><b>Q1.</b> {$form->long_description}</label>
+                    <label style="white-space: pre-wrap;"><b>Q1.</b> {$result->content}</label>
                 </div>
-                <input type="hidden" id="audio_name" value="{$form->audio_name}" name="audio_name">
+                <br><br><br>
+                <input type="hidden" id="audio_name" value="{$result->audio_name}" name="audio_name">
                 <div style="margin-left:60px;">
-                    {if !empty($form->audio_name)}
-                    {assign var="audiomsg" value="{$folder_check}{$audio_file}/{$form->audio_name}"}
-                    {if file_exists({$audiomsg})}
+
+                    {if !empty($result->audio_name)}
+                    {assign var="audiomsg" value="{$folder_check}{$audio_file}/{$result->audio_name}"}
+                    {if !empty({$audiomsg})}
                     <span>
-                        <audio id="resQuiz_audio_{$i}" class="quiz_audio" style="display:none">
-                            <source src="{$smarty.const.ADMIN_HOME_DIR}/{$audio_file}/{$form->audio_name}"
+                        <audio id="resQuiz_audio_{$i}" class="quiz_audio" controls>
+                            <source src="{$smarty.const.HOME_DIR}/{$audio_file}/{$result->audio_name}"
                                 type="audio/mpeg">
                         </audio>
                         <input type="hidden" id="play_flg{$i}" value="false" />
                     </span>
-                    <span class="btnAudio" id="btnAudio{$i}">
-                        <a id="aBtn{$i}" onclick="javascript:playAudio('{$i}')">
-                            <img src="{$smarty.const.HOME_DIR}image/play.svg" style="width:45px;"
-                                id="play_img{$i}"></a></a>
-                        <label id="lblAudio{$i}"></label>
-                    </span>
+
                     {/if}
                     {/if}
                 </div>
-                <input type="hidden" id="total_item_{$i}" value="{count($items[$i])}" />
-                {if !empty($items[$i])}
-                {foreach $items[$i] as $j=>$item}
-
-                <div class="items">
-                    {if !empty($items[$i][$j]->item_description) || $items[$i][$j]->item_description != ""}
-                    <p>{$items[$i][$j]->item_description}</p>
-                    {/if}
-                    <div style="margin_left:20px;">
-                        <input type="hidden" id="item_id_{$i}_{$j}" value="{$items[$i][$j]->quiz_item_no}">
-                        <input type="hidden" id="type_{$i}_{$j}" name="type" value="{$items[$i][$j]->quiz_type}" />
-                        {if !empty($optionList)}
-                        <input type="hidden" id="total_option_{$i}_{$j}" value="{count($options[$i][$j])}" />
-                        {foreach $options[$i][$j] as $k=>$option}
-                        {if !empty($options[$i][$j][$k])}
-
-                        <input type="hidden" id="option_id_{$i}_{$j}_{$k}" value="{$options[$i][$j][$k]->option_no}" />
-
-                        {if $items[$i][$j]->quiz_type eq 001}
-                        <table id="tbl_{$j}_{$k}" style="width: 95%;" class="tableRadio">
-                            <tr class="radio_tr" id="tr_{$i}_{$j}_{$k}" name="tr_{$i}_{$j}">
-                                <td width="95%" class="radio_td" id="td_{$i}_{$j}_{$k}" name="td_{$i}_{$j}">
-
-                                    <input class="btnRadio" type="radio" name="rdo_{$i}_{$j}" id="rdo_{$i}_{$j}_{$k}"
-                                        value="{$options[$i][$j][$k]->correct_flag}">
-                                    <label for="rdo_{$i}_{$j}_{$k}">{$options[$i][$j][$k]->option_description}</label>
-
-                                </td>
-                            </tr>
-                        </table>
-                        {else}
-                        <input type="text" id="txt_{$i}_{$j}_{$k}" name="ans_{$i}_{$j}_{$k}" class="textFill"
-                            maxlength="100"><br>
-                        <input type="hidden" id="ans_txt_{$i}_{$j}_{$k}" name="txt_ans"
-                            value="{$options[$i][$j][$k]->option_description}">
-                        {/if}
-                        {/if}
-                        {/foreach}
-                        {/if}
-
-                    </div>
-                </div>
-
                 {/foreach}
                 {/if}
                 <br />
