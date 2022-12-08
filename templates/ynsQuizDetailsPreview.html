@@ -151,14 +151,12 @@
             });
 
         });
-        function doBack(screen_mode, quiz_info_no, action, uid) {
+        function doBack(quiz_id, action) {
             var menuOpen = document.getElementById('menuOpen').value;
             var menuStatus = document.getElementById('menuStatus').value;
 
-            $("#quiz_info_no").val(quiz_info_no);
-            $("#screen_mode").val(screen_mode);
+            $("#quiz_id").val(quiz_id);
             $("#main_form").attr("action", action);
-            $("#uid").val(uid);
             $("#menuOpen").val(menuOpen);
             $("#menuStatus").val(menuStatus);
 
@@ -270,7 +268,7 @@
 </head>
 
 <body class="pushmenu-push">
-    <form id="main_form" action="{$smarty.const.HOME_DIR}QuizInfoList/search" method="post">
+    <form id="main_form" action="{$smarty.const.HOME_DIR}YNSQuizInfoList/index" method="post">
         {include file='leftMenu.html'}
         <div class="divHeader">
             <!--header-->
@@ -298,8 +296,8 @@
                 <p>
                     <span class="title">テスト情報 / クイズプレビュー</span>
                     <span style="float:right;padding-right:10px;">
-                        <input type="button" value="" title="戻る" class="btn_back"
-                            onclick="doBack('update','{$form->quiz_info_no}','{$smarty.const.HOME_DIR}QuizDetailsPreview/back', '{$form->uid}')" />
+                        <input type="button" title="戻る" value="" id="btn_back" class="btn_back"
+                            onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizDetailsPreview/back')">
                     </span>
                 </p>
                 <!-- 戻る処理用データ -->
@@ -335,11 +333,11 @@
                 {if !empty($dataInfo)} {foreach $dataInfo as $result}
                 <div class="qz_no">
                     <input type="hidden" id="quiz_info_no" value="{$form->quiz_info_no}" name="quiz_info_no">
-                    <label class="qz_name"><b>Quiz Name:</b>{$result->name|escape}</label>
+                    <label class="qz_name">Quiz Name : <b>{$result->name|escape}</b></label>
                 </div>
                 <br><br><br>
                 <div style="word-break : break-all;">
-                    <label style="white-space: pre-wrap;"><b>Q1.</b> {$result->content}</label>
+                    <label style="white-space: pre-wrap;"><b>Question 1.</b> {$result->content}</label>
                 </div>
                 <br><br><br>
                 <input type="hidden" id="audio_name" value="{$result->audio_name}" name="audio_name">

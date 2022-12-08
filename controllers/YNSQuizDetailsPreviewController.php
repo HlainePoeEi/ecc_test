@@ -95,9 +95,9 @@ class YNSQuizDetailsPreviewController extends BaseController
 
         if ($this->check_login() == true) {
             $org_no = $this->form->org_no;
-            $quiz_info_no = $this->form->quiz_info_no;
-            $quiz_name = $this->form->quiz_name;
-            $long_description = $this->form->long_description;
+            $quiz_id = $this->form->quiz_id;
+            $name = $this->form->name;
+            $content = $this->form->content;
             $remarks = $this->form->remarks;
             $audio_file = $this->form->audio_file;
             $input_audio_file = $this->form->input_audio_file;
@@ -106,28 +106,22 @@ class YNSQuizDetailsPreviewController extends BaseController
             $gamen_name = $this->form->gamen_name;
 
             $this->form->org_no = $org_no;
-            $this->form->quiz_info_no = $quiz_info_no;
-            $this->form->quiz_name = $quiz_name;
-            $this->form->long_description = $long_description;
+            $this->form->quiz_id = $quiz_id;
+            $this->form->name = $name;
+            $this->form->content = $content;
             $this->form->remarks = $remarks;
             $this->form->audio_file = $audio_file;
             $this->form->input_audio_file = $input_audio_file;
             $this->form->audio_del_flg = $audio_del_flg;
             $this->form->audio_chk_del = $audio_chk_del;
             $this->form->gamen_name = $gamen_name;
-            $this->form->disable_mode = $this->form->disable_mode;
             $this->form->screen_mode = $this->form->screen_mode;
 
             $this->smarty->assign('info_msg', "");
             $this->smarty->assign('error_msg', "");
             $this->smarty->assign('form', $this->form);
             $this->setBackData();
-
-            if ($gamen_name != "") {
-                $this->smarty->display('quizInfoRegist.html');
-            } else {
-                $this->dispatch('QuizInfoList/Search');
-            }
+            $this->smarty->display('ynsQuizInfoList.html');
         } else {
             TransitionHelper::sendException(E002);
             return;
