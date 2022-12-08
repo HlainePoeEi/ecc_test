@@ -24,4 +24,10 @@ class T_YNSQuizDto extends BaseDto
     public $audio_name;
     //更新備考
     public $remarks;
+
+    public $option1;
+    public $option2;
+    public $option3;
+    public $option4;
+    public $correct;
 }
