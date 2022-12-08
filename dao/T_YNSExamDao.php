@@ -2,9 +2,10 @@
 require_once 'BaseDao.php';
 require_once 'dto/T_YNSExamDto.php';
 require_once 'dto/T_Test_Info_QuizDto.php';
-//require_once 'dto/T_Quiz_ItemDto.php';
-//require_once 'dto/T_Quiz_Item_OptionDto.php';
-//require_once 'dto/T_At_Test_Info_ResultDto.php';
+require_once 'dto/T_YNS_Exam_QuizDto.php';
+require_once 'dto/T_Quiz_ItemDto.php';
+require_once 'dto/T_Quiz_Item_OptionDto.php';
+// require_once 'dto/T_At_Test_Info_ResultDto.php';
 
 /**
  * T_TestInfoDAOクラス
@@ -548,39 +549,35 @@ class T_YNSExamDao extends BaseDao
         return parent::getDataList($stmt, get_class(new T_Quiz_Item_OptionDto()));
     }
     // テストクイズ
-    public function getListQuizForPreview($org_no, $test_info_no)
+    public function getListQuizForPreview($exam_id)
     {
         $query = " SELECT ";
-        $query .= " test.test_info_name test_info_name ";
-        $query .= " ,test.test_time test_time ";
-        $query .= " ,test.test_info_no test_info_no ";
-        $query .= " ,quiz.quiz_info_no quiz_info_no ";
+        $query .= " test.name name ";
+        $query .= " ,test.time time ";
+        $query .= " ,test.exam_id exam_id ";
+        $query .= " ,quiz.quiz_id quiz_id ";
         $query .= " ,quiz.audio_name audio_name ";
-        $query .= " ,quiz.quiz_name quiz_name ";
-        $query .= " ,quiz.long_description quiz_description ";
-        $query .= " ,test.org_no org_no ";
-        $query .= " ,test.long_description long_description ";
+        $query .= " ,quiz.name name ";
+        $query .= " ,quiz.content content ";
+
+        $query .= " ,test.description description ";
         $query .= " FROM ";
-        $query .= " T_TEST_INFO_QUIZ testquiz";
-        $query .= " INNER JOIN T_TEST_INFO test";
-        $query .= " ON testquiz.test_info_no = test.test_info_no ";
-        $query .= " AND test.org_no = testquiz.org_no ";
-        $query .= " AND testquiz.del_flg = '0' ";
-        $query .= " INNER JOIN T_QUIZ_INFO quiz";
-        $query .= " ON testquiz.quiz_info_no = quiz.quiz_info_no ";
-        $query .= " AND testquiz.org_no = quiz.org_no ";
-        $query .= " AND quiz.del_flg = '0' ";
-        $query .= " WHERE test.test_info_no = :test_info_no ";
-        $query .= " AND test.org_no = :org_no ";
-        $query .= " AND test.del_flg = '0' ";
+        $query .= " t_yns_exam_quiz testquiz";
+        $query .= " INNER JOIN t_ynsexam test";
+        $query .= " ON testquiz.exam_id = test.exam_id ";
+
+        $query .= " INNER JOIN t_ynsquiz quiz";
+        $query .= " ON testquiz.quiz_id = quiz.quiz_id ";
+
+        $query .= " WHERE test.exam_id = :exam_id ";
         $query .= " ORDER BY ";
         $query .= " testquiz.disp_no ASC";
 
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(":org_no", $org_no, PDO::PARAM_STR);
-        $stmt->bindParam(":test_info_no", $test_info_no, PDO::PARAM_STR);
 
-        return parent::getDataList($stmt, get_class(new T_Test_Info_QuizDto()));
+        $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
+
+        return parent::getDataList($stmt, get_class(new T_YNS_Exam_QuizDto()));
     }
 
     public function getItemData($test_no, $org_no)
@@ -651,57 +648,57 @@ class T_YNSExamDao extends BaseDao
     /**
      * AT試験結果取得処理
      */
-    public function getTestResultData($form)
-    {
-        $query = " SELECT ";
-        $query .= " test_result.student_no student_no ";
-        $query .= " ,test_result.test_info_no test_info_no ";
-        $query .= " ,test_result.org_no org_no ";
-        $query .= " ,test.test_time test_time ";
-        $query .= " ,test.long_description long_description ";
-        $query .= " ,texp.explanation explanation";
-        $query .= " ,test_result.quiz_item_no quiz_item_no ";
-        $query .= " ,test_result.quiz_info_no quiz_info_no ";
-        $query .= " ,test_result.ans_option_no ans_option_no ";
-        $query .= " ,test_result.correct_flag correct_flag ";
-        $query .= " ,date_format(test_result.answer_dt,'%Y/%m/%d') as answer_dt ";
-        $query .= " FROM ";
-        $query .= " T_AT_TEST_INFO_RESULT test_result";
-        $query .= " INNER JOIN T_TEST_INFO test";
-        $query .= " ON test_result.test_info_no = test.test_info_no ";
-        $query .= " AND test_result.org_no = test.org_no ";
-        $query .= " AND test.del_flg = '0' ";
-        $query .= " INNER JOIN T_TEST_INFO_QUIZ testquiz";
-        $query .= " ON test.test_info_no = testquiz.test_info_no ";
-        $query .= " AND test.org_no = testquiz.org_no ";
-        $query .= " AND test_result.quiz_info_no = testquiz.quiz_info_no ";
+    // public function getTestResultData($form)
+    // {
+    //     $query = " SELECT ";
+    //     $query .= " test_result.student_no student_no ";
+    //     $query .= " ,test_result.test_info_no test_info_no ";
+    //     $query .= " ,test_result.org_no org_no ";
+    //     $query .= " ,test.test_time test_time ";
+    //     $query .= " ,test.long_description long_description ";
+    //     $query .= " ,texp.explanation explanation";
+    //     $query .= " ,test_result.quiz_item_no quiz_item_no ";
+    //     $query .= " ,test_result.quiz_info_no quiz_info_no ";
+    //     $query .= " ,test_result.ans_option_no ans_option_no ";
+    //     $query .= " ,test_result.correct_flag correct_flag ";
+    //     $query .= " ,date_format(test_result.answer_dt,'%Y/%m/%d') as answer_dt ";
+    //     $query .= " FROM ";
+    //     $query .= " T_AT_TEST_INFO_RESULT test_result";
+    //     $query .= " INNER JOIN T_TEST_INFO test";
+    //     $query .= " ON test_result.test_info_no = test.test_info_no ";
+    //     $query .= " AND test_result.org_no = test.org_no ";
+    //     $query .= " AND test.del_flg = '0' ";
+    //     $query .= " INNER JOIN T_TEST_INFO_QUIZ testquiz";
+    //     $query .= " ON test.test_info_no = testquiz.test_info_no ";
+    //     $query .= " AND test.org_no = testquiz.org_no ";
+    //     $query .= " AND test_result.quiz_info_no = testquiz.quiz_info_no ";
 
-        $query .= " INNER JOIN T_QUIZ_INFO tquiz";
-        $query .= " ON test.org_no = tquiz.org_no ";
-        $query .= " AND testquiz.quiz_info_no = tquiz.quiz_info_no ";
-        $query .= " AND testquiz.del_flg = '0' ";
+    //     $query .= " INNER JOIN T_QUIZ_INFO tquiz";
+    //     $query .= " ON test.org_no = tquiz.org_no ";
+    //     $query .= " AND testquiz.quiz_info_no = tquiz.quiz_info_no ";
+    //     $query .= " AND testquiz.del_flg = '0' ";
 
-        $query .= " LEFT JOIN T_EXPLANATION texp";
-        $query .= " ON tquiz.remarks = texp.remarks ";
-        $query .= " AND test_result.quiz_item_no = texp.disp_no ";
-        $query .= " AND texp.del_flg = '0' ";
+    //     $query .= " LEFT JOIN T_EXPLANATION texp";
+    //     $query .= " ON tquiz.remarks = texp.remarks ";
+    //     $query .= " AND test_result.quiz_item_no = texp.disp_no ";
+    //     $query .= " AND texp.del_flg = '0' ";
 
-        $query .= " WHERE test_result.org_no = :org_no ";
-        $query .= " AND test_result.student_no = :student_no ";
-        $query .= " AND test_result.test_info_no = :test_info_no ";
-        $query .= " AND test_result.at_report_no = :at_report_no ";
-        $query .= " AND test_result.del_flg = '0' ";
-        $query .= " ORDER BY ";
-        $query .= " testquiz.disp_no ASC,test_result.quiz_item_no ASC";
+    //     $query .= " WHERE test_result.org_no = :org_no ";
+    //     $query .= " AND test_result.student_no = :student_no ";
+    //     $query .= " AND test_result.test_info_no = :test_info_no ";
+    //     $query .= " AND test_result.at_report_no = :at_report_no ";
+    //     $query .= " AND test_result.del_flg = '0' ";
+    //     $query .= " ORDER BY ";
+    //     $query .= " testquiz.disp_no ASC,test_result.quiz_item_no ASC";
 
-        $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(":org_no", $form->org_no, PDO::PARAM_STR);
-        $stmt->bindParam(":student_no", $form->student_no, PDO::PARAM_STR);
-        $stmt->bindParam(":test_info_no", $form->test_info_no, PDO::PARAM_STR);
-        $stmt->bindParam(":at_report_no", $form->at_report_no, PDO::PARAM_STR);
+    //     $stmt = $this->pdo->prepare($query);
+    //     $stmt->bindParam(":org_no", $form->org_no, PDO::PARAM_STR);
+    //     $stmt->bindParam(":student_no", $form->student_no, PDO::PARAM_STR);
+    //     $stmt->bindParam(":test_info_no", $form->test_info_no, PDO::PARAM_STR);
+    //     $stmt->bindParam(":at_report_no", $form->at_report_no, PDO::PARAM_STR);
 
-        return parent::getDataList($stmt, get_class(new T_At_Test_Info_ResultDto()));
-    }
+    //     return parent::getDataList($stmt, get_class(new T_At_Test_Info_ResultDto()));
+    // }
 
     public function deleteExamInfo($dto)
     {
