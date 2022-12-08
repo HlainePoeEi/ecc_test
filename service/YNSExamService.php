@@ -190,11 +190,11 @@ class YNSExamService extends BaseService
 		return $dao->getQuizResultDetailListData($form, $this->pdo);
 	}
 
-	public function getItemList($quiz_info_no)
+	public function getItemList($quiz_id)
 	{
 		// データベース接続
 		$dao = new T_YNSExamDao();
-		return $dao->getItemList($quiz_info_no);
+		return $dao->getItemList($quiz_id);
 	}
 
 	public function getOptionList($item_no, $quiz_info_no)
