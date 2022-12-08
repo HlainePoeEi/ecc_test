@@ -299,6 +299,7 @@
                         <input type="button" title="戻る" value="" id="btn_back" class="btn_back"
                             onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizDetailsPreview/back')">
                     </span>
+                    <br><br>
                 </p>
                 <!-- 戻る処理用データ -->
                 <input type="hidden" id="gamen_name" name="gamen_name" value="{$form->gamen_name}" />
@@ -333,13 +334,13 @@
                 {if !empty($dataInfo)} {foreach $dataInfo as $result}
                 <div class="qz_no">
                     <input type="hidden" id="quiz_info_no" value="{$form->quiz_info_no}" name="quiz_info_no">
-                    <label class="qz_name">Quiz Name : <b>{$result->name|escape}</b></label>
+                    <label class="qz_name"><font size="+1">Quiz Name : <b>{$result->name|escape}</b></font></label>
                 </div>
-                <br><br><br>
+                <br><br>
                 <div style="word-break : break-all;">
-                    <label style="white-space: pre-wrap;"><b>Question 1.</b> {$result->content}</label>
+                    <label style="white-space: pre-wrap; padding-left: 70px;"> <b>Question 1.</b> {$result->content}</label>
                 </div>
-                <br><br><br>
+                <br><br>
                 <input type="hidden" id="audio_name" value="{$result->audio_name}" name="audio_name">
                 <div style="margin-left:60px;">
 
