@@ -486,37 +486,46 @@
     </form>
     <script>
 
-        {literal}
-       var qzList = [];
-       {/literal}{if $qzList != null}{foreach $qzList as $value}{literal}
-             qzList.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
-       {/literal}{/foreach}{/if}
-     
-       {literal}
-       var qzListOpt = [];
-       {/literal}{if $qzListOpt != null}{foreach $qzListOpt as $value}{literal}
-             qzListOpt.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
-       {/literal}{/foreach}{/if}
-     
-       {literal}
-           var arrTypeNameList = [];
-           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
-           arrTypeNameList.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
-           {/literal}{/foreach}{/if}
-     
-       {literal}
-           var arrTypeNameList1 = [];
-           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
-           arrTypeNameList1.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
-           {/literal}{/foreach}{/if}
-     
-       {literal}
-           var arrTypeNameList2 = [];
-           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
-           arrTypeNameList2.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
-           {/literal}{/foreach}{/if}
-     
-       </script>
+        { literal }
+        var qzList = [];
+        {
+            /literal}{if $qzList != null}{foreach $qzList as $value}{literal}
+            qzList.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
+            { /literal}{/foreach } {
+                /if}
+
+                { literal }
+                var qzListOpt = [];
+                {
+                    /literal}{if $qzListOpt != null}{foreach $qzListOpt as $value}{literal}
+                    qzListOpt.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
+                    { /literal}{/foreach } {
+                        /if}
+
+                        { literal }
+                        var arrTypeNameList = [];
+                        {
+                            /literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+                            arrTypeNameList.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+                            { /literal}{/foreach } {
+                                /if}
+
+                                { literal }
+                                var arrTypeNameList1 = [];
+                                {
+                                    /literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+                                    arrTypeNameList1.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+                                    { /literal}{/foreach } {
+                                        /if}
+
+                                        { literal }
+                                        var arrTypeNameList2 = [];
+                                        {
+                                            /literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+                                            arrTypeNameList2.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+                                            { /literal}{/foreach } { /if}
+
+    </script>
 
 </body>
 

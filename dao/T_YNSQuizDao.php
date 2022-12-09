@@ -82,7 +82,6 @@ class T_YNSQuizDao extends BaseDao
 
 	public function getQuizSearchData($param, $flg)
 	{
-
 		$query = " SELECT ";
 		$query .= " quiz.name name ";
 		$query .= " ,quiz.content content ";
