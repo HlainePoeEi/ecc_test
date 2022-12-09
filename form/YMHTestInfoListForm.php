@@ -14,6 +14,8 @@ require_once 'BaseForm.php';
  *
  */
 class YMHTestInfoListForm extends BaseForm{
+
+    public $exam_id;
     // 組織管理№
     public $org_no;
     // テスト管理№
@@ -69,5 +71,3 @@ class YMHTestInfoListForm extends BaseForm{
     
     
 }
-
-?>

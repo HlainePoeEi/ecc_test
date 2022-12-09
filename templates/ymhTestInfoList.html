@@ -179,6 +179,7 @@
 </head>
 
 <body class="pushmenu-push">
+    {print_r($form)}
     <form id="main_form" method="post" action="{$smarty.const.HOME_DIR}TestInfoList/search" method="post">
         {include file='leftMenu.html'}
         <div class="divHeader">
@@ -270,7 +271,7 @@
                                         <td class="tshousai-td">
                                             {if $obj->status == "" || $obj->status == "n" }
                                             <input type="button" class="btn_confirm" id="btn_answer" title="受講"
-                                                onclick="confirm_action('{$obj->test_info_no}', '{$obj->lesson_no}','{$obj->group_no}', '{$smarty.const.HOME_DIR}TestAnswerInfo/index')">
+                                                onclick="confirm_action('{$obj->exam_id}','{$smarty.const.HOME_DIR}YNSTestAnswerInfo/index')">
                                             {/if}
                                         </td>
                                         <td class="tshousai-td">
@@ -397,11 +398,9 @@
                 });
         }
 
-        function confirm_action(test, lesson, group, act) {
+        function confirm_action(test, act) {
 
             test_info_no = test;
-            lesson_no = lesson;
-            group_no = group;
             action = act;
 
             //キーボード操作などにより、オーバーレイが多重起動するのを防止する
