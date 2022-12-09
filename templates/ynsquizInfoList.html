@@ -75,6 +75,7 @@
                         { searchable: false },
                         { searchable: false },
                         { searchable: false },
+                        { searchable: false },
                     ],
                     "language": {
                         "info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
@@ -181,6 +182,7 @@
                             <tr>
                                 <th class="qz_name">クイズ名</th>
                                 <th class="qz_content">内容</th>
+                                <th class="qz-content">正解</th>
                                 <th class="td_img">確認</th>
                                 <th class="td_img">編集</th>
                                 <th class="td_img">削除</th>
@@ -191,6 +193,7 @@
                             <tr>
                                 <td class="qz_name">{$result->name|escape}</td>
                                 <td class="qz_content">{$result->content}</td>
+                                <td class="qz_content">{$result->correct}</td>
                                 <td class="td_img">
                                     <input type="button" class="btn_preview_list" name="preview" title="確認"
                                         onclick="trans('{$result->quiz_id}','{$smarty.const.HOME_DIR}YNSQuizDetailsPreview/index')">
