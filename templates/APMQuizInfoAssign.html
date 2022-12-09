@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>クイズ設定</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="googlebot" content="noindex, nofollow">
 	{literal}
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
-    <script src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
-    <!-- <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.js"></script> -->
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/common.js"></script>
+	<script src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
+	<!-- <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.js"></script> -->
 	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
 	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datables_select_box.js"></script>
 	{/literal}
 	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
 	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
-    <link href="{$smarty.const.HOME_DIR}css/groupstudentregist.css"	rel="stylesheet">
-    <link href="{$smarty.const.HOME_DIR}css/datatables.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/groupstudentregist.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/datatables.css" rel="stylesheet">
 	<link href="{$smarty.const.HOME_DIR}css/datatables_select.min.css" rel="stylesheet">
-    <script>
-		$(document).ready(function() {
+	<script>
+		$(document).ready(function () {
 
 			// MSGのあるなし
-			if ( $(".error_msg").html() != "" ) {
+			if ($(".error_msg").html() != "") {
 
 				$(".error_section1").slideDown('slow');
 			}
 
-			$(".close_icon").on('click',function(){
+			$(".close_icon").on('click', function () {
 
 				$(".error_section1").slideUp('slow');
 
@@ -38,210 +39,228 @@
 			//データテーブルを表示する
 			var dataArray = $("#list").val();
 			if (dataArray != "") {
-				$('#quiz_assign_tbl_cb').DataTable( {
+				$('#quiz_assign_tbl_cb').DataTable({
 					"scrollY": 300,
 					"scrollX": true,
 					"bFilter": false,
 					"ordering": false,
-					 columnDefs: [ {
+					columnDefs: [{
 						"searchable": false,
 						orderable: false,
-						className: 'select-checkbox', targets:   0,
-					} ],
+						className: 'select-checkbox', targets: 0,
+					}],
 					select: {
-						style:    'multi',
+						style: 'multi',
 						selector: 'td:first-child',
 						info: false
 					},
 					"language": {
-						"info":" _TOTAL_ 件中 _START_ から _END_ まで表示",
-						 "paginate": {
-							"first":	"First",
-							"last": 	"Last",
-							"next": 	"次",
-							"previous": 	"前"
+						"info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
+						"paginate": {
+							"first": "First",
+							"last": "Last",
+							"next": "次",
+							"previous": "前"
 						},
-						"lengthMenu":" _MENU_ 件表示"
+						"lengthMenu": " _MENU_ 件表示"
 					},
 					"initComplete": function () {
 						getTotalRowCount();
 					},
-					drawCallback: function(){
+					drawCallback: function () {
 
-						$('.paginate_button', this.api().table().container()).on('click', function(){
+						$('.paginate_button', this.api().table().container()).on('click', function () {
 							$(".select-info").remove();
 							getTotalRowCount();
 						});
 
-						 $("#quiz_assign_tbl_cb_filter label input").on('keyup', function(){
+						$("#quiz_assign_tbl_cb_filter label input").on('keyup', function () {
 							$(".select-info").remove();
 							getTotalRowCount();
 						});
 
-						 $("#quiz_assign_tbl_cb_filter label input").on('click', function(){
+						$("#quiz_assign_tbl_cb_filter label input").on('click', function () {
 							$(".select-info").remove();
 							getTotalRowCount();
 						});
 
-						$("#quiz_assign_tbl_cb_length label select option").change(function() {
+						$("#quiz_assign_tbl_cb_length label select option").change(function () {
 							$(".select-info").remove();
 							getTotalRowCount();
-						 });
+						});
 					},
-					order: [[ 1, 'asc' ]]
+					order: [[1, 'asc']]
 				});
 			}
 		});
 	</script>
-	</head>
-	<body class="pushmenu-push">
+</head>
+
+<body class="pushmenu-push">
 	<form id="main_form" action="{$smarty.const.HOME_DIR}APMQuizInfoAssign/save" method="post">
-	     <input type="hidden" id ="manager_no" name="manager_no"/>
-	     <!-- 戻るの場合リストか登録かの画面を分けるため -->
+		<input type="hidden" id="manager_no" name="manager_no" />
+		<!-- 戻るの場合リストか登録かの画面を分けるため -->
 		<input type="hidden" id="btn_flg_type" name="btn_flg_type" value="{$form->btn_flg_type}" />
-		<input type="hidden" id="test_test_info_name" name="test_info_name" value="{$form->test_test_info_name}"/>
-		<input type="hidden" id="ori_test_no" name="ori_test_no" value="{$form->ori_test_no}"/>
+		<input type="hidden" id="test_test_info_name" name="test_info_name" value="{$form->test_test_info_name}" />
+		<input type="hidden" id="ori_test_no" name="ori_test_no" value="{$form->ori_test_no}" />
 		<input type="hidden" id="status" name="status" value="{$form->status}" />
 		<input type="hidden" id="description" name="description" value='{$form->description|escape:"html"}' />
 		<input type="hidden" id="test_start_period" name="test_start_period" value="{$form->test_start_period}" />
 		<input type="hidden" id="test_end_period" name="test_end_period" value="{$form->test_end_period}" />
 		<input type="hidden" id="test_remarks" name="test_remarks" value="{$form->test_remarks}" />
 		<input type="hidden" id="btn_value" name="btn_value" value="{$form->btn_value}" />
-		<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}"/>
-		<input type="hidden" id="hd_test_type" name="hd_test_type" value="{$form->hd_test_type}"/>
+		<input type="hidden" id="screen_mode" name="screen_mode" value="{$form->screen_mode}" />
+		<input type="hidden" id="hd_test_type" name="hd_test_type" value="{$form->hd_test_type}" />
 		<input type="hidden" id="test_btn_flg" name="test_btn_flg" value="{$form->test_btn_flg}" />
 		<input type="hidden" id="test_date_flg" name="test_date_flg" value="{$form->test_date_flg}" />
-		
+
 		<input type="hidden" id="search_page_row_til" name="search_page_row_til" value="{$form->search_page_row_til}" />
-		<input type="hidden" id="search_page_order_column_til" name="search_page_order_column_til" value="{$form->search_page_order_column_til}" />
-		<input type="hidden" id="search_page_order_dir_til" name="search_page_order_dir_til" value="{$form->search_page_order_dir_til}" />
+		<input type="hidden" id="search_page_order_column_til" name="search_page_order_column_til"
+			value="{$form->search_page_order_column_til}" />
+		<input type="hidden" id="search_page_order_dir_til" name="search_page_order_dir_til"
+			value="{$form->search_page_order_dir_til}" />
 		<input type="hidden" id="search_page_til" name="search_page_til" value="{$form->search_page_til}" />
 		{include file='leftMenu.html'}
-			<div class="divHeader">
-				<!--header-->
-					{include file='header.html'}
-				<!--header-->
-			</div>
-			<div class="divBody">
+		<div class="divHeader">
+			<!--header-->
+			{include file='header.html'}
+			<!--header-->
+		</div>
+		<div class="divBody">
 
-				<section class="error_section1">
-					<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
-					    {if !empty($err_msg)}
-						<div class="error_msg">{$err_msg}</div>
+			<section class="error_section1">
+				<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right"
+					class="close_icon">
+				{if !empty($err_msg)}
+				<div class="error_msg">{$err_msg}</div>
+				{else}
+				<div class="error_msg"></div>
+				{/if}
+			</section>
+			<section class="content">
+				<p>
+					><span class="title">試験 / クイズ設定</span>
+				</p>
+				<p style="text-align:right;width:100%;">
+					<input type="button" title="戻る" value="" class="btn_back1"
+						onclick="javascript:doBack('{$smarty.const.HOME_DIR}APMQuizInfoAssign/back')">
+				</p>
+				<input type="hidden" id="page" name="page" value="{$form->page}" />
+				<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
+				<input type="hidden" id="entryList" name="entryList" value="{$form->entryList}" />
+				<input type="hidden" name="test_info_no" id="test_info_no" value="{$form->test_info_no}" />
+				<input type="hidden" name="org_no" id="org_no" value="{$form->org_no}" />
+				<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
+				<input type="hidden" id="search_start_period" name="search_start_period"
+					value="{$form->search_start_period}" />
+				<input type="hidden" id="search_end_period" name="search_end_period"
+					value="{$form->search_end_period}" />
+				<input type="hidden" id="search_test_info_name" name="search_test_info_name"
+					value="{$form->search_test_info_name|escape}" />
+				<input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark|escape}" />
+				<input type="hidden" id="search_quiz_name" name="search_quiz_name"
+					value="{$form->search_quiz_name|escape}" />
+				<input type="hidden" id="search_rd_status1" name="search_rd_status1"
+					value="{$form->search_rd_status1}" />
+				<input type="hidden" id="search_rd_status2" name="search_rd_status2"
+					value="{$form->search_rd_status2}" />
+				<input type="hidden" id="search_rdstatus" name="search_rdstatus" value="{$form->search_rdstatus}" />
+				<input type="hidden" id="search_chk_status1" name="search_chk_status1"
+					value="{$form->search_chk_status1}" />
+				<input type="hidden" id="search_chk_status2" name="search_chk_status2"
+					value="{$form->search_chk_status2}" />
+				<input type="hidden" id="search_status" name="search_status" value="{$form->search_status}" />
+				<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}" />
+
+				<!-- For Exam -->
+				<input type="hidden" name="exam_id" id="exam_id" value="{$form->exam_id}" />
+
+				<table class="testAss_tbl">
+					<tr>
+						<td class="td_two">試験名</td>
+						<td class="td_input">{$form->exam_name|escape}</td>
+						<td class="td_two" style="padding-left: 100px">クイズ名</td>
+						<td class="td_input"><input class="text" type="text" name="quiz_name" id="quiz_name"
+								maxlength="32" size="30" value="{$form->quiz_name}"></td>
+					</tr>
+					<tr>
+						<td class="td_two">備考</td>
+						<td class="td_input"><input class="text" type="text" name="remarks" id="remarks" maxlength="32"
+								size="30" value="{$form->remarks}" /></td>
+					</tr>
+					<tr>
+						<td class="td_two">利用期間</td>
+						<td class="td_input">{$form->start_date}~{$form->end_date}</td>
+						<td class="td_two" style="padding-left: 100px">最終担当者</td>
+						<td class="input">
+							{if ($form->rd_status == 1)}
+							<label><input type="radio" id="rd_status1" name="rd_status1" value='0'>すべて</label>
+							<label><input type="radio" id="rd_status1" name="rd_status1" value='1'
+									checked="checked">自分のみ</label>
+							{else}
+							<label><input type="radio" id="rd_status1" name="rd_status1" value='0'
+									checked="checked">すべて</label>
+							<label><input type="radio" id="rd_status1" name="rd_status1" value='1'>自分のみ</label>
+							{/if}
+						</td>
+					</tr>
+				</table>
+				<input class="text" type="hidden" name="rd_status" id="rd_status">
+				<div class="pagging">
+					<input type="button" value="" class="btn_search"
+						onclick="doSearch('{$smarty.const.HOME_DIR}APMQuizInfoAssign/search');" />
+				</div>
+				{if !empty($list)}
+				<table id="quiz_assign_tbl_cb" class="tbl_search"
+					style="border-collapse: collapse; font-size: 1.0em;width:100%" style="display:none;">
+					<thead>
+						<tr>
+							<th class="td_img"></th>
+							<th style="width:350px;">クイズ名</th>
+							<th style="width:350px;">内容</th>
+							<th style="width:300px !important;">備考</th>
+						</tr>
+					</thead>
+					<tbody>
+						{foreach $list as $result}
+						{if (in_array($result->quiz_id,$data_list))}
+						{assign var="selected" value="selected"}
 						{else}
-						<div class="error_msg"></div>
+						{assign var="selected" value=""}
 						{/if}
-				</section>
-				<section class="content">
-						<p>
-							><span class="title">試験 / クイズ設定</span>
-						</p>
-						<p style="text-align:right;width:100%;">
-							<input type="button" title="戻る" value="" class="btn_back" onclick="javascript:doBack('{$smarty.const.HOME_DIR}APMQuizInfoAssign/back')">
-						</p>
-						<input type="hidden" id="page" name="page" value="{$form->page}" />
-						<input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
-						<input type="hidden" id="entryList" name="entryList" value="{$form->entryList}"/>
-						<input type="hidden" name="test_info_no" id="test_info_no" value="{$form->test_info_no}"/>
-						<input type="hidden" name="org_no" id="org_no" value="{$form->org_no}"/>
-						<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
-						<input type="hidden" id="search_start_period" name="search_start_period" value="{$form->search_start_period}"/>
-						<input type="hidden" id="search_end_period" name="search_end_period" value="{$form->search_end_period}"/>
-						<input type="hidden" id="search_test_info_name" name="search_test_info_name" value="{$form->search_test_info_name|escape}"/>
-						<input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark|escape}"/>
-						<input type="hidden" id="search_quiz_name" name="search_quiz_name" value="{$form->search_quiz_name|escape}"/>
-						<input type="hidden" id="search_rd_status1" name="search_rd_status1" value="{$form->search_rd_status1}"/>
-						<input type="hidden" id="search_rd_status2" name="search_rd_status2" value="{$form->search_rd_status2}"/>
-						<input type="hidden" id="search_rdstatus" name="search_rdstatus" value="{$form->search_rdstatus}"/>
-						<input type="hidden" id="search_chk_status1" name="search_chk_status1" value="{$form->search_chk_status1}"/>
-						<input type="hidden" id="search_chk_status2" name="search_chk_status2" value="{$form->search_chk_status2}"/>
-						<input type="hidden" id="search_status" name="search_status" value="{$form->search_status}"/>
-						<input type="hidden" id="search_org_id" name="search_org_id" value="{$form->search_org_id}" /> 
-
-						<!-- For Exam -->
-						<input type="hidden" name="exam_id" id="exam_id" value="{$form->exam_id}"/>
-
-						<table class="testAss_tbl">
-							<tr>
-								<td class="td_two">試験名</td>
-								<td class="td_input" >{$form->exam_name|escape}</td>
-								<td class="td_two" style="padding-left: 100px">クイズ名</td>
-								<td class="td_input"><input class="text" type="text"  name="quiz_name" id="quiz_name" maxlength="32" size="30" value="{$form->quiz_name}"></td>
-							</tr>
-							<tr>
-								<td class="td_two">備考</td>
-								<td class="td_input"><input class="text" type="text"  name="remarks" id="remarks"
-									 maxlength="32" size="30" value="{$form->remarks}" /></td>
-							</tr>
-							<tr>
-								<td class="td_two">利用期間</td>
-								<td class="td_input">{$form->start_date}~{$form->end_date}</td>
-								<td class="td_two" style="padding-left: 100px">最終担当者</td>
-								<td class="input">
-								{if ($form->rd_status == 1)}
-									<label><input type="radio" id="rd_status1" name="rd_status1" value='0'>すべて</label>
-				 					<label><input type="radio" id="rd_status1" name="rd_status1" value='1' checked="checked">自分のみ</label>
-								{else}
-				 					<label><input type="radio" id="rd_status1" name="rd_status1" value='0' checked="checked">すべて</label>
-				 					<label><input type="radio" id="rd_status1" name="rd_status1" value='1'>自分のみ</label>
-				 				{/if}
-				 				</td>
-							</tr>
-						</table>
-						<input class="text" type="hidden"  name="rd_status" id="rd_status" >
-						<div class="pagging">
-							<input type="button" value="" class="btn_search" onclick="doSearch('{$smarty.const.HOME_DIR}APMQuizInfoAssign/search');" />
-						</div>
-						 {if !empty($list)}
-						<table id="quiz_assign_tbl_cb" class="tbl_search" style="border-collapse: collapse; font-size: 1.0em;width:100%" style="display:none;">
-							<thead>
-					            <tr>
-					                <th class="td_img"></th>
-					                <th style="width:350px;">クイズ名</th>
-					                <th style="width:350px;">内容</th>
-					                <th style="width:300px !important;">備考</th>
-					            </tr>
-        					</thead>
-        					<tbody>
-	        					{foreach $list as $result}
-	        						{if (in_array($result->quiz_id,$data_list))}
-	        							{assign var="selected" value="selected"}
-	        						{else}
-	 									{assign var="selected" value=""}
-	        						{/if}
-	        						<tr id="quiz_info_no_{$result->quiz_id}" class="{$selected}">
-			        					<td></td>
-										<td style="width:350px;">{$result->name|escape}</td>
-										<td style="width:350px;">{$result->content}</td>
-										<td style="width:300px !important;">{$result->remarks}</td>
-									</tr>
-								{/foreach}
-        					</tbody>
-						</table>
-						<table class="btn_div">
-							<tr>
-								<td>
-								<input type="button" value="" class="btn_resetbtn" title="リセット"
+						<tr id="quiz_info_no_{$result->quiz_id}" class="{$selected}">
+							<td></td>
+							<td style="width:350px;">{$result->name|escape}</td>
+							<td style="width:350px;">{$result->content}</td>
+							<td style="width:300px !important;">{$result->remarks}</td>
+						</tr>
+						{/foreach}
+					</tbody>
+				</table>
+				<table class="btn_div">
+					<tr>
+						<td>
+							<input type="button" value="" class="btn_resetbtn" title="リセット"
 								onclick="cancel('{$smarty.const.HOME_DIR}APMQuizInfoAssign/reset');">
-								<input type="button" name="insert" value="" id="btn_insert" class="btn_insert" title="登録" onclick="productDisable('{$smarty.const.HOME_DIR}APMQuizInfoAssign/save');" />
-								</td>
-							</tr>
-						</table>
-						{/if}
-				</section>
-			</div>
-			<!--footer-->
-				{include file='footer.html'}
-			<!--footer-->
+							<input type="button" name="insert" value="" id="btn_insert" class="btn_insert" title="登録"
+								onclick="productDisable('{$smarty.const.HOME_DIR}APMQuizInfoAssign/save');" />
+						</td>
+					</tr>
+				</table>
+				{/if}
+			</section>
+		</div>
+		<!--footer-->
+		{include file='footer.html'}
+		<!--footer-->
 	</form>
-
+	{literal}
 	<script>
-		{literal}
 
 		//検索ボタン
 		function doSearch(action) {
 
-			var status =$('input[name="rd_status1"]:checked', '#main_form').val();
+			var status = $('input[name="rd_status1"]:checked', '#main_form').val();
 
 			$('#rd_status').val(status);
 			$("#main_form").attr("action", action);
@@ -263,9 +282,9 @@
 			$("#main_form").submit();
 		}
 
-		$(function(){
+		$(function () {
 			var entryList = [];
-			$('#quiz_assign_tbl_cb tbody tr').each(function() {
+			$('#quiz_assign_tbl_cb tbody tr').each(function () {
 
 				var quiz_info_no = $(this).attr('id');
 				quiz_info_no = quiz_info_no.split("quiz_info_no_")[1];
@@ -273,9 +292,9 @@
 				entryList = $("#entryList").val();
 				entryList = entryList.split(",");
 
-				var flag = $.inArray( quiz_info_no, entryList);
+				var flag = $.inArray(quiz_info_no, entryList);
 
-				if(flag != -1){
+				if (flag != -1) {
 					$(this).addClass('selected');
 				}
 			});
@@ -283,63 +302,63 @@
 			console.log(entryList)
 		});
 
-		function getTotalRowCount(){
+		function getTotalRowCount() {
 
 			var rowsCount = $("#entryList").val();
 			rowsCount = rowsCount.split(",");
 
-			 if(rowsCount.length > 0){
-				 $(".dataTables_info").append("<span class=select-info>"+
-							"<span class=select-item>"+ (rowsCount.length - 1) +" 行 選ばれた。</span>"+
-							"<span class=select-item></span>"+
-							"<span class=select-item></span>"+
-						"</span>");
-			 }
+			if (rowsCount.length > 0) {
+				$(".dataTables_info").append("<span class=select-info>" +
+					"<span class=select-item>" + (rowsCount.length - 1) + " 行 選ばれた。</span>" +
+					"<span class=select-item></span>" +
+					"<span class=select-item></span>" +
+					"</span>");
+			}
 		}
 
-	      $('#quiz_assign_tbl_cb tbody tr').on('click', function(){
+		$('#quiz_assign_tbl_cb tbody tr').on('click', function () {
 
-	        	var quiz_selected_list = $("#entryList").val();
-	 			var quiz_info_no = $(this).attr('id');
-	 			quiz_info_no = quiz_info_no.split("quiz_info_no_")[1];
-	 			var selected_class = $(this).attr('class');
-	 			selected_class = selected_class.split(" ");
-	 			var table = $('#quiz_assign_tbl_cb').DataTable();
+			var quiz_selected_list = $("#entryList").val();
+			var quiz_info_no = $(this).attr('id');
+			quiz_info_no = quiz_info_no.split("quiz_info_no_")[1];
+			var selected_class = $(this).attr('class');
+			selected_class = selected_class.split(" ");
+			var table = $('#quiz_assign_tbl_cb').DataTable();
 
-	 			if(selected_class.length > 1){
+			if (selected_class.length > 1) {
 
-	 				var quiz_list = quiz_selected_list.split(",");
-	 				var temp = $.inArray( quiz_info_no, quiz_list );
-	 				if(temp != -1){
-	 					quiz_selected_list = quiz_selected_list.replace(quiz_info_no+",", "");
-	 				}
-	 				$("#entryList").val(quiz_selected_list);
-	 				$(this).toggleClass('selected');
-	 			}else{
+				var quiz_list = quiz_selected_list.split(",");
+				var temp = $.inArray(quiz_info_no, quiz_list);
+				if (temp != -1) {
+					quiz_selected_list = quiz_selected_list.replace(quiz_info_no + ",", "");
+				}
+				$("#entryList").val(quiz_selected_list);
+				$(this).toggleClass('selected');
+			} else {
 
-	 				if(quiz_selected_list == ""){
+				if (quiz_selected_list == "") {
 
-	 					quiz_selected_list += quiz_info_no + ",";
-	 				}else{
+					quiz_selected_list += quiz_info_no + ",";
+				} else {
 
-	 					var quiz_list = quiz_selected_list.split(",");
-	 					var temp = $.inArray( quiz_info_no, quiz_list );
-	 					if(temp == -1){
-	 						quiz_selected_list += quiz_info_no + ",";
-	 					}
-	 				}
-	 				$(this).toggleClass('selected');
-	 				$("#entryList").val(quiz_selected_list);
-	 			}
-	 			$(".select-info").remove();
-	 			getTotalRowCount();
-	      });
+					var quiz_list = quiz_selected_list.split(",");
+					var temp = $.inArray(quiz_info_no, quiz_list);
+					if (temp == -1) {
+						quiz_selected_list += quiz_info_no + ",";
+					}
+				}
+				$(this).toggleClass('selected');
+				$("#entryList").val(quiz_selected_list);
+			}
+			$(".select-info").remove();
+			getTotalRowCount();
+		});
 	</script>
-
-		{/literal}
+	{/literal}
 	<!--footer-->
 	{include file='footer.html'}
 	<!--footer-->
 
-	</body>
+</body>
+
 </html>

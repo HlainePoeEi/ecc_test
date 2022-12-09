@@ -20,6 +20,8 @@ class T_YNSQuizDto extends BaseDto
     public $name;
     //クイズ内容
     public $content;
+    //クイズ正解
+    public $correct;
     //ファイル（音声）
     public $audio_name;
     //更新備考
@@ -29,5 +31,4 @@ class T_YNSQuizDto extends BaseDto
     public $option2;
     public $option3;
     public $option4;
-    public $correct;
 }
