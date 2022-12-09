@@ -52,15 +52,17 @@
 
             var name = document.getElementById("name").value;
             if (screen_mode != "update") {
-                if (name == "") {
-                    document.getElementById("btn_add").style.display = "none";
-                    document.getElementById("btn_add_name").style.display = "none";
-                    document.getElementById("btn_preview").style.display = "none";
-                    document.getElementById("btn_preview_name").style.display = "none";
-                } else {
-                    document.getElementById("btn_insert").style.visibility = "hidden";
-                }
 
+                document.getElementById("btn_add").style.display = "none";
+                document.getElementById("btn_add_name").style.display = "none";
+                document.getElementById("btn_preview").style.display = "none";
+                document.getElementById("btn_preview_name").style.display = "none";
+            } else {
+                document.getElementById("btn_add").style.display = "none";
+                document.getElementById("btn_add_name").style.display = "none";
+                document.getElementById("btn_preview").style.display = "none";
+                document.getElementById("btn_preview_name").style.display = "none";
+                document.getElementById("btn_del").style.display = "none";
             }
 
             $(".close_icon").on('click', function () {
@@ -173,6 +175,12 @@
                 var content = nicE.getContent();
                 var name = $('#name').val();
                 var remarks = $('#remarks').val();
+                var option1 = $('#option1').val();
+                var option2 = $('#option2').val();
+                var option3 = $('#option3').val();
+                var option4 = $('#option4').val();
+                var audio_file = $('#audio_file').val();
+
 
 
 
@@ -185,6 +193,8 @@
                     $(".divBody").scrollTop(0);
                     return false;
                 }
+
+                $('#selected_op').val($('input[name=option]:checked', '#main_form').next().val());
 
                 if ((err_msg = characterCheck(name)) != null) {
 
@@ -221,6 +231,51 @@
                     $('#err_dis').show();
                     $(".error_section").slideToggle('slow');
                     $(".error_msg").html("クイズ内容を4096字で入力してください。");
+                    $(".divBody").scrollTop(0);
+                    return false;
+                }
+
+                if (audio_file == "") {
+
+                    $('#err_dis').show();
+                    $(".error_section").slideToggle('slow');
+                    $(".error_msg").html("fileを入力してください。");
+                    $(".divBody").scrollTop(0);
+                    return false;
+                }
+
+                if (option1 == "") {
+
+                    $('#err_dis').show();
+                    $(".error_section").slideToggle('slow');
+                    $(".error_msg").html("選択1を入力してください。");
+                    $(".divBody").scrollTop(0);
+                    return false;
+                }
+
+                if (option2 == "") {
+
+                    $('#err_dis').show();
+                    $(".error_section").slideToggle('slow');
+                    $(".error_msg").html("選択2を入力してください。");
+                    $(".divBody").scrollTop(0);
+                    return false;
+                }
+
+                if (option3 == "") {
+
+                    $('#err_dis').show();
+                    $(".error_section").slideToggle('slow');
+                    $(".error_msg").html("選択3を入力してください。");
+                    $(".divBody").scrollTop(0);
+                    return false;
+                }
+
+                if (option4 == "") {
+
+                    $('#err_dis').show();
+                    $(".error_section").slideToggle('slow');
+                    $(".error_msg").html("選択4を入力してください。");
                     $(".divBody").scrollTop(0);
                     return false;
                 }
@@ -267,6 +322,7 @@
 </head>
 
 <body class="pushmenu-push">
+
     <form id="main_form" name="main_form1" action="{$smarty.const.HOME_DIR}YNSQuizInfoRegist/Save" method="post">
         {include file='leftMenu.html'}
         <div class="divHeader">
@@ -317,6 +373,7 @@
                     <input type="hidden" id="search_remark" name="search_remark" value="{$form->search_remark}" />
                     <input type="hidden" id="search_rd_status1" name="search_rd_status1"
                         value="{$form->search_rd_status1}" />
+                    <input type="hidden" id="selected_op" name="correct" value="{$form->correct}">
 
                     <div width="100%">
                         <table width="100%">
@@ -341,20 +398,90 @@
                                         <input type="text" class="text" id="audio_file" name="audio_file"
                                             readonly="readonly" value="{$form->audio_file}"
                                             style="width:200px;height:25px;" />
-                                        <div style="width:350px;height:22px;margin-left:10px;">
+                                        <div style="width:400px;height:22px;margin-left:10px;">
                                             <input type="file" id="input_audio_file" name="input_audio_file"
                                                 class="vendor_logo" style="height:30px;padding: 3px 0px;"
                                                 accept="audio/mp3" />
-                                            {if $form->screen_mode eq 'update'}
-                                            {if $form->disable_mode == ""}
-                                            <input type="checkbox" id="chk_status2" name="chk_status2" value="1"><label
-                                                for="chk_status2">音声ファイル削除</label>
-                                            {/if}
-                                            {/if}
                                         </div>
                                     </div>
                                 </td>
 
+                            </tr>
+                            <tr>
+
+                                {if $form->screen_mode eq 'update'}
+                                {if $form->correct eq $form->option1}
+                                <td style="width:240px;">Option 1:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option1" name="option1" value="{$form->option1|escape}" maxlength="100"
+                                        size="15"></td>
+                                {else}
+                                <td style="width:240px;">Option 1:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option1"
+                                        name="option1" value="{$form->option1|escape}" maxlength="100" size="15"></td>
+                                {/if}
+                                {else}
+                                <td style="width:240px;">Option 1:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option1" name="option1" value="{$form->option1|escape}" maxlength="100"
+                                        size="15"></td>
+                                {/if}
+                            </tr>
+                            <tr>
+                                {if $form->screen_mode eq 'update'}
+                                {if $form->correct eq $form->option2}
+                                <td style="width:240px;">Option 2:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option2" name="option2" value="{$form->option2|escape}" maxlength="100"
+                                        size="15"></td>
+                                {else}
+                                <td style="width:240px;">Option 2:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$form->option2|escape}" maxlength="100" size="15"></td>
+                                {/if}
+                                {else}
+                                <td style="width:240px;">Option 2:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$form->option2|escape}" maxlength="100" size="15"></td>
+
+                                {/if}
+                            </tr>
+                            <tr>
+                                {if $form->screen_mode eq 'update'}
+                                {if $form->correct eq $form->option3}
+                                <td style="width:240px;">Option 3:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option3" name="option3" value="{$form->option3|escape}" maxlength="100"
+                                        size="15"></td>
+                                {else}
+                                <td style="width:240px;">Option 3:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option3"
+                                        name="option3" value="{$form->option3|escape}" maxlength="100" size="15"></td>
+                                {/if}
+                                {else}
+                                <td style="width:240px;">Option 3:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option3"
+                                        name="option3" value="{$form->option3|escape}" maxlength="100" size="15"></td>
+                                {/if}
+
+                            </tr>
+                            <tr>
+                                {if $form->screen_mode eq 'update'}
+                                {if $form->correct eq $form->option4}
+                                <td style="width:240px;">Option 4:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option4" name="option4" value="{$form->option4|escape}" maxlength="100"
+                                        size="15"></td>
+                                {else}
+                                <td style="width:240px;">Option 4:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option4"
+                                        name="option4" value="{$form->option4|escape}" maxlength="100" size="15"></td>
+                                {/if}
+                                {else}
+                                <td style="width:240px;">Option 4:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option4"
+                                        name="option4" value="{$form->option4|escape}" maxlength="100" size="15"></td>
+                                {/if}
                             </tr>
                             <tr>
                                 <td>備考</td>
@@ -372,17 +499,27 @@
                                 <td>
                                     {if $form->disable_mode == ""}
                                     <input class="btn_add" type="button" value="" id="btn_add"
-                                        onclick="quizItemDetail('{$form->quiz_id}','{$form->name}','{$smarty.const.HOME_DIR}YNSQuizDetailsRegist/index');" />
+                                        onclick="quizItemDetail('{$form->quiz_info_no}','{$form->quiz_name}','{$smarty.const.HOME_DIR}QuizDetailsRegist/index');" />
+                                    {/if}
                                 </td>
-                                {/if}
+
                                 <td id="btn_add_name">{if $form->disable_mode == ""}クイズアイテム登録{/if}</td>
                                 <td class="space"></td>
                                 <td>
                                     <input class="btn_preview_list" type="button" value="" id="btn_preview"
-                                        onclick="preview('{$form->quiz_id}','{$smarty.const.HOME_DIR}QuizDetailsPreview/index');" />
+                                        onclick="preview('{$form->quiz_info_no}','{$smarty.const.HOME_DIR}QuizDetailsPreview/index');" />
                                 </td>
                                 <td id="btn_preview_name">プレビュー</td>
                                 <td class="space"></td>
+                                {if $form->screen_mode eq 'update'}
+                                <td>
+                                    {if $form->disable_mode == ""}
+                                    <input class="btn_delete" type="button" name="btn_del"
+                                        onclick="checkDelete('{$form->quiz_info_no}','{$smarty.const.HOME_DIR}QuizInfoRegist/delete');"
+                                        id="btn_del">
+                                    {/if}
+                                </td>
+                                {/if}
                             </tr>
                             {if $form->disable_mode == ""}
                             <tr>
