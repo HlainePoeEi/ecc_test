@@ -23,6 +23,20 @@ class YNSQuizInfoRegistForm extends BaseForm
     public $remarks;
     public $create_dt;
     public $update_dt;
+    public $option1;
+    public $option2;
+    public $option3;
+    public $option4;
+    public $correct;
+
+
+
+
+
+
+
+
+
     public $disable_mode;
 
     public $screen_mode;

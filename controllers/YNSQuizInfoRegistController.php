@@ -49,6 +49,11 @@ class YNSQuizInfoRegistController extends BaseController
                             $this->form->content = $value->content;
                             $this->form->audio_file = $value->audio_name;
                             $this->form->remarks = $value->remarks;
+                            $this->form->option1 = $value->option1;
+                            $this->form->option2 = $value->option2;
+                            $this->form->option3 = $value->option3;
+                            $this->form->option4 = $value->option4;
+                            $this->form->correct = $value->correct;
                         }
                     }
 
@@ -56,32 +61,21 @@ class YNSQuizInfoRegistController extends BaseController
                     $this->form->screen_mode = "update";
 
                     $this->form->disable_mode = "";
-                    // 管理者は利用しないのでコメントアウト
-                    /* 
-					$quizInfoDisable = $quiz_service->getQuizDataByQuizNoDisable($orgNo, $quizInfoNo);
-					LogHelper::logDebug ( "quizInfoDisable count:".$quizInfoDisable);
-					
-					if ($quizInfoDisable > 0) {
-						$this->form->disable_mode = "disable";
-					}else{
-						$this->form->disable_mode = "";
-					} */
                 } else {
                     TransitionHelper::sendException(E002);
                     return;
                 }
             } else {
-
-                // $this->form->org_no = COMMON_TEST_INFO_ORG;
-                // $next_quiz_id = $quiz_service->getNextId();
-                // $quiz_id = $next_quiz_id->id;
-
-                // $this->form->quiz_id = $quiz_id;
                 $this->form->name = "";
                 $this->form->content = "";
                 $this->form->audio_del_flg = 0;
                 $this->form->screen_mode = "";
                 $this->form->remarks = "";
+                $this->form->option1 = "";
+                $this->form->option2 = "";
+                $this->form->option3 = "";
+                $this->form->option4 = "";
+                $this->form->correct = "";
                 $this->smarty->assign('error_msg', "");
                 $this->smarty->assign('info_msg', "");
             }
@@ -115,6 +109,11 @@ class YNSQuizInfoRegistController extends BaseController
             $audio_del_flg = $this->form->audio_del_flg;
             $name = $this->form->name;
             $content = $this->form->content;
+            $option1 = $this->form->option1;
+            $option2 = $this->form->option2;
+            $option3 = $this->form->option3;
+            $option4 = $this->form->option4;
+            $correct = $this->form->correct;
             $remarks = $this->form->remarks;
 
             // テストデータ情報登録
@@ -122,7 +121,13 @@ class YNSQuizInfoRegistController extends BaseController
 
             $quiz_dto->name = $name;
             $quiz_dto->content = $content;
+            $quiz_dto->option1 = $option1;
+            $quiz_dto->option2 = $option2;
+            $quiz_dto->option3 = $option3;
+            $quiz_dto->option4 = $option4;
+            $quiz_dto->correct = $correct;
             $quiz_dto->remarks = $remarks;
+
 
             $quiz_dto->quiz_id = $this->form->quiz_id;
             $this->form->quiz_id = $quiz_dto->quiz_id;

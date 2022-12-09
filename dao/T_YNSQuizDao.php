@@ -216,12 +216,16 @@ class T_YNSQuizDao extends BaseDao
 
 	public function updateQuizInfo($dto)
 	{
-
 		$query = " UPDATE ";
 		$query .= " t_ynsquiz ";
 		$query .= " SET";
 		$query .= " name   = :name ";
 		$query .= " ,content   = :content ";
+		$query .= " ,option1   = :option1 ";
+		$query .= " ,option2   = :option2 ";
+		$query .= " ,option3   = :option3 ";
+		$query .= " ,option4   = :option4 ";
+		$query .= " ,correct   = :correct ";
 		$query .= " ,remarks  = :remarks ";
 
 		if (!StringUtil::isEmpty($dto->audio_name)) {
@@ -253,6 +257,11 @@ class T_YNSQuizDao extends BaseDao
 
 		$stmt->bindParam(":name",  $dto->name, PDO::PARAM_STR);
 		$stmt->bindParam(":content",  $dto->content, PDO::PARAM_STR);
+		$stmt->bindParam(":option1",  $dto->option1, PDO::PARAM_STR);
+		$stmt->bindParam(":option2",  $dto->option2, PDO::PARAM_STR);
+		$stmt->bindParam(":option3",  $dto->option3, PDO::PARAM_STR);
+		$stmt->bindParam(":option4",  $dto->option4, PDO::PARAM_STR);
+		$stmt->bindParam(":correct",  $dto->correct, PDO::PARAM_STR);
 		$stmt->bindParam(":remarks",  $dto->remarks, PDO::PARAM_STR);
 		$stmt->bindParam(":quiz_id",  $dto->quiz_id, PDO::PARAM_STR);
 

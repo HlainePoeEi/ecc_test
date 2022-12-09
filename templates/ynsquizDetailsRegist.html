@@ -42,20 +42,6 @@
 
         });
 
-        function doBack(quiz_info_no, screen_mode, action, uid) {
-            var menuOpen = document.getElementById('menuOpen').value;
-            var menuStatus = document.getElementById('menuStatus').value;
-
-            $("#quiz_info_no").val(quiz_info_no);
-            $("#screen_mode").val(screen_mode);
-            $("#main_form").attr("action", action);
-            $("#uid").val(uid);
-            $("#menuOpen").val(menuOpen);
-            $("#menuStatus").val(menuStatus);
-
-            $("#main_form").submit();
-        }
-
         // 入力チェック処理
         function checkInsertData() {
 
@@ -157,13 +143,19 @@
 
         }
 
+        //戻るボタン処理
+        function doBack(action) {
+
+            $("#main_form").attr("action", action);
+            $("#main_form").submit();
+        }
     </script>
 </head>
 <title>クイズアイテム登録</title>
 
 <body class="pushmenu-push">
 
-    <form id="main_form" action="{$smarty.const.HOME_DIR}QuizDetailsRegist/save" method="post">
+    <form id="main_form" action="{$smarty.const.HOME_DIR}YNSQuizDetailsRegist/save" method="post">
         {include file='leftMenu.html'}
         <div class="divHeader">
             <!--header-->
@@ -194,7 +186,7 @@
                     <span class="title">試験 / クイズアイテム</span>
                     <span style="float:right;padding-right:10px;">
                         <input type="button" value="" title="戻る" class="btn_back"
-                            onclick="doBack('{$form->quiz_info_no}','{$form->screen_mode}','{$smarty.const.HOME_DIR}QuizDetailsRegist/back', '{$form->uid}')" />
+                            onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizInfoRegist/back')"/>
                     </span>
                 </p>
                 <div class="qz_name" id="testqz_name">
@@ -383,7 +375,7 @@
                                     class="qz_type">
                                     {if !empty($quiz_type)}
                                     {foreach $quiz_type as $value}
-                                    {if $value->type == $form->qz_type}
+                                    {if $value->type == $form->quiz_type}
                                     <option value="{$value->type}" selected>{$value->name} </option>
                                     {else}
                                     <option value="{$value->type}">{$value->name} </option>
@@ -492,40 +484,39 @@
         {include file='footer.html'}
         <!--footer-->
     </form>
-    {literal}
     <script>
 
-        
-        var qzList = [];
-        {if $qzList != null}{foreach $qzList as $value}
-            qzList.push(JSON.stringify('{json_encode($value, JSON_HEX_APOS)}'));
-            {/foreach } {/if}
-
-                var qzListOpt = [];
-                {if $qzListOpt != null}{foreach $qzListOpt as $value}
-                    qzListOpt.push(JSON.stringify('{json_encode($value, JSON_HEX_APOS)}'));
-                    {/foreach } {/if}
-
-                        var arrTypeNameList = [];
-                        {if $qztypeNo != null}{foreach $qztypeNo as $value}
-                            arrTypeNameList.push(JSON.parse('{json_encode($value)}'));
-                            {/foreach } {/if}
-
-                                
-                                var arrTypeNameList1 = [];
-                                {if $qztypeNo != null}{foreach $qztypeNo as $value}
-                                    arrTypeNameList1.push(JSON.parse('{json_encode($value)}'));
-                                    {/foreach } {/if}
-
-                                        
-                                        var arrTypeNameList2 = [];
-                                        {if $qztypeNo != null}{foreach $qztypeNo as $value}
-                                            arrTypeNameList2.push(JSON.parse('{json_encode($value)}'));
-                                            {/foreach } {/if}
-
-    </script>
-
-{/literal}
+        {literal}
+       var qzList = [];
+       {/literal}{if $qzList != null}{foreach $qzList as $value}{literal}
+             qzList.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
+       {/literal}{/foreach}{/if}
+     
+       {literal}
+       var qzListOpt = [];
+       {/literal}{if $qzListOpt != null}{foreach $qzListOpt as $value}{literal}
+             qzListOpt.push(JSON.stringify('{/literal}{json_encode($value, JSON_HEX_APOS)}{literal}'));
+       {/literal}{/foreach}{/if}
+     
+       {literal}
+           var arrTypeNameList = [];
+           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+           arrTypeNameList.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+           {/literal}{/foreach}{/if}
+     
+       {literal}
+           var arrTypeNameList1 = [];
+           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+           arrTypeNameList1.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+           {/literal}{/foreach}{/if}
+     
+       {literal}
+           var arrTypeNameList2 = [];
+           {/literal}{if $qztypeNo != null}{foreach $qztypeNo as $value}{literal}
+           arrTypeNameList2.push(JSON.parse('{/literal}{json_encode($value)}{literal}'));
+           {/literal}{/foreach}{/if}
+     
+       </script>
 
 </body>
 
