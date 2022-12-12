@@ -957,9 +957,30 @@ thead {
     border: 0;
     font-size: 16px;
 }
+.btn_search2 {
+    background: url(../image/searching.png);
+    background-color: none;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    font-size: 16px;
+}
 
 .btn_add {
     background: url(../image/regist.svg);
+    background-color: none;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+}
+.btn_add2 {
+    background: url(../image/button.png);
     background-color: none;
     background-size: 35px 35px;
     background-repeat: no-repeat;
@@ -1225,6 +1246,15 @@ thead {
 
 .btn_confirm {
     background: url(../image/check.svg);
+    background-color: none;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+.btn_confirm1 {
+    background: url(../image/correct.png);
     background-color: none;
     background-size: 30px 30px;
     background-repeat: no-repeat;
