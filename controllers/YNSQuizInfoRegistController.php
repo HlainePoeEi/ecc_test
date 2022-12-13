@@ -261,6 +261,15 @@ class YNSQuizInfoRegistController extends BaseController
             $this->setMenu();
             $quiz_dto->quiz_id = $this->form->quiz_id;
             $quiz_dto->update_dt = DateUtil::getDate('Y/m/d H:i:s');
+
+            $quiz_service = new YNSQuizInfoService($this->pdo);
+            $list = $quiz_service->getQuizDataByQuizNo($this->form->quiz_id);
+            //print_r($list);
+            $audio_name = $list[0]->audio_name;
+            echo "audio    ", $audio_name;
+            //unlink('C:/xampp/htdocs/ecc_test/files/YNSQuiz/YNSQuizInfo/ynsAudio/' . $audio_name); 
+            unlink(ECCTEST_FILE_DIR . '/YNSQuiz/' . YNSQUIZ_INFO_AUDIO_DIR . $audio_name);
+
             $dao = new YNSQuizInfoService($this->pdo);
             $result = $dao->deleteQuizInfo($quiz_dto);
 
