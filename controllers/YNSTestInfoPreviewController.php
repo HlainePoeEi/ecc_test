@@ -52,6 +52,7 @@ class YNSTestInfoPreviewController extends BaseController
 
         // 検索結果を取得
         $quizList = $service->getListQuizForPreview($exam_id);
+
         LogHelper::logDebug($quizList);
 
         if (count($quizList) > 0) {
@@ -74,6 +75,7 @@ class YNSTestInfoPreviewController extends BaseController
                     }
                 }
             }
+
             $this->smarty->assign('optionList', $optionList);
             $this->smarty->assign('options', $options);
             $this->smarty->assign('items', $items);
@@ -84,7 +86,7 @@ class YNSTestInfoPreviewController extends BaseController
             $this->smarty->assign('msg', '');
             $this->smarty->assign('item_list', '');
             $this->smarty->assign('form', $form);
-            $this->smarty->assign('test_name', $quizList[0]->name);
+            $this->smarty->assign('test_name', $quizList[0]->exam_name);
             $this->smarty->assign('time', $quizList[0]->time);
             $this->smarty->assign('description', $quizList[0]->content);
         } else {

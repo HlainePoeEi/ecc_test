@@ -341,7 +341,7 @@
                         {foreach $quiz_list as $i=> $q}
                         <input type="hidden" id="quiz_id_{$i}" value="{$q->quiz_id}">
                         <b>
-                            <p style="font-size:16px;margin-top:10px;">{$q->name}</p>
+                            <p style="font-size:16px;margin-top:10px;">{$q->quiz_name}</p>
                         </b>
                         <p style="margin-top:20px;">{$quiz_description[$i]}</p>
 
@@ -364,6 +364,37 @@
                         										</span>	-->
                             {/if}
                             {/if}
+                        </div>
+                        <div style="margin-left:60px;">
+                            <table>
+                                <tr>
+
+                                    <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                            name="option2" value="{$q->option1|escape}" maxlength="100" size="15">
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                            name="option2" value="{$q->option2|escape}" maxlength="100" size="15">
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                            name="option2" value="{$q->option3|escape}" maxlength="100" size="15">
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                            name="option2" value="{$q->option4|escape}" maxlength="100" size="15">
+                                    </td>
+                                </tr>
+
+                            </table>
+
                         </div>
 
                         <input type="hidden" id="total_item_{$i}" value="{count($items[$i])}" />
