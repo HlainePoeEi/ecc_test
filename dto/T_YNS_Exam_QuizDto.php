@@ -12,4 +12,17 @@ class T_YNS_Exam_QuizDto extends BaseDto
     public $quiz_id;
 
     public $disp_no;
+
+    public $exam_name;
+
+    public $test_time;
+    public $audio_name;
+    public $quiz_name;
+    public $quiz_content;
+    public $option1;
+    public $option2;
+    public $option3;
+    public $option4;
+    public $correct;
+
 }

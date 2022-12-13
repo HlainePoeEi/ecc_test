@@ -4,6 +4,7 @@ require_once 'dto/T_YNSExamDto.php';
 require_once 'dto/T_Test_Info_QuizDto.php';
 require_once 'dto/T_YNS_Exam_QuizDto.php';
 require_once 'dto/T_Quiz_ItemDto.php';
+require_once 'dto/T_YNSQuizDto.php';
 require_once 'dto/T_Quiz_Item_OptionDto.php';
 // require_once 'dto/T_At_Test_Info_ResultDto.php';
 
@@ -710,5 +711,61 @@ class T_YNSExamDao extends BaseDao
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(":exam_id", $dto->exam_id, PDO::PARAM_STR);
         return parent::delete($stmt);
+    }
+
+    public function getQuizListForExam($exam_id){
+        $query = " SELECT ";
+        $query .= " q.quiz_id quiz_id";
+        $query .= " ,q.name quiz_name";
+        $query .= " ,q.content content";
+        $query .= " ,q.audio_name audio_name ";
+        $query .= " ,q.option1 option1 ";
+        $query .= " ,q.option2 option2 ";
+        $query .= " ,q.option3 option3 ";
+        $query .= " ,q.option4 option4 ";
+        $query .= " ,q.correct correct ";
+        $query .= " ,q.remarks ";
+        $query .= " FROM ";
+        $query .= " t_yns_exam_quiz eq";
+        $query .= " LEFT JOIN t_ynsquiz q";
+        $query .= " ON eq.quiz_id = q.quiz_id ";
+        $query .= " WHERE exam_id=:exam_id";
+        $stmt = $this->pdo->prepare($query);
+
+        $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
+        return parent::getDataList($stmt, get_class(new T_YNSQuizDto));
+    }
+
+    public function getExamData($exam_id)
+    {
+        $query = " SELECT ";
+        $query .= " exam_id ";
+        $query .= " ,name ";
+        $query .= " ,description ";
+        $query .= " ,time ";
+        $query .= " ,status ";
+        $query .= " ,date_format(start_date, '%Y/%m/%d') as start_date ";
+        $query .= " ,date_format(end_date, '%Y/%m/%d') as end_date ";
+        $query .= " ,remarks ";
+        $query .= " FROM ";
+        $query .= " t_ynsexam ";
+        $query .= " WHERE exam_id = :exam_id";
+        $stmt = $this->pdo->prepare($query);
+
+        $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
+        return parent::getDataList($stmt, get_class(new T_YNSExamDto));   
+    }
+
+    public function getUpdateExamData($exam_id)
+    {
+        $query = " update ";
+        $query .= " t_ynsexam ";
+        $query .= " set ";
+        $query .= " status = 'y' ";
+        $query .= " WHERE exam_id = :exam_id";
+        $stmt = $this->pdo->prepare($query);
+
+        $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
+        return parent::update($stmt);
     }
 }

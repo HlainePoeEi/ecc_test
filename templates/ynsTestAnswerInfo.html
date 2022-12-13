@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>試験受講</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="googlebot" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{literal}
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
+	<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/i18next.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-i18next.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/i18nextXHRBackend.min.js"></script>
+		<script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/index.js"></script>
+	{/literal}
+	<link href="{$smarty.const.HOME_DIR}css/jquery-ui.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/media_query.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/testlist.css" rel="stylesheet">
+	<link href="{$smarty.const.HOME_DIR}css/testpreview1.css" rel="stylesheet">
+	<link rel="stylesheet" href="{$smarty.const.HOME_DIR}css/font2-awesome.min.css">
+<style type="text/css">
+	.textFill{
+		 border: 0;
+		 width:80%;
+		 height:30px;
+		 border-bottom: 1px solid black;
+		 margin-top:10px;
+		 font-size: 14px;
+	}
+	.endBtn{
+		  border: none;
+		  color: white;
+		  text-align: center;
+		  text-decoration: none;
+		  margin-top:10px;
+		  border-radius:3px;
+		  width:80px;
+		  height:40px;
+		  cursor: pointer;
+		  background-color: #008CBA;
+	}
+	
+	.btnRadio{
+	 font-size: 16px;
+	}
+	
+	.btnAudio{
+		  border: none;
+		  color: white;
+		  padding: 12px 16px;
+		  font-size: 20px;
+		  cursor: pointer;
+		  width:50px;
+		  height:50px;
+		  margin:5px 5px 5px 5px;
+		  border-radius:30px;
+	}
+	.tableRadio{
+		
+		background-color: #dcf2f9;
+		border: none;
+		border-collapse: collapse !important;
+		margin-top:2px;
+	}
+	
+	.items{
+		margin-left:50px;
+		margin-top:20px;
+	}
+	.disabled {
+		background-color: grey;
+		pointer-events: none;
+		opacity: 0.3;
+		cursor: default;
+		border: none;
+		padding: 12px 16px;
+		font-size: 24px;
+		width:30px;
+		height:30px;
+		margin:10px 10px 10px 10px;
+		border-radius:30px;
+	  }
+	  
+	.started {
+		background-color: #32CD32;
+		pointer-events: none;
+		opacity: 0.3;
+		cursor: default;
+		border: none;
+		padding: 12px 16px;
+		font-size: 20px;
+		width:30px;
+		height:30px;
+		margin:10px 10px 10px 10px;
+		border-radius:30px;
+	  }
+	
+</style>
+	 <script type='text/javascript'>
+		$(document).ready(function() {
+		
+			var lang = $('#lang').val();
+			if(lang == "en"){
+				setLang(lang);
+			}
+		});
+			
+		function setLang(lang) {
+		
+			//  /student_dev/
+			var homeDir = $('#home_dir').val();
+		
+			console.log("debug leftMenu: " + lang);
+			{literal}
+			i18next.use(i18nextXHRBackend).init({
+				backend: {
+					loadPath: 'https://ecc-intersection.com' + homeDir + 'locales/{{lng}}/string.json'
+				},
+				debug: true,
+				defaultLng: 'ja',
+				fallbackLng: false,
+				lng: lang,
+			}, function (err, t) {
+				jqueryI18next.init(i18next, $);
+				$('[data-i18n]').localize();
+			});
+			{/literal}
+			console.log("debug leftMenu: " + lang);
+		}
+			
+	</script> 
+</head>
+	<body class="pushmenu-push">
+		<form id="main_form" action="{$smarty.const.HOME_DIR}YNSTestInfoList/index" method="post">
+			<div class="divHeader" id="divHead">
+				<!--header-->
+					{include file='header.html'}
+				<!--header-->
+			</div>
+			<!-- <div id="filter" ></div> -->
+			<div class="divBody">
+        <input type="hidden" id="exam_id" name="exam_id" value="{$form->exam_id}"/>
+				<input type="hidden" id="lang" name="lang" value="{$lang}" />
+				<input type="hidden" id="final_result" value=""/>
+				<input type="hidden" id="text_ans" value=""/>
+				<input type="hidden" id="page_row" name="page_row" value="{$form->page_row}" />
+				<input type="hidden" id="home_dir" name="home_dir" value="{$smarty.const.HOME_DIR}" />
+				<input type="hidden" id="page_order_column" name="page_order_column" value="{$form->search_page_order_column}" />
+				<input type="hidden" id="page_order_dir" name="page_order_dir" value="{$form->search_page_order_dir}" />
+				<input type="hidden" id="test_result" name="test_result" />
+				<input type="hidden" id="page" name="page" value="{$form->page}" />
+				<input type="hidden" id="test_info_no" name="test_info_no" value="{$form->test_info_no}" />
+				<input type="hidden" id="search_page" name="search_page" value="{$form->search_page}"/>
+				<input type="hidden" id="subject_no" name="subject_no" value="{$form->subject_no}"/>
+				<input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}"/>
+				<input type="hidden" id="search_page_order_column" name="search_page_order_column" value="{$form->search_page_order_column}"/>
+				<input type="hidden" id="quiz_item_no" name="quiz_item_no" value="{$form->quiz_item_no}" />
+				<input type="hidden" id="search_page_order_dir" name="search_page_order_dir" value="{$form->search_page_order_dir}"/>
+					<section class="error_section">
+						<img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right" class="close_icon">
+							{if !empty($err_msg)}
+								<div class="error_msg">{$err_msg}</div>
+							{else}
+								<div class="error_msg"></div>
+							{/if}
+					</section>
+					<section class="content" style="display:none" id="divContent">
+						 <p>
+							><span class="title" id="title" data-i18n="testAnsInfo.title">試験 / 試験受講</span>
+						 </p>
+						<div align="left">
+							<span class="title" style="font-size:20px;margin-left:10px;">{$test_name}</span>
+							<div align="right" class="fixed_label">Remaining time:<label id=timer></label></div>
+		
+						</div>
+						<p style="font-size:16px;margin-left:20px;margin-bottom:10px;">{$description}</p>
+						<div id="divQuiz" align="left">
+								{if !empty($quiz_list)}	
+								
+									<input type="hidden" id="total_quiz" value="{count($quiz_list)}" />							
+									{foreach $quiz_list as $i=>$q}
+                <input type="hidden" id="quiz_id_{$q->quiz_id}" value="{$q->quiz_id}">
+										<b><p  style="font-size:16px;margin-top:10px;">{$q->quiz_name}</p></b>
+										<p style="margin-top:20px;">{$q->content}</p>
+										
+										<div style="margin-left:60px;">
+                      <input type="hidden" id="audio_name" value="{$q->audio_name}" name="audio_name">
+                      <div style="margin-left:60px;">
+      
+                          {if !empty($q->audio_name)}
+                          {assign var="audiomsg" value="{$folder_check}{$audio_file}/{$q->audio_name}"}
+                          {if !empty({$audiomsg})}
+                          <span>
+                              <audio id="resQuiz_audio_{$i}" class="quiz_audio" controls>
+                                  <source src="{$smarty.const.HOME_DIR}/{$audio_file}/{$q->audio_name}"
+                                      type="audio/mpeg">
+                              </audio>
+                              <input type="hidden" id="play_flg{$i}" value="false" />
+                          </span>
+											{/if}
+										{/if}
+										</div>
+													
+														<div style="margin-left:20px;">
+                                    <input type="hidden" name="correct_{$i}" value="{$q->correct}">
+																		<table id="tbl_{$q->quiz_id}_1" style="width: 95%;" class="tableRadio">
+                                      <!-- id="tr_{$i}_{$j}_{$k}" name="tr_{$i}_{$j}" -->
+                                      <tr class="radio_tr">
+                                          <!-- id="td_{$i}_{$j}_{$k}" name="td_{$i}_{$j}" -->
+                                        <td width="95%" class="radio_td" name="td_{$i}" id="td_{$i}_1">
+                                            <!-- name="rdo_{$i}_{$j}" id="rdo_{$i}_{$j}_{$k}" -->
+                                            <input class="btnRadio" type="radio" name="rdo_{$i}" id="rdo_{$i}_1" value="{$q->option1}">
+                                            <label>{$q->option1}</label>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table id="tbl_{$q->quiz_id}_2" style="width: 95%;" class="tableRadio">
+                                      <tr class="radio_tr">
+                                        <td width="95%" class="radio_td" name="td_{$i}" id="td_{$i}_2">
+                                            <input class="btnRadio" type="radio" name="rdo_{$i}" id="rdo_{$i}_2" value="{$q->option2}">
+                                            <label>{$q->option2}</label>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table id="tbl_{$q->quiz_id}_3" style="width: 95%;" class="tableRadio">
+                                      <tr class="radio_tr">
+                                        <td width="95%" class="radio_td" name="td_{$i}" id="td_{$i}_3">
+                                            <input class="btnRadio" type="radio" name="rdo_{$i}" id="rdo_{$i}_3" value="{$q->option3}">
+                                            <label>{$q->option3}</label>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table id="tbl_{$q->quiz_id}_4" style="width: 95%;" class="tableRadio">
+                                      <tr class="radio_tr">
+                                        <td width="95%" class="radio_td" name="td_{$i}" id="td_{$i}_4">
+                                            <input class="btnRadio" type="radio" name="rdo_{$i}" id="rdo_{$i}_4" value="{$q->option4}">
+                                            <label>{$q->option4}</label>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                </div>
+													</div>
+												
+										<br/>
+									{/foreach}
+									<div align="right">
+										<input type="button" id="btn_save" value="終了" class="endBtn">
+									</div>
+								{/if}
+							</div>
+					</section>
+			</div>
+			<!--footer-->
+				{include file='footer.html'}
+			<!--footer-->
+		</form>
+	</body>
+<script type="text/javascript">
+
+
+			var timeoutHandle;
+			
+			var d={$time};
+			console.log("d:" + d);
+			var h = Math.floor(d / 3600);
+			var m = Math.floor(d % 3600 / 60);
+			var s = Math.floor(d % 3600 % 60);
+			var stop_flg = false;
+			var myfunc;
+			
+			// Remaining時間表示設定・カウントダウンタイマー
+			function startCountDown(){
+			
+				var timer_text = document.getElementById("timer");
+				var timeleft = {$time};
+				console.log("total time:" + timeleft);
+				
+				// Run myfunc every second
+				myfunc = setInterval(function() {
+
+					timeleft--;
+					
+					// Calculating the days, hours, minutes and seconds left
+				
+					var hours = Math.floor(timeleft / 3600);
+					var minutes = Math.floor(timeleft % 3600 / 60);
+					var seconds = Math.floor(timeleft % 3600 % 60);
+					
+					timer_text.innerHTML = (hours < 10 ? "0" : "") + hours.toString()+ ":" + (minutes < 10 ? "0" : "") + minutes.toString()+ ":" + (seconds < 10 ? "0" : "") + seconds.toString();
+						
+					// Display the message when countdown is over
+					if (timeleft < 0) {
+						
+						timer_text.innerHTML = "00:00:00";
+						console.log("試験時間が終了しました。OK ボタンを押してください。");
+						alert("試験時間が終了しました。OK ボタンを押してください。");
+						stopAnswer();
+						if ( document.getElementById("filter") != null ){
+							$('#filter').remove();
+							$('#filter').hide();
+							console.log("filter null");
+						} 
+            
+						save();
+					}
+				}, 1000);
+			
+			}
+			
+<!--stopAnswer試験をやめる	-->		
+			function stopAnswer(){
+				clearInterval(myfunc);
+				document.getElementById("timer").innerHTML ="00:00:00";
+				d=-1;		
+				// var elems = document.getElementsByTagName('input');
+				var elems = $(":input:not([type=hidden])");
+				for (var i = 0; i < elems.length;i++) {
+					if(elems[i].id=="btn_save"){
+						 elems[i].disabled = false;
+					}else{
+						elems[i].disabled = true;
+					}
+				}
+							
+				stopAudio();
+				stop_flg = true;
+				
+			}
+
+// <!--save試験を保存する	-->
+
+      function save(){
+        console.log("stop flag is " + stop_flg);
+				console.log("didEnterBeforeUnload is " + didEnterBeforeUnload);
+
+				var result;
+				if (stop_flg == false){
+					result = confirm('試験を終了します。よろしいでしょうか。');
+				}else{
+					result = true;
+				}
+
+				console.log("save function ");
+				console.log("result is " + result);
+				if( result ) {
+					// Browserの再読み込みか戻るボタン以外の場合
+					if (didEnterBeforeUnload == false){
+						window.removeEventListener('beforeunload', onBeforeunloadHandler, false);
+					}
+					console.log('OKがクリックされました');
+          var quiz=document.getElementById("total_quiz").value;
+      }
+    	$("#main_form").attr("action",'{$smarty.const.HOME_DIR}YNSTestAnswerInfo/save');
+        $('#main_form').submit();
+      // doBack();
+    }
+			function save_orginal(){
+			
+				console.log("stop flag is " + stop_flg);
+				console.log("didEnterBeforeUnload is " + didEnterBeforeUnload);
+
+				var result;
+				if (stop_flg == false){
+					result = confirm('試験を終了します。よろしいでしょうか。');
+				}else{
+					result = true;
+				}
+
+				console.log("save function ");
+				console.log("result is " + result);
+				if( result ) {
+					// Browserの再読み込みか戻るボタン以外の場合
+					if (didEnterBeforeUnload == false){
+						window.removeEventListener('beforeunload', onBeforeunloadHandler, false);
+					}
+					console.log('OKがクリックされました');
+					var corr_txt=[];
+					var result_ans=[];
+					var t_answer=[];
+					var stu_txt=[];
+					var corr_txt=[];
+					var final_res=[];
+					var text_ans=[];
+					var count=0;
+					var itemcnt=0;
+					var converts='';
+					var item='';
+					var corr_flg = "";
+					var ans_flg = 0;
+					var quiz=document.getElementById("total_quiz").value;
+						
+					for(var i=0;i<quiz;i++){
+						 item=document.getElementById("total_item_"+i).value;
+						for(var j=0;j<item;j++){
+							
+							var option=document.getElementById("total_option_"+i+"_"+j).value;
+							var item_type=document.getElementById("type_"+i+"_"+j).value;
+							for(var k=0;k<option;k++){
+								
+								result_ans[i]=new Array();
+								result_ans[i][j]=new Array();
+								
+								
+								t_answer[i]=new Array();
+								t_answer[i][j]=new Array();
+								
+								var quiz_id=document.getElementById("quiz_id_"+i).value;
+								var item_id=document.getElementById("item_id_"+i+"_"+j).value;
+								var option_id=document.getElementById("option_id_"+i+"_"+j+"_"+k).value;
+							 
+								if(item_type == 001){	
+									var rdo=document.getElementById("rdo_"+i+"_"+j+"_"+k);
+									if(rdo.checked){
+										var rdo_result=rdo.value;
+										if(rdo_result==1){
+											result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+option_id+"_1";
+										
+										}else{
+											result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+option_id+"_0";
+										}	
+											t_answer[i][j]="rdo_"+quiz_id+"_"+item_id+"_"+" ";
+									}else{
+										result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+"0_0";
+										t_answer[i][j]="rdo_"+quiz_id+"_"+item_id+"_"+" ";
+										
+									}
+									
+								}else{		
+									
+									corr_txt=document.getElementById("ans_txt_"+i+"_"+j+"_"+k).value;
+									var txt=document.getElementById("txt_"+i+"_"+j+"_"+k);
+									console.log("corr_txt is :" + corr_txt);
+									if(txt.value!='' && txt.value != null ){
+										console.log("not null");
+										var txt_ans=txt.value;
+										
+										converts+=txt_ans.toString()+"|";
+			
+										if(corr_txt.toUpperCase() === txt_ans.toUpperCase()){
+											result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_"+option_id+"_1";
+											corr_flg += "1";
+										}else{
+											result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_"+option_id+"_0";
+											corr_flg += "0";
+										}
+
+									}else{
+										result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_0"+"_0";
+										t_answer[i][j]="txt_"+quiz_id+"_"+item_id+"_"+" ";
+										corr_flg += "0";
+									}
+								}//else
+								
+								final_res[count]=result_ans[i][j][k].toString();
+								
+								count++;
+								
+							}//option
+							
+							// すべてのオプションを解答しているかチェック
+							t_answer[i][j]=converts;
+							if (converts != ""){
+								ans_flg = 1;
+							}
+							
+							// すべてのオプションが正解がチェック
+							var n ;
+							if (corr_flg != ""){
+								n = corr_flg.includes("0");
+								
+								if ( n == false){
+									corr_flg = 1 ;
+								}
+							}
+							
+							// 回答内容設定
+							if(corr_flg == 1){
+								text_ans[itemcnt]="txt_"+quiz_id+"_"+item_id+"_"+converts + "_1_" + ans_flg;
+							}else{
+								text_ans[itemcnt]="txt_"+quiz_id+"_"+item_id+"_"+converts + "_0_" + ans_flg;
+							}
+							
+							//alert(t_answer[i][j]);
+							converts="";
+							corr_flg = "";
+							ans_flg = 0;
+							itemcnt++;
+						}//item
+						
+					}//quiz
+
+					$("#final_result").val(final_res.toString());
+					$("#text_ans").val(text_ans.toString());
+					
+					var result=document.getElementById("final_result").value;
+					var text_res=document.getElementById("text_ans").value;
+					var test_info_no = document.getElementById("test_info_no").value;
+					var homeDir=document.getElementById("home_dir").value;
+          
+
+					var fd = new FormData();
+					fd.append('final_result', result);
+					fd.append('test_info_no', test_info_no);
+					fd.append('ans_text', text_res);
+					fd.append('btn_text', "btn_save");
+					
+					console.log("final_result :" + result);
+					console.log("ans_text :" + text_res);
+					console.log(fd);
+					
+					$.ajax({
+						type : 'POST',
+						url : homeDir + 'YNSTestAnswerInfo/save',
+						data : fd,
+						datatype : 'JSON',
+						processData : false,
+						contentType : false
+					}).done(
+						function(data) {
+
+							if(data=="cannot save"){
+								$('#err_dis').show();
+								$(".error_section").slideToggle('slow');
+								$(".error_msg").html(data);
+								$('#err_msg').val(data);
+							}
+							
+							stopAnswer();
+							doBack();
+
+						}).fail(function(data) {
+							console.log(data);
+							console.log("error");
+						});
+
+				}
+				else {
+					console.log('キャンセルがクリックされました');
+				}
+			}//save
+			
+			// 試験一覧へ
+			function doBack(){
+				console.log("doIndex");
+				var home_dir = document.getElementById('home_dir').value;
+				
+				console.log("lang :" + $("#lang").val());
+				$("#main_form").attr("action", home_dir + "YMHTestInfoList");
+				$("#main_form").submit();
+			}
+			
+// <!--playAudio音楽を開ける	-->	
+			function playAudio(ID) { 
+				
+				var play_flg = document.getElementById('play_flg'+ID);
+				var player = document.getElementById('resQuiz_audio_'+ID);
+				var aTagBtn = document.getElementById('btnAudio'+ID);
+				var label = document.getElementById('lblAudio'+ID);
+				var flag=false; 
+				var allAudio=document.getElementsByTagName('audio');
+				var img;
+				for(var i=0;i<allAudio.length;i++){	
+					if(allAudio[i].currentTime>0 && !allAudio[i].ended){
+						flag=true;
+					}	
+				}
+				if(flag==false){		
+					
+					if(play_flg.value == 'false' && !player.ended){
+						player.play();
+						aTagBtn.classList.add("started");
+						document.getElementById('btnAudio'+ID).classList.remove("btnAudio");
+						img = document.getElementById('play_img'+ID).style.visibility = 'hidden';
+						showTime(player, ID);
+					}else if(play_flg.value == 'false' && player.ended){
+						aTagBtn.classList.add("disabled");
+						play_flg.value = 'true';
+						player.setAttribute('src','');
+					}else if(player.currentTime > 0){
+						player.pause();
+					}else{
+						player.pause();
+					}		  
+					
+				}
+			}
+			
+			function showTime(player,ID){
+				var timeoutHandle;
+				var duration = player.duration;
+
+				var aTagBtn = document.getElementById('btnAudio'+ID);
+				var label = document.getElementById('lblAudio'+ID);
+
+				var dHours = Math.floor(duration / 3600);
+				var dMinutes = Math.floor(duration % 3600 / 60);
+				var dSeconds = Math.floor(duration % 3600 % 60);
+
+				var lastDuration = (dHours < 10 ? "0" : "") + dHours.toString()
+					+ ":" + (dMinutes < 10 ? "0" : "") + dMinutes.toString()
+					+ ":" + (dSeconds < 10 ? "0" : "") + String(dSeconds);
+
+				function countdown2(hours, minutes, seconds){
+					function tick(){
+					label.innerHTML = (hours < 10 ? "0" : "") + hours.toString()
+							+ ":" + (minutes < 10 ? "0" : "") + minutes.toString()
+							+ ":" + (seconds < 10 ? "0" : "") + String(seconds)
+							+ " / " + lastDuration;
+					seconds--;
+					if (seconds >= 0) {
+						timeoutHandle = setTimeout(tick, 1000);
+					} else {
+						if (minutes >= 1) {
+							setTimeout(function() {
+								countdown2(hours, minutes - 1, 59);
+							}, 1000);
+						} else {
+							if (minutes >= 0) {
+								if (hours > 0) {
+									timeoutHandle = setTimeout(tick, 1000);
+									setTimeout(function() {
+										countdown2(hours - 1, 59, 59);
+									}, 1000);
+								}
+							}
+						}
+					}
+					if (hours <= 0 && minutes <= 0 && seconds < 0) {
+						aTagBtn.classList.add("disabled");
+						document.getElementById('btnAudio'+ID).classList.remove("started");
+						img = document.getElementById('play_img'+ID).style.visibility = 'hidden';
+					}
+				}
+			tick();
+		}
+		countdown2(dHours, dMinutes, dSeconds);
+	}
+
+// <!--stopAudio音楽をやめる	-->	
+			function stopAudio() {	
+				var elems = document.getElementsByTagName('audio');			
+				var a_elems = document.getElementsByTagName('a');
+				for (var i = 0; i < elems.length; i++) {
+						elems[i].setAttribute('src','');
+						elems[i].pause();
+				}		
+
+				for(var a=0; a<a_elems.length; a++){
+					a_elems[a].classList.add("disabled");
+				}
+			} 
+		
+		$(function() {
+			$('#divContent').css('display','none');
+			if ( !document.getElementById("filter") ){
+				$("body").append("<div id=\"filter\"></div>");
+				console.log("filter append");
+			}else {
+				$("#filter").show();
+				console.log("filter show");
+			} 
+			
+		});
+		
+		$(".radio_td").click(function () {
+			if (stop_flg == false)
+			{
+				var id =  $(this).attr('id');
+				var name =	$(this).attr('name');
+				
+				var rdoId = id.replace("td_", "rdo_");
+				var rdoName = name.replace("td_", "rdo_");
+				
+				console.log(id);
+				console.log(rdoId);
+				
+				$("input[name= " + rdoName + "][id='" + rdoId + "']").prop("checked",true);
+				
+				// テーブルの色をリセット
+				var elements = document.getElementsByName(name);
+				for (var i = 0; i < elements.length; i++) {
+					elements[i].style.backgroundColor = "#e2eff3";
+				}
+
+				// 選択中の色セット
+				$(this).css('background-color', '#79b7e7');
+				
+				//radioClickSave();
+			}
+		});
+		
+		//保存ボタン押下処理
+		$('#btn_save').on('click', function(){
+		   console.log('btn_save click');
+		   save();
+		 });
+		 
+		
+		// 途中の保存処理
+		function radioClickSave(){
+			
+			console.log("radio click save function ");
+			var corr_txt=[];
+			var result_ans=[];
+			var t_answer=[];
+			var stu_txt=[];
+			var corr_txt=[];
+			var final_res=[];
+			var text_ans=[];
+			var count=0;
+			var itemcnt=0;
+			var converts='';
+			var item='';
+			var corr_flg = "";
+			var ans_flg = 0;
+			var quiz=document.getElementById("total_quiz").value;
+				
+			for(var i=0;i<quiz;i++){
+				 item=document.getElementById("total_item_"+i).value;
+				for(var j=0;j<item;j++){
+					
+					var option=document.getElementById("total_option_"+i+"_"+j).value;
+					var item_type=document.getElementById("type_"+i+"_"+j).value;
+					for(var k=0;k<option;k++){
+						
+						result_ans[i]=new Array();
+						result_ans[i][j]=new Array();
+						
+						
+						t_answer[i]=new Array();
+						t_answer[i][j]=new Array();
+						
+						var quiz_id=document.getElementById("quiz_id_"+i).value;
+						var item_id=document.getElementById("item_id_"+i+"_"+j).value;
+						var option_id=document.getElementById("option_id_"+i+"_"+j+"_"+k).value;
+					 
+						if(item_type == 001){	
+							var rdo=document.getElementById("rdo_"+i+"_"+j+"_"+k);
+							if(rdo.checked){
+								var rdo_result=rdo.value;
+								if(rdo_result==1){
+									result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+option_id+"_1";
+								
+								}else{
+									result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+option_id+"_0";
+								}	
+									t_answer[i][j]="rdo_"+quiz_id+"_"+item_id+"_"+" ";
+							}else{
+								result_ans[i][j][k]="rdo_"+quiz_id+"_"+item_id+"_"+"0_0";
+								t_answer[i][j]="rdo_"+quiz_id+"_"+item_id+"_"+" ";
+								
+							}
+							
+						}else{		
+							
+							corr_txt=document.getElementById("ans_txt_"+i+"_"+j+"_"+k).value;
+							var txt=document.getElementById("txt_"+i+"_"+j+"_"+k);
+							console.log("corr_txt is :" + corr_txt);
+							if(txt.value!='' && txt.value != null ){
+								console.log("not null");
+								var txt_ans=txt.value;
+								
+								converts+=txt_ans.toString()+"|";
+	
+								if(corr_txt.toUpperCase() === txt_ans.toUpperCase()){
+									result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_"+option_id+"_1";
+									corr_flg += "1";
+								}else{
+									result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_"+option_id+"_0";
+									corr_flg += "0";
+								}
+
+							}else{
+								result_ans[i][j][k]="txt_"+quiz_id+"_"+item_id+"_0"+"_0";
+								t_answer[i][j]="txt_"+quiz_id+"_"+item_id+"_"+" ";
+								corr_flg += "0";
+							}
+						}//else
+						
+						final_res[count]=result_ans[i][j][k].toString();
+						
+						count++;
+						
+					}//option
+					
+					// すべてのオプションを解答しているかチェック
+					t_answer[i][j]=converts;
+					if (converts != ""){
+						ans_flg = 1;
+					}
+					
+					// すべてのオプションが正解がチェック
+					var n ;
+					if (corr_flg != ""){
+						n = corr_flg.includes("0");
+						
+						if ( n == false){
+							corr_flg = 1 ;
+						}
+					}
+					
+					// 回答内容設定
+					if(corr_flg == 1){
+						text_ans[itemcnt]="txt_"+quiz_id+"_"+item_id+"_"+converts + "_1_" + ans_flg;
+					}else{
+						text_ans[itemcnt]="txt_"+quiz_id+"_"+item_id+"_"+converts + "_0_" + ans_flg;
+					}
+					
+					//alert(t_answer[i][j]);
+					converts="";
+					corr_flg = "";
+					ans_flg = 0;
+					itemcnt++;
+				}//item
+				
+			}//quiz
+
+			$("#final_result").val(final_res.toString());
+			$("#text_ans").val(text_ans.toString());
+			
+			var result=document.getElementById("final_result").value;
+			var text_res=document.getElementById("text_ans").value;
+			var test_info_no = document.getElementById("test_info_no").value;
+			var homeDir=document.getElementById("home_dir").value;
+
+			var fd = new FormData();
+			fd.append('final_result', result);
+			fd.append('test_info_no', test_info_no);
+			fd.append('ans_text', text_res);
+			fd.append('btn_text', "radioClick");
+			
+			console.log("final_result :" + result);
+			console.log("ans_text :" + text_res);
+			
+			$.ajax({
+				type : 'POST',
+				url : homeDir + 'YNSTestAnswerInfo/save',
+				data : fd,
+				datatype : 'JSON',
+				processData : false,
+				contentType : false
+			}).done(
+				function(data) {
+
+					if(data=="cannot save"){
+						$('#err_dis').show();
+						$(".error_section").slideToggle('slow');
+						$(".error_msg").html(data);
+						$('#err_msg').val(data);
+					}
+					
+				}).fail(function(data) {
+					console.log(data);
+					console.log("error");
+				});
+
+		}
+		  
+		$(window).load(function () { //全ての読み込みが完了したら実行
+		   $('#filter').hide();
+		   $('#divContent').show();
+		   startCountDown();
+		   console.log("filter hide");
+		});
+		
+		// 再読み込みと戻るボタン押下フラグ初期設定
+		var didEnterBeforeUnload = false;
+		/*	ページから放れようとするとき、確認メッセージ表示 */
+		var onBeforeunloadHandler = function(e) {
+			// 再読み込みと戻るボタン押下フラグ設定
+			didEnterBeforeUnload = true;
+			// 回答内容を保存する
+			//radioClickSave();
+			e.returnValue = '行った変更が保存されない可能性があります。よろしいでしょうか。';
+			// 再読み込みと戻るボタン押下フラグリセット
+			didEnterBeforeUnload = false;
+		};
+		
+		window.addEventListener('beforeunload', onBeforeunloadHandler, false);
+
+</script>
+</html>

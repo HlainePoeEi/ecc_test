@@ -1,0 +1,220 @@
+/*@import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css';
+@import '//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css';*/
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+
+.answerProgress {
+    position: relative;
+    height: 20px;
+    background-color: #EFF5FD;
+    border:none;
+    width:100%;    
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.answerBar {
+    position: absolute;
+    width: 50%;
+    height: 20px;
+    /*background: linear-gradient(#2EFEF7,#01DFD7,#04B4AE,#04B4AE)*/
+    background-color: #5a90d8;
+}
+.prepareProgress {
+    position: relative;
+    height: 30px;
+    background-color: #EFF5FD;
+}
+.prepareBar {
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    background: linear-gradient(#FACC2E,#FFBF00,#DBA901)
+}
+.answerLabel {
+    text-align: right;
+    line-height: 30px;
+    color: black;
+}
+.prepareLabel {
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+.divProgress{
+    width:100%;
+    height:30px;
+    padding-top:0px;
+    position: relative;
+  
+}
+.lblAnswerTime{
+    color:#1d5987;
+    margin-bottom: 10px;
+}
+.divAnswer{  
+    height:40px;
+    text-align: right;
+}
+#divQuiz{
+   margin-left:50px;
+   margin-top:0px;
+   margin-right:10px;
+   /*width:100%;*/
+   clear:both;
+   /*overflow-y: hidden;*/
+   height: 100%;
+}
+.testList{
+    float: right;
+    background: url(../image/back.svg);
+    background-color: none;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    border: 0;
+}
+.testName{
+    font-size: 20px;
+    color: #629bc5;
+}
+.quizDescription{
+    font-size: 16px;
+}
+/*
+.tbl_search{
+    display: none;    
+    border:1px;
+    width:100%;   
+} */
+.cor{
+    color: #0EA40E;
+    font-size: 20px;
+}
+#image{
+    width:100px;
+    height:100px; 
+}
+td.quizNo{
+    font-size: 16px;
+}
+.hintans{
+    font-size: 20px;
+    color:#0EA40E;
+    display:none; 
+}
+.quizContent{
+    color: black;
+    font-size: 17px;
+    font-weight:normal;
+}
+.radioImg{
+    display: none;
+    width:15px;
+    height:15px;
+    margin: 0px 20px;
+}
+.giveup{
+    background-color: #ADD8E6;
+    width: 150px;
+    height: 30px;
+}
+.hintanswer{
+    margin-left: 140px;
+    background-color: #ADD8E6;
+    width: 150px;
+    height: 30px;
+}
+.test_next_quiz{
+    /*margin-left: 5px;*/
+    background-color: #98d3e2;
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.check_quiz{
+   /* margin-left: 5px;*/
+    background-color: #98d3e2;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.resultShow ,.resultHead{
+    display: block;
+}
+.resultQuizNo{
+    width: 100px;
+}
+.resultQuestion{
+    width: 900px;
+}
+.resultAnswer{
+    width: 200px;
+}
+.answertext {
+    height: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #5b5d5e;
+    outline: 0;
+    font-size: 15px;
+    width: 400px;
+}
+
+.test_quiz_tbl{
+    width: 70%;
+    margin: auto;
+}
+
+.tbl_radio input[type=radio],
+.tbl_radio input[type=checkbox] {
+   display: none;
+ }
+
+/*.tbl_radio label {
+   display: block;
+   appearance: button;
+   -webkit-appearance: button;
+   -moz-appearance: button;
+   -ms-appearance: button;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   background: #DDDDDD;
+   font-size: 16px;
+   color: #111111;
+   border: 2px solid #AAAAAA;
+   padding: 8px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: left;
+   padding-left: 20px;
+}*/
+
+.tbl_radio {
+    background-color: #dcf2f9;;
+    border: none;
+    border-collapse: collapse !important;
+}
+
+.tbl_radio td{
+    padding-left: 20px;
+}
+
+.tbl_radio tr{
+    background-color: #e2eff3;
+}
+
+.test_quiz_tbl{
+     border-collapse: collapse !important;
+     border-spacing: 0px;
+}
+
+.test_quiz_div{
+    width: 70%;
+    margin: auto;
+	margin-top: 0px;
+}

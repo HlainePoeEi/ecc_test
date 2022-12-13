@@ -230,4 +230,20 @@ class YNSExamService extends BaseService
 		$dao = new T_YNSExamDao();
 		return $dao->deleteExamInfo($dto);
 	}
+
+	public function getQuizListForExam($exam_id)
+	{
+		$dao = new T_YNSExamDao();
+		return $dao->getQuizListForExam($exam_id);
+	}
+
+	public function getExamData($exam_id){
+		$dao = new T_YNSExamDao();
+		return $dao->getExamData($exam_id);
+	}
+	public function getUpdateExamData($exam_id){
+		$dao = new T_YNSExamDao();
+		return $dao->getUpdateExamData($exam_id);
+	}
 }
+
