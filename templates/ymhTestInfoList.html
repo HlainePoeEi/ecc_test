@@ -255,13 +255,13 @@
                     <td style="display: none">{$obj->show_flg}</td>
                     <td class="tshousai-td">
                       {if $obj->status == "" || $obj->status == "n" }
-                      <input type="button" class="btn_confirm" id="btn_answer" title="受講"
+                      <input type="button" class="btn_confirm1" id="btn_answer" title="受講"
                         onclick="confirm_action('{$obj->exam_id}','{$smarty.const.HOME_DIR}YNSTestAnswerInfo/index')" />
                       {/if}
                     </td>
                     <td class="tshousai-td">
                       {if $obj->status == 'y'}
-                      <input type="button" class="btn_confirm" id="btn_result" title="確認"
+                      <input type="button" class="btn_confirm1" id="btn_result" title="確認"
                         onclick="doPage('{$obj->test_info_no}', '{$obj->lesson_no}','{$obj->group_no}','{$smarty.const.HOME_DIR}TestInfoResultDetail/index')"
                         disabled />
                       {/if}
