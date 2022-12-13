@@ -72,6 +72,38 @@ class TestInfoListController extends BaseController
 			$this->smarty->assign('err_msg', $err_msg);
 		}
 	}
+
+	public function checkDataAction()
+	{
+
+		if ($this->check_maintenance() == true) {
+
+			if ($this->check_login() == true) {
+				
+				$service = new TestInfoService($this->pdo);
+				$this->form->page = $this->form->search_page;
+				$this->form->page_row = $this->form->search_page_row;
+				$this->form->page_order_column = $this->form->search_page_order_column;
+				$this->form->page_order_dir = $this->form->search_page_order_dir;
+				$result = $service->getListQuiz($this->form->org_no, $this->form->test_info_no);
+				LogHelper::logDebug("------------------------------" . count($result));
+				LogHelper::logDebug("------------------------------" . count($result));
+				if (count($result) < 1) {
+					$err_msg = "テストのクイズがありません。";
+					echo ($err_msg);
+				}
+			} else {
+
+				TransitionHelper::sendException(E002);
+				return;
+			}
+		} else {
+
+			TransitionHelper::sendException(E002);
+			return;
+		}
+	}
+
 	public function searchAction()
 	{
 

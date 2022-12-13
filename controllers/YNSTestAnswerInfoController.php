@@ -14,19 +14,18 @@ class YNSTestAnswerInfoController extends BaseController
     {
         if ($this->check_login() == true) {
             $exam_id = $this->form->exam_id;
-            echo $exam_id;
             if (!empty($exam_id)) {
 
                 $this->search($this->form);
 
-                // メニュー情報を取得、セットする
+                //ニュー情報を取得、セットする
                 $this->setMenu();
 
                 $audio_file = sprintf(F001, AUDIO_FILE, 'YNSQuiz', 'YNSQuizInfo', 'ynSAudio');
 
                 LogHelper::logDebug("audio File : " . $audio_file);
 
-                $this->smarty->assign('folder_check',  $_SERVER["DOCUMENT_ROOT"] . ADMIN_HOME_DIR);
+                $this->smarty->assign('folder_check', $_SERVER["DOCUMENT_ROOT"] . ECCTEST_FILE_DIR);
                 $this->smarty->assign('audio_file', $audio_file);
                 $this->smarty->assign('form', $this->form);
                 $this->smarty->display('ynsTestAnswerInfo.html');
@@ -52,42 +51,19 @@ class YNSTestAnswerInfoController extends BaseController
         $options = array(array(array()));
 
         // 検索結果を取得
-        $quizList = $service->getListQuizForPreview($exam_id);
+        $exam_info = $service->getExamData($exam_id);
+        $quizList = $service->getQuizListForExam($exam_id);
         LogHelper::logDebug($quizList);
 
         if (count($quizList) > 0) {
-
-            LogHelper::logDebug("Quiz COUNt" . count($quizList));
-            for ($i = 0; $i < count($quizList); $i++) {
-                $quiz_des[] = $quizList[$i]->content;
-                $itemList = $service->getItemList($quizList[$i]->quiz_id);
-                LogHelper::logDebug("Item List" . count($itemList));
-                if (!empty($itemList)) {
-                    for ($j = 0; $j < count($itemList); $j++) {
-                        $items[$i][$j] = $itemList[$j];
-                        $optionList = $service->getOptionList($items[$i][$j]->quiz_item_no, $quizList[$i]->quiz_id);
-
-                        if (!empty($optionList)) {
-                            for ($k = 0; $k < count($optionList); $k++) {
-                                $options[$i][$j][$k] = $optionList[$k];
-                            }
-                        }
-                    }
-                }
-            }
-            $this->smarty->assign('optionList', $optionList);
-            $this->smarty->assign('options', $options);
-            $this->smarty->assign('items', $items);
-            $this->smarty->assign('itemList', $itemList);
             $this->smarty->assign('quiz_list', $quizList);
-            $this->smarty->assign('quiz_description', $quiz_des);
-            $this->smarty->assign('option_list', "");
+            $this->smarty->assign('audio_name', $quizList[0]->audio_name);
             $this->smarty->assign('msg', '');
-            $this->smarty->assign('item_list', '');
             $this->smarty->assign('form', $form);
-            $this->smarty->assign('test_name', $quizList[0]->name);
-            $this->smarty->assign('time', $quizList[0]->time);
-            $this->smarty->assign('description', $quizList[0]->content);
+            $this->smarty->assign('exam_id', $exam_info[0]->exam_id);
+            $this->smarty->assign('test_name', $exam_info[0]->name);
+            $this->smarty->assign('time', $exam_info[0]->time);
+            $this->smarty->assign('description', $exam_info[0]->description);
         } else {
             // エラーメッセージを設定 「検索結果がありません」
             $msg = sprintf(W005);
@@ -99,6 +75,20 @@ class YNSTestAnswerInfoController extends BaseController
         }
     }
 
+    public function saveAction()
+    {
+        if ($this->check_login() == true) {
+            $service = new YNSExamService($this->pdo);
+            $exam_id = $this->form->exam_id;
+            $exam_info = $service->getUpdateExamData($exam_id);
+            if ($exam_info == 1) {
+                $this->dispatch('YMHTestInfoList/index');
+            } else {
+                TransitionHelper::sendException(E002);
+                return;
+            }
+        }
+    }
     /*
      * 戻るボタンのAction
      */
@@ -113,7 +103,7 @@ class YNSTestAnswerInfoController extends BaseController
             $this->dispatch('AtReportList/index');
         } else {
             // 試験一覧画面へ遷移する
-            $this->dispatch('TestInfoList/Search');
+            $this->dispatch('YMHTestInfoList/Search');
         }
     }
 
