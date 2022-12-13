@@ -40,7 +40,9 @@ class BaseController
 		$this->pdo = $pdo;
 
 		//session check
-		$this->checkSession();
+		if (get_class($this->form) != "YNSTestAnswerInfoForm") {
+			$this->checkSession();
+		}
 
 		$this->setMenu();
 
@@ -163,8 +165,8 @@ class BaseController
 
 		//メニューをMenu画面以外は常に閉じるように
 		/*	if (get_class($this) != "MenuController"){
-			$this->form->menuOpen = "";
-			unset($_SESSION['menuOpen']);
+		$this->form->menuOpen = "";
+		unset($_SESSION['menuOpen']);
 		} */
 
 		if (isset($_SESSION['menuStatus'])) {

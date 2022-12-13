@@ -1,0 +1,983 @@
+@media only screen and (max-width: 979px) {
+	.qa_description{
+		padding: 20px!important;
+		width: 90%!important;
+		height: 0%!important;
+	}
+
+	.description{
+		width: 90%!important;
+		max-height: 230px!important;
+	}
+
+	.wr_answer{
+		width: 90%!important;
+	}
+
+	.quiz_label{
+		padding-left: 20px!important;
+	}
+
+	#divMic{
+		height:170px !important;
+	}
+	#writing_test_div{
+		height:200px;
+	}
+	#div_rt_area{
+		min-height: 360px !important;
+		display:table;
+	}
+
+	.sfbList tr td {
+		font-size: 15px;
+	}
+
+	.progress{
+		left:0 !important;
+	}
+
+	.audio_label,
+	#lbl_cause,
+	.answerProgress,
+	.divProgress,
+	#divAnswer,
+	.start_recod,
+	.test_quiz_tbl{
+		width: 100%!important;
+	}
+
+	#columnchart,
+	.comment_pattern_1{
+		width: 98%!important;
+	}
+
+	.course_caption{
+		width:90% !important;
+	}
+
+	#divMic{
+		/* width:70% !important; */
+	}
+
+	#first{
+		height: 470px!important;
+	}
+
+	#firstWriting{
+		height: 500px!important;
+	}
+
+	#div_cmtForm1{
+		float:left!important;
+		width: 95%!important;
+	}
+
+	#lbl_mark{
+		font-size: 30px!important;
+	}
+
+	#answer_audio,
+	#sample_audio{
+		margin-left: 0px!important;
+		width: 243px!important;
+	}
+
+	#start_dev{
+		overflow-y: inherit!important;
+	}
+
+	.audio_preview{
+		width: 91%!important;
+		padding: 0px!important;
+		padding-left: 9%!important;
+	}
+
+	.content{
+		width: 98%!important;
+		margin: 0 !important;
+		padding: 0 1%!important;
+	}
+
+	.left{
+		padding-left:10px;
+	}
+
+	#testListTbl tr td {
+		padding: 3px 0 !important;
+	}
+
+	.status_list, .lesson_list{
+		width:43% !important;
+	}
+
+	.searchWrapper{
+		width: 10% !important;
+		float: right;
+		margin: 0 !important;
+	}
+
+	.searchWrapper .btn_search,
+	.desc_wrap,
+	#login div,
+	#recordingslist{
+		padding:0 !important;
+	}
+
+	#questionnaireListTbl_wrapper select,
+	#message_list_length select,
+	#testListTbl_length selec,
+	#test_list_length select,
+	#notice_tbl_length select,
+	#groupsearch select,
+	#courseListTbl_length select{
+		width: 230px;
+	}
+
+	.tbl_search thead tr th, .tbl_search thead tr td,
+	#testListTbl tbody tr td {
+		width: 40% !important;
+	}
+
+	#testListTbl tbody tr td .td-align{
+		margin-left: 10px;
+	}
+
+	#testListTbl tbody tr td:nth-child(3),
+	.tbl_search thead tr th:nth-child(3){
+		width: 20% !important;
+	}
+
+	#testListTbl .btn_confirm,
+	#pswChange .btn_confirm{
+		float:right !important;
+	}
+
+	#questionnaireListTbl_wrapper label,
+	#testListTbl_wrapper label,
+	#test_list_length,
+	#notice_tbl_length,
+	#courseListTbl_length{
+		float: left !important;
+	}
+
+	.upload_tick,.download_tick{
+		width: 12px !important;
+	}
+
+	.download_img,.upload_img{
+		width:25px !important;
+	}
+
+	.deadline_caption{
+		font-size:12px;
+	}
+
+	#testListTbl tr div,
+	.lesson_list,
+	.msg_dtl,
+	.back_btn,
+	.lblAnswerTime,
+	#record_test_div,
+	#recordingslist,
+	#div_rt_area3,
+	.current_quiz_no,
+	.hintanswer{
+		margin:0 !important;
+	}
+
+	.msg_dtl td:nth-child(1){
+		width: 200px !important;
+	}
+
+	#recordingslist audio{
+		width: 230px !important;
+	}
+
+	#divQuiz {
+		margin: 0 !important;
+		position: absolute;
+		width:99% !important;
+	}
+
+	.next_quiz {
+		width: 320px !important;
+	}
+
+	#login{
+		width: 80% !important;
+		height: 40%;
+		position: absolute;
+		left: 10%;
+	}
+
+	#login table{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#login table tr input,
+	#pswChange table tr input{
+		width:100% !important;
+		background-size: 100% 100% !important;
+	}
+
+	#login tr {
+		height: 0 !important;
+	}
+
+	#pswChange tr td {
+		width: 0 !important;
+	}
+
+	#message_list_length,
+	#notice_tbl_length,
+	#div_rt_area #loading,
+	#answer_audio_dev #loading{
+		text-align:left !important;
+	}
+
+	.course_caption{
+		text-align:center;
+	}
+
+	#pswChange div{
+		padding-left: 0 !important;
+	}
+
+	#tbl tr td:nth-child(1){
+		width: 18% !important;
+	}
+
+	#tbl tr td:nth-child(3){
+		width: 60% !important;
+	}
+
+	#quiz_text,
+	.current_quiz_no{
+		font-size:14px !important;
+	}
+
+	.question_area {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.start_recod_btn {
+		width: 50px !important;
+		margin:0 !important;
+	}
+
+	/*#start_recod span {
+		margin-top: 10px !important;
+	}*/
+
+	#start_record .btn_ring{
+		margin-top: -7px !important;
+	}
+
+	#q_audio{
+		margin:0 !important;
+		width:230px !important;
+	}
+
+	#loading{
+		position:relative !important;
+		left:0 !important;
+	}
+
+	.question_wrap{
+		padding-top: 30px !important;
+	}
+
+	#quiz_text img{
+		width: 80% !important;
+		height: 360px !important;
+		padding-left: 11%;
+	}
+
+	div#img_content img{
+	}
+
+	/*日付表示*/
+	.postPeriod-td>div{
+		display:grid;
+	}
+	.lessonName-td-div{
+		display:grid;
+	}
+	.dataTables_scrollBody{
+		max-height:30vh !important;
+	}
+	.div_btns{
+		display: inline-flex;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+	.qa_description{
+		padding: 20px!important;
+		width: 90%!important;
+		height: 0%!important;
+	}
+
+	.description{
+		width: 90%!important;
+		max-height: 230px!important;
+	}
+
+	.wr_answer{
+		width: 90%!important;
+	}
+
+	.quiz_label{
+		padding-left: 20px!important;
+	}
+
+	#divMic{
+		height:170px !important;
+	}
+	#writing_test_div{
+		height:200px;
+	}
+	#div_rt_area{
+		min-height: 360px !important;
+		display:table;
+	}
+	.sfbList tr td {
+		font-size: 15px;
+	}
+
+	.audio_label,
+	#lbl_cause,
+	.answerProgress,
+	.divProgress,
+	#divAnswer,
+	.start_recod,
+	.test_quiz_tbl{
+		width: 100%!important;
+	}
+
+	#complete{
+	margin-right:0px !important;
+	}
+
+	#columnchart,
+	.comment_pattern_1{
+		width: 98%!important;
+	}
+
+	#first{
+		height: 470px!important;
+	}
+
+	#spfeedback_title,#wrfeedback_title{
+		margin-right:0 !important;
+		margin-left:0 !important;
+	}
+
+	#firstWriting{
+		height: 500px!important;
+	}
+
+	#div_cmtForm1{
+		float:left!important;
+		width: 95%!important;
+	}
+
+	#lbl_mark{
+		font-size: 30px!important;
+	}
+
+	#answer_audio,
+	#sample_audio{
+		margin-left: 0px!important;
+		width: 243px!important;
+	}
+
+	#start_dev{
+		overflow-y: inherit!important;
+	}
+
+	.audio_preview{
+		width: 91%!important;
+		padding: 0px!important;
+		padding-left: 9%!important;
+	}
+
+	.content{
+		width: 98%!important;
+		margin: 0 !important;
+		padding: 0 1%!important;
+	}
+
+	#testListTbl tr td {
+		padding: 3px 0 !important;
+	}
+
+	.status_list, .lesson_list{
+		width:43% !important;
+	}
+
+	.searchWrapper{
+		width: 10% !important;
+		float: right;
+		margin: 0 !important;
+	}
+
+	.searchWrapper .btn_search,
+	.desc_wrap,
+	#login div,
+	#recordingslist{
+		padding:0 !important;
+	}
+
+	#questionnaireListTbl_wrapper select,
+	#message_list_length select,
+	#testListTbl_length selec,
+	#test_list_length select,
+	#notice_tbl_length select,
+	#groupsearch select,
+	#courseListTbl_length select{
+		width: 230px;
+	}
+
+	.tbl_search thead tr th, .tbl_search thead tr td,
+	#testListTbl tbody tr td {
+		width: 40% !important;
+	}
+
+	#testListTbl tbody tr td:nth-child(3),
+	.tbl_search thead tr th:nth-child(3){
+		width: 20% !important;
+	}
+
+	#testListTbl .btn_confirm,
+	#pswChange .btn_confirm{
+		float:right !important;
+		margin-right: 18px;
+	}
+
+	#questionnaireListTbl_wrapper label,
+	#testListTbl_wrapper label,
+	#test_list_length,
+	#notice_tbl_length,
+	#courseListTbl_length{
+		float: left !important;
+	}
+
+	.upload_tick,.download_tick{
+		width: 12px !important;
+	}
+
+	.download_img,.upload_img{
+		width:25px !important;
+	}
+
+	.deadline_caption{
+		font-size:12px;
+	}
+
+	#testListTbl tr div,
+	.lesson_list,
+	.msg_dtl,
+	.back_btn,
+	.lblAnswerTime,
+	#record_test_div,
+	#recordingslist,
+	#div_rt_area3,
+	.current_quiz_no,
+	.hintanswer{
+		margin:0 !important;
+	}
+
+	.msg_dtl td:nth-child(1){
+		width: 200px !important;
+	}
+
+	#recordingslist audio{
+		width: 230px !important;
+	}
+
+	#divQuiz {
+		margin: 0 !important;
+		position: absolute;
+		width:99% !important;
+	}
+
+	.next_quiz {
+		width: 320px !important;
+	}
+
+	#login{
+		width: 80% !important;
+		height: 40%;
+		position: absolute;
+		left: 10%;
+	}
+
+	#login table{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#login table tr input,
+	#pswChange table tr input{
+		width:100% !important;
+		background-size: 100% 100% !important;
+	}
+
+	#login tr {
+		height: 0 !important;
+	}
+
+	#pswChange tr td {
+		width: 0 !important;
+	}
+
+	#message_list_length,
+	#notice_tbl_length,
+	#div_rt_area #loading,
+	#answer_audio_dev #loading,
+	#quiz_main #loading{
+		text-align:left !important;
+	}
+
+	#pswChange div{
+		padding-left: 0 !important;
+	}
+
+	.course_caption{
+		width:90% !important;
+	}
+
+	#divMic{
+		/* width:70% !important; */
+	}
+
+	.course_caption{
+		text-align:center;
+	}
+
+	#tbl tr:nth-child(1){
+		width: 18% !important;
+	}
+
+	#tbl tr:nth-child(2){
+		width: 20% !important;
+	}
+
+	#tbl tr:nth-child(3){
+		width: 60% !important;
+	}
+
+	#quiz_text,
+	.current_quiz_no{
+		font-size:14px !important;
+	}
+
+	.question_area {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.start_recod_btn {
+		width: 50px !important;
+		margin:5px 0 !important;
+		margin-left:10px !important;
+	}
+
+	.complete_btn{
+	margin-top: 0px !important;
+	}
+
+	#start_ring,
+	#stop_ring{
+		margin-top: 10px !important;
+	}
+
+	#complete_ring{
+		margin-top: 0px !important;
+	}
+
+	#complete_btn{
+		margin-top: 0px !important;
+	}
+
+	#btn_ring,
+	#end_ring{
+		margin-top: -7px !important;
+	}
+
+	#q_audio{
+		margin:0 !important;
+		width:230px !important;
+	}
+
+	#loading{
+		position:relative !important;
+		left:0 !important;
+	}
+
+	.answertext{
+		width:170px !important;
+	}
+
+	.question_wrap{
+		padding-top: 30px !important;
+	}
+
+	#quiz_text img{
+		width: 80% !important;
+		height: 360px !important;
+		padding-left: 11%;
+	}
+
+	div#img_content img{
+	}
+
+	.progress{
+		left:0 !important;
+	}
+
+	/*日付表示*/
+	.postPeriod-td>div{
+		display:grid;
+	}
+	.lessonName-td-div{
+		display:grid;
+	}
+	.dataTables_scrollBody{
+		max-height:30vh !important;
+	}
+	.div_btns{
+		display: inline-flex;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.qa_description{
+		padding: 20px!important;
+		width: 90%!important;
+		height: 0%!important;
+	}
+
+	.description{
+		width: 90%!important;
+		max-height: 230px!important;
+	}
+
+	.wr_answer{
+		width: 90%!important;
+	}
+
+	.quiz_label{
+		padding-left: 20px!important;
+	}
+
+	.sfbList tr td {
+		font-size: 15px;
+	}
+
+	#divMic{
+		height:230px !important;
+	}
+	#writing_test_div{
+		height:200px;
+	}
+	#div_rt_area{
+		min-height: 500px !important;
+		display:table;
+	}
+
+	.audio_label,
+	#lbl_cause,
+	.answerProgress,
+	.divProgress,
+	#divAnswer,
+	.start_recod,
+	.test_quiz_tbl{
+		width: 100%!important;
+	}
+
+	#columnchart,
+	.comment_pattern_1{
+		width: 98%!important;
+	}
+
+	#first{
+		height: 470px!important;
+	}
+
+	#firstWriting{
+		height: 500px!important;
+	}
+
+	#div_cmtForm1{
+		float:left!important;
+		width: 95%!important;
+	}
+
+	#lbl_mark{
+		font-size: 30px!important;
+	}
+
+	#answer_audio,
+	#sample_audio{
+		margin-left: 0px!important;
+		width: 243px!important;
+	}
+
+	#start_dev{
+		overflow-y: inherit!important;
+	}
+
+	.audio_preview{
+		width: 91%!important;
+		padding: 0px!important;
+		padding-left: 9%!important;
+	}
+
+	.content{
+		width: 98%!important;
+		margin: 0 !important;
+		padding: 0 1%!important;
+	}
+
+	.left{
+		padding-left:10px;
+	}
+
+	#testListTbl tr td {
+		padding: 3px 0 !important;
+	}
+
+	.status_list, .lesson_list{
+		width:43% !important;
+	}
+
+	.searchWrapper{
+		width: 10% !important;
+		float: right;
+		margin: 0 !important;
+	}
+
+	.searchWrapper .btn_search,
+	.desc_wrap,
+	#login div,
+	#recordingslist{
+		padding:0 !important;
+	}
+
+	#questionnaireListTbl_wrapper select,
+	#message_list_length select,
+	#testListTbl_length selec,
+	#test_list_length select,
+	#notice_tbl_length select,
+	#groupsearch select,
+	#courseListTbl_length select{
+		width: 230px;
+	}
+
+	.tbl_search thead tr th, .tbl_search thead tr td,
+	#testListTbl tbody tr td {
+		width: 40% !important;
+	}
+
+	#testListTbl tbody tr td:nth-child(3),
+	.tbl_search thead tr th:nth-child(3){
+		width: 20% !important;
+	}
+
+	#testListTbl .btn_confirm,
+	#pswChange .btn_confirm{
+		float:right !important;
+	}
+
+	#questionnaireListTbl_wrapper label,
+	#testListTbl_wrapper label,
+	#test_list_length,
+	#notice_tbl_length,
+	#courseListTbl_length{
+		float: left !important;
+	}
+
+	.upload_tick,.download_tick{
+		width: 12px !important;
+	}
+
+	.download_img,.upload_img{
+		width:25px !important;
+	}
+
+	.deadline_caption{
+		font-size:12px;
+	}
+
+	#testListTbl tr div,
+	.lesson_list,
+	.msg_dtl,
+	.back_btn,
+	.lblAnswerTime,
+	#record_test_div,
+	#recordingslist,
+	#div_rt_area3,
+	.current_quiz_no,
+	.hintanswer{
+		margin:0 !important;
+	}
+
+	.msg_dtl td:nth-child(1){
+		width: 200px !important;
+	}
+
+	#recordingslist audio{
+		width: 230px !important;
+	}
+
+	#divQuiz {
+		margin: 0 !important;
+		position: absolute;
+		width:99% !important;
+	}
+
+	.next_quiz {
+		width: 320px !important;
+	}
+
+	#login{
+		width: 80% !important;
+		height: 40%;
+		position: absolute;
+		left: 10%;
+	}
+
+	#login table{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#login table tr input,
+	#pswChange table tr input{
+		width:100% !important;
+		background-size: 100% 100% !important;
+	}
+
+	#login tr {
+		height: 0 !important;
+	}
+
+	#login tr td,
+	#pswChange tr td {
+		width: 0 !important;
+	}
+
+	#message_list_length,
+	#notice_tbl_length,
+	#div_rt_area #loading,
+	#answer_audio_dev #loading,
+	#quiz_main #loading{
+		text-align:left !important;
+	}
+
+	#pswChange div{
+		padding-left: 0 !important;
+	}
+
+	.course_caption{
+		width:90% !important;
+	}
+
+	#divMic{
+		/* width:70% !important; */
+	}
+
+	.course_caption{
+		text-align:center;
+	}
+
+	#tbl tr:nth-child(1){
+		width: 18% !important;
+	}
+
+	#tbl tr:nth-child(2){
+		width: 20% !important;
+	}
+
+	#tbl tr:nth-child(3){
+		width: 60% !important;
+	}
+
+	#quiz_text,
+	.current_quiz_no{
+		font-size:14px !important;
+	}
+
+	.question_area {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.start_recod_btn {
+		width: 50px !important;
+		margin : 0 !important;
+	}
+
+	#start_recod span {
+		margin-top: 10px !important;
+	}
+
+	#q_audio{
+		margin:0 !important;
+		width:230px !important;
+	}
+
+	#loading{
+		position:relative !important;
+		left:0 !important;
+	}
+
+	.answertext{
+		width:100px !important;
+	}
+
+	.giveup,
+	.hintanswer{
+		width:120px !important;
+	}
+
+	.question_wrap{
+		padding-top: 90px !important;
+	}
+
+	#quiz_text img{
+		width:593px !important;
+		height:355px !important;
+	}
+
+	.progress{
+		left:0 !important;
+	}
+
+	/*日付表示*/
+	.postPeriod-td>div{
+		display:grid;
+	}
+	.lessonName-td-div{
+		display:grid;
+	}
+	.dataTables_scrollBody{
+		max-height:23vh !important;
+	}
+	.div_btns{
+		display: inline-flex;
+	}
+}
