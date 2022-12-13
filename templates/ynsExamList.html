@@ -233,11 +233,11 @@
                         </table>
                         <br>
                         <div align="right" style="width:100%">
-                            <input type="submit" id="btn_search" name="search" title="検索" class="btn_search"
+                            <input type="submit" id="btn_search" name="search" title="検索" class="btn_search2"
                                 alt="search" value="" style="padding-right:50px;">
                             <!--20220309_事業部担当者対応-->
                             {if $admin_kbn != "005"}
-                            <input type="button" id="add" name="add_test" class="btn_add" value="" title="新規追加"
+                            <input type="button" id="add" name="add_test" class="btn_add2" value="" title="新規追加"
                                 onclick="javascript:doInsert('{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                             {/if}
                         </div>
@@ -256,7 +256,7 @@
                                     <th width="30px">割当</th>
                                     <th width="30px" style="text-align:center;">出題順</th>
                                     <th width="30px" style="text-align:center;">複写</th>
-                                    <th width="30px" style="text-align:center;">複写</th>
+
                                     <th width="30px" style="text-align:center;">確認</th>
                                     <th width="30px" style="text-align:center;">編集</th>
                                     <th width="30px" style="text-align:center;">削除</th>
@@ -274,38 +274,35 @@
                                         {$result->end_date}
                                     </td>
                                     <td width="30px" align="center">
-                                        <input type="button" class="btn_quiz_assign_list" name="btn_quizassign"
+                                        <input type="button" class="btn_quiz_assign_list2" name="btn_quizassign"
                                             title="割当"
                                             onclick="assign2('{$result->exam_id}','','{$smarty.const.HOME_DIR}APMQuizInfoAssign/index')">
                                     </td>
                                     <td width="30px" align="center">
-                                        <input type="button" class="btn_quiz_assign_list" name="btn_quizassign"
+                                        <input type="button" class="btn_quiz_assign_list1" name="btn_quizassign"
                                             title="出題順"
                                             onclick="assign2('{$result->exam_id}','1','{$smarty.const.HOME_DIR}YNSQuizInfoAssignment/index')">
                                     </td>
                                     <td width="30px" align="center">
                                         <!--20220309_事業部担当者対応-->
                                         {if $admin_kbn != "005"}
-                                        <input type="button" class="btn_copy" name="edit" title="複写"
+                                        <input type="button" class="btn_copy1" name="edit" title="複写"
                                             onclick="copy('{$result->exam_id}','{$smarty.const.HOME_DIR}ynsExamRegist/index')">
                                         {/if}
                                     </td>
-                                    <td width="30px" align="center"><input type="button" class="btn_copy" name="edit"
-                                            title="複写"
-                                            onclick="copyWithQuiz('{$result->org_no}','{$result->test_info_no}','{$smarty.const.HOME_DIR}TestInfoCopy/index')">
-                                    </td>
+
                                     <td width="30px" align="center">
                                         <!--20220309_事業部担当者対応-->
                                         {if $admin_kbn != "005"}
-                                        <input type="button" class="btn_preview_list" name="edit" title="確認"
+                                        <input type="button" class="btn_preview_list1" name="edit" title="確認"
                                             onclick="preview('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSTestInfoPreview/index')">
                                         {/if}
                                     </td>
-                                    <td width="30px" align="center"><input type="button" class="btn_edit" name="edit"
+                                    <td width="30px" align="center"><input type="button" class="btn_edit1" name="edit"
                                             title="編集"
                                             onclick="trans('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/index')">
                                     </td>
-                                    <td width="30px;" align="center"> <input type="button" class="btn_delete"
+                                    <td width="30px;" align="center"> <input type="button" class="btn_delete1"
                                             id="btn_del" name="delete" title="削除"
                                             onclick="checkDelete('{$result->exam_id}','{$smarty.const.HOME_DIR}YNSExamRegist/delete')" />
                                     </td>

@@ -86,6 +86,7 @@ class T_YNSQuizDao extends BaseDao
 		$query = " SELECT ";
 		$query .= " quiz.name name ";
 		$query .= " ,quiz.content content ";
+		$query .= " ,quiz.correct correct ";
 		$query .= " FROM ";
 		$query .= " T_YNSQUIZ quiz ";
 

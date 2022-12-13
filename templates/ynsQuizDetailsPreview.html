@@ -296,8 +296,8 @@
                 <p>
                     <span class="title">テスト情報 / クイズプレビュー</span>
                     <span style="float:right;padding-right:10px;">
-                        <input type="button" title="戻る" value="" id="btn_back" class="btn_back"
-                            onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizDetailsPreview/back')">
+                        <input type="button" title="戻る" value="" id="btn_back" class="btn_back1"
+                            onclick="javascript:doBack('{$smarty.const.HOME_DIR}YNSQuizInfoList/index')">
                     </span>
                     <br><br>
                 </p>
@@ -334,33 +334,73 @@
                 {if !empty($dataInfo)} {foreach $dataInfo as $result}
                 <div class="qz_no">
                     <input type="hidden" id="quiz_info_no" value="{$form->quiz_info_no}" name="quiz_info_no">
-                    <label class="qz_name"><font size="+1">Quiz Name : <b>{$result->name|escape}</b></font></label>
+                    <table>
+                        <tr>
+                            <td><label class="qz_name">
+                                    <font size="+1">Quiz Name :</font>
+                            </td>
+                            <td><b>{$result->name|escape}</b></td>
+                            </label>
+                        </tr>
+                    </table>
                 </div>
                 <br><br>
-                <div style="word-break : break-all;">
-                    <label style="white-space: pre-wrap; padding-left: 70px;"> <b>Question 1.</b> {$result->content}</label>
+                <div>
+                    <table>
+                        <td><b>Question 1.</b></td>
+                        <td>{$result->content}</td>
+                    </table>
                 </div>
                 <br><br>
-                <input type="hidden" id="audio_name" value="{$result->audio_name}" name="audio_name">
-                <div style="margin-left:60px;">
+                <table>
+                    <div style="margin-left:60px;">
+                        <table>
+                            <tr>
+                                <input type="hidden" id="audio_name" value="{$result->audio_name}" name="audio_name">
+                                {if !empty($result->audio_name)}
+                                {assign var="audiomsg" value="{$folder_check}{$audio_file}/{$result->audio_name}"}
+                                {if !empty({$audiomsg})}
+                                <span>
+                                    <audio id="resQuiz_audio_{$i}" class="quiz_audio" controls>
+                                        <source src="{$smarty.const.HOME_DIR}/{$audio_file}/{$result->audio_name}"
+                                            type="audio/mpeg">
+                                    </audio>
+                                    <input type="hidden" id="play_flg{$i}" value="false" />
+                                </span>
+                                {/if}
+                                {/if}
+                                {/foreach}
+                                {/if}
+                            </tr>
 
-                    {if !empty($result->audio_name)}
-                    {assign var="audiomsg" value="{$folder_check}{$audio_file}/{$result->audio_name}"}
-                    {if !empty({$audiomsg})}
-                    <span>
-                        <audio id="resQuiz_audio_{$i}" class="quiz_audio" controls>
-                            <source src="{$smarty.const.HOME_DIR}/{$audio_file}/{$result->audio_name}"
-                                type="audio/mpeg">
-                        </audio>
-                        <input type="hidden" id="play_flg{$i}" value="false" />
-                    </span>
-
-                    {/if}
-                    {/if}
-                </div>
-                {/foreach}
-                {/if}
-                <br />
+                            <tr>
+                                <td style="width:240px;">Answer 1:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$result->option1|escape}" maxlength="100" size="15"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:240px;">Answer 2:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$result->option2|escape}" maxlength="100" size="15"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:240px;">Answer 3:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$result->option3|escape}" maxlength="100" size="15"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:240px;">Answer 4:<span class="required">※</span></td>
+                                <td><input type="radio" name="option"><input type="text" class="text" id="option2"
+                                        name="option2" value="{$result->option4|escape}" maxlength="100" size="15"></td>
+                            </tr>
+                            <tr>
+                                <td style="width:240px;">Correct Answer:<span class="required">※</span></td>
+                                <td><input type="radio" name="option" checked><input type="text" class="text"
+                                        id="option2" name="option2" value="{$result->correct|escape}" maxlength="100"
+                                        size="15"></td>
+                            </tr>
+                        </table>
+                    </div>
             </section><!-- End Content -->
         </div><!-- End divBody -->
         <!--footer-->
