@@ -24,5 +24,4 @@ class T_YNS_Exam_QuizDto extends BaseDto
     public $option3;
     public $option4;
     public $correct;
-
 }

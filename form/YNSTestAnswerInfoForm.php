@@ -6,11 +6,12 @@ require_once 'BaseForm.php';
  */
 class YNSTestAnswerInfoForm extends BaseForm
 {
-    
+
     // 組織管理№
     public $org_no;
     // テスト名
-    public $name;
+    public $quiz_name;
+    public $exam_name;
     // テスト管理№
     public $exam_id;
     // 説明

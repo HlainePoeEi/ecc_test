@@ -553,13 +553,18 @@ class T_YNSExamDao extends BaseDao
     public function getListQuizForPreview($exam_id)
     {
         $query = " SELECT ";
-        $query .= " test.name name ";
+        $query .= " test.name exam_name ";
         $query .= " ,test.time time ";
         $query .= " ,test.exam_id exam_id ";
         $query .= " ,quiz.quiz_id quiz_id ";
         $query .= " ,quiz.audio_name audio_name ";
-        $query .= " ,quiz.name name ";
+        $query .= " ,quiz.name quiz_name ";
         $query .= " ,quiz.content content ";
+        $query .= " ,quiz.option1 option1 ";
+        $query .= " ,quiz.option2 option2 ";
+        $query .= " ,quiz.option3 option3 ";
+        $query .= " ,quiz.option4 option4 ";
+        $query .= " ,quiz.correct correct ";
 
         $query .= " ,test.description description ";
         $query .= " FROM ";
@@ -713,7 +718,8 @@ class T_YNSExamDao extends BaseDao
         return parent::delete($stmt);
     }
 
-    public function getQuizListForExam($exam_id){
+    public function getQuizListForExam($exam_id)
+    {
         $query = " SELECT ";
         $query .= " q.quiz_id quiz_id";
         $query .= " ,q.name quiz_name";
@@ -753,7 +759,7 @@ class T_YNSExamDao extends BaseDao
         $stmt = $this->pdo->prepare($query);
 
         $stmt->bindParam(":exam_id", $exam_id, PDO::PARAM_STR);
-        return parent::getDataList($stmt, get_class(new T_YNSExamDto));   
+        return parent::getDataList($stmt, get_class(new T_YNSExamDto));
     }
 
     public function getUpdateExamData($exam_id)
