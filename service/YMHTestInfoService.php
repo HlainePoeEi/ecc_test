@@ -32,10 +32,10 @@ class YMHTestInfoService extends BaseService{
 	}
  
 	//テストプレビュー
-	public function getListQuiz($org_no, $test_no){
+	public function getListQuiz($test_no){
 		// データベース接続
-		$dao = new T_Test_InfoDao();
-		return $dao-> getListQuiz($org_no, $test_no);
+		$dao = new T_YMHTestInfoDao();
+		return $dao-> getListQuiz($test_no);
 	}
 	
 	public function getItemList($quiz_info_no){

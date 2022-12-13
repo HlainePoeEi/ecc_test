@@ -1,228 +1,298 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>受験一覧</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="googlebot" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {literal}
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"></script>
-    <script type="text/javascript" src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"></script>
+    <script
+      type="text/javascript"
+      src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{/literal}{$smarty.const.HOME_DIR}{literal}js/jquery-ui.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{/literal}{$smarty.const.HOME_DIR}{literal}js/escape.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{/literal}{$smarty.const.HOME_DIR}{literal}js/datatables.min.js"
+    ></script>
     {/literal}
-    <link rel="stylesheet" href="{$smarty.const.HOME_DIR}css/jquery-ui.css">
-    <link href="{$smarty.const.HOME_DIR}css/datatables.min.css" rel="stylesheet">
-    <link href="{$smarty.const.HOME_DIR}css/media_query.css" rel="stylesheet">
-    <link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="{$smarty.const.HOME_DIR}css/jquery-ui.css" />
+    <link
+      href="{$smarty.const.HOME_DIR}css/datatables.min.css"
+      rel="stylesheet"
+    />
+    <link href="{$smarty.const.HOME_DIR}css/media_query.css" rel="stylesheet" />
+    <link href="{$smarty.const.HOME_DIR}css/default.css" rel="stylesheet" />
     <!-- <link href="{$smarty.const.HOME_DIR}css/testlist.css" rel="stylesheet"> -->
     <script>
+      // エンターキー押下時のsubmitを無効化
+      $(document).on("keypress", "input:not(.allow_submit)", function (event) {
+        return event.which !== 13;
+      });
+      // エンターキー押下時のsubmitを無効化
+      $(document).on("keypress", "select:not(.allow_submit)", function (event) {
+        return event.which !== 13;
+      });
 
-        // エンターキー押下時のsubmitを無効化
-        $(document).on("keypress", "input:not(.allow_submit)", function (event) {
-            return event.which !== 13;
+      $(document).ready(function () {
+        // MSGのあるなし
+        if ($(".error_msg").html() != "") {
+          $(".error_section").slideToggle("slow");
+        }
+
+        $(".close_icon").on("click", function () {
+          $(".error_section").slideToggle("slow");
+          $("#err_dis").slideToggle("slow", function () {
+            $(".error_msg").html("");
+          });
         });
-        // エンターキー押下時のsubmitを無効化
-        $(document).on("keypress", "select:not(.allow_submit)", function (event) {
-            return event.which !== 13;
-        });
 
-        $(document).ready(function () {
+        var current_page = parseInt($("#page").val());
+        var current_page_row = parseInt($("#page_row").val());
+        var current_order_column = $("#page_order_column").val();
+        var current_order_dir = $("#page_order_dir").val();
+        var current_page = parseInt($("#page").val()) || 0;
+        var current_page_row = parseInt($("#page_row").val()) || 10;
 
+        if (current_order_column == "") {
+          current_order_column = "1";
+        }
+        if (current_order_dir == "") {
+          current_order_dir = "desc";
+        }
 
+        var width = $(document).width();
 
-            // MSGのあるなし
-            if ($(".error_msg").html() != "") {
+        if (width <= 320 || (width >= 321 && width <= 768)) {
+          $("#modal-content").css("width", "300");
+          $("#modal-content").css("hight", "auto");
 
-                $(".error_section").slideToggle('slow')
+          var current_page_row = $("#search_page_row").val();
+
+          $("#test_list").DataTable({
+            lengthMenu: [20, 25, 50, 75, 100],
+            scrollY: 350,
+            scrollX: true,
+            bFilter: false,
+            ordering: true,
+            searching: true,
+            columns: [
+              { searchable: true },
+              { searchable: false },
+              { searchable: false },
+              { searchable: false },
+              { searchable: false },
+            ],
+            pageLength: current_page_row,
+            aaSorting: [[current_order_column, current_order_dir]],
+            columnDefs: [
+              {
+                orderable: false,
+                targets: "th_img",
+              },
+            ],
+            language: {
+              info: " _TOTAL_ 件中 _START_ から _END_ まで表示",
+              paginate: {
+                first: "First",
+                last: "Last",
+                next: "次",
+                previous: "前",
+              },
+              lengthMenu: " _MENU_ 件表示",
+              sEmptyTable: "データがありません。",
+              infoEmpty: "0 件中 0 から 0 まで表示",
+            },
+            createdRow: function (row, data, dataIndex) {},
+          });
+        } else {
+          $("#test_list").DataTable({
+            scrollY: 350,
+            scrollX: true,
+            bFilter: false,
+            ordering: true,
+            searching: true,
+            columns: [
+              { searchable: true },
+              { searchable: false },
+              { searchable: false },
+              { searchable: false },
+              { searchable: false },
+            ],
+            pageLength: current_page_row,
+            aaSorting: [[current_order_column, current_order_dir]],
+            columnDefs: [
+              {
+                orderable: false,
+                targets: "th_img",
+              },
+            ],
+            language: {
+              info: " _TOTAL_ 件中 _START_ から _END_ まで表示",
+              paginate: {
+                first: "First",
+                last: "Last",
+                next: "次",
+                previous: "前",
+              },
+              lengthMenu: " _MENU_ 件表示",
+              sEmptyTable: "データがありません。",
+              infoEmpty: "0 件中 0 から 0 まで表示",
+            },
+            createdRow: function (row, data, dataIndex) {},
+          });
+        }
+
+        var table = $("#test_list").dataTable();
+        table.fnPageChange(current_page);
+
+        //ブラウザをチェックする
+        console.log("Here smart phone browser for task list!");
+
+        //ブラウザの戻るボタンを押すと、前の画面が表示される
+        if (window.history && window.history.pushState) {
+          $(window).on("popstate", function () {
+            var referrer = document.referrer;
+            var hashLocation = location.hash;
+            var hashSplit = hashLocation.split("#!/");
+            var hashName = hashSplit[1];
+
+            if (hashName !== "") {
+              var hash = window.location.hash;
+              if (hash === "") {
+                window.location.assign("{$smarty.const.HOME_DIR}Menu/index");
+              }
             }
-
-            $(".close_icon").on('click', function () {
-
-                $(".error_section").slideToggle('slow')
-                $('#err_dis').slideToggle('slow', function () {
-                    $(".error_msg").html("");
-                })
-            });
-
-            var current_page = parseInt($("#page").val());
-            var current_page_row = parseInt($("#page_row").val());
-            var current_order_column = $("#page_order_column").val();
-            var current_order_dir = $("#page_order_dir").val();
-            var current_page = parseInt($("#page").val()) || 0;
-            var current_page_row = parseInt($("#page_row").val()) || 10;
-
-            if (current_order_column == '') {
-                current_order_column = '1';
-            }
-            if (current_order_dir == '') {
-                current_order_dir = 'desc';
-            }
-
-            var width = $(document).width();
-
-            if (width <= 320 || (width >= 321 && width <= 768)) {
-
-                $("#modal-content").css("width", "300");
-                $("#modal-content").css("hight", "auto");
-
-                var current_page_row = $("#search_page_row").val();
-
-                $('#test_list').DataTable({
-                    "lengthMenu": [20, 25, 50, 75, 100],
-                    "scrollY": 350,
-                    "scrollX": true,
-                    "bFilter": false,
-                    "ordering": true,
-                    "searching": true,
-                    "columns": [
-                        { "searchable": true },
-                        { "searchable": false },
-                        { "searchable": false },
-                        { "searchable": false },
-                        { "searchable": false }
-                    ],
-                    "pageLength": current_page_row,
-                    "aaSorting": [[current_order_column, current_order_dir]],
-                    columnDefs: [{
-                        orderable: false,
-                        targets: "th_img"
-                    }
-                    ],
-                    "language": {
-                        "info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
-                        "paginate": {
-                            "first": "First",
-                            "last": "Last",
-                            "next": "次",
-                            "previous": "前"
-                        },
-                        "lengthMenu": " _MENU_ 件表示",
-                        "sEmptyTable": "データがありません。",
-                        "infoEmpty": "0 件中 0 から 0 まで表示"
-                    },
-                    "createdRow": function (row, data, dataIndex) {
-
-                    }
-                });
-            } else {
-
-                $('#test_list').DataTable({
-                    "scrollY": 350,
-                    "scrollX": true,
-                    "bFilter": false,
-                    "ordering": true,
-                    "searching": true,
-                    "columns": [
-                        { "searchable": true },
-                        { "searchable": false },
-                        { "searchable": false },
-                        { "searchable": false },
-                        { "searchable": false }
-                    ],
-                    "pageLength": current_page_row,
-                    "aaSorting": [[current_order_column, current_order_dir]],
-                    columnDefs: [{
-                        orderable: false,
-                        targets: "th_img"
-                    }
-                    ],
-                    "language": {
-                        "info": " _TOTAL_ 件中 _START_ から _END_ まで表示",
-                        "paginate": {
-                            "first": "First",
-                            "last": "Last",
-                            "next": "次",
-                            "previous": "前"
-                        },
-                        "lengthMenu": " _MENU_ 件表示",
-                        "sEmptyTable": "データがありません。",
-                        "infoEmpty": "0 件中 0 から 0 まで表示"
-                    },
-                    "createdRow": function (row, data, dataIndex) {
-
-                    }
-                });
-            }
-
-            var table = $('#test_list').dataTable();
-            table.fnPageChange(current_page);
-
-            //ブラウザをチェックする
-            console.log("Here smart phone browser for task list!");
-
-            //ブラウザの戻るボタンを押すと、前の画面が表示される
-            if (window.history && window.history.pushState) {
-
-                $(window).on('popstate', function () {
-
-                    var referrer = document.referrer;
-                    var hashLocation = location.hash;
-                    var hashSplit = hashLocation.split("#!/");
-                    var hashName = hashSplit[1];
-
-                    if (hashName !== '') {
-
-                        var hash = window.location.hash;
-                        if (hash === '') {
-
-                            window.location.assign("{$smarty.const.HOME_DIR}Menu/index");
-                        }
-                    }
-                });
-                window.history.pushState(null, null, '');
-            }
-        });
+          });
+          window.history.pushState(null, null, "");
+        }
+      });
     </script>
-</head>
+  </head>
 
-<body class="pushmenu-push">
-    <form id="main_form" method="post" action="{$smarty.const.HOME_DIR}TestInfoList/search" method="post">
-        {include file='leftMenu.html'}
-        <div class="divHeader">
-            <!--header-->
-            {include file='header.html'}
-            <!--header-->
-        </div>
-        <div class="divBody">
-            <div class="main">
-                <div id="err_dis">
-                    <section class="error_section">
-                        <img src="{$smarty.const.HOME_DIR}image/close_icon.png" style="width:15px;float:right"
-                            class="close_icon">
-                        {if !empty($err_msg)}
-                        <div class="error_msg">{$err_msg}</div>
-                        {else}
-                        <div class="error_msg"></div>
-                        {/if}
-                    </section>
-                </div>
+  <body class="pushmenu-push">
+    <form
+      id="main_form"
+      method="post"
+      action="{$smarty.const.HOME_DIR}TestInfoList/search"
+      method="post"
+    >
+      {include file='leftMenu.html'}
+      <div class="divHeader">
+        <!--header-->
+        {include file='header.html'}
+        <!--header-->
+      </div>
+      <div class="divBody">
+        <div class="main">
+          <div id="err_dis">
+            <section class="error_section">
+              <img
+                src="{$smarty.const.HOME_DIR}image/close_icon.png"
+                style="width: 15px; float: right"
+                class="close_icon"
+              />
+              {if !empty($err_msg)}
+              <div class="error_msg">{$err_msg}</div>
+              {else}
+              <div class="error_msg"></div>
+              {/if}
+            </section>
+          </div>
 
-                <section class="content">
-                    <p> > <span class="title" data-i18n="testInfo.title">試験/ 試験一覧</span> </p>
-                    <input type="hidden" id="home_dir" value="{$smarty.const.HOME_DIR}" />
-                    <input type="hidden" id="err_msg" name="err_msg" value="{$err_msg}" />
-                    <input type="hidden" id="page" name="page" value="{$form->page}" />
-                    <input type="hidden" id="student_no" name="student_no" value="{$form->student_no}" />
-                    <input type="hidden" id="subject_no" name="subject_no" value="{$form->subject_no}" />
-                    <input type="hidden" id="page_row" name="page_row" value="{$form->page_row}" />
-                    <input type="hidden" id="page_order_column" name="page_order_column"
-                        value="{$form->page_order_column}" />
-                    <input type="hidden" id="page_order_dir" name="page_order_dir" value="{$form->page_order_dir}" />
-                    <input type="hidden" id="page" name="page" value="{$form->page}" />
-                    <input type="hidden" id="search_page" name="search_page" value="{$form->search_page}" />
-                    <input type="hidden" id="test_info_no" name="test_info_no" />
-                    <input type="hidden" id="lesson_no" name="lesson_no" />
-                    <input type="hidden" id="group_no" name="group_no" />
-                    <input type="hidden" id="search_page_row" name="search_page_row" value="{$form->search_page_row}" />
-                    <input type="hidden" id="search_page_order_column" name="search_page_order_column"
-                        value="{$form->search_page_order_column}" />
-                    <input type="hidden" id="search_page_order_dir" name="search_page_order_dir" />
-                    <div id="groupsearch" align="center">
-                        <br />
-                        <!-- <select style=" float:left;" name="subject_list" class="subject_list">
+          <section class="content">
+            <p>
+              >
+              <span class="title" data-i18n="testInfo.title"
+                >試験/ 試験一覧</span
+              >
+            </p>
+            <input
+              type="hidden"
+              id="home_dir"
+              value="{$smarty.const.HOME_DIR}"
+            />
+            <input
+              type="hidden"
+              id="err_msg"
+              name="err_msg"
+              value="{$err_msg}"
+            />
+            <input type="hidden" id="page" name="page" value="{$form->page}" />
+            <input
+              type="hidden"
+              id="student_no"
+              name="student_no"
+              value="{$form->student_no}"
+            />
+            <input
+              type="hidden"
+              id="subject_no"
+              name="subject_no"
+              value="{$form->subject_no}"
+            />
+            <input
+              type="hidden"
+              id="page_row"
+              name="page_row"
+              value="{$form->page_row}"
+            />
+            <input
+              type="hidden"
+              id="page_order_column"
+              name="page_order_column"
+              value="{$form->page_order_column}"
+            />
+            <input
+              type="hidden"
+              id="page_order_dir"
+              name="page_order_dir"
+              value="{$form->page_order_dir}"
+            />
+            <input type="hidden" id="page" name="page" value="{$form->page}" />
+            <input
+              type="hidden"
+              id="search_page"
+              name="search_page"
+              value="{$form->search_page}"
+            />
+            <input type="hidden" id="test_info_no" name="test_info_no" />
+            <input
+              type="hidden"
+              id="exam_id"
+              name="exam_id"
+              value="{$form->exam_id}"
+            />
+            <input type="hidden" id="lesson_no" name="lesson_no" />
+            <input type="hidden" id="group_no" name="group_no" />
+            <input
+              type="hidden"
+              id="search_page_row"
+              name="search_page_row"
+              value="{$form->search_page_row}"
+            />
+            <input
+              type="hidden"
+              id="search_page_order_column"
+              name="search_page_order_column"
+              value="{$form->search_page_order_column}"
+            />
+            <input
+              type="hidden"
+              id="search_page_order_dir"
+              name="search_page_order_dir"
+            />
+            <div id="groupsearch" align="center">
+              <br />
+              <!-- <select style=" float:left;" name="subject_list" class="subject_list">
                             <option value="0" data-i18n="common.all">すべて</option>
                             {if !empty($subjList) }
                             {foreach $subjList as $subject}
@@ -234,243 +304,266 @@
                             {/foreach}
                             {/if}
                         </select> -->
-                        <div id="modal-content" style="display:none;align:center;">
-                            <p id="txtNotice" data-i18n="testInfo.noticeN">「YES」で試験を開始します。<br /><br />
-                                試験中の中断はできません。<br />
-                                ブラウザの「閉じる」「戻る」「再読み込み」ボタンは使用しないでください。<br />
-                                全ての設問に順に解答してください。</p>
-                            <p>
-                                <input type="button" id="modal-yes" style="margin-right:20px" class="modal-btn-yes" />
-                                <input type="button" id="modal-no" style="margin-left:20px" class="modal-btn-no" />
-                            </p>
-                        </div>
-                        <!-- <div align="right" style="width:100%">
-                            <input type="submit" id="btn_search" name="search" title="検索" class="btn_search"
-                                alt="search" value="" style="padding-right:50px;">
-                        </div> -->
+              <div id="modal-content" style="display: none; align: center">
+                <p id="txtNotice" data-i18n="testInfo.noticeN">
+                  「YES」で試験を開始します。<br /><br />
+                  試験中の中断はできません。<br />
+                  ブラウザの「閉じる」「戻る」「再読み込み」ボタンは使用しないでください。<br />
+                  全ての設問に順に解答してください。
+                </p>
+                <p>
+                  <input
+                    type="button"
+                    id="modal-yes"
+                    style="margin-right: 20px"
+                    class="modal-btn-yes"
+                  />
+                  <input
+                    type="button"
+                    id="modal-no"
+                    style="margin-left: 20px"
+                    class="modal-btn-no"
+                  />
+                </p>
+              </div>
+              <div align="right" style="width: 100%">
+                <input
+                  type="submit"
+                  id="btn_search"
+                  name="search"
+                  title="検索"
+                  class="btn_search"
+                  alt="search"
+                  value=""
+                  style="padding-right: 50px"
+                />
+              </div>
 
-                        <div>
-                            <table id="test_list" class="tbl_search">
-                                <thead>
-                                    <tr>
-                                        <th>試験名<br />Exam</th>
-                                        <th style="display: none;"></th>
-                                        <th style="display: none;"></th>
-                                        <th class="th_img" id="tshousai-th">受講<br />Answer</th>
-                                        <th class="th_img" id="tshousai-th">確認<br />Result</th>
-                                    </tr>
-                                </thead>
-                                {if !empty($list) }
-                                <tbody>
-                                    {foreach $list as $obj}
-                                    <tr>
-                                        <td>{$obj->name|escape|truncate:60:'...'}</td>
-                                        <td style="display: none;">{$obj->start_period}</td>
-                                        <td style="display: none;">{$obj->show_flg}</td>
-                                        <td class="tshousai-td">
-                                            {if $obj->status == "" || $obj->status == "n" }
-                                            <input type="button" class="btn_confirm" id="btn_answer" title="受講"
-                                                onclick="confirm_action('{$obj->test_info_no}', '{$obj->lesson_no}','{$obj->group_no}', '{$smarty.const.HOME_DIR}TestAnswerInfo/index')">
-                                            {/if}
-                                        </td>
-                                        <td class="tshousai-td">
-                                            {if $obj->status == 'y'}
-                                            <input type="button" class="btn_confirm" id="btn_result" title="確認"
-                                                onclick="doPage('{$obj->test_info_no}', '{$obj->lesson_no}','{$obj->group_no}','{$smarty.const.HOME_DIR}TestInfoResultDetail/index')">
-                                            {/if}
-                                        </td>
-
-                                    </tr>
-                                    {/foreach}
-                                </tbody>
-                                {/if}
-                            </table>
-                        </div>
-                    </div>
-                </section><!-- End Content -->
-            </div><!-- End Main -->
-        </div><!-- End divBody -->
-        <div class="divFooter">
-            <!--footer-->
-            {include file='footer.html'}
-            <!--footer-->
+              <div>
+                <table id="test_list" class="tbl_search">
+                  <thead>
+                    <tr>
+                      <th>試験名<br />Exam</th>
+                      <th style="display: none"></th>
+                      <th style="display: none"></th>
+                      <th class="th_img" id="tshousai-th">受講<br />Answer</th>
+                      <th class="th_img" id="tshousai-th">確認<br />Result</th>
+                    </tr>
+                  </thead>
+                  {if !empty($list) }
+                  <tbody>
+                    {foreach $list as $obj}
+                    <tr>
+                      <td>{$obj->name|escape|truncate:60:'...'}</td>
+                      <td style="display: none">{$obj->start_period}</td>
+                      <td style="display: none">{$obj->show_flg}</td>
+                      <td class="tshousai-td">
+                        {if $obj->status == "" || $obj->status == "n" }
+                        <input
+                          type="button"
+                          class="btn_confirm"
+                          id="btn_answer"
+                          title="受講"
+                          onclick="confirm_action('{$obj->exam_id}','{$smarty.const.HOME_DIR}YNSTestAnswerInfo/index')"
+                        />
+                        {/if}
+                      </td>
+                      <td class="tshousai-td">
+                        {if $obj->status == 'y'}
+                        <input
+                          type="button"
+                          class="btn_confirm"
+                          id="btn_result"
+                          title="確認"
+                          onclick="doPage('{$obj->test_info_no}', '{$obj->lesson_no}','{$obj->group_no}','{$smarty.const.HOME_DIR}TestInfoResultDetail/index')"
+                         disabled/>
+                        {/if}
+                      </td>
+                    </tr>
+                    {/foreach}
+                  </tbody>
+                  {/if}
+                </table>
+              </div>
+            </div>
+          </section>
+          <!-- End Content -->
         </div>
+        <!-- End Main -->
+      </div>
+      <!-- End divBody -->
+      <div class="divFooter">
+        <!--footer-->
+        {include file='footer.html'}
+        <!--footer-->
+      </div>
     </form>
     <script>
-        var test_info_no = "";
-        var lesson_no = "";
-        var group_no = "";
-        var action = "";
+      var test_info_no = "";
+      var lesson_no = "";
+      var group_no = "";
+      var action = "";
 
-        $("#modal-overlay,#modal-no").unbind().click(function () {
-            //[#modal-overlay]、または[#modal-close]をクリックしたら起こる処理
+      $("#modal-overlay,#modal-no")
+        .unbind()
+        .click(function () {
+          //[#modal-overlay]、または[#modal-close]をクリックしたら起こる処理
 
-            test_info_no = "";
-            lesson_no = "";
-            group_no = "";
-            action = "";
+          test_info_no = "";
+          lesson_no = "";
+          group_no = "";
+          action = "";
 
-            //[#modal-content]と[#modal-overlay]をフェードアウトした後に…
-            $("#modal-content,#modal-overlay").fadeOut("slow", function () {
+          //[#modal-content]と[#modal-overlay]をフェードアウトした後に…
+          $("#modal-content,#modal-overlay").fadeOut("slow", function () {
+            //[#modal-overlay]を削除する
+            $("#modal-overlay").remove();
+          });
 
-                //[#modal-overlay]を削除する
-                $('#modal-overlay').remove();
-
-            });
-
-            $("#modal-content").hide();
+          $("#modal-content").hide();
         });
 
-        $("#modal-yes").unbind().click(function () {
-            //[#modal-overlay]、または[#modal-close]をクリックしたら起こる処理
-
-            doPage(test_info_no, lesson_no, group_no, action);
+      $("#modal-yes")
+        .unbind()
+        .click(function () {
+          //[#modal-overlay]、または[#modal-close]をクリックしたら起こる処理
+          test_info_no = $("#exam_id").val();
+          doPage(test_info_no, lesson_no, group_no, action);
         });
 
-        function doPage(test_info_no, lesson_no, group_no, action) {
+      function doPage(test_info_no, lesson_no, group_no, action) {
+        var menuOpen = document.getElementById("menuOpen").value;
+        var menuStatus = document.getElementById("menuStatus").value;
+        var homeDir = $("#home_dir").val();
+        var fd = new FormData();
+        fd.append("exam_id", test_info_no);
 
-            var menuOpen = document.getElementById('menuOpen').value;
-            var menuStatus = document.getElementById('menuStatus').value;
-            var homeDir = $('#home_dir').val();
-            var fd = new FormData();
-            fd.append('test_info_no', test_info_no);
+        console.log("action :" + action);
+        console.log("test_info_no :" + test_info_no);
 
-            console.log("action :" + action);
-            console.log("test_info_no :" + test_info_no);
+        $.ajax({
+          type: "POST",
+          url: homeDir + "YMHTestInfoList/checkData",
+          data: fd,
+          datatype: "text",
+          processData: false,
+          contentType: false,
+        })
+          .done(function (data) {
+            if (data == "テーストのクイズがありません。") {
+              $("#err_dis").show();
+              // if already err_msg
+              if ($(".error_msg").html() != "") {
+                $(".error_section").slideToggle("slow");
+                $(window).scrollTop(0);
+              }
 
-            $.ajax({
-                type: 'POST',
-                url: homeDir + 'TestInfoList/checkData',
-                data: fd,
-                datatype: 'text',
-                processData: false,
-                contentType: false
-            }).done(
-
-                function (data) {
-
-                    if (data == 'テーストのクイズがありません。') {
-
-                        $('#err_dis').show();
-                        // if already err_msg
-                        if ($(".error_msg").html() != "") {
-
-                            $(".error_section").slideToggle('slow');
-                            $(window).scrollTop(0);
-                        }
-
-                        $(".error_section").slideToggle('slow');
-                        $(".error_msg").html("テーストのクイズがありません。");
-                        $('#err_dis')[0].focus();
-                        return false;
-                    } else {
-
-                        if (!$.fn.DataTable.isDataTable('#test_list')) {
-                            var page = 0;
-                            var page_row = 10;
-                        } else {
-                            //データテーブルがある場合、詳細ボタンの処理
-                            var table = $('#test_list').DataTable();
-                            var info = table.page.info();
-                            var page = info.page;// データテーブルのページ
-                            var page_row = table.page.info().length;// データテーブルのドロップダウンリストの行
-                            var order = table.order();
-                            var page_order_column = order[0][0];
-                            var page_order_dir = order[0][1];
-                        }
-                        $("#search_page").val(page);
-                        $("#search_page_row").val(page_row);
-                        $("#search_page_order_column").val(page_order_column);
-                        $("#search_page_order_dir").val(page_order_dir);
-                        $("#main_form").attr("action", action);
-                        $("#menuOpen").val(menuOpen);
-                        $("#test_info_no").val(test_info_no);
-                        $("#lesson_no").val(lesson_no);
-                        $("#group_no").val(group_no);
-                        $("#test_info_no").val(test_info_no);
-                        $("#menuStatus").val(menuStatus);
-                        $("#back_flg").val(true);
-                        $("#main_form").submit();
-                    }
-                }).fail(function (data) {
-                    console.log("error");
-                });
-        }
-
-        function confirm_action(test, lesson, group, act) {
-
-            test_info_no = test;
-            lesson_no = lesson;
-            group_no = group;
-            action = act;
-
-            //キーボード操作などにより、オーバーレイが多重起動するのを防止する
-            $(this).blur();	//ボタンからフォーカスを外す
-            if ($("#modal-overlay")[0]) return false;
-
-            //オーバーレイを出現させる
-            $("body").append('<div id="modal-overlay"></div>');
-            $("#modal-overlay").fadeIn("slow");
-            centeringModalSyncer();
-            $("#modal-content").show();
-        }
-
-        //リサイズされたら、センタリングをする関数[centeringModalSyncer()]を実行する
-        $(window).resize(centeringModalSyncer);
-
-        //センタリングを実行する関数
-        function centeringModalSyncer() {
-
-            //画面(ウィンドウ)の幅、高さを取得
-            var w = $(window).width();
-            var h = $(window).height();
-
-            // コンテンツ(#modal-content)の幅、高さを取得
-            var cw = $("#modal-content").outerWidth();
-            var ch = $("#modal-content").outerHeight();
-
-            document.getElementById("modal-content").style.left = ((w - cw) / 2) + "px";
-            document.getElementById("modal-content").style.top = ((h - ch) / 2) + "px";
-        }
-
-        // 検索ボータンを押すと
-        $("#btn_search").on("click", function () {
-
-            var menuOpen = document.getElementById('menuOpen').value;
-            var menuStatus = document.getElementById('menuStatus').value;
-            if (!$.fn.DataTable.isDataTable('#test_list')) {
-
+              $(".error_section").slideToggle("slow");
+              $(".error_msg").html("テーストのクイズがありません。");
+              $("#err_dis")[0].focus();
+              return false;
+            } else {
+              if (!$.fn.DataTable.isDataTable("#test_list")) {
                 var page = 0;
                 var page_row = 10;
-            } else {
-                // データテーブルがある場合、詳細ボタンの処理
-                var table = $('#test_list').DataTable();
+              } else {
+                //データテーブルがある場合、詳細ボタンの処理
+                var table = $("#test_list").DataTable();
                 var info = table.page.info();
-                var page = info.page;// データテーブルのページ
-                var page_row = table.page.info().length;// データテーブルのドロップダウンリストの行
+                var page = info.page; // データテーブルのページ
+                var page_row = table.page.info().length; // データテーブルのドロップダウンリストの行
                 var order = table.order();
                 var page_order_column = order[0][0];
                 var page_order_dir = order[0][1];
+              }
+              $("#search_page").val(page);
+              $("#search_page_row").val(page_row);
+              $("#search_page_order_column").val(page_order_column);
+              $("#search_page_order_dir").val(page_order_dir);
+              $("#main_form").attr("action", action);
+              $("#menuOpen").val(menuOpen);
+              $("#test_info_no").val(test_info_no);
+              $("#lesson_no").val(lesson_no);
+              $("#group_no").val(group_no);
+              $("#exam_id").val(test_info_no);
+              $("#menuStatus").val(menuStatus);
+              $("#back_flg").val(true);
+              $("#main_form").submit();
             }
-            $("#search_page").val(page);
-            $("#search_page_row").val(page_row);
-            $("#search_page_order_column").val(page_order_column);
-            $("#search_page_order_dir").val(page_order_dir);
-            $("#main_form").submit();
-            return true;
-        });
+          })
+          .fail(function (data) {
+            console.log("error");
+          });
+      }
 
-        $(".subject_list").change(function () {
+      function confirm_action(test, act) {
+        exam_id = test;
+        action = act;
+        $("#exam_id").val(exam_id);
+        console.log($("#exam_id").val());
+        //キーボード操作などにより、オーバーレイが多重起動するのを防止する
+        $(this).blur(); //ボタンからフォーカスを外す
+        if ($("#modal-overlay")[0]) return false;
 
-            var subject_no = $(this).val();
+        //オーバーレイを出現させる
+        $("body").append('<div id="modal-overlay"></div>');
+        $("#modal-overlay").fadeIn("slow");
+        centeringModalSyncer();
+        $("#modal-content").show();
+      }
 
-            $("#subject_no").val(subject_no);
-        });
+      //リサイズされたら、センタリングをする関数[centeringModalSyncer()]を実行する
+      $(window).resize(centeringModalSyncer);
 
+      //センタリングを実行する関数
+      function centeringModalSyncer() {
+        //画面(ウィンドウ)の幅、高さを取得
+        var w = $(window).width();
+        var h = $(window).height();
+
+        // コンテンツ(#modal-content)の幅、高さを取得
+        var cw = $("#modal-content").outerWidth();
+        var ch = $("#modal-content").outerHeight();
+
+        document.getElementById("modal-content").style.left =
+          (w - cw) / 2 + "px";
+        document.getElementById("modal-content").style.top =
+          (h - ch) / 2 + "px";
+      }
+
+      // 検索ボータンを押すと
+      $("#btn_search").on("click", function () {
+        var menuOpen = document.getElementById("menuOpen").value;
+        var menuStatus = document.getElementById("menuStatus").value;
+        if (!$.fn.DataTable.isDataTable("#test_list")) {
+          var page = 0;
+          var page_row = 10;
+        } else {
+          // データテーブルがある場合、詳細ボタンの処理
+          var table = $("#test_list").DataTable();
+          var info = table.page.info();
+          var page = info.page; // データテーブルのページ
+          var page_row = table.page.info().length; // データテーブルのドロップダウンリストの行
+          var order = table.order();
+          var page_order_column = order[0][0];
+          var page_order_dir = order[0][1];
+        }
+        $("#search_page").val(page);
+        $("#search_page_row").val(page_row);
+        $("#search_page_order_column").val(page_order_column);
+        $("#search_page_order_dir").val(page_order_dir);
+        $("#main_form").submit();
+        return true;
+      });
+
+      $(".subject_list").change(function () {
+        var subject_no = $(this).val();
+
+        $("#subject_no").val(subject_no);
+      });
     </script>
     <!--footer-->
     {include file='footer.html'}
     <!--footer-->
-</body>
-
+  </body>
 </html>

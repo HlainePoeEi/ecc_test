@@ -1,0 +1,25 @@
+.td_test_name{
+	width:300px;
+}
+.td_remark {
+	width: 100px;
+}
+.tbl_search{
+	table-layout:fixed;
+}
+.tbl_search thead tr th, .tbl_search thead tr td,
+#test_list tbody tr td {
+	width: 100%;
+	word-break: break-all;
+}
+#tshousai-th{
+	text-align:center !important;
+	width:30px !important;
+	min-width:30px !important;
+}
+
+.tshousai-td{
+	text-align:center !important;
+	width:15px !important;
+	min-width:15px !important;
+}
